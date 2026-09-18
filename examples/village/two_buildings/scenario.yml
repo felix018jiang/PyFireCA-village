@@ -1,0 +1,23 @@
+schema_version: village-scenario-1
+scenario_id: two-buildings-ignition
+model:
+  name: effective_exposure_ca_v1
+  exposure_radius_m: 5.0
+  decay_length_m: 4.0
+  wind_beta_s_m: 0.0
+  coefficients_evidence: synthetic
+  coefficients_source_id: example-fixture-v1
+weather:
+  wind_speed_m_s: 0.0
+  wind_from_deg: 0.0
+ignitions:
+  - cell: {row: 1, col: 1}
+    time_s: 0.0
+    kind: direct
+numerics:
+  max_dt_s: 0.5
+  end_time_s: 120.0
+outputs:
+  sample_interval_s: 2.0
+visualization:
+  heating_display_fraction: 0.1

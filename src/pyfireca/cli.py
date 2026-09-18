@@ -8,6 +8,7 @@ from collections.abc import Sequence
 from pathlib import Path
 
 from pyfireca.run_config import load_run_config, run_config, validate_run_config
+from pyfireca.village.cli import add_village_subcommands, run_village_command
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -28,6 +29,7 @@ def _build_parser() -> argparse.ArgumentParser:
         help="validate and execute one reproducible static simulation run",
     )
     run_parser.add_argument("config", type=Path, help="path to a version-1 YAML config")
+    add_village_subcommands(subparsers)
     return parser
 
 
@@ -59,6 +61,8 @@ def main(argv: Sequence[str] | None = None) -> int:
             return _run_validate(args.config)
         if args.command == "run":
             return _run_simulation(args.config)
+        if args.command == "village":
+            return run_village_command(args)
     except Exception as exc:
         print(f"pyfireca: error: {exc}", file=sys.stderr)
         return 2

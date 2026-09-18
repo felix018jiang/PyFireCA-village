@@ -1,0 +1,18 @@
+{
+  "schema_version": "buildings-1",
+  "coordinate_space": "image_pixels",
+  "image_file": "../imagery/village.ppm",
+  "pixel_coordinates": "edge_based",
+  "buildings": [
+    {
+      "building_id": "B001",
+      "polygons": [{"exterior": [[1,1],[3,1],[3,3],[1,3],[1,1]], "holes": []}],
+      "properties": {"outline_type": "footprint", "height_m": null}
+    },
+    {
+      "building_id": "B002",
+      "polygons": [{"exterior": [[4,1],[6,1],[6,3],[4,3],[4,1]], "holes": []}],
+      "properties": {"outline_type": "footprint", "height_m": null}
+    }
+  ]
+}

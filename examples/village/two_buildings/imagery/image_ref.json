@@ -1,0 +1,9 @@
+{
+  "schema_version": "image-ref-1",
+  "coordinate_mode": "local_metric",
+  "width_px": 6,
+  "height_px": 4,
+  "affine_pixel_to_world": [2.0, 0.0, 0.0, 0.0, -2.0, 8.0],
+  "world_unit": "m",
+  "north_reference": "local_y_positive"
+}

@@ -1,0 +1,8 @@
+name: pyfireca-village
+channels:
+  - defaults
+dependencies:
+  - python=3.13
+  - pip
+  - pip:
+      - -e .[dev,gis,village]

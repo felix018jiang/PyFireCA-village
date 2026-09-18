@@ -1,0 +1,40 @@
+schema_version: material-catalog-1
+library_id: synthetic-two-buildings-v1
+materials:
+  - id: demo_wood
+    label: 合成木质等效燃料
+    role: building_fuel
+    burnable: true
+    evidence: synthetic
+    source_id: example-fixture-v1
+    parameters:
+      fuel_load_kg_m2: 2.0
+      heat_of_combustion_J_kg: 1000000.0
+      mass_loss_flux_kg_m2_s: 0.02
+      active_area_ratio: 1.0
+      emission_fraction: 0.5
+      absorptivity: 0.8
+      ignition_dose_J_m2: 500.0
+      exposure_decay_s: 20.0
+  - id: demo_grass
+    label: 合成地表燃料
+    role: surface_fuel
+    burnable: true
+    evidence: synthetic
+    source_id: example-fixture-v1
+    parameters:
+      fuel_load_kg_m2: 0.5
+      heat_of_combustion_J_kg: 500000.0
+      mass_loss_flux_kg_m2_s: 0.01
+      active_area_ratio: 1.0
+      emission_fraction: 0.4
+      absorptivity: 0.7
+      ignition_dose_J_m2: 300.0
+      exposure_decay_s: 12.0
+  - id: inert_stone
+    label: 合成石质隔离带
+    role: inert
+    burnable: false
+    evidence: synthetic
+    source_id: example-fixture-v1
+    parameters: {}

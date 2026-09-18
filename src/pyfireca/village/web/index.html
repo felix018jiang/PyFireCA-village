@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>村火推演台 · PyFireCA</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="masthead">
+        <div class="identity">
+          <span class="eyebrow">PYFIRECA / VILLAGE LAB</span>
+          <h1>村火推演台</h1>
+        </div>
+        <div class="clock-block">
+          <span>模拟时刻</span>
+          <strong id="timeReadout">载入中…</strong>
+        </div>
+        <div class="run-status" id="runStatus">读取结果</div>
+      </header>
+
+      <main class="workspace">
+        <aside class="rail left-rail">
+          <section>
+            <p class="section-number">01 / 图层</p>
+            <label class="switch"><input id="toggleImage" type="checkbox" checked /><span>卫星底图</span></label>
+            <label class="layer-picker"><span>计算图层</span>
+              <select id="layerMode">
+                <option value="state">火灾状态</option>
+                <option value="temperature">表面温度</option>
+                <option value="hrr">热释放率 HRR</option>
+              </select>
+            </label>
+            <label class="switch"><input id="toggleBuildings" type="checkbox" checked /><span>建筑轮廓</span></label>
+            <label class="switch"><input id="toggleGrid" type="checkbox" /><span>元胞格网</span></label>
+          </section>
+          <section>
+            <p class="section-number">02 / 状态</p>
+            <div class="legend">
+              <span><i class="swatch unburned"></i>未燃</span>
+              <span><i class="swatch heating"></i>受热</span>
+              <span><i class="swatch burning"></i>燃烧</span>
+              <span><i class="swatch burned"></i>燃尽</span>
+              <span><i class="swatch inert"></i>不燃</span>
+              <span><i class="swatch unknown"></i>未知</span>
+            </div>
+            <div class="scalar-legend" id="scalarLegend" hidden>
+              <span id="scalarMaximum">高</span><i></i><span id="scalarMinimum">低</span>
+            </div>
+          </section>
+          <section class="notice">
+            <p class="section-number">模型说明</p>
+            <p>二维等效暴露 CA。画面显示计算状态，不代表真实火焰形状或结构损失。</p>
+          </section>
+        </aside>
+
+        <section class="stage" id="stage">
+          <canvas id="mapCanvas" aria-label="村落火灾模拟地图"></canvas>
+          <div class="loading" id="loading">正在装载模拟结果</div>
+          <div class="map-badge" id="mapBadge">— × — 元胞</div>
+        </section>
+
+        <aside class="rail inspector">
+          <p class="section-number">03 / 元胞查询</p>
+          <div class="empty-selection" id="emptySelection">点击地图中的任意元胞查看状态</div>
+          <dl id="cellDetails" hidden>
+            <dt>位置</dt><dd id="cellPosition">—</dd>
+            <dt>编号</dt><dd id="cellId">—</dd>
+            <dt>状态</dt><dd id="cellState">—</dd>
+            <dt>材质索引</dt><dd id="cellMaterial">—</dd>
+            <dt>剩余燃料</dt><dd id="cellFuel">—</dd>
+            <dt>表面温度</dt><dd id="cellTemperature">—</dd>
+            <dt>HRR</dt><dd id="cellHrr">—</dd>
+            <dt>建筑</dt><dd id="cellBuilding">—</dd>
+            <dt>房屋状态</dt><dd id="cellBuildingState">—</dd>
+          </dl>
+          <div class="metric-grid">
+            <div><span>当前燃烧</span><strong id="burningCount">—</strong></div>
+            <div><span>累计引燃</span><strong id="ignitedCount">—</strong></div>
+            <div><span>燃烧房屋</span><strong id="burningBuildingCount">—</strong></div>
+            <div><span>受影响房屋</span><strong id="affectedBuildingCount">—</strong></div>
+          </div>
+        </aside>
+      </main>
+
+      <footer class="transport">
+        <button id="jumpStart" title="回到开始">↤</button>
+        <button class="play" id="playPause" title="播放或暂停">▶</button>
+        <button id="stepBack" title="上一帧">−1</button>
+        <button id="stepForward" title="下一帧">+1</button>
+        <input id="timeline" type="range" min="0" max="0" value="0" step="1" aria-label="模拟时间轴" />
+        <select id="speed" aria-label="播放速度">
+          <option value="0.5">0.5×</option>
+          <option value="1" selected>1×</option>
+          <option value="2">2×</option>
+          <option value="5">5×</option>
+          <option value="10">10×</option>
+        </select>
+        <span id="frameReadout">0 / 0</span>
+      </footer>
+    </div>
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>

@@ -97,6 +97,128 @@ runs/static-example/
     └── perimeter.geojson
 ```
 
+## 村落二维元胞自动机（开发中）
+
+仓库现已包含第一条可运行的村落二次开发路径：二维逐格材质、有限燃料、有效暴露引燃、建筑轮廓统计和浏览器动态回放。当前模型与示例参数均处于研究原型/合成演示阶段。
+
+安装村落输入依赖后运行自包含案例：
+
+```bash
+conda env create -f environment.yml
+conda activate pyfireca-village
+pyfireca village prepare examples/village/two_buildings/case.yml --output prepared/two-buildings
+pyfireca village validate prepared/two-buildings --scenario examples/village/two_buildings/scenario.yml
+pyfireca village run prepared/two-buildings --scenario examples/village/two_buildings/scenario.yml --output runs/two-buildings
+pyfireca village view runs/two-buildings
+```
+
+如果当前只有真实卫星 GeoTIFF，可先生成一套明确标记为占位数据的整村试验输入：
+
+```bash
+pyfireca village bootstrap /path/to/village.tif \
+  --output work/village-bootstrap \
+  --cell-size-m 10 \
+  --end-time-s 120 \
+  --sample-interval-s 5
+pyfireca village prepare work/village-bootstrap/case.synthetic.yml \
+  --output work/village-prepared
+pyfireca village validate work/village-prepared \
+  --scenario work/village-bootstrap/scenario.synthetic.yml
+pyfireca village run work/village-prepared \
+  --scenario work/village-bootstrap/scenario.synthetic.yml \
+  --output runs/village-trial
+pyfireca village view runs/village-trial
+```
+
+如果建筑标注是与影像同尺寸的 LabelMe JSON，可在生成试验案例时直接加入：
+
+```bash
+pyfireca village bootstrap /path/to/village.tif \
+  --labelme-buildings /path/to/buildings.json \
+  --output work/village-labelme \
+  --cell-size-m 2
+```
+
+目前支持 LabelMe 的 `building` 标签、`polygon` 和 `rectangle` 图形。程序使用 GeoTIFF
+的 affine 把像素轮廓转为米制坐标，将建筑覆盖元胞设为合成木质材料，并保证自动生成的
+直接点火元胞位于中心建筑轮廓内。中心建筑定义为“距全部建筑质心平均位置最近的建筑”，
+再选择该建筑覆盖面积最大的元胞作为点火格。密集标注导致一个元胞与多栋建筑相交时，prepare
+会在质量报告中写入 `MULTI_BUILDING_CELLS` 警告，同时保留所有建筑对应关系。
+
+`bootstrap` 要求 GeoTIFF 至少包含三个 `uint8` RGB 波段，并带有以米为单位的投影 CRS。
+没有提供 LabelMe 时，它只把卫星影像视为观测数据；提供 LabelMe 时，卫星影像和建筑
+几何为观测输入。逐格材料类别、燃料参数、点火和天气仍是 `synthetic` 占位内容，只用于
+验证尺度、性能和完整工作流，不能用于风险结论。
+正式 GIS 输入也已支持 WGS84 Polygon/MultiPolygon 建筑 GeoJSON，以及与计算网格严格
+同 CRS、同 shape、同 affine 的整数分类材质 GeoTIFF 和代码映射 YAML。
+
+详细需求、科学边界和任务顺序见 [`PROJECT_PLAN.md`](PROJECT_PLAN.md)，实际开发进度见 [`docs/VILLAGE_PROGRESS.md`](docs/VILLAGE_PROGRESS.md)。
+
+v2 材料证据库可以独立校验。校验只检查 schema、单位、来源引用和缺失值，不会把
+`null` 自动替换为零：
+
+```bash
+pyfireca village validate-materials-v2 /path/to/material-catalog-2.yaml
+```
+
+`effective_exposure_ca_v2` 的首个数值内核已经包含表面热平衡、水分升温和蒸发、温度
+引燃、受燃料总能量约束的增长—稳定—衰减曲线，以及跨元胞辐射输入。当前证据库是
+`evidence_seed_not_calibrated`，需要补齐本地材料和建筑构造参数后才能接入高友村正式场景。
+
+仓库还提供明确标记为合成数值测试的两元胞 v2 案例。运行配置把材料参数、建筑构造
+参数、传热核和场景参数分开；稳定燃烧时长由逐格燃料总能量自动反算，避免燃烧曲线
+释放的能量超过燃料预算。下面的案例使用几何生成的等效点火焰辐射核：
+
+```bash
+conda activate pyfireca-village
+pyfireca village validate-v2 \
+  examples/village/v2_two_cells/case.point-source.synthetic.yml
+pyfireca village run-v2 \
+  examples/village/v2_two_cells/case.point-source.synthetic.yml \
+  --output runs/v2-point-source-reference
+```
+
+输出包含逐时刻状态、温度、剩余水分、剩余燃料、HRR，以及每格的点火原因和时间。
+该案例中的数值只用于验证算法和文件流程，不能作为木材、竹材或茅草的物性参数。
+
+点火焰核使用以下固定几何辐射份额：
+
+\[
+w_{ij}=\frac{A_{r,j}}{4\pi(R_{ij}^2+r_0^2)}
+\exp(-\kappa R_{ij})\prod_{c\in L_{ij}}\tau_c
+\]
+
+其中火焰有效位置可按风向和标定的倾斜系数移动；路径中的原胞透射率 `tau` 逐格相乘。
+程序不对权重重新归一化，并拒绝单个火源向外分配超过 100% 辐射功率的配置。这个核仍是
+降阶模型：火焰高度、近场正则尺度、透射率和风致倾斜系数都需要单独标定。
+
+v2 也可以直接使用 `village prepare` 生成的村落空间数据。场景文件按 prepared manifest
+中的材料 ID 提供完整的 v2 材料与构造参数；建筑遮挡格来自 `building_overlap.csv`，因此
+可追溯到准备阶段的建筑标注几何：
+
+```bash
+pyfireca village validate-prepared-v2 \
+  runs/gaoyou-labelme-central-300s/prepared \
+  --scenario examples/village/gaoyou_v2_scenario.synthetic.yml
+
+pyfireca village run-prepared-v2 \
+  runs/gaoyou-labelme-central-300s/prepared \
+  --scenario examples/village/gaoyou_v2_scenario.synthetic.yml \
+  --output runs/gaoyou-v2-building-physics-500min
+
+pyfireca village view runs/gaoyou-v2-building-physics-500min --port 8794
+```
+
+v2 浏览器回放可以在火灾状态、等效表面温度和原胞 HRR 之间切换，并在元胞查询面板
+显示对应数值。场景可使用 `end_time_min` 和 `sample_interval_min` 配置面向用户的分钟单位；
+求解器内部仍转换成秒以保持 SI 公式一致。示例仍使用合成系数，只用于验证高友村尺度
+的数据和计算链路。当前示例总时长为 500 分钟，内部时间步为 1 秒，浏览器回放约每
+8.33 分钟保存一帧，共 61 帧；降低回放采样频率不会改变求解器的逐秒物理计算。
+
+高友村 v2 合成场景只把观测建筑覆盖格作为可燃原胞，未分类背景保持不燃。默认图层仍
+使用原来的不燃、未燃、受热、燃烧、燃尽状态；房屋状态通过轮廓颜色和查询面板显示，
+不会用面填充遮住原胞状态。
+
 输入单位、NoData 语义、点火配置和输出说明见 [`docs/RUNNING_SIMULATOR.md`](docs/RUNNING_SIMULATOR.md)。
 
 ## 科学架构

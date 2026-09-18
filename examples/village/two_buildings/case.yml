@@ -1,0 +1,22 @@
+schema_version: village-case-1
+case_id: two-buildings-demo
+mode: synthetic_demo
+imagery:
+  path: imagery/village.ppm
+  reference: imagery/image_ref.json
+buildings:
+  path: annotations/buildings.local.json
+  format: local_json
+materials:
+  source: materials/material_grid.csv
+  format: grid_csv
+  catalog: materials/material_catalog.yml
+spatial:
+  coordinate_mode: local_metric
+  crs: null
+  grid:
+    x_min_m: 0.0
+    y_max_m: 8.0
+    height: 4
+    width: 6
+    cell_size_m: 2.0

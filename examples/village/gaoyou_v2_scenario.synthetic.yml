@@ -1,0 +1,82 @@
+schema_version: village-v2-prepared-scenario-1
+scenario_id: gaoyou-central-v2-synthetic-integration
+model: effective_exposure_ca_v2
+evidence: synthetic_integration_fixture_not_material_calibration
+
+# Keys must exactly match material_ids in the prepared-village manifest.
+material_mappings:
+  synthetic_grass:
+    construction_id: synthetic_unclassified_background
+    burnable: false
+    ignition_mode: piloted
+    material_parameters:
+      fuel_load_kg_m2: 0.0
+      moisture_content_dry_basis: 0.0
+      heat_of_combustion_J_kg: 0.0
+      ignition_temperature_K: 0.0
+      peak_hrrpua_W_m2: 0.0
+      radiative_fraction: 0.0
+      absorptivity: 0.0
+      growth_time_s: 0.0
+      decay_time_s: 0.0
+    construction_parameters:
+      effective_heated_dry_mass_kg_m2: 1.0
+      specific_heat_J_kg_K: 1000.0
+      emissivity: 0.9
+      ambient_heat_transfer_coefficient_W_m2_K: 10.0
+      backing_conductance_W_m2_K: 2.0
+      receiver_area_m2: 4.0
+      active_surface_area_m2: 0.0
+      pyrolysable_dry_mass_fraction: 0.0
+
+  synthetic_wood:
+    construction_id: synthetic_exposed_building_fuel
+    burnable: true
+    ignition_mode: piloted
+    material_parameters:
+      fuel_load_kg_m2: 15.0
+      moisture_content_dry_basis: 0.1
+      heat_of_combustion_J_kg: 16000000.0
+      ignition_temperature_K: 523.0
+      peak_hrrpua_W_m2: 300000.0
+      radiative_fraction: 0.4
+      absorptivity: 0.9
+      growth_time_s: 120.0
+      decay_time_s: 300.0
+    construction_parameters:
+      effective_heated_dry_mass_kg_m2: 2.0
+      specific_heat_J_kg_K: 1500.0
+      emissivity: 0.85
+      ambient_heat_transfer_coefficient_W_m2_K: 10.0
+      backing_conductance_W_m2_K: 2.0
+      receiver_area_m2: 4.0
+      active_surface_area_m2: 4.0
+      pyrolysable_dry_mass_fraction: 0.7
+
+# building_overlap.csv comes from the observed LabelMe building geometry. Its cells
+# attenuate only rays that pass through them; source and receptor cells are excluded.
+blockers:
+  background_transmissivity: 1.0
+  building_transmissivity: 0.2
+
+transport:
+  calibration: synthetic_point_source_and_building_transmission_test
+  parameters:
+    exposure_radius_m: 8.1
+    effective_flame_height_m: 6.0
+    effective_receiver_height_m: 2.0
+    near_field_regularization_m: 0.5
+    atmospheric_extinction_m_inv: 0.0
+    wind_speed_m_s: 0.0
+    wind_from_deg: 0.0
+    flame_tilt_coefficient_s_m: 0.0
+
+scenario:
+  ambient_temperature_K: 300.0
+  max_dt_s: 1.0
+  end_time_min: 500.0
+  sample_interval_min: 8.333333333333334
+  ignitions:
+    - cell: {row: 193, col: 285}
+      time_s: 0.0
+      kind: direct
