@@ -1,0 +1,161 @@
+schema_version: village-vegetation-profiles-1
+library_id: gaoyou-v02-independent-synthetic-profiles
+evidence: synthetic_integration_fixture_not_field_calibration
+production_ready: false
+profiles:
+  - id: inert_bare_or_road
+    label: 裸地或道路（不燃）
+    landcover_id: bare_or_road
+    burnable: false
+    evidence: rgb_hypothesis_requires_field_validation
+    parameters: {}
+
+  - id: synthetic_grass
+    label: 草地等效燃料（合成）
+    landcover_id: grass
+    burnable: true
+    evidence: synthetic_v02_integration_profile
+    parameters:
+      fuel_load_kg_m2: {value: 0.6, unit: kg/m^2, provenance: synthetic:v02_profile_fixture}
+      live_dry_mass_fraction: {value: 0.4, unit: '1', provenance: synthetic:v02_profile_fixture}
+      dead_dry_mass_fraction: {value: 0.6, unit: '1', provenance: synthetic:v02_profile_fixture}
+      live_moisture_content_dry_basis: {value: 0.6, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      dead_moisture_content_dry_basis: {value: 0.1, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:v02_profile_fixture}
+      pyrolysable_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ignition_temperature_K: {value: 500, unit: K, provenance: synthetic:v02_profile_fixture}
+      peak_hrrpua_W_m2: {value: 100000, unit: W/m^2_active, provenance: synthetic:v02_profile_fixture}
+      radiative_fraction: {value: 0.3, unit: '1', provenance: synthetic:v02_profile_fixture}
+      absorptivity: {value: 0.85, unit: '1', provenance: synthetic:v02_profile_fixture}
+      growth_time_s: {value: 20, unit: s, provenance: synthetic:v02_profile_fixture}
+      steady_time_s: {value: 38.8333333333333, unit: s, provenance: synthetic:energy_budget_derived}
+      decay_time_s: {value: 80, unit: s, provenance: synthetic:v02_profile_fixture}
+      effective_heated_dry_mass_kg_m2: {value: 0.3, unit: kg/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      specific_heat_J_kg_K: {value: 1500, unit: J/(kg*K), provenance: synthetic:v02_profile_fixture}
+      emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ambient_heat_transfer_coefficient_W_m2_K: {value: 12, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      backing_conductance_W_m2_K: {value: 1, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      active_surface_area_ratio: {value: 1.2, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      source_height_m: {value: 0.35, unit: m, provenance: synthetic:v02_profile_fixture}
+      receiver_height_m: {value: 0.15, unit: m, provenance: synthetic:v02_profile_fixture}
+
+  - id: synthetic_shrub
+    label: 灌木等效燃料（合成）
+    landcover_id: shrub
+    burnable: true
+    evidence: synthetic_v02_integration_profile
+    parameters:
+      fuel_load_kg_m2: {value: 2, unit: kg/m^2, provenance: synthetic:v02_profile_fixture}
+      live_dry_mass_fraction: {value: 0.55, unit: '1', provenance: synthetic:v02_profile_fixture}
+      dead_dry_mass_fraction: {value: 0.45, unit: '1', provenance: synthetic:v02_profile_fixture}
+      live_moisture_content_dry_basis: {value: 0.8, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      dead_moisture_content_dry_basis: {value: 0.12, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:v02_profile_fixture}
+      pyrolysable_dry_mass_fraction: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ignition_temperature_K: {value: 520, unit: K, provenance: synthetic:v02_profile_fixture}
+      peak_hrrpua_W_m2: {value: 180000, unit: W/m^2_active, provenance: synthetic:v02_profile_fixture}
+      radiative_fraction: {value: 0.35, unit: '1', provenance: synthetic:v02_profile_fixture}
+      absorptivity: {value: 0.88, unit: '1', provenance: synthetic:v02_profile_fixture}
+      growth_time_s: {value: 45, unit: s, provenance: synthetic:v02_profile_fixture}
+      steady_time_s: {value: 15, unit: s, provenance: synthetic:energy_budget_derived}
+      decay_time_s: {value: 180, unit: s, provenance: synthetic:v02_profile_fixture}
+      effective_heated_dry_mass_kg_m2: {value: 0.8, unit: kg/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      specific_heat_J_kg_K: {value: 1600, unit: J/(kg*K), provenance: synthetic:v02_profile_fixture}
+      emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ambient_heat_transfer_coefficient_W_m2_K: {value: 12, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      backing_conductance_W_m2_K: {value: 1.5, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1.2, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      active_surface_area_ratio: {value: 1.5, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      source_height_m: {value: 1.2, unit: m, provenance: synthetic:v02_profile_fixture}
+      receiver_height_m: {value: 0.6, unit: m, provenance: synthetic:v02_profile_fixture}
+
+  - id: synthetic_forest_floor
+    label: 林下枯落物等效燃料（合成）
+    landcover_id: forest_floor
+    burnable: true
+    evidence: synthetic_v02_integration_profile
+    parameters:
+      fuel_load_kg_m2: {value: 1.2, unit: kg/m^2, provenance: synthetic:v02_profile_fixture}
+      live_dry_mass_fraction: {value: 0.05, unit: '1', provenance: synthetic:v02_profile_fixture}
+      dead_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:v02_profile_fixture}
+      live_moisture_content_dry_basis: {value: 0.6, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      dead_moisture_content_dry_basis: {value: 0.15, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:v02_profile_fixture}
+      pyrolysable_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ignition_temperature_K: {value: 510, unit: K, provenance: synthetic:v02_profile_fixture}
+      peak_hrrpua_W_m2: {value: 100000, unit: W/m^2_active, provenance: synthetic:v02_profile_fixture}
+      radiative_fraction: {value: 0.32, unit: '1', provenance: synthetic:v02_profile_fixture}
+      absorptivity: {value: 0.86, unit: '1', provenance: synthetic:v02_profile_fixture}
+      growth_time_s: {value: 60, unit: s, provenance: synthetic:v02_profile_fixture}
+      steady_time_s: {value: 95.2, unit: s, provenance: synthetic:energy_budget_derived}
+      decay_time_s: {value: 180, unit: s, provenance: synthetic:v02_profile_fixture}
+      effective_heated_dry_mass_kg_m2: {value: 0.6, unit: kg/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      specific_heat_J_kg_K: {value: 1500, unit: J/(kg*K), provenance: synthetic:v02_profile_fixture}
+      emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ambient_heat_transfer_coefficient_W_m2_K: {value: 10, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      backing_conductance_W_m2_K: {value: 2, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      active_surface_area_ratio: {value: 1, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      source_height_m: {value: 0.25, unit: m, provenance: synthetic:v02_profile_fixture}
+      receiver_height_m: {value: 0.1, unit: m, provenance: synthetic:v02_profile_fixture}
+
+  - id: synthetic_tree_equivalent
+    label: 树木单层等效燃料（合成，非树冠火模型）
+    landcover_id: tree_equivalent
+    burnable: true
+    evidence: synthetic_v02_integration_profile
+    parameters:
+      fuel_load_kg_m2: {value: 8, unit: kg/m^2, provenance: synthetic:v02_profile_fixture}
+      live_dry_mass_fraction: {value: 0.65, unit: '1', provenance: synthetic:v02_profile_fixture}
+      dead_dry_mass_fraction: {value: 0.35, unit: '1', provenance: synthetic:v02_profile_fixture}
+      live_moisture_content_dry_basis: {value: 0.9, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      dead_moisture_content_dry_basis: {value: 0.15, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:v02_profile_fixture}
+      pyrolysable_dry_mass_fraction: {value: 0.75, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ignition_temperature_K: {value: 540, unit: K, provenance: synthetic:v02_profile_fixture}
+      peak_hrrpua_W_m2: {value: 150000, unit: W/m^2_active, provenance: synthetic:v02_profile_fixture}
+      radiative_fraction: {value: 0.38, unit: '1', provenance: synthetic:v02_profile_fixture}
+      absorptivity: {value: 0.88, unit: '1', provenance: synthetic:v02_profile_fixture}
+      growth_time_s: {value: 120, unit: s, provenance: synthetic:v02_profile_fixture}
+      steady_time_s: {value: 140, unit: s, provenance: synthetic:energy_budget_derived}
+      decay_time_s: {value: 600, unit: s, provenance: synthetic:v02_profile_fixture}
+      effective_heated_dry_mass_kg_m2: {value: 2, unit: kg/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      specific_heat_J_kg_K: {value: 1700, unit: J/(kg*K), provenance: synthetic:v02_profile_fixture}
+      emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ambient_heat_transfer_coefficient_W_m2_K: {value: 15, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      backing_conductance_W_m2_K: {value: 2, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1.5, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      active_surface_area_ratio: {value: 1.5, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      source_height_m: {value: 4, unit: m, provenance: synthetic:v02_profile_fixture}
+      receiver_height_m: {value: 2, unit: m, provenance: synthetic:v02_profile_fixture}
+
+  - id: synthetic_building
+    label: 建筑等效燃料（合成）
+    landcover_id: building
+    burnable: true
+    evidence: synthetic_v02_integration_profile_not_local_construction
+    parameters:
+      fuel_load_kg_m2: {value: 18, unit: kg/m^2, provenance: synthetic:v02_profile_fixture}
+      live_dry_mass_fraction: {value: 0, unit: '1', provenance: synthetic:not_applicable_to_building}
+      dead_dry_mass_fraction: {value: 1, unit: '1', provenance: synthetic:not_applicable_to_building}
+      live_moisture_content_dry_basis: {value: 0, unit: kg/kg_dry, provenance: synthetic:not_applicable_to_building}
+      dead_moisture_content_dry_basis: {value: 0.1, unit: kg/kg_dry, provenance: synthetic:v02_profile_fixture}
+      heat_of_combustion_J_kg_dry: {value: 16260000, unit: J/kg_dry, provenance: synthetic:v02_profile_fixture}
+      pyrolysable_dry_mass_fraction: {value: 0.6, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ignition_temperature_K: {value: 520, unit: K, provenance: synthetic:v02_profile_fixture}
+      peak_hrrpua_W_m2: {value: 300000, unit: W/m^2_active, provenance: synthetic:v02_profile_fixture}
+      radiative_fraction: {value: 0.4, unit: '1', provenance: synthetic:v02_profile_fixture}
+      absorptivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
+      growth_time_s: {value: 120, unit: s, provenance: synthetic:v02_profile_fixture}
+      steady_time_s: {value: 395.36, unit: s, provenance: synthetic:energy_budget_derived}
+      decay_time_s: {value: 300, unit: s, provenance: synthetic:v02_profile_fixture}
+      effective_heated_dry_mass_kg_m2: {value: 2, unit: kg/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      specific_heat_J_kg_K: {value: 1500, unit: J/(kg*K), provenance: synthetic:v02_profile_fixture}
+      emissivity: {value: 0.85, unit: '1', provenance: synthetic:v02_profile_fixture}
+      ambient_heat_transfer_coefficient_W_m2_K: {value: 10, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      backing_conductance_W_m2_K: {value: 2, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      active_surface_area_ratio: {value: 1, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      source_height_m: {value: 6, unit: m, provenance: synthetic:v02_profile_fixture}
+      receiver_height_m: {value: 2, unit: m, provenance: synthetic:v02_profile_fixture}

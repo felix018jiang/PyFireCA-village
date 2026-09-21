@@ -13,9 +13,12 @@ import numpy as np
 
 from pyfireca.village.bootstrap import bootstrap_village_case
 from pyfireca.village.exposure import estimate_exposure_resources
+from pyfireca.village.hypothetical import build_hypothetical_material_case
 from pyfireca.village.materials_v2 import load_material_catalog_v2
+from pyfireca.village.materials_v3 import load_material_catalog_v3
 from pyfireca.village.prepare import prepare_village_case
 from pyfireca.village.prepared_workflow_v2 import load_prepared_v2_case, run_prepared_v2_case
+from pyfireca.village.vegetation_prepare import prepare_vegetation_spatial
 from pyfireca.village.workflow import run_village_config, validate_village_run
 from pyfireca.village.workflow_v2 import load_v2_file_case, run_v2_file_case
 
@@ -36,10 +39,32 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
         type=Path,
         help="optional LabelMe JSON whose building shapes match the satellite image",
     )
+    hypothetical = commands.add_parser(
+        "hypothesize-materials",
+        help="derive an explicitly hypothetical material map from RGB imagery",
+    )
+    hypothetical.add_argument("imagery", type=Path)
+    hypothetical.add_argument("--labelme-buildings", type=Path, required=True)
+    hypothetical.add_argument("--output", type=Path, required=True)
+    hypothetical.add_argument("--cell-size-m", type=float, default=2.0)
+    vegetation_spatial = commands.add_parser(
+        "prepare-vegetation-spatial",
+        help="reproject imagery/buildings and create the V01 land-cover spatial package",
+    )
+    vegetation_spatial.add_argument("imagery", type=Path)
+    vegetation_spatial.add_argument("--labelme-buildings", type=Path, required=True)
+    vegetation_spatial.add_argument("--output", type=Path, required=True)
+    vegetation_spatial.add_argument("--cell-size-m", type=float, default=2.0)
+    vegetation_spatial.add_argument("--working-crs")
+    vegetation_spatial.add_argument("--ignition-building-id", default="B0233")
     materials_v2 = commands.add_parser(
         "validate-materials-v2", help="validate a material-catalog-2 evidence file"
     )
     materials_v2.add_argument("catalog", type=Path)
+    materials_v3 = commands.add_parser(
+        "validate-materials-v3", help="validate parameter-level material evidence and gaps"
+    )
+    materials_v3.add_argument("catalog", type=Path)
     validate_v2 = commands.add_parser(
         "validate-v2", help="validate a complete effective_exposure_ca_v2 file case"
     )
@@ -74,6 +99,47 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
 
 
 def run_village_command(args: argparse.Namespace) -> int:
+    if args.village_command == "prepare-vegetation-spatial":
+        prepared = prepare_vegetation_spatial(
+            args.imagery,
+            args.labelme_buildings,
+            args.output,
+            cell_size_m=args.cell_size_m,
+            working_crs=args.working_crs,
+            ignition_building_id=args.ignition_building_id,
+        )
+        print(f"V01 vegetation spatial package: {prepared.resolve()}")
+        print("Combustion profiles remain unresolved until V02; no fire simulation was run.")
+        return 0
+    if args.village_command == "hypothesize-materials":
+        case, scenario = build_hypothetical_material_case(
+            args.imagery,
+            args.labelme_buildings,
+            args.output,
+            cell_size_m=args.cell_size_m,
+        )
+        print(f"Hypothetical material case: {case.resolve()}")
+        print(f"Hypothetical v2 scenario: {scenario.resolve()}")
+        print("RGB-derived classes and all combustion parameters are synthetic assumptions.")
+        return 0
+    if args.village_command == "validate-materials-v3":
+        catalog = load_material_catalog_v3(args.catalog)
+        candidates = [
+            material
+            for material in catalog.materials
+            if material.scope == "village_candidate" and material.burnable
+        ]
+        print(f"Valid material-catalog-3: {args.catalog.resolve()}")
+        print(
+            f"Materials: {len(catalog.materials)}; village fuel candidates: {len(candidates)}; "
+            f"parameter-complete: {len(catalog.parameter_complete_village_materials)}; "
+            f"sourced parameters: {catalog.evidenced_parameter_count}"
+        )
+        print(f"Production ready: {catalog.production_ready}; status: {catalog.catalog_status}")
+        for material in candidates:
+            if material.missing_runtime_parameters:
+                print(f"  {material.id}: missing {', '.join(material.missing_runtime_parameters)}")
+        return 0
     if args.village_command == "validate-prepared-v2":
         case = load_prepared_v2_case(args.prepared, args.scenario)
         request = case.request

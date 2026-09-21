@@ -165,7 +165,9 @@ function showSelection() {
   const g=data.grid, i=selected.row*g.width+selected.col, offset=frame*g.width*g.height+i;
   $("emptySelection").hidden=true; $("cellDetails").hidden=false;
   $("cellPosition").textContent=`${selected.row}, ${selected.col}`; $("cellId").textContent=i;
-  $("cellState").textContent=stateLabels[data.states[offset]]; $("cellMaterial").textContent=data.material[i];
+  $("cellState").textContent=stateLabels[data.states[offset]];
+  const materialCode=data.material[i], materialLabels=data.manifest.material.labels||{};
+  $("cellMaterial").textContent=materialLabels[String(materialCode)]||materialCode;
   $("cellFuel").textContent=`${(data.fuel[offset]*100).toFixed(1)}%`;
   $("cellTemperature").textContent=data.temperature?`${data.temperature[offset].toFixed(1)} K`:"—";
   $("cellHrr").textContent=data.hrr?`${data.hrr[offset].toFixed(1)} W`:"—";

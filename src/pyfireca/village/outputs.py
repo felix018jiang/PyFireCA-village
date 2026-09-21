@@ -120,7 +120,15 @@ def write_village_viewer(
                 "sample_times_s": [snapshot.time_s for snapshot in result.snapshots],
                 "state": {"path": "state.bin", "dtype": "uint8", "order": "C"},
                 "fuel": {"path": "fuel.bin", "dtype": "float32-le", "order": "C"},
-                "material": {"path": "material.bin", "dtype": "int32-le", "order": "C"},
+                "material": {
+                    "path": "material.bin",
+                    "dtype": "int32-le",
+                    "order": "C",
+                    "labels": {
+                        str(index): material_id
+                        for index, material_id in enumerate(prepared_manifest["material_ids"])
+                    },
+                },
                 "building_cells": "building_cells.json",
                 "model": "effective_exposure_ca_v1",
                 "stop_reason": result.stop_reason,
@@ -253,7 +261,15 @@ def write_v2_village_viewer(
                     "maximum": maximum_hrr,
                     "scale": "log1p",
                 },
-                "material": {"path": "material.bin", "dtype": "int32-le", "order": "C"},
+                "material": {
+                    "path": "material.bin",
+                    "dtype": "int32-le",
+                    "order": "C",
+                    "labels": {
+                        str(index): material_id
+                        for index, material_id in enumerate(prepared_manifest["material_ids"])
+                    },
+                },
                 "building_cells": "building_cells.json",
                 "model": "effective_exposure_ca_v2",
             },

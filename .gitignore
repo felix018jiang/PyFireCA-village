@@ -1,4 +1,4 @@
-# Python
+# Python bytecode / native extensions
 __pycache__/
 *.py[cod]
 *.pyo
@@ -6,40 +6,69 @@ __pycache__/
 *.so
 .Python
 
-# Environments
+# Local environments and machine-specific configuration
 .venv/
 .venv-*/
 venv/
 env/
 .conda/
+.env
+.env.*
+!.env.example
 
-# Packaging
+# Packaging / installation artifacts
 build/
 dist/
 *.egg-info/
 .package-smoke/
+pip-wheel-metadata/
 
-# Testing / coverage
+# Testing / coverage / profiling
 .pytest_cache/
+.hypothesis/
+.tox/
+.nox/
 .coverage
+.coverage.*
 coverage.xml
 htmlcov/
+*.prof
+*.lprof
 
 # Linters / type checkers
 .ruff_cache/
 .mypy_cache/
+.pyright/
+.pytype/
 
-# Editors / OS
+# Notebooks
+.ipynb_checkpoints/
+
+# Editors / OS metadata
 .vscode/
 .idea/
+*.swp
+*.swo
+*~
 .DS_Store
+._*
 Thumbs.db
 
-# Local data and generated runs
-data/local/
-runs/
-outputs/
-benchmarks/results/
+# PyFireCA local inputs and generated simulation artifacts
+# Keep examples/, tests/ fixtures, source, YAML configs and documentation tracked.
+/data/local/
+/runs/
+/prepared/
+/work/
+/outputs/
+/artifacts/
+/benchmarks/results/
+
+# Runtime scratch files and logs
+/tmp/
+/scratch/
+*.log
+*.pid
 
 # Documentation build
-site/
+/site/

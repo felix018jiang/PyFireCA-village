@@ -1,0 +1,40 @@
+schema_version: village-vegetation-case-1
+case_id: gaoyou-v02-spatial-and-profile-validation
+model: effective_exposure_ca_v3
+evidence: synthetic_integration_fixture_not_fire_prediction
+prepared: ../../../runs/gaoyou-vegetation-v3/v01-spatial-utm49n-final
+profiles: profiles.synthetic.yml
+landcover_profile_map:
+  bare_or_road: inert_bare_or_road
+  grass: synthetic_grass
+  shrub: synthetic_shrub
+  forest_floor: synthetic_forest_floor
+  tree_equivalent: synthetic_tree_equivalent
+  building: synthetic_building
+scope:
+  vegetation_mode: equivalent_single_layer
+  radiation: true
+  rothermel_front: false
+  crown_transition: false
+  spotting: false
+weather:
+  wind_speed_m_s: {value: 0, unit: m/s, provenance: synthetic:still_air_v02_fixture}
+  wind_from_deg: {value: 0, unit: deg, provenance: synthetic:irrelevant_at_zero_speed}
+scenario:
+  ambient_temperature_K: {value: 300, unit: K, provenance: synthetic:v02_fixture}
+  max_dt_s: {value: 1, unit: s, provenance: synthetic:v02_numerical_setting}
+  end_time_min: {value: 500, unit: min, provenance: user_requirement:500_minute_horizon}
+  sample_interval_min: {value: 5, unit: min, provenance: synthetic:v02_output_setting}
+  ignitions:
+    - world_xy_m: [371461.0, 2874597.0]
+      time_s: 0
+      kind: direct
+      provenance: V01:B0233_maximum_overlap_cell
+transport:
+  exposure_radius_m: {value: 8, unit: m, provenance: synthetic:v02_fixture_not_calibrated}
+  near_field_regularization_m: {value: 0.5, unit: m, provenance: synthetic:v02_fixture_not_calibrated}
+  atmospheric_extinction_m_inv: {value: 0, unit: 1/m, provenance: synthetic:no_atmospheric_attenuation}
+  flame_tilt_coefficient_s_m: {value: 0, unit: s/m, provenance: synthetic:disabled_at_v02}
+resources:
+  max_edge_count: 5000000
+  max_memory_mb: 2048

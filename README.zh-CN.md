@@ -161,6 +161,17 @@ v2 材料证据库可以独立校验。校验只检查 schema、单位、来源�
 pyfireca village validate-materials-v2 /path/to/material-catalog-2.yaml
 ```
 
+逐参数可追溯的高友村材料证据库可用以下命令校验：
+
+```bash
+pyfireca village validate-materials-v3 \
+  examples/village/material-catalog-3.gaoyou-evidence.yml
+```
+
+目录为每个数值记录来源、原文位置、实测/推导/假设类型、单位和试验条件；本地材料
+缺值仍保持为空，不会自动注入现有模拟。填报要求见
+[`docs/VILLAGE_MATERIAL_EVIDENCE.md`](docs/VILLAGE_MATERIAL_EVIDENCE.md)。
+
 `effective_exposure_ca_v2` 的首个数值内核已经包含表面热平衡、水分升温和蒸发、温度
 引燃、受燃料总能量约束的增长—稳定—衰减曲线，以及跨元胞辐射输入。当前证据库是
 `evidence_seed_not_calibrated`，需要补齐本地材料和建筑构造参数后才能接入高友村正式场景。

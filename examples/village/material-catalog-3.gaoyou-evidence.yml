@@ -1,0 +1,286 @@
+schema_version: material-catalog-3
+model: effective_exposure_ca_v2
+catalog_status: evidence_inventory_not_calibrated
+production_ready: false
+
+# A source appearing here does not validate every material. Each numeric value below
+# must identify its own source, location, method and specimen conditions.
+sources:
+  Janssens1991:
+    title: A Thermal Model for Piloted Ignition of Wood Including Variable Thermophysical Properties
+    citation: Janssens, M. (1991). Fire Safety Science 3, 167-176. https://doi.org/10.3801/IAFSS.FSS.3-167
+    kind: peer_reviewed_conference_paper
+    url: https://publications.iafss.org/publications/fss/3/167/view/fss_3-167.pdf
+  TranWhite1992:
+    title: Burning Rate of Solid Wood Measured in a Heat Release Rate Calorimeter
+    citation: Tran, H. C., and White, R. H. (1992). Fire and Materials 16, 197-206.
+    kind: government_research_publication
+    url: https://research.fs.usda.gov/treesearch/5952
+  XuEtAl2017:
+    title: Combustion Performance of Engineered Bamboo from Cone Calorimeter Tests
+    citation: Xu, Q. et al. (2017). European Journal of Wood and Wood Products 75, 161-173. https://doi.org/10.1007/s00107-016-1074-6
+    kind: peer_reviewed_journal_article
+    url: https://par.nsf.gov/servlets/purl/10063494
+
+materials:
+  - id: wood_traditional
+    label: 高友村传统建筑木材（树种待调查）
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 树种、构件厚度、含水率、燃料负荷和外露面积均待现场调查或试验。
+    parameters: &unknown_parameters
+      fuel_load_kg_m2: null
+      moisture_content_dry_basis: null
+      heat_of_combustion_J_kg: null
+      critical_heat_flux_W_m2: null
+      ignition_temperature_K: null
+      thermal_inertia_J2_m4_K2_s: null
+      peak_hrrpua_W_m2: null
+      radiative_fraction: null
+      absorptivity: null
+      growth_time_s: null
+      steady_time_s: null
+      decay_time_s: null
+
+  - id: wood_aged
+    label: 高友村老化木构件
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 老化程度、树种、表面状态及含水率必须分别记录；不得套用统一老化系数。
+    parameters: *unknown_parameters
+
+  - id: wood_moisture_variant
+    label: 高友村不同含水率木材
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 含水率是实测场景变量，不等于材料老化程度。
+    parameters: *unknown_parameters
+
+  - id: bamboo_natural
+    label: 高友村天然竹材
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需记录竹种、壁厚、密度、含水率和构件排列；含胶工程竹不直接替代。
+    parameters: *unknown_parameters
+
+  - id: thatch_roof
+    label: 茅草屋面
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需测屋面厚度、堆密度、含水率及覆盖方式。
+    parameters: *unknown_parameters
+
+  - id: hay_roof
+    label: 干草屋面
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需区分草种和堆积结构；热板点火温度不能替代辐射点火温度。
+    parameters: *unknown_parameters
+
+  - id: grass
+    label: 草地
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需测当地活、死燃料量和含水率。
+    parameters: *unknown_parameters
+
+  - id: shrub
+    label: 灌木
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需记录植被种类、活死比例和冠层结构。
+    parameters: *unknown_parameters
+
+  - id: surface_litter
+    label: 地表枯落物
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需测燃料床深度、压实度、质量和含水率。
+    parameters: *unknown_parameters
+
+  - id: crop_straw_pile
+    label: 农作物秸秆堆
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 需测当地堆积形态、通风空隙和单位地面燃料量。
+    parameters: *unknown_parameters
+
+  - id: firewood_pile
+    label: 薪柴堆
+    role: fuel
+    scope: village_candidate
+    burnable: true
+    conditions: 实体木材试件不能直接代表有空隙的薪柴堆。
+    parameters: *unknown_parameters
+
+  - id: brick
+    label: 无有机覆层砖
+    role: inert_solid
+    scope: village_candidate
+    burnable: false
+    conditions: 不燃分类仍需现场核对覆层；墙体高度、开口和热传导另建构造模型。
+    parameters: *unknown_parameters
+
+  - id: stone
+    label: 天然石材
+    role: inert_solid
+    scope: village_candidate
+    burnable: false
+    conditions: 仅为待现场确认的不燃分类，不代表无限高遮挡。
+    parameters: *unknown_parameters
+
+  - id: concrete
+    label: 无有机覆层混凝土
+    role: inert_solid
+    scope: village_candidate
+    burnable: false
+    conditions: 不考虑爆裂或结构失效；覆层须另标。
+    parameters: *unknown_parameters
+
+  - id: roof_tile
+    label: 陶土或混凝土瓦片
+    role: protective_cover
+    scope: village_candidate
+    burnable: false
+    conditions: 不可删除瓦片下方的木结构燃料；保护层传热与失效另建模型。
+    parameters: *unknown_parameters
+
+  - id: mineral_soil
+    label: 无机土壤
+    role: fuel_break
+    scope: village_candidate
+    burnable: false
+    conditions: 泥炭和有机腐殖层不适用。
+    parameters: *unknown_parameters
+
+  - id: bare_ground
+    label: 无燃料裸地
+    role: fuel_break
+    scope: village_candidate
+    burnable: false
+    conditions: 只切断燃料连续性，不阻止跨越辐射。
+    parameters: *unknown_parameters
+
+  - id: road_mineral
+    label: 无可燃覆盖的矿物道路
+    role: fuel_break
+    scope: village_candidate
+    burnable: false
+    conditions: 沥青、车辆、落叶和路边草带另分类。
+    parameters: *unknown_parameters
+
+  - id: water
+    label: 水体
+    role: fuel_break
+    scope: village_candidate
+    burnable: false
+    conditions: 不燃，但不把两岸辐射自动设为零。
+    parameters: *unknown_parameters
+
+  # This is a published reference specimen, not a Gaoyou material preset.
+  - id: wood_douglas_ovendry_reference
+    label: 烘干花旗松竖直锥形量热参考试件
+    role: reference_only
+    scope: reference_only
+    burnable: true
+    conditions: 花旗松；烘干；平均厚度16.8 mm；竖直锥形量热；15至45 kW/m2入射辐射。
+    parameters:
+      <<: *unknown_parameters
+      ignition_temperature_K:
+        value: 623
+        unit: K
+        source_id: Janssens1991
+        locator: Table 4, Douglas fir row, page 174
+        method: measured
+        conditions: 多个试件的平均表面点火温度；竖直锥形量热；烘干花旗松。
+      critical_heat_flux_W_m2:
+        value: 13000
+        unit: W/m2
+        source_id: Janssens1991
+        locator: Table 4, Douglas fir row, page 174; equation 6
+        method: derived
+        conditions: 论文由平均点火温度及热损失关系计算；非直接测量阈值。
+      thermal_inertia_J2_m4_K2_s:
+        value: 158000
+        unit: J2/(m4*K2*s)
+        source_id: Janssens1991
+        locator: Table 4, Douglas fir row, page 174; equation 18 regression
+        method: derived
+        conditions: 由点火时间回归斜率得到的表观kρc；原表0.158 kJ2/(m4*K2*s)换算为SI；代表温度约为环境温度与点火温度中点。
+      absorptivity:
+        value: 0.88
+        unit: '1'
+        source_id: Janssens1991
+        locator: Page 175, paragraph following Table 4
+        method: assumed
+        conditions: 作者用于分析的平均假设值；非该花旗松试件实测吸收率。
+
+  - id: wood_southern_pine_reference
+    label: 南方松厚木块量热参考试件
+    role: reference_only
+    scope: reference_only
+    burnable: true
+    conditions: 南方松；150×150×64 mm胶合厚木块；23°C、50%相对湿度调湿；平均含水率8至9%；热流垂直木纹并与年轮相切；该条只收录55.5 kW/m2试验行的干基有效燃烧热。
+    parameters:
+      <<: *unknown_parameters
+      heat_of_combustion_J_kg:
+        value: 16260000
+        unit: J/kg_dry_mass_loss
+        source_id: TranWhite1992
+        locator: Table 4, Southern pine row at 55.5 kW/m2, page 202; equations 5 to 7
+        method: derived
+        conditions: 由氧耗量热HRR与质量损失修正为干质量损失基准；单个试验行；论文显示该有效燃烧热随热流变化，不能视为固定材料常数。
+
+  - id: bamboo_laminated_reference
+    label: 含胶层积毛竹横纹受热锥形量热参考试件
+    role: reference_only
+    scope: reference_only
+    burnable: true
+    conditions: 商品层积毛竹板；毛竹条及约150 g/m2聚氨酯胶；100×100×50 mm；水平放置并有引燃器；入射热流垂直木纹；下列与热流有关的数值取50 kW/m2列。工程竹不得替代天然竹。
+    parameters:
+      <<: *unknown_parameters
+      moisture_content_dry_basis:
+        value: 0.105
+        unit: kg/kg_dry
+        source_id: XuEtAl2017
+        locator: Table 2, row 2, laminated bamboo across-grain columns, page 164; ISO 13061-1 method stated on page 163
+        method: measured
+        conditions: 论文报告含水率10.5%；同一含水率适用于25、50和75 kW/m2试件列。
+      heat_of_combustion_J_kg:
+        value: 13000000
+        unit: J/kg_dry_mass_loss
+        source_id: XuEtAl2017
+        locator: Table 2, row 12, laminated bamboo across grain at 50 kW/m2, page 164
+        method: derived
+        conditions: 锥形量热氧耗法得到的有效燃烧热；论文表列13 MJ/kg；仅对应50 kW/m2横纹受热条件。
+      critical_heat_flux_W_m2:
+        value: 6000
+        unit: W/m2
+        source_id: XuEtAl2017
+        locator: Table 2, row 5, laminated bamboo across grain, page 164; equation 3
+        method: derived
+        conditions: 由点火时间负平方根对入射热流的直线拟合截距除以0.76估算；不是直接逐级降低热流测得的阈值。
+      ignition_temperature_K:
+        value: 570.15
+        unit: K
+        source_id: XuEtAl2017
+        locator: Table 2, row 6, laminated bamboo across grain, page 164; equation 4
+        method: derived
+        conditions: 原表297°C换算为570.15 K；由临界热流并假设表面热损失由辐射主导而近似得到，非表面热电偶实测。
+      peak_hrrpua_W_m2:
+        value: 235000
+        unit: W/m2
+        source_id: XuEtAl2017
+        locator: Table 2, row 8, laminated bamboo across grain at 50 kW/m2, page 164
+        method: measured
+        conditions: 50 kW/m2入射热流下的第一热释放率峰值；不是五分钟平均值，也不适用于25或75 kW/m2列。
