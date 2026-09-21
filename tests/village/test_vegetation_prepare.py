@@ -27,9 +27,7 @@ def test_geometry_serialization_preserves_holes_and_multipart():
         [(0, 0), (4, 0), (4, 4), (0, 4)],
         holes=[[(1, 1), (2, 1), (2, 2), (1, 2)]],
     )
-    geometry = MultiPolygon(
-        [polygon_with_hole, Polygon([(5, 0), (6, 0), (6, 1), (5, 1)])]
-    )
+    geometry = MultiPolygon([polygon_with_hole, Polygon([(5, 0), (6, 0), (6, 1), (5, 1)])])
 
     serialized = geometry_to_polygons(geometry)
 

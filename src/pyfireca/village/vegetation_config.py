@@ -191,9 +191,7 @@ def load_vegetation_case(path: str | Path) -> VegetationCase:
     known = _load_array(prepared, "known_mask", grid.shape)
     landcover = _load_array(prepared, "landcover_index", grid.shape)
     evidence_index = _load_array(prepared, "evidence_index", grid.shape)
-    coverage = _load_array(prepared, "landcover_coverage_fraction", grid.shape).astype(
-        np.float64
-    )
+    coverage = _load_array(prepared, "landcover_coverage_fraction", grid.shape).astype(np.float64)
     if domain.dtype != np.bool_ or known.dtype != np.bool_:
         raise TypeError("prepared domain_mask and known_mask must be boolean")
     if not np.issubdtype(landcover.dtype, np.integer):
@@ -247,8 +245,7 @@ def load_vegetation_case(path: str | Path) -> VegetationCase:
     weather_raw = _mapping(root["weather"], "weather")
     _exact_keys(weather_raw, {"wind_speed_m_s", "wind_from_deg"}, "weather")
     weather = {
-        name: _evidenced_value(weather_raw[name], name, f"weather.{name}")
-        for name in weather_raw
+        name: _evidenced_value(weather_raw[name], name, f"weather.{name}") for name in weather_raw
     }
     if weather["wind_from_deg"].value >= 360.0:
         raise ValueError("weather.wind_from_deg.value must lie in [0, 360)")
@@ -291,8 +288,7 @@ def load_vegetation_case(path: str | Path) -> VegetationCase:
         if not isinstance(coordinates, list) or len(coordinates) != 2:
             raise ValueError(f"{name}.world_xy_m must be a two-value list")
         if any(
-            isinstance(value, bool) or not isinstance(value, (int, float))
-            for value in coordinates
+            isinstance(value, bool) or not isinstance(value, (int, float)) for value in coordinates
         ):
             raise TypeError(f"{name}.world_xy_m must contain numeric coordinates")
         x_m, y_m = (float(value) for value in coordinates)
@@ -363,9 +359,7 @@ def load_vegetation_case(path: str | Path) -> VegetationCase:
         if profile.burnable:
             initial_mass = covered_area * profile.value("fuel_load_kg_m2")
             pyrolysable_mass = initial_mass * profile.value("pyrolysable_dry_mass_fraction")
-            available_energy = (
-                covered_area * profile.budget.available_energy_J_m2_covered
-            )
+            available_energy = covered_area * profile.budget.available_energy_J_m2_covered
             curve_energy = covered_area * profile.budget.curve_energy_J_m2_covered
         else:
             initial_mass = pyrolysable_mass = available_energy = curve_energy = 0.0
@@ -405,9 +399,7 @@ def load_vegetation_case(path: str | Path) -> VegetationCase:
     )
 
 
-def write_vegetation_validation_report(
-    case: VegetationCase, output_dir: str | Path
-) -> Path:
+def write_vegetation_validation_report(case: VegetationCase, output_dir: str | Path) -> Path:
     """Write a reproducible V02 preflight report without starting a simulation."""
 
     if not isinstance(case, VegetationCase):
@@ -429,8 +421,7 @@ def write_vegetation_validation_report(
                 "pyrolysable_dry_fuel_kg": budget.pyrolysable_dry_fuel_kg,
                 "available_energy_J": budget.available_energy_J,
                 "configured_curve_energy_J": budget.configured_curve_energy_J,
-                "energy_margin_J": budget.available_energy_J
-                - budget.configured_curve_energy_J,
+                "energy_margin_J": budget.available_energy_J - budget.configured_curve_energy_J,
             }
             for budget in case.spatial_budgets
         ]
@@ -447,9 +438,7 @@ def write_vegetation_validation_report(
                         "available_energy_J_m2_covered": (
                             profile.budget.available_energy_J_m2_covered
                         ),
-                        "curve_energy_J_m2_covered": (
-                            profile.budget.curve_energy_J_m2_covered
-                        ),
+                        "curve_energy_J_m2_covered": (profile.budget.curve_energy_J_m2_covered),
                         "margin_J_m2_covered": profile.budget.margin_J_m2_covered,
                         "utilization_fraction": profile.budget.utilization_fraction,
                     }
@@ -475,9 +464,7 @@ def write_vegetation_validation_report(
             },
             "domain_cell_count": int(np.count_nonzero(case.domain_mask)),
             "known_cell_count": int(np.count_nonzero(case.known_mask)),
-            "unknown_domain_cell_count": int(
-                np.count_nonzero(case.domain_mask & ~case.known_mask)
-            ),
+            "unknown_domain_cell_count": int(np.count_nonzero(case.domain_mask & ~case.known_mask)),
             "burnable_cell_count": int(np.count_nonzero(case.burnable_mask)),
             "parameter_units": dict(PARAMETER_UNITS),
             "profile_checks": profile_checks,
@@ -507,9 +494,7 @@ def write_vegetation_validation_report(
             "case_sha256": _sha256(case.path),
             "profiles_sha256": _sha256(case.profiles.path),
             "prepared_manifest_sha256": _sha256(case.prepared_dir / "manifest.json"),
-            "prepared_quality_report_sha256": _sha256(
-                case.prepared_dir / "quality_report.json"
-            ),
+            "prepared_quality_report_sha256": _sha256(case.prepared_dir / "quality_report.json"),
             "artifacts": ["case.snapshot.yml", "profiles.snapshot.yml", "budget_report.json"],
         }
         (output / "manifest.json").write_text(

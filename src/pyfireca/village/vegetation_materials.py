@@ -110,12 +110,9 @@ class VegetationFuelProfile:
     def weighted_moisture_content_dry_basis(self) -> float:
         if not self.burnable:
             return 0.0
-        return (
-            self.value("live_dry_mass_fraction")
-            * self.value("live_moisture_content_dry_basis")
-            + self.value("dead_dry_mass_fraction")
-            * self.value("dead_moisture_content_dry_basis")
-        )
+        return self.value("live_dry_mass_fraction") * self.value(
+            "live_moisture_content_dry_basis"
+        ) + self.value("dead_dry_mass_fraction") * self.value("dead_moisture_content_dry_basis")
 
 
 @dataclass(frozen=True, slots=True)
@@ -166,10 +163,10 @@ def _budget(profile_id: str, parameters: dict[str, EvidencedValue]) -> ProfileBu
         * value("pyrolysable_dry_mass_fraction")
         * value("heat_of_combustion_J_kg_dry")
     )
-    curve = value("peak_hrrpua_W_m2") * value("active_surface_area_ratio") * (
-        value("growth_time_s") / 3.0
-        + value("steady_time_s")
-        + value("decay_time_s") / 2.0
+    curve = (
+        value("peak_hrrpua_W_m2")
+        * value("active_surface_area_ratio")
+        * (value("growth_time_s") / 3.0 + value("steady_time_s") + value("decay_time_s") / 2.0)
     )
     tolerance = max(1e-6, available * 1e-12)
     if curve > available + tolerance:
@@ -253,8 +250,7 @@ def load_vegetation_profiles(path: str | Path) -> VegetationProfileLibrary:
                 )
             budget = _budget(identifier, parameters)
             has_synthetic_value |= any(
-                parameter.provenance.startswith("synthetic:")
-                for parameter in parameters.values()
+                parameter.provenance.startswith("synthetic:") for parameter in parameters.values()
             )
         else:
             budget = None

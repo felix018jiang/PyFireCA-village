@@ -117,8 +117,7 @@ def test_v3_validation_rejects_inconsistent_conservation_arrays(tmp_path):
     case = _fixture_case(tmp_path)
     physics = resolve_vegetation_physics(case)
     values = {
-        name: getattr(physics.arrays, name).copy()
-        for name in physics.arrays.__dataclass_fields__
+        name: getattr(physics.arrays, name).copy() for name in physics.arrays.__dataclass_fields__
     }
     values["water_mass_kg"][0, 0] += 1.0
     with pytest.raises(ValueError, match="water_mass_kg"):

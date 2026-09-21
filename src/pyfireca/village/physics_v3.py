@@ -56,8 +56,10 @@ def moisture_energy_demand_J(water_mass_kg: float, ambient_temperature_K: float)
         raise ValueError("water_mass_kg must be finite and non-negative")
     if not isfinite(ambient_temperature_K) or ambient_temperature_K <= 0.0:
         raise ValueError("ambient_temperature_K must be finite and positive")
-    sensible = water_mass_kg * WATER_SPECIFIC_HEAT_J_KG_K * max(
-        0.0, WATER_BOILING_TEMPERATURE_K - ambient_temperature_K
+    sensible = (
+        water_mass_kg
+        * WATER_SPECIFIC_HEAT_J_KG_K
+        * max(0.0, WATER_BOILING_TEMPERATURE_K - ambient_temperature_K)
     )
     return sensible + water_mass_kg * WATER_VAPORIZATION_ENTHALPY_J_KG
 
@@ -104,8 +106,7 @@ class V3CellPhysicsArrays:
         if not isfinite(cell_area_m2) or cell_area_m2 <= 0.0:
             raise ValueError("cell_area_m2 must be finite and positive")
         values = {
-            name: _array(name, getattr(self, name), shape)
-            for name in self.__dataclass_fields__
+            name: _array(name, getattr(self, name), shape) for name in self.__dataclass_fields__
         }
         for name in (
             "coverage_fraction",
@@ -128,8 +129,7 @@ class V3CellPhysicsArrays:
             "water_mass_kg": values["live_water_mass_kg"] + values["dead_water_mass_kg"],
             "pyrolysable_dry_fuel_mass_kg": values["initial_dry_fuel_mass_kg"]
             * values["pyrolysable_dry_mass_fraction"],
-            "peak_hrr_W": values["peak_hrrpua_W_m2_active"]
-            * values["active_surface_area_m2"],
+            "peak_hrr_W": values["peak_hrrpua_W_m2_active"] * values["active_surface_area_m2"],
             "available_energy_J": values["pyrolysable_dry_fuel_mass_kg"]
             * values["heat_of_combustion_J_kg_dry"],
         }
@@ -171,8 +171,10 @@ def resolve_vegetation_physics(case: VegetationCase) -> ResolvedV3Physics:
     if not isinstance(case, VegetationCase):
         raise TypeError("case must be a VegetationCase")
     shape = case.grid.shape
+
     def zero() -> NDArray[np.float64]:
         return np.zeros(shape, dtype=np.float64)
+
     fields = {name: zero() for name in V3CellPhysicsArrays.__dataclass_fields__}
     fields["coverage_fraction"] = case.coverage_fraction.copy()
     fields["covered_area_m2"] = case.coverage_fraction * case.grid.cell_area_m2
@@ -224,11 +226,8 @@ def resolve_vegetation_physics(case: VegetationCase) -> ResolvedV3Physics:
             "growth_time_s": np.full_like(covered, parameter("growth_time_s")),
             "steady_time_s": np.full_like(covered, parameter("steady_time_s")),
             "decay_time_s": np.full_like(covered, parameter("decay_time_s")),
-            "effective_heated_dry_mass_kg": covered
-            * parameter("effective_heated_dry_mass_kg_m2"),
-            "specific_heat_J_kg_K": np.full_like(
-                covered, parameter("specific_heat_J_kg_K")
-            ),
+            "effective_heated_dry_mass_kg": covered * parameter("effective_heated_dry_mass_kg_m2"),
+            "specific_heat_J_kg_K": np.full_like(covered, parameter("specific_heat_J_kg_K")),
             "emissivity": np.full_like(covered, parameter("emissivity")),
             "ambient_heat_transfer_coefficient_W_m2_K": np.full_like(
                 covered, parameter("ambient_heat_transfer_coefficient_W_m2_K")
@@ -236,9 +235,7 @@ def resolve_vegetation_physics(case: VegetationCase) -> ResolvedV3Physics:
             "backing_conductance_W_m2_K": np.full_like(
                 covered, parameter("backing_conductance_W_m2_K")
             ),
-            "receiver_area_ratio": np.full_like(
-                covered, parameter("receiver_area_ratio")
-            ),
+            "receiver_area_ratio": np.full_like(covered, parameter("receiver_area_ratio")),
             "receiver_area_m2": receiver,
             "active_surface_area_ratio": np.full_like(
                 covered, parameter("active_surface_area_ratio")
@@ -328,9 +325,7 @@ def write_v3_physics_package(
                 ),
             },
             "burnable_cell_count": int(np.count_nonzero(case.burnable_mask)),
-            "unknown_domain_cell_count": int(
-                np.count_nonzero(case.domain_mask & ~case.known_mask)
-            ),
+            "unknown_domain_cell_count": int(np.count_nonzero(case.domain_mask & ~case.known_mask)),
         }
         (output / "physics_report.json").write_text(
             json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8"

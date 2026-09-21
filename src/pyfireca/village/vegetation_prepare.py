@@ -51,9 +51,7 @@ def choose_local_metric_crs(source_crs: Any, bounds: Any) -> tuple[Any, dict[str
     source = CRS.from_user_input(source_crs)
     centre_x = (float(bounds.left) + float(bounds.right)) / 2.0
     centre_y = (float(bounds.bottom) + float(bounds.top)) / 2.0
-    lon, lat = Transformer.from_crs(source, 4326, always_xy=True).transform(
-        centre_x, centre_y
-    )
+    lon, lat = Transformer.from_crs(source, 4326, always_xy=True).transform(centre_x, centre_y)
     zone = math.floor((lon + 180.0) / 6.0) + 1
     zone = min(60, max(1, zone))
     epsg = (32600 if lat >= 0.0 else 32700) + zone
@@ -100,10 +98,7 @@ def geometry_to_polygons(geometry: Any) -> list[dict[str, list[list[float]]]]:
     return [
         {
             "exterior": [[float(x), float(y)] for x, y in part.exterior.coords],
-            "holes": [
-                [[float(x), float(y)] for x, y in ring.coords]
-                for ring in part.interiors
-            ],
+            "holes": [[[float(x), float(y)] for x, y in ring.coords] for ring in part.interiors],
         }
         for part in parts
     ]
@@ -112,10 +107,7 @@ def geometry_to_polygons(geometry: Any) -> list[dict[str, list[list[float]]]]:
 def _record_geometry(record: dict[str, Any]) -> Any:
     from shapely.geometry import MultiPolygon, Polygon
 
-    parts = [
-        Polygon(part["exterior"], holes=part.get("holes", []))
-        for part in record["polygons"]
-    ]
+    parts = [Polygon(part["exterior"], holes=part.get("holes", [])) for part in record["polygons"]]
     return parts[0] if len(parts) == 1 else MultiPolygon(parts)
 
 
@@ -326,9 +318,7 @@ def prepare_vegetation_spatial(
             .get_factors(scale["centre_longitude_deg"], scale["centre_latitude_deg"])
             .meridional_scale
         )
-        projected_bounds = transform_bounds(
-            source.crs, target_crs, *source.bounds, densify_pts=21
-        )
+        projected_bounds = transform_bounds(source.crs, target_crs, *source.bounds, densify_pts=21)
         grid, target_transform = _aligned_grid(projected_bounds, cell_size_m, target_crs)
         rgb = np.zeros((3, grid.height, grid.width), dtype=np.uint8)
         for band in range(3):
@@ -437,15 +427,13 @@ def prepare_vegetation_spatial(
     projected_building_area = float(building_union.area)
     to_geographic = Transformer.from_crs(target_crs, 4326, always_xy=True)
     geographic_buildings = shapely_transform(to_geographic.transform, building_union)
-    geodesic_building_area = abs(float(Geod(ellps="WGS84").geometry_area_perimeter(
-        geographic_buildings
-    )[0]))
+    geodesic_building_area = abs(
+        float(Geod(ellps="WGS84").geometry_area_perimeter(geographic_buildings)[0])
+    )
     rasterized_building_area = float(
         unmasked_building_coverage.sum(dtype=np.float64) * grid.cell_area_m2
     )
-    valid_domain_building_area = float(
-        building_coverage.sum(dtype=np.float64) * grid.cell_area_m2
-    )
+    valid_domain_building_area = float(building_coverage.sum(dtype=np.float64) * grid.cell_area_m2)
     scale.update(
         {
             "source_crs": source_crs.to_string(),
@@ -462,8 +450,7 @@ def prepare_vegetation_spatial(
                 (projected_building_area / geodesic_building_area - 1.0) * 100.0
             ),
             "building_union_area_from_cell_coverage_m2": rasterized_building_area,
-            "coverage_area_closure_error_m2": rasterized_building_area
-            - projected_building_area,
+            "coverage_area_closure_error_m2": rasterized_building_area - projected_building_area,
             "building_area_inside_valid_domain_m2": valid_domain_building_area,
             "building_area_excluded_by_nodata_m2": rasterized_building_area
             - valid_domain_building_area,

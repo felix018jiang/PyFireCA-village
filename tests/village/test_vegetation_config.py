@@ -12,12 +12,8 @@ from pyfireca.village.vegetation_config import (
 )
 from pyfireca.village.vegetation_materials import load_vegetation_profiles
 
-PROFILE_PATH = (
-    Path(__file__).parents[2] / "examples/village/vegetation_v3/profiles.synthetic.yml"
-)
-CASE_PATH = (
-    Path(__file__).parents[2] / "examples/village/vegetation_v3/gaoyou-v02.synthetic.yml"
-)
+PROFILE_PATH = Path(__file__).parents[2] / "examples/village/vegetation_v3/profiles.synthetic.yml"
+CASE_PATH = Path(__file__).parents[2] / "examples/village/vegetation_v3/gaoyou-v02.synthetic.yml"
 
 
 def _yaml(path):
