@@ -1,6 +1,6 @@
 # Village-fire development progress
 
-> Updated: 2026-09-21
+> Updated: 2026-09-22
 >
 > Plan of record: [`PROJECT_PLAN.md`](../PROJECT_PLAN.md)
 
@@ -57,7 +57,7 @@
 - The viewer is a completed-run replay. T08/T09 case import, click-to-ignite editing and asynchronous web-run service remain.
 - The v1 effective exposure coefficients and all example values are synthetic. The v2 kernel, prepared Gaoyou grid, building-derived blocker mask and browser viewer are connected, but the evidence catalog still has no complete local material profile.
 - Dynamic sample times use the first committed solver state at or after the requested interval. Early source exhaustion writes the final cooled state; denser analytic post-stop samples remain future work.
-- Next implementation task is chapter 23 V04: implement height-aware radiation transport, resource estimation and reference-vs-vectorized edge checks using the V03 physics arrays. Convection, firebrands and crown layering remain later independent work.
+- Next implementation task is chapter 23 V05: connect the V03 cell physics and V04 shared radiation graph in a synchronous solver, then pass the frozen cross-category, ordering, cooling/event, and timestep-convergence tests. Convection, firebrands and crown layering remain later independent work.
 
 ## 2026-09-21 — Chapter 23 V00/V01
 
@@ -107,3 +107,23 @@ V03 artifact hashes:
 - `physics_report.json`: `71df291a1f606eab0083dcfb1aa3c23a2bb8a5f81e7fb4bc1ed089dc9e25c17e`
 - `arrays/initial_dry_fuel_mass_kg.npy`: `786e6a4bf79e612336d568be229aed0e552bc4521c2217698476bf53ff9e0946`
 - `arrays/water_mass_kg.npy`: `7163c6bc38b917b180431922aa0ca6da6acd4cea0ae14153d124aec327bd446a`
+
+## 2026-09-22 — Chapter 23 V04
+
+V04 added `src/pyfireca/village/transport_v3.py`. It builds one directed radiation graph for every classified burnable building and vegetation cell, using each source's effective flame height, each target's receiver height/area, the configured wind tilt, atmospheric extinction and an explicit per-cell path transmissivity array. The implementation includes a direct small-grid oracle and an offset-vectorized row-block builder. Both use the same Bresenham intermediate paths and reject any source whose combined outgoing fraction exceeds one instead of normalizing it.
+
+The new preflight counts candidate pairs with the real masks and boundaries before allocation. It checks both edge and memory limits, reports the 16-byte final edge layout, a conservative 64-byte-per-candidate construction peak, and the 33-byte-per-cell-frame replay basis. Resource failures state the estimated count/memory and do not modify the radius, grid or vegetation mask.
+
+The first full Gaoyou graph attempt correctly failed: the synthetic shrub/tree receiver-area ratios of 1.2/1.5 allowed tree cell `(229, 504)` to allocate `1.29082468046` of its radiative power. The rejected forecast was preserved under `runs/gaoyou-vegetation-v3/v04-transport-resource-forecast-prebudget/`. The two synthetic ratios were revised to 1.0 with provenance `synthetic:v04_shared_radiation_budget_safe_bound`; fuel, moisture, HRR and ignition parameters were unchanged. Revalidated V02/V03 packages are under `v02-profile-validation-synthetic-v04-final/` and `v03-physics-synthetic-v04-final/`.
+
+The accepted resource and graph report is `runs/gaoyou-vegetation-v3/v04-transport-resource-forecast-final/resource_report.json`. It built 4,486,644 edges between 114,321 classified burnable sources/targets. The maximum outgoing fraction is `0.8644472043124856`. Final edge storage is 71.786 MB, conservative construction peak is 287.145 MB, and a 101-frame in-memory replay estimate is 647.615 MB; combined estimate is 934.760 MB, within the configured 5,000,000-edge/2,048-MB limits. The assessment explicitly assumes path transmissivity 1.0 pending a calibrated blocker configuration and does not run a fire simulation.
+
+Focused VT09/10/12/14 verification passes 5 tests. Updated artifact hashes are:
+
+- `profiles.synthetic.yml`: `ab44393f578c76762d95d8d606e8c5cca701d76d9928142f518edbbec27b48d7`
+- V02 revalidation `manifest.json`: `41ede993eb3514c9bac02f862f917446be97680bd975c32951919136ad748bc2`
+- V03 revalidation `manifest.json`: `67f5a4b1fff2fb59d0e8f435f5e6eb9ab5b0f6ab5452636e81d24ded472ecaf4`
+- V04 `manifest.json`: `d92ceee38f4507f11e702db0caa8383adaf7a4474528c2102bdfa7edd7e1dfe9`
+- V04 `resource_report.json`: `50eedc2a4838e157d6ea71e5090fe68e75c910d715aa52077b7bcfb4897a9673`
+
+V05 handoff: implement `solver_v3.py` and pass VT02/08/11/15/17 on frozen small-domain fixtures before any full-village dynamic run. The 74,829 unknown cells remain excluded from this forecast and continue to block a final full-village claim.

@@ -65,7 +65,7 @@ profiles:
       emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
       ambient_heat_transfer_coefficient_W_m2_K: {value: 12, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
       backing_conductance_W_m2_K: {value: 1.5, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
-      receiver_area_ratio: {value: 1.2, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v04_shared_radiation_budget_safe_bound}
       active_surface_area_ratio: {value: 1.5, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
       source_height_m: {value: 1.2, unit: m, provenance: synthetic:v02_profile_fixture}
       receiver_height_m: {value: 0.6, unit: m, provenance: synthetic:v02_profile_fixture}
@@ -125,7 +125,7 @@ profiles:
       emissivity: {value: 0.9, unit: '1', provenance: synthetic:v02_profile_fixture}
       ambient_heat_transfer_coefficient_W_m2_K: {value: 15, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
       backing_conductance_W_m2_K: {value: 2, unit: W/(m^2*K), provenance: synthetic:v02_profile_fixture}
-      receiver_area_ratio: {value: 1.5, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
+      receiver_area_ratio: {value: 1, unit: m^2_receiver/m^2_covered_ground, provenance: synthetic:v04_shared_radiation_budget_safe_bound}
       active_surface_area_ratio: {value: 1.5, unit: m^2_active/m^2_covered_ground, provenance: synthetic:v02_profile_fixture}
       source_height_m: {value: 4, unit: m, provenance: synthetic:v02_profile_fixture}
       receiver_height_m: {value: 2, unit: m, provenance: synthetic:v02_profile_fixture}
