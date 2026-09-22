@@ -1,0 +1,29 @@
+schema_version: village-moisture-initialization-1
+package_id: gaoyou-m02-synthetic-initial-moisture
+basis: dry_basis_ratio
+production_ready: false
+missing_policy: error_if_burnable_unassigned
+
+# These are scenario assumptions for parser tests and demonstrations.  They
+# are not field measurements and do not add a dry/wet choice to the survey.
+states:
+  - id: synthetic_woody_initial
+    material_classes: [wood_unspecified, bamboo_unspecified, thatch_straw]
+    moisture_content_dry_basis: {value: 0.1, unit: kg/kg_dry, provenance: synthetic:m02_initial_moisture_fixture}
+    status: scenario_assumed
+    notes: "Temporary dry-basis state for an explicit demonstration scenario."
+  - id: synthetic_grass_initial
+    material_classes: [grass, litter]
+    moisture_content_dry_basis: {value: 0.25, unit: kg/kg_dry, provenance: synthetic:m02_initial_moisture_fixture}
+    status: scenario_assumed
+    notes: "Temporary surface-fuel state; live/dead and weather coupling are not inferred."
+  - id: synthetic_shrub_initial
+    material_classes: [shrub]
+    moisture_content_dry_basis: {value: 0.6, unit: kg/kg_dry, provenance: synthetic:m02_initial_moisture_fixture}
+    status: scenario_assumed
+    notes: "Temporary shrub state; it is not a species measurement."
+  - id: synthetic_tree_initial
+    material_classes: [tree_equivalent]
+    moisture_content_dry_basis: {value: 0.6, unit: kg/kg_dry, provenance: synthetic:m02_initial_moisture_fixture}
+    status: scenario_assumed
+    notes: "Temporary single-layer tree-equivalent state; it is not a crown moisture model."

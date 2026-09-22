@@ -150,3 +150,17 @@ Verification for M01:
 - `conda run -n pyfireca-village ruff check src/pyfireca/village/material_cards.py tests/village/test_material_cards.py`
 
 M02 handoff: add explicit assembly presets, quantity/coverage resolution and a separate initial-moisture state package. Preserve the card IDs and source roles; do not copy numeric values into the card selector or add field dry/wet choices.
+
+## 2026-09-22 — Chapter 24 M02
+
+M02 added three strict layers without changing the existing v2/v3 loaders:
+
+- `src/pyfireca/village/assembly_presets.py` loads `village-assembly-presets-1`. Quantity bands hold fuel load, effective heated dry mass, active/receiver area ratios and heights. Base material/assembly values carry units and provenance. `steady_time_s` is prohibited in YAML and is derived only from the available dry-fuel energy and the growth/decay curve.
+- `src/pyfireca/village/moisture.py` loads `village-moisture-initialization-1`. Initial water is a separate dry-basis state package with an explicit missing-value policy; the survey still has no dry/wet or condition field.
+- `src/pyfireca/village/material_resolution.py` resolves a survey plus geometry areas into auditable quantities, source IDs, parameter provenance, assumptions, missing-value/error reports and a canonical `configuration_sha256`. It requires an explicit quantity band and area, detects multiple active components on one geometry reference, and rejects fuel curves that exceed the available energy budget.
+
+The synthetic M02 examples are in `examples/village/material_cards/assemblies.synthetic.yml` and `moisture.initial.synthetic.yml`. Every assembly and moisture value is marked `scenario_assumed`; these files are parser fixtures and do not make the Gaoyou run evidence-checked. Inert brick, concrete/mortar, stone and metal presets resolve to zero fuel only when their explicit standard quantity band is selected; this does not remove heat transfer or structural effects from the future model.
+
+M02 tests in `tests/village/test_material_resolution.py` cover parser strictness, mass/water conversion, energy-budget-derived steady time, deterministic hashes, missing quantity/moisture, inert material handling, active-component conflicts and evidence-mode rejection of synthetic assumptions. Focused M00–M02 tests pass; no existing simulation result was overwritten and no full-village dynamic simulation was run.
+
+M03 handoff: use the resolved records to build a small-domain adapter into V03 cell arrays and V04 transport inputs. Preserve the one-time coverage/mass conversion, active-component decisions, source IDs and configuration hash; keep unknown or unresolved observations out of a research run instead of substituting a burnable default.

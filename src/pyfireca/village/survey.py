@@ -118,17 +118,15 @@ class FieldSurvey:
     records: tuple[FieldSurveyRecord, ...]
 
 
-def load_field_survey(path: str | Path) -> FieldSurvey:
-    """Load and structurally validate a ``village-field-survey-1`` YAML file.
+def parse_field_survey(data: Any, *, path: Path | None = None) -> FieldSurvey:
+    """Validate an in-memory ``village-field-survey-1`` document.
 
     The parser deliberately rejects moisture or weather fields such as
     ``condition``, ``dry`` and ``wet``.  Those belong to a separate scenario
     initialization package and must not alter a stable material identity.
     """
 
-    source = Path(path).expanduser().resolve()
-    with source.open(encoding="utf-8") as stream:
-        root = _mapping(yaml.safe_load(stream), "field-survey")
+    root = _mapping(data, "field-survey")
     _exact_keys(root, _SURVEY_KEYS, "field-survey")
     if root["schema_version"] != SCHEMA_VERSION:
         raise ValueError(
@@ -176,7 +174,16 @@ def load_field_survey(path: str | Path) -> FieldSurvey:
                 notes=_optional_text(raw.get("notes"), f"{location}.notes"),
             )
         )
-    return FieldSurvey(path=source, survey_id=survey_id, records=tuple(records))
+    return FieldSurvey(path=path or Path("<memory>"), survey_id=survey_id, records=tuple(records))
+
+
+def load_field_survey(path: str | Path) -> FieldSurvey:
+    """Load and structurally validate a ``village-field-survey-1`` YAML file."""
+
+    source = Path(path).expanduser().resolve()
+    with source.open(encoding="utf-8") as stream:
+        data = yaml.safe_load(stream)
+    return parse_field_survey(data, path=source)
 
 
 __all__ = [
@@ -187,4 +194,5 @@ __all__ = [
     "FieldSurvey",
     "FieldSurveyRecord",
     "load_field_survey",
+    "parse_field_survey",
 ]

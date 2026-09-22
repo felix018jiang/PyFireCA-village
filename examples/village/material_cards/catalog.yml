@@ -64,7 +64,7 @@ cards:
     allowed_components: [facade, roof, interior_wall, contents]
     combustibility: burnable
     reference_profile_ids: [wood_douglas_ovendry_reference, wood_southern_pine_reference]
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_wood_surface]
     evidence_status: reference_only
     source_ids: [Janssens1991, TranWhite1992, NIST_LIFT_CONE, USDA_WOOD_HANDBOOK]
     limitations: "Reference specimens are not high-yield field measurements. Species, coating, thickness, orientation, ventilation, and construction assembly require a later preset or observation."
@@ -75,7 +75,7 @@ cards:
     allowed_components: [facade, roof, interior_wall, contents]
     combustibility: burnable
     reference_profile_ids: [bamboo_laminated_reference]
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_bamboo_surface]
     evidence_status: reference_only
     source_ids: [XuEtAl2017, NIST_LIFT_CONE]
     limitations: "The cited reference is laminated bamboo. Natural bamboo, woven panels, coatings, voids, and moisture history are not interchangeable."
@@ -86,7 +86,7 @@ cards:
     allowed_components: [roof, contents, vegetation]
     combustibility: burnable
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_thatch_surface]
     evidence_status: pending_full_text
     source_ids: [NIST_LIFT_CONE]
     limitations: "No numeric card is accepted yet. Roof density, bundle geometry, species, and wind exposure need an identified full-text source or field test."
@@ -97,7 +97,7 @@ cards:
     allowed_components: [facade, interior_wall, ground]
     combustibility: inert
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_masonry_inert]
     evidence_status: pending_full_text
     source_ids: [EC_96_603]
     limitations: "The classification source applies only to listed products and end-use conditions. It sets no HRR, heat-transfer, cracking, or collapse parameters for a local wall assembly."
@@ -108,7 +108,7 @@ cards:
     allowed_components: [facade, interior_wall, ground]
     combustibility: inert
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_concrete_inert]
     evidence_status: pending_full_text
     source_ids: [EC_96_603]
     limitations: "Concrete or mortar can be Class A under the cited product conditions, but reinforcement, aggregate, coatings, moisture, spalling, and heat transfer remain unresolved."
@@ -119,7 +119,7 @@ cards:
     allowed_components: [facade, interior_wall, ground]
     combustibility: inert
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_stone_inert]
     evidence_status: pending_full_text
     source_ids: [EC_96_603]
     limitations: "Natural stone classification is product and end-use dependent; rock type, joints, coatings, and thermal damage are not modeled by this category card."
@@ -130,7 +130,7 @@ cards:
     allowed_components: [facade, roof, ground]
     combustibility: inert
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_metal_inert]
     evidence_status: pending_full_text
     source_ids: [EC_96_603]
     limitations: "A metal skin may not contribute fuel while still transmitting heat or protecting a combustible backing. Alloy, gauge, insulation, and coating are unresolved."
@@ -141,7 +141,7 @@ cards:
     allowed_components: [vegetation, ground]
     combustibility: burnable
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_grass_surface]
     evidence_status: pending_full_text
     source_ids: [USDA_SCOTT_BURGAN_2005]
     limitations: "The USDA fuel-model report supplies a modeling framework, not a local grass measurement. Species, curing, height, loading, and initial water state require later evidence."
@@ -152,7 +152,7 @@ cards:
     allowed_components: [vegetation, ground]
     combustibility: burnable
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_shrub_surface]
     evidence_status: pending_full_text
     source_ids: [USDA_SCOTT_BURGAN_2005]
     limitations: "Standard fuel models are a classification and spread framework, not a village-specific shrub HRR or ignition card. Height, packing, species, and live/dead split remain unresolved."
@@ -163,7 +163,7 @@ cards:
     allowed_components: [vegetation]
     combustibility: burnable
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_tree_surface]
     evidence_status: pending_full_text
     source_ids: [USDA_SCOTT_BURGAN_2005]
     limitations: "This is a temporary two-dimensional equivalent, not a crown-layer model. Species, canopy height, crown bulk density, and ladder fuel need a later model."
@@ -174,7 +174,7 @@ cards:
     allowed_components: [vegetation, ground]
     combustibility: burnable
     reference_profile_ids: []
-    assembly_preset_ids: []
+    assembly_preset_ids: [synthetic_litter_surface]
     evidence_status: pending_full_text
     source_ids: [USDA_SCOTT_BURGAN_2005]
     limitations: "The standard fuel-model reference does not establish local litter loading or moisture. Depth, packing, species mix, and contact with soil require field evidence."

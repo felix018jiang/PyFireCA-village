@@ -94,3 +94,57 @@ python -c 'from pyfireca.village.material_cards import load_material_card_librar
 ```
 
 M01 完成后，M02 才会增加数量档位、构造预设和独立的初始水分状态解析；现场调查文件仍不增加干湿选项。
+
+## M02 构造预设和初始水分包
+
+M02 的三个独立文件是：
+
+- [`catalog.yml`](../examples/village/material_cards/catalog.yml)：材料身份和来源边界；
+- [`assemblies.synthetic.yml`](../examples/village/material_cards/assemblies.synthetic.yml)：数量档位、受热面积、燃料负荷和演示构造参数；
+- [`moisture.initial.synthetic.yml`](../examples/village/material_cards/moisture.initial.synthetic.yml)：按材料类别分配的初始干基水分状态。
+
+现场人员仍只编辑 survey。构造预设中的 `thin`、`standard`、`thick`、`low`、`medium`、`high` 是数量或构造档位，不是干湿档位；水状态始终从独立的版本化包进入解析。示例预设全部标为 `scenario_assumed`，不能称为高友村实测或证据检查通过。
+
+`resolve_material_selections` 需要调用方提供几何引用对应的面积。它会按 `面积 × fuel_load_kg_m2` 计算干燃料质量，按可热解比例计算可用质量，按初始水分计算水质量，并用
+
+```text
+steady_time_s = available_energy_J / peak_hrr_W
+                - growth_time_s / 3
+                - decay_time_s / 2
+```
+
+推导稳定燃烧时间。曲线能量超过燃料预算、缺数量档位、缺面积、缺初始水分、材料卡没有唯一构造预设或同一几何引用有多个未选择部位时，解析结果会带错误和缺值报告；不会偷偷选择 `standard`、把水分设为零或随机选择一个预设。解析结果带 `configuration_sha256`，相同输入和版本会得到相同哈希。
+
+验证 M02 示例：
+
+```bash
+conda activate pyfireca-village
+python - <<'PY'
+from pyfireca.village import (
+    load_assembly_preset_library,
+    load_field_survey,
+    load_material_card_library,
+    load_moisture_initialization,
+    resolve_material_selections,
+)
+
+cards = load_material_card_library("examples/village/material_cards/catalog.yml")
+assemblies = load_assembly_preset_library("examples/village/material_cards/assemblies.synthetic.yml")
+moisture = load_moisture_initialization("examples/village/material_cards/moisture.initial.synthetic.yml")
+survey = load_field_survey("examples/village/material_cards/survey.example.yml")
+resolved = resolve_material_selections(
+    survey,
+    cards,
+    assemblies,
+    moisture,
+    geometry_areas_m2={
+        "wall-segments/B0233-east": 10.0,
+        "buildings/B0233": 20.0,
+        "survey-polygons/YARD-001": 5.0,
+    },
+)
+print(resolved.can_run, resolved.configuration_sha256, resolved.missing_report)
+PY
+```
+
+这个示例故意保留 survey 中没有数量档位的记录，因此会输出缺值而不能运行。填写数量档位、几何面积和适用的初始水分包后，才进入 M03 的小域物理适配。

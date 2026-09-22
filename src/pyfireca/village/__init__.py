@@ -1,5 +1,10 @@
 """Two-dimensional village-fire cellular automata."""
 
+from pyfireca.village.assembly_presets import (
+    AssemblyPreset,
+    AssemblyPresetLibrary,
+    load_assembly_preset_library,
+)
 from pyfireca.village.domain import (
     CellParameterArrays,
     ExposureEdges,
@@ -13,6 +18,17 @@ from pyfireca.village.material_cards import (
     MaterialCardSource,
     load_material_card_library,
     parse_material_card_library,
+)
+from pyfireca.village.material_resolution import (
+    ResolutionIssue,
+    ResolvedMaterialRecord,
+    ResolvedSurveyCase,
+    resolve_material_selections,
+)
+from pyfireca.village.moisture import (
+    MoistureInitialization,
+    MoistureState,
+    load_moisture_initialization,
 )
 from pyfireca.village.physics_v2 import V2CellPhysicsArrays
 from pyfireca.village.prepared_workflow_v2 import (
@@ -33,7 +49,12 @@ from pyfireca.village.solver_v2 import (
     run_v2_simulation,
 )
 from pyfireca.village.state import VillageCellState, VillageState
-from pyfireca.village.survey import FieldSurvey, FieldSurveyRecord, load_field_survey
+from pyfireca.village.survey import (
+    FieldSurvey,
+    FieldSurveyRecord,
+    load_field_survey,
+    parse_field_survey,
+)
 from pyfireca.village.transport_v2 import (
     V2RadiativeTransportParameters,
     build_v2_radiative_transport_edges,
@@ -41,6 +62,8 @@ from pyfireca.village.transport_v2 import (
 from pyfireca.village.workflow_v2 import load_v2_file_case, run_v2_file_case
 
 __all__ = [
+    "AssemblyPreset",
+    "AssemblyPresetLibrary",
     "CellParameterArrays",
     "ExposureEdges",
     "FieldSurvey",
@@ -48,8 +71,13 @@ __all__ = [
     "MaterialCard",
     "MaterialCardLibrary",
     "MaterialCardSource",
+    "MoistureInitialization",
+    "MoistureState",
     "PreparedV2Case",
     "PreparedVillageDomain",
+    "ResolutionIssue",
+    "ResolvedMaterialRecord",
+    "ResolvedSurveyCase",
     "V2CellPhysicsArrays",
     "V2RadiativeTransportParameters",
     "V2Scenario",
@@ -63,11 +91,15 @@ __all__ = [
     "VillageSimulationResult",
     "VillageState",
     "build_v2_radiative_transport_edges",
+    "load_assembly_preset_library",
     "load_field_survey",
     "load_material_card_library",
+    "load_moisture_initialization",
     "load_prepared_v2_case",
     "load_v2_file_case",
+    "parse_field_survey",
     "parse_material_card_library",
+    "resolve_material_selections",
     "run_prepared_v2_case",
     "run_v2_file_case",
     "run_v2_simulation",
