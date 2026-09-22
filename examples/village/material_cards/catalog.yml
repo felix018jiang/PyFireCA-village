@@ -1,0 +1,213 @@
+schema_version: village-material-cards-1
+library_id: gaoyou-minimal-material-cards
+evidence_inventory_status: minimal_unresolved
+production_ready: false
+
+# This file maps field categories to evidence and limitations.  It deliberately
+# contains no heat-release, ignition, moisture, or transport numbers.
+sources:
+  Janssens1991:
+    title: "A Thermal Model for Piloted Ignition of Wood Including Variable Thermophysical Properties"
+    citation: "Janssens, M. (1991). Fire Safety Science 3, 167-176."
+    kind: peer_reviewed_conference_paper
+    url: https://publications.iafss.org/publications/fss/3/167/view/fss_3-167.pdf
+    role: numeric_reference
+    notes: "Reference Douglas-fir specimen only; specimen conditions and locators remain attached in material-catalog-3."
+  TranWhite1992:
+    title: "Burning Rate of Solid Wood Measured in a Heat Release Rate Calorimeter"
+    citation: "Tran, H. C., and White, R. H. (1992). Fire and Materials 16, 197-206."
+    kind: government_research_publication
+    url: https://research.fs.usda.gov/treesearch/5952
+    role: numeric_reference
+    notes: "Reference southern-pine specimen only; it is not a local high-yield village wood value."
+  XuEtAl2017:
+    title: "Combustion Performance of Engineered Bamboo from Cone Calorimeter Tests"
+    citation: "Xu, Q. et al. (2017). European Journal of Wood and Wood Products 75, 161-173."
+    kind: peer_reviewed_journal_article
+    url: https://par.nsf.gov/servlets/purl/10063494
+    role: numeric_reference
+    notes: "Engineered laminated bamboo specimen; natural bamboo species, geometry, and moisture may differ."
+  NIST_LIFT_CONE:
+    title: "Flammability characterization with LIFT and cone calorimeter"
+    citation: "National Institute of Standards and Technology, flammability characterization methods."
+    kind: government_research_publication
+    url: https://www.nist.gov/publications/flammability-characterization-lift-apparatus-and-cone-calorimeter
+    role: method_only
+    notes: "Method authority for ignition, flame-spread, and heat-release measurements; it does not supply a universal village coefficient."
+  USDA_WOOD_HANDBOOK:
+    title: "Wood Handbook, Chapter 18: Fire safety of wood construction"
+    citation: "USDA Forest Service, Wood Handbook fire-safety chapter."
+    kind: government_research_publication
+    url: https://research.fs.usda.gov/treesearch/62268
+    role: method_only
+    notes: "General wood-construction reference; species, assembly, exposure, and end-use limits must be checked before use."
+  USDA_SCOTT_BURGAN_2005:
+    title: "Standard fire behavior fuel models: a comprehensive set for use with Rothermel's surface fire spread model"
+    citation: "Scott, J. H. and Burgan, R. E. (2005), USDA Forest Service RMRS-GTR-153."
+    kind: government_research_publication
+    url: https://doi.org/10.2737/RMRS-GTR-153
+    role: method_only
+    notes: "Standard wildland fuel-model method; it is not a measured local crown, shrub, or grass coefficient."
+  EC_96_603:
+    title: "Commission Decision 96/603/EC: products belonging to reaction-to-fire Class A"
+    citation: "European Commission (1996), Commission Decision 96/603/EC, consolidated official text."
+    kind: official_classification_or_standard
+    url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01996D0603-20030612
+    role: classification_only
+    notes: "Classification applies only to listed products and stated end-use conditions; it is not proof that every assembly is inert or thermally undamaged."
+
+cards:
+  - id: wood_unspecified
+    version: "1.0"
+    label: "Wood, species or assembly unspecified"
+    material_class: wood_unspecified
+    allowed_components: [facade, roof, interior_wall, contents]
+    combustibility: burnable
+    reference_profile_ids: [wood_douglas_ovendry_reference, wood_southern_pine_reference]
+    assembly_preset_ids: []
+    evidence_status: reference_only
+    source_ids: [Janssens1991, TranWhite1992, NIST_LIFT_CONE, USDA_WOOD_HANDBOOK]
+    limitations: "Reference specimens are not high-yield field measurements. Species, coating, thickness, orientation, ventilation, and construction assembly require a later preset or observation."
+  - id: bamboo_unspecified
+    version: "1.0"
+    label: "Bamboo, product or species unspecified"
+    material_class: bamboo_unspecified
+    allowed_components: [facade, roof, interior_wall, contents]
+    combustibility: burnable
+    reference_profile_ids: [bamboo_laminated_reference]
+    assembly_preset_ids: []
+    evidence_status: reference_only
+    source_ids: [XuEtAl2017, NIST_LIFT_CONE]
+    limitations: "The cited reference is laminated bamboo. Natural bamboo, woven panels, coatings, voids, and moisture history are not interchangeable."
+  - id: thatch_straw
+    version: "1.0"
+    label: "Thatch or straw"
+    material_class: thatch_straw
+    allowed_components: [roof, contents, vegetation]
+    combustibility: burnable
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [NIST_LIFT_CONE]
+    limitations: "No numeric card is accepted yet. Roof density, bundle geometry, species, and wind exposure need an identified full-text source or field test."
+  - id: masonry_brick
+    version: "1.0"
+    label: "Brick masonry"
+    material_class: masonry_brick
+    allowed_components: [facade, interior_wall, ground]
+    combustibility: inert
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [EC_96_603]
+    limitations: "The classification source applies only to listed products and end-use conditions. It sets no HRR, heat-transfer, cracking, or collapse parameters for a local wall assembly."
+  - id: concrete_mortar
+    version: "1.0"
+    label: "Concrete or cement mortar"
+    material_class: concrete_mortar
+    allowed_components: [facade, interior_wall, ground]
+    combustibility: inert
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [EC_96_603]
+    limitations: "Concrete or mortar can be Class A under the cited product conditions, but reinforcement, aggregate, coatings, moisture, spalling, and heat transfer remain unresolved."
+  - id: stone
+    version: "1.0"
+    label: "Stone"
+    material_class: stone
+    allowed_components: [facade, interior_wall, ground]
+    combustibility: inert
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [EC_96_603]
+    limitations: "Natural stone classification is product and end-use dependent; rock type, joints, coatings, and thermal damage are not modeled by this category card."
+  - id: metal_sheet
+    version: "1.0"
+    label: "Single metal sheet"
+    material_class: metal_sheet
+    allowed_components: [facade, roof, ground]
+    combustibility: inert
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [EC_96_603]
+    limitations: "A metal skin may not contribute fuel while still transmitting heat or protecting a combustible backing. Alloy, gauge, insulation, and coating are unresolved."
+  - id: grass
+    version: "1.0"
+    label: "Grass or herbaceous cover"
+    material_class: grass
+    allowed_components: [vegetation, ground]
+    combustibility: burnable
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [USDA_SCOTT_BURGAN_2005]
+    limitations: "The USDA fuel-model report supplies a modeling framework, not a local grass measurement. Species, curing, height, loading, and initial water state require later evidence."
+  - id: shrub
+    version: "1.0"
+    label: "Shrub"
+    material_class: shrub
+    allowed_components: [vegetation, ground]
+    combustibility: burnable
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [USDA_SCOTT_BURGAN_2005]
+    limitations: "Standard fuel models are a classification and spread framework, not a village-specific shrub HRR or ignition card. Height, packing, species, and live/dead split remain unresolved."
+  - id: tree_equivalent
+    version: "1.0"
+    label: "Tree or canopy-equivalent fuel"
+    material_class: tree_equivalent
+    allowed_components: [vegetation]
+    combustibility: burnable
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [USDA_SCOTT_BURGAN_2005]
+    limitations: "This is a temporary two-dimensional equivalent, not a crown-layer model. Species, canopy height, crown bulk density, and ladder fuel need a later model."
+  - id: litter
+    version: "1.0"
+    label: "Litter or dead surface fuel"
+    material_class: litter
+    allowed_components: [vegetation, ground]
+    combustibility: burnable
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: pending_full_text
+    source_ids: [USDA_SCOTT_BURGAN_2005]
+    limitations: "The standard fuel-model reference does not establish local litter loading or moisture. Depth, packing, species mix, and contact with soil require field evidence."
+  - id: mixed_contents
+    version: "1.0"
+    label: "Mixed indoor contents"
+    material_class: mixed_contents
+    allowed_components: [contents]
+    combustibility: unknown
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: field_observation_only
+    source_ids: []
+    limitations: "Contents remain unknown until an observed composition or explicit assembly preset is selected. The category must not silently become a generic house fuel."
+  - id: composite_unknown
+    version: "1.0"
+    label: "Unknown composite material"
+    material_class: composite_unknown
+    allowed_components: [facade, roof, interior_wall, contents, ground, vegetation]
+    combustibility: unknown
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: field_observation_only
+    source_ids: []
+    limitations: "Unknown composites block a production run until their components, coverage, and construction role are resolved."
+  - id: unknown
+    version: "1.0"
+    label: "Unresolved material"
+    material_class: unknown
+    allowed_components: [facade, roof, interior_wall, contents, ground, vegetation]
+    combustibility: unknown
+    reference_profile_ids: []
+    assembly_preset_ids: []
+    evidence_status: field_observation_only
+    source_ids: []
+    limitations: "Unknown is an explicit observation outcome. It cannot be converted to zero fuel or to a synthetic burnable default."

@@ -7,6 +7,13 @@ from pyfireca.village.domain import (
     VillageGridSpec,
 )
 from pyfireca.village.ignition import VillageIgnitionEvent
+from pyfireca.village.material_cards import (
+    MaterialCard,
+    MaterialCardLibrary,
+    MaterialCardSource,
+    load_material_card_library,
+    parse_material_card_library,
+)
 from pyfireca.village.physics_v2 import V2CellPhysicsArrays
 from pyfireca.village.prepared_workflow_v2 import (
     PreparedV2Case,
@@ -38,6 +45,9 @@ __all__ = [
     "ExposureEdges",
     "FieldSurvey",
     "FieldSurveyRecord",
+    "MaterialCard",
+    "MaterialCardLibrary",
+    "MaterialCardSource",
     "PreparedV2Case",
     "PreparedVillageDomain",
     "V2CellPhysicsArrays",
@@ -54,8 +64,10 @@ __all__ = [
     "VillageState",
     "build_v2_radiative_transport_edges",
     "load_field_survey",
+    "load_material_card_library",
     "load_prepared_v2_case",
     "load_v2_file_case",
+    "parse_material_card_library",
     "run_prepared_v2_case",
     "run_v2_file_case",
     "run_v2_simulation",

@@ -70,3 +70,27 @@ python -c 'from pyfireca.village.survey import load_field_survey; s=load_field_s
 ```
 
 M00 只验证结构和稳定枚举。M01 才将类别连接到逐参数证据卡，M02 才解析构造数量和初始水分状态，M05 才把墙段及院落几何分配到高友村原胞。
+
+## M01 材料卡库
+
+最小材料卡库位于
+[`examples/village/material_cards/catalog.yml`](../examples/village/material_cards/catalog.yml)，
+由 `village-material-cards-1` 解析器校验。它只负责把现场类别连接到参考试件、文献角色和适用边界，不复制燃烧热、HRR、引燃温度或含水率数值；这些数值仍须在后续构造预设和场景水分包中独立解析。
+
+卡片的 `evidence_status` 有四种含义：
+
+- `reference_only`：有可追溯的参考试件，但不能当作高友村实测；当前为木材和层压竹参考卡；
+- `pending_full_text`：已登记方法或分类来源，仍缺少足以生成当地数值卡的原文条件、试件或构造信息；
+- `scenario_assumed`：只允许在明确标记的演示场景中使用；当前库不预置此类卡；
+- `field_observation_only`：现场观察结果，尚未能映射为燃烧参数；混合物品、未知复合材料和未知类别使用此状态。
+
+砖砌体、混凝土/水泥砂浆、石材和金属板使用不燃候选分类，但这只约束燃料贡献。分类文件的产品和最终使用条件必须成立；它不意味着墙体不传热、不受损或其背后的木构件和室内物品不燃。`production_ready` 仍固定为 `false`，任何缺少来源、适用边界或实测条件的类别都不能进入真实全村运行。
+
+验证材料卡库：
+
+```bash
+conda activate pyfireca-village
+python -c 'from pyfireca.village.material_cards import load_material_card_library; c=load_material_card_library("examples/village/material_cards/catalog.yml"); print(len(c.cards), c.evidence_status_counts)'
+```
+
+M01 完成后，M02 才会增加数量档位、构造预设和独立的初始水分状态解析；现场调查文件仍不增加干湿选项。

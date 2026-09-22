@@ -135,3 +135,18 @@ M00 added the first low-burden field survey contract in `src/pyfireca/village/su
 The survey schema deliberately rejects `condition`, `dry`, `wet` and other moisture-band fields. Initial moisture is reserved for a separate time-dependent scenario package; fire-driven surface evaporation remains a solver concern. A concrete field guide is in `docs/VILLAGE_FIELD_SURVEY.md`, and the independent example is `examples/village/material_cards/survey.example.yml`.
 
 M00 tests in `tests/village/test_survey.py` cover the example, stable enumerations, explicit unknown material, invalid component, missing geometry, duplicate observation IDs, optional quantity information, empty records and rejection of moisture fields. The new parser does not resolve evidence cards, construct fuel masses or run a fire simulation. M01 is next: build the minimal traceable material-card inventory and document which categories are still `pending_full_text` or `scenario_assumed`.
+
+## 2026-09-22 — Chapter 24 M01
+
+M01 added the strict `village-material-cards-1` inventory loader in `src/pyfireca/village/material_cards.py` and the traceable category library at `examples/village/material_cards/catalog.yml`. The library covers all 14 field material classes from M00 exactly once, records allowed components and `burnable`/`inert`/`unknown` classification, and attaches a source role and limitation to every non-empty reference. It intentionally contains no numerical physical parameters, moisture bands, or hidden defaults; an unknown key such as `parameters` or `condition` is rejected.
+
+Two reference-only cards preserve the existing Douglas-fir/southern-pine and laminated-bamboo profile IDs without claiming that they are local measurements. Grass, shrub, tree-equivalent and litter cards point to the USDA standard fuel-model method while remaining `pending_full_text`; brick, concrete/mortar, stone and metal use the official reaction-to-fire classification as a bounded classification reference and also remain pending for assembly heat-transfer data. The EUR-Lex classification source is used only to document its product/end-use boundary, never to create an HRR or ignition value.
+
+M01 tests in `tests/village/test_material_cards.py` cover complete category coverage, evidence-status counts, source/profile references, duplicate/missing-class behavior, strict rejection of numerical or dry/wet fields, unknown sources, and the permanent `production_ready: false` gate. The library is an inventory, not a runnable scenario; no existing run directory was modified and no full-village fire simulation was executed.
+
+Verification for M01:
+
+- `conda run -n pyfireca-village pytest -q tests/village/test_material_cards.py tests/village/test_survey.py`
+- `conda run -n pyfireca-village ruff check src/pyfireca/village/material_cards.py tests/village/test_material_cards.py`
+
+M02 handoff: add explicit assembly presets, quantity/coverage resolution and a separate initial-moisture state package. Preserve the card IDs and source roles; do not copy numeric values into the card selector or add field dry/wet choices.

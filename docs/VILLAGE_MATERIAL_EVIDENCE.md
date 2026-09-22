@@ -2,6 +2,8 @@
 
 当前清单为 [`examples/village/material-catalog-3.gaoyou-evidence.yml`](../examples/village/material-catalog-3.gaoyou-evidence.yml)，其状态是 `evidence_inventory_not_calibrated`，`production_ready: false`。它保留已有 22 个材料类别，但不是可直接驱动高友村模拟的真实参数包。除已逐项核对的外部参考试件外，本地材料数值保持 `null`。现有 500 分钟模拟依然使用独立的 `synthetic_wood` 场景参数。
 
+M01 新增的类别选择层是 [`examples/village/material_cards/catalog.yml`](../examples/village/material_cards/catalog.yml)，由 `village-material-cards-1` 加载器校验。它与本参数级目录分离：材料卡只保存现场类别、允许部位、参考 profile ID、证据状态和限制，不复制任何数值。木材、层积竹的参考试件沿用本目录的 profile ID；草、灌木、树木等效燃料和枯落物只登记 USDA 标准燃料模型的**方法来源**，暂不把标准模型当作高友村实测。砖、混凝土/水泥砂浆、石材和金属板登记 [Commission Decision 96/603/EC](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:01996D0603-20030612) 的产品分类边界，但仍不能由分类直接生成热传递或燃烧数值。
+
 ## 每个数值必须可追溯
 
 `material-catalog-3` 的每一个非空数值都必须记录：
