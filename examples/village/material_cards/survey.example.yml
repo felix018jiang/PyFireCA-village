@@ -1,0 +1,30 @@
+schema_version: village-field-survey-1
+survey_id: gaoyou-field-survey-example
+records:
+  - observation_id: OBS-001
+    object_id: B0233
+    component: facade
+    geometry_ref: wall-segments/B0233-east
+    material_class: wood_unspecified
+    quantity_band: unknown
+    notes: 外立面现场确认是木质；树种和厚度待后续记录
+
+  - observation_id: OBS-002
+    object_id: B0233
+    component: interior_wall
+    geometry_ref: buildings/B0233
+    material_class: masonry_brick
+    notes: 仅记录可见内墙；室内家具未在此条记录中推断
+
+  - observation_id: OBS-003
+    object_id: YARD-001
+    component: ground
+    geometry_ref: survey-polygons/YARD-001
+    material_class: concrete_mortar
+
+  - observation_id: OBS-004
+    object_id: VEGETATION-001
+    component: vegetation
+    geometry_ref: survey-polygons/VEGETATION-001
+    material_class: unknown
+    notes: 现场无法稳定区分草地和灌木，保留未知

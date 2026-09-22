@@ -57,7 +57,7 @@
 - The viewer is a completed-run replay. T08/T09 case import, click-to-ignite editing and asynchronous web-run service remain.
 - The v1 effective exposure coefficients and all example values are synthetic. The v2 kernel, prepared Gaoyou grid, building-derived blocker mask and browser viewer are connected, but the evidence catalog still has no complete local material profile.
 - Dynamic sample times use the first committed solver state at or after the requested interval. Early source exhaustion writes the final cooled state; denser analytic post-stop samples remain future work.
-- Next implementation task is chapter 23 V05: connect the V03 cell physics and V04 shared radiation graph in a synchronous solver, then pass the frozen cross-category, ordering, cooling/event, and timestep-convergence tests. Convection, firebrands and crown layering remain later independent work.
+- Latest planning priority is chapter 24 M00–M03: simplify field input to component/material classification and resolve traceable material cards plus explicit assembly presets. No field dry/wet bands are required; initial moisture belongs to a separate scenario state package. Resume V05 after M03. This is a documentation decision, not an implemented input feature. Convection, environmental rewetting, firebrands and crown layering remain independent later work.
 
 ## 2026-09-21 — Chapter 23 V00/V01
 
@@ -127,3 +127,11 @@ Focused VT09/10/12/14 verification passes 5 tests. Updated artifact hashes are:
 - V04 `resource_report.json`: `50eedc2a4838e157d6ea71e5090fe68e75c910d715aa52077b7bcfb4897a9673`
 
 V05 handoff: implement `solver_v3.py` and pass VT02/08/11/15/17 on frozen small-domain fixtures before any full-village dynamic run. The 74,829 unknown cells remain excluded from this forecast and continue to block a final full-village claim.
+
+## 2026-09-22 — Chapter 24 M00
+
+M00 added the first low-burden field survey contract in `src/pyfireca/village/survey.py`. A record now requires only `observation_id`, `object_id`, `component`, `geometry_ref` and `material_class`; optional `quantity_band`, `subtype` and `notes` describe construction information without asking for physical coefficients. Stable component IDs are `facade`, `roof`, `interior_wall`, `contents`, `ground` and `vegetation`. Stable material IDs cover wood, bamboo, thatch/straw, brick masonry, concrete/mortar, stone, metal sheet, grass, shrub, tree-equivalent fuel, litter, mixed contents, composite unknown and unknown.
+
+The survey schema deliberately rejects `condition`, `dry`, `wet` and other moisture-band fields. Initial moisture is reserved for a separate time-dependent scenario package; fire-driven surface evaporation remains a solver concern. A concrete field guide is in `docs/VILLAGE_FIELD_SURVEY.md`, and the independent example is `examples/village/material_cards/survey.example.yml`.
+
+M00 tests in `tests/village/test_survey.py` cover the example, stable enumerations, explicit unknown material, invalid component, missing geometry, duplicate observation IDs, optional quantity information, empty records and rejection of moisture fields. The new parser does not resolve evidence cards, construct fuel masses or run a fire simulation. M01 is next: build the minimal traceable material-card inventory and document which categories are still `pending_full_text` or `scenario_assumed`.

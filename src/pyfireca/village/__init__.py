@@ -26,6 +26,7 @@ from pyfireca.village.solver_v2 import (
     run_v2_simulation,
 )
 from pyfireca.village.state import VillageCellState, VillageState
+from pyfireca.village.survey import FieldSurvey, FieldSurveyRecord, load_field_survey
 from pyfireca.village.transport_v2 import (
     V2RadiativeTransportParameters,
     build_v2_radiative_transport_edges,
@@ -35,6 +36,8 @@ from pyfireca.village.workflow_v2 import load_v2_file_case, run_v2_file_case
 __all__ = [
     "CellParameterArrays",
     "ExposureEdges",
+    "FieldSurvey",
+    "FieldSurveyRecord",
     "PreparedV2Case",
     "PreparedVillageDomain",
     "V2CellPhysicsArrays",
@@ -50,6 +53,7 @@ __all__ = [
     "VillageSimulationResult",
     "VillageState",
     "build_v2_radiative_transport_edges",
+    "load_field_survey",
     "load_prepared_v2_case",
     "load_v2_file_case",
     "run_prepared_v2_case",
