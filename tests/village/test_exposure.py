@@ -5,9 +5,11 @@ import pytest
 
 from pyfireca.village.domain import CellParameterArrays, PreparedVillageDomain, VillageGridSpec
 from pyfireca.village.exposure import (
+    SourceIndexedExposure,
     build_exposure_edges,
     estimate_exposure_resources,
     integrate_exposure_dose,
+    target_power_W,
 )
 
 
@@ -90,3 +92,32 @@ def test_resource_estimate_and_limit_are_checked_before_graph_allocation() -> No
             decay_length_m=5.0,
             max_edge_count=1199,
         )
+
+
+@pytest.mark.parametrize("active_sources", [(), (0,), (0, 4), tuple(range(9))])
+def test_source_indexed_exposure_matches_dense_distribution(
+    active_sources: tuple[int, ...],
+) -> None:
+    edges = build_exposure_edges(_domain(), exposure_radius_m=1.5, decay_length_m=5.0)
+    indexed = SourceIndexedExposure.from_edges(edges)
+    power = np.zeros(edges.cell_count, dtype=np.float64)
+    power[list(active_sources)] = np.arange(1, len(active_sources) + 1) * 1000.0
+
+    np.testing.assert_allclose(
+        indexed.target_power_W(power), target_power_W(power, edges), rtol=0.0, atol=1e-12
+    )
+
+
+def test_source_indexed_exposure_preserves_duplicate_target_contributions() -> None:
+    from pyfireca.village.domain import ExposureEdges
+
+    edges = ExposureEdges(
+        source=np.asarray([0, 0, 2], dtype=np.int32),
+        target=np.asarray([1, 1, 1], dtype=np.int32),
+        weight=np.asarray([0.2, 0.3, 0.4]),
+        cell_count=3,
+    )
+    power = np.asarray([10.0, 0.0, 0.0])
+    indexed = SourceIndexedExposure.from_edges(edges, dense_edge_fraction=1.0)
+
+    np.testing.assert_allclose(indexed.target_power_W(power), target_power_W(power, edges))

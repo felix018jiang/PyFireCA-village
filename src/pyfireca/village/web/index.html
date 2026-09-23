@@ -28,8 +28,12 @@
             <label class="layer-picker"><span>计算图层</span>
               <select id="layerMode">
                 <option value="state">火灾状态</option>
+                <option value="material">材料分区</option>
+                <option value="landcover">地类分区</option>
                 <option value="temperature">表面温度</option>
                 <option value="hrr">热释放率 HRR</option>
+                <option value="fuel">剩余可燃燃料</option>
+                <option value="surface_water">表层水量</option>
               </select>
             </label>
             <label class="switch"><input id="toggleBuildings" type="checkbox" checked /><span>建筑轮廓</span></label>
@@ -69,9 +73,14 @@
             <dt>编号</dt><dd id="cellId">—</dd>
             <dt>状态</dt><dd id="cellState">—</dd>
             <dt>材质索引</dt><dd id="cellMaterial">—</dd>
+            <dt>地类</dt><dd id="cellLandcover">—</dd>
+            <dt>覆盖率</dt><dd id="cellCoverage">—</dd>
             <dt>剩余燃料</dt><dd id="cellFuel">—</dd>
+            <dt>表层水量</dt><dd id="cellWater">—</dd>
             <dt>表面温度</dt><dd id="cellTemperature">—</dd>
             <dt>HRR</dt><dd id="cellHrr">—</dd>
+            <dt>首次点燃</dt><dd id="cellIgnition">—</dd>
+            <dt>点燃原因</dt><dd id="cellCause">—</dd>
             <dt>建筑</dt><dd id="cellBuilding">—</dd>
             <dt>房屋状态</dt><dd id="cellBuildingState">—</dd>
           </dl>
@@ -80,6 +89,8 @@
             <div><span>累计引燃</span><strong id="ignitedCount">—</strong></div>
             <div><span>燃烧房屋</span><strong id="burningBuildingCount">—</strong></div>
             <div><span>受影响房屋</span><strong id="affectedBuildingCount">—</strong></div>
+            <div><span>燃烧植被</span><strong id="burningVegetationCount">—</strong></div>
+            <div><span>受影响植被</span><strong id="affectedVegetationCount">—</strong></div>
           </div>
         </aside>
       </main>
@@ -100,6 +111,6 @@
         <span id="frameReadout">0 / 0</span>
       </footer>
     </div>
-    <script type="module" src="assets/app.js"></script>
+    <script type="module" src="assets/app.js?v=20260922-satellite-background-2"></script>
   </body>
 </html>

@@ -17,6 +17,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 16260000, unit: J/kg_dry, provenance: synthetic:m02_wood_fixture}
+      live_dry_mass_fraction: {value: 0, unit: '1', provenance: synthetic:m02_wood_fixture}
+      dead_dry_mass_fraction: {value: 1, unit: '1', provenance: synthetic:m02_wood_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.6, unit: '1', provenance: synthetic:m02_wood_fixture}
       ignition_temperature_K: {value: 523, unit: K, provenance: synthetic:m02_wood_fixture}
       peak_hrrpua_W_m2: {value: 300000, unit: W/m^2_active, provenance: synthetic:m02_wood_fixture}
@@ -63,6 +65,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 13000000, unit: J/kg_dry, provenance: synthetic:m02_bamboo_fixture}
+      live_dry_mass_fraction: {value: 0, unit: '1', provenance: synthetic:m02_bamboo_fixture}
+      dead_dry_mass_fraction: {value: 1, unit: '1', provenance: synthetic:m02_bamboo_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.65, unit: '1', provenance: synthetic:m02_bamboo_fixture}
       ignition_temperature_K: {value: 570.15, unit: K, provenance: synthetic:m02_bamboo_fixture}
       peak_hrrpua_W_m2: {value: 235000, unit: W/m^2_active, provenance: synthetic:m02_bamboo_fixture}
@@ -102,6 +106,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 16000000, unit: J/kg_dry, provenance: synthetic:m02_thatch_fixture}
+      live_dry_mass_fraction: {value: 0, unit: '1', provenance: synthetic:m02_thatch_fixture}
+      dead_dry_mass_fraction: {value: 1, unit: '1', provenance: synthetic:m02_thatch_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.75, unit: '1', provenance: synthetic:m02_thatch_fixture}
       ignition_temperature_K: {value: 500, unit: K, provenance: synthetic:m02_thatch_fixture}
       peak_hrrpua_W_m2: {value: 200000, unit: W/m^2_active, provenance: synthetic:m02_thatch_fixture}
@@ -213,6 +219,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:m02_grass_fixture}
+      live_dry_mass_fraction: {value: 0.4, unit: '1', provenance: synthetic:m02_grass_fixture}
+      dead_dry_mass_fraction: {value: 0.6, unit: '1', provenance: synthetic:m02_grass_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:m02_grass_fixture}
       ignition_temperature_K: {value: 500, unit: K, provenance: synthetic:m02_grass_fixture}
       peak_hrrpua_W_m2: {value: 100000, unit: W/m^2_active, provenance: synthetic:m02_grass_fixture}
@@ -259,6 +267,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:m02_shrub_fixture}
+      live_dry_mass_fraction: {value: 0.55, unit: '1', provenance: synthetic:m02_shrub_fixture}
+      dead_dry_mass_fraction: {value: 0.45, unit: '1', provenance: synthetic:m02_shrub_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.9, unit: '1', provenance: synthetic:m02_shrub_fixture}
       ignition_temperature_K: {value: 520, unit: K, provenance: synthetic:m02_shrub_fixture}
       peak_hrrpua_W_m2: {value: 180000, unit: W/m^2_active, provenance: synthetic:m02_shrub_fixture}
@@ -298,6 +308,8 @@ presets:
     evidence: synthetic:m02_material_card_demo_non_crown
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:m02_tree_fixture}
+      live_dry_mass_fraction: {value: 0.65, unit: '1', provenance: synthetic:m02_tree_fixture}
+      dead_dry_mass_fraction: {value: 0.35, unit: '1', provenance: synthetic:m02_tree_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.75, unit: '1', provenance: synthetic:m02_tree_fixture}
       ignition_temperature_K: {value: 540, unit: K, provenance: synthetic:m02_tree_fixture}
       peak_hrrpua_W_m2: {value: 150000, unit: W/m^2_active, provenance: synthetic:m02_tree_fixture}
@@ -330,6 +342,8 @@ presets:
     evidence: synthetic:m02_material_card_demo
     base_parameters:
       heat_of_combustion_J_kg_dry: {value: 18000000, unit: J/kg_dry, provenance: synthetic:m02_litter_fixture}
+      live_dry_mass_fraction: {value: 0.05, unit: '1', provenance: synthetic:m02_litter_fixture}
+      dead_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:m02_litter_fixture}
       pyrolysable_dry_mass_fraction: {value: 0.95, unit: '1', provenance: synthetic:m02_litter_fixture}
       ignition_temperature_K: {value: 510, unit: K, provenance: synthetic:m02_litter_fixture}
       peak_hrrpua_W_m2: {value: 100000, unit: W/m^2_active, provenance: synthetic:m02_litter_fixture}

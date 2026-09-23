@@ -1,0 +1,47 @@
+schema_version: village-v05-small-domain-fixture-1
+fixture_id: v05-building-vegetation-shared-clock
+evidence: synthetic_solver_verification_only
+grid:
+  cell_size_m: 1.0
+scenario:
+  ambient_temperature_K: 300.0
+  ignition_temperature_K: 305.0
+  heating_temperature_delta_K: 0.001
+  max_dt_s: 0.25
+  end_time_s: 8.0
+physics:
+  coverage_fraction: 1.0
+  initial_dry_fuel_mass_kg: 1.0
+  pyrolysable_dry_fuel_mass_kg: 1.0
+  total_water_mass_kg: 0.0
+  moisture_content_dry_basis: 0.0
+  effective_heated_dry_mass_kg: 0.02
+  specific_heat_J_kg_K: 100.0
+  heat_of_combustion_J_kg_dry: 1000.0
+  peak_hrr_W: 600.0
+  radiative_fraction: 1.0
+  absorptivity: 1.0
+  emissivity: 0.0
+  ambient_heat_transfer_coefficient_W_m2_K: 0.0
+  backing_conductance_W_m2_K: 0.0
+  growth_time_s: 0.5
+  steady_time_s: 1.25
+  decay_time_s: 0.5
+  receiver_area_m2: 1.0
+  active_surface_area_m2: 1.0
+  source_height_m: 0.5
+  receiver_height_m: 0.1
+transport:
+  strong_edge_weight: 0.08
+  weak_edge_weight: 0.005
+  road_crossing_radius_m: 2.1
+material_codes:
+  grass: 0
+  shrub: 1
+  tree_equivalent: 2
+  litter: 3
+  building_wood: 4
+  concrete: 5
+notes:
+  - Values are frozen synthetic verification parameters, not Gaoyou measurements.
+  - Material labels exercise shared solver paths; they do not select different equations.

@@ -11,6 +11,7 @@ from numpy.typing import NDArray
 from pyfireca.village.domain import ExposureEdges, PreparedVillageDomain
 
 DEFAULT_MAX_EXPOSURE_EDGES = 5_000_000
+DEFAULT_DENSE_EDGE_FRACTION = 0.25
 
 
 @dataclass(frozen=True, slots=True)
@@ -26,6 +27,80 @@ class ExposureResourceEstimate:
 
     def as_dict(self) -> dict[str, int]:
         return asdict(self)
+
+
+@dataclass(frozen=True, slots=True)
+class SourceIndexedExposure:
+    """Reuse a source-grouped edge table without scanning inactive sources.
+
+    :class:`ExposureEdges` canonicalizes edges by ``(source, target)``, so one
+    cumulative offset array is enough to address every source's contiguous
+    edge span. Sparse fire fronts use only those spans. Dense fire fronts keep
+    the vectorized all-edge calculation, which is faster once a large share of
+    the graph is active.
+    """
+
+    edges: ExposureEdges
+    source_offsets: NDArray[np.int64]
+    dense_edge_fraction: float = DEFAULT_DENSE_EDGE_FRACTION
+
+    def __post_init__(self) -> None:
+        if not isinstance(self.edges, ExposureEdges):
+            raise TypeError("edges must be ExposureEdges")
+        offsets = np.asarray(self.source_offsets)
+        expected_shape = (self.edges.cell_count + 1,)
+        if offsets.shape != expected_shape or not np.issubdtype(offsets.dtype, np.integer):
+            raise TypeError("source_offsets must be an integer array of length cell_count + 1")
+        if offsets[0] != 0 or offsets[-1] != len(self.edges.source):
+            raise ValueError("source_offsets do not cover the exposure edge table")
+        if np.any(np.diff(offsets) < 0):
+            raise ValueError("source_offsets must be monotone")
+        if not np.isfinite(self.dense_edge_fraction) or not 0.0 < self.dense_edge_fraction <= 1.0:
+            raise ValueError("dense_edge_fraction must lie in (0, 1]")
+        object.__setattr__(self, "source_offsets", offsets.astype(np.int64, copy=True))
+
+    @classmethod
+    def from_edges(
+        cls,
+        edges: ExposureEdges,
+        *,
+        dense_edge_fraction: float = DEFAULT_DENSE_EDGE_FRACTION,
+    ) -> SourceIndexedExposure:
+        """Build the compact source offsets once for a simulation run."""
+
+        counts = np.bincount(edges.source, minlength=edges.cell_count)
+        offsets = np.empty(edges.cell_count + 1, dtype=np.int64)
+        offsets[0] = 0
+        np.cumsum(counts, out=offsets[1:])
+        return cls(edges, offsets, dense_edge_fraction)
+
+    def target_power_W(self, emitted_power_W: NDArray[np.floating]) -> NDArray[np.float64]:
+        """Distribute power, touching only active-source spans when sparse."""
+
+        power = _validated_emitted_power(emitted_power_W, self.edges.cell_count)
+        active_sources = np.flatnonzero(power > 0.0)
+        if active_sources.size == 0:
+            return np.zeros(self.edges.cell_count, dtype=np.float64)
+
+        offsets = self.source_offsets
+        active_edge_count = int(
+            np.sum(offsets[active_sources + 1] - offsets[active_sources], dtype=np.int64)
+        )
+        if active_edge_count >= len(self.edges.source) * self.dense_edge_fraction:
+            return _target_power_from_validated(power, self.edges)
+
+        received = np.zeros(self.edges.cell_count, dtype=np.float64)
+        for source in active_sources:
+            start = int(offsets[source])
+            stop = int(offsets[source + 1])
+            if start == stop:
+                continue
+            np.add.at(
+                received,
+                self.edges.target[start:stop],
+                power[source] * self.edges.weight[start:stop],
+            )
+        return received
 
 
 def estimate_exposure_resources(
@@ -143,11 +218,24 @@ def target_power_W(
 ) -> NDArray[np.float64]:
     """Distribute source power over edges and sum it at targets."""
 
+    power = _validated_emitted_power(emitted_power_W, edges.cell_count)
+    return _target_power_from_validated(power, edges)
+
+
+def _validated_emitted_power(
+    emitted_power_W: NDArray[np.floating], cell_count: int
+) -> NDArray[np.float64]:
     power = np.asarray(emitted_power_W, dtype=np.float64).reshape(-1)
-    if power.size != edges.cell_count:
+    if power.size != cell_count:
         raise ValueError("emitted power size does not match edge cell_count")
     if np.any(~np.isfinite(power)) or np.any(power < 0.0):
         raise ValueError("emitted power must be finite and non-negative")
+    return power
+
+
+def _target_power_from_validated(
+    power: NDArray[np.float64], edges: ExposureEdges
+) -> NDArray[np.float64]:
     contributions = power[edges.source] * edges.weight
     return np.bincount(edges.target, weights=contributions, minlength=edges.cell_count)
 

@@ -6,6 +6,7 @@ import argparse
 import contextlib
 import functools
 import http.server
+import json
 import webbrowser
 from pathlib import Path
 
@@ -13,14 +14,23 @@ import numpy as np
 
 from pyfireca.village.bootstrap import bootstrap_village_case
 from pyfireca.village.exposure import estimate_exposure_resources
+from pyfireca.village.gaoyou_v3 import build_gaoyou_v3_case
 from pyfireca.village.hypothetical import build_hypothetical_material_case
+from pyfireca.village.inspection_v3 import inspect_v3_run
 from pyfireca.village.materials_v2 import load_material_catalog_v2
 from pyfireca.village.materials_v3 import load_material_catalog_v3
+from pyfireca.village.preflight_v3 import preflight_v3_case
 from pyfireca.village.prepare import prepare_village_case
 from pyfireca.village.prepared_workflow_v2 import load_prepared_v2_case, run_prepared_v2_case
+from pyfireca.village.resolution_workflow_v3 import resolve_survey_v3
+from pyfireca.village.resource_sensitivity_v3 import build_resource_sensitivity_report
+from pyfireca.village.rgb_hypothesis_v3 import complete_rgb_hypothesis_spatial
+from pyfireca.village.survey_mapping_v3 import validate_unknown_mapping_v3
+from pyfireca.village.unknown_review_v3 import review_unknown_v3
 from pyfireca.village.vegetation_prepare import prepare_vegetation_spatial
 from pyfireca.village.workflow import run_village_config, validate_village_run
 from pyfireca.village.workflow_v2 import load_v2_file_case, run_v2_file_case
+from pyfireca.village.workflow_v3 import load_v3_case_bundle, run_v3_case_bundle
 
 
 def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
@@ -72,6 +82,21 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
     run_v2 = commands.add_parser("run-v2", help="run a complete effective_exposure_ca_v2 case")
     run_v2.add_argument("case", type=Path)
     run_v2.add_argument("--output", type=Path, required=True)
+    validate_v3 = commands.add_parser(
+        "validate-v3", help="validate a serialized effective_exposure_ca_v3 case bundle"
+    )
+    validate_v3.add_argument("case", type=Path)
+    run_v3 = commands.add_parser(
+        "run-v3", help="run a serialized effective_exposure_ca_v3 case bundle"
+    )
+    run_v3.add_argument("case", type=Path)
+    run_v3.add_argument("--output", type=Path, required=True)
+    run_v3.add_argument("--prepared", type=Path)
+    run_v3.add_argument(
+        "--chunk-frames",
+        type=int,
+        help="write viewer dynamic arrays as bounded frame chunks",
+    )
     validate_prepared_v2 = commands.add_parser(
         "validate-prepared-v2", help="validate v2 profiles against a prepared village"
     )
@@ -96,6 +121,94 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
     view = commands.add_parser("view", help="serve an existing village result viewer")
     view.add_argument("run", type=Path)
     view.add_argument("--port", type=int, default=8765)
+    view_v3 = commands.add_parser("view-v3", help="serve an existing V3 village result viewer")
+    view_v3.add_argument("run", type=Path)
+    view_v3.add_argument("--port", type=int, default=8765)
+    inspect_v3 = commands.add_parser(
+        "inspect-v3", help="check representative V3 replay frames against backend arrays"
+    )
+    inspect_v3.add_argument("run", type=Path)
+    inspect_v3.add_argument("--output", type=Path)
+    inspect_v3.add_argument(
+        "--cell-id",
+        type=int,
+        action="append",
+        default=[],
+        help="cell id to include in first/middle/final frame details (repeatable)",
+    )
+    preflight_v3 = commands.add_parser(
+        "preflight-v3", help="audit a V3 case before whole-domain simulation"
+    )
+    preflight_v3.add_argument("case", type=Path)
+    preflight_v3.add_argument("--output", type=Path)
+    preflight_v3.add_argument("--max-edge-count", type=int, default=5_000_000)
+    preflight_v3.add_argument("--max-memory-mb", type=int, default=2_048)
+    review_unknown = commands.add_parser(
+        "review-unknown-v3", help="summarize unresolved V3 cells without assigning materials"
+    )
+    review_unknown.add_argument("prepared", type=Path)
+    review_unknown.add_argument("case", type=Path)
+    review_unknown.add_argument("--output", type=Path, required=True)
+    validate_mapping = commands.add_parser(
+        "validate-unknown-mapping-v3",
+        help="check field material mappings against a V3 unknown-area review",
+    )
+    validate_mapping.add_argument("review", type=Path)
+    validate_mapping.add_argument("survey", type=Path)
+    validate_mapping.add_argument("--output", type=Path)
+    resolve_survey = commands.add_parser(
+        "resolve-survey-v3", help="resolve a field survey into auditable M02 quantities"
+    )
+    resolve_survey.add_argument("survey", type=Path)
+    resolve_survey.add_argument("--material-cards", type=Path, required=True)
+    resolve_survey.add_argument("--assemblies", type=Path, required=True)
+    resolve_survey.add_argument("--moisture", type=Path, required=True)
+    resolve_survey.add_argument("--geometry-areas", type=Path, required=True)
+    resolve_survey.add_argument(
+        "--mode", choices=("demonstration", "evidence_checked"), default="demonstration"
+    )
+    resolve_survey.add_argument("--case-id", default="v3-resolved-survey")
+    resolve_survey.add_argument("--output", type=Path, required=True)
+    rgb_case = commands.add_parser(
+        "build-gaoyou-rgb-v3",
+        help="build an explicitly hypothetical full-domain V3 bundle from RGB completion",
+    )
+    rgb_case.add_argument("prepared", type=Path)
+    rgb_case.add_argument("physics", type=Path)
+    rgb_case.add_argument("transport", type=Path)
+    rgb_case.add_argument("--output", type=Path, required=True)
+    rgb_case.add_argument("--case-snapshot", type=Path)
+    rgb_case.add_argument("--end-time-s", type=float, default=30_000.0)
+    rgb_case.add_argument("--sample-interval-s", type=float, default=300.0)
+    rgb_case.add_argument(
+        "--max-edge-count",
+        type=int,
+        help="explicit resource override for this new bundle; the snapshot is not modified",
+    )
+    rgb_case.add_argument(
+        "--max-memory-mb",
+        type=int,
+        help="explicit construction-memory override for this new bundle",
+    )
+    complete_rgb = commands.add_parser(
+        "complete-rgb-hypothesis-v3",
+        help="fill V01 unknown cells with an explicit inert RGB hypothesis",
+    )
+    complete_rgb.add_argument("prepared", type=Path)
+    complete_rgb.add_argument("--output", type=Path, required=True)
+    resource_sensitivity = commands.add_parser(
+        "resource-sensitivity-v3",
+        help="estimate full-domain V3 graph and replay resources without building or running",
+    )
+    resource_sensitivity.add_argument("spatial", type=Path)
+    resource_sensitivity.add_argument("physics", type=Path)
+    resource_sensitivity.add_argument("--case-snapshot", type=Path, required=True)
+    resource_sensitivity.add_argument("--output", type=Path, required=True)
+    resource_sensitivity.add_argument(
+        "--radii-m", type=float, nargs="+", default=[4.0, 6.0, 8.0, 10.0]
+    )
+    resource_sensitivity.add_argument("--end-time-s", type=float, default=30_000.0)
+    resource_sensitivity.add_argument("--sample-interval-s", type=float, default=300.0)
 
 
 def run_village_command(args: argparse.Namespace) -> int:
@@ -174,6 +287,153 @@ def run_village_command(args: argparse.Namespace) -> int:
         print(f"Ignited cells: {ignited}")
         print(f"Consumed fuel: {result.consumed_fuel_kg:.6f} kg")
         return 0
+    if args.village_command == "validate-v3":
+        case = load_v3_case_bundle(args.case)
+        request = case.request
+        print(f"Valid village v3 case: {args.case.resolve()}")
+        print(
+            f"Grid: {request.grid.height} x {request.grid.width}; "
+            f"burnable cells: {int(np.count_nonzero(request.burnable_mask))}; "
+            f"unknown policy: {request.unknown_policy}"
+        )
+        print(f"Exposure edges: {len(request.exposure_edges.source):,}")
+        return 0
+    if args.village_command == "run-v3":
+        result, output = run_v3_case_bundle(
+            args.case,
+            args.output,
+            prepared_dir=args.prepared,
+            chunk_frames=args.chunk_frames,
+        )
+        ignited = int(np.count_nonzero(np.isfinite(result.final_state.ignition_time_s)))
+        print(f"Village v3 run complete: {output.resolve()}")
+        print(f"Ignited cells: {ignited}")
+        print(f"Consumed fuel: {result.consumed_fuel_kg:.6f} kg")
+        return 0
+    if args.village_command == "inspect-v3":
+        report = inspect_v3_run(args.run, output=args.output, cell_ids=args.cell_id)
+        checks = ", ".join(f"{key}={value}" for key, value in report["backend_checks"].items())
+        print(f"V3 replay inspection: {args.run.resolve()}")
+        print(
+            f"Representative frames: {report['frame_count']} total; "
+            f"visual acceptance: {report['visual_acceptance']}"
+        )
+        if checks:
+            print(f"Backend checks: {checks}")
+        if args.output:
+            print(f"Inspection report: {args.output.resolve()}")
+        return 0
+    if args.village_command == "preflight-v3":
+        report = preflight_v3_case(
+            args.case,
+            output=args.output,
+            max_edge_count=args.max_edge_count,
+            max_memory_mb=args.max_memory_mb,
+        )
+        print(f"V3 preflight: {args.case.resolve()}")
+        print(f"Status: {report['status']}")
+        print(
+            f"Cells: {report['grid']['cell_count']:,}; "
+            f"burnable: {report['classification']['burnable_cell_count']:,}; "
+            f"unknown: {report['classification']['unknown_cell_count']:,}; "
+            f"edges: {report['transport']['edge_count']:,}"
+        )
+        for reason in report["research_gate_reasons"] + report["resource_gate_reasons"]:
+            print(f"  BLOCK: {reason}")
+        if args.output:
+            print(f"Preflight report: {args.output.resolve()}")
+        return 0
+    if args.village_command == "review-unknown-v3":
+        report = review_unknown_v3(args.prepared, args.case, output_dir=args.output)
+        print(f"V3 unknown review: {args.output.resolve()}")
+        print(
+            f"Unknown cells: {report['unknown_cell_count']:,}; "
+            f"area: {report['unknown_area_m2']:.1f} m²; "
+            f"components: {report['component_count']:,}"
+        )
+        print("No case arrays were modified; choose a policy before rebuilding a runnable bundle.")
+        return 0
+    if args.village_command == "validate-unknown-mapping-v3":
+        report = validate_unknown_mapping_v3(args.review, args.survey, output=args.output)
+        print(f"V3 survey mapping validation: {args.survey.resolve()}")
+        print(
+            f"Status: {report['status']}; mapped components: "
+            f"{report['mapped_component_count']:,}/{report['expected_component_count']:,}"
+        )
+        for issue in report["issues"]:
+            print(f"  BLOCK: {issue}")
+        if args.output:
+            print(f"Mapping validation report: {args.output.resolve()}")
+        return 0
+    if args.village_command == "resolve-survey-v3":
+        resolved = resolve_survey_v3(
+            args.survey,
+            material_cards_path=args.material_cards,
+            assemblies_path=args.assemblies,
+            moisture_path=args.moisture,
+            geometry_areas_path=args.geometry_areas,
+            mode=args.mode,
+            case_id=args.case_id,
+            output=args.output,
+        )
+        print(f"V3 survey resolution: {args.survey.resolve()}")
+        print(f"Status: {'ready' if resolved.can_run else 'blocked'}")
+        print(f"Records: {len(resolved.records):,}; issues: {len(resolved.issues):,}")
+        if resolved.issues:
+            for issue in resolved.issues[:10]:
+                print(f"  BLOCK: {issue.code}: {issue.message}")
+        print(f"Resolved survey report: {args.output.resolve()}")
+        return 0
+    if args.village_command == "build-gaoyou-rgb-v3":
+        output = build_gaoyou_v3_case(
+            args.prepared,
+            args.physics,
+            args.transport,
+            args.output,
+            case_snapshot=args.case_snapshot,
+            end_time_s=args.end_time_s,
+            sample_interval_s=args.sample_interval_s,
+            fill_unknown_as_bare_or_road=True,
+            max_edge_count=args.max_edge_count,
+            max_memory_mb=args.max_memory_mb,
+        )
+        print(f"Gaoyou RGB-hypothesis V3 bundle: {output.resolve()}")
+        print("Unknown domain cells were assigned to hypothetical inert bare/road receivers.")
+        print("All materials and combustion parameters remain synthetic assumptions.")
+        return 0
+    if args.village_command == "complete-rgb-hypothesis-v3":
+        output = complete_rgb_hypothesis_spatial(args.prepared, args.output)
+        report = json.loads((output / "hypothetical_completion_report.json").read_text())
+        print(f"RGB-hypothesis spatial package: {output.resolve()}")
+        print(
+            f"Filled bare/road cells: {report['filled_bare_or_road_cell_count']:,}; "
+            f"final known cells: {report['final_known_cell_count']:,}"
+        )
+        print("Status: hypothetical_only; combustion parameters were not changed.")
+        return 0
+    if args.village_command == "resource-sensitivity-v3":
+        report = build_resource_sensitivity_report(
+            args.spatial,
+            args.physics,
+            args.case_snapshot,
+            output=args.output,
+            radii_m=args.radii_m,
+            end_time_s=args.end_time_s,
+            sample_interval_s=args.sample_interval_s,
+        )
+        active = report["active_case"]
+        estimate = active["estimate"]["estimate"]
+        print(f"V3 resource sensitivity: {args.output.resolve()}")
+        print(
+            f"Active radius: {active['radius_m']:.1f} m; "
+            f"candidate edges: {estimate['candidate_edge_upper_bound']:,}; "
+            f"status: {report['status']}"
+        )
+        print(
+            "No transport edges were built and no simulation was run; "
+            "radius entries are diagnostic alternatives."
+        )
+        return 0
     if args.village_command == "validate-materials-v2":
         catalog = load_material_catalog_v2(args.catalog)
         fuel_materials = [
@@ -240,7 +500,7 @@ def run_village_command(args: argparse.Namespace) -> int:
         print(f"Ignited cells: {ignited}")
         print(f"Consumed fuel: {result.consumed_fuel_kg:.6f} kg")
         return 0
-    if args.village_command == "view":
+    if args.village_command in {"view", "view-v3"}:
         viewer = (args.run / "viewer").resolve()
         if not (viewer / "manifest.json").is_file():
             raise FileNotFoundError(f"village viewer not found: {viewer}")

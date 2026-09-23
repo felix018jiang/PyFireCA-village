@@ -208,11 +208,20 @@ def burn_interval_energy_and_hrr(
     if any(np.any(~np.isfinite(value)) or np.any(value < 0.0) for value in arrays):
         raise ValueError("v2 burn arrays must be finite and non-negative")
     age, fuel, peak, growth, steady, decay, heat = arrays
-    before = _burn_curve_antiderivative(age, growth, steady, decay)
-    after = _burn_curve_antiderivative(age + dt_s, growth, steady, decay)
-    curve_energy = peak * np.maximum(after - before, 0.0)
-    available_energy = fuel * heat
-    released = np.where(active, np.minimum(curve_energy, available_energy), 0.0)
+    released = np.zeros_like(age)
+    active_indices = np.flatnonzero(active.reshape(-1))
+    if active_indices.size:
+        age_active = age.reshape(-1)[active_indices]
+        growth_active = growth.reshape(-1)[active_indices]
+        steady_active = steady.reshape(-1)[active_indices]
+        decay_active = decay.reshape(-1)[active_indices]
+        before = _burn_curve_antiderivative(age_active, growth_active, steady_active, decay_active)
+        after = _burn_curve_antiderivative(
+            age_active + dt_s, growth_active, steady_active, decay_active
+        )
+        curve_energy = peak.reshape(-1)[active_indices] * np.maximum(after - before, 0.0)
+        available_energy = fuel.reshape(-1)[active_indices] * heat.reshape(-1)[active_indices]
+        released.reshape(-1)[active_indices] = np.minimum(curve_energy, available_energy)
     mass_loss = np.divide(released, heat, out=np.zeros_like(released), where=heat > 0.0)
     return released, mass_loss, released / dt_s
 
@@ -319,41 +328,59 @@ def advance_surface_heating_and_evaporation(
         raise ValueError("v2 thermal state or material properties are invalid")
     if not np.isfinite(ambient_temperature_K) or ambient_temperature_K <= 0.0:
         raise ValueError("ambient temperature must be finite and positive")
+    # The equations are piecewise, but every branch is element-wise. Keeping
+    # the branch masks in arrays avoids a Python loop over every susceptible
+    # cell while preserving the event order: sensible heating, evaporation,
+    # then dry-fuel heating. Cooling never restores water.
     next_temperature = temperature.copy()
     next_water = water.copy()
     energy = flux * dt_s
-    for index in np.ndindex(temperature.shape):
-        available = float(energy[index])
-        dry_capacity = float(dry_mass[index] * dry_heat[index])
-        if available <= 0.0:
-            total_capacity = dry_capacity + float(water[index]) * WATER_SPECIFIC_HEAT_J_KG_K
-            next_temperature[index] = max(
-                ambient_temperature_K,
-                float(temperature[index]) + available / total_capacity,
-            )
-            continue
-        current_temperature = float(temperature[index])
-        current_water = float(water[index])
-        if current_water > 0.0 and current_temperature < WATER_BOILING_TEMPERATURE_K:
+    dry_capacity = dry_mass * dry_heat
+    cooling = energy <= 0.0
+    if np.any(cooling):
+        total_capacity = dry_capacity + water * WATER_SPECIFIC_HEAT_J_KG_K
+        next_temperature[cooling] = np.maximum(
+            ambient_temperature_K,
+            temperature[cooling] + energy[cooling] / total_capacity[cooling],
+        )
+
+    positive = ~cooling
+    if np.any(positive):
+        current_temperature = temperature.copy()
+        current_water = water.copy()
+        available = energy.copy()
+
+        sensible = (
+            positive & (current_water > 0.0) & (current_temperature < WATER_BOILING_TEMPERATURE_K)
+        )
+        if np.any(sensible):
             total_capacity = dry_capacity + current_water * WATER_SPECIFIC_HEAT_J_KG_K
             energy_to_boiling = total_capacity * (WATER_BOILING_TEMPERATURE_K - current_temperature)
-            used = min(available, energy_to_boiling)
-            current_temperature += used / total_capacity
-            available -= used
-        if (
-            current_water > 0.0
-            and current_temperature >= WATER_BOILING_TEMPERATURE_K - 1e-12
-            and available > 0.0
-        ):
-            evaporated = min(current_water, available / WATER_VAPORIZATION_ENTHALPY_J_KG)
-            current_water -= evaporated
-            available -= evaporated * WATER_VAPORIZATION_ENTHALPY_J_KG
-            current_temperature = WATER_BOILING_TEMPERATURE_K
-        if current_water <= 1e-15 and available > 0.0:
-            current_water = 0.0
-            current_temperature += available / dry_capacity
-        next_temperature[index] = current_temperature
-        next_water[index] = current_water
+            used = np.minimum(available, energy_to_boiling)
+            current_temperature[sensible] += used[sensible] / total_capacity[sensible]
+            available[sensible] -= used[sensible]
+
+        boiling = (
+            positive
+            & (current_water > 0.0)
+            & (current_temperature >= WATER_BOILING_TEMPERATURE_K - 1e-12)
+            & (available > 0.0)
+        )
+        if np.any(boiling):
+            evaporated = np.minimum(
+                current_water,
+                available / WATER_VAPORIZATION_ENTHALPY_J_KG,
+            )
+            current_water[boiling] -= evaporated[boiling]
+            available[boiling] -= evaporated[boiling] * WATER_VAPORIZATION_ENTHALPY_J_KG
+            current_temperature[boiling] = WATER_BOILING_TEMPERATURE_K
+
+        dry_heating = positive & (current_water <= 1e-15) & (available > 0.0)
+        if np.any(dry_heating):
+            current_water[dry_heating] = 0.0
+            current_temperature[dry_heating] += available[dry_heating] / dry_capacity[dry_heating]
+        next_temperature[positive] = current_temperature[positive]
+        next_water[positive] = current_water[positive]
     return next_temperature, next_water
 
 

@@ -105,6 +105,21 @@ M02 的三个独立文件是：
 
 现场人员仍只编辑 survey。构造预设中的 `thin`、`standard`、`thick`、`low`、`medium`、`high` 是数量或构造档位，不是干湿档位；水状态始终从独立的版本化包进入解析。示例预设全部标为 `scenario_assumed`，不能称为高友村实测或证据检查通过。
 
+填写调查后，可先用 `village validate-unknown-mapping-v3` 检查未知分区是否都有空间引用，再用 `village resolve-survey-v3` 生成 M02 解析报告。解析命令还需要一个严格的 `village-geometry-areas-1` YAML；高友村未知分区审查会生成 `unknown_geometry_areas.template.yml`，如果现场把一个分区拆成多个子区域，必须把面积模板同步改成不重叠的子几何面积。
+
+```bash
+conda activate pyfireca-village
+pyfireca village resolve-survey-v3 filled-survey.yml \
+  --material-cards examples/village/material_cards/catalog.yml \
+  --assemblies examples/village/material_cards/assemblies.synthetic.yml \
+  --moisture examples/village/material_cards/moisture.initial.synthetic.yml \
+  --geometry-areas unknown_geometry_areas.yml \
+  --mode evidence_checked \
+  --output resolved-survey.json
+```
+
+该命令只输出 `village-resolved-survey-case-1` 参数和问题，不写原胞数组。`status: blocked` 时必须先处理报告中的缺少材质卡、数量档位、面积、含水状态、证据等级或构造预设问题；不能为了得到可运行状态而补默认值。
+
 `resolve_material_selections` 需要调用方提供几何引用对应的面积。它会按 `面积 × fuel_load_kg_m2` 计算干燃料质量，按可热解比例计算可用质量，按初始水分计算水质量，并用
 
 ```text
@@ -148,3 +163,7 @@ PY
 ```
 
 这个示例故意保留 survey 中没有数量档位的记录，因此会输出缺值而不能运行。填写数量档位、几何面积和适用的初始水分包后，才进入 M03 的小域物理适配。
+
+M03 适配阶段还需要一个独立的空间表：每个原胞的 `geometry_ref`、覆盖率和 V04 阻挡透射率。材料类别不能替代这些空间字段；阻挡透射率也不能由 `burnable` 自动推断。适配器会检查面积闭合、重复覆盖、未分配覆盖原胞和四种燃烧输入的来源，然后才输出 V03 数组和 V04 的源/受体掩膜。
+
+M03 输出现在可以直接进入 V05 联合动态求解器。现场仍只需记录部位、材料类别、几何引用和可选数量档位；总库存水量由独立水分包解析，实际参与点燃热平衡的表层水量由有效受热质量推导。建筑和建筑外植被使用同一求解时钟与辐射预算，调查表中不增加燃烧系数、干湿档位或建筑专用传播开关。V06/M04 已把这条路径接入小域 bundle、命令行、输出和网页回放；M05 才进行高友村逐格调查映射。

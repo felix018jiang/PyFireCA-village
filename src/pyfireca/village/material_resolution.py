@@ -55,6 +55,23 @@ class ResolvedMaterialRecord:
     quantity_band: str | None
     active: bool
     burnable: bool
+    fuel_load_kg_m2: float | None
+    live_dry_mass_fraction: float | None
+    dead_dry_mass_fraction: float | None
+    pyrolysable_dry_mass_fraction: float | None
+    heat_of_combustion_J_kg_dry: float | None
+    ignition_temperature_K: float | None
+    peak_hrrpua_W_m2_active: float | None
+    radiative_fraction: float | None
+    absorptivity: float | None
+    active_surface_area_ratio: float | None
+    receiver_area_ratio: float | None
+    source_height_m: float | None
+    receiver_height_m: float | None
+    specific_heat_J_kg_K: float | None
+    emissivity: float | None
+    ambient_heat_transfer_coefficient_W_m2_K: float | None
+    backing_conductance_W_m2_K: float | None
     covered_area_m2: float | None
     dry_fuel_mass_kg: float | None
     pyrolysable_dry_fuel_mass_kg: float | None
@@ -150,6 +167,23 @@ def _empty_record(record: Any, active: bool) -> ResolvedMaterialRecord:
         quantity_band=record.quantity_band,
         active=active,
         burnable=False,
+        fuel_load_kg_m2=None,
+        live_dry_mass_fraction=None,
+        dead_dry_mass_fraction=None,
+        pyrolysable_dry_mass_fraction=None,
+        heat_of_combustion_J_kg_dry=None,
+        ignition_temperature_K=None,
+        peak_hrrpua_W_m2_active=None,
+        radiative_fraction=None,
+        absorptivity=None,
+        active_surface_area_ratio=None,
+        receiver_area_ratio=None,
+        source_height_m=None,
+        receiver_height_m=None,
+        specific_heat_J_kg_K=None,
+        emissivity=None,
+        ambient_heat_transfer_coefficient_W_m2_K=None,
+        backing_conductance_W_m2_K=None,
         covered_area_m2=None,
         dry_fuel_mass_kg=None,
         pyrolysable_dry_fuel_mass_kg=None,
@@ -327,6 +361,14 @@ def _resolve_record(
         moisture_value = 0.0
 
     fuel_load = _number(band.fuel_load_kg_m2, "fuel_load_kg_m2")
+    live_fraction = _number(
+        base.get("live_dry_mass_fraction", PresetParameter(0.0, "1", "inert")),
+        "live_dry_mass_fraction",
+    )
+    dead_fraction = _number(
+        base.get("dead_dry_mass_fraction", PresetParameter(0.0, "1", "inert")),
+        "dead_dry_mass_fraction",
+    )
     effective_mass = _number(
         band.effective_heated_dry_mass_kg_m2, "effective_heated_dry_mass_kg_m2"
     )
@@ -334,6 +376,13 @@ def _resolve_record(
         base.get("pyrolysable_dry_mass_fraction", PresetParameter(0.0, "1", "inert")),
         "pyrolysable_dry_mass_fraction",
     )
+    if abs(live_fraction + dead_fraction - 1.0) > 1e-9 and preset.burnable:
+        _issue(
+            issues,
+            "invalid_live_dead_split",
+            record.observation_id,
+            "live and dead dry-mass fractions must sum to one",
+        )
     dry_mass = area_m2 * fuel_load
     pyro_mass = dry_mass * pyro_fraction
     water_mass = dry_mass * moisture_value
@@ -412,6 +461,51 @@ def _resolve_record(
         quantity_band=band_id,
         active=active,
         burnable=preset.burnable,
+        fuel_load_kg_m2=fuel_load,
+        live_dry_mass_fraction=live_fraction,
+        dead_dry_mass_fraction=dead_fraction,
+        pyrolysable_dry_mass_fraction=pyro_fraction,
+        heat_of_combustion_J_kg_dry=heat,
+        ignition_temperature_K=_number(
+            base.get("ignition_temperature_K", PresetParameter(0.0, "K", "inert")),
+            "ignition_temperature_K",
+        ),
+        peak_hrrpua_W_m2_active=_number(
+            base.get("peak_hrrpua_W_m2", PresetParameter(0.0, "W/m^2_active", "inert")),
+            "peak_hrrpua_W_m2",
+        ),
+        radiative_fraction=_number(
+            base.get("radiative_fraction", PresetParameter(0.0, "1", "inert")),
+            "radiative_fraction",
+        ),
+        absorptivity=_number(
+            base.get("absorptivity", PresetParameter(0.0, "1", "inert")),
+            "absorptivity",
+        ),
+        active_surface_area_ratio=_number(
+            band.active_surface_area_ratio, "active_surface_area_ratio"
+        ),
+        receiver_area_ratio=_number(band.receiver_area_ratio, "receiver_area_ratio"),
+        source_height_m=_number(band.source_height_m, "source_height_m"),
+        receiver_height_m=_number(band.receiver_height_m, "receiver_height_m"),
+        specific_heat_J_kg_K=_number(
+            base.get("specific_heat_J_kg_K", PresetParameter(0.0, "J/(kg*K)", "inert")),
+            "specific_heat_J_kg_K",
+        ),
+        emissivity=_number(
+            base.get("emissivity", PresetParameter(0.0, "1", "inert")), "emissivity"
+        ),
+        ambient_heat_transfer_coefficient_W_m2_K=_number(
+            base.get(
+                "ambient_heat_transfer_coefficient_W_m2_K",
+                PresetParameter(0.0, "W/(m^2*K)", "inert"),
+            ),
+            "ambient_heat_transfer_coefficient_W_m2_K",
+        ),
+        backing_conductance_W_m2_K=_number(
+            base.get("backing_conductance_W_m2_K", PresetParameter(0.0, "W/(m^2*K)", "inert")),
+            "backing_conductance_W_m2_K",
+        ),
         covered_area_m2=area_m2,
         dry_fuel_mass_kg=dry_mass,
         pyrolysable_dry_fuel_mass_kg=pyro_mass,

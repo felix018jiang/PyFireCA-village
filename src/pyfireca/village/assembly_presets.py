@@ -26,6 +26,8 @@ IGNITION_MODES = ("piloted", "thermal")
 BASE_PARAMETER_UNITS = MappingProxyType(
     {
         "heat_of_combustion_J_kg_dry": "J/kg_dry",
+        "live_dry_mass_fraction": "1",
+        "dead_dry_mass_fraction": "1",
         "pyrolysable_dry_mass_fraction": "1",
         "ignition_temperature_K": "K",
         "peak_hrrpua_W_m2": "W/m^2_active",
@@ -243,6 +245,10 @@ def parse_assembly_preset_library(data: Any, *, path: Path | None = None) -> Ass
             }
             if base["ignition_mode"].value not in IGNITION_MODES:
                 raise ValueError(f"{preset_id}.base_parameters.ignition_mode is unsupported")
+            live_fraction = float(base["live_dry_mass_fraction"].value)
+            dead_fraction = float(base["dead_dry_mass_fraction"].value)
+            if abs(live_fraction + dead_fraction - 1.0) > 1e-9:
+                raise ValueError(f"{preset_id} live/dead dry-mass fractions must sum to one")
         else:
             if raw_base:
                 raise ValueError(f"inert preset {preset_id!r} must have empty base_parameters")
