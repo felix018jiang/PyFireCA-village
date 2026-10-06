@@ -108,6 +108,11 @@ def _offsets(
         for dcol in range(-max_offset, max_offset + 1):
             if drow == 0 and dcol == 0:
                 continue
+            # Oversized offsets have no source/target pair. Negative slice
+            # stops otherwise wrap in Python and can create incompatible
+            # arrays or ghost pairs on small/cropped domains.
+            if abs(drow) >= grid.height or abs(dcol) >= grid.width:
+                continue
             if np.hypot(drow, dcol) * grid.cell_size_m > parameters.exposure_radius_m + 1e-12:
                 continue
             path = _line_cells(0, 0, drow, dcol)[1:-1]

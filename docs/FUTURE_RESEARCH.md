@@ -1,8 +1,12 @@
 # Future Research Directions
 
-> Status: **recorded and intentionally deferred**
+> **Input policy, 2026-10-04:** aerial/RGB material identification uses existing fixed initial moisture defaults automatically; no per-cell moisture entry is required in the V3 profile workflow. Internal live/dead presets and evaporation remain. These are scenario assumptions, not image measurements; see [moisture policy and ablation](MOISTURE_DEFAULT_POLICY.md) and plan28.8. No runtime/profile changes or whole-suite rerun in this policy stage.
+
+> **Current priority, 2026-10-04:** the user now prioritises vegetation fire simulation. [PROJECT_PLAN.md, chapter28](../PROJECT_PLAN.md#28-植被蔓延偏弱的证据核查与物理修正2026-10-04) and [the evidence/fix record](VEGETATION_SPREAD_EVIDENCE_AND_FIX.md) describe the new optional, energy-bounded near-field flame contact and actual checks (699 tests). An opt-in independent component experiment now exists; see [component evidence and limits](VEGETATION_COMPONENTS_V3.md) and plan28.5. Optional same-cell finite-area radiation now exists; see [radiation evidence and limits](COMPONENT_INTERNAL_RADIATION_V3.md) and plan28.6. Optional independent component HRR clocks with fuel-energy closure and explicit peak ceilings now exist; see [curve evidence and sensitivity](COMPONENT_BURN_CURVES_V3.md) and plan28.7. Inter-cell radiation remains frozen. The current single-state webpage does not use component results. Effective contact parameters remain synthetic; field validation is unfinished. Planning progress through P04 is retained in chapter27; its next experiments are deferred. Older scope/pending statements below are historical.
+
+> Status: **historical CA ideas; pre-fire planning research now has an explicit staged plan**
 >
-> These ideas are research notes, not the current implementation roadmap. Do not implement a new PyFireCA-specific CA method until the baseline simulator is complete and validated.
+> 2026-10-04: [PROJECT_PLAN.md, chapter 27](../PROJECT_PLAN.md#27-灾前防火线选址宽度与布局优化研究及开发路线2026-10-04) is the current plan for pre-fire firebreak placement, width and layout research. Start with P00 baseline/evidence verification; new modules are planned, not implemented. This supersedes the blanket research deferral for that workstream, while preserving baseline validation and existing default behavior. The ideas below remain hypotheses rather than automatically approved implementation tasks.
 
 ## 1. Research line: lattice discretization and directional bias
 
@@ -103,7 +107,7 @@ rather than treating resolution as a single proxy for CA accuracy.
 
 ## 4. What must happen before this research line resumes
 
-Do not turn these ideas into a new PyFireCA-specific method until the simple simulator baseline is complete.
+For the newly requested pre-fire planning workstream, use P00–P06 in PROJECT_PLAN.md chapter 27. The following baseline requirements still apply to the capabilities used by each experiment; a release tag is not required to begin isolated research after recording and verifying its baseline.
 
 The baseline simulator must first provide:
 
@@ -118,7 +122,7 @@ The baseline simulator must first provide:
 - end-to-end examples and documentation;
 - green CI and validation suite.
 
-Only after that baseline is frozen should a new research branch introduce extended/adaptive neighborhoods or new interface rules.
+After the relevant baseline is recorded and verified, introduce new interface or neighborhood variants separately, with explicit barrier-intersection semantics and independent checks. Do not change the default solver silently or require unrelated village physics extensions before testing static surface-fire planning.
 
 ## 5. Research discipline
 

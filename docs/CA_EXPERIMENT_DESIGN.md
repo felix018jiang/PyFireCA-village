@@ -1,8 +1,14 @@
 # CA Discretization and Edge-Coupling Experiment Design
 
+> **Input policy, 2026-10-04:** aerial/RGB material identification uses existing fixed initial moisture defaults automatically; no per-cell moisture entry is required in the V3 profile workflow. Internal live/dead presets and evaporation remain. These are scenario assumptions, not image measurements; see [moisture policy and ablation](MOISTURE_DEFAULT_POLICY.md) and plan28.8. No runtime/profile changes or whole-suite rerun in this policy stage.
+
+> **Current priority, 2026-10-04:** the user now prioritises vegetation fire simulation. [PROJECT_PLAN.md, chapter28](../PROJECT_PLAN.md#28-植被蔓延偏弱的证据核查与物理修正2026-10-04) and [the evidence/fix record](VEGETATION_SPREAD_EVIDENCE_AND_FIX.md) describe the new optional, energy-bounded near-field flame contact and actual checks (699 tests). An opt-in independent component experiment now exists; see [component evidence and limits](VEGETATION_COMPONENTS_V3.md) and plan28.5. Optional same-cell finite-area radiation now exists; see [radiation evidence and limits](COMPONENT_INTERNAL_RADIATION_V3.md) and plan28.6. Optional independent component HRR clocks with fuel-energy closure and explicit peak ceilings now exist; see [curve evidence and sensitivity](COMPONENT_BURN_CURVES_V3.md) and plan28.7. Inter-cell radiation remains frozen. The current single-state webpage does not use component results. Effective contact parameters remain synthetic; field validation is unfinished. Planning progress through P04 is retained in chapter27; its next experiments are deferred. Older scope/pending statements below are historical.
+
 > Status: design baseline for the next PyFireCA research stage
 >
 > Principle: keep the validated fire-behavior model fixed while changing only CA/discretization assumptions.
+
+> **2026-10-04 integration:** these numerical experiments now support E2/P02 of the [pre-fire planning research plan](../PROJECT_PLAN.md#27-灾前防火线选址宽度与布局优化研究及开发路线2026-10-04). The full sequence starts with single-firebreak mechanisms, then geometry, joint optimization, equal-budget baselines, held-out validation and decision interpretation. Hold physical intervention geometry and costs fixed across grids; report layout regret and near-optimal sets as well as propagation error. These are planned experiments, not completed results.
 
 ## 1. Scientific objective
 
@@ -81,7 +87,7 @@ Do **not** include radius>1 neighborhoods yet.
 
 ### Hypothesis
 
-VN4 should show stronger Manhattan/lattice anisotropy. Moore8 should reduce but not eliminate orientation-dependent propagation error.
+VN4 should show stronger Manhattan/lattice anisotropy, while Moore8 reduces the path-metric error. Do not assume that the error necessarily varies with fire heading: the implemented homogeneous ignition-point ellipse benchmark has an exact heading-independent lattice-arrival error under its stated assumptions. Barrier geometry, grid orientation and heterogeneous media require separate controlled experiments.
 
 The experiment should quantify this rather than assume it.
 
@@ -107,7 +113,7 @@ Key question:
 
 > Does error depend systematically on the angle between the physical heading direction and raster axes/diagonals?
 
-This is a direct measure of lattice directional bias.
+For the pinned homogeneous ellipse, use heading invariance as a negative control rather than expecting a nonzero effect. This sweep changes physical heading; it is distinct from changing numerical grid orientation while transforming all physical inputs consistently. The latter is required for the new firebreak geometry study and must use a research coordinate adapter while the production workflow retains its north-up restriction.
 
 ## 5. Experiment C — cell-size sensitivity
 

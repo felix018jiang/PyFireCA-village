@@ -17,6 +17,10 @@ from pyfireca.village.exposure import estimate_exposure_resources
 from pyfireca.village.gaoyou_v3 import build_gaoyou_v3_case
 from pyfireca.village.hypothetical import build_hypothetical_material_case
 from pyfireca.village.inspection_v3 import inspect_v3_run
+from pyfireca.village.interactive_v3 import (
+    serve_interactive_components_v3,
+    serve_interactive_v3,
+)
 from pyfireca.village.materials_v2 import load_material_catalog_v2
 from pyfireca.village.materials_v3 import load_material_catalog_v3
 from pyfireca.village.preflight_v3 import preflight_v3_case
@@ -28,6 +32,7 @@ from pyfireca.village.rgb_hypothesis_v3 import complete_rgb_hypothesis_spatial
 from pyfireca.village.survey_mapping_v3 import validate_unknown_mapping_v3
 from pyfireca.village.unknown_review_v3 import review_unknown_v3
 from pyfireca.village.vegetation_prepare import prepare_vegetation_spatial
+from pyfireca.village.wind_v3 import inspect_wind
 from pyfireca.village.workflow import run_village_config, validate_village_run
 from pyfireca.village.workflow_v2 import load_v2_file_case, run_v2_file_case
 from pyfireca.village.workflow_v3 import load_v3_case_bundle, run_v3_case_bundle
@@ -86,12 +91,48 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
         "validate-v3", help="validate a serialized effective_exposure_ca_v3 case bundle"
     )
     validate_v3.add_argument("case", type=Path)
+    wind_v3 = commands.add_parser(
+        "inspect-wind-v3", help="validate prescribed wind and compute advection (not fire spread)"
+    )
+    wind_v3.add_argument("wind", type=Path)
+    wind_v3.add_argument("--end-time-s", type=float, required=True)
+    wind_v3.add_argument("--output", type=Path, required=True)
+    flame_axes = commands.add_parser(
+        "inspect-component-flames-v3",
+        help="diagnose prescribed component flame axes (no wind-coupled fire spread)",
+    )
+    flame_axes.add_argument("run", type=Path)
+    flame_axes.add_argument("--wind", type=Path, required=True)
+    flame_axes.add_argument("--geometry", type=Path, required=True)
+    flame_axes.add_argument("--output", type=Path, required=True)
+    flame_axes.add_argument("--end-time-s", type=float)
+    flame_axes.add_argument("--sample-interval-s", type=float, default=10)
+    flame_axes.add_argument("--max-records", type=int, default=200_000)
     run_v3 = commands.add_parser(
         "run-v3", help="run a serialized effective_exposure_ca_v3 case bundle"
     )
     run_v3.add_argument("case", type=Path)
     run_v3.add_argument("--output", type=Path, required=True)
     run_v3.add_argument("--prepared", type=Path)
+    run_v3.add_argument("--flame-contact-config", type=Path)
+    components_v3 = commands.add_parser(
+        "run-components-v3", help="run an opt-in fuel-component experiment with optional replay"
+    )
+    components_v3.add_argument("case", type=Path)
+    components_v3.add_argument("--components-config", type=Path, required=True)
+    components_v3.add_argument("--output", type=Path, required=True)
+    components_v3.add_argument("--flame-contact-config", type=Path)
+    components_v3.add_argument("--internal-radiation-config", type=Path)
+    components_v3.add_argument("--component-curves-config", type=Path)
+    components_v3.add_argument("--receiver-surfaces-config", type=Path)
+    components_v3.add_argument("--finite-radiation-config", type=Path)
+    components_v3.add_argument("--radiation-only", action="store_true")
+    components_v3.add_argument("--max-nodes", type=int, default=20_000)
+    components_v3.add_argument("--max-radiation-edges", type=int, default=500_000)
+    components_v3.add_argument("--viewer", action="store_true")
+    components_v3.add_argument("--prepared", type=Path)
+    components_v3.add_argument("--viewer-chunk-frames", type=int, default=32)
+    components_v3.add_argument("--max-viewer-memory-mib", type=int, default=256)
     run_v3.add_argument(
         "--chunk-frames",
         type=int,
@@ -124,6 +165,25 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
     view_v3 = commands.add_parser("view-v3", help="serve an existing V3 village result viewer")
     view_v3.add_argument("run", type=Path)
     view_v3.add_argument("--port", type=int, default=8765)
+    simulate_v3 = commands.add_parser(
+        "simulate-v3", help="choose an ignition cell and duration in the V3 browser map"
+    )
+    simulate_v3.add_argument("case", type=Path)
+    simulate_v3.add_argument("--initial-run", type=Path, required=True)
+    simulate_v3.add_argument("--output-root", type=Path, required=True)
+    simulate_v3.add_argument("--port", type=int, default=8812)
+    simulate_v3.add_argument("--no-browser", action="store_true")
+    simulate_v3.add_argument("--flame-contact-config", type=Path)
+    simulate_components = commands.add_parser(
+        "simulate-components-v3", help="select ignition using a saved component experiment"
+    )
+    simulate_components.add_argument("run", type=Path)
+    simulate_components.add_argument("--output-root", type=Path, required=True)
+    simulate_components.add_argument("--port", type=int, default=8813)
+    simulate_components.add_argument("--no-browser", action="store_true")
+    simulate_components.add_argument("--max-nodes", type=int, default=20_000)
+    simulate_components.add_argument("--max-radiation-edges", type=int, default=500_000)
+    simulate_components.add_argument("--max-viewer-memory-mib", type=int, default=256)
     inspect_v3 = commands.add_parser(
         "inspect-v3", help="check representative V3 replay frames against backend arrays"
     )
@@ -162,7 +222,11 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
     resolve_survey.add_argument("survey", type=Path)
     resolve_survey.add_argument("--material-cards", type=Path, required=True)
     resolve_survey.add_argument("--assemblies", type=Path, required=True)
-    resolve_survey.add_argument("--moisture", type=Path, required=True)
+    resolve_survey.add_argument(
+        "--moisture",
+        type=Path,
+        help="optional measured/scenario water file; omitted uses packaged material defaults",
+    )
     resolve_survey.add_argument("--geometry-areas", type=Path, required=True)
     resolve_survey.add_argument(
         "--mode", choices=("demonstration", "evidence_checked"), default="demonstration"
@@ -212,6 +276,115 @@ def add_village_subcommands(subparsers: argparse._SubParsersAction) -> None:
 
 
 def run_village_command(args: argparse.Namespace) -> int:
+    if args.village_command == "run-components-v3":
+        from dataclasses import replace
+
+        from pyfireca.village.component_curves_v3 import load_component_curve_configuration
+        from pyfireca.village.component_outputs_v3 import (
+            check_component_viewer_memory,
+            write_component_viewer,
+        )
+        from pyfireca.village.component_radiation_v3 import load_internal_radiation_parameters
+        from pyfireca.village.component_surfaces_v3 import load_receiver_surface_configuration
+        from pyfireca.village.components_v3 import (
+            load_component_configuration,
+            resolve_components,
+            run_component_simulation,
+            write_component_run,
+        )
+        from pyfireca.village.finite_radiation_v3 import load_finite_radiation_configuration
+        from pyfireca.village.flame_contact_v3 import load_flame_contact_parameters
+
+        if args.radiation_only and args.flame_contact_config:
+            raise ValueError("--radiation-only conflicts with --flame-contact-config")
+        if args.output.exists():
+            raise FileExistsError(args.output)
+        if args.prepared and not args.viewer:
+            raise ValueError("--prepared requires --viewer for component replay")
+        if args.viewer and args.viewer_chunk_frames <= 0:
+            raise ValueError("--viewer-chunk-frames must be positive")
+        bundle = load_v3_case_bundle(args.case)
+        request = bundle.request
+        if args.viewer and request.sample_interval_s is None:
+            request = replace(request, sample_interval_s=60.0)
+        contact = (
+            load_flame_contact_parameters(args.flame_contact_config)
+            if args.flame_contact_config
+            else request.flame_contact
+        )
+        resolved = resolve_components(
+            request,
+            load_component_configuration(args.components_config),
+            contact=None if args.radiation_only else contact,
+            internal_radiation=(
+                load_internal_radiation_parameters(args.internal_radiation_config)
+                if args.internal_radiation_config
+                else None
+            ),
+            curves=(
+                load_component_curve_configuration(args.component_curves_config)
+                if args.component_curves_config
+                else None
+            ),
+            surfaces=(
+                load_receiver_surface_configuration(args.receiver_surfaces_config)
+                if args.receiver_surfaces_config
+                else None
+            ),
+            finite_radiation=(
+                load_finite_radiation_configuration(args.finite_radiation_config)
+                if args.finite_radiation_config
+                else None
+            ),
+            max_nodes=args.max_nodes,
+            max_radiation_edges=args.max_radiation_edges,
+        )
+        if args.viewer:
+            check_component_viewer_memory(resolved, args.max_viewer_memory_mib)
+        result = run_component_simulation(resolved, retain_snapshots=args.viewer)
+        output = write_component_run(
+            resolved,
+            result,
+            args.output,
+            material_labels=bundle.material_labels,
+            landcover_labels=bundle.landcover_labels,
+            scenario_metadata=bundle.metadata,
+        )
+        if args.viewer:
+            write_component_viewer(
+                resolved,
+                result,
+                output,
+                prepared_dir=args.prepared,
+                material_labels=bundle.material_labels,
+                landcover_labels=bundle.landcover_labels,
+                scenario_metadata=bundle.metadata,
+                chunk_frames=args.viewer_chunk_frames,
+                max_memory_mib=args.max_viewer_memory_mib,
+            )
+        print(f"Component experiment complete: {output.resolve()}")
+        print("Component ignitions do not establish crown fire or whole-building loss.")
+        return 0
+    if args.village_command == "inspect-component-flames-v3":
+        from pyfireca.village.flame_geometry_v3 import inspect_component_flames
+
+        inspect_component_flames(
+            args.run,
+            args.wind,
+            args.geometry,
+            args.output,
+            end_time_s=args.end_time_s,
+            sample_interval_s=args.sample_interval_s,
+            max_records=args.max_records,
+        )
+        print(f"Flame-axis diagnostic written to {args.output}; heat transport unchanged")
+        return 0
+    if args.village_command == "inspect-wind-v3":
+        report = inspect_wind(args.wind, end_time_s=args.end_time_s)
+        with args.output.open("x", encoding="utf-8") as stream:
+            stream.write(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
+        print(f"Wind diagnostic written to {args.output}; fire simulation not executed")
+        return 0
     if args.village_command == "prepare-vegetation-spatial":
         prepared = prepare_vegetation_spatial(
             args.imagery,
@@ -304,6 +477,7 @@ def run_village_command(args: argparse.Namespace) -> int:
             args.output,
             prepared_dir=args.prepared,
             chunk_frames=args.chunk_frames,
+            flame_contact_config=args.flame_contact_config,
         )
         ignited = int(np.count_nonzero(np.isfinite(result.final_state.ignition_time_s)))
         print(f"Village v3 run complete: {output.resolve()}")
@@ -514,5 +688,26 @@ def run_village_command(args: argparse.Namespace) -> int:
             webbrowser.open(url)
             with contextlib.suppress(KeyboardInterrupt):
                 server.serve_forever()
+        return 0
+    if args.village_command == "simulate-components-v3":
+        serve_interactive_components_v3(
+            args.run,
+            args.output_root,
+            port=args.port,
+            open_browser=not args.no_browser,
+            max_nodes=args.max_nodes,
+            max_radiation_edges=args.max_radiation_edges,
+            max_viewer_memory_mib=args.max_viewer_memory_mib,
+        )
+        return 0
+    if args.village_command == "simulate-v3":
+        serve_interactive_v3(
+            args.case,
+            args.initial_run,
+            args.output_root,
+            port=args.port,
+            open_browser=not args.no_browser,
+            flame_contact_config=args.flame_contact_config,
+        )
         return 0
     raise ValueError(f"unsupported village command: {args.village_command}")

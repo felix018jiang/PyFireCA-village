@@ -1,0 +1,10 @@
+schema_version: village-internal-radiation-1
+source_radius_fraction_cell: 0.25
+atmospheric_extinction_m_inv: 0
+quadrature_order: 3
+max_quadrature_order: 12
+relative_tolerance: 0.01
+absolute_tolerance: 0.00001
+max_kernel_evaluations: 100000000
+evidence: synthetic
+provenance: synthetic:finite_cylinder_horizontal_patch_geometry_20261004_not_field_calibration

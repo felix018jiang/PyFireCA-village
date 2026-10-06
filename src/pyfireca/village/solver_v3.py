@@ -8,6 +8,7 @@ and state-transition equations.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from math import isfinite
 from typing import Protocol
@@ -17,6 +18,7 @@ from numpy.typing import NDArray
 
 from pyfireca.village.domain import ExposureEdges, VillageGridSpec
 from pyfireca.village.exposure import SourceIndexedExposure
+from pyfireca.village.flame_contact_v3 import FlameContactOperator, FlameContactParameters
 from pyfireca.village.ignition import VillageIgnitionEvent
 from pyfireca.village.physics_v2 import (
     advance_surface_heating_and_evaporation,
@@ -88,6 +90,9 @@ class V3SimulationRequest:
     scenario: V3Scenario
     unknown_policy: str = "error"
     sample_interval_s: float | None = None
+    ground_elevation_m: NDArray[np.floating] | None = None
+    flame_contact: FlameContactParameters | None = None
+    material_evidence_index: NDArray[np.uint8] | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.grid, VillageGridSpec):
@@ -105,7 +110,26 @@ class V3SimulationRequest:
         ):
             raise ValueError("sample_interval_s must be finite and positive")
 
+        if self.flame_contact is not None:
+            if not isinstance(self.flame_contact, FlameContactParameters):
+                raise TypeError("flame_contact must be FlameContactParameters or None")
+            if self.grid.cell_size_m > self.flame_contact.max_cell_size_m + 1e-12:
+                raise ValueError("flame contact grid exceeds its explicit maximum cell size")
         shape = self.grid.shape
+        if self.material_evidence_index is not None:
+            evidence = np.asarray(self.material_evidence_index)
+            if evidence.shape != shape or evidence.dtype != np.uint8:
+                raise ValueError("material evidence must be uint8 and match the grid")
+            if not np.all(np.isin(evidence, [0, 1, 2, 3, 255])):
+                raise ValueError("unsupported material evidence code")
+            evidence = evidence.copy()
+            evidence.setflags(write=False)
+            object.__setattr__(self, "material_evidence_index", evidence)
+        if self.ground_elevation_m is not None:
+            elevation = np.asarray(self.ground_elevation_m, dtype=np.float64)
+            if elevation.shape != shape or not np.all(np.isfinite(elevation)):
+                raise ValueError("ground_elevation_m must be finite and match the grid")
+            object.__setattr__(self, "ground_elevation_m", elevation.copy())
         masks = {
             name: _mask(name, getattr(self, name), shape)
             for name in (
@@ -225,6 +249,7 @@ class V3State:
     interval_mean_hrr_W: NDArray[np.float64]
     incident_radiation_J: NDArray[np.float64]
     absorbed_radiation_J: NDArray[np.float64]
+    received_convection_J: NDArray[np.float64]
     released_energy_J: NDArray[np.float64]
     ignition_time_s: NDArray[np.float64]
     burnout_time_s: NDArray[np.float64]
@@ -242,6 +267,7 @@ class V3State:
             interval_mean_hrr_W=self.interval_mean_hrr_W.copy(),
             incident_radiation_J=self.incident_radiation_J.copy(),
             absorbed_radiation_J=self.absorbed_radiation_J.copy(),
+            received_convection_J=self.received_convection_J.copy(),
             released_energy_J=self.released_energy_J.copy(),
             ignition_time_s=self.ignition_time_s.copy(),
             burnout_time_s=self.burnout_time_s.copy(),
@@ -278,6 +304,9 @@ class V3EnergyBudget:
     susceptible_unabsorbed_J: float = 0.0
     inert_received_J: float = 0.0
     inactive_combustible_received_J: float = 0.0
+    convective_transferred_J: float = 0.0
+    nonradiative_untransferred_J: float = 0.0
+    energy_limited_contact_source_steps: int = 0
 
 
 @dataclass(frozen=True, slots=True)
@@ -310,7 +339,9 @@ def _initial_state(request: V3SimulationRequest) -> V3State:
         time_s=0.0,
         step_index=0,
         state=cell_state,
-        surface_temperature_K=np.full(shape, request.scenario.ambient_temperature_K),
+        surface_temperature_K=np.full(
+            shape, request.scenario.ambient_temperature_K, dtype=np.float64
+        ),
         temperature_valid_mask=request.burnable_mask.copy(),
         heated_water_remaining_kg=np.where(request.burnable_mask, surface_water, 0.0),
         fuel_remaining_kg=np.where(
@@ -320,6 +351,7 @@ def _initial_state(request: V3SimulationRequest) -> V3State:
         interval_mean_hrr_W=np.zeros(shape, dtype=np.float64),
         incident_radiation_J=np.zeros(shape, dtype=np.float64),
         absorbed_radiation_J=np.zeros(shape, dtype=np.float64),
+        received_convection_J=np.zeros(shape, dtype=np.float64),
         released_energy_J=np.zeros(shape, dtype=np.float64),
         ignition_time_s=np.full(shape, np.nan, dtype=np.float64),
         burnout_time_s=np.full(shape, np.nan, dtype=np.float64),
@@ -331,11 +363,46 @@ def run_v3_simulation(
     *,
     snapshot_sink: V3SnapshotSink | None = None,
     retain_snapshots: bool = True,
+    progress_callback: Callable[[float, float], None] | None = None,
 ) -> V3SimulationResult:
     """Run the V3 model with one synchronous clock for buildings and vegetation."""
 
     if not isinstance(request, V3SimulationRequest):
         raise TypeError("request must be V3SimulationRequest")
+    contact = (
+        FlameContactOperator.build(
+            request.grid,
+            request.burnable_mask,
+            request.parameters,
+            request.flame_contact,
+            request.ground_elevation_m,
+            request.material_index,
+        )
+        if request.flame_contact is not None
+        else None
+    )
+    return _run_resolved_v3_simulation(
+        request,
+        contact=contact,
+        snapshot_sink=snapshot_sink,
+        retain_snapshots=retain_snapshots,
+        progress_callback=progress_callback,
+    )
+
+
+def _run_resolved_v3_simulation(
+    request: V3SimulationRequest,
+    *,
+    contact: FlameContactOperator | None,
+    snapshot_sink: V3SnapshotSink | None = None,
+    retain_snapshots: bool = True,
+    progress_callback: Callable[[float, float], None] | None = None,
+) -> V3SimulationResult:
+    """Shared thermal clock; component graphs supply their physical topology.
+
+    Internal only: a component node storage grid is not a geographic grid and
+    must never construct face adjacency from its array coordinates.
+    """
     if not isinstance(retain_snapshots, bool):
         raise TypeError("retain_snapshots must be a boolean")
     state = _initial_state(request)
@@ -355,6 +422,7 @@ def run_v3_simulation(
     snapshots: list[V3Snapshot] = []
     next_sample_index = 0
     last_sample_time: float | None = None
+    next_progress_time = 0.0
 
     def sample_time(index: int) -> float:
         if request.sample_interval_s is None:
@@ -409,6 +477,9 @@ def run_v3_simulation(
         next_sample_index += 1
 
     while state.time_s < scenario.end_time_s - tolerance:
+        if progress_callback is not None and state.time_s >= next_progress_time:
+            progress_callback(state.time_s, scenario.end_time_s)
+            next_progress_time = state.time_s + max(1.0, scenario.end_time_s / 100)
         apply_events()
         capture_due_sample()
         next_event = events[event_index].time_s if event_index < len(events) else np.inf
@@ -426,7 +497,8 @@ def run_v3_simulation(
                 heated_mass_per_area,
                 parameters.specific_heat_J_kg_K[susceptible],
                 parameters.emissivity[susceptible],
-                parameters.ambient_heat_transfer_coefficient_W_m2_K[susceptible],
+                parameters.ambient_heat_transfer_coefficient_W_m2_K[susceptible]
+                + (contact.parameters.heat_transfer_coefficient_W_m2_K if contact else 0.0),
                 parameters.backing_conductance_W_m2_K[susceptible],
             )
         else:
@@ -470,6 +542,19 @@ def run_v3_simulation(
             incident_step[susceptible] * parameters.absorptivity[susceptible]
         )
 
+        contact_transfer = (
+            contact.transfer(mean_hrr, state.surface_temperature_K, susceptible)
+            if contact
+            else None
+        )
+        convective_power = (
+            contact_transfer.target_power_W if contact_transfer else np.zeros(request.grid.shape)
+        )
+        contact_fraction = (
+            contact_transfer.target_contact_fraction
+            if contact_transfer
+            else np.zeros(request.grid.shape)
+        )
         next_temperature = state.surface_temperature_K.copy()
         next_water = state.heated_water_remaining_kg.copy()
         if np.any(susceptible):
@@ -478,10 +563,11 @@ def run_v3_simulation(
             net_flux = net_surface_heat_flux_W_m2(
                 state.surface_temperature_K[susceptible],
                 incident_flux,
-                np.zeros(np.count_nonzero(susceptible), dtype=np.float64),
+                convective_power[susceptible] / covered_area,
                 parameters.absorptivity[susceptible],
                 parameters.emissivity[susceptible],
-                parameters.ambient_heat_transfer_coefficient_W_m2_K[susceptible],
+                parameters.ambient_heat_transfer_coefficient_W_m2_K[susceptible]
+                * (1 - contact_fraction[susceptible]),
                 parameters.backing_conductance_W_m2_K[susceptible],
                 scenario.ambient_temperature_K,
             )
@@ -537,6 +623,7 @@ def run_v3_simulation(
         state.interval_mean_hrr_W = mean_hrr
         state.incident_radiation_J += incident_step
         state.absorbed_radiation_J += absorbed_step
+        state.received_convection_J += convective_power * dt_s
         state.released_energy_J += released
         state.ignition_time_s[newly_ignited] = new_time
         cause[newly_ignited & (cause == IGNITION_CAUSE_NONE)] = IGNITION_CAUSE_THERMAL
@@ -554,6 +641,13 @@ def run_v3_simulation(
         budget.released_J += released_total
         budget.radiative_emitted_J += radiative_emitted
         budget.non_radiative_released_J += released_total - radiative_emitted
+        transferred = float(np.sum(convective_power)) * dt_s
+        budget.convective_transferred_J += transferred
+        budget.nonradiative_untransferred_J += max(
+            0.0, released_total - radiative_emitted - transferred
+        )
+        if contact_transfer:
+            budget.energy_limited_contact_source_steps += contact_transfer.energy_limited_sources
         budget.radiative_intercepted_J += intercepted
         budget.radiative_unintercepted_J += max(0.0, radiative_emitted - intercepted)
         budget.susceptible_incident_J += susceptible_incident
@@ -580,6 +674,8 @@ def run_v3_simulation(
             snapshot_sink.append(snapshot)
         if retain_snapshots:
             snapshots.append(snapshot)
+    if progress_callback is not None:
+        progress_callback(state.time_s, scenario.end_time_s)
     return V3SimulationResult(
         final_state=state.copy(),
         initial_total_dry_fuel_kg=parameters.initial_dry_fuel_mass_kg.copy(),

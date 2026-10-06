@@ -1,0 +1,19 @@
+schema_version: village-component-curves-1
+evidence: synthetic
+provenance: synthetic:independent_clock_sensitivity_20261004_not_fitted_or_recommended_material_values
+curves:
+  tree_equivalent:
+    # Half of the inherited tree clock; fuel/area fixed, hence twice its peak.
+    # 430 s is a sensitivity input, NOT a fine-fuel residence-time estimate.
+    surface_dead:
+      growth_time_s: 60
+      steady_time_s: 70
+      decay_time_s: 300
+      max_peak_hrrpua_W_m2_active: 400000
+  building:
+    # Same controlled half-clock perturbation for the combustible base only.
+    combustible_base:
+      growth_time_s: 60
+      steady_time_s: 197.68
+      decay_time_s: 150
+      max_peak_hrrpua_W_m2_active: 700000

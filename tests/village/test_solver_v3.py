@@ -678,3 +678,154 @@ def test_rgb_hypothesis_inert_completion_adds_receivers_without_fuel() -> None:
     assert completed.covered_area_m2[0, 1] == pytest.approx(1.0)
     assert completed.initial_dry_fuel_mass_kg[0, 1] == pytest.approx(0.0)
     assert completed.peak_hrr_W[0, 1] == pytest.approx(0.0)
+
+
+def test_w00_dem_roundtrip_crop_and_integrity(tmp_path: Path) -> None:
+    from pyfireca.village.workflow_v3 import (
+        crop_v3_case_bundle,
+        load_v3_case_bundle,
+        write_v3_case_bundle,
+    )
+
+    request = replace(
+        _request(("grass", "grass", "grass"), edge_weight=0.08),
+        ground_elevation_m=np.asarray([[500.0, 501.5, 499.0]]),
+    )
+    bundle = write_v3_case_bundle(request, tmp_path / "case")
+    loaded = load_v3_case_bundle(bundle).request
+    np.testing.assert_array_equal(loaded.ground_elevation_m, request.ground_elevation_m)
+    np.testing.assert_array_equal(loaded.exposure_edges.weight, request.exposure_edges.weight)
+    cropped = crop_v3_case_bundle(
+        bundle,
+        tmp_path / "crop",
+        row_start=0,
+        row_stop=1,
+        col_start=1,
+        col_stop=3,
+        ignition=VillageIgnitionEvent(0.0, 0, 0),
+    )
+    crop = load_v3_case_bundle(cropped).request
+    np.testing.assert_array_equal(crop.ground_elevation_m, [[501.5, 499.0]])
+    assert crop.grid.x_min_m == request.grid.x_min_m + request.grid.cell_size_m
+    np.testing.assert_array_equal(crop.exposure_edges.source, [0])
+    np.testing.assert_array_equal(crop.exposure_edges.target, [1])
+    np.testing.assert_array_equal(crop.exposure_edges.weight, [0.08])
+    np.save(bundle / "ground_elevation_m.npy", np.asarray([[500.0, 501.5, 498.0]]))
+    with pytest.raises(ValueError, match="elevation hash"):
+        load_v3_case_bundle(bundle)
+    (bundle / "ground_elevation_m.npy").unlink()
+    with pytest.raises(FileNotFoundError, match="elevation array"):
+        load_v3_case_bundle(bundle)
+
+
+def test_w00_legacy_flat_bundle_and_future_schema(tmp_path: Path) -> None:
+    from pyfireca.village.workflow_v3 import load_v3_case_bundle, write_v3_case_bundle
+
+    request = _request(("grass", "grass"), edge_weight=0.08)
+    bundle = write_v3_case_bundle(request, tmp_path / "case")
+    manifest_path = bundle / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    del manifest["ground_elevation"]
+    manifest_path.write_text(json.dumps(manifest))
+    legacy = load_v3_case_bundle(bundle).request
+    assert legacy.ground_elevation_m is None
+    expected, actual = run_v3_simulation(request), run_v3_simulation(legacy)
+    for name in actual.final_state.__dataclass_fields__:
+        np.testing.assert_equal(
+            getattr(actual.final_state, name), getattr(expected.final_state, name)
+        )
+    manifest["schema_version"] = "village-v3-case-2"
+    manifest_path.write_text(json.dumps(manifest))
+    with pytest.raises(ValueError, match="unsupported V3"):
+        load_v3_case_bundle(bundle)
+
+
+def test_w00_interactive_http_preserves_dem_and_applies_user_selection(tmp_path: Path) -> None:
+    import http.server
+    import threading
+    import time
+    import urllib.error
+    import urllib.request
+
+    from pyfireca.village.interactive_v3 import InteractiveV3State, _handler
+    from pyfireca.village.workflow_v3 import load_v3_case_bundle, write_v3_case_bundle
+
+    request = replace(
+        _request(("grass", "grass", "concrete"), edge_weight=0.08),
+        ground_elevation_m=np.asarray([[500.0, 502.0, 499.0]]),
+    )
+    bundle = write_v3_case_bundle(request, tmp_path / "case")
+    original = {p.name: sha256(p.read_bytes()).hexdigest() for p in bundle.iterdir()}
+    state = InteractiveV3State(
+        case_dir=bundle,
+        initial_viewer=tmp_path,
+        output_root=tmp_path / "jobs",
+        burnable=request.burnable_mask,
+        grid={"height": 1, "width": 3},
+        ignition={"row": 0, "col": 0},
+        end_time_s=request.scenario.end_time_s,
+    )
+    server = http.server.ThreadingHTTPServer(("127.0.0.1", 0), _handler(state))
+    worker = threading.Thread(target=server.serve_forever, kwargs={"poll_interval": 0.01})
+    worker.start()
+    base = f"http://127.0.0.1:{server.server_port}"
+
+    def get(path: str) -> dict:
+        with urllib.request.urlopen(base + path, timeout=5) as response:
+            return json.load(response)
+
+    def post(payload: dict) -> dict:
+        query = urllib.request.Request(
+            base + "/api/run",
+            data=json.dumps(payload).encode(),
+            headers={"Content-Type": "application/json", "Origin": base},
+        )
+        with urllib.request.urlopen(query, timeout=5) as response:
+            assert response.status == 202
+            return json.load(response)
+
+    try:
+        assert get("/api/config")["max_end_time_s"] == 30000
+        good = {"row": 0, "col": 1, "end_time_s": 2.5}
+        for invalid in (
+            {**good, "col": 2},
+            {**good, "row": -1},
+            {**good, "row": True},
+            {**good, "end_time_s": True},
+            {**good, "end_time_s": 30001},
+            {**good, "end_time_s": float("nan")},
+            {**good, "wind_speed_m_s": 5},
+        ):
+            with pytest.raises(urllib.error.HTTPError) as error:
+                post(invalid)
+            assert error.value.code == 400
+        job_id = post(good)["job_id"]
+        deadline = time.monotonic() + 15
+        job = get(f"/api/jobs/{job_id}")
+        while job["status"] == "running" and time.monotonic() < deadline:
+            time.sleep(0.01)
+            job = get(f"/api/jobs/{job_id}")
+        assert job["status"] == "completed", job
+        generated = load_v3_case_bundle(state.output_root / job_id / "case").request
+        assert generated.scenario.ignitions == (VillageIgnitionEvent(0.0, 0, 1),)
+        assert generated.scenario.end_time_s == 2.5
+        np.testing.assert_array_equal(generated.ground_elevation_m, request.ground_elevation_m)
+        np.testing.assert_array_equal(
+            generated.exposure_edges.weight, request.exposure_edges.weight
+        )
+        outputs = state.output_root / job_id / "run" / "outputs"
+        assert np.load(outputs / "sample_times_s.npy")[-1] == 2.5
+        assert np.load(outputs / "ignition_cause.npy")[0, 1] == IGNITION_CAUSE_DIRECT
+        viewer = get(f"/result/{job_id}/manifest.json")
+        assert viewer["elevation"]["path"] == "elevation.bin"
+        with urllib.request.urlopen(
+            base + f"/result/{job_id}/elevation.bin", timeout=5
+        ) as response:
+            np.testing.assert_array_equal(
+                np.frombuffer(response.read(), dtype="<f4"), request.ground_elevation_m.ravel()
+            )
+        assert {p.name: sha256(p.read_bytes()).hexdigest() for p in bundle.iterdir()} == original
+    finally:
+        server.shutdown()
+        server.server_close()
+        worker.join(timeout=5)

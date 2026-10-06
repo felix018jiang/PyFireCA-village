@@ -52,6 +52,9 @@ pyfireca = "pyfireca.cli:main"
 gis = [
   "rasterio>=1.3",
 ]
+planning = [
+  "shapely>=2",
+]
 village = [
   "Pillow>=10",
   "PyProj>=3.6",

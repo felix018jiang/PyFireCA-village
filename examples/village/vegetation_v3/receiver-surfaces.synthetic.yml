@@ -1,0 +1,13 @@
+schema_version: village-receiver-surfaces-1
+evidence: synthetic
+provenance: synthetic:single_wall_orientation_experiment_20261004_not_survey_or_calibration
+surfaces:
+  building:
+    upper_combustible:
+      orientation: vertical
+      # Normal points towards local -x; x is increasing physical grid column.
+      azimuth_deg: 180
+      offset_x_m: 0.75
+      offset_y_m: 0
+      aspect_ratio: 1
+      two_sided: false

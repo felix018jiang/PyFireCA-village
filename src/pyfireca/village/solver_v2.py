@@ -138,7 +138,7 @@ def _initial_state(request: V2SimulationRequest) -> V2State:
         time_s=0.0,
         step_index=0,
         state=state,
-        temperature_K=np.full(shape, request.scenario.ambient_temperature_K),
+        temperature_K=np.full(shape, request.scenario.ambient_temperature_K, dtype=np.float64),
         water_mass_kg_m2=water,
         incident_dose_J_m2=np.zeros(shape),
         fuel_remaining_kg=fuel,

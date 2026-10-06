@@ -39,7 +39,7 @@ def _array(name: str, value: Any, shape: tuple[int, int]) -> NDArray[np.float64]
 def burn_curve_energy_J(
     peak_hrr_W: float, growth_time_s: float, steady_time_s: float, decay_time_s: float
 ) -> float:
-    """Integral of the triangular/steady/triangular HRR curve."""
+    """Integral of the quadratic-growth/steady/linear-decay HRR curve."""
 
     values = (peak_hrr_W, growth_time_s, steady_time_s, decay_time_s)
     if any(not isfinite(value) for value in values):

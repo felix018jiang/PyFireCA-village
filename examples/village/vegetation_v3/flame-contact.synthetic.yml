@@ -1,0 +1,9 @@
+schema_version: village-flame-contact-1
+# Mechanism justified by experiments; these effective numbers are NOT a fit
+# to Finney's fuel beds, NIST trees or Gaoyou vegetation/building components.
+evidence: synthetic
+provenance: synthetic:near_field_mechanism_ablation_20261004_not_field_calibration
+gas_temperature_K: 1100
+heat_transfer_coefficient_W_m2_K: 50
+contact_fraction: 0.5
+max_cell_size_m: 2

@@ -1,0 +1,42 @@
+schema_version: village-components-experiment-1
+evidence: synthetic
+provenance: synthetic:component_partition_mechanism_experiment_20261004_not_survey_or_calibration
+radiation_policy: partition_existing_cell_edges_no_internal_radiation
+direct_ignition_policy: lowest_receiver_only
+recipes:
+  tree_equivalent:
+    # Scenario hypothesis: repartition existing dead fuel; no additional litter load.
+    - id: surface_dead
+      live_fraction: 0
+      dead_fraction: 0.3
+      area_fraction: 0.25
+      footprint_fraction: 1
+      source_base_height_m: 0
+      flame_extent_m: 0.35
+      receiver_height_m: 0.1
+    - id: upper_fuel
+      live_fraction: 1
+      dead_fraction: 0.7
+      area_fraction: 0.75
+      footprint_fraction: 1
+      source_base_height_m: 2
+      flame_extent_m: 4
+      receiver_height_m: 2.5
+  building:
+    # These are fractions of already-declared combustible fuel, not brickwork.
+    - id: combustible_base
+      live_fraction: 0.05
+      dead_fraction: 0.05
+      area_fraction: 0.1
+      footprint_fraction: 0.1
+      source_base_height_m: 0
+      flame_extent_m: 1.2
+      receiver_height_m: 0.2
+    - id: upper_combustible
+      live_fraction: 0.95
+      dead_fraction: 0.95
+      area_fraction: 0.9
+      footprint_fraction: 0.9
+      source_base_height_m: 0.5
+      flame_extent_m: 6
+      receiver_height_m: 2

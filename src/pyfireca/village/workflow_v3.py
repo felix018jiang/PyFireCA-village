@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
+from collections.abc import Callable
 from dataclasses import dataclass, replace
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -11,6 +13,10 @@ from typing import Any
 import numpy as np
 
 from pyfireca.village.domain import ExposureEdges, VillageGridSpec
+from pyfireca.village.flame_contact_v3 import (
+    FlameContactParameters,
+    load_flame_contact_parameters,
+)
 from pyfireca.village.ignition import VillageIgnitionEvent
 from pyfireca.village.outputs_v3 import V3StreamingSnapshotSink, write_v3_run_outputs
 from pyfireca.village.physics_v3 import V3CellPhysicsArrays
@@ -62,6 +68,10 @@ def write_v3_case_bundle(
         "edge_target": request.exposure_edges.target,
         "edge_weight": request.exposure_edges.weight,
     }
+    if request.ground_elevation_m is not None:
+        arrays["ground_elevation_m"] = request.ground_elevation_m
+    if request.material_evidence_index is not None:
+        arrays["material_evidence_index"] = request.material_evidence_index
     arrays.update(
         {
             name: getattr(request.parameters, name)
@@ -72,6 +82,7 @@ def write_v3_case_bundle(
         _save_array(output, name, value)
     manifest = {
         "schema_version": "village-v3-case-1",
+        "material_evidence": request.material_evidence_index is not None,
         "grid": {
             "height": request.grid.height,
             "width": request.grid.width,
@@ -93,6 +104,19 @@ def write_v3_case_bundle(
         },
         "unknown_policy": request.unknown_policy,
         "sample_interval_s": request.sample_interval_s,
+        "flame_contact": request.flame_contact.to_mapping() if request.flame_contact else None,
+        "ground_elevation": (
+            {
+                "mode": "terrain_coupled",
+                "path": "ground_elevation_m.npy",
+                "unit": "m",
+                "sha256": hashlib.sha256(
+                    np.ascontiguousarray(request.ground_elevation_m, dtype="<f8").tobytes()
+                ).hexdigest(),
+            }
+            if request.ground_elevation_m is not None
+            else {"mode": "flat"}
+        ),
         "material_labels": {str(int(key)): value for key, value in (material_labels or {}).items()},
         "landcover_labels": {
             str(int(key)): value for key, value in (landcover_labels or {}).items()
@@ -133,6 +157,17 @@ def load_v3_case_bundle(path: str | Path) -> V3CaseBundle:
         load("edge_weight"),
         grid.height * grid.width,
     )
+    elevation_file = directory / "ground_elevation_m.npy"
+    elevation_spec = manifest.get("ground_elevation", {})
+    if elevation_spec.get("mode") == "terrain_coupled" and not elevation_file.is_file():
+        raise FileNotFoundError(f"case elevation array is missing: {elevation_file}")
+    elevation = load("ground_elevation_m") if elevation_file.is_file() else None
+    if elevation is not None and elevation_spec.get("sha256"):
+        actual_hash = hashlib.sha256(
+            np.ascontiguousarray(elevation, dtype="<f8").tobytes()
+        ).hexdigest()
+        if actual_hash != elevation_spec["sha256"]:
+            raise ValueError("case ground elevation hash does not match its manifest")
     request = V3SimulationRequest(
         grid=grid,
         domain_mask=load("domain_mask"),
@@ -149,6 +184,15 @@ def load_v3_case_bundle(path: str | Path) -> V3CaseBundle:
         scenario=scenario,
         unknown_policy=manifest.get("unknown_policy", "error"),
         sample_interval_s=manifest.get("sample_interval_s"),
+        ground_elevation_m=elevation,
+        material_evidence_index=(
+            load("material_evidence_index") if manifest.get("material_evidence") else None
+        ),
+        flame_contact=(
+            FlameContactParameters.from_mapping(manifest["flame_contact"])
+            if manifest.get("flame_contact") is not None
+            else None
+        ),
     )
     return V3CaseBundle(
         request=request,
@@ -168,17 +212,26 @@ def run_v3_case_bundle(
     *,
     prepared_dir: str | Path | None = None,
     chunk_frames: int | None = None,
+    flame_contact_config: str | Path | None = None,
+    progress_callback: Callable[[float, float], None] | None = None,
 ) -> tuple[V3SimulationResult, Path]:
     """Run a bundle and write its arrays, diagnostics, and viewer."""
 
     case = load_v3_case_bundle(case_dir)
+    if flame_contact_config is not None:
+        case = replace(
+            case,
+            request=replace(
+                case.request, flame_contact=load_flame_contact_parameters(flame_contact_config)
+            ),
+        )
     if prepared_dir is None:
         prepared_dir = case.metadata.get("spatial_assets_dir")
     output_path = Path(output_dir)
     if output_path.exists():
         raise FileExistsError(f"output directory already exists: {output_path}")
     if chunk_frames is None:
-        result = run_v3_simulation(case.request)
+        result = run_v3_simulation(case.request, progress_callback=progress_callback)
         output = write_v3_run_outputs(
             result,
             case.request,
@@ -211,6 +264,7 @@ def run_v3_case_bundle(
             case.request,
             snapshot_sink=snapshot_store,
             retain_snapshots=False,
+            progress_callback=progress_callback,
         )
         snapshot_store.close()
         output = write_v3_run_outputs(
@@ -319,6 +373,17 @@ def crop_v3_case_bundle(
         scenario=scenario,
         unknown_policy=case.request.unknown_policy,
         sample_interval_s=sample_interval_s,
+        flame_contact=case.request.flame_contact,
+        material_evidence_index=(
+            crop(case.request.material_evidence_index)
+            if case.request.material_evidence_index is not None
+            else None
+        ),
+        ground_elevation_m=(
+            crop(case.request.ground_elevation_m)
+            if case.request.ground_elevation_m is not None
+            else None
+        ),
     )
     metadata = dict(case.metadata)
     metadata.update(

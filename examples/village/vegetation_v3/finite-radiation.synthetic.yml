@@ -1,0 +1,20 @@
+schema_version: village-finite-radiation-1
+evidence: synthetic
+provenance: synthetic:static_finite_component_surfaces_with_visibility_not_field_calibration
+max_center_distance_m: 4
+receiver_visibility: true
+terrain_visibility: true
+max_visibility_tests: 10000000000
+max_receiver_triangles: 32
+max_source_height_segments: 32
+integration:
+  schema_version: village-internal-radiation-1
+  source_radius_fraction_cell: 0.25
+  atmospheric_extinction_m_inv: 0
+  quadrature_order: 3
+  max_quadrature_order: 24
+  relative_tolerance: 0.01
+  absolute_tolerance: 0.00001
+  max_kernel_evaluations: 10000000000
+  evidence: synthetic
+  provenance: synthetic:reused_closed_flame_envelope_quadrature_not_wildfire_calibration

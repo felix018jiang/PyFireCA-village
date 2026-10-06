@@ -68,7 +68,14 @@ def preflight_v3_case(
     construction_bytes = edge_count * CONSTRUCTION_BYTES_PER_EDGE
     solver_replay_bytes = cells * frame_count * SOLVER_REPLAY_BYTES_PER_CELL_FRAME
     viewer_dynamic_bytes = cells * frame_count * VIEWER_DYNAMIC_BYTES_PER_CELL_FRAME
-    combined_peak_bytes = construction_bytes + solver_replay_bytes
+    # Four int32 neighbors plus four float64 geometry fractions per cell;
+    # transfer temporaries and full target/source accumulation arrays also
+    # matter for a dense front. This is a conservative estimate, not RSS.
+    contact_storage_bytes = cells * 48 if request.flame_contact else 0
+    contact_working_bytes = cells * 512 if request.flame_contact else 0
+    combined_peak_bytes = (
+        construction_bytes + solver_replay_bytes + contact_working_bytes + cells * 8
+    )
 
     reasons: list[str] = []
     metadata = case.metadata
@@ -80,6 +87,8 @@ def preflight_v3_case(
         reasons.append(f"simulation_scope={metadata.get('simulation_scope', 'unspecified')}")
     if case.request.unknown_policy != "error":
         reasons.append(f"unknown_policy={case.request.unknown_policy}")
+    if request.flame_contact is not None:
+        reasons.append("effective_flame_contact_requires_independent_calibration")
     resource_reasons: list[str] = []
     if edge_count > max_edge_count:
         resource_reasons.append(f"edge_count={edge_count} exceeds {max_edge_count}")
@@ -115,7 +124,10 @@ def preflight_v3_case(
             "target_cell_count": int(np.count_nonzero(request.target_mask)),
             "by_material": _material_counts(case),
         },
+        "flame_contact": (request.flame_contact.to_mapping() if request.flame_contact else None),
         "transport": {
+            "contact_operator_storage_bytes_estimate": contact_storage_bytes,
+            "contact_dense_working_bytes_estimate": contact_working_bytes,
             "edge_count": edge_count,
             "edge_bytes": edge_bytes,
             "construction_peak_bytes_estimate": construction_bytes,

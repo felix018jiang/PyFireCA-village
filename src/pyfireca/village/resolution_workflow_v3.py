@@ -13,7 +13,11 @@ import yaml
 from pyfireca.village.assembly_presets import load_assembly_preset_library
 from pyfireca.village.material_cards import load_material_card_library
 from pyfireca.village.material_resolution import ResolvedSurveyCase, resolve_material_selections
-from pyfireca.village.moisture import load_moisture_initialization
+from pyfireca.village.moisture import (
+    default_moisture_payload,
+    load_default_moisture_initialization,
+    load_moisture_initialization,
+)
 from pyfireca.village.survey import load_field_survey
 
 
@@ -63,7 +67,7 @@ def resolve_survey_v3(
     *,
     material_cards_path: str | Path,
     assemblies_path: str | Path,
-    moisture_path: str | Path,
+    moisture_path: str | Path | None = None,
     geometry_areas_path: str | Path,
     mode: str = "demonstration",
     case_id: str = "v3-resolved-survey",
@@ -74,7 +78,11 @@ def resolve_survey_v3(
     survey = load_field_survey(survey_path)
     cards = load_material_card_library(material_cards_path)
     assemblies = load_assembly_preset_library(assemblies_path)
-    moisture = load_moisture_initialization(moisture_path)
+    moisture = (
+        load_moisture_initialization(moisture_path)
+        if moisture_path is not None
+        else load_default_moisture_initialization()
+    )
     areas = load_geometry_areas(geometry_areas_path)
     resolved = resolve_material_selections(
         survey,
@@ -95,8 +103,26 @@ def resolve_survey_v3(
             "survey": _sha256(Path(survey_path).expanduser().resolve()),
             "material_cards": _sha256(Path(material_cards_path).expanduser().resolve()),
             "assemblies": _sha256(Path(assemblies_path).expanduser().resolve()),
-            "moisture": _sha256(Path(moisture_path).expanduser().resolve()),
+            "moisture": (
+                _sha256(Path(moisture_path).expanduser().resolve())
+                if moisture_path is not None
+                else hashlib.sha256(
+                    json.dumps(default_moisture_payload(), sort_keys=True).encode("utf-8")
+                ).hexdigest()
+            ),
             "geometry_areas": _sha256(Path(geometry_areas_path).expanduser().resolve()),
+        }
+        payload["moisture_selection"] = {
+            "source": "explicit_file" if moisture_path is not None else "builtin_material_defaults",
+            "package_id": moisture.package_id,
+            "basis": moisture.basis,
+            "hash_encoding": "file_bytes" if moisture_path is not None else "sorted_json_utf8",
+            "production_ready": moisture.production_ready,
+            "resolved_configuration": (
+                yaml.safe_load(Path(moisture_path).expanduser().read_text(encoding="utf-8"))
+                if moisture_path is not None
+                else default_moisture_payload()
+            ),
         }
         payload["resolution_status"] = "ready" if resolved.can_run else "blocked"
         payload["no_cell_arrays_written"] = True

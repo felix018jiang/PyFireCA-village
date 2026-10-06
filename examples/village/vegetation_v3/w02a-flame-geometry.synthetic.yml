@@ -1,0 +1,24 @@
+# W02-a numerical diagnostic only. No observed Gaoyou footprint or wind reduction.
+# Axis lengths/base heights come from the saved component experiment.
+# Same component ID shares a footprint: 'whole' includes several vegetation classes.
+schema_version: village-flame-axis-diagnostic-1
+air_density_kg_m3: {value: 1.2, unit: kg/m3, evidence: synthetic, source: 'synthetic:ambient_air_assumption'}
+gravity_m_s2: {value: 9.81, unit: m/s2, evidence: literature, source: 'conventional:standard_gravity_rounded'}
+wind_reference_height_m: {value: 10, unit: m, evidence: synthetic, source: 'synthetic:match_W01_test_height'}
+wind_speed_factor: {value: 0.4, unit: '1', evidence: synthetic, source: 'synthetic:explicit_reference_to_flame_speed_sensitivity_not_calibration'}
+footprints:
+  whole:
+    area_m2: {value: 3.141592653589793, unit: m2, evidence: synthetic, source: 'synthetic:one_metre_radius_circle'}
+    diameter_m: {value: 2, unit: m, evidence: synthetic, source: 'synthetic:one_metre_radius_circle'}
+  surface_dead:
+    area_m2: {value: 3.141592653589793, unit: m2, evidence: synthetic, source: 'synthetic:ground_circle'}
+    diameter_m: {value: 2, unit: m, evidence: synthetic, source: 'synthetic:ground_circle'}
+  upper_fuel:
+    area_m2: {value: 3.141592653589793, unit: m2, evidence: synthetic, source: 'synthetic:canopy_circle'}
+    diameter_m: {value: 2, unit: m, evidence: synthetic, source: 'synthetic:canopy_circle'}
+  combustible_base:
+    area_m2: {value: 0.3141592653589793, unit: m2, evidence: synthetic, source: 'synthetic:base_circle'}
+    diameter_m: {value: 0.6324555320336759, unit: m, evidence: synthetic, source: 'synthetic:base_circle'}
+  upper_combustible:
+    area_m2: {value: 2.827433388230814, unit: m2, evidence: synthetic, source: 'synthetic:upper_circle'}
+    diameter_m: {value: 1.8973665961010275, unit: m, evidence: synthetic, source: 'synthetic:upper_circle'}

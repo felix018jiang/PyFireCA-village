@@ -8,6 +8,7 @@ water value implicitly.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from importlib.resources import files
 from math import isfinite
 from pathlib import Path
 from typing import Any
@@ -162,11 +163,25 @@ def load_moisture_initialization(path: str | Path) -> MoistureInitialization:
     return parse_moisture_initialization(data, path=source)
 
 
+def default_moisture_payload() -> dict[str, Any]:
+    """Packaged, versioned scenario defaults; never promote them to measurements."""
+    resource = files("pyfireca.village").joinpath("data/moisture.initial.synthetic.yml")
+    return yaml.safe_load(resource.read_text(encoding="utf-8"))
+
+
+def load_default_moisture_initialization() -> MoistureInitialization:
+    return parse_moisture_initialization(
+        default_moisture_payload(), path=Path("<builtin:material-moisture-defaults-1>")
+    )
+
+
 __all__ = [
     "MOISTURE_STATUS_IDS",
     "SCHEMA_VERSION",
     "MoistureInitialization",
     "MoistureState",
+    "default_moisture_payload",
+    "load_default_moisture_initialization",
     "load_moisture_initialization",
     "parse_moisture_initialization",
 ]

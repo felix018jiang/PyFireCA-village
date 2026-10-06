@@ -1,0 +1,15 @@
+# Standalone W01 wind diagnostic; not a runnable fire-case configuration.
+# Every value is a numerical test assumption, not observed Gaoyou weather.
+mode: timeseries
+direction_reference: grid_north
+reference_height_m:
+  value: 10.0
+  unit: m
+  evidence: synthetic
+  source: synthetic:W01_reference_height
+evidence: synthetic
+source: synthetic:W01_north_crossing_and_turn
+samples:
+  - {time_s: 0.0, speed_m_s: 2.0, from_deg: 359.0}
+  - {time_s: 30.0, speed_m_s: 2.0, from_deg: 1.0}
+  - {time_s: 60.0, speed_m_s: 4.0, from_deg: 270.0}

@@ -30,32 +30,78 @@
                 <option value="state">火灾状态</option>
                 <option value="material">材料分区</option>
                 <option value="landcover">地类分区</option>
+                <option value="material_evidence">材质证据 / 待核实地表</option>
                 <option value="temperature">表面温度</option>
-                <option value="hrr">热释放率 HRR</option>
+                <option value="hrr">上一步平均热释放率 HRR</option>
                 <option value="fuel">剩余可燃燃料</option>
                 <option value="surface_water">表层水量</option>
+                <option value="elevation">地面高程</option>
               </select>
+            </label>
+            <label class="layer-picker" id="componentPicker" hidden><span>燃料部位</span>
+              <select id="componentMode"><option value="null">全部部位（概览）</option></select>
             </label>
             <label class="switch"><input id="toggleBuildings" type="checkbox" checked /><span>建筑轮廓</span></label>
             <label class="switch"><input id="toggleGrid" type="checkbox" /><span>元胞格网</span></label>
           </section>
+          <section id="simulationControls" hidden>
+            <p class="section-number">02 / 新模拟</p>
+            <p class="control-help">点击地图选中元胞，再设为起火点。只有可燃格可以起火。</p>
+            <p class="control-help">初始水分沿用当前案例的材质参数，无需逐格填写。</p>
+            <p class="control-help" id="correctionReplayNote" hidden>此回放已应用人工修正建议。再次修改或重算请<a href="/">返回基础案例</a>，选择草稿后运行。</p>
+            <p class="control-help" id="selectedCellSummary" hidden></p>
+            <button id="useSelectedIgnition" type="button">将所选格设为起火点</button>
+            <p class="control-value" id="ignitionChoice">起火点：—</p>
+            <label class="duration-field">模拟时长（分钟）
+              <input id="durationMinutes" type="number" min="0.016666666666666666" max="500" step="any" value="10" />
+            </label>
+            <button id="startSimulation" type="button">开始新模拟</button>
+            <label class="switch" id="applyDraftChoice" hidden><input id="applyMaterialDraft" type="checkbox" /><span>将修正草稿用于新模拟</span></label>
+            <p class="control-help" id="simulationMessage" role="status"></p>
+            <label class="layer-picker" id="savedRunsPicker" hidden><span>已保存模拟</span>
+              <select id="savedRuns" aria-label="已保存模拟"></select>
+            </label>
+            <button id="openSavedRun" type="button" hidden>打开所选回放</button>
+          </section>
+          <section id="materialDraftControls" hidden>
+            <p class="section-number">材质修正草稿</p>
+            <p class="control-help">青色框表示待应用建议。当前回放保留原案例；勾选“将修正草稿用于新模拟”后独立重算。覆盖率沿用原格，水分沿用目标材质。</p>
+            <label class="layer-picker"><span>拟修改为</span><select id="draftMaterial"></select></label>
+            <label class="duration-field">修正依据<input id="draftReason" type="text" maxlength="500" placeholder="照片编号、调查记录或试验假设" /></label>
+            <button id="saveMaterialDraft" type="button">保存所选格修正</button>
+            <button id="undoMaterialDraft" type="button" disabled>撤销最近一次修正</button>
+            <p class="control-help" id="materialDraftSummary" role="status"></p>
+            <p class="control-help" id="selectedDraftSummary"></p>
+          </section>
           <section>
-            <p class="section-number">02 / 状态</p>
+            <p class="section-number">03 / 状态</p>
             <div class="legend">
               <span><i class="swatch unburned"></i>未燃</span>
               <span><i class="swatch heating"></i>受热</span>
               <span><i class="swatch burning"></i>燃烧</span>
               <span><i class="swatch burned"></i>燃尽</span>
+              <span id="partialLegend" hidden><i class="swatch partial"></i>部分燃尽</span>
               <span><i class="swatch inert"></i>不燃</span>
               <span><i class="swatch unknown"></i>未知</span>
             </div>
             <div class="scalar-legend" id="scalarLegend" hidden>
               <span id="scalarMaximum">高</span><i></i><span id="scalarMinimum">低</span>
             </div>
+            <p class="control-help" id="evidenceLegend" hidden>紫色：待核实；绿色：RGB推测；蓝色：建筑标注；青色：人工修正建议。材质均未实测。</p>
+          </section>
+          <section id="coreMetrics">
+            <p class="section-number">运行统计</p>
+            <div class="metric-grid">
+              <div><span>当前受热格</span><strong id="heatingCount">—</strong></div>
+              <div><span>已燃尽格</span><strong id="burnedOutCount">—</strong></div>
+              <div><span>剩余可燃燃料</span><strong id="remainingFuelTotal">—</strong></div>
+            </div>
           </section>
           <section class="notice">
             <p class="section-number">模型说明</p>
-            <p>二维等效暴露 CA。画面显示计算状态，不代表真实火焰形状或结构损失。</p>
+            <p id="modelDescription">二维等效暴露 CA。画面显示计算状态，不代表真实火焰形状或结构损失。</p>
+            <p class="control-help" id="landcoverAssumptionNote" hidden></p>
+            <p id="contactReceiverNote" hidden></p>
           </section>
         </aside>
 
@@ -63,27 +109,40 @@
           <canvas id="mapCanvas" aria-label="村落火灾模拟地图"></canvas>
           <div class="loading" id="loading">正在装载模拟结果</div>
           <div class="map-badge" id="mapBadge">— × — 元胞</div>
+          <div class="map-navigation" aria-label="地图缩放">
+            <button id="zoomIn" type="button" aria-label="放大地图">＋</button>
+            <button id="zoomOut" type="button" aria-label="缩小地图">−</button>
+            <button id="fitMap" type="button">全图</button>
+          </div>
         </section>
 
         <aside class="rail inspector">
-          <p class="section-number">03 / 元胞查询</p>
+          <p class="section-number">04 / 元胞查询</p>
           <div class="empty-selection" id="emptySelection">点击地图中的任意元胞查看状态</div>
           <dl id="cellDetails" hidden>
             <dt>位置</dt><dd id="cellPosition">—</dd>
             <dt>编号</dt><dd id="cellId">—</dd>
             <dt>状态</dt><dd id="cellState">—</dd>
             <dt>材质索引</dt><dd id="cellMaterial">—</dd>
+            <dt>材质依据</dt><dd id="cellEvidence">—</dd>
             <dt>地类</dt><dd id="cellLandcover">—</dd>
             <dt>覆盖率</dt><dd id="cellCoverage">—</dd>
             <dt>剩余燃料</dt><dd id="cellFuel">—</dd>
-            <dt>表层水量</dt><dd id="cellWater">—</dd>
-            <dt>表面温度</dt><dd id="cellTemperature">—</dd>
-            <dt>HRR</dt><dd id="cellHrr">—</dd>
+            <dt id="waterLabel">表层水量</dt><dd id="cellWater">—</dd>
+            <dt id="moistureLabel">初始含水率（干基）</dt><dd id="cellInitialMoisture">—</dd>
+            <dt id="temperatureLabel">表面温度</dt><dd id="cellTemperature">—</dd>
+            <dt>地面高程</dt><dd id="cellElevation">—</dd>
+            <dt id="hrrLabel">HRR</dt><dd id="cellHrr">—</dd>
             <dt>首次点燃</dt><dd id="cellIgnition">—</dd>
+            <dt>首次燃尽</dt><dd id="cellBurnout">—</dd>
             <dt>点燃原因</dt><dd id="cellCause">—</dd>
             <dt>建筑</dt><dd id="cellBuilding">—</dd>
             <dt>房屋状态</dt><dd id="cellBuildingState">—</dd>
           </dl>
+          <section id="componentDetails" hidden>
+            <p class="section-number">燃料部位 / 原始结果</p>
+            <div id="componentCards"></div>
+          </section>
           <div class="metric-grid">
             <div><span>当前燃烧</span><strong id="burningCount">—</strong></div>
             <div><span>累计引燃</span><strong id="ignitedCount">—</strong></div>

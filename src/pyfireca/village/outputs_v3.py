@@ -24,7 +24,7 @@ def _copy_web_assets(viewer: Path) -> None:
     assets = viewer / "assets"
     assets.mkdir(parents=True)
     resources = files("pyfireca.village.web")
-    for name in ("index.html", "styles.css", "app.js"):
+    for name in ("index.html", "styles.css", "app.js", "core-metrics.mjs", "chunk-replay.mjs"):
         source = resources.joinpath(name)
         target = viewer / name if name == "index.html" else assets / name
         target.write_bytes(source.read_bytes())
@@ -368,14 +368,21 @@ def write_v3_village_viewer(
     initial = result.initial_fuel_kg
     cells = request.grid.height * request.grid.width
     static_arrays = {
+        "initial_fuel": np.asarray(initial, dtype="<f8"),
         "material": np.asarray(request.material_index, dtype="<i4"),
         "landcover": np.asarray(request.landcover_index, dtype="<i4"),
         "coverage": np.asarray(request.parameters.coverage_fraction, dtype="<f4"),
+        "initial_moisture": np.asarray(
+            np.where(request.burnable_mask, request.parameters.moisture_content_dry_basis, np.nan),
+            dtype="<f4",
+        ),
         "building": np.asarray(request.building_index, dtype="<i4"),
         "ignition_time": np.asarray(result.final_state.ignition_time_s, dtype="<f8"),
         "burnout_time": np.asarray(result.final_state.burnout_time_s, dtype="<f8"),
         "ignition_cause": np.asarray(result.ignition_cause, dtype=np.uint8),
     }
+    if request.material_evidence_index is not None:
+        static_arrays["material_evidence"] = request.material_evidence_index
     for name, array in static_arrays.items():
         (viewer / f"{name}.bin").write_bytes(np.ascontiguousarray(array).tobytes(order="C"))
 
@@ -560,6 +567,7 @@ def write_v3_village_viewer(
         "run_status": "completed",
         "model": "effective_exposure_ca_v3",
         "scenario": metadata,
+        "flame_contact": request.flame_contact.to_mapping() if request.flame_contact else None,
         "background": image_name,
         "frame_count": (
             snapshot_store.frame_count if snapshot_store is not None else len(result.snapshots)
@@ -572,6 +580,12 @@ def write_v3_village_viewer(
         "time_display_unit": "min",
         "state": dynamic_specs["state"],
         "fuel": dynamic_specs["fuel"],
+        "initial_fuel": {
+            "path": "initial_fuel.bin",
+            "dtype": "float64-le",
+            "order": "C",
+            "unit": "kg",
+        },
         "temperature": {
             **dynamic_specs["temperature"],
             "minimum": float(
@@ -588,6 +602,7 @@ def write_v3_village_viewer(
         "temperature_valid": dynamic_specs["temperature_valid"],
         "hrr": {
             **dynamic_specs["hrr"],
+            "temporal_meaning": "mean_over_last_solver_step_ending_at_sample",
             "minimum": 0.0,
             "maximum": maximum_hrr,
             "scale": "log1p",
@@ -617,6 +632,14 @@ def write_v3_village_viewer(
             "minimum": 0.0,
             "maximum": 1.0,
         },
+        "initial_moisture": {
+            "path": "initial_moisture.bin",
+            "dtype": "float32-le",
+            "order": "C",
+            "unit": "kg_water/kg_dry",
+            "basis": "dry_basis_ratio",
+            "missing_value": "NaN for nonburnable or excluded cells",
+        },
         "building": {"path": "building.bin", "dtype": "int32-le", "order": "C"},
         "ignition_time": {
             "path": "ignition_time.bin",
@@ -640,6 +663,38 @@ def write_v3_village_viewer(
     }
     if chunk_frames is not None:
         manifest["storage"] = {"mode": "frame_chunks", "chunk_frames": chunk_frames}
+    if request.ground_elevation_m is not None:
+        elevation = np.asarray(request.ground_elevation_m, dtype="<f4")
+        (viewer / "elevation.bin").write_bytes(elevation.tobytes(order="C"))
+        (viewer / "elevation_valid.bin").write_bytes(
+            np.ones(request.grid.shape, dtype=np.uint8).tobytes(order="C")
+        )
+        manifest["elevation"] = {
+            "path": "elevation.bin",
+            "dtype": "float32-le",
+            "order": "C",
+            "unit": "m",
+            "minimum": float(np.min(elevation)),
+            "maximum": float(np.max(elevation)),
+        }
+        manifest["elevation_valid"] = {
+            "path": "elevation_valid.bin",
+            "dtype": "uint8",
+            "order": "C",
+        }
+    if request.material_evidence_index is not None:
+        manifest["material_evidence"] = {
+            "path": "material_evidence.bin",
+            "dtype": "uint8",
+            "order": "C",
+            "labels": {
+                "0": "待核实地表",
+                "1": "RGB推测",
+                "2": "建筑标注(材质未实测)",
+                "3": "人工修正建议(未实测)",
+                "255": "域外",
+            },
+        }
     (viewer / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -681,6 +736,9 @@ def write_v3_run_outputs(
         "burnout_time_s": final.burnout_time_s,
         "ignition_cause": result.ignition_cause,
         "released_energy_final_J": final.released_energy_J,
+        "incident_radiation_final_J": final.incident_radiation_J,
+        "absorbed_radiation_final_J": final.absorbed_radiation_J,
+        "received_convection_final_J": final.received_convection_J,
     }.items():
         np.save(outputs / f"{name}.npy", array, allow_pickle=False)
     if snapshot_store is None:
@@ -723,7 +781,8 @@ def write_v3_run_outputs(
         writer = csv.writer(stream)
         writer.writerow(["quantity", "value_J"])
         for name, value in asdict(result.energy_budget).items():
-            writer.writerow([name, value])
+            if name != "energy_limited_contact_source_steps":
+                writer.writerow([name, value])
     groups: dict[str, dict[str, Any]] = {}
     labels = material_labels or {}
     state = final.state
@@ -774,6 +833,9 @@ def write_v3_run_outputs(
                     "ambient_temperature_K": request.scenario.ambient_temperature_K,
                     "unknown_policy": request.unknown_policy,
                 },
+                "flame_contact": (
+                    request.flame_contact.to_mapping() if request.flame_contact else None
+                ),
                 "material_labels": labels,
                 "landcover_labels": landcover_labels or {},
             },
@@ -789,6 +851,9 @@ def write_v3_run_outputs(
             "model": "effective_exposure_ca_v3",
             "end_time_s": result.final_state.time_s,
             "step_count": result.final_state.step_index,
+            "energy_limited_contact_source_steps": (
+                result.energy_budget.energy_limited_contact_source_steps
+            ),
             "frame_count": frame_count,
             "cell_count": request.grid.height * request.grid.width,
             "burnable_cell_count": int(np.count_nonzero(request.burnable_mask)),
@@ -796,6 +861,10 @@ def write_v3_run_outputs(
             "consumed_fuel_kg": result.consumed_fuel_kg,
             "includes_nonbuilding_fuels": bool(
                 np.any(request.burnable_mask & (request.building_index < 0))
+            ),
+            "elevation_physics_activated": request.ground_elevation_m is not None,
+            "flame_contact": (
+                request.flame_contact.to_mapping() if request.flame_contact else None
             ),
         }
     )
