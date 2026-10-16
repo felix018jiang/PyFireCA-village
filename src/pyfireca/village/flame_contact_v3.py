@@ -29,6 +29,7 @@ class FlameContactParameters:
     provenance: str
     receiver_height_overrides_m: tuple[tuple[int, float], ...] = ()
     receiver_vertical_half_extent_m: float = 0.0
+    terrain_reference: str = "cell_center"
 
     def __post_init__(self) -> None:
         for name in (
@@ -51,6 +52,8 @@ class FlameContactParameters:
             raise ValueError("receiver vertical half extent must be finite and nonnegative")
         if self.evidence not in {"synthetic", "literature_informed", "measured"}:
             raise ValueError("flame contact evidence must be explicit")
+        if self.terrain_reference not in {"cell_center", "shared_face"}:
+            raise ValueError("contact terrain reference must be cell_center or shared_face")
         if not isinstance(self.provenance, str) or not self.provenance.strip():
             raise ValueError("flame contact provenance must be nonempty")
         if not isinstance(self.receiver_height_overrides_m, tuple):
@@ -79,13 +82,19 @@ class FlameContactParameters:
             result.pop("receiver_height_overrides_m")
         if self.receiver_vertical_half_extent_m == 0:
             result.pop("receiver_vertical_half_extent_m")
+        if self.terrain_reference == "cell_center":
+            result.pop("terrain_reference")
         return result
 
     @classmethod
     def from_mapping(cls, value: dict) -> FlameContactParameters:
         if not isinstance(value, dict):
             raise TypeError("flame contact configuration must be a mapping")
-        optional = {"receiver_height_overrides_m", "receiver_vertical_half_extent_m"}
+        optional = {
+            "receiver_height_overrides_m",
+            "receiver_vertical_half_extent_m",
+            "terrain_reference",
+        }
         required = {"schema_version", *cls.__dataclass_fields__} - optional
         if not required <= set(value) or set(value) - required - optional:
             raise ValueError("flame contact configuration requires exact parameter keys")
@@ -123,6 +132,9 @@ class FlameContactOperator:
     The component resolver can supply same-cell/face-neighbor component edges
     using explicit source bases. Neither graph jumps an inert/excluded gap.
     Partial coverage assumes uniform mixing, not reconstructed plant geometry.
+    The optional shared-face closure reconstructs continuous terrain to the same
+    face elevation on both sides, rather than treating center DEM samples as
+    vertical steps. It does not resolve cliffs, fuel setbacks, or flame flow.
     """
 
     neighbors: np.ndarray
@@ -167,26 +179,34 @@ class FlameContactOperator:
             tc = slice(max(0, dc), min(grid.width, grid.width + dc))
             # Contact can reach a low combustible part while the radiation
             # receiver remains at its independently defined representative height.
-            target_z = elevation[tr, tc] + contact_height[tr, tc]
+            source_base = elevation[sr, sc]
+            target_base = elevation[tr, tc]
+            if parameters.terrain_reference == "shared_face":
+                # Linear continuous-terrain reconstruction at the common face.
+                # Relative heights are evaluated locally: the common elevation
+                # cancels, preserving invariance to the absolute DEM datum.
+                source_base = np.zeros_like(source_base)
+                target_base = source_base
+            target_z = target_base + contact_height[tr, tc]
             extent = parameters.receiver_vertical_half_extent_m
             if extent > 0:
-                bottom = np.maximum(elevation[tr, tc], target_z - extent)
+                bottom = np.maximum(target_base, target_z - extent)
                 top = target_z + extent
                 overlap = np.maximum(
                     0.0,
-                    np.minimum(top, elevation[sr, sc] + physics.source_height_m[sr, sc])
-                    - np.maximum(bottom, elevation[sr, sc]),
+                    np.minimum(top, source_base + physics.source_height_m[sr, sc])
+                    - np.maximum(bottom, source_base),
                 )
                 # Sub-resolution bands round to a point at large elevations.
                 contact_weight = (
-                    (target_z >= elevation[sr, sc])
-                    & (target_z <= elevation[sr, sc] + physics.source_height_m[sr, sc])
+                    (target_z >= source_base)
+                    & (target_z <= source_base + physics.source_height_m[sr, sc])
                 ).astype(np.float64)
                 np.divide(overlap, top - bottom, out=contact_weight, where=top > bottom)
             else:
                 contact_weight = (
-                    (target_z >= elevation[sr, sc])
-                    & (target_z <= elevation[sr, sc] + physics.source_height_m[sr, sc])
+                    (target_z >= source_base)
+                    & (target_z <= source_base + physics.source_height_m[sr, sc])
                 ).astype(np.float64)
             keep = mask[sr, sc] & mask[tr, tc] & (contact_weight > 0)
             source_ids = ids[sr, sc][keep]

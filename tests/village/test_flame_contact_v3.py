@@ -10,6 +10,8 @@ from pathlib import Path
 import numpy as np
 import pytest
 
+from pyfireca.village.core_validation_v3 import check_final
+from pyfireca.village.domain import VillageGridSpec
 from pyfireca.village.flame_contact_v3 import (
     FlameContactOperator,
     FlameContactParameters,
@@ -367,3 +369,69 @@ def test_subresolution_receiver_band_falls_back_to_point_without_nan(contact):
     np.testing.assert_array_equal(
         finite.geometry_fraction, operator(request, contact).geometry_fraction
     )
+
+
+def test_continuous_slope_face_contact_reaches_all_four_directions_without_extra_energy(contact):
+    request = audit.make_request(("tree_equivalent",) * 9)
+    physics = replace(
+        request.parameters,
+        **{
+            name: getattr(request.parameters, name).reshape(3, 3)
+            for name in request.parameters.__dataclass_fields__
+        },
+    )
+    grid = VillageGridSpec(3, 3, 2, 0, 6)
+    mask = np.ones(grid.shape, dtype=bool)
+    ground = np.array([[-3.17] * 3, [0.0] * 3, [3.17] * 3]) + 270
+    legacy = FlameContactOperator.build(grid, mask, physics, contact, ground)
+    face = replace(contact, terrain_reference="shared_face")
+    graph = FlameContactOperator.build(grid, mask, physics, face, ground)
+    assert legacy.neighbors[4].tolist() == [-1, -1, 3, 5]
+    assert graph.neighbors[4].tolist() == [1, 7, 3, 5]
+    rotated = FlameContactOperator.build(grid, mask, physics, face, np.rot90(ground))
+    np.testing.assert_array_equal(graph.geometry_fraction, rotated.geometry_fraction)
+    shifted = FlameContactOperator.build(grid, mask, physics, face, ground + 10000)
+    np.testing.assert_array_equal(graph.geometry_fraction, shifted.geometry_fraction)
+    hrr = np.zeros(grid.shape)
+    hrr[1, 1] = physics.peak_hrr_W[1, 1]
+    susceptible = mask.copy()
+    susceptible[1, 1] = False
+    transfer = graph.transfer(hrr, np.full(grid.shape, 300.0), susceptible)
+    values = transfer.target_power_W[[0, 2, 1, 1], [1, 1, 0, 2]]
+    np.testing.assert_allclose(values, values[0], rtol=0, atol=0)
+    assert values[0] > 0
+    assert transfer.transferred_W <= transfer.available_nonradiative_W
+
+
+def test_face_contact_can_ignite_building_from_trees_on_slope_with_original_fuels(contact):
+    request = replace(
+        audit.make_request(("tree_equivalent", "building"), end_time_s=1200),
+        flame_contact=contact,
+        ground_elevation_m=np.array([[270.0, 273.17]]),
+    )
+    assert operator(request, contact).neighbors[0, 3] == -1
+    face = replace(contact, terrain_reference="shared_face")
+    corrected = replace(request, flame_contact=face)
+    assert operator(corrected, face).neighbors[0, 3] == 1
+    result = run_v3_simulation(corrected, retain_snapshots=False)
+    assert 0 < result.final_state.ignition_time_s[0, 1] < request.scenario.end_time_s
+    assert result.final_state.received_convection_J[0, 1] > 0
+    check_final(corrected, result)
+    # Shared terrain does not bypass roads or enable short grass to reach a crown.
+    road = audit.make_request(("tree_equivalent", "bare_or_road", "building"))
+    assert np.all(operator(road, face).neighbors == -1)
+    high = audit.make_request(("grass", "tree_equivalent"))
+    assert operator(high, face).neighbors[0, 3] == -1
+
+
+def test_face_contact_roundtrip_and_legacy_default(tmp_path, contact):
+    assert "terrain_reference" not in contact.to_mapping()
+    assert (
+        FlameContactParameters.from_mapping(contact.to_mapping()).terrain_reference == "cell_center"
+    )
+    face = replace(contact, terrain_reference="shared_face")
+    request = replace(audit.make_request(("grass", "grass")), flame_contact=face)
+    write_v3_case_bundle(request, tmp_path / "case")
+    assert load_v3_case_bundle(tmp_path / "case").request.flame_contact == face
+    with pytest.raises(ValueError, match="terrain reference"):
+        replace(contact, terrain_reference="ignore_slope")

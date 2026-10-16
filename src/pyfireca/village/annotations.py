@@ -10,7 +10,11 @@ import numpy as np
 
 
 def load_labelme_buildings(
-    path: str | Path, image_reference: dict[str, Any]
+    path: str | Path,
+    image_reference: dict[str, Any],
+    *,
+    labels: tuple[str, ...] = ("building",),
+    repair_invalid: bool = False,
 ) -> list[dict[str, Any]]:
     """Convert LabelMe building rectangles/polygons from pixels to world metres."""
 
@@ -40,7 +44,7 @@ def load_labelme_buildings(
 
     prepared: list[dict[str, Any]] = []
     for source_index, shape in enumerate(data["shapes"]):
-        if shape.get("label") != "building":
+        if shape.get("label") not in labels:
             continue
         shape_type = shape.get("shape_type")
         points = shape.get("points")
@@ -65,23 +69,49 @@ def load_labelme_buildings(
                 f"unsupported LabelMe building shape_type {shape_type!r} at index {source_index}"
             )
         geometry = Polygon([transform(point) for point in pixel_ring])
-        if geometry.is_empty or not geometry.is_valid or geometry.area <= 0.0:
+        repaired = False
+        if not geometry.is_valid and repair_invalid:
+            from shapely import make_valid
+            from shapely.ops import unary_union
+
+            def polygon_parts(value):
+                if value.geom_type == "Polygon":
+                    return [value]
+                return [
+                    part for child in getattr(value, "geoms", ()) for part in polygon_parts(child)
+                ]
+
+            geometry = unary_union(polygon_parts(make_valid(geometry)))
+            repaired = True
+        if (
+            geometry.is_empty
+            or not geometry.is_valid
+            or geometry.area <= 0.0
+            or geometry.geom_type not in {"Polygon", "MultiPolygon"}
+        ):
             raise ValueError(f"LabelMe building at index {source_index} has invalid geometry")
+        parts = [geometry] if geometry.geom_type == "Polygon" else list(geometry.geoms)
         building_id = f"B{len(prepared) + 1:04d}"
         prepared.append(
             {
                 "building_id": building_id,
                 "polygons": [
                     {
-                        "exterior": [list(point) for point in geometry.exterior.coords],
-                        "holes": [],
+                        "exterior": [list(point) for point in part.exterior.coords],
+                        "holes": [
+                            [list(point) for point in ring.coords] for ring in part.interiors
+                        ],
                     }
+                    for part in parts
                 ],
                 "properties": {
                     "annotation_format": "labelme",
                     "source_shape_index": source_index,
                     "source_shape_type": shape_type,
                     "data_status": "observed_annotation",
+                    "source_label": shape["label"],
+                    "geometry_repaired": repaired,
+                    "repair_method": "make_valid_polygonal_union" if repaired else None,
                 },
             }
         )

@@ -149,3 +149,38 @@ def test_chunk_loader_reads_requested_frame_and_bounds_cache():
         check=False,
     )
     assert result.returncode == 0, result.stdout + result.stderr
+
+
+def test_scalar_fuel_range_supports_legacy_manifest_and_percent_legend():
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("Node.js is required")
+    module = Path(__file__).parents[2] / "src/pyfireca/village/web/core-metrics.mjs"
+    source = (
+        "import assert from 'node:assert/strict';\n"
+        f"import {{scalarDisplaySpec}} from {json.dumps(module.as_uri())};\n"
+        """
+        const legacy = {path:'fuel.bin',dtype:'float32-le',unit:'fraction'};
+        const fuel = scalarDisplaySpec('fuel',legacy);
+        assert.equal(fuel.minimum,0);
+        assert.equal(fuel.maximum,1);
+        assert.equal(fuel.maximum*fuel.legendMultiplier,100);
+        assert.equal(fuel.unit,'%');
+        assert.equal(legacy.maximum,undefined);
+        const temp = scalarDisplaySpec('temperature',{minimum:300,maximum:600,unit:'K'});
+        assert.equal(temp.maximum*temp.legendMultiplier,600);
+        assert.equal(temp.unit,'K');
+        assert.equal(scalarDisplaySpec('temperature',{}),null);
+        assert.equal(scalarDisplaySpec('temperature',{minimum:5,maximum:3}),null);
+        assert.equal(scalarDisplaySpec('fuel',null),null);
+        """
+    )
+    result = subprocess.run(
+        [node, "--input-type=module", "-"],
+        input=source,
+        capture_output=True,
+        text=True,
+        timeout=15,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr

@@ -28,6 +28,7 @@
             <label class="layer-picker"><span>计算图层</span>
               <select id="layerMode">
                 <option value="state">火灾状态</option>
+                <option value="background">卫星原图</option>
                 <option value="material">材料分区</option>
                 <option value="landcover">地类分区</option>
                 <option value="material_evidence">材质证据 / 待核实地表</option>
@@ -82,7 +83,7 @@
               <span><i class="swatch burned"></i>燃尽</span>
               <span id="partialLegend" hidden><i class="swatch partial"></i>部分燃尽</span>
               <span><i class="swatch inert"></i>不燃</span>
-              <span><i class="swatch unknown"></i>未知</span>
+              <span id="unknownLegend"><i class="swatch unknown"></i>未知地表：在材质证据层查看</span>
             </div>
             <div class="scalar-legend" id="scalarLegend" hidden>
               <span id="scalarMaximum">高</span><i></i><span id="scalarMinimum">低</span>
