@@ -158,7 +158,8 @@ def audit(study):
             len(e["all_scenarios"]) for e in report["full_domain_comparison"].values()
         ),
         "replays_checked": replay_checks,
-        "report_sha256": digest(report),
+        "canonical_report_sha256": digest(report),
+        "report_file_sha256": hashlib.sha256((study / "report.json").read_bytes()).hexdigest(),
     }
     dump(study / "completion-audit.json", result)
     print(json.dumps(result, ensure_ascii=False))

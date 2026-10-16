@@ -1,0 +1,2171 @@
+{
+  "schema": "batuan-protection90-compact-1",
+  "status": "completed",
+  "raw_study": "runs/research/batuan-protection90-20261016-r2",
+  "physical_code": "9a70712b0979de8f1351a9a96a95ad00aa6233e25363fce6853e5fd3775b032f",
+  "source_commit": "b9bde03818498f6db512545c938453be7a17126a",
+  "case_sha256": "260a1f844b72ad3fe3c70b9fdc7576fd2641a8cb924daa99a5758a2bb378f0cb",
+  "selection_sha256": "c98f34af013752c71e932ac0862f9ca527c9dd50dbbecbf053b91789c0d92b47",
+  "configs": {
+    "straight": {
+      "seed": 20261017,
+      "max_evaluations": 96,
+      "batch_size": 12,
+      "beam_size": 6,
+      "max_paths": 1,
+      "max_vertices": 2,
+      "width_min_m": 2.5,
+      "width_max_m": 30.0,
+      "length_min_m": 10.0,
+      "length_max_m": 240.0,
+      "initial_step_m": 20.0,
+      "min_step_m": 2.5,
+      "objective": "joint_protection_then_area",
+      "geometry_family": "straight"
+    },
+    "polyline": {
+      "seed": 20261017,
+      "max_evaluations": 96,
+      "batch_size": 12,
+      "beam_size": 6,
+      "max_paths": 1,
+      "max_vertices": 5,
+      "width_min_m": 2.5,
+      "width_max_m": 30.0,
+      "length_min_m": 10.0,
+      "length_max_m": 240.0,
+      "initial_step_m": 20.0,
+      "min_step_m": 2.5,
+      "objective": "joint_protection_then_area",
+      "geometry_family": "polyline"
+    },
+    "multiple": {
+      "seed": 20261017,
+      "max_evaluations": 96,
+      "batch_size": 12,
+      "beam_size": 6,
+      "max_paths": 3,
+      "max_vertices": 5,
+      "width_min_m": 2.5,
+      "width_max_m": 30.0,
+      "length_min_m": 10.0,
+      "length_max_m": 240.0,
+      "initial_step_m": 20.0,
+      "min_step_m": 2.5,
+      "objective": "joint_protection_then_area",
+      "geometry_family": "multiple"
+    }
+  },
+  "training": [
+    {
+      "scenario_id": "train90-160-151",
+      "ignitions": [
+        {
+          "point_m": [
+            347257.5,
+            2869667.5
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "horizon_s": 5400
+    },
+    {
+      "scenario_id": "train90-161-150",
+      "ignitions": [
+        {
+          "point_m": [
+            347252.5,
+            2869662.5
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "horizon_s": 5400
+    }
+  ],
+  "held_out": [
+    {
+      "scenario_id": "held90-163-151",
+      "ignitions": [
+        {
+          "point_m": [
+            347257.5,
+            2869652.5
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "horizon_s": 5400
+    },
+    {
+      "scenario_id": "held90-163-149",
+      "ignitions": [
+        {
+          "point_m": [
+            347247.5,
+            2869652.5
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "horizon_s": 5400
+    }
+  ],
+  "sensitivity": {
+    "rise_factor": 0.95,
+    "selection_feedback": false,
+    "status": "predeclared hypothesis, not empirical calibration",
+    "formula": "T_ambient + factor * (T_ign_base - T_ambient)"
+  },
+  "best_training_families": {
+    "outer_proxy": "straight",
+    "inner_proxy": "straight"
+  },
+  "controls": {
+    "baseline": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-307472365e7d223d517d",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": []
+      },
+      "cleared_area_m2": 0.0,
+      "training": [
+        {
+          "ignited_house_count": 34,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 5056.706998724258,
+          "ignited_cells": 1516,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "1f15fa5990a7f698d910a8eb384c2ed42a32b02f295dad9b9d52eb6988b97e8c"
+        },
+        {
+          "ignited_house_count": 25,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 3542.5951633718796,
+          "ignited_cells": 1497,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "c675b64f20692a6b86601c78118e5e199012800bd9eb7ae3f19a519093810c1c"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 22,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 3009.3172377091832,
+          "ignited_cells": 1533,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "4c12d1af20ec73d880e6923088b7670d93f593e8f73082744a3a83b09d0f72ed"
+        },
+        {
+          "ignited_house_count": 17,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2354.0160793054383,
+          "ignited_cells": 1486,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "ac6e9f07d4a171250cac62ebe4f2f94581a11e7f31f6fe581453621388f4df97"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 34,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 5591.833865776425,
+          "ignited_cells": 1578,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "84ab5347910723349cc6d41367d256f81fe523084314676ab05ffcfa15e6d44d"
+        },
+        {
+          "ignited_house_count": 27,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 3960.300835792441,
+          "ignited_cells": 1532,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "0588d35a05143803cc2582c6204f63956e46d0cecc9d9d4993ed8cc54357b84d"
+        },
+        {
+          "ignited_house_count": 23,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 3370.4638214898296,
+          "ignited_cells": 1571,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "7c122ea67196a99c168e02d5ec89dc13a8ec2e64838bf0704c8a6ffd75259f8d"
+        },
+        {
+          "ignited_house_count": 19,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2483.0986279645003,
+          "ignited_cells": 1518,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "966a0ff6e453a3d3f2fdc49e54922eacb5317f35aad213dbac73d7980abe0780"
+        }
+      ]
+    },
+    "outer_proxy_straight": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-ad4f5cb0b8d4abc1c06e",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347232.688064,
+                2869702.853318
+              ],
+              [
+                347309.292508,
+                2869638.574558
+              ]
+            ],
+            "width_m": 7.5
+          }
+        ]
+      },
+      "cleared_area_m2": 665.0303783931337,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1102,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "d375ac40298201e16b41d937468031c08ceb776a3611d9de8729b03a98b155fe"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1185,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "449f3abb4476977b6832c9dad22844fc9c97841ea05883e8bb33e175493ac9c3"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 33.07877331972122,
+          "ignited_cells": 1275,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "dd1df4800ffb94d1ebecb377fcc8bd81ad47aae587c1ebe4a1a9e90380736db0"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1256,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "bd750da5533adf5449d49627f67766c49cd6b8873a2e55113fcda8edd6e5d10b"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1125,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "41c86aabf3e6455954e58761b5d71016e45527ff11c730b4dc96dcda9f7e3fd3"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1196,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "9d9794bf6975c9e40d2993cd8fa9ed3e4830260ba84afcdbfa2a31110c7485a6"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 104.67980587854981,
+          "ignited_cells": 1293,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "316a9737cbef556b02dcc70ee0cf4bf60bb27b9400b5944db1659588df24d02c"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1278,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "654ecc4e24bc401ee16d55ea0a9c643971d5356a176c39368e59d0dffdbc6ed6"
+        }
+      ]
+    },
+    "outer_proxy_polyline": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-b04d06f57ab393690159",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347211.527913,
+                2869721.745063
+              ],
+              [
+                347234.725469,
+                2869717.766807
+              ],
+              [
+                347252.5,
+                2869678.839746
+              ],
+              [
+                347294.716593,
+                2869661.434704
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "cleared_area_m2": 575.7201166752469,
+      "training": [
+        {
+          "ignited_house_count": 15,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2184.5917276950786,
+          "ignited_cells": 1310,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "ba1c7fe475730edc8834a40071ca91a01370cc2133bf565b83bd219c6b79aab8"
+        },
+        {
+          "ignited_house_count": 15,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 1987.0986834081123,
+          "ignited_cells": 1384,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "922237166c0a398768d3ee95e604f9f1c6d6b14d3cb152f6d9029cb95681a031"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 16,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2252.346944520832,
+          "ignited_cells": 1475,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "c4f915fea1cc40919fd936d74aeafd9a8e2db5639c5a0de24dbc7ba2e45150f1"
+        },
+        {
+          "ignited_house_count": 9,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 1447.961036200286,
+          "ignited_cells": 1422,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "11b83e0859cb7f4ac81ec584303d095f7b9b128b937149a329dca1dbd0cf1d63"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 17,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2354.0160793054383,
+          "ignited_cells": 1342,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "f621f61f86ec7f8b2d25aaafc5158ff474cb92a51dd00266fffcb3a822a31fc5"
+        },
+        {
+          "ignited_house_count": 15,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2218.39406414947,
+          "ignited_cells": 1412,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "fc425eb98c749b1e579831c43fbf2a29f94ead71e46d0ce7a57999d70936bf0e"
+        },
+        {
+          "ignited_house_count": 17,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 2407.1148622431792,
+          "ignited_cells": 1504,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "f345d0cdf5426a18a85cea68c138491265f6a34e13ebd99a7db49be992f449f3"
+        },
+        {
+          "ignited_house_count": 11,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 1589.2258060077438,
+          "ignited_cells": 1450,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "1d366510335ba34a859c240a7ad201a06a900327fdbfc10061835dbd8dc6b5eb"
+        }
+      ]
+    },
+    "outer_proxy_multiple": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-e529cdbf9bc96d32b306",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347227.189111,
+                2869695.0
+              ],
+              [
+                347322.451905,
+                2869640.0
+              ]
+            ],
+            "width_m": 10.0
+          },
+          {
+            "points_m": [
+              [
+                347254.509619,
+                2869702.320508
+              ],
+              [
+                347280.490381,
+                2869687.320508
+              ]
+            ],
+            "width_m": 2.5
+          }
+        ]
+      },
+      "cleared_area_m2": 1035.284249146325,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1028,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "53fbf7fbf2dfb9f78791ab7396471a114195a1d36f2ff98c231eb3d4601e447e"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1115,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "cf09e344242b3c8e78c40add5afab6a1c8a0af931605422bbdc661f061fd0a0a"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1221,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "c6f6fc7888c2f09392057df964871003c06dbae03ead6953b1b706a40caa1603"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1188,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "f23e7710c6addac4cd0b41b9ad78da7757ff439ea9e59c19e08f13b339d19147"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1044,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "8071482b8cfaf309e3da98bb8aba5671232bdd14f05d4367e8dc7b54188830ef"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1130,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "eca736574218db1340625c76e7138f95992622647bd3233dd44f9a4d950a62bb"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1234,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "e63a5de17fbbdefaa5a2840cbb8b06ac4e812cfbba9ad17f3d6a180bbdae60ef"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1212,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "b9d25d1e04bc0a46569a3fa46294729058b4ea9ebf9a2ec5ba88b035e6f493e4"
+        }
+      ]
+    },
+    "inner_proxy_straight": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-7b9d5db1bc077475ad84",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347272.49,
+                2869697.855752
+              ],
+              [
+                347303.131778,
+                2869672.144248
+              ]
+            ],
+            "width_m": 20.0
+          }
+        ]
+      },
+      "cleared_area_m2": 544.0076257715017,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1161,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "832ece7227a6e0fc5a0e936bf8031778f97cd48ce41df0550727f711af554cb7"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1234,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "6a70c71a179e11c2317acd8a89d5325b14013b41afaa48390aa4aa39c8831576"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1305,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "aa5c413d3a3b57922fa99ca3d1d6accc10edd0c6a0bace02e599c7ce06e0e1f8"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1297,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "09472d015ccb447f22c4190eaac7240e4723c8a74f15ffd503fecf89c22e4cb6"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1183,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "f1ce0d09bbbab81d75be998d2ac22440d730edc853d9774ffd605aa29cb2a7d3"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1247,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "8748a530bbab15ee7d8cb80e235380dfd75748becf0861680612cad52385cc54"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1320,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "ed3f272604f395274db382171f98d36ce4633fa5440b2889b29c771162da8bd9"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1318,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "582ee0d981dc5f192e2d3337f18e3ffc02a1eea6a53181876b6f7ffc2df50ef3"
+        }
+      ]
+    },
+    "inner_proxy_polyline": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-325c0b21a3d077618843",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347258.416491,
+                2869695.626451
+              ],
+              [
+                347269.820508,
+                2869683.839746
+              ],
+              [
+                347305.131397,
+                2869675.0
+              ]
+            ],
+            "width_m": 15.0
+          }
+        ]
+      },
+      "cleared_area_m2": 640.3964664378773,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1148,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "b0e8696522616efb5712b90bb02d3958422882af505349d11bf9ea1dd9279279"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1221,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "1639cb00f3ba500c62974eab92a930ee7ea3cb30bc5b3f6cc1e914dde723c6a6"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1292,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "6e3c840ae71b8022e39edb6ca4eae828b9ee88fac89ff7da21617851498b0765"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1284,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "03fc72c8fe9f7118501344d9bf9780acb2b543de6fa5093d658fb0c2219a18eb"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1170,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "d456b1fa837dbc55971fcc52e8bdc1f0b9791bc652d74c9c147b9a47ec454dc3"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1234,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "6b10e009c64fb7f5c2f35aa1df87b11cff75f3c190ba3e4f5e6286ec8bbdc33f"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1307,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "8d0280b1b0f8335efe95beb3f5be1940f37873cdbdc202c405997ee08b8381ca"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1305,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "ca3163ed9a3e89a7d5afb355629207f82a602f1e79e8c0ae2606fea0aadae365"
+        }
+      ]
+    },
+    "inner_proxy_multiple": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-3e4747bd1477cb8ecfed",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347251.830127,
+                2869702.679492
+              ],
+              [
+                347266.119546,
+                2869694.429492
+              ]
+            ],
+            "width_m": 2.5
+          },
+          {
+            "points_m": [
+              [
+                347261.830127,
+                2869700.0
+              ],
+              [
+                347305.131397,
+                2869675.0
+              ]
+            ],
+            "width_m": 20.0
+          }
+        ]
+      },
+      "cleared_area_m2": 673.0599345205012,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1155,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "592b70d2deaa0b75db98fd8f6a3f551033554c1be408a2e36296fef5fb229e03"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1228,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "f50f4fb7fb45cc7a453f0901f68bc40214ce2df11ec1a5c89bc2a65ce45622ff"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1299,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "573e3834029388f9485797b106be405d400e318c38ada53488df628cc25d6e36"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1291,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "e817cd27d726ed4f8516d80ae46a55f2dab9552517e844e5abd4fb6bddca26fc"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1177,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "c3dcefb0d54ae95f2e9a92db3372f457865f6972f162b20f5845d9acb6ff5644"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1241,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "cb5d730fb9a8e33a5b8a4b1e3c891f32b67ea09ac2cf3bfb44114402d41c6374"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1314,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "7d5fadee816785b8139370dbf4add34e8915d639b0008ef739e82bb073be5987"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1312,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "d5766645d99478fedf8e4de555033ae13caa4c2a0e4ceb7878307cd4742f1630"
+        }
+      ]
+    },
+    "previous_adaptive_outer_proxy": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347227.189111,
+                2869695.0
+              ],
+              [
+                347305.131397,
+                2869650.0
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "cleared_area_m2": 819.1293090811422,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 294.59486873820424,
+          "ignited_cells": 1120,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "6986d926254b3ab812df3166c1461040473ea877a74dd668951573fcfd8a9898"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 326.00057524687145,
+          "ignited_cells": 1211,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "bba5424c9480d0e5f72c2c85d21a0d82bfa7926ce1ac232dc91e9f8afe16c4df"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 572.3924193443963,
+          "ignited_cells": 1318,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "0ae1d77fb97ffea55a713aa9097a10d0395b650c48b416e0974ee4752abf2898"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 338.2524813438067,
+          "ignited_cells": 1283,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "021667213a3e7c1c7edd823c5aabbb6e27bf19f36373dc1dc158036d186e62fa"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 338.6057853611419,
+          "ignited_cells": 1143,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "639c382a52930586ccdcd770e1ecbaff5131c09a0e812819cc9a7fcd85e89f30"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 338.6057853611419,
+          "ignited_cells": 1229,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "7b0bfd32b289a9a8908e678bac93acab7d2eeb273f71d10df8fffc3c2ad9b71f"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 583.300009733648,
+          "ignited_cells": 1337,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "b0e88c027c75ed70a8317c52fea1c8222de0ab32645ea1e26828dcb5abb46330"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 388.09418677410576,
+          "ignited_cells": 1307,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "3330b9727f21806240244e9ee892c21ced7eb1918724d7a7704eb5fdc2e5bf70"
+        }
+      ]
+    },
+    "previous_adaptive_inner_proxy": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-6240748bd754c6eb40b4",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347244.509619,
+                2869710.0
+              ],
+              [
+                347305.131397,
+                2869675.0
+              ]
+            ],
+            "width_m": 20.0
+          }
+        ]
+      },
+      "cleared_area_m2": 674.5240356183876,
+      "training": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1154,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "70d770279c0bc1e7406bb9424788351233602624cffa08464ec1e05a06a16b0a"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1227,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "4c0b80ef75308e632ac9b193a4589e03eeb7c55192181c8f0b724b3a278c1fb4"
+        }
+      ],
+      "held_out": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1298,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "a412b30fcf1e89a2ce176bf35b5248f06942ca708ae91a5db77144f75294ca69"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1290,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "0a37baf782d18cec294cb8c00e6ffca3184d44b83f7e371fc6dfa12e983c0e72"
+        }
+      ],
+      "sensitivity": [
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1176,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-160-151",
+          "evaluation_sha256": "6d2f270d539a38cd2ede52c764bd92c86e000175344344b8d3b7560cdb926ea9"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1240,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "train90-161-150",
+          "evaluation_sha256": "54c3015a4b3d82b56a4b22d817c0fa04ea2ca753be9eae42b1dc5ba6e4e373fa"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1313,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-151",
+          "evaluation_sha256": "470964d6b8a51ddcc4b1cba68a9d18d4dace6c7c11b4655177b5d5871a9b6124"
+        },
+        {
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "ignited_cells": 1311,
+          "burning_reached_domain_edge": false,
+          "scenario_id": "held90-163-149",
+          "evaluation_sha256": "1ceb330a79e7a84d45328dd4f4b6c02ffa7468718f303838f272f6e30a27fd0b"
+        }
+      ]
+    }
+  },
+  "searches": {
+    "outer_proxy/straight": {
+      "requests": 96,
+      "valid": 69,
+      "representative": "outer_proxy-adaptive-ad4f5cb0b8d4abc1c06e",
+      "best_key": [
+        0,
+        0,
+        0,
+        0,
+        0.0,
+        -5400,
+        665.0303783931337
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 26,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-2274fe5430fd3864169a",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1219.1293077788707
+        },
+        {
+          "generation": 2,
+          "evaluations": 38,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-94b301a3836e0b7b96c1",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1019.1293084300125
+        },
+        {
+          "generation": 3,
+          "evaluations": 50,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-94b301a3836e0b7b96c1",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1019.1293084300125
+        },
+        {
+          "generation": 4,
+          "evaluations": 62,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-94b301a3836e0b7b96c1",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1019.1293084300125
+        },
+        {
+          "generation": 5,
+          "evaluations": 74,
+          "step_m": 10.0,
+          "best_plan_id": "outer_proxy-adaptive-1fbb362cff54fe3cb582",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 919.1293087560339
+        },
+        {
+          "generation": 6,
+          "evaluations": 86,
+          "step_m": 10.0,
+          "best_plan_id": "outer_proxy-adaptive-2e260f56ff3cdc434c15",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 740.030377863773
+        },
+        {
+          "generation": 7,
+          "evaluations": 96,
+          "step_m": 10.0,
+          "best_plan_id": "outer_proxy-adaptive-ad4f5cb0b8d4abc1c06e",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 665.0303783931337
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    },
+    "outer_proxy/polyline": {
+      "requests": 96,
+      "valid": 70,
+      "representative": "outer_proxy-adaptive-b04d06f57ab393690159",
+      "best_key": [
+        16,
+        16,
+        1,
+        15,
+        2085.8452055515954,
+        -2303.0,
+        575.7201166752469
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 39,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-2ff6c03e788f365accc7",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 912.6436132654148
+        },
+        {
+          "generation": 2,
+          "evaluations": 51,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-3bf9e1ebce8a0cde2dc6",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 712.6436188565673
+        },
+        {
+          "generation": 3,
+          "evaluations": 63,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-f061c6f6acadd8610f7a",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 674.1340700489342
+        },
+        {
+          "generation": 4,
+          "evaluations": 75,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-eee37ba0e98f5f9c4c9c",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 674.1340700489342
+        },
+        {
+          "generation": 5,
+          "evaluations": 87,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-eee37ba0e98f5f9c4c9c",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 674.1340700489342
+        },
+        {
+          "generation": 6,
+          "evaluations": 96,
+          "step_m": 10.0,
+          "best_plan_id": "outer_proxy-adaptive-b04d06f57ab393690159",
+          "best_effectiveness": [
+            16,
+            16,
+            1,
+            15,
+            2085.8452055515954,
+            -2303.0
+          ],
+          "best_cleared_area_m2": 575.7201166752469
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    },
+    "outer_proxy/multiple": {
+      "requests": 96,
+      "valid": 61,
+      "representative": "outer_proxy-adaptive-e529cdbf9bc96d32b306",
+      "best_key": [
+        0,
+        0,
+        0,
+        0,
+        0.0,
+        -5400,
+        1035.284249146325
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 39,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-28255f6deb1b54bd783f",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1254.4228596163769
+        },
+        {
+          "generation": 2,
+          "evaluations": 51,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-190cb84bd350cbaa6298",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1054.4228602675187
+        },
+        {
+          "generation": 3,
+          "evaluations": 63,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-190cb84bd350cbaa6298",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1054.4228602675187
+        },
+        {
+          "generation": 4,
+          "evaluations": 75,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-e529cdbf9bc96d32b306",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1035.284249146325
+        },
+        {
+          "generation": 5,
+          "evaluations": 87,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-e529cdbf9bc96d32b306",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1035.284249146325
+        },
+        {
+          "generation": 6,
+          "evaluations": 96,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-e529cdbf9bc96d32b306",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 1035.284249146325
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    },
+    "inner_proxy/straight": {
+      "requests": 96,
+      "valid": 90,
+      "representative": "inner_proxy-adaptive-7b9d5db1bc077475ad84",
+      "best_key": [
+        0,
+        0,
+        0,
+        0,
+        0.0,
+        -5400,
+        544.0076257715017
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 26,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-dc58831865d4df54771a",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 671.623400596378
+        },
+        {
+          "generation": 2,
+          "evaluations": 38,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-dc58831865d4df54771a",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 671.623400596378
+        },
+        {
+          "generation": 3,
+          "evaluations": 50,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-dc58831865d4df54771a",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 671.623400596378
+        },
+        {
+          "generation": 4,
+          "evaluations": 62,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-0ebcf377a3d47a591a4d",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 551.4577931202797
+        },
+        {
+          "generation": 5,
+          "evaluations": 74,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-0ebcf377a3d47a591a4d",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 551.4577931202797
+        },
+        {
+          "generation": 6,
+          "evaluations": 86,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-7b9d5db1bc077475ad84",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 544.0076257715017
+        },
+        {
+          "generation": 7,
+          "evaluations": 96,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-7b9d5db1bc077475ad84",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 544.0076257715017
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    },
+    "inner_proxy/polyline": {
+      "requests": 96,
+      "valid": 92,
+      "representative": "inner_proxy-adaptive-325c0b21a3d077618843",
+      "best_key": [
+        0,
+        0,
+        0,
+        0,
+        0.0,
+        -5400,
+        640.3964664378773
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 39,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-ae446811ec03a3230d81",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 785.8259206459384
+        },
+        {
+          "generation": 2,
+          "evaluations": 51,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-ae446811ec03a3230d81",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 785.8259206459384
+        },
+        {
+          "generation": 3,
+          "evaluations": 63,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-3a4e6226a8b74cddc34b",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 644.5688622910352
+        },
+        {
+          "generation": 4,
+          "evaluations": 75,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-284733e6f70a480c75cf",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 644.5688608283666
+        },
+        {
+          "generation": 5,
+          "evaluations": 87,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-325c0b21a3d077618843",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 640.3964664378773
+        },
+        {
+          "generation": 6,
+          "evaluations": 96,
+          "step_m": 10.0,
+          "best_plan_id": "inner_proxy-adaptive-325c0b21a3d077618843",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 640.3964664378773
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    },
+    "inner_proxy/multiple": {
+      "requests": 96,
+      "valid": 70,
+      "representative": "inner_proxy-adaptive-3e4747bd1477cb8ecfed",
+      "best_key": [
+        0,
+        0,
+        0,
+        0,
+        0.0,
+        -5400,
+        673.0599345205012
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 39,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-480aa9c0217cbce65104",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 706.0145086026679
+        },
+        {
+          "generation": 2,
+          "evaluations": 51,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-fda69b4463b386925f69",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 690.2016777000136
+        },
+        {
+          "generation": 3,
+          "evaluations": 63,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-fda69b4463b386925f69",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 690.2016777000136
+        },
+        {
+          "generation": 4,
+          "evaluations": 75,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-5b24747d64dcd6315051",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 673.0599345575425
+        },
+        {
+          "generation": 5,
+          "evaluations": 87,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-3e4747bd1477cb8ecfed",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 673.0599345205012
+        },
+        {
+          "generation": 6,
+          "evaluations": 96,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-3e4747bd1477cb8ecfed",
+          "best_effectiveness": [
+            0,
+            0,
+            0,
+            0,
+            0.0,
+            -5400
+          ],
+          "best_cleared_area_m2": 673.0599345205012
+        }
+      ],
+      "stop_reason": "evaluation_limit"
+    }
+  },
+  "component_ablation": {
+    "role": "post-selection mechanism follow-up, not independent reselection",
+    "components": [
+      {
+        "plan": {
+          "plan_id": "outer_proxy-adaptive-94b301a3836e0b7b96c1",
+          "strips": [],
+          "zone_id": "outer_proxy",
+          "paths": [
+            {
+              "points_m": [
+                [
+                  347227.189111,
+                  2869695.0
+                ],
+                [
+                  347322.451905,
+                  2869640.0
+                ]
+              ],
+              "width_m": 10.0
+            }
+          ]
+        },
+        "area_m2": 1019.1293084300125,
+        "base": [
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1028,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-160-151",
+            "evaluation_sha256": "256b221024a678e181073c41ab84763088ac6c2f0ec01cbf81d448a8d3e29f54"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1115,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-161-150",
+            "evaluation_sha256": "f1574d4e35f3ce3f8048093100522bdce99ad5c49c26753191b0bd61ac96ffff"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1221,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-151",
+            "evaluation_sha256": "4106ce9a15905acb441a16d29fc9fb5ca6b82c6d0d92e3a50d131c490354d61d"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1188,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-149",
+            "evaluation_sha256": "e21729452e2909b7fac27f080f6c2c35040d03751c1330c6c5747ecc9de96502"
+          }
+        ],
+        "sensitivity": [
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1044,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-160-151",
+            "evaluation_sha256": "41cec5f9ffe13bec16e0358bf065eacde3ef1caba48178675b59f408b8165674"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1130,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-161-150",
+            "evaluation_sha256": "609e1e7f594f7117852ff51b121ca62e1c46022d194b499756d55b7b4d909d20"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1234,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-151",
+            "evaluation_sha256": "3c77519c5a54277681d9be5e67a8c98493f1286c9c1d865ab8f20701fc703eed"
+          },
+          {
+            "ignited_house_count": 0,
+            "ignited_bridge_count": 0,
+            "ignited_building_area_m2": 0.0,
+            "ignited_cells": 1212,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-149",
+            "evaluation_sha256": "34cf61447bbbab96d6d1003184b79da052df24cb4806d4c1bbf9a61d0a085692"
+          }
+        ]
+      },
+      {
+        "plan": {
+          "plan_id": "outer_proxy-adaptive-08d9348732e2406d41f4",
+          "strips": [],
+          "zone_id": "outer_proxy",
+          "paths": [
+            {
+              "points_m": [
+                [
+                  347254.509619,
+                  2869702.320508
+                ],
+                [
+                  347280.490381,
+                  2869687.320508
+                ]
+              ],
+              "width_m": 2.5
+            }
+          ]
+        },
+        "area_m2": 16.154940716312467,
+        "base": [
+          {
+            "ignited_house_count": 34,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 5056.706998724258,
+            "ignited_cells": 1516,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-160-151",
+            "evaluation_sha256": "f5b0c62e9393be96e5ad75c681863778e43a3c863fbe55d17fb970cdde29a8cf"
+          },
+          {
+            "ignited_house_count": 25,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 3542.5951633718796,
+            "ignited_cells": 1497,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-161-150",
+            "evaluation_sha256": "cfd85cf1c89b9f0668ee1cbb691cfa6af991e62094b9f0483fb122ca650dcf69"
+          },
+          {
+            "ignited_house_count": 22,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 3009.3172377091832,
+            "ignited_cells": 1533,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-151",
+            "evaluation_sha256": "dd394e207e6789222d2292e0a13cf7f21cefbcc7b028c4b1b998e6a22d9984cf"
+          },
+          {
+            "ignited_house_count": 17,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 2354.0160793054383,
+            "ignited_cells": 1486,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-149",
+            "evaluation_sha256": "3d06b4fb5c5c7fac600719a9e214e85efe935e86a5485bec6743f33b7e7c019a"
+          }
+        ],
+        "sensitivity": [
+          {
+            "ignited_house_count": 34,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 5591.833865776425,
+            "ignited_cells": 1578,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-160-151",
+            "evaluation_sha256": "545b2f24f24dfd2b07ca4f9d4c36e1f285b7adc34f6fff81e6308a2eb1c92eaa"
+          },
+          {
+            "ignited_house_count": 27,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 3960.300835792441,
+            "ignited_cells": 1532,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "train90-161-150",
+            "evaluation_sha256": "792efd1c0872cf2ed7b6a4928442e77f1ee5f75f521fb6578bccddf816efdf77"
+          },
+          {
+            "ignited_house_count": 23,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 3370.4638214898296,
+            "ignited_cells": 1571,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-151",
+            "evaluation_sha256": "79a9fafdbce8818a282b51c77e054c41edfced941fbe93a98f22225e9903d021"
+          },
+          {
+            "ignited_house_count": 19,
+            "ignited_bridge_count": 1,
+            "ignited_building_area_m2": 2483.0986279645003,
+            "ignited_cells": 1518,
+            "burning_reached_domain_edge": false,
+            "scenario_id": "held90-163-149",
+            "evaluation_sha256": "ec603854836cd7da6deda5208e5934a2008022ad76cd12b0f39502ed595fd831"
+          }
+        ]
+      }
+    ]
+  },
+  "audits": {
+    "completion-audit": {
+      "status": "passed",
+      "source_files": 86,
+      "requests": 576,
+      "rejected_requests": 124,
+      "verified_training_evaluation_signatures": 904,
+      "case_unchanged": true,
+      "annotation_unchanged": true,
+      "selection_frozen": true,
+      "full_grid_scenarios_checked": 12,
+      "replays_checked": [
+        "baseline",
+        "outer_proxy_straight",
+        "inner_proxy_straight"
+      ],
+      "canonical_report_sha256": "d9ca35ab8fbec1e5c8f4f0f600fb1e055bb0aeaa124cf5580f4d0daa358b886b",
+      "report_file_sha256": "895e022754382300f7ddc72fd7c00d2af7a386fa5c4dbf67f26825ccd3f87e10"
+    },
+    "artifact-audit": {
+      "status": "passed",
+      "local_replays_checked": [
+        "outer_proxy_straight",
+        "outer_proxy_multiple",
+        "outer_proxy_main_only"
+      ],
+      "geojson_files_checked": 16,
+      "maximum_inverse_projection_error_m": 1.9199706733309015e-09,
+      "base_case_files_unchanged": 48,
+      "previous_protocol_and_report_files_unchanged": 4,
+      "component_ablation_evaluations": 16,
+      "main_selection_unchanged": true
+    },
+    "resume-audit": {
+      "guarded_against_new_evaluation_and_replay_solves": true,
+      "report_byte_identical": true,
+      "report_sha256": "895e022754382300f7ddc72fd7c00d2af7a386fa5c4dbf67f26825ccd3f87e10",
+      "new_ca_solves": 0
+    },
+    "protection-coverage": {
+      "annotated_count": 333,
+      "represented_count": 331,
+      "unrepresented_structures": [
+        {
+          "building_index": 85,
+          "building_id": "B0086",
+          "source_label": "building",
+          "area_m2": 219.27974416845518,
+          "centroid_m": [
+            347304.4341647552,
+            2869808.8016788242
+          ],
+          "parent_cell": [
+            132,
+            160
+          ],
+          "covered_by_other_annotated_roof_area_m2": 219.2797441687617,
+          "uncovered_by_building_cells_m2": 0,
+          "raster_owner_overlap_m2": {
+            "B0048": 0.1428089312151203,
+            "B0051": 211.72305199334363,
+            "B0070": 6.193338563586174,
+            "B0057": 1.2205446806167668
+          },
+          "geometric_parent_id": "B0051",
+          "geometric_parent_contains_fraction": 0.9999956526231288
+        },
+        {
+          "building_index": 148,
+          "building_id": "B0149",
+          "source_label": "building",
+          "area_m2": 321.3689389273993,
+          "centroid_m": [
+            347265.0266469414,
+            2869800.983648608
+          ],
+          "parent_cell": [
+            133,
+            153
+          ],
+          "covered_by_other_annotated_roof_area_m2": 321.3689389265746,
+          "uncovered_by_building_cells_m2": 0,
+          "raster_owner_overlap_m2": {
+            "B0029": 3.5957484893807767,
+            "B0031": 315.84305156749883,
+            "B0043": 0.0,
+            "B0030": 0.21823508345551118,
+            "B0069": 1.7119037862394308,
+            "B0071": 0.0
+          },
+          "geometric_parent_id": "B0031",
+          "geometric_parent_contains_fraction": 1.0
+        }
+      ],
+      "annotation_sha256": "65695d51c4c18d24413eafec95e4a0037935f3e6c234aa78e031e0a49ce63560",
+      "claim_scope": "331 raster owners represent 333 roof annotations; two nested annotations are assigned to larger roofs. Counts of individual structures require annotation overlap review; zero ignition must also be checked spatially."
+    }
+  },
+  "full_grid": {
+    "baseline": [
+      {
+        "ignited_house_count": 34,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 5056.706998724258,
+        "ignited_cells": 1516,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-160-151",
+        "evaluation_sha256": "bcfd41733a4816342fca06deb93111ee699c9e93a16410ba7d827727e5e054ba"
+      },
+      {
+        "ignited_house_count": 25,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 3542.5951633718796,
+        "ignited_cells": 1497,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-161-150",
+        "evaluation_sha256": "a22b47d1f1399cd2f55ee84b392d8cddab11ac19d934815fdcfd199aee060909"
+      },
+      {
+        "ignited_house_count": 22,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 3009.3172377091832,
+        "ignited_cells": 1533,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-151",
+        "evaluation_sha256": "b35714338eb9a34d2e5554adf401e8bcad648751cbe3faaa4d9f74f8a5790475"
+      },
+      {
+        "ignited_house_count": 17,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 2354.0160793054383,
+        "ignited_cells": 1486,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-149",
+        "evaluation_sha256": "41748c78bb8eff2fe7c8d4f5bd6c9b4739e2e94574a5f0a5ec60b54c20257069"
+      }
+    ],
+    "outer_proxy_straight": [
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1102,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-160-151",
+        "evaluation_sha256": "0816934b6a3bd692c9cb4a037ab9b31a4c4cb8014ccdf9fd2be6139b3f57470a"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1185,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-161-150",
+        "evaluation_sha256": "2358f8f20cfd74e1b7e7f01184e0d3c5e8356fc447855bcde8e9591673044319"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 33.07877331972122,
+        "ignited_cells": 1275,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-151",
+        "evaluation_sha256": "2a6698a94a2fdfe27dbaae7c942facc802518d44bd578588cdb135a8410f3fac"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1256,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-149",
+        "evaluation_sha256": "d323c269fc0c19a3cfac48baf4368705e7f6936de9668034acfa6c0c6ad24ee7"
+      }
+    ],
+    "inner_proxy_straight": [
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1161,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-160-151",
+        "evaluation_sha256": "c48abacae3af55f4a6f9996f7ff382fdf540c8fd501314cd94154a8b7a6a8cc5"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1234,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "train90-161-150",
+        "evaluation_sha256": "28cc4f292602efbf2dcf799721842a6f5725936765389415d5da0603762dfba7"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1305,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-151",
+        "evaluation_sha256": "b27423716b658410c59e33bf592ad4a0e76f51021ed44fce6814428c76ca171a"
+      },
+      {
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "ignited_cells": 1297,
+        "burning_reached_domain_edge": false,
+        "scenario_id": "held90-163-149",
+        "evaluation_sha256": "ace11a2d42913107f92657c7caa243f49e1827240b54b26ae4b6ed8d56a8099d"
+      }
+    ]
+  },
+  "validation_replays": {
+    "outer_proxy_straight": {
+      "role": "frozen_geometry_family_representative",
+      "viewer": "validation-replays/outer_proxy_straight/run/viewer",
+      "houses": 0,
+      "bridges": 1
+    },
+    "outer_proxy_multiple": {
+      "role": "frozen_geometry_family_representative",
+      "viewer": "validation-replays/outer_proxy_multiple/run/viewer",
+      "houses": 0,
+      "bridges": 0
+    },
+    "outer_proxy_main_only": {
+      "role": "post_selection_component_ablation",
+      "viewer": "validation-replays/outer_proxy_main_only/run/viewer",
+      "houses": 0,
+      "bridges": 0
+    }
+  }
+}

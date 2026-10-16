@@ -4,6 +4,8 @@
 
 90分钟联合保护阶段：开发前回退标签 `batuan-before-90min-search-20261016`（`f472e25`），开发分支 `codex/batuan-90min-robust-search-20261016`，独立Git备份 `../PyFireCA-backups/batuan-before-90min-search-20261016/repository.bundle` 已验证。三类线形、90分钟民居/桥联合目标及独立5%敏感性试验见[本轮说明](BATUAN_PROTECTION90_SEARCH.md)。下方保留先前阶段的完成记录。
 
+90分钟阶段完成标签为 `batuan-protection90-20261016`。独立归档 `/Users/tone/Documents/github/PyFireCA-backups/batuan-protection90-20261016` 包含本轮Git历史、环境版本及结果归档；结果包264733935字节，4957个文件逐一通过SHA256验证。原始影像、基础案例和前两轮结果继续使用既有备份，本轮未改写。主研究恢复0新增CA且报告逐字节一致；组件拆分与新火源回放另存且不改原冻结选线。
+
 最新迭代阶段：开发前回退标签 `batuan-before-adaptive-search-20261016`（`a85f601`），新分支 `codex/batuan-adaptive-firebreak-20261016`。独立Git备份位于 `/Users/tone/Documents/github/PyFireCA-backups/batuan-before-adaptive-search-20261016/repository.bundle`，已验证。原24候选结果和原模拟器保留。详见[本轮算法与恢复说明](BATUAN_ADAPTIVE_FIREBREAK_SEARCH.md)。下表为初次研究计划阶段的历史保存点。
 
 本轮完成标签 `batuan-adaptive-20261016`，新的结果和代码备份为 `/Users/tone/Documents/github/PyFireCA-backups/batuan-adaptive-20261016`。新归档包含先导训练缓存、正式研究结果、全图回放及源码/渲染快照；基础影像和空间资产继续使用原有验证备份。研究的参数一致恢复已验证，搜索/几何/留出/回放结果相同，0新增CA求解。
