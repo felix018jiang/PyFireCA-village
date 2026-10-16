@@ -20,7 +20,7 @@ from pathlib import Path
 import numpy as np
 from run_batuan_adaptive_search import TrainingOracle, digest, dump, save_checked_replay
 from run_batuan_intervention_study import candidate, engine_for
-from shapely.geometry import Polygon, shape
+from shapely.geometry import Polygon, box, shape
 from shapely.ops import unary_union
 
 from pyfireca.planning.adaptive import (
@@ -47,7 +47,7 @@ ZONES = ("outer_proxy", "inner_proxy")
 # Existing S1 and former held-out S3; latter is no longer claimed independent.
 TRAIN_CELLS = ((160, 151), (161, 150))
 # Predeclared new, neighboring south-side stress tests, not broad geographic validation.
-TEST_CELLS = ((162, 150), (160, 152))
+TEST_CELLS = ((163, 151), (163, 149))
 WINDOW = (120, 201, 111, 192)
 
 
@@ -219,6 +219,18 @@ def main():
             for r, c in cells
         ]
 
+    # Historical controls must remain valid under every predeclared source.
+    grid = base.request.grid
+    for raw in old["chosen_plans"].values():
+        plan = clearing_plan_from_mapping(raw)
+        footprint = clearing_footprint(plan)
+        for r, c in TRAIN_CELLS + TEST_CELLS:
+            x, y = grid.center(r, c)
+            half = grid.cell_size_m / 2
+            if footprint.intersection(box(x - half, y - half, x + half, y + half)).area > 1e-8:
+                raise ValueError(
+                    "a declared ignition overlaps a historical control; revise protocol"
+                )
     source_paths = [
         Path(__file__),
         ROOT / "scripts/run_batuan_adaptive_search.py",
