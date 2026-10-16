@@ -14,7 +14,9 @@ from pyfireca.planning.adaptive import canonical_plan
 def test_full_prefetch_keeps_replay_under_main_plan_lock(tmp_path, monkeypatch):
     monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
     module = importlib.import_module("prefetch_batuan_full_validation")
-    (tmp_path / "protocol.json").write_text(json.dumps({"code": "frozen"}))
+    (tmp_path / "protocol.json").write_text(
+        json.dumps({"code": "frozen", "case_sha256": "case", "annotated_structures_sha256": "sha"})
+    )
     plan = canonical_plan("outer_proxy", ())
     directory = tmp_path / "full-cache"
     directory.mkdir()
@@ -44,7 +46,7 @@ def test_full_prefetch_keeps_replay_under_main_plan_lock(tmp_path, monkeypatch):
 
     monkeypatch.setattr(module, "load_v3_case_bundle", lambda _: "base")
     monkeypatch.setattr(module, "context", lambda _: ("near", {}, "sha"))
-    monkeypatch.setattr(module, "engine_for", lambda *_: "engine")
+    monkeypatch.setattr(module, "engine_for", lambda *_: SimpleNamespace(case_sha256="case"))
     monkeypatch.setattr(module, "scenarios_from", lambda *_: ("scenario",))
     monkeypatch.setattr(module, "TrainingOracle", Oracle)
     monkeypatch.setattr(module, "save_checked_replay", save)

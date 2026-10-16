@@ -29,8 +29,12 @@ def check_one(study, label, raw):
     study = Path(study)
     protocol = json.loads((study / "protocol.json").read_text())
     base = load_v3_case_bundle(ROOT / "runs/batuan-slope-contact-20261016/case")
-    near, types, _ = context(base)
+    near, types, annotation_sha = context(base)
     engine = engine_for(base, near, types, protocol["code"])
+    if engine.case_sha256 != protocol["case_sha256"]:
+        raise ValueError("full-grid parent case differs from the frozen protocol")
+    if annotation_sha != protocol["annotated_structures_sha256"]:
+        raise ValueError("structure annotations differ from the frozen protocol")
     scenarios = scenarios_from(protocol, "training") + scenarios_from(protocol, "held_out")
     oracle = TrainingOracle(
         engine,
