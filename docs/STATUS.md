@@ -1,5 +1,7 @@
 # Project status
 
+> **2026-10-16 R1/R2实施：**统一情景/结果协议、V3评价适配器与独立植被清理带已接通。按用户最新要求只按防火效果排序；岜团村24候选、2训练/1留出情景、4份完整网格回放及90分钟局部域复核完成。全套回归1036项通过，另5项入口/地理导出验证通过；原case48个文件哈希不变。见[接口与试验记录](BATUAN_INTERVENTION_EVALUATION.md)。现有候选区与燃料仍是假设，正式森林大火多风/飞火与村内外全局优化尚未完成。
+
 > **2026-10-16 当前状态：**岜团村连续坡面接触案例可运行，卫星材质与防火规划三模块进入独立研究开发路线，具体缺口和次序见[研究开发计划](VILLAGE_FIRE_RESEARCH_PLAN.md)。规划已落文档，统一动态评估接口与优化接入仍待开发。模拟器基线提交`f6c1632`、标签`batuan-simulator-20261016`已保存；本次全套回归1021 passed、9条依赖弃用警告。影像/案例已另做逐文件校验的本地备份，见[版本管理与恢复](VERSIONING_AND_RECOVERY.md)。下文保留各阶段历史记录。
 
 > **Latest replay, 2026-10-05:** component states now have physical-grid browser replay and opt-in ignition/duration selection, with full saved configuration restoration and explicit model matching. Fixed material moisture needs no per-cell entry; partial burn does not imply building loss. 791 repository tests pass, plus actual desktop/mobile browser submission and wheel checks. See [component replay](COMPONENT_VIEWER_V3.md) and plan28.12. Earlier next-viewer statements below are historical. Dynamic flame/wind and field calibration remain open.
