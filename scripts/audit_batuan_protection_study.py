@@ -8,6 +8,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
+import numpy as np
 from run_batuan_adaptive_search import digest, dump
 from run_batuan_intervention_study import engine_for
 from run_batuan_protection_search import LockedOracle, context, scenarios_from
@@ -119,6 +120,31 @@ def audit(study):
         raise AssertionError("selection changed after freeze")
     if report["held_out_used_for_reselection"] or report["sensitivity_used_for_reselection"]:
         raise AssertionError("test feedback enabled")
+    replay_checks = []
+    for label, entry in report["full_domain_comparison"].items():
+        root = study / "full" / entry["evaluation"]["intervention_id"]
+        times = np.load(root / "run/outputs/ignition_time_s.npy")
+        state = np.load(root / "run/outputs/state_final.npy")
+        metrics = entry["evaluation"]["metrics"]
+        if int(np.isfinite(times).sum()) != metrics["ignited_cells"]:
+            raise AssertionError("replay ignited cell mismatch")
+        if int((state == 4).sum()) != metrics["burned_out_cells"]:
+            raise AssertionError("replay burned-out cell mismatch")
+        ignited_ids = set(
+            int(i) for i in np.unique(base.request.building_index[np.isfinite(times)]) if i >= 0
+        )
+        for category, key in (
+            ("building", "ignited_house_count"),
+            ("fengyuqiao", "ignited_bridge_count"),
+        ):
+            if sum(types.get(i, "building") == category for i in ignited_ids) != metrics[key]:
+                raise AssertionError("replay structure count mismatch")
+        local = report["controls"][label] + report["validation"][label]
+        for whole, cropped in zip(entry["all_scenarios"], local, strict=True):
+            for key in ("ignited_cells", "ignited_house_count", "ignited_bridge_count"):
+                if whole["metrics"][key] != cropped["metrics"][key]:
+                    raise AssertionError("full/crop validation mismatch")
+        replay_checks.append(label)
     result = {
         "status": "passed",
         "source_files": len(protocol["source_hashes"]),
@@ -128,6 +154,10 @@ def audit(study):
         "case_unchanged": True,
         "annotation_unchanged": True,
         "selection_frozen": True,
+        "full_grid_scenarios_checked": sum(
+            len(e["all_scenarios"]) for e in report["full_domain_comparison"].values()
+        ),
+        "replays_checked": replay_checks,
         "report_sha256": digest(report),
     }
     dump(study / "completion-audit.json", result)
