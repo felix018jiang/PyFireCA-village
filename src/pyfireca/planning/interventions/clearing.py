@@ -37,10 +37,31 @@ class ClearingStrip:
 
 
 @dataclass(frozen=True, slots=True)
+class ClearingPath:
+    """A continuous bent corridor; round joins close the gaps at its bends."""
+
+    points_m: tuple[PointXY, ...]
+    width_m: float
+
+    def __post_init__(self):
+        if not isinstance(self.points_m, tuple) or len(self.points_m) < 2:
+            raise ValueError("clearing path requires at least two points")
+        for point in self.points_m:
+            require_point(point)
+        if any(a == b for a, b in zip(self.points_m, self.points_m[1:], strict=False)):
+            raise ValueError("consecutive path points must differ")
+        line = LineString(self.points_m)
+        if not line.is_simple:
+            raise ValueError("clearing path must not self-intersect")
+        require_number("width_m", self.width_m, positive=True)
+
+
+@dataclass(frozen=True, slots=True)
 class ClearingPlan:
     plan_id: str
     strips: tuple[ClearingStrip, ...] = ()
     zone_id: str = "vegetation"
+    paths: tuple[ClearingPath, ...] = ()
 
     def __post_init__(self):
         require_id("plan_id", self.plan_id)
@@ -49,9 +70,43 @@ class ClearingPlan:
             not isinstance(strip, ClearingStrip) for strip in self.strips
         ):
             raise ValueError("strips must be a typed tuple")
+        if not isinstance(self.paths, tuple) or any(
+            not isinstance(path, ClearingPath) for path in self.paths
+        ):
+            raise ValueError("paths must be a typed tuple")
 
     def to_mapping(self):
         return asdict(self)
+
+
+def clearing_footprint(plan):
+    """Union corridors before cell intersection; overlaps count only once."""
+    return unary_union(
+        [
+            LineString([s.start_m, s.end_m]).buffer(s.width_m / 2, cap_style="flat")
+            for s in plan.strips
+        ]
+        + [
+            LineString(path.points_m).buffer(path.width_m / 2, cap_style="flat", join_style="round")
+            for path in plan.paths
+        ]
+    )
+
+
+def clearing_plan_from_mapping(value):
+    """Read both legacy straight-strip plans and bent/multi-path plans."""
+    return ClearingPlan(
+        value["plan_id"],
+        tuple(
+            ClearingStrip(tuple(s["start_m"]), tuple(s["end_m"]), s["width_m"])
+            for s in value.get("strips", ())
+        ),
+        value.get("zone_id", "vegetation"),
+        tuple(
+            ClearingPath(tuple(tuple(p) for p in path["points_m"]), path["width_m"])
+            for path in value.get("paths", ())
+        ),
+    )
 
 
 # Areas and masses are already integrated over the occupied fraction of a cell.
@@ -100,7 +155,7 @@ def prepare_clearing(request, plan, transport, *, allowed_mask=None, ignitions=(
         "partial_cell_model": "homogeneous_remaining_fuel_not_resolved_subcell_gap",
         "radiation_policy": "transparent_clearance_preserves_cross_strip_radiation",
     }
-    if not plan.strips:
+    if not plan.strips and not plan.paths:
         return request, fraction, summary
     grid = request.grid
     eligible = request.burnable_mask & (request.building_index < 0)
@@ -109,11 +164,7 @@ def prepare_clearing(request, plan, transport, *, allowed_mask=None, ignitions=(
         if allowed.dtype != np.bool_ or allowed.shape != grid.shape:
             raise ValueError("construction zone must be boolean and match grid")
         eligible &= allowed
-    footprints = [
-        LineString([s.start_m, s.end_m]).buffer(s.width_m / 2, cap_style="flat")
-        for s in plan.strips
-    ]
-    footprint = unary_union(footprints)
+    footprint = clearing_footprint(plan)
     extent = box(
         grid.x_min_m,
         grid.y_max_m - grid.height * grid.cell_size_m,

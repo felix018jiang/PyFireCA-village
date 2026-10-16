@@ -12,6 +12,7 @@ from pyfireca.planning.effectiveness import effectiveness_score
 from pyfireca.planning.engines.village import VillageEvaluationEngine, request_fingerprint
 from pyfireca.planning.evaluation import EvaluationScenario
 from pyfireca.planning.interventions.clearing import (
+    ClearingPath,
     ClearingPlan,
     ClearingStrip,
     InterventionConflict,
@@ -69,6 +70,33 @@ def test_empty_plan_reproduces_original_state_and_fingerprint():
     assert result.metrics["ignited_cells"] == 3
     assert result.diagnostics["parent_case_unchanged"]
     assert not result.capabilities["spotting"]
+
+
+def test_straight_path_reproduces_legacy_strip_physics():
+    engine = make_engine()
+    old = ClearingPlan("strip", (strip(),))
+    new = ClearingPlan("path", paths=(ClearingPath(((3.0, 0.0), (3.0, 2.0)), 2),))
+    a, fa, _ = engine.prepare(scenario(engine), old)
+    b, fb, _ = engine.prepare(scenario(engine), new)
+    np.testing.assert_array_equal(fa, fb)
+    for name in a.parameters.__dataclass_fields__:
+        np.testing.assert_array_equal(getattr(a.parameters, name), getattr(b.parameters, name))
+    assert (
+        engine.evaluate(scenario(engine), old).metrics
+        == engine.evaluate(scenario(engine), new).metrics
+    )
+
+
+def test_multiple_bent_paths_preserve_buildings_and_union_area():
+    engine = make_engine(("tree_equivalent", "building", "tree_equivalent"))
+    p = ClearingPath(((2.5, 0.5), (4.0, 1.0), (5.5, 1.0)), 0.5)
+    plan = ClearingPlan("bent", paths=(p, p))
+    _, fraction, summary = engine.prepare(scenario(engine), plan)
+    assert fraction[0, 1] == 0
+    assert fraction[0, 2] > 0
+    _, one, single = engine.prepare(scenario(engine), replace(plan, paths=(p,)))
+    np.testing.assert_array_equal(fraction, one)
+    assert summary["cleared_area_m2"] == single["cleared_area_m2"]
 
 
 def test_strip_removes_fuel_but_preserves_radiation_across_gap():

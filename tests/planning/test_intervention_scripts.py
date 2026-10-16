@@ -16,6 +16,8 @@ ROOT = Path(__file__).parents[2]
         "run_batuan_intervention_study.py",
         "check_batuan_intervention_horizon.py",
         "render_batuan_intervention_report.py",
+        "run_batuan_adaptive_search.py",
+        "render_batuan_adaptive_report.py",
     ],
 )
 def test_study_entry_points_load(name):
