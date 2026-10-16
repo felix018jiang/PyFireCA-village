@@ -2,6 +2,10 @@
 
 更新日期：2026年10月16日。
 
+最新迭代阶段：开发前回退标签 `batuan-before-adaptive-search-20261016`（`a85f601`），新分支 `codex/batuan-adaptive-firebreak-20261016`。独立Git备份位于 `/Users/tone/Documents/github/PyFireCA-backups/batuan-before-adaptive-search-20261016/repository.bundle`，已验证。原24候选结果和原模拟器保留。详见[本轮算法与恢复说明](BATUAN_ADAPTIVE_FIREBREAK_SEARCH.md)。下表为初次研究计划阶段的历史保存点。
+
+本轮完成标签 `batuan-adaptive-20261016`，新的结果和代码备份为 `/Users/tone/Documents/github/PyFireCA-backups/batuan-adaptive-20261016`。新归档包含先导训练缓存、正式研究结果、全图回放及源码/渲染快照；基础影像和空间资产继续使用原有验证备份。研究的参数一致恢复已验证，搜索/几何/留出/回放结果相同，0新增CA求解。
+
 现有模拟器先保存为可检出的代码基线，研究计划另行提交。大型本地影像与结果保持在Git之外，使用压缩备份和逐文件SHA256清单保存。恢复时优先使用独立目录，保留当前工作区与历史结果。
 
 ## 1 当前版本

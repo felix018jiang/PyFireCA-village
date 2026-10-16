@@ -1,0 +1,1684 @@
+{
+  "schema": "batuan-adaptive-result-index-1",
+  "study": "runs/research/batuan-adaptive-20261016-r2",
+  "protocol": {
+    "schema": "batuan-adaptive-study-1",
+    "parent_git_commit": "91a8b56fc1b38672126fdb55dd56e0d208068c75",
+    "code": "47320b2b95f3641ff49b6f3a59034080f698f8c733056b21f04dae34a6f92516",
+    "source_hashes": {
+      "scripts/run_batuan_adaptive_search.py": "97065c26fffbb85c8df1574f078ad991ed416cd63f34a2078a95d41a51012667",
+      "src/pyfireca/planning/adaptive.py": "b57b2a5f3fa5fad44cffcc59f341151e675a56d6cee9e6bbaf96315c78fd993d",
+      "src/pyfireca/planning/interventions/clearing.py": "bc39ce3ea4de93117981bc3d89dbe940d4c10835f19d5a9de520b88b97e84016",
+      "src/pyfireca/planning/engines/village.py": "128775623b3183fcd9c724534647eab5156dac516e6e9d735c2474d45eb4e06f",
+      "src/pyfireca/planning/effectiveness.py": "2ec6a26f0096c701f35b1e01e7476d865a1ce5615172e64a9df97c8c115b0fdf",
+      "src/pyfireca/planning/evaluation.py": "4d6a6b5b314326960b1e8d4714c50356c91180d1150be441442395d474bb07b3",
+      "scripts/run_batuan_intervention_study.py": "a7906f760356d6d8bb69a3efc6f9615f851d4a88c084dbd6c9734cb29402e631",
+      "scripts/render_batuan_intervention_report.py": "b29c9eb0e1967631c4b3ce2f2f207928e1cf8ad64d8e63ce967d228150b50aaf",
+      "scripts/render_batuan_adaptive_report.py": "a6f8c8b4aac300572ea0bf70feea4281414f1fd81b26ca0e01ae76aa5678e164",
+      "src/pyfireca/village/__init__.py": "ef6af626ed857d35f985d16b604a2c16b0922bef835eff442bb2708273befea0",
+      "src/pyfireca/village/annotations.py": "7a77888beaf6da4ed754c62583805e59bd68197efed0ccf9603714da65580c27",
+      "src/pyfireca/village/assembly_presets.py": "335d0ef3c98413580f16ac29054a630ed24cb0a9233955970990710382441c87",
+      "src/pyfireca/village/bootstrap.py": "97708976132e24049486b3a44fb5545ea11a2dac9f09f9dc72823627205bb8a4",
+      "src/pyfireca/village/building_candidates.py": "0ef75f0724c2c15357614fd1c5741074121636c42f465953c7144737a0473801",
+      "src/pyfireca/village/cli.py": "ac79f033aa84e6a22df9b9ebf93402e43f9e118b7675ed8d9c414066f78c5e41",
+      "src/pyfireca/village/combustion.py": "3c5bd480233c7737d6998e594322045f4e9576392c36c1528e92ecb400a60eb8",
+      "src/pyfireca/village/component_curves_v3.py": "73a42040d493a174f29fdfc62817288f7c987ef566be87bc739d175804363780",
+      "src/pyfireca/village/component_outputs_v3.py": "0900f2d29fc4e69f8fd50f7fd6a081bb88a31b2f6211f7ad988f3f6c16ac1b67",
+      "src/pyfireca/village/component_radiation_v3.py": "b19aa992b79bd12aea19acb3fa0aea9b7e5769cfb883595ecc6dc29152572030",
+      "src/pyfireca/village/component_surfaces_v3.py": "397286b669b2451cc59a310e3df2f43fb185c8b0fb745da2d99a4f7aa114d54f",
+      "src/pyfireca/village/components_v3.py": "b4682fd709f23785ee5bfd666070adcfe650c56a5acc0568213b1443a66a484e",
+      "src/pyfireca/village/config.py": "8d23d7d943c1071d028d4fa53cc59ef71a751102c695a5f421421464640170b6",
+      "src/pyfireca/village/core_validation_v3.py": "d6a34f275d68b6be6e49c9f4197c7c80acf901601bef97937fb0195cb312028d",
+      "src/pyfireca/village/domain.py": "8b9b192ca1e18217275d4c23c31b0d4b151e0bed2c704514884ac97d281a9b7d",
+      "src/pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+      "src/pyfireca/village/finite_radiation_v3.py": "fb5f7a617c1ad9730d18b4a3cfca2dc9dceb032a3f0a4d6785c962aa38490975",
+      "src/pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+      "src/pyfireca/village/flame_geometry_v3.py": "af14fc85d51e974b687a9f9fe974a9634529110b8489cfec61f5f860a38df255",
+      "src/pyfireca/village/flame_terrain_v3.py": "e6a299041a3bff66a927db3b4bf327d338074a4b2eae6d3edb696bafdda688f2",
+      "src/pyfireca/village/gaoyou_v3.py": "11b4499a2b7c6933979470354ea17c11a51f92eaec21acd43f197e81a9509f1e",
+      "src/pyfireca/village/hypothetical.py": "abf75cfc6064eeab8016db9fc6938b87291b812ce3a3b129836408a694c42f1c",
+      "src/pyfireca/village/ignition.py": "ef9fb19d7df5940c97a30ca4680c2227414f4407ec08a8c1e2dfc9aa3453b448",
+      "src/pyfireca/village/imagery_landcover.py": "d7afe7f7022898b8ef716f763243a2dff5b5e0c2324da5caeedab4a4443dda9f",
+      "src/pyfireca/village/inspection_v3.py": "0f21b0cba8ff4753f44db6e125f19de18b7e7bd534ebfaf33ff8317862ce1977",
+      "src/pyfireca/village/interactive_components_v3.py": "5fc3c892717079d2cf3fddc79774c6e31c3b54e29042e2cd0dbcd799023b2065",
+      "src/pyfireca/village/interactive_v3.py": "5a1e1bdecbcc8af545d558b0e0667d896e9a2d39b1a3dd038d6e67af68f74cf6",
+      "src/pyfireca/village/material_cards.py": "e635a1283d8ec9de5effe5ebbdfec2a8f8b0b755c7a4eeb6fb523aa42a11f6f0",
+      "src/pyfireca/village/material_draft_v3.py": "d281b2ec5ba719cdc55219eabad6c483f3336f8e4bfd17c0d3397bc9d2a9e2d3",
+      "src/pyfireca/village/material_resolution.py": "690cd3d21b2c5ad158d5c188b7abe71c99b0eca9d968f4c04d8dd15a42598386",
+      "src/pyfireca/village/materials.py": "a6d495f46c5c126668d6829ca8aabf460ce68feb047232ae1a87d975c0e070bf",
+      "src/pyfireca/village/materials_v2.py": "ce7f1e8d00ee02114ccf095625d866bbdf1621d207c754b12d9e8e19175830bf",
+      "src/pyfireca/village/materials_v3.py": "51147c1886cbe603512c89e8ace822c489b707bc28c2610727306bbaae01abdf",
+      "src/pyfireca/village/moisture.py": "023e459d3b0259667b4228551385e1b1a46882793a9422a0152436a47f87c668",
+      "src/pyfireca/village/oriented_flame_surfaces_v3.py": "1cc14479499e16e2a1a555c2ab6ccd4f6af5d1b85afd895837e9e393dc50bfc4",
+      "src/pyfireca/village/outputs.py": "b40f353c969e2aba765c663ec409844017a1bdbe9bc1a9a3130a7b55a21ffc08",
+      "src/pyfireca/village/outputs_v3.py": "da1cee09f3ac8625f380bd796feef09d408695dc88a9379c64a814340129ce6a",
+      "src/pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084",
+      "src/pyfireca/village/physics_v3.py": "e34eeb53f1f18443d0b4e4d04970715dbea6e996d6719ab947b2cf4dde6a1536",
+      "src/pyfireca/village/preflight_v3.py": "b0ca571a573dfe42d6d6b5415f7db3706debbb42c67ec0f7f8d89de7140385dd",
+      "src/pyfireca/village/prepare.py": "a9717da24eae8c994ee0ce045f2142b90411d0f10e7a94e29143cf23c9fa2ea7",
+      "src/pyfireca/village/prepared_workflow_v2.py": "72e5d58fad724533756365c4eca4ca42f379826b9791a9198ff642d2192e43ae",
+      "src/pyfireca/village/radiation_clipping_v3.py": "5784d5db6652babc90b254f4f55e8e3686414e6ece852f2635766056f5eb2f04",
+      "src/pyfireca/village/radiation_time_v3.py": "8ba0dfdc4c23585cac3e4b87a7c9d43949bc998e86417d50d25698ce379317c4",
+      "src/pyfireca/village/radiation_visibility_v3.py": "7d4db94a79883df142596978362a4e0cc70bde3570b73f268cd1262ceef5e689",
+      "src/pyfireca/village/resolution_workflow_v3.py": "a2eddd0aefcb1feded668c2be31b4d744f1b48cc45459bf5b9d768c40ccbae72",
+      "src/pyfireca/village/resource_sensitivity_v3.py": "4a6d90fad9ec2e35bd42f2e99b98d5c223796522afa0d61089405f4f9d7bc7c4",
+      "src/pyfireca/village/rgb_hypothesis_v3.py": "273a74229774b29ca4e73fd90a9280073fb38c59e6560b65e199670e82d40029",
+      "src/pyfireca/village/solver.py": "ead70d55ac8432ea6ed0c03b56986e4708ec5c46bda43487bf0e87675db25212",
+      "src/pyfireca/village/solver_v2.py": "5e9cf1752aa8eae950738ece9167901f3456d04621e80c80e1e7fdec566158b1",
+      "src/pyfireca/village/solver_v3.py": "99d800b26af3fe1825f7844a3ce0832434db5f57927059f95cbdcd55e4817da3",
+      "src/pyfireca/village/state.py": "435d849cd32636af3dcd52e2ca257f1b5837f300c77903382347171f6aeb01d4",
+      "src/pyfireca/village/survey.py": "e4a1d1601d3c95043a35f95d96d4a7d35669a7fa83c85e28734b1b3ee50079e1",
+      "src/pyfireca/village/survey_adapter.py": "850396d9f99827693cb51e2e673a4a1f82c8aa03a1600efaf85d1204cb3fdd1e",
+      "src/pyfireca/village/survey_mapping_v3.py": "f8a2445b9e01b8334d59969d4c6f75f9239b009cffc90aaf7dee8f47a31d9d30",
+      "src/pyfireca/village/transport_v2.py": "6a58373eefce1f3f8bd5970192c51433adc251bb3aababc01e8091c0f76af86a",
+      "src/pyfireca/village/transport_v3.py": "227203d8b97463bbd1a1beffb8fd55de8cc10afe89fba9d37e5e5e295cc8c3e6",
+      "src/pyfireca/village/unknown_review_v3.py": "95d664827fe9ec5dc478acdeb5bfc7fd7054b3bcdc194e63a38259469d2afb75",
+      "src/pyfireca/village/vegetation_config.py": "b395f290e81a965b29215738adbc60a02326b3f963f60ac676ef3a206572dbd5",
+      "src/pyfireca/village/vegetation_materials.py": "f2dbe1bfa003cbdc17ad64c3369a85f8ea03bd5bce5ced58ac737f9d9972eb02",
+      "src/pyfireca/village/vegetation_prepare.py": "3c1ca3c2e7102ceac8919facbe7783c8123ca8e7d9f303aea7c05f1c6f081942",
+      "src/pyfireca/village/wind_v3.py": "fbc01d4df3a6a9c20709c66999471ab736802f185dd05ec77fcee518da5bf0e1",
+      "src/pyfireca/village/workflow.py": "bf636e2ab2798052a9398953d9471fea03d2bd0a037f81f35ab64c3a70e9bee8",
+      "src/pyfireca/village/workflow_v2.py": "fe79fb592555c29f84c2be0b521eb6320f834142d58ca0bc6c3821861c789800",
+      "src/pyfireca/village/workflow_v3.py": "953cd08af0e71d44d225b7676e9f3cf992349419c2e3d42841958c27323cbbbb"
+    },
+    "case_sha256": "260a1f844b72ad3fe3c70b9fdc7576fd2641a8cb924daa99a5758a2bb378f0cb",
+    "annotated_structures_sha256": "65695d51c4c18d24413eafec95e4a0037935f3e6c234aa78e031e0a49ce63560",
+    "zone_geometry_sha256": "11f5ffdd07856499c42c234c1e2a88c0b1f6d9dcff2f904a57e228d747be49a2",
+    "previous_protocol_sha256": "e7c70023a079814ec7839036e8e21c2e4b7efdd1277e5743eb0b15bb9dfc0477",
+    "config": {
+      "seed": 20261016,
+      "max_evaluations": 64,
+      "batch_size": 12,
+      "beam_size": 6,
+      "max_paths": 3,
+      "max_vertices": 5,
+      "width_min_m": 2.5,
+      "width_max_m": 30,
+      "length_min_m": 10.0,
+      "length_max_m": 240.0,
+      "initial_step_m": 20.0,
+      "min_step_m": 2.5,
+      "objective": "effectiveness_then_area"
+    },
+    "window": [
+      120,
+      201,
+      111,
+      192
+    ],
+    "training": [
+      {
+        "scenario_id": "forest-160-151",
+        "ignitions": [
+          {
+            "point_m": [
+              347257.5,
+              2869667.5
+            ],
+            "time_s": 0.0
+          }
+        ],
+        "horizon_s": 3600
+      },
+      {
+        "scenario_id": "forest-162-151",
+        "ignitions": [
+          {
+            "point_m": [
+              347257.5,
+              2869657.5
+            ],
+            "time_s": 0.0
+          }
+        ],
+        "horizon_s": 3600
+      }
+    ],
+    "held_out": {
+      "scenario_id": "forest-161-150",
+      "ignitions": [
+        {
+          "point_m": [
+            347252.5,
+            2869662.5
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "horizon_s": 3600
+    },
+    "extended_horizon_s": 5400,
+    "search_domain": "local",
+    "skip_replays": false,
+    "zone_assumption": "20m building buffer proxies, not surveyed village boundary",
+    "scope": "south-side forest ignition stress tests; calm, no spotting",
+    "area_policy": "union of actual cleared vegetation, not requested corridor area",
+    "money_objective": false,
+    "global_optimality_guaranteed": false,
+    "warm_cache_from": "/Users/tone/Documents/github/PyFireCA/runs/research/batuan-adaptive-20261016-r1"
+  },
+  "report_sha256": "bdad7684a5d7740e5bd96d56ff708207ae09846a82daa7866430ea74c0ab6046",
+  "comparisons": {
+    "baseline": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-307472365e7d223d517d",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": []
+      },
+      "cleared_area_m2": 0.0,
+      "train_metrics": [
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 4,
+          "ignited_house_count": 3,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 908.2811368774856,
+          "first_house_ignition_s": 3016.0,
+          "house_ignition_free_time_s": 3016.0,
+          "ignited_cells": 681,
+          "burned_out_cells": 435,
+          "consumed_fuel_kg": 83185.16812329105,
+          "building_first_ignitions": [
+            {
+              "building_index": 119,
+              "source_label": "fengyuqiao",
+              "time_s": 1515.0
+            },
+            {
+              "building_index": 60,
+              "source_label": "building",
+              "time_s": 3016.0
+            },
+            {
+              "building_index": 62,
+              "source_label": "building",
+              "time_s": 3242.0
+            },
+            {
+              "building_index": 61,
+              "source_label": "building",
+              "time_s": 3498.0
+            }
+          ],
+          "burning_reached_domain_edge": false
+        },
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 3,
+          "ignited_house_count": 2,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 693.9752644539112,
+          "first_house_ignition_s": 3314.0,
+          "house_ignition_free_time_s": 3314.0,
+          "ignited_cells": 733,
+          "burned_out_cells": 457,
+          "consumed_fuel_kg": 89804.34855762958,
+          "building_first_ignitions": [
+            {
+              "building_index": 119,
+              "source_label": "fengyuqiao",
+              "time_s": 1829.0
+            },
+            {
+              "building_index": 60,
+              "source_label": "building",
+              "time_s": 3314.0
+            },
+            {
+              "building_index": 62,
+              "source_label": "building",
+              "time_s": 3541.000000000001
+            }
+          ],
+          "burning_reached_domain_edge": false
+        }
+      ],
+      "held_out": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 3,
+        "ignited_house_count": 2,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 693.9752644539112,
+        "first_house_ignition_s": 3318.0,
+        "house_ignition_free_time_s": 3318.0,
+        "ignited_cells": 705,
+        "burned_out_cells": 444,
+        "consumed_fuel_kg": 86663.32888537053,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1823.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3318.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3545.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "extended": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 26,
+        "ignited_house_count": 25,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 3542.5951633718796,
+        "first_house_ignition_s": 3318.0,
+        "house_ignition_free_time_s": 3318.0,
+        "ignited_cells": 1497,
+        "burned_out_cells": 1071,
+        "consumed_fuel_kg": 190291.79221617704,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1823.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3318.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3545.0
+          },
+          {
+            "building_index": 61,
+            "source_label": "building",
+            "time_s": 3801.0
+          },
+          {
+            "building_index": 59,
+            "source_label": "building",
+            "time_s": 4081.3600000000015
+          },
+          {
+            "building_index": 63,
+            "source_label": "building",
+            "time_s": 4201.833333333335
+          },
+          {
+            "building_index": 64,
+            "source_label": "building",
+            "time_s": 4322.0
+          },
+          {
+            "building_index": 58,
+            "source_label": "building",
+            "time_s": 4323.0
+          },
+          {
+            "building_index": 65,
+            "source_label": "building",
+            "time_s": 4479.000000000002
+          },
+          {
+            "building_index": 57,
+            "source_label": "building",
+            "time_s": 4485.0
+          },
+          {
+            "building_index": 54,
+            "source_label": "building",
+            "time_s": 4512.000000000003
+          },
+          {
+            "building_index": 55,
+            "source_label": "building",
+            "time_s": 4557.0
+          },
+          {
+            "building_index": 53,
+            "source_label": "building",
+            "time_s": 4691.0
+          },
+          {
+            "building_index": 67,
+            "source_label": "building",
+            "time_s": 4722.0
+          },
+          {
+            "building_index": 106,
+            "source_label": "building",
+            "time_s": 4744.360000000002
+          },
+          {
+            "building_index": 107,
+            "source_label": "building",
+            "time_s": 4773.0
+          },
+          {
+            "building_index": 56,
+            "source_label": "building",
+            "time_s": 4900.720000000004
+          },
+          {
+            "building_index": 52,
+            "source_label": "building",
+            "time_s": 4940.360000000004
+          },
+          {
+            "building_index": 66,
+            "source_label": "building",
+            "time_s": 5010.0
+          },
+          {
+            "building_index": 73,
+            "source_label": "building",
+            "time_s": 5033.000000000001
+          },
+          {
+            "building_index": 51,
+            "source_label": "building",
+            "time_s": 5066.833333333336
+          },
+          {
+            "building_index": 71,
+            "source_label": "building",
+            "time_s": 5212.833333333335
+          },
+          {
+            "building_index": 69,
+            "source_label": "building",
+            "time_s": 5225.193333333336
+          },
+          {
+            "building_index": 50,
+            "source_label": "building",
+            "time_s": 5293.0
+          },
+          {
+            "building_index": 70,
+            "source_label": "building",
+            "time_s": 5370.833333333337
+          },
+          {
+            "building_index": 110,
+            "source_label": "building",
+            "time_s": 5395.3600000000015
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "full": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 4,
+        "ignited_house_count": 3,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 908.2811368774856,
+        "first_house_ignition_s": 3016.0,
+        "house_ignition_free_time_s": 3016.0,
+        "ignited_cells": 681,
+        "burned_out_cells": 435,
+        "consumed_fuel_kg": 83185.16812329105,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1515.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3016.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3242.0
+          },
+          {
+            "building_index": 61,
+            "source_label": "building",
+            "time_s": 3498.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      }
+    },
+    "legacy_outer_proxy": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-1f9fe319c44667f86373",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347192.548095,
+                2869715.0
+              ],
+              [
+                347322.451905,
+                2869640.0
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "cleared_area_m2": 1288.2659180961714,
+      "train_metrics": [
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 433,
+          "burned_out_cells": 246,
+          "consumed_fuel_kg": 49819.913080158454,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        },
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 500,
+          "burned_out_cells": 295,
+          "consumed_fuel_kg": 58684.10599839844,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        }
+      ],
+      "held_out": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 480,
+        "burned_out_cells": 287,
+        "consumed_fuel_kg": 56573.460834126054,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "extended": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 5400,
+        "ignited_cells": 1104,
+        "burned_out_cells": 784,
+        "consumed_fuel_kg": 137925.54901171676,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "full": null
+    },
+    "adaptive_outer_proxy": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347227.189111,
+                2869695.0
+              ],
+              [
+                347305.131397,
+                2869650.0
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "cleared_area_m2": 819.1293090811422,
+      "train_metrics": [
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 458,
+          "burned_out_cells": 249,
+          "consumed_fuel_kg": 52518.32666020979,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        },
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 536,
+          "burned_out_cells": 298,
+          "consumed_fuel_kg": 62227.55822229706,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        }
+      ],
+      "held_out": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 504,
+        "burned_out_cells": 291,
+        "consumed_fuel_kg": 59485.962656377495,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "extended": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 1,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 326.00057524687145,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 5400,
+        "ignited_cells": 1211,
+        "burned_out_cells": 860,
+        "consumed_fuel_kg": 150114.27535456888,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 4883.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "full": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 458,
+        "burned_out_cells": 249,
+        "consumed_fuel_kg": 52518.326660209794,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      }
+    },
+    "legacy_inner_proxy": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-fd966e643730103ab4c8",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347192.548095,
+                2869740.0
+              ],
+              [
+                347322.451905,
+                2869665.0
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "cleared_area_m2": 616.9079120566231,
+      "train_metrics": [
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 3,
+          "ignited_house_count": 2,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 761.6476378083462,
+          "first_house_ignition_s": 3202.0,
+          "house_ignition_free_time_s": 3202.0,
+          "ignited_cells": 665,
+          "burned_out_cells": 410,
+          "consumed_fuel_kg": 79370.58944734724,
+          "building_first_ignitions": [
+            {
+              "building_index": 119,
+              "source_label": "fengyuqiao",
+              "time_s": 1557.0
+            },
+            {
+              "building_index": 60,
+              "source_label": "building",
+              "time_s": 3202.0
+            },
+            {
+              "building_index": 62,
+              "source_label": "building",
+              "time_s": 3428.9999999999995
+            }
+          ],
+          "burning_reached_domain_edge": false
+        },
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 2,
+          "ignited_house_count": 1,
+          "ignited_bridge_count": 1,
+          "ignited_building_area_m2": 669.925397602492,
+          "first_house_ignition_s": 3448.0,
+          "house_ignition_free_time_s": 3448.0,
+          "ignited_cells": 722,
+          "burned_out_cells": 437,
+          "consumed_fuel_kg": 85859.32916731658,
+          "building_first_ignitions": [
+            {
+              "building_index": 119,
+              "source_label": "fengyuqiao",
+              "time_s": 1839.0
+            },
+            {
+              "building_index": 60,
+              "source_label": "building",
+              "time_s": 3448.0
+            }
+          ],
+          "burning_reached_domain_edge": false
+        }
+      ],
+      "held_out": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 2,
+        "ignited_house_count": 1,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 663.1664074637229,
+        "first_house_ignition_s": 3496.0,
+        "house_ignition_free_time_s": 3496.0,
+        "ignited_cells": 688,
+        "burned_out_cells": 410,
+        "consumed_fuel_kg": 82067.71436182085,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1863.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3496.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "extended": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 22,
+        "ignited_house_count": 21,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 2907.2466155630536,
+        "first_house_ignition_s": 3496.0,
+        "house_ignition_free_time_s": 3496.0,
+        "ignited_cells": 1450,
+        "burned_out_cells": 1045,
+        "consumed_fuel_kg": 183501.3431789094,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1863.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3496.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3723.000000000001
+          },
+          {
+            "building_index": 61,
+            "source_label": "building",
+            "time_s": 3978.0
+          },
+          {
+            "building_index": 59,
+            "source_label": "building",
+            "time_s": 4259.000000000003
+          },
+          {
+            "building_index": 63,
+            "source_label": "building",
+            "time_s": 4379.0
+          },
+          {
+            "building_index": 64,
+            "source_label": "building",
+            "time_s": 4500.0
+          },
+          {
+            "building_index": 58,
+            "source_label": "building",
+            "time_s": 4501.0
+          },
+          {
+            "building_index": 65,
+            "source_label": "building",
+            "time_s": 4657.000000000001
+          },
+          {
+            "building_index": 57,
+            "source_label": "building",
+            "time_s": 4663.833333333335
+          },
+          {
+            "building_index": 54,
+            "source_label": "building",
+            "time_s": 4689.0
+          },
+          {
+            "building_index": 55,
+            "source_label": "building",
+            "time_s": 4734.0
+          },
+          {
+            "building_index": 53,
+            "source_label": "building",
+            "time_s": 4869.0
+          },
+          {
+            "building_index": 67,
+            "source_label": "building",
+            "time_s": 4900.0
+          },
+          {
+            "building_index": 106,
+            "source_label": "building",
+            "time_s": 4922.3600000000015
+          },
+          {
+            "building_index": 107,
+            "source_label": "building",
+            "time_s": 4951.0
+          },
+          {
+            "building_index": 56,
+            "source_label": "building",
+            "time_s": 5078.0
+          },
+          {
+            "building_index": 52,
+            "source_label": "building",
+            "time_s": 5118.360000000002
+          },
+          {
+            "building_index": 66,
+            "source_label": "building",
+            "time_s": 5187.0
+          },
+          {
+            "building_index": 73,
+            "source_label": "building",
+            "time_s": 5210.000000000002
+          },
+          {
+            "building_index": 51,
+            "source_label": "building",
+            "time_s": 5245.000000000002
+          },
+          {
+            "building_index": 71,
+            "source_label": "building",
+            "time_s": 5391.000000000004
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "full": null
+    },
+    "adaptive_inner_proxy": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-6240748bd754c6eb40b4",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347244.509619,
+                2869710.0
+              ],
+              [
+                347305.131397,
+                2869675.0
+              ]
+            ],
+            "width_m": 20.0
+          }
+        ]
+      },
+      "cleared_area_m2": 674.5240356183876,
+      "train_metrics": [
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 576,
+          "burned_out_cells": 352,
+          "consumed_fuel_kg": 68855.02724461434,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        },
+        {
+          "protected_structure_count": 137,
+          "ignited_structure_count": 0,
+          "ignited_house_count": 0,
+          "ignited_bridge_count": 0,
+          "ignited_building_area_m2": 0.0,
+          "first_house_ignition_s": null,
+          "house_ignition_free_time_s": 3600,
+          "ignited_cells": 642,
+          "burned_out_cells": 392,
+          "consumed_fuel_kg": 76942.13878495221,
+          "building_first_ignitions": [],
+          "burning_reached_domain_edge": false
+        }
+      ],
+      "held_out": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 608,
+        "burned_out_cells": 366,
+        "consumed_fuel_kg": 73421.81435827348,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "extended": {
+        "protected_structure_count": 137,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 5400,
+        "ignited_cells": 1227,
+        "burned_out_cells": 921,
+        "consumed_fuel_kg": 157192.7688422233,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "full": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 576,
+        "burned_out_cells": 352,
+        "consumed_fuel_kg": 68855.02724461434,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      }
+    }
+  },
+  "searches": {
+    "outer_proxy": {
+      "requests": 64,
+      "valid": 51,
+      "rejected": 13,
+      "geometric_rejections": 2,
+      "curved_evaluated": 4,
+      "multi_path_evaluated": 3,
+      "selected_ids": [
+        "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4"
+      ],
+      "pareto": [
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-307472365e7d223d517d",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": []
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3165.0
+          ],
+          "cleared_area_m2": 0.0
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-92651cbad144ca98d1af",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347183.639419,
+                    2869690.523613
+                  ],
+                  [
+                    347331.360581,
+                    2869664.476387
+                  ]
+                ],
+                "width_m": 5.0
+              }
+            ]
+          },
+          "effectiveness": [
+            2,
+            1.5,
+            716.6204434965039,
+            1,
+            -3282.833333333333
+          ],
+          "cleared_area_m2": 581.0556520556727
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-98658b3d53f8b657a867",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347311.393808,
+                    2869664.120994
+                  ],
+                  [
+                    347323.606192,
+                    2869670.879006
+                  ]
+                ],
+                "width_m": 8.639664
+              }
+            ]
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3165.5966666666664
+          ],
+          "cleared_area_m2": 120.58849495703984
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-859c1828682027385439",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347202.5,
+                    2869677.5
+                  ],
+                  [
+                    347332.5,
+                    2869677.5
+                  ]
+                ],
+                "width_m": 5.0
+              }
+            ]
+          },
+          "effectiveness": [
+            2,
+            1.5,
+            716.6204434965039,
+            1,
+            -3271.5
+          ],
+          "cleared_area_m2": 425.0
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347227.189111,
+                    2869695.0
+                  ],
+                  [
+                    347305.131397,
+                    2869650.0
+                  ]
+                ],
+                "width_m": 10.0
+              }
+            ]
+          },
+          "effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "cleared_area_m2": 819.1293090811422
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-0d2ba19b42e0ce3949c9",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347244.509619,
+                    2869685.0
+                  ],
+                  [
+                    347305.131397,
+                    2869650.0
+                  ]
+                ],
+                "width_m": 10.0
+              }
+            ]
+          },
+          "effectiveness": [
+            0,
+            0,
+            5.445745214819908,
+            0.5,
+            -3600
+          ],
+          "cleared_area_m2": 619.1293097322722
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-5464ca27054be3fc0fde",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347227.189111,
+                    2869695.0
+                  ],
+                  [
+                    347287.810889,
+                    2869660.0
+                  ]
+                ],
+                "width_m": 10.0
+              }
+            ]
+          },
+          "effectiveness": [
+            0,
+            0,
+            159.46631910774158,
+            1,
+            -3600
+          ],
+          "cleared_area_m2": 619.1293097321446
+        },
+        {
+          "plan": {
+            "plan_id": "outer_proxy-adaptive-8a542ca5b30afafddc1f",
+            "strips": [],
+            "zone_id": "outer_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347227.189111,
+                    2869695.0
+                  ],
+                  [
+                    347305.131397,
+                    2869650.0
+                  ]
+                ],
+                "width_m": 2.5
+              }
+            ]
+          },
+          "effectiveness": [
+            2,
+            1.5,
+            729.1204434965039,
+            1,
+            -3269.500000000001
+          ],
+          "cleared_area_m2": 210.4367057416748
+        }
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 25,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-226fab40e976369c8446",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 1088.2659187472025
+        },
+        {
+          "generation": 2,
+          "evaluations": 37,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-efa250e9e3fbdfa0415a",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 1019.12930843007
+        },
+        {
+          "generation": 3,
+          "evaluations": 49,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 819.1293090811422
+        },
+        {
+          "generation": 4,
+          "evaluations": 61,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 819.1293090811422
+        },
+        {
+          "generation": 5,
+          "evaluations": 64,
+          "step_m": 20.0,
+          "best_plan_id": "outer_proxy-adaptive-b5dc2137f24d8e5bd5c4",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 819.1293090811422
+        }
+      ]
+    },
+    "inner_proxy": {
+      "requests": 64,
+      "valid": 61,
+      "rejected": 3,
+      "geometric_rejections": 3,
+      "curved_evaluated": 8,
+      "multi_path_evaluated": 6,
+      "selected_ids": [
+        "inner_proxy-adaptive-6240748bd754c6eb40b4"
+      ],
+      "pareto": [
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-d728ca8a6392736381e6",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": []
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3165.0
+          ],
+          "cleared_area_m2": 0.0
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-7b296bbff384c4b16b61",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347192.548095,
+                    2869740.0
+                  ],
+                  [
+                    347322.451905,
+                    2869665.0
+                  ]
+                ],
+                "width_m": 2.5
+              }
+            ]
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3178.9166666666665
+          ],
+          "cleared_area_m2": 159.4469116989909
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-adfa9eecae5d32b48d9e",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347192.548095,
+                    2869740.0
+                  ],
+                  [
+                    347247.5,
+                    2869685.179492
+                  ],
+                  [
+                    347322.451905,
+                    2869665.0
+                  ]
+                ],
+                "width_m": 10.0
+              }
+            ]
+          },
+          "effectiveness": [
+            1,
+            0.5,
+            621.9928342645289,
+            1,
+            -3506.499999999999
+          ],
+          "cleared_area_m2": 497.2495928055028
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-cb6fb3f74bf3d7da4e93",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347183.639419,
+                    2869715.523613
+                  ],
+                  [
+                    347331.360581,
+                    2869689.476387
+                  ]
+                ],
+                "width_m": 5.0
+              }
+            ]
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3167.416666666667
+          ],
+          "cleared_area_m2": 101.46583839205246
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-f7e4c4d02cabe1636d6b",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347202.5,
+                    2869702.5
+                  ],
+                  [
+                    347332.5,
+                    2869702.5
+                  ]
+                ],
+                "width_m": 2.5
+              }
+            ]
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3165.5
+          ],
+          "cleared_area_m2": 37.5
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-51a49a5253a8ee4f131e",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347202.14775,
+                    2869708.787132
+                  ],
+                  [
+                    347330.172758,
+                    2869686.212868
+                  ]
+                ],
+                "width_m": 2.5
+              }
+            ]
+          },
+          "effectiveness": [
+            3,
+            2.5,
+            801.1282006656984,
+            1,
+            -3166.5
+          ],
+          "cleared_area_m2": 72.90140266307938
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-7de8478c17f45089cb40",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347192.548095,
+                    2869740.0
+                  ],
+                  [
+                    347322.451905,
+                    2869645.0
+                  ]
+                ],
+                "width_m": 2.5
+              },
+              {
+                "points_m": [
+                  [
+                    347192.548095,
+                    2869760.0
+                  ],
+                  [
+                    347322.451905,
+                    2869685.0
+                  ]
+                ],
+                "width_m": 2.5
+              }
+            ]
+          },
+          "effectiveness": [
+            2,
+            1.5,
+            746.9907729799161,
+            1,
+            -3276.0
+          ],
+          "cleared_area_m2": 235.96988295352682
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-6240748bd754c6eb40b4",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347244.509619,
+                    2869710.0
+                  ],
+                  [
+                    347305.131397,
+                    2869675.0
+                  ]
+                ],
+                "width_m": 20.0
+              }
+            ]
+          },
+          "effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "cleared_area_m2": 674.5240356183876
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-90f6ca7161bb300f0ee0",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347227.189111,
+                    2869720.0
+                  ],
+                  [
+                    347287.810889,
+                    2869685.0
+                  ]
+                ],
+                "width_m": 20.0
+              }
+            ]
+          },
+          "effectiveness": [
+            1,
+            1,
+            666.5459025331074,
+            1,
+            -3499.000000000001
+          ],
+          "cleared_area_m2": 381.4854897806196
+        },
+        {
+          "plan": {
+            "plan_id": "inner_proxy-adaptive-d83f29d71264b92c235b",
+            "strips": [],
+            "zone_id": "inner_proxy",
+            "paths": [
+              {
+                "points_m": [
+                  [
+                    347227.189111,
+                    2869720.0
+                  ],
+                  [
+                    347305.131397,
+                    2869675.0
+                  ]
+                ],
+                "width_m": 10.0
+              }
+            ]
+          },
+          "effectiveness": [
+            2,
+            1.5,
+            715.7865177054191,
+            1,
+            -3325.0
+          ],
+          "cleared_area_m2": 364.7808499813743
+        }
+      ],
+      "history": [
+        {
+          "generation": 1,
+          "evaluations": 25,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-d1826f1ecdd68360b887",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 1169.1193435782652
+        },
+        {
+          "generation": 2,
+          "evaluations": 37,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-cbf571f177ffd1d45156",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 914.4337572389478
+        },
+        {
+          "generation": 3,
+          "evaluations": 49,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-604fc6f1527106177a64",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 779.1501730630847
+        },
+        {
+          "generation": 4,
+          "evaluations": 61,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-785dbb20e1c175e36448",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 689.9940893404467
+        },
+        {
+          "generation": 5,
+          "evaluations": 64,
+          "step_m": 20.0,
+          "best_plan_id": "inner_proxy-adaptive-6240748bd754c6eb40b4",
+          "best_effectiveness": [
+            0,
+            0,
+            0.0,
+            0,
+            -3600
+          ],
+          "best_cleared_area_m2": 674.5240356183876
+        }
+      ]
+    }
+  },
+  "audit": {
+    "resume_identical_search_selection_validation_and_replays": true,
+    "resume_new_ca_calls": 0,
+    "base_case_files_hash_verified": 48,
+    "old_R1_protocol_report_unchanged": true,
+    "frozen_source_hashes_verified": 74,
+    "original_invocation": {
+      "search_solver_calls": 146,
+      "validation_solver_calls": 10,
+      "full_solver_calls": 3,
+      "warm_hits": 39,
+      "cache_hits": 6
+    },
+    "resume_cache_hits": 134,
+    "all_full_replays_count_checked": 3,
+    "browser_replay_60min": {
+      "time_min": 60,
+      "ignited_cells": 576,
+      "burning_cells": 224,
+      "burned_out_cells": 352,
+      "ignited_structures": 0,
+      "heated_not_ignited_structures": 1,
+      "screenshot": "replay-inner-60min.png"
+    }
+  }
+}
