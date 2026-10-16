@@ -54,10 +54,99 @@ def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True).encode()).hexdigest()
 
 
+def compatible_training_cache(study, protocol, engine, scenarios):
+    """Audit physical sources/inputs and original signatures; import training only."""
+    study = Path(study).resolve()
+    previous = json.loads((study / "protocol.json").read_text())
+    for key in (
+        "case_sha256",
+        "annotated_structures_sha256",
+        "zone_geometry_sha256",
+        "window",
+        "training",
+        "held_out",
+        "search_domain",
+    ):
+        if digest(previous[key]) != digest(protocol[key]):
+            raise ValueError(f"warm cache input mismatch: {key}")
+    model_names = [
+        name
+        for name in protocol["source_hashes"]
+        if name.startswith("src/pyfireca/village/")
+        or name
+        in {
+            "src/pyfireca/planning/engines/village.py",
+            "src/pyfireca/planning/interventions/clearing.py",
+            "src/pyfireca/planning/evaluation.py",
+            "src/pyfireca/planning/effectiveness.py",
+            "scripts/run_batuan_intervention_study.py",
+        }
+    ]
+    for name in model_names:
+        expected = protocol["source_hashes"][name]
+        if previous["source_hashes"].get(name) != expected:
+            raise ValueError(f"warm cache model mismatch: {name}")
+        if hashlib.sha256((study / "source_snapshot" / name).read_bytes()).hexdigest() != expected:
+            raise ValueError(f"warm cache source snapshot mismatch: {name}")
+    if (
+        json.loads((study / "input-lock.json").read_text())["crop_case_sha256"]
+        != engine.case_sha256
+    ):
+        raise ValueError("warm cache search-case mismatch")
+    imported = {}
+    for path in sorted((study / "evaluation-cache").glob("*.json")):
+        stored = json.loads(path.read_text())
+        payload = stored["payload"]
+        if stored["payload_sha256"] != digest(payload):
+            raise ValueError("warm cache payload checksum mismatch")
+        if payload["status"] != "ok":
+            continue
+        evaluations = payload["evaluations"]
+        if len(evaluations) != len(scenarios):
+            raise ValueError("warm cache scenario count mismatch")
+        plan = clearing_plan_from_mapping(evaluations[0]["intervention"])
+        original_code = payload.get("warm_origin", {}).get("code", previous["code"])
+        for record, scenario in zip(evaluations, scenarios, strict=True):
+            if (
+                record["case_sha256"] != engine.case_sha256
+                or record["scenario_id"] != scenario.scenario_id
+                or record["horizon_s"] != scenario.horizon_s
+                or record["intervention_id"] != plan.plan_id
+                or record["diagnostics"]["code_version"] != original_code
+            ):
+                raise ValueError("warm cache record identity mismatch")
+            signature = hashlib.sha256()
+            for item in (
+                engine.case_sha256,
+                original_code,
+                asdict(engine.transport),
+                asdict(scenario),
+                plan.to_mapping(),
+                engine.structure_types,
+            ):
+                signature.update(json.dumps(item, sort_keys=True).encode())
+            signature.update(engine.zones[plan.zone_id].tobytes())
+            if signature.hexdigest() != record["evaluation_sha256"]:
+                raise ValueError("warm cache evaluation signature mismatch")
+        imported[plan.plan_id] = {
+            **payload,
+            "warm_origin": {
+                "study": str(study),
+                "cache_file": str(path),
+                "code": original_code,
+                "source_study_code": previous["code"],
+                "payload_sha256": stored["payload_sha256"],
+            },
+        }
+    return imported
+
+
 class TrainingOracle:
     """Context-bound on-disk memoization; never reads validation outcomes."""
 
-    def __init__(self, engine, scenarios, protected_scenarios, directory, context):
+    def __init__(
+        self, engine, scenarios, protected_scenarios, directory, context, warm_records=None
+    ):
         self.engine, self.scenarios = engine, scenarios
         self.directory = Path(directory)
         self.context = digest(
@@ -75,6 +164,8 @@ class TrainingOracle:
         )
         self.directory.mkdir(parents=True, exist_ok=True)
         self.cache_hits = self.solver_calls = 0
+        self.warm_hits = 0
+        self.warm_records = warm_records or {}
         grid = engine.bundle.request.grid
         self.protected_cells = []
         for scenario in protected_scenarios:
@@ -104,16 +195,27 @@ class TrainingOracle:
                 footprint = clearing_footprint(plan)
                 if any(footprint.intersection(cell).area > 1e-8 for cell in self.protected_cells):
                     raise SearchRejected("candidate overlaps a protected ignition cell")
-                evaluations = []
-                for scenario in self.scenarios:
-                    result = self.engine.evaluate(scenario, plan)
-                    self.solver_calls += 1
-                    if result.metrics["burning_reached_domain_edge"]:
-                        raise SearchRejected("training fire reached domain edge; invalid window")
-                    evaluations.append(result.to_mapping())
-                payload = {"status": "ok", "evaluations": evaluations}
+                if plan.plan_id in self.warm_records:
+                    payload = self.warm_records[plan.plan_id]
+                    cached = clearing_plan_from_mapping(payload["evaluations"][0]["intervention"])
+                    if digest(cached.to_mapping()) != digest(plan.to_mapping()):
+                        raise ValueError("warm cache plan geometry mismatch")
+                    self.warm_hits += 1
+                else:
+                    evaluations = []
+                    for scenario in self.scenarios:
+                        result = self.engine.evaluate(scenario, plan)
+                        self.solver_calls += 1
+                        if result.metrics["burning_reached_domain_edge"]:
+                            raise SearchRejected(
+                                "training fire reached domain edge; invalid window"
+                            )
+                        evaluations.append(result.to_mapping())
+                    payload = {"status": "ok", "evaluations": evaluations}
             except InterventionConflict as exc:
                 payload = {"status": "rejected", "reason": str(exc)}
+            # Fresh and cached records expose identical JSON geometry types.
+            payload = json.loads(json.dumps(payload))
             dump(path, {"key": key, "payload": payload, "payload_sha256": digest(payload)})
         if payload["status"] == "rejected":
             raise SearchRejected(payload["reason"])
@@ -182,6 +284,11 @@ def main():
     )
     parser.add_argument("--search-domain", choices=("local", "full"), default="local")
     parser.add_argument("--resume", action="store_true")
+    parser.add_argument(
+        "--warm-cache-from",
+        type=Path,
+        help="reuse audited physically identical training results from a study",
+    )
     parser.add_argument("--skip-replays", action="store_true")
     args = parser.parse_args()
     require_number("horizon_s", args.horizon_s, positive=True)
@@ -267,6 +374,7 @@ def main():
         "area_policy": "union of actual cleared vegetation, not requested corridor area",
         "money_objective": False,
         "global_optimality_guaranteed": False,
+        "warm_cache_from": str(args.warm_cache_from.resolve()) if args.warm_cache_from else None,
     }
     # SHA of code rather than moving HEAD is the resume compatibility key.
     if args.resume:
@@ -318,12 +426,27 @@ def main():
         output / "search-zones.geojson",
         geographic_feature(mapping(near), {"status": "proxy"}, grid.crs),
     )
+    warm_records = (
+        compatible_training_cache(args.warm_cache_from, protocol, engine, scenarios[:2])
+        if args.warm_cache_from
+        else {}
+    )
+    dump(
+        output / "warm-cache-audit.json",
+        {
+            "source": protocol["warm_cache_from"],
+            "compatible_training_plans": len(warm_records),
+            "validation_imported": False,
+            "original_evaluation_signatures_preserved": True,
+        },
+    )
     oracle = TrainingOracle(
         engine,
         scenarios[:2],
         scenarios,
         output / "evaluation-cache",
         digest({"protocol": protocol, "crop_case": engine.case_sha256, "structure_types": types}),
+        warm_records=warm_records,
     )
     # Require a valid no-treatment boundary check before searching protective interventions.
     baseline = canonical_plan("outer_proxy", ())
@@ -371,6 +494,7 @@ def main():
                             "effectiveness": event.get("effectiveness"),
                             "area_m2": event.get("cleared_area_m2"),
                             "cache_hits": oracle.cache_hits,
+                            "warm_hits": oracle.warm_hits,
                             "solver_calls": oracle.solver_calls,
                         }
                     ),
@@ -458,6 +582,7 @@ def main():
         parent_unchanged=request_fingerprint(parent.request) == before,
         cache_hits=oracle.cache_hits,
         search_solver_calls=oracle.solver_calls,
+        warm_hits=oracle.warm_hits,
         validation_solver_calls=validation_oracle.solver_calls,
         full_solver_calls=full_oracle.solver_calls,
     )

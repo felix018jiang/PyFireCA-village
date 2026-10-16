@@ -201,6 +201,57 @@ def _proposal(paths, other, operation, step, rng, config, anchors):
     return tuple(values)
 
 
+def _elite_poll(paths, step, config):
+    """Systematically refine the current incumbent, rather than hoping to sample it."""
+    for i, path in enumerate(paths):
+
+        def changed(points, width=path.width_m, i=i):
+            values = list(paths)
+            try:
+                values[i] = ClearingPath(tuple(points), width)
+            except ValueError:
+                return None
+            return tuple(values)
+
+        for j, k in ((0, 1), (-1, -2)):
+            points = list(path.points_m)
+            dx, dy = points[k][0] - points[j][0], points[k][1] - points[j][1]
+            length = hypot(dx, dy)
+            travel = min(step, length * 0.45)
+            points[j] = (points[j][0] + travel * dx / length, points[j][1] + travel * dy / length)
+            yield changed(points), "elite_shorten"
+        for sign in (-1, 1):
+            width = min(config.width_max_m, max(config.width_min_m, path.width_m + sign * step / 2))
+            yield changed(path.points_m, width), "elite_width"
+        if len(path.points_m) < config.max_vertices:
+            for sign in (-1, 1):
+                points = list(path.points_m)
+                j = max(
+                    range(len(points) - 1),
+                    key=lambda k: hypot(
+                        points[k + 1][0] - points[k][0], points[k + 1][1] - points[k][1]
+                    ),
+                )
+                a, b = points[j], points[j + 1]
+                length = hypot(b[0] - a[0], b[1] - a[1])
+                points.insert(
+                    j + 1,
+                    (
+                        (a[0] + b[0]) / 2 - (b[1] - a[1]) / length * sign * step,
+                        (a[1] + b[1]) / 2 + (b[0] - a[0]) / length * sign * step,
+                    ),
+                )
+                yield changed(points), "elite_bend"
+        for dx, dy in ((step, 0), (-step, 0), (0, step), (0, -step)):
+            yield changed([(x + dx, y + dy) for x, y in path.points_m]), "elite_translate"
+        for j in range(1, len(path.points_m) - 1):
+            points = list(path.points_m)
+            del points[j]
+            yield changed(points), "elite_simplify"
+        if len(paths) > 1:
+            yield tuple(p for j, p in enumerate(paths) if j != i), "elite_remove_path"
+
+
 def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, progress=None):
     """Run deterministic replayable search. Only the training oracle is visible.
 
@@ -284,6 +335,7 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
         "restart",
     )
     generation, op_index = 0, 0
+    poll_identity, poll = None, iter(())
     stop_reason = "evaluation_limit"
     while len(records) < config.max_evaluations:
         feasible = [r for r in records if r["status"] == "ok"]
@@ -300,6 +352,21 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
         before = rank_key(ordered[0], config.objective)
         generation += 1
         count = len(records)
+        identity = (ordered[0]["plan_id"], step)
+        if identity != poll_identity:
+            poll_identity = identity
+            poll = iter(_elite_poll(plans[identity[0]].paths, step, config))
+        # Half of each batch systematically polls the incumbent; the remaining
+        # half explores alternate geometries/topologies and global restarts.
+        while len(records) < min(count + max(1, config.batch_size // 2), config.max_evaluations):
+            try:
+                paths, operation = next(poll)
+            except StopIteration:
+                break
+            if paths is None:
+                invalid += 1
+                continue
+            visit(paths, operation, generation)
         attempts = 0
         while len(records) < min(count + config.batch_size, config.max_evaluations):
             if attempts >= config.batch_size * 40:

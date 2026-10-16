@@ -1,7 +1,9 @@
 """A resumed optimizer must not reuse results from another scene/protocol."""
 
+import hashlib
 import importlib.util
 import json
+from dataclasses import asdict
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -13,6 +15,7 @@ from pyfireca.planning.contracts import Ignition
 from pyfireca.planning.evaluation import EvaluationResult, EvaluationScenario
 from pyfireca.planning.interventions.clearing import ClearingPath
 from pyfireca.village.domain import VillageGridSpec
+from pyfireca.village.transport_v3 import V3RadiativeTransportParameters
 
 ROOT = Path(__file__).parents[2]
 
@@ -34,6 +37,7 @@ class Engine:
         self.case_sha256, self.code_version = "case", "code"
         self.zones = {"z": np.ones((5, 5), dtype=bool)}
         self.structure_types = {}
+        self.transport = V3RadiativeTransportParameters(8, 0.5, 0, 0, 0, 0)
         self.calls = 0
 
     def evaluate(self, scenario, plan):
@@ -47,8 +51,8 @@ class Engine:
             plan.plan_id,
             scenario.horizon_s,
             {"burning_reached_domain_edge": False},
-            {"cleared_area_m2": 10},
-            {},
+            {**plan.to_mapping(), "cleared_area_m2": 10},
+            {"code_version": self.code_version},
             {},
         )
 
@@ -103,3 +107,67 @@ def test_scenario_change_does_not_hit_the_old_cache(script, tmp_path):
     changed = EvaluationScenario("s", scenario.ignitions, 120)
     script.TrainingOracle(engine, (changed,), (scenario,), tmp_path, "x")(plan)
     assert engine.calls == 2
+
+
+def test_warm_cache_audits_physics_and_retains_original_signature(script, tmp_path):
+    engine = Engine()
+    scenario, plan = inputs()
+    old = tmp_path / "old"
+    old.mkdir()
+    name = "src/pyfireca/planning/engines/village.py"
+    source = old / "source_snapshot" / name
+    source.parent.mkdir(parents=True)
+    source.write_text("unchanged physical evaluator")
+    protocol = {
+        "code": engine.code_version,
+        "case_sha256": "case",
+        "annotated_structures_sha256": "structures",
+        "zone_geometry_sha256": "zone",
+        "window": [0, 5, 0, 5],
+        "training": [asdict(scenario)],
+        "held_out": asdict(scenario),
+        "search_domain": "local",
+        "source_hashes": {name: hashlib.sha256(source.read_bytes()).hexdigest()},
+    }
+    script.dump(old / "protocol.json", protocol)
+    script.dump(old / "input-lock.json", {"crop_case_sha256": "case"})
+    record = engine.evaluate(scenario, plan).to_mapping()
+    signature = hashlib.sha256()
+    for item in (
+        engine.case_sha256,
+        engine.code_version,
+        asdict(engine.transport),
+        asdict(scenario),
+        plan.to_mapping(),
+        engine.structure_types,
+    ):
+        signature.update(json.dumps(item, sort_keys=True).encode())
+    signature.update(engine.zones[plan.zone_id].tobytes())
+    record["evaluation_sha256"] = signature.hexdigest()
+    payload = {"status": "ok", "evaluations": [record]}
+    script.dump(
+        old / "evaluation-cache" / "cached.json",
+        {"payload": payload, "payload_sha256": script.digest(payload)},
+    )
+    new_protocol = {**protocol, "code": "changed optimizer"}
+    engine.code_version = "changed optimizer"
+    engine.calls = 0
+    warm = script.compatible_training_cache(old, new_protocol, engine, (scenario,))
+    oracle = script.TrainingOracle(
+        engine, (scenario,), (scenario,), tmp_path / "new", "new experiment", warm_records=warm
+    )
+    result = oracle(plan)[0]
+    assert result.evaluation_sha256 == record["evaluation_sha256"]
+    assert result.diagnostics["code_version"] == "code"
+    assert oracle.warm_hits == 1
+    assert engine.calls == 0
+    bad = {**new_protocol, "source_hashes": {name: "changed physics"}}
+    with pytest.raises(ValueError, match="model mismatch"):
+        script.compatible_training_cache(old, bad, engine, (scenario,))
+    record["evaluation_sha256"] = "forged"
+    script.dump(
+        old / "evaluation-cache" / "cached.json",
+        {"payload": payload, "payload_sha256": script.digest(payload)},
+    )
+    with pytest.raises(ValueError, match="evaluation signature mismatch"):
+        script.compatible_training_cache(old, new_protocol, engine, (scenario,))

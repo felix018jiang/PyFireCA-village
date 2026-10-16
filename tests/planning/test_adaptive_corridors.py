@@ -164,3 +164,16 @@ def test_pareto_set_respects_full_effectiveness_tuple_and_area():
         record("dominated", [2, 2, 200, 0, -100], 50),
     ]
     assert {r["plan_id"] for r in pareto_records(records)} == {"small", "protective"}
+
+
+def test_incumbent_refinement_reduces_land_without_losing_protection():
+    def oracle(plan):
+        protected = any(
+            abs(p.points_m[-1][0] - p.points_m[0][0]) >= 25 and p.width_m >= 5 for p in plan.paths
+        )
+        return [evaluation(plan, 0 if protected else 1, clearing_footprint(plan).area)]
+
+    result = run_search(oracle, config=CorridorSearchConfig(max_evaluations=70))
+    assert result["best_key"][0] == 0
+    assert result["best_key"][-1] < 400  # Initial protected corridor uses 40 m x 10 m.
+    assert any(r["operator"].startswith("elite_") for r in result["records"])
