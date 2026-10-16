@@ -50,6 +50,42 @@ def history_svg(search):
     return f'<svg viewBox="0 0 600 255" role="img" aria-label="已满足保护约束的当前最好面积收敛曲线"><path d="M45 25V205H555" fill="none" stroke="#708495"/><polyline points="{path}" fill="none" stroke="#62dcc7" stroke-width="2.5"/><text x="45" y="18">清理面积（上限 {max_area:.0f} m²）</text><text x="360" y="240">累计方案请求 → {cap}</text></svg>'
 
 
+def annotate_replay_objective(study, report):
+    """Correct a legacy exporter display label; preserve all physical arrays."""
+    audit_path = study / "replay-display-annotations.json"
+    changes = json.loads(audit_path.read_text()) if audit_path.exists() else []
+    objective = "joint_90min_house_bridge_protection_then_minimum_actual_clearance_area"
+    for label, entry in report["full_domain_comparison"].items():
+        root = study / "full" / entry["evaluation"]["intervention_id"]
+        for relative, nested in (
+            ("case/manifest.json", "metadata"),
+            ("run/run.json", None),
+            ("run/viewer/manifest.json", "scenario"),
+        ):
+            path = root / relative
+            original = path.read_bytes()
+            value = json.loads(original)
+            target = value[nested] if nested else value
+            if target.get("research_objective") == objective:
+                continue
+            before = target.get("research_objective")
+            target["research_objective"] = objective
+            target["research_selection_sha256"] = report["selection_sha256"]
+            dump(path, value)
+            changes.append(
+                {
+                    "label": label,
+                    "path": str(path.relative_to(study)),
+                    "previous_objective": before,
+                    "objective": objective,
+                    "before_sha256": hashlib.sha256(original).hexdigest(),
+                    "after_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
+                    "changes_physics_or_arrays": False,
+                }
+            )
+    dump(audit_path, changes)
+
+
 def render(study):
     study = Path(study).resolve()
     report = json.loads((study / "report.json").read_text())
@@ -61,6 +97,7 @@ def render(study):
         or digest(report["chosen_plans"]) != frozen["sha256"]
     ):
         raise ValueError("frozen selection checksum mismatch")
+    annotate_replay_objective(study, report)
     coverage_note = ""
     coverage_path = study / "protection-coverage.json"
     if coverage_path.exists():
