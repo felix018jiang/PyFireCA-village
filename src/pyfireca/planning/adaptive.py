@@ -16,7 +16,7 @@ from math import cos, hypot, radians, sin
 from shapely.geometry import LineString, box
 
 from pyfireca.planning.contracts import require_number
-from pyfireca.planning.effectiveness import effectiveness_score
+from pyfireca.planning.effectiveness import effectiveness_score, joint_protection_score
 from pyfireca.planning.interventions.clearing import (
     ClearingPath,
     ClearingPlan,
@@ -40,6 +40,7 @@ class CorridorSearchConfig:
     initial_step_m: float = 20.0
     min_step_m: float = 2.5
     objective: str = "effectiveness_then_area"
+    geometry_family: str = "any"
 
     def __post_init__(self):
         for name in ("max_evaluations", "batch_size", "beam_size", "max_paths", "max_vertices"):
@@ -65,8 +66,18 @@ class CorridorSearchConfig:
             or self.min_step_m > self.initial_step_m
         ):
             raise ValueError("invalid search ranges")
-        if self.objective not in ("effectiveness_only", "effectiveness_then_area"):
+        if self.objective not in (
+            "effectiveness_only",
+            "effectiveness_then_area",
+            "joint_protection_then_area",
+        ):
             raise ValueError("unsupported objective")
+        if self.geometry_family not in ("any", "straight", "polyline", "multiple"):
+            raise ValueError("unsupported geometry family")
+        if self.geometry_family == "polyline" and self.max_vertices < 3:
+            raise ValueError("polyline search requires at least three vertices")
+        if self.geometry_family == "multiple" and self.max_paths < 2:
+            raise ValueError("multiple search requires at least two paths")
 
 
 class SearchRejected(InterventionConflict):
@@ -93,9 +104,28 @@ def paths_from_plan(plan):
     return (*plan.paths, *(ClearingPath((s.start_m, s.end_m), s.width_m) for s in plan.strips))
 
 
+def matches_family(plan, family):
+    """Strict shape classes for controlled comparisons, without forcing a winner."""
+    paths = paths_from_plan(plan)
+    if family == "any":
+        return True
+    if family == "multiple":
+        return len(paths) >= 2
+    if len(paths) != 1:
+        return False
+    points = paths[0].points_m
+    if family == "straight":
+        return len(points) == 2
+    # Collinear extra nodes do not qualify as a bent route.
+    return len(points) >= 3 and any(
+        abs((b[0] - a[0]) * (c[1] - b[1]) - (b[1] - a[1]) * (c[0] - b[0])) > 1e-6
+        for a, b, c in zip(points, points[1:], points[2:], strict=False)
+    )
+
+
 def rank_key(record, objective):
     score = tuple(record["effectiveness"])
-    return (*score, record["cleared_area_m2"]) if objective == "effectiveness_then_area" else score
+    return (*score, record["cleared_area_m2"]) if objective != "effectiveness_only" else score
 
 
 def pareto_records(records):
@@ -277,6 +307,8 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
             plan = canonical_plan(zone_id, paths)
             if len(plan.paths) > config.max_paths:
                 raise ValueError("too many paths")
+            if plan.paths and not matches_family(plan, config.geometry_family):
+                raise ValueError("candidate outside declared geometry family")
             for path in plan.paths:
                 length = LineString(path.points_m).length
                 if (
@@ -309,7 +341,13 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
             require_number("cleared area", area)
             record.update(
                 status="ok",
-                effectiveness=list(effectiveness_score(evaluations)),
+                effectiveness=list(
+                    (
+                        joint_protection_score
+                        if config.objective == "joint_protection_then_area"
+                        else effectiveness_score
+                    )(evaluations)
+                ),
                 cleared_area_m2=area,
                 training_metrics=[e.metrics for e in evaluations],
             )
@@ -338,7 +376,11 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
     poll_identity, poll = None, iter(())
     stop_reason = "evaluation_limit"
     while len(records) < config.max_evaluations:
-        feasible = [r for r in records if r["status"] == "ok"]
+        feasible = [
+            r
+            for r in records
+            if r["status"] == "ok" and matches_family(plans[r["plan_id"]], config.geometry_family)
+        ]
         if not feasible:
             stop_reason = "no_feasible_start"
             break
@@ -382,7 +424,11 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
                 invalid += 1
                 continue
             visit(paths, operation, generation)
-        feasible = [r for r in records if r["status"] == "ok"]
+        feasible = [
+            r
+            for r in records
+            if r["status"] == "ok" and matches_family(plans[r["plan_id"]], config.geometry_family)
+        ]
         best = min(feasible, key=lambda r: (rank_key(r, config.objective), r["plan_id"]))
         stagnation = stagnation + 1 if rank_key(best, config.objective) >= before else 0
         history.append(
@@ -403,7 +449,11 @@ def search_corridors(*, zone_id, bounds, anchors, seeds, evaluate, config=None, 
         if stagnation >= 2:
             step = max(config.min_step_m, step / 2)
             stagnation = 0
-    feasible = [r for r in records if r["status"] == "ok"]
+    feasible = [
+        r
+        for r in records
+        if r["status"] == "ok" and matches_family(plans[r["plan_id"]], config.geometry_family)
+    ]
     if not feasible:
         raise ValueError("search produced no valid evaluations")
     best_key = min(rank_key(r, config.objective) for r in feasible)

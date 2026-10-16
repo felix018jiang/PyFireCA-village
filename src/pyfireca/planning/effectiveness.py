@@ -23,3 +23,30 @@ def effectiveness_score(evaluations):
         mean(m["ignited_bridge_count"] for m in metrics),
         -mean(m["house_ignition_free_time_s"] for m in metrics),
     )
+
+
+def joint_protection_score(evaluations):
+    """Protect houses AND bridges before minimizing land in the caller.
+
+    Zero in the first component is exactly the all-scenarios protection
+    constraint. No probability interpretation is assigned to a stress-test set.
+    The historical effectiveness_score ordering remains unchanged.
+    """
+    effectiveness_score(evaluations)  # Same horizon and boundary checks.
+    metrics = [item.metrics for item in evaluations]
+    totals = [m["ignited_house_count"] + m["ignited_bridge_count"] for m in metrics]
+    first_times = [
+        min(
+            (entry["time_s"] for entry in item.metrics.get("building_first_ignitions", [])),
+            default=item.horizon_s,
+        )
+        for item in evaluations
+    ]
+    return (
+        max(totals),
+        mean(totals),
+        max(m["ignited_bridge_count"] for m in metrics),
+        max(m["ignited_house_count"] for m in metrics),
+        mean(m["ignited_building_area_m2"] for m in metrics),
+        -min(first_times),
+    )
