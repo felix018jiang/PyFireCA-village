@@ -1,5 +1,7 @@
 # Project status
 
+> **2026-10-16 当前状态：**岜团村连续坡面接触案例可运行，卫星材质与防火规划三模块进入独立研究开发路线，具体缺口和次序见[研究开发计划](VILLAGE_FIRE_RESEARCH_PLAN.md)。规划已落文档，统一动态评估接口与优化接入仍待开发。模拟器基线提交`f6c1632`、标签`batuan-simulator-20261016`已保存；本次全套回归1021 passed、9条依赖弃用警告。影像/案例已另做逐文件校验的本地备份，见[版本管理与恢复](VERSIONING_AND_RECOVERY.md)。下文保留各阶段历史记录。
+
 > **Latest replay, 2026-10-05:** component states now have physical-grid browser replay and opt-in ignition/duration selection, with full saved configuration restoration and explicit model matching. Fixed material moisture needs no per-cell entry; partial burn does not imply building loss. 791 repository tests pass, plus actual desktop/mobile browser submission and wheel checks. See [component replay](COMPONENT_VIEWER_V3.md) and plan28.12. Earlier next-viewer statements below are historical. Dynamic flame/wind and field calibration remain open.
 
 > **Latest geometry, 2026-10-04:** opt-in complete finite component radiation now replaces inherited edges, with analytic shadow clipping, segmented source-height quadrature, opaque receiver and stepwise terrain visibility. 50 fixed solves including two finer references pass; 752 tests pass. Formal repeats compare 2996 non-timing files. These are small synthetic scenes, not large-domain/field validation. See [finite graph](FINITE_COMPONENT_RADIATION_V3.md) and plan28.11. Next: component state viewer, then dynamic flame/wind with stated support domains.

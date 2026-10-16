@@ -1,0 +1,51 @@
+{
+  "schema_version": "pyfireca-research-baseline-1",
+  "baseline_date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "code_tag": "batuan-simulator-20261016",
+  "code_commit": "f6c163220f2530cbefca366b8afc82a492492872",
+  "plan_branch": "codex/village-research-plan-20261016",
+  "backup_directory": "/Users/tone/Documents/github/PyFireCA-backups/batuan-20261016-f6c1632",
+  "data_archive": {
+    "filename": "batuan-data.tar.gz",
+    "all_members_sha256_verified": true,
+    "file_count": 834,
+    "archive_sha256": "49e3c145396df07fc2beed67cb8e871ea71815d5085a7dd19fdf3666bfc34779",
+    "archive_bytes": 276458308
+  },
+  "data_manifest": {
+    "filename": "data-manifest.json",
+    "sha256": "6090955faf0c74bfa5021e048e28dc012901bee43b681a853a5af2fc207a0c03",
+    "uncompressed_bytes": 1296583612,
+    "roots": [
+      "data/local/imagery/batuan-mosaic-20261014",
+      "data/local/elevation/fabdem-cache/N25E109_FABDEM_V1-2.tif",
+      "runs/batuan-contact-20261016",
+      "runs/batuan-contact-geometry-audit-20261016",
+      "runs/batuan-slope-contact-20261016/case",
+      "runs/batuan-slope-contact-20261016/run",
+      "runs/batuan-slope-contact-20261016/spatial",
+      "runs/batuan-slope-contact-20261016/buildings",
+      "runs/batuan-slope-contact-20261016/summary.json",
+      "runs/batuan-slope-contact-20261016/vegetation-to-buildings-preview.jpg",
+      "runs/batuan-slope-contact-20261016/interactive/bd9190cd7eaa41489c5772db56759dc5"
+    ]
+  },
+  "environment_manifest": {
+    "filename": "environment.json",
+    "sha256": "d6fa18fa60cc1c1f2fee10533030dfec346753152e83728e360cf755035cf479"
+  },
+  "runtime_case": "runs/batuan-slope-contact-20261016",
+  "reference_case": "runs/batuan-contact-20261016",
+  "geometry_report": "runs/batuan-contact-geometry-audit-20261016/report.json",
+  "saved_interactive_job": "bd9190cd7eaa41489c5772db56759dc5",
+  "evidence": "synthetic_fuels_and_RGB_inference_with_manual_structure_geometry_not_field_calibrated",
+  "validation": {
+    "command": ".venv/bin/python -m pytest -q",
+    "tested_code_commit": "f6c163220f2530cbefca366b8afc82a492492872",
+    "passed": 1021,
+    "warnings": 9,
+    "elapsed_s": 89.38,
+    "warning_scope": "Rasterio deprecation and polygon matrix multiplication pending deprecation"
+  }
+}
