@@ -156,6 +156,15 @@ def render(study):
     snapshot = study / "render_source_snapshot" / Path(__file__).name
     snapshot.parent.mkdir(parents=True, exist_ok=True)
     snapshot.write_bytes(Path(__file__).read_bytes())
+    render_hashes = {}
+    for name in (
+        Path(__file__).name,
+        "render_batuan_adaptive_report.py",
+        "render_batuan_intervention_report.py",
+    ):
+        dependency = Path(__file__).with_name(name)
+        (snapshot.parent / name).write_bytes(dependency.read_bytes())
+        render_hashes[name] = hashlib.sha256(dependency.read_bytes()).hexdigest()
     dump(
         study / "render-provenance.json",
         {
@@ -163,6 +172,7 @@ def render(study):
             "selection_sha256": frozen["sha256"],
             "html_sha256": hashlib.sha256(source.encode()).hexdigest(),
             "renderer_sha256": hashlib.sha256(snapshot.read_bytes()).hexdigest(),
+            "render_source_hashes": render_hashes,
             "validation_used_for_reselection": False,
         },
     )

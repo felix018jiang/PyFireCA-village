@@ -8,15 +8,16 @@ result and exports its replays. No held-out result can feed search.
 from __future__ import annotations
 
 import argparse
+import fcntl
 import hashlib
 import json
 from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 from time import sleep
 
-from run_batuan_adaptive_search import digest, dump
+from run_batuan_adaptive_search import TrainingOracle, digest, dump, save_checked_replay
 from run_batuan_intervention_study import engine_for
-from run_batuan_protection_search import LockedOracle, context, scenarios_from
+from run_batuan_protection_search import context, scenarios_from
 
 from pyfireca.planning.interventions.clearing import clearing_plan_from_mapping
 from pyfireca.village.workflow_v3 import load_v3_case_bundle
@@ -31,7 +32,7 @@ def check_one(study, label, raw):
     near, types, _ = context(base)
     engine = engine_for(base, near, types, protocol["code"])
     scenarios = scenarios_from(protocol, "training") + scenarios_from(protocol, "held_out")
-    oracle = LockedOracle(
+    oracle = TrainingOracle(
         engine,
         scenarios,
         scenarios,
@@ -39,11 +40,22 @@ def check_one(study, label, raw):
         digest({"protocol": protocol, "stage": "full"}),
     )
     plan = clearing_plan_from_mapping(raw)
-    records = oracle(plan)
+    # Hold the main oracle's exact plan lock through replay completion too.
+    # The main job cannot rename a partially written replay while this worker
+    # owns it; after a crash its normal interrupted-directory recovery applies.
+    key = digest({"context": oracle.context, "plan": plan.to_mapping()})
+    with (oracle.directory / (key + ".lock")).open("a") as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        records = oracle(plan)
+        viewer = save_checked_replay(
+            engine, scenarios[0], plan, study / "full" / plan.plan_id, records[0]
+        )
     audit = {
         "label": label,
         "solver_calls": oracle.solver_calls,
         "cache_hits": oracle.cache_hits,
+        "viewer": viewer,
+        "replay_exported_under_plan_lock": True,
         "evaluation_signatures": [r.evaluation_sha256 for r in records],
     }
     dump(study / "full-prefetch" / (label + ".json"), audit)
