@@ -245,6 +245,38 @@ def main(output):
             + images
             + '<p><a href="plans.utm49n.geojson">候选方案GIS文件（UTM49N）</a></p>'
         )
+    channel_section = ""
+    channel_file = ROOT / "docs/results/batuan-pair-channels-20261017.json"
+    if channel_file.exists():
+        channels = load(channel_file)["rows"]
+        lines = []
+        for profile in ("single_cell", "source_roof_cells"):
+            for owner in (162, 179):
+                values = []
+                for channel in ("both", "radiation_only", "contact_only"):
+                    row = next(
+                        x
+                        for x in channels
+                        if x["profile"] == profile
+                        and x["source_owner"] == owner
+                        and x["channel"] == channel
+                    )
+                    value = row["first_receiver_ignition_s"]
+                    values.append("未引燃" if value is None else f"{value:.0f}秒")
+                title = "单格" if profile == "single_cell" else "屋顶同时"
+                building = "B0163" if owner == 162 else "B0180"
+                lines.append(
+                    f"<tr><td>{title} / {building}</td>"
+                    + "".join(f"<td>{value}</td>" for value in values)
+                    + "</tr>"
+                )
+        channel_section = (
+            "<section><h2>最窄建筑对：传热通道诊断</h2>"
+            "<p>5米栅格未独立解析真实3.5米间隙。以下为模型通道对照，不能作为真实安全间距的验证。</p>"
+            "<table><tr><th>火源</th><th>全部通道</th><th>仅辐射</th><th>仅接触</th></tr>"
+            + "".join(lines)
+            + "</table></section>"
+        )
     document = (
         """<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width">
 <title>岜团村：建筑对与联合防火线试验</title><style>
@@ -260,6 +292,7 @@ aside{border-left:4px solid #387c81;background:#eaf1ef;padding:16px}a{color:#176
 <section><h2>联合优化与独立对照</h2>"""
         + joint_section
         + "</section>"
+        + channel_section
         + "".join(cards)
         + "</html>"
     )
