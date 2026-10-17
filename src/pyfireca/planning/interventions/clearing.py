@@ -141,6 +141,20 @@ def prepare_clearing(request, plan, transport, *, allowed_mask=None, ignitions=(
     """
     if not isinstance(plan, ClearingPlan):
         raise TypeError("intervention must be ClearingPlan")
+    return _prepare_clearing_footprint(
+        request,
+        plan,
+        transport,
+        clearing_footprint(plan),
+        allowed_mask=allowed_mask,
+        ignitions=ignitions,
+    )
+
+
+def _prepare_clearing_footprint(
+    request, plan, transport, footprint, *, allowed_mask=None, ignitions=()
+):
+    """Apply explicitly scoped geometry exactly once, preserving energy rules."""
     fraction = np.zeros(request.grid.shape)
     summary = {
         **plan.to_mapping(),
@@ -155,7 +169,7 @@ def prepare_clearing(request, plan, transport, *, allowed_mask=None, ignitions=(
         "partial_cell_model": "homogeneous_remaining_fuel_not_resolved_subcell_gap",
         "radiation_policy": "transparent_clearance_preserves_cross_strip_radiation",
     }
-    if not plan.strips and not plan.paths:
+    if footprint.is_empty:
         return request, fraction, summary
     grid = request.grid
     eligible = request.burnable_mask & (request.building_index < 0)
@@ -164,7 +178,6 @@ def prepare_clearing(request, plan, transport, *, allowed_mask=None, ignitions=(
         if allowed.dtype != np.bool_ or allowed.shape != grid.shape:
             raise ValueError("construction zone must be boolean and match grid")
         eligible &= allowed
-    footprint = clearing_footprint(plan)
     extent = box(
         grid.x_min_m,
         grid.y_max_m - grid.height * grid.cell_size_m,
