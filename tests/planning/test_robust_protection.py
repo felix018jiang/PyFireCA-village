@@ -173,3 +173,48 @@ def test_failure_stopping_preserves_first_ignition_and_default_full_run():
     b = safe.evaluate(module.scenario(safe), plan, stop_at_first_structure_ignition=True)
     assert b.diagnostics["reached_requested_horizon"]
     assert a.metrics == b.metrics
+
+
+def test_area_bound_requires_complete_certificate_and_preserves_smaller_candidates(monkeypatch):
+    import importlib
+    from types import SimpleNamespace
+
+    monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
+    module = importlib.import_module("run_batuan_multiscenario_search")
+    oracle = module.ScenarioOracle.__new__(module.ScenarioOracle)
+    oracle.best_area = None
+    oracle.best_plan_id = None
+    oracle.area_pruned = {}
+    oracle.preflight = lambda plan: None
+    oracle.protocol = {
+        "training": [{"scenario_id": "a", "environment_id": "env", "points_m": [[0, 0]]}]
+    }
+    oracle.engine = lambda env: SimpleNamespace(
+        prepare=lambda sc, p: (None, None, {"cleared_area_m2": p.area})
+    )
+    calls = []
+
+    def screen(plan):
+        calls.append(plan.plan_id)
+        if plan.area == 2:
+            return ProtectionScreen(("a", "b"), (record("a", bridges=1),))
+        return ProtectionScreen(
+            ("a", "b"),
+            tuple(
+                replace(record(sid), intervention={"cleared_area_m2": plan.area})
+                for sid in ("a", "b")
+            ),
+        )
+
+    oracle.screen = screen
+    oracle(SimpleNamespace(plan_id="first", area=10))
+    assert oracle.best_area == 10
+    with pytest.raises(module.SearchRejected, match="area_bound_pruned"):
+        oracle(SimpleNamespace(plan_id="larger", area=20))
+    assert calls == ["first"]
+    assert oracle.area_pruned["larger"]["incumbent_plan_id"] == "first"
+    oracle(SimpleNamespace(plan_id="smaller", area=5))
+    oracle(SimpleNamespace(plan_id="unsafe", area=2))
+    assert oracle.best_area == 5
+    assert oracle.best_plan_id == "smaller"
+    assert calls == ["first", "smaller", "unsafe"]

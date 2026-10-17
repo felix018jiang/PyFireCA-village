@@ -31,14 +31,14 @@
 ```bash
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r2 --phase prepare
+  --output runs/research/batuan-multiscenario-20261017-r3 --phase prepare
 # prepare只运行一次；之后search可用同参重建搜索轨迹并复用签名一致的缓存。
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r2 --phase search --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r3 --phase search --workers 4
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r2 --phase finalize --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r3 --phase finalize --workers 4
 ```
 
 更新前标签 `batuan-before-multiscenario-20261017` → `0de2e37`。独立Git备份 `/Users/tone/Documents/github/PyFireCA-backups/batuan-before-multiscenario-20261017/repository.bundle` 已验证。旧8856报告和全部旧实验不覆盖。在另一目录查看旧版：
@@ -52,3 +52,9 @@ git worktree add --detach ../PyFireCA-before-multiscenario batuan-before-multisc
 ## 窗口预检修正
 
 R1新增侧翼源在81×81窗触边；在冻结选线和任何留出评价前停止并保留，状态stopped_domain_preflight。R2扩大至父网格行[90,230)、列[80,220)的140×140窗口（700m边长），结果另存新目录。最终选线另做完整312×347场地复核；若全图与扩展域结论不一致，不宣布全村保护达标。
+
+## 严格面积上界与已有计算复用
+
+R2初始计算保留，未冻结选线、未读取留出结果。R3增加严格面积上界：只在某方案全部24项真实算满5400s且零引燃之后，才可用其有效清理面积作上界；有效面积更大或相同的候选无法改善本目标，可跳过整套CA，明确标为area_bound_pruned，不当成物理不合格或保护失败。面积由同一清理适配器精确计算，风与点燃参数不改变可清理地表及交集面积。搜索仍可平移、折弯、重组和删带，不宣称全局最优。
+
+R3只改变调度与面积筛选，物理、评价、裁剪输入和情景逐文件相同。prepare --warm-from 对照原输入、情景、环境、源码快照和除调度器外全部源码，复用原物理模型标识并复制哈希一致的设计情景缓存；不导入留出结果，恢复时仍逐条核对完整物理评价签名。协议记录来源与数量。

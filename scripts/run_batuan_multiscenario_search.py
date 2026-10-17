@@ -103,7 +103,7 @@ def environments():
     return result
 
 
-def prepare(output, budget, replicas):
+def prepare(output, budget, replicas, warm_from=None):
     if output.exists():
         raise FileExistsError("use a new directory for a new protocol")
     base = load_v3_case_bundle(BASE)
@@ -233,6 +233,52 @@ def prepare(output, budget, replicas):
     )
     cropped = load_v3_case_bundle(output / "search-case")
     protocol["crop_case_sha256"] = request_fingerprint(cropped.request)
+    if warm_from is not None:
+        warm_from = Path(warm_from).resolve()
+        previous = json.loads((warm_from / "protocol.json").read_text())
+        for key in (
+            "input_hashes",
+            "base_case_sha256",
+            "crop_case_sha256",
+            "window",
+            "training",
+            "held_out",
+            "environments",
+        ):
+            if digest(previous[key]) != digest(protocol[key]):
+                raise ValueError(f"warm physical input mismatch: {key}")
+        runner = "scripts/run_batuan_multiscenario_search.py"
+        for name, expected in previous["source_hashes"].items():
+            if file_sha(warm_from / "source_snapshot" / name) != expected:
+                raise ValueError("warm source snapshot changed")
+            if name != runner and protocol["source_hashes"].get(name) != expected:
+                raise ValueError(f"warm physical/evaluation source mismatch: {name}")
+        protocol["physical_code"] = previous["physical_code"]
+        protocol["physical_model_identity_origin"] = {
+            "study": str(warm_from),
+            "protocol_sha256": digest(previous),
+            "unchanged_sources_except_runner": True,
+            "explanation": "Exact area bound added; physical/evaluation model unchanged",
+        }
+        cache = output / "evaluation-cache"
+        cache.mkdir(exist_ok=True)
+        ids = {r["scenario_id"] for r in protocol["training"]}
+        count = 0
+        for path in (warm_from / "evaluation-cache").glob("*.json"):
+            raw = json.loads(path.read_text())
+            if raw["record"]["scenario_id"] not in ids:
+                continue  # Never import held-out outcomes into search initialization.
+            if digest(raw["record"]) != raw["record_sha256"]:
+                raise ValueError("warm physical cache checksum failed")
+            if raw["record"]["evaluation_sha256"] != path.stem:
+                raise ValueError("warm physical cache signature filename mismatch")
+            shutil.copyfile(path, cache / path.name)
+            count += 1
+        protocol["warm_training_cache_records"] = count
+    protocol["area_bound"] = (
+        "After a complete 24-scenario certificate, prune area >= incumbent; "
+        "area is exact eligible-cell intersection, independent of wind/ignition thresholds"
+    )
     dump(output / "protocol.json", protocol)
     dump(
         output / "status.json",
@@ -261,6 +307,9 @@ class ScenarioOracle:
         self.cache = self.output / ("full-cache" if full else "evaluation-cache")
         self.cache.mkdir(exist_ok=True)
         self.calls = self.hits = 0
+        self.best_area = None
+        self.best_plan_id = None
+        self.area_pruned = {}
         grid = self.bundle.request.grid
         self.protected = []
         for row in self.rows.values():
@@ -344,7 +393,25 @@ class ScenarioOracle:
         return screened
 
     def __call__(self, plan):
-        return list(self.screen(plan).records)
+        self.preflight(plan)
+        if self.best_area is not None:
+            row = self.protocol["training"][0]
+            engine = self.engine(row["environment_id"])
+            _, _, treatment = engine.prepare(scenario(row), plan)
+            area = treatment["cleared_area_m2"]
+            if area >= self.best_area - 1e-8:
+                self.area_pruned[plan.plan_id] = {
+                    "cleared_area_m2": area,
+                    "incumbent_area_m2": self.best_area,
+                    "incumbent_plan_id": self.best_plan_id,
+                    "reason": "cannot improve certified feasible area upper bound",
+                }
+                raise SearchRejected("area_bound_pruned: cannot improve certified feasible area")
+        screened = self.screen(plan)
+        if screened.passed:
+            self.best_area = screened.records[0].intervention["cleared_area_m2"]
+            self.best_plan_id = plan.plan_id
+        return list(screened.records)
 
 
 def search_task(output, zone, replica):
@@ -404,6 +471,7 @@ def search_task(output, zone, replica):
     result.update(
         physical_solves_this_invocation=oracle.calls,
         cache_hits_this_invocation=oracle.hits,
+        area_bound_pruned=oracle.area_pruned,
         ranking_note="partial infeasible scores are lower-bound diagnostics; zero requires all 24",
     )
     dump(Path(output) / f"{zone}-replica{replica}-search.json", result)
@@ -519,12 +587,13 @@ def main():
     p.add_argument("--budget", type=int, default=64)
     p.add_argument("--replicas", type=int, default=2)
     p.add_argument("--workers", type=int, default=4)
+    p.add_argument("--warm-from", type=Path)
     args = p.parse_args()
     if min(args.budget, args.replicas, args.workers) < 1:
         raise ValueError("budgets, replicas and workers must be positive")
     output = args.output.resolve()
     if args.phase == "prepare":
-        prepare(output, args.budget, args.replicas)
+        prepare(output, args.budget, args.replicas, args.warm_from)
     elif args.phase == "search":
         search(output, args.workers)
     else:
