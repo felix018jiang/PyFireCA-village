@@ -41,3 +41,9 @@ def test_reused_complete_record_matches_direct_run_and_rejects_prefix():
         complete_from_screen(e, s, p, incomplete)
     with pytest.raises(ValueError, match="identity"):
         complete_from_screen(e, replace(s, scenario_id="other"), p, screen)
+
+    rounded = replace(screen, diagnostics={**screen.diagnostics, "simulated_until_s": 5 - 1e-12})
+    assert complete_from_screen(e, s, p, rounded).diagnostics["physical_run_reused"]
+    short = replace(screen, diagnostics={**screen.diagnostics, "simulated_until_s": 5 - 1e-4})
+    with pytest.raises(ValueError, match="physically complete"):
+        complete_from_screen(e, s, p, short)

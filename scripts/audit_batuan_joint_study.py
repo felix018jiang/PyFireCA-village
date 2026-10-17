@@ -11,6 +11,8 @@ import numpy as np
 from reuse_completed_batuan_runs import complete_from_screen
 from run_batuan_building_pairs import dump, sha
 from run_batuan_joint_search import BASE, ROOT, Oracle, digest, search_mode
+from shapely.geometry import Polygon, shape
+from shapely.ops import unary_union
 
 from pyfireca.planning.contracts import Ignition
 from pyfireca.planning.engines.village import request_fingerprint
@@ -65,6 +67,12 @@ def audit(output):
             "atomic_area_m2": sa["cleared_area_m2"],
             "joint_singleton_area_m2": sb["cleared_area_m2"],
         }
+    if report["selection"] != json.loads((output / "selection.json").read_text()):
+        raise AssertionError("report differs from frozen selection")
+    ledger = json.loads((output / "prefetch-ledger.json").read_text())
+    design_ids = {r["scenario_id"] for r in protocol["training"]}
+    if ledger["pending"] or any(r["scenario_id"] not in design_ids for r in ledger["records"]):
+        raise AssertionError("prefetch was not confined to completed design requests")
     if report["selection"]["protocol_sha256"] != sha(output / "protocol.json"):
         raise AssertionError("report selection protocol mismatch")
     cache_counts = {}
@@ -100,6 +108,15 @@ def audit(output):
                 reused_records += 1
             count += 1
         cache_counts[folder] = count
+    annotation = Path(oracle.bundle.metadata["spatial_assets_dir"]) / "buildings.json"
+    outlines = unary_union(
+        [
+            Polygon(p["exterior"], p["holes"])
+            for b in json.loads(annotation.read_text())["buildings"]
+            for p in b["polygons"]
+        ]
+    )
+    footprint_overlaps = []
     protected_matches = []
     for row in report["confirmation"]:
         if not row["full_grid"]:
@@ -108,6 +125,13 @@ def audit(output):
             x
             for x in report["confirmation"]
             if not x["full_grid"] and x["label"] == row["label"] and x["role"] == row["role"]
+        )
+        footprint = shape(row["records"][0]["intervention"]["effective_footprint"])
+        overlap = float(footprint.intersection(outlines).area)
+        if overlap > 1e-8:
+            raise AssertionError("effective clearing overlaps an annotated building")
+        footprint_overlaps.append(
+            {"label": row["label"], "role": row["role"], "outline_overlap_m2": overlap}
         )
         left = {r["scenario_id"]: r for r in row["records"]}
         for r in other["records"]:
@@ -181,12 +205,15 @@ def audit(output):
         )
     result = {
         "cache_counts": cache_counts,
+        "frozen_selection_sha256": sha(output / "selection.json"),
+        "training_prefetch_only": True,
         "reused_completed_screen_records": reused_records,
         "actual_ca_solves": sum(cache_counts.values()) - reused_records,
         "scoped_singleton_checks": singleton_checks,
         "source_files": len(protocol["source_hashes"]),
         "input_files": len(protocol["input_hashes"]),
         "protected_crop_full_comparison": protected_matches,
+        "effective_footprint_outline_overlap": footprint_overlaps,
         "all_protected_counts_match": all(x["protected_counts_match"] for x in protected_matches),
         "recovered_modes": recovered,
         "new_physical_solves_during_recovery": 0,

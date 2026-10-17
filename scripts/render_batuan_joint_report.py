@@ -175,6 +175,14 @@ def main(output):
     if (joint / "report.json").exists():
         report = load(joint / "report.json")
         rows = []
+        titles = {
+            "baseline": "无新增清理",
+            "outer_proxy": "仅村外",
+            "inner_proxy": "仅村内",
+            "joint": "联合搜索",
+            "independent_sweep": "固定几何分配扫描",
+            "historical_combined": "原始内外同时",
+        }
         seen = set()
         features = []
         for row in report["confirmation"]:
@@ -184,11 +192,18 @@ def main(output):
             passed = sum(x["metrics"]["ignited_structure_count"] == 0 for x in rec)
             area = rec[0]["intervention"]["cleared_area_m2"]
             zones = rec[0]["intervention"]["zone_areas_m2"]
-            rows.append(
-                f"<tr><td>{html.escape(row['label'])}</td><td>{row['role']}</td>"
-                f"<td>{passed}/{len(rec)}</td><td>{area:.2f}</td>"
-                f"<td>{zones['outer_proxy']:.2f} / {zones['inner_proxy']:.2f}</td></tr>"
-            )
+            if row["role"] == "training":
+                held = next(
+                    x
+                    for x in report["confirmation"]
+                    if x["full_grid"] and x["label"] == row["label"] and x["role"] == "held_out"
+                )["records"]
+                held_pass = sum(x["metrics"]["ignited_structure_count"] == 0 for x in held)
+                rows.append(
+                    f"<tr><td>{html.escape(titles[row['label']])}</td>"
+                    f"<td>{passed}/{len(rec)}</td><td>{held_pass}/{len(held)}</td><td>{area:.2f}</td>"
+                    f"<td>{zones['outer_proxy']:.2f} / {zones['inner_proxy']:.2f}</td></tr>"
+                )
             if row["label"] not in seen:
                 seen.add(row["label"])
                 plan = plan_from_mapping(row["plan"])
@@ -230,7 +245,7 @@ def main(output):
             )
         )
         images = "".join(
-            f'<figure><figcaption>{label}</figcaption><img src="{label}.png" alt="{label}候选带"></figure>'
+            f'<figure><figcaption>{titles[label]}</figcaption><img src="{label}.png" alt="{label}候选带"></figure>'
             for label in sorted(seen)
             if (output / (label + ".png")).exists()
         )
@@ -238,7 +253,7 @@ def main(output):
             "<p>8项设计、4项新位置/风况留出；各模式最多16次候选请求。以下为完整场地90分钟结果。"
             "通过要求民居与桥均不引燃。区界仍为20米代理，非实测施工边界；固定等效木材和水分。</p>"
             "<p>比较达标方案的清理面积；尚未完成等面积预算曲线。联合配置允许选择单侧极限，不能仅凭通过率称为协同。</p>"
-            "<table><thead><tr><th>方案</th><th>情景</th><th>保护通过</th><th>清理㎡</th>"
+            "<table><thead><tr><th>方案</th><th>设计通过</th><th>留出通过</th><th>清理㎡</th>"
             "<th>村外 / 近邻㎡</th></tr></thead><tbody>"
             + "".join(rows)
             + "</tbody></table>"

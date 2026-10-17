@@ -51,7 +51,7 @@ def complete_from_screen(engine, scenario, plan, record):
         raise ValueError("screening source identity mismatch")
     if (
         not record.diagnostics["reached_requested_horizon"]
-        or record.diagnostics["simulated_until_s"] < scenario.horizon_s
+        or record.diagnostics["simulated_until_s"] < scenario.horizon_s - 1e-8
         or not record.diagnostics["stop_at_first_structure_ignition"]
         or not record.diagnostics["parent_case_unchanged"]
         or record.metrics["ignited_structure_count"] != 0
