@@ -76,6 +76,8 @@ def request_fingerprint(request):
             digest.update(array.tobytes())
     digest.update(str(request.sample_interval_s).encode())
     digest.update(request.unknown_policy.encode())
+    if request.firebrands is not None:
+        digest.update(json.dumps(request.firebrands.to_mapping(), sort_keys=True).encode())
     return digest.hexdigest()
 
 
@@ -94,6 +96,7 @@ class VillageEvaluationEngine:
         self.structure_types = dict(structure_types or {})
         self.code_version = code_version
         self.case_sha256 = request_fingerprint(bundle.request)
+        self.capabilities = {**CAPABILITIES, "spotting": bundle.request.firebrands is not None}
         # This adapter supports precisely the verified parent graph. No silent
         # rebuilding of a finite-area, opaque or legacy incorrect graph.
         request = bundle.request
@@ -185,6 +188,26 @@ class VillageEvaluationEngine:
                 ignited[[0, -1], :].any() or ignited[:, [0, -1]].any()
             ),
         }
+        if result.firebrands is not None:
+            metrics.update(
+                firebrand_counts=result.firebrands["counts"],
+                firebrand_ignited_cells=int((result.ignition_cause == 3).sum()),
+                firebrand_source_transferred_mass_kg=result.firebrands["final_budget"][
+                    "transferred_mass_kg"
+                ],
+                firebrand_direct_structure_ignitions=[
+                    {
+                        **item,
+                        "direct_brand_cells": int(
+                            (
+                                (result.ignition_cause == 3)
+                                & (parent.building_index == item["building_index"])
+                            ).sum()
+                        ),
+                    }
+                    for item in first
+                ],
+            )
         digest = hashlib.sha256()
         for item in (
             self.case_sha256,

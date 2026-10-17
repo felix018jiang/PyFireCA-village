@@ -123,6 +123,15 @@ def write_v3_case_bundle(
         },
         "metadata": metadata or {},
     }
+    if request.firebrands is not None:
+        manifest["schema_version"] = "village-v3-case-firebrands-1"
+        manifest["physics_extensions"] = {"firebrands": request.firebrands.to_mapping()}
+        manifest["transport_geometry"] = {
+            "schema_version": "village-terminal-firebrands-geometry-1",
+            "mode": "preserved_static_radiation_plus_terminal_firebrands",
+            "wind_reference": "grid_north",
+            "terrain": "piecewise_constant_raster_first_intersection",
+        }
     (output / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -134,8 +143,23 @@ def load_v3_case_bundle(path: str | Path) -> V3CaseBundle:
 
     directory = Path(path)
     manifest = json.loads((directory / "manifest.json").read_text(encoding="utf-8"))
-    if manifest.get("schema_version") != "village-v3-case-1":
+    schema = manifest.get("schema_version")
+    if schema not in {"village-v3-case-1", "village-v3-case-firebrands-1"}:
         raise ValueError("unsupported V3 case bundle schema")
+    from pyfireca.village.firebrands_v3 import FirebrandParameters
+
+    firebrands = None
+    if schema == "village-v3-case-firebrands-1":
+        extension = manifest.get("physics_extensions", {})
+        if (
+            set(extension) != {"firebrands"}
+            or manifest.get("transport_geometry", {}).get("schema_version")
+            != "village-terminal-firebrands-geometry-1"
+        ):
+            raise ValueError("missing or unsupported firebrand transport declaration")
+        firebrands = FirebrandParameters.from_mapping(extension["firebrands"])
+    elif "physics_extensions" in manifest:
+        raise ValueError("legacy case cannot silently carry physics extensions")
     grid_data = manifest["grid"]
     grid = VillageGridSpec(**grid_data)
 
@@ -193,6 +217,7 @@ def load_v3_case_bundle(path: str | Path) -> V3CaseBundle:
             if manifest.get("flame_contact") is not None
             else None
         ),
+        firebrands=firebrands,
     )
     return V3CaseBundle(
         request=request,
@@ -373,6 +398,7 @@ def crop_v3_case_bundle(
         scenario=scenario,
         unknown_policy=case.request.unknown_policy,
         sample_interval_s=sample_interval_s,
+        firebrands=case.request.firebrands,
         flame_contact=case.request.flame_contact,
         material_evidence_index=(
             crop(case.request.material_evidence_index)

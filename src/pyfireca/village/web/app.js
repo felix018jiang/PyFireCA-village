@@ -65,7 +65,7 @@ async function init() {
       await initBackground(manifest, grid, imageRef, buildings);
       return;
     }
-    if (!["village-viewer-1","village-viewer-2","village-viewer-3","village-component-viewer-1"].includes(manifest.schema_version)) throw new Error("不支持的回放版本");
+    if (!["village-viewer-1","village-viewer-2","village-viewer-3","village-viewer-4","village-component-viewer-1"].includes(manifest.schema_version)) throw new Error("不支持的回放版本");
     const frameLocal = !manifest.components && Boolean(manifest.state.chunks);
     let firstFrame = null;
     if (frameLocal) {
@@ -100,7 +100,7 @@ async function init() {
     if (materialBuffer.byteLength !== cells * 4) throw new Error("材质文件长度不正确");
     if (moistureBuffer && moistureBuffer.byteLength !== cells * 4) throw new Error("初始含水率文件长度不正确");
     if (initialFuelBuffer && initialFuelBuffer.byteLength !== cells * 8) throw new Error("初始燃料文件长度不正确");
-    if (manifest.schema_version === "village-viewer-3" && landcoverBuffer?.byteLength !== cells * 4) throw new Error("地类文件长度不正确");
+    if (["village-viewer-3","village-viewer-4"].includes(manifest.schema_version) && landcoverBuffer?.byteLength !== cells * 4) throw new Error("地类文件长度不正确");
     data = {
       manifest, grid, imageRef, buildings, image, frameLocal,
       states: new Uint8Array(stateBuffer),

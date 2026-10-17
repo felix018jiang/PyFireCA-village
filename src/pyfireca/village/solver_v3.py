@@ -18,6 +18,7 @@ from numpy.typing import NDArray
 
 from pyfireca.village.domain import ExposureEdges, VillageGridSpec
 from pyfireca.village.exposure import SourceIndexedExposure
+from pyfireca.village.firebrands_v3 import FirebrandOperator, FirebrandParameters
 from pyfireca.village.flame_contact_v3 import FlameContactOperator, FlameContactParameters
 from pyfireca.village.ignition import VillageIgnitionEvent
 from pyfireca.village.physics_v2 import (
@@ -32,6 +33,7 @@ from pyfireca.village.state import VillageCellState
 IGNITION_CAUSE_NONE = np.uint8(0)
 IGNITION_CAUSE_DIRECT = np.uint8(1)
 IGNITION_CAUSE_THERMAL = np.uint8(2)
+IGNITION_CAUSE_FIREBRAND = np.uint8(3)
 
 
 def _mask(name: str, value: NDArray[np.bool_], shape: tuple[int, int]) -> NDArray[np.bool_]:
@@ -93,6 +95,7 @@ class V3SimulationRequest:
     ground_elevation_m: NDArray[np.floating] | None = None
     flame_contact: FlameContactParameters | None = None
     material_evidence_index: NDArray[np.uint8] | None = None
+    firebrands: FirebrandParameters | None = None
 
     def __post_init__(self) -> None:
         if not isinstance(self.grid, VillageGridSpec):
@@ -109,6 +112,8 @@ class V3SimulationRequest:
             not isfinite(self.sample_interval_s) or self.sample_interval_s <= 0.0
         ):
             raise ValueError("sample_interval_s must be finite and positive")
+        if self.firebrands is not None and not isinstance(self.firebrands, FirebrandParameters):
+            raise TypeError("firebrands must be FirebrandParameters or None")
 
         if self.flame_contact is not None:
             if not isinstance(self.flame_contact, FlameContactParameters):
@@ -319,10 +324,15 @@ class V3SimulationResult:
     ignition_cause: NDArray[np.uint8]
     energy_budget: V3EnergyBudget
     snapshots: tuple[V3Snapshot, ...]
+    firebrands: dict | None = None
 
     @property
     def consumed_fuel_kg(self) -> float:
-        return float(np.sum(self.initial_fuel_kg - self.final_state.fuel_remaining_kg))
+        removed = float(np.sum(self.initial_fuel_kg - self.final_state.fuel_remaining_kg))
+        diverted = (
+            self.firebrands["final_budget"]["transferred_mass_kg"] if self.firebrands else 0.0
+        )
+        return removed - diverted
 
 
 def _initial_state(request: V3SimulationRequest) -> V3State:
@@ -424,6 +434,7 @@ def _run_resolved_v3_simulation(
     exposure = SourceIndexedExposure.from_edges(request.exposure_edges)
     cause = np.full(request.grid.shape, IGNITION_CAUSE_NONE, dtype=np.uint8)
     budget = V3EnergyBudget()
+    firebrands = FirebrandOperator(request) if request.firebrands is not None else None
     events = sorted(
         scenario.ignitions,
         key=lambda event: (event.time_s, request.grid.cell_id(event.row, event.col)),
@@ -461,6 +472,8 @@ def _run_resolved_v3_simulation(
             ):
                 cause[event.row, event.col] = IGNITION_CAUSE_DIRECT
             event_index += 1
+        if firebrands is not None:
+            firebrands.process(state, cause)
 
     def capture_due_sample() -> None:
         nonlocal last_sample_time, next_sample_index
@@ -484,6 +497,8 @@ def _run_resolved_v3_simulation(
             snapshot_sink.append(snapshot)
         if retain_snapshots:
             snapshots.append(snapshot)
+        if firebrands is not None:
+            firebrands.capture(due)
         last_sample_time = due
         next_sample_index += 1
 
@@ -530,6 +545,7 @@ def _run_resolved_v3_simulation(
             next_sample - state.time_s,
             thermal_limit,
             burnout_limit,
+            firebrands.next_time() - state.time_s if firebrands is not None else np.inf,
         )
         if not isfinite(dt_s) or dt_s <= tolerance:
             raise RuntimeError("v3 solver selected a non-positive time step")
@@ -545,6 +561,10 @@ def _run_resolved_v3_simulation(
             parameters.heat_of_combustion_J_kg_dry,
             dt_s,
         )
+        if firebrands is not None:
+            local_fraction = firebrands.divert(mass_loss)
+            released *= local_fraction
+            mean_hrr *= local_fraction
         radiative_power = mean_hrr * parameters.radiative_fraction
         received_power = exposure.target_power_W(radiative_power.reshape(-1)).reshape(
             request.grid.shape
@@ -698,6 +718,7 @@ def _run_resolved_v3_simulation(
         ignition_cause=cause,
         energy_budget=budget,
         snapshots=tuple(snapshots),
+        firebrands=firebrands.result(state.time_s) if firebrands is not None else None,
     )
 
 

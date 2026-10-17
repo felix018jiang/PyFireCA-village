@@ -70,4 +70,16 @@ def apply_environment(bundle, environment):
         transport_parameters=asdict(transport),
         wind_scope="static_radiative_flame_tilt_only_no_ember_or_wind_contact",
     )
-    return replace(changed, request=replace(request, exposure_edges=edges), metadata=metadata)
+    brands = request.firebrands
+    if brands is not None:
+        brands = replace(
+            brands,
+            wind_speed_m_s=environment.wind_speed_m_s,
+            wind_from_deg=environment.wind_from_deg,
+        )
+        metadata["wind_scope"] = "static_radiative_tilt_and_prescribed_terminal_firebrands"
+    return replace(
+        changed,
+        request=replace(request, exposure_edges=edges, firebrands=brands),
+        metadata=metadata,
+    )

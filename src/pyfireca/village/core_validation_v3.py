@@ -38,10 +38,14 @@ def check_final(request, result):
     if np.any(final.interval_mean_hrr_W[late] != 0):
         raise AssertionError("burned-out material still releases combustion heat")
     b = result.energy_budget
+    diverted = (
+        result.firebrands["final_budget"]["transferred_chemical_J"] if result.firebrands else 0.0
+    )
     errors = {
         "fuel_release": abs(
             float(np.sum((initial - remaining) * request.parameters.heat_of_combustion_J_kg_dry))
             - b.released_J
+            - diverted
         ),
         "release_split": abs(b.released_J - b.radiative_emitted_J - b.non_radiative_released_J),
         "radiation_split": abs(
@@ -54,7 +58,7 @@ def check_final(request, result):
             b.susceptible_incident_J - b.susceptible_absorbed_J - b.susceptible_unabsorbed_J
         ),
     }
-    tolerance = 1e-5 + 1e-9 * b.released_J
+    tolerance = 1e-5 + 1e-9 * (b.released_J + diverted)
     if max(errors.values()) > tolerance:
         raise AssertionError(f"energy partition failed: {errors}, tolerance={tolerance}")
     return {
@@ -67,6 +71,7 @@ def check_final(request, result):
         "energy_budget": asdict(b),
         "energy_closure_errors_J": errors,
         "energy_tolerance_J": tolerance,
+        **({"firebrand_budget": result.firebrands["final_budget"]} if result.firebrands else {}),
     }
 
 

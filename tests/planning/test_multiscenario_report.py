@@ -157,6 +157,7 @@ def test_candidate_prefetch_excludes_held_out_and_failed_plans(tmp_path, monkeyp
 
 
 def test_replay_export_serializes_same_plan(tmp_path, monkeypatch):
+    monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
     import threading
     import time
     from concurrent.futures import ThreadPoolExecutor
