@@ -178,21 +178,9 @@ def finish(output, expected_head, finalizer_pid):
         check=True,
     )
     tag = "batuan-joint-pilot-20261017"
-    subprocess.run(
-        [
-            "git",
-            "tag",
-            "-a",
-            tag,
-            "-m",
-            "Completed scoped fixed-material pilot; no field safety standard claimed",
-        ],
-        cwd=ROOT,
-        check=True,
-    )
     commit = git("rev-parse", "HEAD")
     backup = ROOT.parent / "PyFireCA-backups" / tag
-    backup.mkdir(exist_ok=False)
+    backup.mkdir(parents=True, exist_ok=False)
     with (backup / "bundle-validation.log").open("w") as stream:
         subprocess.run(
             ["git", "bundle", "create", str(backup / "repository.bundle"), "--all"],
@@ -226,10 +214,41 @@ def finish(output, expected_head, finalizer_pid):
         for name, value in manifest.items():
             if hashlib.sha256(tar.extractfile(name).read()).hexdigest() != value:
                 raise RuntimeError("archive verification failed")
+    # Publish the completion tag only after validating the experiment archive.
+    subprocess.run(
+        [
+            "git",
+            "tag",
+            "-a",
+            tag,
+            "-m",
+            "Completed scoped fixed-material pilot; no field safety standard claimed",
+        ],
+        cwd=ROOT,
+        check=True,
+    )
+    refreshed = backup / "repository.with-tag.bundle"
+    with (backup / "bundle-validation.log").open("a") as stream:
+        subprocess.run(
+            ["git", "bundle", "create", str(refreshed), "--all"],
+            cwd=ROOT,
+            check=True,
+            stdout=stream,
+            stderr=stream,
+        )
+        subprocess.run(
+            ["git", "bundle", "verify", str(refreshed)],
+            cwd=ROOT,
+            check=True,
+            stdout=stream,
+            stderr=stream,
+        )
+    refreshed.replace(backup / "repository.bundle")
     validation = {
         "commit": commit,
         "tag": tag,
         "archive_sha256": sha(archive),
+        "repository_bundle_sha256": sha(backup / "repository.bundle"),
         "verified_files": len(manifest),
         "files": manifest,
         "building_pair_backup": str(

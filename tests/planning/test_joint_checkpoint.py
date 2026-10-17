@@ -114,3 +114,12 @@ def test_changed_head_preserves_results_without_automatic_commit(tmp_path, monke
     assert (repo / "docs/results/batuan-joint-pilot-20261017.json").exists()
     assert not (out / "completion.json").exists()
     assert not module.git("tag", "--list", "batuan-joint-pilot-20261017")
+
+
+def test_completion_tag_is_present_in_verified_bundle(tmp_path, monkeypatch):
+    _repo, out, head = fixture(tmp_path, monkeypatch)
+    module.finish(out, head, os.getpid())
+    complete = json.loads((out / "completion.json").read_text())
+    bundle = Path(complete["backup"]) / "repository.bundle"
+    refs = subprocess.check_output(["git", "bundle", "list-heads", str(bundle)], text=True)
+    assert "refs/tags/" + complete["tag"] in refs
