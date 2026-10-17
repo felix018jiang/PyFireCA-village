@@ -30,6 +30,11 @@ class ProtectionScreen:
             raise ValueError("all scenarios must have the same horizon")
         if any(r.metrics["burning_reached_domain_edge"] for r in self.records):
             raise ValueError("domain-edge ignition invalidates protection screening")
+        if any(
+            not r.diagnostics.get("reached_requested_horizon", True) and not protection_failed(r)
+            for r in self.records
+        ):
+            raise ValueError("a physically truncated zero-loss run cannot certify protection")
         if not self.complete and not any(protection_failed(r) for r in self.records):
             raise ValueError("an incomplete screen cannot certify protection")
 

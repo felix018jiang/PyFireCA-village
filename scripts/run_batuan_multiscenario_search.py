@@ -21,7 +21,7 @@ from pathlib import Path
 import numpy as np
 from run_batuan_adaptive_search import digest, dump
 from run_batuan_intervention_study import engine_for
-from run_batuan_protection_search import WINDOW, context, family_seeds
+from run_batuan_protection_search import context, family_seeds
 from shapely.geometry import box
 
 from pyfireca.planning.adaptive import (
@@ -46,6 +46,7 @@ from pyfireca.village.workflow_v3 import crop_v3_case_bundle, load_v3_case_bundl
 ROOT = Path(__file__).resolve().parents[1]
 PREVIOUS = ROOT / "runs/research/batuan-protection90-20261016-r2"
 BASE = ROOT / "runs/batuan-slope-contact-20261016/case"
+WINDOW = (90, 230, 80, 220)
 TRAIN_CELLS = ((163, 151), (160, 151), (168, 143), (170, 159))
 TEST_CELLS = ((171, 146), (171, 156))
 ZONES = ("outer_proxy", "inner_proxy")
@@ -206,7 +207,7 @@ def prepare(output, budget, replicas):
             "reselect using their results"
         ),
         "scope": (
-            "81x81 local window, 5m cells; proxy20m building buffer; "
+            "140x140 expanded window, 5m cells; proxy20m building buffer; "
             "synthetic static tilt, no embers"
         ),
         "geometry": (
@@ -286,7 +287,7 @@ class ScenarioOracle:
         if any(footprint.intersection(c).area > 1e-8 for c in self.protected):
             raise SearchRejected("layout overlaps a protected design or held-out source cell")
 
-    def evaluate(self, scenario_id, plan):
+    def evaluate(self, scenario_id, plan, *, complete=False):
         row = self.rows[scenario_id]
         engine = self.engine(row["environment_id"])
         sc = scenario(row)
@@ -301,6 +302,8 @@ class ScenarioOracle:
         ):
             signature.update(json.dumps(item, sort_keys=True).encode())
         signature.update(engine.zones[plan.zone_id].tobytes())
+        if not complete:
+            signature.update(b"stop_at_first_structure_ignition")
         key = signature.hexdigest()
         path = self.cache / (key + ".json")
         with (self.cache / (key + ".lock")).open("a") as stream:
@@ -312,7 +315,7 @@ class ScenarioOracle:
                 record = EvaluationResult(**raw["record"])
                 self.hits += 1
             else:
-                record = engine.evaluate(sc, plan)
+                record = engine.evaluate(sc, plan, stop_at_first_structure_ignition=not complete)
                 self.calls += 1
                 dump(
                     path,
@@ -327,7 +330,9 @@ class ScenarioOracle:
         ids = [s["scenario_id"] for s in self.protocol[suite]]
         try:
             screened = screen_protection(
-                ids, lambda sid: self.evaluate(sid, plan), stop_at_failure=not complete
+                ids,
+                lambda sid: self.evaluate(sid, plan, complete=complete),
+                stop_at_failure=not complete,
             )
         except ValueError as exc:
             if "domain-edge" in str(exc):

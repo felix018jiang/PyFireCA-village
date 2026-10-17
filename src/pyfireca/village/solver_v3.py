@@ -364,8 +364,15 @@ def run_v3_simulation(
     snapshot_sink: V3SnapshotSink | None = None,
     retain_snapshots: bool = True,
     progress_callback: Callable[[float, float], None] | None = None,
+    stop_when: Callable[[V3State], bool] | None = None,
 ) -> V3SimulationResult:
-    """Run the V3 model with one synchronous clock for buildings and vegetation."""
+    """Run one synchronous clock; optional predicate stops at an exact step boundary.
+
+    ``stop_when`` observes the current state after scheduled ignitions. The
+    returned final_state.time_s is the actual stop time; callers must never
+    describe a stopped, zero-loss prefix as having reached the full horizon.
+    The default None preserves the original full-horizon simulation.
+    """
 
     if not isinstance(request, V3SimulationRequest):
         raise TypeError("request must be V3SimulationRequest")
@@ -387,6 +394,7 @@ def run_v3_simulation(
         snapshot_sink=snapshot_sink,
         retain_snapshots=retain_snapshots,
         progress_callback=progress_callback,
+        stop_when=stop_when,
     )
 
 
@@ -397,6 +405,7 @@ def _run_resolved_v3_simulation(
     snapshot_sink: V3SnapshotSink | None = None,
     retain_snapshots: bool = True,
     progress_callback: Callable[[float, float], None] | None = None,
+    stop_when: Callable[[V3State], bool] | None = None,
 ) -> V3SimulationResult:
     """Shared thermal clock; component graphs supply their physical topology.
 
@@ -405,6 +414,8 @@ def _run_resolved_v3_simulation(
     """
     if not isinstance(retain_snapshots, bool):
         raise TypeError("retain_snapshots must be a boolean")
+    if stop_when is not None and not callable(stop_when):
+        raise TypeError("stop_when must be callable or None")
     state = _initial_state(request)
     parameters = request.parameters
     scenario = request.scenario
@@ -482,6 +493,8 @@ def _run_resolved_v3_simulation(
             next_progress_time = state.time_s + max(1.0, scenario.end_time_s / 100)
         apply_events()
         capture_due_sample()
+        if stop_when is not None and stop_when(state):
+            break
         next_event = events[event_index].time_s if event_index < len(events) else np.inf
         next_sample = sample_time(next_sample_index)
         susceptible = (state.state == int(VillageCellState.UNBURNED)) | (

@@ -139,10 +139,17 @@ class VillageEvaluationEngine:
             ignitions=events,
         )
 
-    def evaluate(self, scenario, intervention):
+    def evaluate(self, scenario, intervention, *, stop_at_first_structure_ignition=False):
         started = perf_counter()
         request, _fraction, treatment = self.prepare(scenario, intervention)
-        result = run_v3_simulation(request, retain_snapshots=False)
+        stop = None
+        if stop_at_first_structure_ignition:
+            structures = request.building_index >= 0
+
+            def stop(state):
+                return bool(np.isfinite(state.ignition_time_s[structures]).any())
+
+        result = run_v3_simulation(request, retain_snapshots=False, stop_when=stop)
         diagnostics = check_final(request, result)
         parent = self.bundle.request
         state = result.final_state
@@ -189,9 +196,14 @@ class VillageEvaluationEngine:
         ):
             digest.update(json.dumps(item, sort_keys=True).encode())
         digest.update(self.zones[intervention.zone_id].tobytes())
+        if stop_at_first_structure_ignition:
+            digest.update(b"stop_at_first_structure_ignition")
         diagnostics.update(
             elapsed_s=perf_counter() - started,
             code_version=self.code_version,
+            simulated_until_s=float(result.final_state.time_s),
+            reached_requested_horizon=result.final_state.time_s >= scenario.horizon_s - 1e-8,
+            stop_at_first_structure_ignition=stop_at_first_structure_ignition,
             parent_case_unchanged=request_fingerprint(parent) == self.case_sha256,
         )
         if not diagnostics["parent_case_unchanged"]:

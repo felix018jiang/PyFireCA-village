@@ -136,3 +136,40 @@ def test_wind_from_convention_changes_actual_directed_radiation():
 def test_bad_environment_rejected(values):
     with pytest.raises(ValueError):
         ProtectionEnvironment("bad", *values)
+
+
+def test_zero_loss_partial_physical_time_cannot_certify():
+    short = replace(record("a"), diagnostics={"reached_requested_horizon": False})
+    with pytest.raises(ValueError, match="physically truncated"):
+        ProtectionScreen(("a",), (short,))
+
+
+def test_failure_stopping_preserves_first_ignition_and_default_full_run():
+    root = Path(__file__).parents[2]
+    spec = importlib.util.spec_from_file_location(
+        "early_stop_fixture", root / "tests/planning/test_village_evaluation.py"
+    )
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    engine = module.make_engine(("grass", "building", "grass"))
+    plan = module.ClearingPlan("none")
+    sc = module.scenario(engine, end=600)
+    sc = replace(
+        sc, ignitions=(*sc.ignitions, module.Ignition(engine.bundle.request.grid.center(0, 1), 120))
+    )
+    full = engine.evaluate(sc, plan)
+    early = engine.evaluate(sc, plan, stop_at_first_structure_ignition=True)
+    first = full.metrics["building_first_ignitions"][0]["time_s"]
+    assert early.diagnostics["simulated_until_s"] == first
+    assert not early.diagnostics["reached_requested_horizon"]
+    assert early.metrics["ignited_house_count"] == 1
+    assert early.evaluation_sha256 != full.evaluation_sha256
+    assert full.diagnostics["simulated_until_s"] == 600
+    assert full.diagnostics["reached_requested_horizon"]
+    assert early.metrics["building_first_ignitions"] == full.metrics["building_first_ignitions"]
+    # Safe runs cannot stop early; final physical outcomes remain identical.
+    safe = module.make_engine(("grass",) * 3)
+    a = safe.evaluate(module.scenario(safe), plan)
+    b = safe.evaluate(module.scenario(safe), plan, stop_at_first_structure_ignition=True)
+    assert b.diagnostics["reached_requested_horizon"]
+    assert a.metrics == b.metrics

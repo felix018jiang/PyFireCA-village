@@ -22,7 +22,7 @@
 
 每个候选按固定顺序检查设计情景。一旦民居或桥被引燃，该方案已经被严格证明不满足“全部零引燃”，可以停止余下情景；仅将已评价损失作为**未达标方案的启发式下界**，不将其写成全情景最坏值/平均值。只有24个全部算完且均零引燃才允许保护达标。达标方案的保护得分一致，按有效清理面积选最小者。若没有达标方案，明确报告未找到可行解，不能改成最小损失方案已保护成功。
 
-第一次失效提前筛除不等于提前终止物理时间：每个实际调用的CA仍计算到5400s。无干预、历史两区方案和冻结新方案最终都补齐24设计+8留出情景，以便完整对照。任何燃烧到局部窗边界的评价均无效，不能用被截断的传播宣称保护成功。
+搜索中一旦结构首次引燃，也可在该精确时间步停止当前物理运行，因为此时90分钟零引燃已不可能成立。部分时间结果明确记录实际终止时间，仅用于证明失败；任何零引燃通过都必须真正算满5400s。默认模拟器和最终对照仍计算完整90分钟。无干预、历史两区方案和冻结新方案最终都补齐24设计+8留出情景，以便完整对照。任何燃烧到局部窗边界的评价均无效，不能用被截断的传播宣称保护成功。
 
 物理缓存包含案例、代码、风/点燃参数、火源、干预几何、区掩码与建筑类别；逐条哈希核对、文件锁防止并发重复求解。源码逐文件快照，原case48文件及建筑标注、旧研究报告逐文件锁定；冻结后改动源码或输入拒绝恢复。
 
@@ -31,14 +31,14 @@
 ```bash
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r1 --phase prepare
+  --output runs/research/batuan-multiscenario-20261017-r2 --phase prepare
 # prepare只运行一次；之后search可用同参重建搜索轨迹并复用签名一致的缓存。
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r1 --phase search --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r2 --phase search --workers 4
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r1 --phase finalize --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r2 --phase finalize --workers 4
 ```
 
 更新前标签 `batuan-before-multiscenario-20261017` → `0de2e37`。独立Git备份 `/Users/tone/Documents/github/PyFireCA-backups/batuan-before-multiscenario-20261017/repository.bundle` 已验证。旧8856报告和全部旧实验不覆盖。在另一目录查看旧版：
@@ -48,3 +48,7 @@ git worktree add --detach ../PyFireCA-before-multiscenario batuan-before-multisc
 ```
 
 本文件先登记方法和协议；完成结果另行追加，不能在计算前声称找到达标或最优方案。
+
+## 窗口预检修正
+
+R1新增侧翼源在81×81窗触边；在冻结选线和任何留出评价前停止并保留，状态stopped_domain_preflight。R2扩大至父网格行[90,230)、列[80,220)的140×140窗口（700m边长），结果另存新目录。最终选线另做完整312×347场地复核；若全图与扩展域结论不一致，不宣布全村保护达标。
