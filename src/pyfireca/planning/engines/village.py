@@ -207,5 +207,5 @@ class VillageEvaluationEngine:
             metrics,
             treatment,
             diagnostics,
-            dict(CAPABILITIES),
+            dict(self.capabilities),
         )
