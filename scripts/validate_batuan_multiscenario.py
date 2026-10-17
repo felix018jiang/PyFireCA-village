@@ -1,6 +1,5 @@
 """Full-scene confirmation and correctly labelled 90-minute native replays."""
 
-# ruff: noqa: RUF001
 from __future__ import annotations
 
 import argparse
@@ -128,6 +127,7 @@ def replay_task(study, label, raw, sid):
                 count += 1
             output.rename(output.with_name(output.name + f".interrupted-{count}"))
         request, fraction, treatment = engine.prepare(scenario(row), plan)
+        environment = engine.bundle.metadata["protection_environment"]
         metadata = {
             **engine.bundle.metadata,
             "scenario_id": f"batuan-multiscenario-{label}",
@@ -139,7 +139,12 @@ def replay_task(study, label, raw, sid):
             "research_objective": "all_design_scenarios_zero_house_and_bridge_then_minimum_area",
             "simulation_scope": "full312x347",
             "input_summary": engine.bundle.metadata["input_summary"]
-            + "本次为多火源×静态风致辐射×点燃参数的假设清理带研究；保护全部建筑。",
+            + (
+                f" 本次为合成压力测试: 网格北来向{environment['wind_from_deg']:g}度, "
+                f"等效风速{environment['wind_speed_m_s']:g}m/s, "
+                f"点燃温升系数{environment['ignition_rise_factor']:g}, 模拟90分钟。"
+                "假设植被清理保留全部建筑; 风只参与静态辐射源倾斜, 不含飞火。"
+            ),
         }
         write_v3_case_bundle(
             request,

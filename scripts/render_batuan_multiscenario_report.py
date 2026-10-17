@@ -211,7 +211,7 @@ def render(study):
         else:
             body += '<p class="subtle">当前表为140×140扩展域结果；完整场地复核如未完成，不据此宣称全村全部建筑已获保护。</p>'
         links = maps(study, report)
-        body += '<section id="layouts"><h2>真实卫星影像上的候选布局</h2><p class="subtle">青色为实际可清理植被；白线为人工建筑标注，橙点T为设计火源，蓝点V为留出火源。面积按剔除建筑、不燃地表和区外地表后的交集计算。</p><div class="grid">'
+        body += '<section id="layouts"><h2>真实卫星影像上的候选布局</h2><p class="subtle">青色为模型中计入清理的植被交集；白线为人工建筑标注，橙点T为设计火源，蓝点V为留出火源。面积按剔除建筑、不燃地表和区外地表后的交集计算。</p><div class="grid">'
         for label in ("outer_proxy", "inner_proxy", "previous_outer_proxy", "previous_inner_proxy"):
             body += f'<figure><img src="{links[label]}" alt="{LABELS[label]}卫星清理布局"><figcaption>{LABELS[label]} · <a href="layouts/{label}-clearing.geojson">清理面GIS</a> · <a href="layouts/{label}-centerlines.geojson">中线与宽度GIS</a></figcaption></figure>'
         body += '</div></section><section class="card" id="matrix"><h2>逐情景引燃数量</h2><p class="subtle">每格为“民居 / 风雨桥”；任一非零即未达标。风向均为来向，点燃温升系数0.95表示温升降低5%。</p>'
@@ -239,7 +239,7 @@ def render(study):
             for row in json.loads((study / "replays.json").read_text()):
                 body += f'<li><a href="{row["viewer"]}/">{html.escape(row["label"])}</a> · {html.escape(row["scenario_id"])}</li>'
             body += "</ul></section>"
-    body += '<section class="card" id="scope"><h2>如何解释本轮结果</h2><p>已有V3风致辐射源倾斜闭合实际参与传热：θ=atan(0.2×风速)，并重新构建辐射图。0.2s/m与风况是合成压力测试；未增加风驱接触或飞火。原基准案例与参数未改。</p><p>5m元胞中的部分清理使用剩余燃料均匀缩放；本轮“村内”是建筑20m近邻的植被清理，未模拟拆房或木结构改造。模型尚未经本村实测校准，有限搜索无全局最优证明，结果不能直接作为施工标准。</p><p>提前发现一次保护失败即可淘汰该候选；未算完的损失只是下界。仅全部24项完成且为零才能计作达标。最终对照表只使用算满90分钟的完整情景结果。</p><p>更新前回退标签：<code>batuan-before-multiscenario-20261017</code> → <code>0de2e37</code>。旧报告：<a href="http://127.0.0.1:8856/">上一轮90分钟对照</a>。</p></section>'
+    body += '<section class="card" id="scope"><h2>如何解释本轮结果</h2><p>已有V3风致辐射源倾斜闭合实际参与传热：θ=atan(0.2×风速)，并重新构建辐射图。0.2s/m与风况是合成压力测试；未增加风驱接触或飞火。原基准案例与参数未改。</p><p>5m元胞中的部分清理使用剩余燃料均匀缩放；本轮“村内”是建筑20m近邻的植被清理，未模拟拆房或木结构改造。模型尚未经本村实测校准，有限搜索无全局最优证明，结果不能直接作为施工标准。</p><p>提前发现一次保护失败即可淘汰该候选；未算完时的累计引燃数只是下界；前缀均值仅用于启发排序，不作为总体均值或其下界。仅全部24项完成且为零才能计作达标。最终对照表只使用算满90分钟的完整情景结果。</p><p>更新前回退标签：<code>batuan-before-multiscenario-20261017</code> → <code>0de2e37</code>。旧报告：<a href="http://127.0.0.1:8856/">上一轮90分钟对照</a>。</p></section>'
     page = f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{refresh}<title>岜团村多情景防火线优化</title><style>{STYLE}</style></head><body><main>{body}</main></body></html>'
     (study / "index.html").write_text(page)
 

@@ -33,7 +33,7 @@ def check(study):
             shutil.copytree(
                 study / "evaluation-cache",
                 target / "evaluation-cache",
-                ignore=shutil.ignore_patterns("*.lock"),
+                ignore=shutil.ignore_patterns("*.lock", "*.tmp"),
             )
             for zone in ZONES:
                 for replica in range(len(protocol["configs"])):

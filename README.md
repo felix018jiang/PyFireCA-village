@@ -1,5 +1,7 @@
 # Cellular Automata Village Fire
 
+- [岜团村多火源、风况与材质参数下的90分钟保护约束优化](docs/BATUAN_MULTISCENARIO_SEARCH.md)
+
 - [岜团村折线与多路径防火线迭代优化](docs/BATUAN_ADAPTIVE_FIREBREAK_SEARCH.md)
 
 - [岜团村统一评价接口与防火线效果试验](docs/BATUAN_INTERVENTION_EVALUATION.md)

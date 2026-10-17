@@ -121,3 +121,36 @@ def test_control_prefetch_does_not_overwrite_optimizer_screen(tmp_path, monkeypa
     output = json.loads((tmp_path / "final-evaluations/control-training.json").read_text())
     assert len(output["records"]) == 2
     assert output["screen"]["protection_goal_met"]
+
+
+def test_candidate_prefetch_excludes_held_out_and_failed_plans(tmp_path, monkeypatch):
+    monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
+    module = importlib.import_module("prefetch_batuan_design_candidates")
+    directory = tmp_path / "evaluation-cache"
+    directory.mkdir()
+
+    def save(plan, sid, area, bridge=0):
+        record = {
+            "scenario_id": sid,
+            "intervention_id": plan,
+            "diagnostics": {
+                "stop_at_first_structure_ignition": True,
+                "reached_requested_horizon": not bridge,
+            },
+            "metrics": {"ignited_house_count": 0, "ignited_bridge_count": bridge},
+            "intervention": {"plan_id": plan, "zone_id": "z", "cleared_area_m2": area},
+        }
+        (directory / (plan + sid + ".json")).write_text(
+            json.dumps({"record": record, "record_sha256": module.digest(record)})
+        )
+
+    save("certified", "a", 10)
+    save("certified", "b", 10)
+    save("promising", "a", 5)
+    save("failed", "a", 3, bridge=1)
+    save("heldout", "unseen", 1)
+    save("too_large", "a", 20)
+    result = module.pending(tmp_path, ["a", "b"])
+    assert len(result) == 1
+    assert result[0][2]["plan_id"] == "promising"
+    assert result[0][3] == ["b"]

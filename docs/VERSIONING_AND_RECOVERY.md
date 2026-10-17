@@ -1,5 +1,7 @@
 # 岜团村研究版本管理与恢复
 
+2026-10-17多情景开发：当前分支 `codex/batuan-multiscenario-20261017`。更新前标签 `batuan-before-multiscenario-20261017` 指向 `0de2e37`，独立Git备份 `../PyFireCA-backups/batuan-before-multiscenario-20261017/repository.bundle` 已验证。旧模型案例、8856报告和既有数据归档不覆盖。新研究另存 `runs/research/batuan-multiscenario-20261017-r4`；R1触边预检与R2已有计算保留，R3对照物理输入/源码后复用设计缓存。详见[本轮协议](BATUAN_MULTISCENARIO_SEARCH.md)。下方版本表为此前历史保存点。
+
 更新日期：2026年10月16日。
 
 90分钟联合保护阶段：开发前回退标签 `batuan-before-90min-search-20261016`（`f472e25`），开发分支 `codex/batuan-90min-robust-search-20261016`，独立Git备份 `../PyFireCA-backups/batuan-before-90min-search-20261016/repository.bundle` 已验证。三类线形、90分钟民居/桥联合目标及独立5%敏感性试验见[本轮说明](BATUAN_PROTECTION90_SEARCH.md)。下方保留先前阶段的完成记录。
