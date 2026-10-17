@@ -31,14 +31,14 @@
 ```bash
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r3 --phase prepare
+  --output runs/research/batuan-multiscenario-20261017-r4 --phase prepare
 # prepare只运行一次；之后search可用同参重建搜索轨迹并复用签名一致的缓存。
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r3 --phase search --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r4 --phase search --workers 4
 PYTHONPATH=src:scripts OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   .venv/bin/python scripts/run_batuan_multiscenario_search.py \
-  --output runs/research/batuan-multiscenario-20261017-r3 --phase finalize --workers 4
+  --output runs/research/batuan-multiscenario-20261017-r4 --phase finalize --workers 4
 ```
 
 更新前标签 `batuan-before-multiscenario-20261017` → `0de2e37`。独立Git备份 `/Users/tone/Documents/github/PyFireCA-backups/batuan-before-multiscenario-20261017/repository.bundle` 已验证。旧8856报告和全部旧实验不覆盖。在另一目录查看旧版：
@@ -58,3 +58,7 @@ R1新增侧翼源在81×81窗触边；在冻结选线和任何留出评价前停
 R2初始计算保留，未冻结选线、未读取留出结果。R3增加严格面积上界：只在某方案全部24项真实算满5400s且零引燃之后，才可用其有效清理面积作上界；有效面积更大或相同的候选无法改善本目标，可跳过整套CA，明确标为area_bound_pruned，不当成物理不合格或保护失败。面积由同一清理适配器精确计算，风与点燃参数不改变可清理地表及交集面积。搜索仍可平移、折弯、重组和删带，不宣称全局最优。
 
 R3只改变调度与面积筛选，物理、评价、裁剪输入和情景逐文件相同。prepare --warm-from 对照原输入、情景、环境、源码快照和除调度器外全部源码，复用原物理模型标识并复制哈希一致的设计情景缓存；不导入留出结果，恢复时仍逐条核对完整物理评价签名。协议记录来源与数量。
+
+## 并发检查点修复
+
+R3的单次物理缓存已有按签名文件锁，但两个搜索种子仍可能同时写相同方案的筛选摘要，固定临时文件名导致检查点替换冲突。R4增加每个方案筛选摘要的写入锁，并使工作进程异常立即输出。仍使用相同24设计、8留出、两区各2个种子与64请求，物理方程、优化算子和目标不变。R3在选线冻结及任何留出评价前保留，已完成的设计评价与设计情景全图缓存对照签名后复用；不重新解释已失败/已成功的物理结果。

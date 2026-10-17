@@ -1,6 +1,7 @@
 """Protection certificates require all scenarios; wind alters real transport."""
 
 import importlib.util
+import json
 from dataclasses import asdict, replace
 from pathlib import Path
 
@@ -218,3 +219,50 @@ def test_area_bound_requires_complete_certificate_and_preserves_smaller_candidat
     assert oracle.best_area == 5
     assert oracle.best_plan_id == "smaller"
     assert calls == ["first", "smaller", "unsafe"]
+
+
+def test_concurrent_screens_serialize_shared_atomic_checkpoint(tmp_path, monkeypatch):
+    import importlib
+    import threading
+    import time
+    from concurrent.futures import ThreadPoolExecutor
+    from types import SimpleNamespace
+
+    monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
+    module = importlib.import_module("run_batuan_multiscenario_search")
+    oracle = module.ScenarioOracle.__new__(module.ScenarioOracle)
+    oracle.output = tmp_path
+    oracle.full = False
+    oracle.protocol = {"training": [{"scenario_id": "a"}, {"scenario_id": "b"}]}
+    oracle.preflight = lambda plan: None
+    oracle.evaluate = lambda sid, plan, complete=False: record(sid)
+    original = module.dump
+    active = 0
+    maximum = 0
+    mutex = threading.Lock()
+    barrier = threading.Barrier(2)
+
+    def slow_write(path, data):
+        nonlocal active, maximum
+        with mutex:
+            active += 1
+            maximum = max(maximum, active)
+        try:
+            time.sleep(0.04)
+            original(path, data)
+        finally:
+            with mutex:
+                active -= 1
+
+    monkeypatch.setattr(module, "dump", slow_write)
+
+    def screen():
+        barrier.wait(timeout=5)
+        return oracle.screen(SimpleNamespace(plan_id="shared"))
+
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        futures = [pool.submit(screen) for _ in range(2)]
+        assert all(f.result().passed for f in futures)
+    assert maximum == 1
+    saved = json.loads((tmp_path / "screens/training/shared.json").read_text())
+    assert saved["protection_goal_met"]

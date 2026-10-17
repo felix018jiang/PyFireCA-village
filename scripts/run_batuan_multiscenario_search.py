@@ -260,21 +260,25 @@ def prepare(output, budget, replicas, warm_from=None):
             "unchanged_sources_except_runner": True,
             "explanation": "Exact area bound added; physical/evaluation model unchanged",
         }
-        cache = output / "evaluation-cache"
-        cache.mkdir(exist_ok=True)
         ids = {r["scenario_id"] for r in protocol["training"]}
-        count = 0
-        for path in (warm_from / "evaluation-cache").glob("*.json"):
-            raw = json.loads(path.read_text())
-            if raw["record"]["scenario_id"] not in ids:
-                continue  # Never import held-out outcomes into search initialization.
-            if digest(raw["record"]) != raw["record_sha256"]:
-                raise ValueError("warm physical cache checksum failed")
-            if raw["record"]["evaluation_sha256"] != path.stem:
-                raise ValueError("warm physical cache signature filename mismatch")
-            shutil.copyfile(path, cache / path.name)
-            count += 1
-        protocol["warm_training_cache_records"] = count
+        imported = {}
+        for cache_name in ("evaluation-cache", "full-cache"):
+            cache = output / cache_name
+            cache.mkdir(exist_ok=True)
+            count = 0
+            for path in (warm_from / cache_name).glob("*.json"):
+                raw = json.loads(path.read_text())
+                if raw["record"]["scenario_id"] not in ids:
+                    continue  # Never import held-out outcomes into search initialization.
+                if digest(raw["record"]) != raw["record_sha256"]:
+                    raise ValueError("warm physical cache checksum failed")
+                if raw["record"]["evaluation_sha256"] != path.stem:
+                    raise ValueError("warm physical cache signature filename mismatch")
+                shutil.copyfile(path, cache / path.name)
+                count += 1
+            imported[cache_name] = count
+        protocol["warm_training_cache_records"] = imported["evaluation-cache"]
+        protocol["warm_full_design_cache_records"] = imported["full-cache"]
     protocol["area_bound"] = (
         "After a complete 24-scenario certificate, prune area >= incumbent; "
         "area is exact eligible-cell intersection, independent of wind/ignition thresholds"
@@ -389,7 +393,9 @@ class ScenarioOracle:
             raise
         directory = self.output / ("full-screens" if self.full else "screens") / suite
         directory.mkdir(parents=True, exist_ok=True)
-        dump(directory / (plan.plan_id + ".json"), screened.to_mapping())
+        with (directory / (plan.plan_id + ".screen.lock")).open("a") as stream:
+            fcntl.flock(stream, fcntl.LOCK_EX)
+            dump(directory / (plan.plan_id + ".json"), screened.to_mapping())
         return screened
 
     def __call__(self, plan):
@@ -489,7 +495,13 @@ def search(output, workers):
             for i in range(len(protocol["configs"]))
         ]
         for future in as_completed(tasks):
-            print({"finished": future.result()}, flush=True)
+            try:
+                print({"finished": future.result()}, flush=True)
+            except Exception:
+                import traceback
+
+                print(traceback.format_exc(), flush=True)
+                raise
     chosen = {}
     for zone in ZONES:
         records = [
