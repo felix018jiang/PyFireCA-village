@@ -8,14 +8,15 @@ import shutil
 from pathlib import Path
 
 import numpy as np
+from reuse_completed_batuan_runs import complete_from_screen
 from run_batuan_building_pairs import dump, sha
 from run_batuan_joint_search import BASE, ROOT, Oracle, digest, search_mode
 
 from pyfireca.planning.contracts import Ignition
 from pyfireca.planning.engines.village import request_fingerprint
-from pyfireca.planning.evaluation import EvaluationScenario
+from pyfireca.planning.evaluation import EvaluationResult, EvaluationScenario
 from pyfireca.planning.interventions.clearing import clearing_plan_from_mapping
-from pyfireca.planning.joint import combined_seed
+from pyfireca.planning.joint import combined_seed, plan_from_mapping
 
 
 def audit(output):
@@ -67,12 +68,36 @@ def audit(output):
     if report["selection"]["protocol_sha256"] != sha(output / "protocol.json"):
         raise AssertionError("report selection protocol mismatch")
     cache_counts = {}
+    reused_records = 0
     for folder in ["cache", "full-cache"]:
         count = 0
         for path in (output / folder).glob("*.json"):
             raw = json.loads(path.read_text())
             if raw["signature"] != path.stem or digest(raw["record"]) != raw["record_sha256"]:
                 raise AssertionError(f"invalid cache: {path}")
+            if "reused_from_signature" in raw:
+                source = json.loads(
+                    (path.parent / (raw["reused_from_signature"] + ".json")).read_text()
+                )
+                if (
+                    source["record_sha256"] != raw["reused_from_record_sha256"]
+                    or digest(source["record"]) != source["record_sha256"]
+                ):
+                    raise AssertionError("reused physical run source changed")
+                record = EvaluationResult(**source["record"])
+                row = oracle.rows[record.scenario_id]
+                scenario = EvaluationScenario(
+                    record.scenario_id, (Ignition(tuple(row["point_m"])),), 5400
+                )
+                expected = complete_from_screen(
+                    oracle.engine(row["environment_id"]),
+                    scenario,
+                    plan_from_mapping(record.intervention),
+                    record,
+                )
+                if raw["record"] != expected.to_mapping():
+                    raise AssertionError("reused full-horizon record differs from its source")
+                reused_records += 1
             count += 1
         cache_counts[folder] = count
     protected_matches = []
@@ -156,6 +181,8 @@ def audit(output):
         )
     result = {
         "cache_counts": cache_counts,
+        "reused_completed_screen_records": reused_records,
+        "actual_ca_solves": sum(cache_counts.values()) - reused_records,
         "scoped_singleton_checks": singleton_checks,
         "source_files": len(protocol["source_hashes"]),
         "input_files": len(protocol["input_hashes"]),

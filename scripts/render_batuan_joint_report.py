@@ -12,7 +12,7 @@ import numpy as np
 import rasterio
 from PIL import Image, ImageDraw
 from rasterio.windows import from_bounds
-from shapely.geometry import Polygon, shape
+from shapely.geometry import LineString, Polygon, shape
 from shapely.ops import unary_union
 
 from pyfireca.planning.joint import plan_from_mapping
@@ -194,8 +194,12 @@ def main(output):
                 plan = plan_from_mapping(row["plan"])
                 geom = shape(rec[0]["intervention"]["effective_footprint"])
                 if not geom.is_empty:
+                    extent = unary_union(
+                        [*polygons.values(), geom, *(LineString(p.points_m) for p in plan.paths)]
+                    ).bounds
+                    extent = (extent[0] - 25, extent[1] - 25, extent[2] + 25, extent[3] + 25)
                     figure(
-                        (347100, 2869530, 347550, 2869980),
+                        extent,
                         polygons,
                         footprint=geom,
                         paths=[p.points_m for p in plan.paths],
@@ -231,8 +235,9 @@ def main(output):
             if (output / (label + ".png")).exists()
         )
         joint_section = (
-            "<p>8项设计、4项新位置/风况留出；各模式16次候选请求。以下为完整场地90分钟结果。"
+            "<p>8项设计、4项新位置/风况留出；各模式最多16次候选请求。以下为完整场地90分钟结果。"
             "通过要求民居与桥均不引燃。区界仍为20米代理，非实测施工边界；固定等效木材和水分。</p>"
+            "<p>比较达标方案的清理面积；尚未完成等面积预算曲线。联合配置允许选择单侧极限，不能仅凭通过率称为协同。</p>"
             "<table><thead><tr><th>方案</th><th>情景</th><th>保护通过</th><th>清理㎡</th>"
             "<th>村外 / 近邻㎡</th></tr></thead><tbody>"
             + "".join(rows)
