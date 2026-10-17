@@ -154,3 +154,34 @@ def test_candidate_prefetch_excludes_held_out_and_failed_plans(tmp_path, monkeyp
     assert len(result) == 1
     assert result[0][2]["plan_id"] == "promising"
     assert result[0][3] == ["b"]
+
+
+def test_replay_export_serializes_same_plan(tmp_path, monkeypatch):
+    import threading
+    import time
+    from concurrent.futures import ThreadPoolExecutor
+
+    import validate_batuan_multiscenario as validator
+
+    active = 0
+    maximum = 0
+    lock = threading.Lock()
+
+    def export(*_args):
+        nonlocal active, maximum
+        with lock:
+            active += 1
+            maximum = max(maximum, active)
+        time.sleep(0.02)
+        with lock:
+            active -= 1
+        return "checked"
+
+    monkeypatch.setattr(validator, "_replay_task", export)
+    with ThreadPoolExecutor(max_workers=2) as pool:
+        tasks = [
+            pool.submit(validator.replay_task, tmp_path, "outer_proxy", {}, "design")
+            for _ in range(2)
+        ]
+        assert [task.result() for task in tasks] == ["checked", "checked"]
+    assert maximum == 1

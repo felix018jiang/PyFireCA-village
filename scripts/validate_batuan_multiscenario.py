@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import fcntl
 import json
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
@@ -109,6 +110,16 @@ def validate(study, workers):
 
 
 def replay_task(study, label, raw, sid):
+    # A design-only replay prefetch and the completion driver may meet here.
+    # Hold one process lock across export so a running bundle is never renamed.
+    locks = Path(study) / "replay-locks"
+    locks.mkdir(exist_ok=True)
+    with (locks / (label + ".lock")).open("a") as stream:
+        fcntl.flock(stream, fcntl.LOCK_EX)
+        return _replay_task(study, label, raw, sid)
+
+
+def _replay_task(study, label, raw, sid):
     study = Path(study)
     oracle = ScenarioOracle(study, full=True)
     row = oracle.rows[sid]
