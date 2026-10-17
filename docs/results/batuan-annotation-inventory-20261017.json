@@ -1,0 +1,1081 @@
+{
+  "annotated_objects": 333,
+  "independent_grid_objects": 331,
+  "unrepresented_objects": [
+    {
+      "label": "B0086",
+      "vector_area_m2": 219.27974416845518,
+      "overlapping_objects": [
+        {
+          "label": "B0051",
+          "overlap_m2": 219.2787908767671,
+          "fraction_of_absent": 0.999995652623129,
+          "parent_is_grid_owner": true
+        }
+      ],
+      "classification": "nested_annotation_requires_semantic_review",
+      "area_under_any_building_cell_m2": 219.27974416845518,
+      "fraction_under_any_building_cell": 1.0
+    },
+    {
+      "label": "B0149",
+      "vector_area_m2": 321.3689389273993,
+      "overlapping_objects": [
+        {
+          "label": "B0031",
+          "overlap_m2": 321.3689389273993,
+          "fraction_of_absent": 1.0,
+          "parent_is_grid_owner": true
+        },
+        {
+          "label": "B0069",
+          "overlap_m2": 2.9523850098861364,
+          "fraction_of_absent": 0.009186902193286052,
+          "parent_is_grid_owner": true
+        }
+      ],
+      "classification": "nested_annotation_requires_semantic_review",
+      "area_under_any_building_cell_m2": 321.3689389273993,
+      "fraction_under_any_building_cell": 1.0
+    }
+  ],
+  "positive_area_overlaps": [
+    {
+      "left": "B0001",
+      "right": "B0004",
+      "overlap_m2": 5.1609066114102875,
+      "left_fraction": 0.028860796947929077,
+      "right_fraction": 0.028360992571527195
+    },
+    {
+      "left": "B0003",
+      "right": "B0005",
+      "overlap_m2": 0.004111820489857845,
+      "left_fraction": 2.470524456047321e-05,
+      "right_fraction": 2.468350655389825e-05
+    },
+    {
+      "left": "B0004",
+      "right": "B0005",
+      "overlap_m2": 1.352730172481469,
+      "left_fraction": 0.007433726913059555,
+      "right_fraction": 0.008120520864289148
+    },
+    {
+      "left": "B0008",
+      "right": "B0009",
+      "overlap_m2": 6.760524578123757,
+      "left_fraction": 0.019379634792072355,
+      "right_fraction": 0.03740756756359888
+    },
+    {
+      "left": "B0009",
+      "right": "B0010",
+      "overlap_m2": 1.896147662688719,
+      "left_fraction": 0.010491829588507105,
+      "right_fraction": 0.016981463572603824
+    },
+    {
+      "left": "B0010",
+      "right": "B0012",
+      "overlap_m2": 0.4321585778761796,
+      "left_fraction": 0.003870313104933206,
+      "right_fraction": 0.003621026365237857
+    },
+    {
+      "left": "B0011",
+      "right": "B0012",
+      "overlap_m2": 3.033121972408627,
+      "left_fraction": 0.03672299591588399,
+      "right_fraction": 0.025414315932473983
+    },
+    {
+      "left": "B0015",
+      "right": "B0020",
+      "overlap_m2": 0.9491000557975697,
+      "left_fraction": 0.002898362852988437,
+      "right_fraction": 0.001877549740262045
+    },
+    {
+      "left": "B0020",
+      "right": "B0021",
+      "overlap_m2": 3.261783015108451,
+      "left_fraction": 0.006452596662910979,
+      "right_fraction": 0.0179973508783961
+    },
+    {
+      "left": "B0020",
+      "right": "B0036",
+      "overlap_m2": 2.0995407584714045,
+      "left_fraction": 0.0041534000358107,
+      "right_fraction": 0.015814869367149476
+    },
+    {
+      "left": "B0021",
+      "right": "B0035",
+      "overlap_m2": 0.8697069446896222,
+      "left_fraction": 0.004798731544206209,
+      "right_fraction": 0.012560699260389234
+    },
+    {
+      "left": "B0023",
+      "right": "B0024",
+      "overlap_m2": 0.39512858552428,
+      "left_fraction": 0.0036486917943387514,
+      "right_fraction": 0.001184520632985655
+    },
+    {
+      "left": "B0024",
+      "right": "B0025",
+      "overlap_m2": 9.516617874293676,
+      "left_fraction": 0.028529017239751844,
+      "right_fraction": 0.046800498756750214
+    },
+    {
+      "left": "B0025",
+      "right": "B0028",
+      "overlap_m2": 0.7766000698014045,
+      "left_fraction": 0.0038191373323298757,
+      "right_fraction": 0.004851228073094893
+    },
+    {
+      "left": "B0026",
+      "right": "B0032",
+      "overlap_m2": 0.0020715151771160296,
+      "left_fraction": 8.452039714402699e-06,
+      "right_fraction": 1.8376560215074635e-05
+    },
+    {
+      "left": "B0027",
+      "right": "B0028",
+      "overlap_m2": 2.5941695569850403,
+      "left_fraction": 0.012556558187807994,
+      "right_fraction": 0.01620513398155145
+    },
+    {
+      "left": "B0027",
+      "right": "B0029",
+      "overlap_m2": 3.1811506747018763,
+      "left_fraction": 0.015397722729235277,
+      "right_fraction": 0.010526256050800932
+    },
+    {
+      "left": "B0028",
+      "right": "B0030",
+      "overlap_m2": 0.6465458201664561,
+      "left_fraction": 0.004038811423408401,
+      "right_fraction": 0.0017765539609431217
+    },
+    {
+      "left": "B0029",
+      "right": "B0030",
+      "overlap_m2": 1.4459726454934883,
+      "left_fraction": 0.004784645515209643,
+      "right_fraction": 0.003973188520661226
+    },
+    {
+      "left": "B0029",
+      "right": "B0031",
+      "overlap_m2": 5.480558221351361,
+      "left_fraction": 0.018134871635614367,
+      "right_fraction": 0.007522675495222423
+    },
+    {
+      "left": "B0030",
+      "right": "B0031",
+      "overlap_m2": 0.23280112638969286,
+      "left_fraction": 0.0006396820616567441,
+      "right_fraction": 0.00031954542913697933
+    },
+    {
+      "left": "B0031",
+      "right": "B0069",
+      "overlap_m2": 16.369910082212726,
+      "left_fraction": 0.02246952161819964,
+      "right_fraction": 0.06719121803172834
+    },
+    {
+      "left": "B0031",
+      "right": "B0149",
+      "overlap_m2": 321.3689389273993,
+      "left_fraction": 0.44111459894292915,
+      "right_fraction": 1.0
+    },
+    {
+      "left": "B0033",
+      "right": "B0035",
+      "overlap_m2": 3.24344399254014,
+      "left_fraction": 0.03329758385781754,
+      "right_fraction": 0.04684327842495492
+    },
+    {
+      "left": "B0034",
+      "right": "B0037",
+      "overlap_m2": 1.0904728452109866,
+      "left_fraction": 0.011835803374945317,
+      "right_fraction": 0.008179456709314132
+    },
+    {
+      "left": "B0036",
+      "right": "B0037",
+      "overlap_m2": 0.22779997616459158,
+      "left_fraction": 0.0017159118489824962,
+      "right_fraction": 0.0017086899977418117
+    },
+    {
+      "left": "B0037",
+      "right": "B0038",
+      "overlap_m2": 0.4642302713860334,
+      "left_fraction": 0.003482114593344625,
+      "right_fraction": 0.002135649012345252
+    },
+    {
+      "left": "B0040",
+      "right": "B0042",
+      "overlap_m2": 0.05899504705939573,
+      "left_fraction": 0.00039735780800207804,
+      "right_fraction": 0.0005067030168700757
+    },
+    {
+      "left": "B0041",
+      "right": "B0044",
+      "overlap_m2": 2.278081183478953,
+      "left_fraction": 0.013488347324016698,
+      "right_fraction": 0.015205964586197376
+    },
+    {
+      "left": "B0043",
+      "right": "B0047",
+      "overlap_m2": 0.4548458249545967,
+      "left_fraction": 0.003489562989084853,
+      "right_fraction": 0.007734975977024329
+    },
+    {
+      "left": "B0044",
+      "right": "B0045",
+      "overlap_m2": 1.3845350816599402,
+      "left_fraction": 0.009241633517168045,
+      "right_fraction": 0.008781196260055647
+    },
+    {
+      "left": "B0047",
+      "right": "B0048",
+      "overlap_m2": 0.004781343904461389,
+      "left_fraction": 8.131014556985832e-05,
+      "right_fraction": 3.9377556633842676e-05
+    },
+    {
+      "left": "B0048",
+      "right": "B0051",
+      "overlap_m2": 0.04095689811424269,
+      "left_fraction": 0.0003373073778556812,
+      "right_fraction": 9.918917864864079e-05
+    },
+    {
+      "left": "B0049",
+      "right": "B0051",
+      "overlap_m2": 0.739451978528127,
+      "left_fraction": 0.0021800663390509267,
+      "right_fraction": 0.0017908005190171241
+    },
+    {
+      "left": "B0051",
+      "right": "B0070",
+      "overlap_m2": 1.2220242645995767,
+      "left_fraction": 0.0029594912865774418,
+      "right_fraction": 0.005388148534768626
+    },
+    {
+      "left": "B0051",
+      "right": "B0086",
+      "overlap_m2": 219.27879087676706,
+      "left_fraction": 0.5310481057785487,
+      "right_fraction": 0.9999956526231288
+    },
+    {
+      "left": "B0052",
+      "right": "B0053",
+      "overlap_m2": 0.3955687592137742,
+      "left_fraction": 0.0022844523432914445,
+      "right_fraction": 0.0024301344127226963
+    },
+    {
+      "left": "B0053",
+      "right": "B0057",
+      "overlap_m2": 32.69694071986458,
+      "left_fraction": 0.20087016222420148,
+      "right_fraction": 0.11834369224490367
+    },
+    {
+      "left": "B0054",
+      "right": "B0055",
+      "overlap_m2": 16.355563453747294,
+      "left_fraction": 0.10213335084617337,
+      "right_fraction": 0.0968722443721666
+    },
+    {
+      "left": "B0055",
+      "right": "B0056",
+      "overlap_m2": 38.63150630527632,
+      "left_fraction": 0.22881025957025056,
+      "right_fraction": 0.15534523263514538
+    },
+    {
+      "left": "B0055",
+      "right": "B0059",
+      "overlap_m2": 0.7785258202967045,
+      "left_fraction": 0.0046111247544054846,
+      "right_fraction": 0.007348980077194256
+    },
+    {
+      "left": "B0055",
+      "right": "B0064",
+      "overlap_m2": 0.3071610155993769,
+      "left_fraction": 0.0018192816804442364,
+      "right_fraction": 0.002839324987708013
+    },
+    {
+      "left": "B0057",
+      "right": "B0070",
+      "overlap_m2": 1.137884858318749,
+      "left_fraction": 0.004118473854686904,
+      "right_fraction": 0.005017161123305977
+    },
+    {
+      "left": "B0058",
+      "right": "B0059",
+      "overlap_m2": 6.0803533513811985,
+      "left_fraction": 0.14783623136742027,
+      "right_fraction": 0.057396163976388165
+    },
+    {
+      "left": "B0059",
+      "right": "B0060",
+      "overlap_m2": 1.424900707859413,
+      "left_fraction": 0.013450506895260061,
+      "right_fraction": 0.010898951510198563
+    },
+    {
+      "left": "B0059",
+      "right": "B0064",
+      "overlap_m2": 0.008410498962727409,
+      "left_fraction": 7.939182966698622e-05,
+      "right_fraction": 7.774469627067055e-05
+    },
+    {
+      "left": "B0060",
+      "right": "B0062",
+      "overlap_m2": 2.0587131103203458,
+      "left_fraction": 0.015746931866220483,
+      "right_fraction": 0.015801184860987437
+    },
+    {
+      "left": "B0061",
+      "right": "B0063",
+      "overlap_m2": 3.815040930218032,
+      "left_fraction": 0.018918084812058623,
+      "right_fraction": 0.06475390172757661
+    },
+    {
+      "left": "B0062",
+      "right": "B0063",
+      "overlap_m2": 0.9641436915795143,
+      "left_fraction": 0.007400065908567601,
+      "right_fraction": 0.016364717180697395
+    },
+    {
+      "left": "B0062",
+      "right": "B0064",
+      "overlap_m2": 0.003231092222641789,
+      "left_fraction": 2.4799514442746842e-05,
+      "right_fraction": 2.9867465008324656e-05
+    },
+    {
+      "left": "B0064",
+      "right": "B0065",
+      "overlap_m2": 0.7450956431294891,
+      "left_fraction": 0.006887490828358304,
+      "right_fraction": 0.006706607230882266
+    },
+    {
+      "left": "B0065",
+      "right": "B0066",
+      "overlap_m2": 0.15119505138576061,
+      "left_fraction": 0.0013609069308718738,
+      "right_fraction": 0.001023782569592514
+    },
+    {
+      "left": "B0066",
+      "right": "B0068",
+      "overlap_m2": 0.7960486931558464,
+      "left_fraction": 0.0053902609187949195,
+      "right_fraction": 0.00716161874725785
+    },
+    {
+      "left": "B0069",
+      "right": "B0070",
+      "overlap_m2": 1.5117673355556143,
+      "left_fraction": 0.006205134185002929,
+      "right_fraction": 0.006665683481051129
+    },
+    {
+      "left": "B0069",
+      "right": "B0072",
+      "overlap_m2": 3.0066877271806685,
+      "left_fraction": 0.012341119139672788,
+      "right_fraction": 0.02773557934962836
+    },
+    {
+      "left": "B0069",
+      "right": "B0149",
+      "overlap_m2": 2.952385009886136,
+      "left_fraction": 0.012118230577724192,
+      "right_fraction": 0.009186902193286052
+    },
+    {
+      "left": "B0070",
+      "right": "B0072",
+      "overlap_m2": 26.01817737193754,
+      "left_fraction": 0.1147193295133888,
+      "right_fraction": 0.2400080382503643
+    },
+    {
+      "left": "B0071",
+      "right": "B0074",
+      "overlap_m2": 3.5278460917929912,
+      "left_fraction": 0.016279962485855042,
+      "right_fraction": 0.03006849121061266
+    },
+    {
+      "left": "B0075",
+      "right": "B0076",
+      "overlap_m2": 0.055600381821089895,
+      "left_fraction": 0.0006463855785031244,
+      "right_fraction": 0.0016909711465254436
+    },
+    {
+      "left": "B0075",
+      "right": "B0077",
+      "overlap_m2": 3.3535705576188235,
+      "left_fraction": 0.03898713595012138,
+      "right_fraction": 0.04440362512008322
+    },
+    {
+      "left": "B0079",
+      "right": "B0080",
+      "overlap_m2": 0.0024000056628704146,
+      "left_fraction": 2.4582104319609215e-05,
+      "right_fraction": 2.7226519105801533e-05
+    },
+    {
+      "left": "B0079",
+      "right": "B0083",
+      "overlap_m2": 1.1315612867469929,
+      "left_fraction": 0.011590038317483634,
+      "right_fraction": 0.008548820123798819
+    },
+    {
+      "left": "B0080",
+      "right": "B0081",
+      "overlap_m2": 6.1162751884924464,
+      "left_fraction": 0.06938520431517031,
+      "right_fraction": 0.05835340255892249
+    },
+    {
+      "left": "B0080",
+      "right": "B0083",
+      "overlap_m2": 0.1777196599645028,
+      "left_fraction": 0.0020161151252089137,
+      "right_fraction": 0.0013426523364606106
+    },
+    {
+      "left": "B0081",
+      "right": "B0082",
+      "overlap_m2": 6.522572202274327,
+      "left_fraction": 0.06222975090379577,
+      "right_fraction": 0.06290323305588438
+    },
+    {
+      "left": "B0083",
+      "right": "B0085",
+      "overlap_m2": 5.172806914130757,
+      "left_fraction": 0.03907998299515367,
+      "right_fraction": 0.09455351782716354
+    },
+    {
+      "left": "B0089",
+      "right": "B0100",
+      "overlap_m2": 1.0254514807392394,
+      "left_fraction": 0.0037916139941145343,
+      "right_fraction": 0.006855056058335406
+    },
+    {
+      "left": "B0091",
+      "right": "B0092",
+      "overlap_m2": 0.27995046775573174,
+      "left_fraction": 0.0007626524976246491,
+      "right_fraction": 0.0015262381889091263
+    },
+    {
+      "left": "B0094",
+      "right": "B0141",
+      "overlap_m2": 0.1771511018985532,
+      "left_fraction": 0.00029106518200226316,
+      "right_fraction": 0.0013133174349482313
+    },
+    {
+      "left": "B0095",
+      "right": "B0096",
+      "overlap_m2": 1.3583412092959288,
+      "left_fraction": 0.009568511750367733,
+      "right_fraction": 0.004623440551573435
+    },
+    {
+      "left": "B0099",
+      "right": "B0100",
+      "overlap_m2": 0.4423887963262837,
+      "left_fraction": 0.004912302718926285,
+      "right_fraction": 0.002957331531873183
+    },
+    {
+      "left": "B0100",
+      "right": "B0124",
+      "overlap_m2": 0.943328112950657,
+      "left_fraction": 0.00630606831931123,
+      "right_fraction": 0.006277450477217474
+    },
+    {
+      "left": "B0102",
+      "right": "B0125",
+      "overlap_m2": 0.025675173443736782,
+      "left_fraction": 0.00032637840193656953,
+      "right_fraction": 0.0003456246683758295
+    },
+    {
+      "left": "B0106",
+      "right": "B0115",
+      "overlap_m2": 1.9048923890494391,
+      "left_fraction": 0.00366619447937347,
+      "right_fraction": 0.018992897208369896
+    },
+    {
+      "left": "B0107",
+      "right": "B0111",
+      "overlap_m2": 2.160429511777791,
+      "left_fraction": 0.0075378111362581915,
+      "right_fraction": 0.019111344393589174
+    },
+    {
+      "left": "B0107",
+      "right": "B0113",
+      "overlap_m2": 2.6996994914265287,
+      "left_fraction": 0.009419342209540472,
+      "right_fraction": 0.054763375547292666
+    },
+    {
+      "left": "B0109",
+      "right": "B0110",
+      "overlap_m2": 1.1706139135852558,
+      "left_fraction": 0.0028044981780309002,
+      "right_fraction": 0.012838561197526459
+    },
+    {
+      "left": "B0111",
+      "right": "B0112",
+      "overlap_m2": 8.043969739010937,
+      "left_fraction": 0.07115764487374746,
+      "right_fraction": 0.05870947126642845
+    },
+    {
+      "left": "B0112",
+      "right": "B0115",
+      "overlap_m2": 1.4632706193772202,
+      "left_fraction": 0.01067978214372284,
+      "right_fraction": 0.014589668488164658
+    },
+    {
+      "left": "B0113",
+      "right": "B0114",
+      "overlap_m2": 0.4082233261912262,
+      "left_fraction": 0.008280805841676203,
+      "right_fraction": 0.0018486787482954326
+    },
+    {
+      "left": "B0114",
+      "right": "B0119",
+      "overlap_m2": 6.499219126491127,
+      "left_fraction": 0.02943234134061001,
+      "right_fraction": 0.035253675796758595
+    },
+    {
+      "left": "B0116",
+      "right": "B0118",
+      "overlap_m2": 0.002934167913142429,
+      "left_fraction": 4.066118692141594e-05,
+      "right_fraction": 2.2666676097384464e-05
+    },
+    {
+      "left": "B0117",
+      "right": "B0130",
+      "overlap_m2": 0.22165466948739926,
+      "left_fraction": 0.000586953031563376,
+      "right_fraction": 0.0009980223188725751
+    },
+    {
+      "left": "B0121",
+      "right": "B0122",
+      "overlap_m2": 5.897530439116508,
+      "left_fraction": 0.03239317394546617,
+      "right_fraction": 0.05304753714912707
+    },
+    {
+      "left": "B0121",
+      "right": "B0123",
+      "overlap_m2": 0.9711557167698228,
+      "left_fraction": 0.005334235471308818,
+      "right_fraction": 0.005636868465534856
+    },
+    {
+      "left": "B0121",
+      "right": "B0126",
+      "overlap_m2": 7.807336105608846,
+      "left_fraction": 0.04288310151691097,
+      "right_fraction": 0.09287725323589022
+    },
+    {
+      "left": "B0126",
+      "right": "B0129",
+      "overlap_m2": 1.211261498677253,
+      "left_fraction": 0.014409350311780646,
+      "right_fraction": 0.011328177629655456
+    },
+    {
+      "left": "B0127",
+      "right": "B0129",
+      "overlap_m2": 6.608265156016733,
+      "left_fraction": 0.0746143775273819,
+      "right_fraction": 0.061803005868650264
+    },
+    {
+      "left": "B0128",
+      "right": "B0129",
+      "overlap_m2": 0.6506287840194033,
+      "left_fraction": 0.003570353931735458,
+      "right_fraction": 0.0060849275275300626
+    },
+    {
+      "left": "B0134",
+      "right": "B0135",
+      "overlap_m2": 0.5494432951807635,
+      "left_fraction": 0.0024872496423513917,
+      "right_fraction": 0.0038965411816917024
+    },
+    {
+      "left": "B0138",
+      "right": "B0139",
+      "overlap_m2": 0.17262168698538738,
+      "left_fraction": 0.0011502331390787562,
+      "right_fraction": 0.0009975171276466594
+    },
+    {
+      "left": "B0151",
+      "right": "B0162",
+      "overlap_m2": 12.637825439746665,
+      "left_fraction": 0.037661532395065714,
+      "right_fraction": 0.10087362950439616
+    },
+    {
+      "left": "B0152",
+      "right": "B0153",
+      "overlap_m2": 11.085764148363392,
+      "left_fraction": 0.029093748099210396,
+      "right_fraction": 0.04703471789764734
+    },
+    {
+      "left": "B0152",
+      "right": "B0156",
+      "overlap_m2": 1.3239023516943575,
+      "left_fraction": 0.0034744814171275913,
+      "right_fraction": 0.00338390184517818
+    },
+    {
+      "left": "B0154",
+      "right": "B0155",
+      "overlap_m2": 0.20465703993357648,
+      "left_fraction": 0.0010919955613704806,
+      "right_fraction": 0.0010423593995069315
+    },
+    {
+      "left": "B0155",
+      "right": "B0158",
+      "overlap_m2": 0.27477075034440834,
+      "left_fraction": 0.0013994626054594738,
+      "right_fraction": 0.0031325180412720157
+    },
+    {
+      "left": "B0156",
+      "right": "B0163",
+      "overlap_m2": 6.1808424181114585,
+      "left_fraction": 0.01579826792862405,
+      "right_fraction": 0.01893242053532365
+    },
+    {
+      "left": "B0158",
+      "right": "B0180",
+      "overlap_m2": 0.4539563218005309,
+      "left_fraction": 0.005175319302390173,
+      "right_fraction": 0.004212089526870289
+    },
+    {
+      "left": "B0159",
+      "right": "B0180",
+      "overlap_m2": 0.0019414339269686965,
+      "left_fraction": 1.4717487523643742e-05,
+      "right_fraction": 1.8013833309911934e-05
+    },
+    {
+      "left": "B0167",
+      "right": "B0168",
+      "overlap_m2": 1.7576882211899552,
+      "left_fraction": 0.01226555066124741,
+      "right_fraction": 0.012383064919118666
+    },
+    {
+      "left": "B0168",
+      "right": "B0169",
+      "overlap_m2": 1.2159288209876382,
+      "left_fraction": 0.008566323279519847,
+      "right_fraction": 0.008885565140859142
+    },
+    {
+      "left": "B0168",
+      "right": "B0179",
+      "overlap_m2": 0.134710684548477,
+      "left_fraction": 0.0009490483761297447,
+      "right_fraction": 0.0013829937069363388
+    },
+    {
+      "left": "B0169",
+      "right": "B0178",
+      "overlap_m2": 0.33252724076309464,
+      "left_fraction": 0.0024299880123827312,
+      "right_fraction": 0.0022241504831979463
+    },
+    {
+      "left": "B0169",
+      "right": "B0179",
+      "overlap_m2": 2.6458862851599068,
+      "left_fraction": 0.019335173684754018,
+      "right_fraction": 0.02716372568300996
+    },
+    {
+      "left": "B0171",
+      "right": "B0172",
+      "overlap_m2": 0.5103916724217656,
+      "left_fraction": 0.005796243246535257,
+      "right_fraction": 0.006197015483646244
+    },
+    {
+      "left": "B0173",
+      "right": "B0174",
+      "overlap_m2": 7.796614314006109,
+      "left_fraction": 0.027906741229134367,
+      "right_fraction": 0.04800076317188503
+    },
+    {
+      "left": "B0185",
+      "right": "B0186",
+      "overlap_m2": 1.574426583454024,
+      "left_fraction": 0.014460258700602226,
+      "right_fraction": 0.017393043564190896
+    },
+    {
+      "left": "B0186",
+      "right": "B0187",
+      "overlap_m2": 0.9163484375641692,
+      "left_fraction": 0.010123106699307886,
+      "right_fraction": 0.0056268834211070495
+    },
+    {
+      "left": "B0194",
+      "right": "B0195",
+      "overlap_m2": 3.000430250733234,
+      "left_fraction": 0.014932717245869597,
+      "right_fraction": 0.025359873254081115
+    },
+    {
+      "left": "B0198",
+      "right": "B0199",
+      "overlap_m2": 15.932482096616106,
+      "left_fraction": 0.09642506871798481,
+      "right_fraction": 0.06149945327596187
+    },
+    {
+      "left": "B0199",
+      "right": "B0200",
+      "overlap_m2": 12.331496187385703,
+      "left_fraction": 0.0475996313066563,
+      "right_fraction": 0.10597784968815967
+    },
+    {
+      "left": "B0200",
+      "right": "B0201",
+      "overlap_m2": 0.47778848834902726,
+      "left_fraction": 0.0041061519082155225,
+      "right_fraction": 0.0017112091209743818
+    },
+    {
+      "left": "B0206",
+      "right": "B0239",
+      "overlap_m2": 3.239047535128674,
+      "left_fraction": 0.00831333901339292,
+      "right_fraction": 0.00908590935504858
+    },
+    {
+      "left": "B0211",
+      "right": "B0214",
+      "overlap_m2": 5.946785507875303,
+      "left_fraction": 0.021561072095209587,
+      "right_fraction": 0.007161277272156676
+    },
+    {
+      "left": "B0214",
+      "right": "B0215",
+      "overlap_m2": 9.380214180916019,
+      "left_fraction": 0.011295903397355929,
+      "right_fraction": 0.026207783469899208
+    },
+    {
+      "left": "B0214",
+      "right": "B0224",
+      "overlap_m2": 2.049330936507285,
+      "left_fraction": 0.0024678588187352713,
+      "right_fraction": 0.006330002798336561
+    },
+    {
+      "left": "B0214",
+      "right": "B0225",
+      "overlap_m2": 0.08052538729685613,
+      "left_fraction": 9.69708130748814e-05,
+      "right_fraction": 0.00022281393315032384
+    },
+    {
+      "left": "B0215",
+      "right": "B0216",
+      "overlap_m2": 3.337050387314557,
+      "left_fraction": 0.009323528470897097,
+      "right_fraction": 0.010318364886042949
+    },
+    {
+      "left": "B0216",
+      "right": "B0227",
+      "overlap_m2": 0.08878801300748894,
+      "left_fraction": 0.0002745379929534881,
+      "right_fraction": 0.0002876148301693789
+    },
+    {
+      "left": "B0218",
+      "right": "B0227",
+      "overlap_m2": 1.2469751057452867,
+      "left_fraction": 0.005766913734247255,
+      "right_fraction": 0.004039380104543203
+    },
+    {
+      "left": "B0219",
+      "right": "B0220",
+      "overlap_m2": 0.25246263121794277,
+      "left_fraction": 0.00144119216004162,
+      "right_fraction": 0.002573914247654741
+    },
+    {
+      "left": "B0221",
+      "right": "B0222",
+      "overlap_m2": 0.07838576632556676,
+      "left_fraction": 0.0005355584055151197,
+      "right_fraction": 0.0004425295462023155
+    },
+    {
+      "left": "B0235",
+      "right": "B0236",
+      "overlap_m2": 0.8275019919186141,
+      "left_fraction": 0.0048723066427973204,
+      "right_fraction": 0.0026600160590711974
+    },
+    {
+      "left": "B0237",
+      "right": "B0238",
+      "overlap_m2": 10.909258150456868,
+      "left_fraction": 0.048056085253228534,
+      "right_fraction": 0.03252821369400077
+    },
+    {
+      "left": "B0238",
+      "right": "B0239",
+      "overlap_m2": 3.589480691885731,
+      "left_fraction": 0.010702780462781423,
+      "right_fraction": 0.010068915582270145
+    },
+    {
+      "left": "B0241",
+      "right": "B0242",
+      "overlap_m2": 7.887442841267195,
+      "left_fraction": 0.023387751317357,
+      "right_fraction": 0.06420515760817172
+    },
+    {
+      "left": "B0242",
+      "right": "B0245",
+      "overlap_m2": 2.705220059386658,
+      "left_fraction": 0.02202096215125195,
+      "right_fraction": 0.020378300654273703
+    },
+    {
+      "left": "B0243",
+      "right": "B0244",
+      "overlap_m2": 2.238191070575919,
+      "left_fraction": 0.007850043686941352,
+      "right_fraction": 0.011000153045614292
+    },
+    {
+      "left": "B0250",
+      "right": "B0251",
+      "overlap_m2": 0.6346236567417005,
+      "left_fraction": 0.0019222468426009546,
+      "right_fraction": 0.0017338489896641357
+    },
+    {
+      "left": "B0253",
+      "right": "B0256",
+      "overlap_m2": 12.251817447931373,
+      "left_fraction": 0.05868111094880991,
+      "right_fraction": 0.06385013299600305
+    },
+    {
+      "left": "B0255",
+      "right": "B0258",
+      "overlap_m2": 0.42408809981056383,
+      "left_fraction": 0.0033674663545581003,
+      "right_fraction": 0.0027028935242540534
+    },
+    {
+      "left": "B0255",
+      "right": "B0267",
+      "overlap_m2": 8.077408374254272,
+      "left_fraction": 0.06413856211593126,
+      "right_fraction": 0.05324379266050934
+    },
+    {
+      "left": "B0257",
+      "right": "B0259",
+      "overlap_m2": 3.3176804385867573,
+      "left_fraction": 0.01500419595939339,
+      "right_fraction": 0.015656552305594373
+    },
+    {
+      "left": "B0258",
+      "right": "B0267",
+      "overlap_m2": 2.8521410437002093,
+      "left_fraction": 0.018177905866068975,
+      "right_fraction": 0.01880043688930395
+    },
+    {
+      "left": "B0266",
+      "right": "B0269",
+      "overlap_m2": 0.5253981028273002,
+      "left_fraction": 0.0031761078110637353,
+      "right_fraction": 0.004225373511352268
+    },
+    {
+      "left": "B0270",
+      "right": "B0271",
+      "overlap_m2": 24.144115301556674,
+      "left_fraction": 0.11699891958089825,
+      "right_fraction": 0.08312420258244552
+    },
+    {
+      "left": "B0271",
+      "right": "B0272",
+      "overlap_m2": 8.115385354913766,
+      "left_fraction": 0.027939931857141605,
+      "right_fraction": 0.0604812257503552
+    },
+    {
+      "left": "B0271",
+      "right": "B0273",
+      "overlap_m2": 3.770080774548303,
+      "left_fraction": 0.012979765634052079,
+      "right_fraction": 0.006588881029528179
+    },
+    {
+      "left": "B0273",
+      "right": "B0277",
+      "overlap_m2": 3.229285146559139,
+      "left_fraction": 0.0056437452971149936,
+      "right_fraction": 0.01027719051001773
+    },
+    {
+      "left": "B0273",
+      "right": "B0278",
+      "overlap_m2": 0.6770853799055847,
+      "left_fraction": 0.0011833261093896039,
+      "right_fraction": 0.002157676305421226
+    },
+    {
+      "left": "B0277",
+      "right": "B0283",
+      "overlap_m2": 2.2043359395984465,
+      "left_fraction": 0.007015292664220382,
+      "right_fraction": 0.0036404722028694956
+    },
+    {
+      "left": "B0281",
+      "right": "B0282",
+      "overlap_m2": 1.751392156356856,
+      "left_fraction": 0.009784349312752723,
+      "right_fraction": 0.007429549992483627
+    },
+    {
+      "left": "B0288",
+      "right": "B0289",
+      "overlap_m2": 11.83005510703704,
+      "left_fraction": 0.020195883251314918,
+      "right_fraction": 0.02220759281809261
+    },
+    {
+      "left": "B0295",
+      "right": "B0296",
+      "overlap_m2": 0.0010605641812296053,
+      "left_fraction": 4.58249012654718e-06,
+      "right_fraction": 3.0687711991998934e-06
+    },
+    {
+      "left": "B0296",
+      "right": "B0303",
+      "overlap_m2": 3.7062335720078408,
+      "left_fraction": 0.01072408727786659,
+      "right_fraction": 0.011232935424915705
+    },
+    {
+      "left": "B0324",
+      "right": "B0327",
+      "overlap_m2": 50.13965158033092,
+      "left_fraction": 0.1466382330220315,
+      "right_fraction": 0.006474870228231028
+    },
+    {
+      "left": "B0326",
+      "right": "B0327",
+      "overlap_m2": 6.68166547533008,
+      "left_fraction": 0.030669389899526108,
+      "right_fraction": 0.0008628483744427391
+    }
+  ],
+  "sum_annotation_area_m2": 78146.58943572163,
+  "union_annotation_area_m2": 77033.75172258199,
+  "allow_complete_independent_object_claim": false,
+  "automatic_geometry_or_fuel_change": false,
+  "annotation_sha256": "65695d51c4c18d24413eafec95e4a0037935f3e6c234aa78e031e0a49ce63560",
+  "building_index_sha256": "114aa0c30d52f496aaec578ec55d54d5ea2375acab675887630313299799145f",
+  "source_sha256": "e5669d8a359cdd5dde4cc2c3275b0c8bd149fa813360f843da1326cc9c3272cf",
+  "note": "Nested labels do not justify duplicate fuel; do not silently delete annotations."
+}

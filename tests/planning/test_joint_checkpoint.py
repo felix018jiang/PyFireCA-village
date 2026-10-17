@@ -123,3 +123,19 @@ def test_completion_tag_is_present_in_verified_bundle(tmp_path, monkeypatch):
     bundle = Path(complete["backup"]) / "repository.bundle"
     refs = subprocess.check_output(["git", "bundle", "list-heads", str(bundle)], text=True)
     assert "refs/tags/" + complete["tag"] in refs
+
+
+def test_result_archival_respects_no_commit_policy(tmp_path, monkeypatch):
+    import tarfile
+
+    repo, out, head = fixture(tmp_path, monkeypatch)
+    (repo / "user.txt").write_text("user staged change")
+    subprocess.run(["git", "add", "user.txt"], cwd=repo, check=True)
+    module.finish(out, head, os.getpid(), commit_results=False)
+    assert module.git("rev-parse", "HEAD") == head
+    assert "user.txt" in module.git("diff", "--cached", "--name-only")
+    complete = json.loads((out / "completion.json").read_text())
+    assert complete["result_documents_committed"] is False
+    with tarfile.open(Path(complete["backup"]) / "joint-and-channel-experiments.tar.gz") as tar:
+        assert "docs/results/batuan-joint-pilot-20261017.json" in tar.getnames()
+        assert "docs/BATUAN_JOINT_PILOT_RESULTS_20261017.md" in tar.getnames()

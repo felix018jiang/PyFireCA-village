@@ -24,7 +24,7 @@ def git(*args):
     return subprocess.check_output(["git", *args], cwd=ROOT, text=True).strip()
 
 
-def finish(output, expected_head, finalizer_pid):
+def finish(output, expected_head, finalizer_pid, *, commit_results=True):
     started = time.monotonic()
     exited = None
     while True:
@@ -164,19 +164,20 @@ def finish(output, expected_head, finalizer_pid):
     if git("rev-parse", "HEAD") != expected_head:
         raise RuntimeError("HEAD changed; results saved; automatic version snapshot skipped")
     paths = [str(p.relative_to(ROOT)) for p in [data, prose]]
-    subprocess.run(["git", "add", *paths], cwd=ROOT, check=True)
-    subprocess.run(
-        [
-            "git",
-            "commit",
-            "--only",
-            *paths,
-            "-m",
-            "research: accept bounded Batuan joint pilot and independent confirmation",
-        ],
-        cwd=ROOT,
-        check=True,
-    )
+    if commit_results:
+        subprocess.run(["git", "add", *paths], cwd=ROOT, check=True)
+        subprocess.run(
+            [
+                "git",
+                "commit",
+                "--only",
+                *paths,
+                "-m",
+                "research: accept bounded Batuan joint pilot and independent confirmation",
+            ],
+            cwd=ROOT,
+            check=True,
+        )
     tag = "batuan-joint-pilot-20261017"
     commit = git("rev-parse", "HEAD")
     backup = ROOT.parent / "PyFireCA-backups" / tag
@@ -205,6 +206,18 @@ def finish(output, expected_head, finalizer_pid):
         and p.suffix not in (".lock", ".tmp")
         and p.name not in ("completion.json", "checkpoint-error.json")
     ]
+    # Results remain recoverable even when the user's commit policy keeps
+    # ordinary result updates in the working tree.
+    files.extend([data, prose])
+    if not commit_results:
+        files.extend(
+            p
+            for p in [
+                ROOT / "scripts/complete_batuan_joint_checkpoint.py",
+                ROOT / "scripts/audit_batuan_joint_study.py",
+            ]
+            if p.exists()
+        )
     manifest = {str(p.relative_to(ROOT)): sha(p) for p in sorted(files)}
     archive = backup / "joint-and-channel-experiments.tar.gz"
     with tarfile.open(archive, "w:gz") as tar:
@@ -246,6 +259,7 @@ def finish(output, expected_head, finalizer_pid):
     refreshed.replace(backup / "repository.bundle")
     validation = {
         "commit": commit,
+        "result_documents_committed": commit_results,
         "tag": tag,
         "archive_sha256": sha(archive),
         "repository_bundle_sha256": sha(backup / "repository.bundle"),
@@ -264,6 +278,7 @@ def finish(output, expected_head, finalizer_pid):
         {
             "status": "study_complete",
             "commit": commit,
+            "result_documents_committed": commit_results,
             "tag": tag,
             "backup": str(backup),
             "archive_verified": True,
@@ -281,10 +296,11 @@ if __name__ == "__main__":
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--expected-head", required=True)
     parser.add_argument("--finalizer-pid", type=int, required=True)
+    parser.add_argument("--no-commit", action="store_true")
     args = parser.parse_args()
     directory = args.output.resolve()
     try:
-        finish(directory, args.expected_head, args.finalizer_pid)
+        finish(directory, args.expected_head, args.finalizer_pid, commit_results=not args.no_commit)
     except Exception as error:
         dump(
             directory / "checkpoint-error.json", {"status": "needs_attention", "error": str(error)}

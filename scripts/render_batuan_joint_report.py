@@ -249,6 +249,19 @@ def main(output):
             for label in sorted(seen)
             if (output / (label + ".png")).exists()
         )
+        inventory_note = ""
+        inventory_path = ROOT / "docs/results/batuan-annotation-inventory-20261017.json"
+        if inventory_path.exists():
+            inventory = load(inventory_path)
+            nested = ", ".join(x["label"] for x in inventory["unrepresented_objects"])
+            inventory_note = (
+                f"<p>对象核对：人工标注{inventory['annotated_objects']}个对象，"
+                f"本表按{inventory['independent_grid_objects']}个独立网格对象计数。"
+                f"{nested}与外层轮廓重叠，已在其他建筑格内，尚未作为独立对象评价；"
+                "不据此声称已验证333栋独立建筑。"
+                '<a href="local-mesh/overlap-review.svg">查看重叠标注</a> · '
+                '<a href="local-mesh/">查看98项细网格核验</a></p>'
+            )
         joint_section = (
             "<p>8项设计、4项新位置/风况留出；各模式最多16次候选请求。以下为完整场地90分钟结果。"
             "通过要求民居与桥均不引燃。区界仍为20米代理，非实测施工边界；固定等效木材和水分。</p>"
@@ -257,6 +270,7 @@ def main(output):
             "<th>村外 / 近邻㎡</th></tr></thead><tbody>"
             + "".join(rows)
             + "</tbody></table>"
+            + inventory_note
             + images
             + '<p><a href="plans.utm49n.geojson">候选方案GIS文件（UTM49N）</a></p>'
         )

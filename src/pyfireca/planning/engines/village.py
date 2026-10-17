@@ -85,7 +85,14 @@ class VillageEvaluationEngine:
     capabilities = CAPABILITIES
 
     def __init__(
-        self, bundle, transport, *, zones=None, structure_types=None, code_version="unspecified"
+        self,
+        bundle,
+        transport,
+        *,
+        zones=None,
+        structure_types=None,
+        code_version="unspecified",
+        object_observer=None,
     ):
         self.bundle, self.transport = bundle, transport
         self.zones = {"vegetation": np.ones(bundle.request.grid.shape, dtype=bool)}
@@ -95,8 +102,22 @@ class VillageEvaluationEngine:
                 raise ValueError("construction zone must be boolean and match grid")
         self.structure_types = dict(structure_types or {})
         self.code_version = code_version
+        self.object_observer = object_observer
+        if object_observer is not None:
+            if bundle.request.firebrands is not None:
+                raise ValueError(
+                    "annotated observation is not yet verified for firebrand attribution"
+                )
+            object_observer.validate_binding(bundle.request)
+            if self.structure_types != object_observer.types:
+                raise ValueError("observer and structure-type inventories differ")
+            self.code_version += ":object-observer:" + object_observer.sha256
         self.case_sha256 = request_fingerprint(bundle.request)
         self.capabilities = {**CAPABILITIES, "spotting": bundle.request.firebrands is not None}
+        if object_observer is not None:
+            self.capabilities.update(
+                annotation_object_observation=True, independent_subcell_temperatures=False
+            )
         # This adapter supports precisely the verified parent graph. No silent
         # rebuilding of a finite-area, opaque or legacy incorrect graph.
         request = bundle.request
@@ -148,6 +169,10 @@ class VillageEvaluationEngine:
         stop = None
         if stop_at_first_structure_ignition:
             structures = request.building_index >= 0
+            if self.object_observer is not None:
+                structures = np.zeros(request.grid.shape, dtype=bool)
+                for obj in self.object_observer.objects:
+                    structures.ravel()[obj.cell_ids] = True
 
             def stop(state):
                 return bool(np.isfinite(state.ignition_time_s[structures]).any())
@@ -169,6 +194,10 @@ class VillageEvaluationEngine:
             affected.append(category)
             first.append({"building_index": int(bid), "source_label": category, "time_s": minimum})
         first.sort(key=lambda item: item["time_s"])
+        if self.object_observer is not None:
+            structure_ids = np.asarray(self.object_observer.ids)
+            first = self.object_observer.first_ignitions(state.ignition_time_s)
+            affected = [item["source_label"] for item in first]
         house_times = [item["time_s"] for item in first if item["source_label"] == "building"]
         metrics = {
             "protected_structure_count": int(structure_ids.size),
@@ -188,6 +217,8 @@ class VillageEvaluationEngine:
                 ignited[[0, -1], :].any() or ignited[:, [0, -1]].any()
             ),
         }
+        if self.object_observer is not None:
+            metrics["object_observation"] = self.object_observer.summary()
         if result.firebrands is not None:
             metrics.update(
                 firebrand_counts=result.firebrands["counts"],

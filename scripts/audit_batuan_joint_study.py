@@ -171,7 +171,9 @@ def audit(output):
             expected = report["selection"]["selected"][mode]
             a = selected["plan"] if selected else None
             b = expected["plan"] if expected else None
-            if a != b:
+            # Search returns dataclass tuples; frozen JSON stores lists. Compare
+            # their canonical serialized plans, as for all cache identities.
+            if digest(a) != digest(b):
                 raise AssertionError("recovered selection differs")
             actual = json.loads((recovery / (mode + "-search.json")).read_text())
             first = json.loads((output / (mode + "-search.json")).read_text())

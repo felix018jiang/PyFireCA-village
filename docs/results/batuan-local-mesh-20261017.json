@@ -1,0 +1,1606 @@
+{
+  "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+  "audit_sha256": "fc4004511ab69314cd7454ba0defb37e25e01c0e706fe1a8b79f626cae68bbdd",
+  "count": 98,
+  "comparisons": [
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 5,
+      "source": 162,
+      "no_ground_s": 253.0,
+      "mapped_s": 253.0,
+      "cleared_s": 253.0,
+      "synthetic_bridge_s": 247.83333333333331,
+      "cleared_area_m2": 600.0
+    },
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 5,
+      "source": 179,
+      "no_ground_s": 172.0,
+      "mapped_s": 172.0,
+      "cleared_s": 172.0,
+      "synthetic_bridge_s": 172.0,
+      "cleared_area_m2": 600.0
+    },
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 2.5,
+      "source": 162,
+      "no_ground_s": 218.0,
+      "mapped_s": 218.0,
+      "cleared_s": 218.0,
+      "synthetic_bridge_s": 203.0,
+      "cleared_area_m2": 587.5
+    },
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 2.5,
+      "source": 179,
+      "no_ground_s": 330.0,
+      "mapped_s": 330.0,
+      "cleared_s": 330.0,
+      "synthetic_bridge_s": 302.8333333333333,
+      "cleared_area_m2": 587.5
+    },
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 1,
+      "source": 162,
+      "no_ground_s": 315.0,
+      "mapped_s": 315.0,
+      "cleared_s": 315.0,
+      "synthetic_bridge_s": 263.8333333333333,
+      "cleared_area_m2": 595.0
+    },
+    {
+      "pair": "B0163-B0180",
+      "gap_m": 3.4984837162798588,
+      "spacing_m": 1,
+      "source": 179,
+      "no_ground_s": 320.0,
+      "mapped_s": 320.0,
+      "cleared_s": 320.0,
+      "synthetic_bridge_s": 267.8333333333333,
+      "cleared_area_m2": 595.0
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 5,
+      "source": 328,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2050.0
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 5,
+      "source": 329,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2050.0
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 2.5,
+      "source": 328,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2193.75
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 2.5,
+      "source": 329,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2193.75
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 1,
+      "source": 328,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2166.0
+    },
+    {
+      "pair": "B0329-B0330",
+      "gap_m": 7.851894836520671,
+      "spacing_m": 1,
+      "source": 329,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2166.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 5,
+      "source": 288,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2675.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 5,
+      "source": 289,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2675.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 2.5,
+      "source": 288,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2875.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 2.5,
+      "source": 289,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2875.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 1,
+      "source": 288,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2780.0
+    },
+    {
+      "pair": "B0289-B0290",
+      "gap_m": 14.923661379208141,
+      "spacing_m": 1,
+      "source": 289,
+      "no_ground_s": null,
+      "mapped_s": null,
+      "cleared_s": null,
+      "synthetic_bridge_s": null,
+      "cleared_area_m2": 2780.0
+    }
+  ],
+  "extra_controls": [
+    {
+      "key": "B0163-B0180-1m-none-from162-clear0-dt0.5-both",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 162,
+      "receiver_owner": 179,
+      "cleared": false,
+      "dt_s": 0.5,
+      "channel": "both",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "4cbaf79c5f9dc3370b0959396a0e2d99f792de33b23ac640c4f6a75950eb925c",
+      "first_receiver_ignition_s": 314.5,
+      "ignited_receiver_area_m2": 107.77461374082063,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 213530874.22730657,
+      "receiver_contact_J": 22785517.14178199,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 514,
+        "burned_out_cells": 514,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 4689.82761617799,
+        "remaining_fuel_kg": 0.0,
+        "energy_budget": {
+          "released_J": 76256597039.05386,
+          "radiative_emitted_J": 30502638815.62157,
+          "non_radiative_released_J": 45753958223.43258,
+          "radiative_intercepted_J": 7768708318.864718,
+          "radiative_unintercepted_J": 22733930496.756775,
+          "susceptible_incident_J": 237256526.9192304,
+          "susceptible_absorbed_J": 213530874.22730637,
+          "susceptible_unabsorbed_J": 23725652.691922985,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 7531451791.945542,
+          "convective_transferred_J": 22785517.14178202,
+          "nonradiative_untransferred_J": 45731172706.29086,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.0002593994140625,
+          "release_split": 0.00028228759765625,
+          "radiation_split": 7.62939453125e-05,
+          "contact_split": 6.866455078125e-05,
+          "susceptible_radiation_split": 1.0505318641662598e-06
+        },
+        "energy_tolerance_J": 76.25660703905388
+      }
+    },
+    {
+      "key": "B0163-B0180-1m-none-from162-clear0-dt1-radiation_only",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 162,
+      "receiver_owner": 179,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "radiation_only",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "c60cfd75b421d982d5c281c5fe20928c7d4058d5dc88739e61c6a2591ffb6cae",
+      "first_receiver_ignition_s": 315.0,
+      "ignited_receiver_area_m2": 1.0809586155613675,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 74825448.21587281,
+      "receiver_contact_J": 0.0,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 381,
+        "burned_out_cells": 381,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 3537.53614082519,
+        "remaining_fuel_kg": 1152.2914753528,
+        "energy_budget": {
+          "released_J": 57520337649.81746,
+          "radiative_emitted_J": 23008135059.926937,
+          "non_radiative_released_J": 34512202589.89053,
+          "radiative_intercepted_J": 6482733703.149406,
+          "radiative_unintercepted_J": 16525401356.777567,
+          "susceptible_incident_J": 83139386.90652503,
+          "susceptible_absorbed_J": 74825448.21587266,
+          "susceptible_unabsorbed_J": 8313938.690652531,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 6399594316.2428875,
+          "convective_transferred_J": 0.0,
+          "nonradiative_untransferred_J": 34512202589.89053,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.0001373291015625,
+          "release_split": 1.52587890625e-05,
+          "radiation_split": 3.62396240234375e-05,
+          "contact_split": 0.0,
+          "susceptible_radiation_split": 1.601874828338623e-07
+        },
+        "energy_tolerance_J": 57.52034764981747
+      }
+    },
+    {
+      "key": "B0163-B0180-1m-none-from162-clear0-dt1-contact_only",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 162,
+      "receiver_owner": 179,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "contact_only",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "cfaf63f48fe168f6a4e6f31ac1f1bff2b31a3570bfe2d870cddcd08e88fa3bcb",
+      "first_receiver_ignition_s": null,
+      "ignited_receiver_area_m2": 0.0,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 0.0,
+      "receiver_contact_J": 0.0,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 377,
+        "burned_out_cells": 377,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 3525.8617877771276,
+        "remaining_fuel_kg": 1163.9658284008628,
+        "energy_budget": {
+          "released_J": 57330512669.25597,
+          "radiative_emitted_J": 22932205067.702328,
+          "non_radiative_released_J": 34398307601.55375,
+          "radiative_intercepted_J": 0.0,
+          "radiative_unintercepted_J": 22932205067.702328,
+          "susceptible_incident_J": 0.0,
+          "susceptible_absorbed_J": 0.0,
+          "susceptible_unabsorbed_J": 0.0,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 0.0,
+          "convective_transferred_J": 0.0,
+          "nonradiative_untransferred_J": 34398307601.55375,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.00012969970703125,
+          "release_split": 0.00011444091796875,
+          "radiation_split": 0.0,
+          "contact_split": 0.0,
+          "susceptible_radiation_split": 0.0
+        },
+        "energy_tolerance_J": 57.33052266925597
+      }
+    },
+    {
+      "key": "B0163-B0180-1m-none-from179-clear0-dt0.5-both",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 179,
+      "receiver_owner": 162,
+      "cleared": false,
+      "dt_s": 0.5,
+      "channel": "both",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "1960ba840e0031961ba9ca50537fb3a57821b867c5b7bc573d3e2dcdd533b5bc",
+      "first_receiver_ignition_s": 319.5,
+      "ignited_receiver_area_m2": 326.46868405343764,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 637055042.5079153,
+      "receiver_contact_J": 24977292.065234117,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 514,
+        "burned_out_cells": 514,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 4689.82761617799,
+        "remaining_fuel_kg": 0.0,
+        "energy_budget": {
+          "released_J": 76256597039.05397,
+          "radiative_emitted_J": 30502638815.621643,
+          "non_radiative_released_J": 45753958223.4323,
+          "radiative_intercepted_J": 7768708318.864765,
+          "radiative_unintercepted_J": 22733930496.75681,
+          "susceptible_incident_J": 707838936.1199057,
+          "susceptible_absorbed_J": 637055042.5079148,
+          "susceptible_unabsorbed_J": 70783893.61199068,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 7060869382.744873,
+          "convective_transferred_J": 24977292.065234125,
+          "nonradiative_untransferred_J": 45728980931.36699,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.000152587890625,
+          "release_split": 3.0517578125e-05,
+          "radiation_split": 6.866455078125e-05,
+          "contact_split": 7.62939453125e-05,
+          "susceptible_radiation_split": 2.5331974029541016e-07
+        },
+        "energy_tolerance_J": 76.25660703905397
+      }
+    },
+    {
+      "key": "B0163-B0180-1m-none-from179-clear0-dt1-radiation_only",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 179,
+      "receiver_owner": 162,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "radiation_only",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "e3394bb2c58b8b32bcf6725fe74105e882fcd74b8ea0cc4ebce57d72f853ce81",
+      "first_receiver_ignition_s": 320.0,
+      "ignited_receiver_area_m2": 0.4306426403798214,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 75615823.71281253,
+      "receiver_contact_J": 0.0,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 140,
+        "burned_out_cells": 140,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 1168.6167689169647,
+        "remaining_fuel_kg": 3521.2108472610253,
+        "energy_budget": {
+          "released_J": 19001708662.589752,
+          "radiative_emitted_J": 7600683465.035912,
+          "non_radiative_released_J": 11401025197.553886,
+          "radiative_intercepted_J": 1305281373.8786087,
+          "radiative_unintercepted_J": 6295402091.157321,
+          "susceptible_incident_J": 84017581.90312491,
+          "susceptible_absorbed_J": 75615823.71281265,
+          "susceptible_unabsorbed_J": 8401758.190312494,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 1221263791.9754908,
+          "convective_transferred_J": 0.0,
+          "nonradiative_untransferred_J": 11401025197.553886,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 9.5367431640625e-05,
+          "release_split": 4.57763671875e-05,
+          "radiation_split": 1.811981201171875e-05,
+          "contact_split": 0.0,
+          "susceptible_radiation_split": 2.2724270820617676e-07
+        },
+        "energy_tolerance_J": 19.001718662589752
+      }
+    },
+    {
+      "key": "B0163-B0180-1m-none-from179-clear0-dt1-contact_only",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 1,
+      "ground_mode": "none",
+      "source_owner": 179,
+      "receiver_owner": 162,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "contact_only",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "4b50e2fc463176b94a93bbecae21d8ebbc82d8e108d160222abc046471e18625",
+      "first_receiver_ignition_s": null,
+      "ignited_receiver_area_m2": 0.0,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 0.0,
+      "receiver_contact_J": 0.0,
+      "mesh_audit": {
+        "spacing_m": 1,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405343764,
+            "peak_hrr_W": 97940605.21603131
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374082063,
+            "peak_hrr_W": 32332384.122246187
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 1071,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 141122,
+        "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+      },
+      "validation": {
+        "ignited_cells": 137,
+        "burned_out_cells": 137,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 1163.9658284008628,
+        "remaining_fuel_kg": 3525.8617877771276,
+        "energy_budget": {
+          "released_J": 18926084369.79786,
+          "radiative_emitted_J": 7570433747.919168,
+          "non_radiative_released_J": 11355650621.878775,
+          "radiative_intercepted_J": 0.0,
+          "radiative_unintercepted_J": 7570433747.919168,
+          "susceptible_incident_J": 0.0,
+          "susceptible_absorbed_J": 0.0,
+          "susceptible_unabsorbed_J": 0.0,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 0.0,
+          "convective_transferred_J": 0.0,
+          "nonradiative_untransferred_J": 11355650621.878775,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.0001678466796875,
+          "release_split": 8.392333984375e-05,
+          "radiation_split": 0.0,
+          "contact_split": 0.0,
+          "susceptible_radiation_split": 0.0
+        },
+        "energy_tolerance_J": 18.92609436979786
+      }
+    },
+    {
+      "key": "B0163-B0180-0.5m-none-from162-clear0-dt1-both",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 0.5,
+      "ground_mode": "none",
+      "source_owner": 162,
+      "receiver_owner": 179,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "both",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "1c023b490d91dc164b125dda90924450f03db8bc7d250a2c8efe3aeb3105e131",
+      "first_receiver_ignition_s": 329.0,
+      "ignited_receiver_area_m2": 107.77461374090676,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 306204199.3609404,
+      "receiver_contact_J": 17483236.194332644,
+      "mesh_audit": {
+        "spacing_m": 0.5,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405327103,
+            "peak_hrr_W": 97940605.21598132
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374090676,
+            "peak_hrr_W": 32332384.122272033
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 5050,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 1977474,
+        "request_sha256": "0edd7c7b9924bd7a0422dd8c2353f73e84865091e17d806464717c015572ff09"
+      },
+      "validation": {
+        "ignited_cells": 1903,
+        "burned_out_cells": 1903,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 4689.827616177121,
+        "remaining_fuel_kg": 0.0,
+        "energy_budget": {
+          "released_J": 76256597039.03963,
+          "radiative_emitted_J": 30502638815.61592,
+          "non_radiative_released_J": 45753958223.423904,
+          "radiative_intercepted_J": 7844140294.8225975,
+          "radiative_unintercepted_J": 22658498520.793304,
+          "susceptible_incident_J": 340226888.1788223,
+          "susceptible_absorbed_J": 306204199.3609405,
+          "susceptible_unabsorbed_J": 34022688.81788229,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 7503913406.643783,
+          "convective_transferred_J": 17483236.194332644,
+          "nonradiative_untransferred_J": 45736474987.22966,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.0003509521484375,
+          "release_split": 0.0001983642578125,
+          "radiation_split": 1.9073486328125e-05,
+          "contact_split": 9.1552734375e-05,
+          "susceptible_radiation_split": 5.289912223815918e-07
+        },
+        "energy_tolerance_J": 76.25660703903964
+      }
+    },
+    {
+      "key": "B0163-B0180-0.5m-none-from179-clear0-dt1-both",
+      "pair_id": "B0163-B0180",
+      "spacing_m": 0.5,
+      "ground_mode": "none",
+      "source_owner": 179,
+      "receiver_owner": 162,
+      "cleared": false,
+      "dt_s": 1.0,
+      "channel": "both",
+      "protocol_sha256": "70191a976e28aa69061c96fed272d183089a4d40daf0aa611116235082bff395",
+      "request_sha256": "bcb7d4dd9caf6ffe5660d829ea64ca4c6f7ffc7d6af3a8aeb1d9ddb5e5514e7e",
+      "first_receiver_ignition_s": 348.0,
+      "ignited_receiver_area_m2": 326.46868405327103,
+      "removed_ground_area_m2": 0,
+      "actual_horizon_s": 5400.0,
+      "guard_ignited": false,
+      "receiver_radiation_J": 807882570.7957497,
+      "receiver_contact_J": 16702017.658713587,
+      "mesh_audit": {
+        "spacing_m": 0.5,
+        "building_area": [
+          {
+            "owner": 162,
+            "vector_area_m2": 326.46868405333555,
+            "mesh_area_m2": 326.46868405327103,
+            "peak_hrr_W": 97940605.21598132
+          },
+          {
+            "owner": 179,
+            "vector_area_m2": 107.77461374089887,
+            "mesh_area_m2": 107.77461374090676,
+            "peak_hrr_W": 32332384.122272033
+          }
+        ],
+        "mixed_pair_cells": 0,
+        "direct_building_face_pairs": 0,
+        "unobserved_gap_ground_cells": 5050,
+        "ground_mode": "none",
+        "active_ground_area_m2": 0.0,
+        "edge_count": 1977474,
+        "request_sha256": "0edd7c7b9924bd7a0422dd8c2353f73e84865091e17d806464717c015572ff09"
+      },
+      "validation": {
+        "ignited_cells": 1903,
+        "burned_out_cells": 1903,
+        "burning_cells": 0,
+        "heated_cells": 0,
+        "consumed_fuel_kg": 4689.827616177121,
+        "remaining_fuel_kg": 0.0,
+        "energy_budget": {
+          "released_J": 76256597039.0397,
+          "radiative_emitted_J": 30502638815.6159,
+          "non_radiative_released_J": 45753958223.42381,
+          "radiative_intercepted_J": 7844140294.822593,
+          "radiative_unintercepted_J": 22658498520.793278,
+          "susceptible_incident_J": 897647300.8841652,
+          "susceptible_absorbed_J": 807882570.7957506,
+          "susceptible_unabsorbed_J": 89764730.08841671,
+          "inert_received_J": 0.0,
+          "inactive_combustible_received_J": 6946492993.9384165,
+          "convective_transferred_J": 16702017.658713596,
+          "nonradiative_untransferred_J": 45737256205.765076,
+          "energy_limited_contact_source_steps": 0
+        },
+        "energy_closure_errors_J": {
+          "fuel_release": 0.000274658203125,
+          "release_split": 7.62939453125e-06,
+          "radiation_split": 2.6702880859375e-05,
+          "contact_split": 2.288818359375e-05,
+          "susceptible_radiation_split": 2.16066837310791e-06
+        },
+        "energy_tolerance_J": 76.25660703903971
+      }
+    }
+  ],
+  "scope": "controlled numerical verification, not field-calibrated safe spacing",
+  "mesh_audits": [
+    {
+      "case": "B0163-B0180-0.5m-none",
+      "max_building_area_error_m2": 6.45172804070171e-11,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 0.5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405327103,
+          "peak_hrr_W": 97940605.21598132
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374090676,
+          "peak_hrr_W": 32332384.122272033
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 5050,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 1977474,
+      "request_sha256": "0edd7c7b9924bd7a0422dd8c2353f73e84865091e17d806464717c015572ff09"
+    },
+    {
+      "case": "B0163-B0180-1m-mapped",
+      "max_building_area_error_m2": 1.020907802740112e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405343764,
+          "peak_hrr_W": 97940605.21603131
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374082063,
+          "peak_hrr_W": 32332384.122246187
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1071,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 595.0,
+      "edge_count": 323232,
+      "request_sha256": "5e2bc26eda3d90d551295a6bc3590f43abf4e8495ff5d085568ad8c9743a6b8a"
+    },
+    {
+      "case": "B0163-B0180-1m-none",
+      "max_building_area_error_m2": 1.020907802740112e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405343764,
+          "peak_hrr_W": 97940605.21603131
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374082063,
+          "peak_hrr_W": 32332384.122246187
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1071,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 141122,
+      "request_sha256": "101737111fbc1080ce602871a378ba4d2c508c4efe954acf3a09ff55f75636f7"
+    },
+    {
+      "case": "B0163-B0180-1m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 1.020907802740112e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405343764,
+          "peak_hrr_W": 97940605.21603131
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374082063,
+          "peak_hrr_W": 32332384.122246187
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1071,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 43.0,
+      "edge_count": 167410,
+      "request_sha256": "920501564d85e54da35a157790d8d6cf8770c40219689a11f010f8a7ad506c46"
+    },
+    {
+      "case": "B0163-B0180-2.5m-mapped",
+      "max_building_area_error_m2": 4.09784206567565e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405292577,
+          "peak_hrr_W": 97940605.21587774
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374065088,
+          "peak_hrr_W": 32332384.12219527
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 1,
+      "unobserved_gap_ground_cells": 89,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 587.5,
+      "edge_count": 10218,
+      "request_sha256": "aa9801846802285527463be4b24d1c9e2107ddc436908787331c6b827050d9d3"
+    },
+    {
+      "case": "B0163-B0180-2.5m-none",
+      "max_building_area_error_m2": 4.09784206567565e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405292577,
+          "peak_hrr_W": 97940605.21587774
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374065088,
+          "peak_hrr_W": 32332384.12219527
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 1,
+      "unobserved_gap_ground_cells": 89,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 5184,
+      "request_sha256": "5d65233d558860d58199b69fb06b8d42bf7d5f424880c56425fd00de9793d96d"
+    },
+    {
+      "case": "B0163-B0180-2.5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 4.09784206567565e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405292577,
+          "peak_hrr_W": 97940605.21587774
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.77461374065088,
+          "peak_hrr_W": 32332384.12219527
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 1,
+      "unobserved_gap_ground_cells": 89,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 31.25,
+      "edge_count": 5766,
+      "request_sha256": "bbf7f1eb03490eab7a802d17ae900f2062a6e799740889d2817e90d4e07069f2"
+    },
+    {
+      "case": "B0163-B0180-5m-mapped",
+      "max_building_area_error_m2": 0.04259079021234413,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405306196,
+          "peak_hrr_W": 97940605.21591859
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.73202295068653,
+          "peak_hrr_W": 32319606.885205958
+        }
+      ],
+      "mixed_pair_cells": 1,
+      "direct_building_face_pairs": 3,
+      "unobserved_gap_ground_cells": 1,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 600.0,
+      "edge_count": 824,
+      "request_sha256": "f51babc3fc9e54a3b503bbc145a9b7f446bdd6f8584aa93af2639f5e78d6ba0c"
+    },
+    {
+      "case": "B0163-B0180-5m-none",
+      "max_building_area_error_m2": 0.04259079021234413,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405306196,
+          "peak_hrr_W": 97940605.21591859
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.73202295068653,
+          "peak_hrr_W": 32319606.885205958
+        }
+      ],
+      "mixed_pair_cells": 1,
+      "direct_building_face_pairs": 3,
+      "unobserved_gap_ground_cells": 1,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 484,
+      "request_sha256": "579ed337026e1a541269813719564f15ac45b249f8f7ddf0890218f61da0881d"
+    },
+    {
+      "case": "B0163-B0180-5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 0.04259079021234413,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 162,
+          "vector_area_m2": 326.46868405333555,
+          "mesh_area_m2": 326.46868405306196,
+          "peak_hrr_W": 97940605.21591859
+        },
+        {
+          "owner": 179,
+          "vector_area_m2": 107.77461374089887,
+          "mesh_area_m2": 107.73202295068653,
+          "peak_hrr_W": 32319606.885205958
+        }
+      ],
+      "mixed_pair_cells": 1,
+      "direct_building_face_pairs": 3,
+      "unobserved_gap_ground_cells": 1,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 25.0,
+      "edge_count": 520,
+      "request_sha256": "1544d5976f2f875cf00f9f7cace620227bd322c63e5d8205b4bc59930eaeafea"
+    },
+    {
+      "case": "B0289-B0290-1m-mapped",
+      "max_building_area_error_m2": 6.039044819772243e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706649555,
+          "peak_hrr_W": 159810951.19948667
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020255052,
+          "peak_hrr_W": 64132197.06076515
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1029,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2780.0,
+      "edge_count": 1376872,
+      "request_sha256": "1ea99eb523a4bf67d8554ad44a1c7c46f1978428717391dd76d5bc3c63893a1e"
+    },
+    {
+      "case": "B0289-B0290-1m-none",
+      "max_building_area_error_m2": 6.039044819772243e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706649555,
+          "peak_hrr_W": 159810951.19948667
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020255052,
+          "peak_hrr_W": 64132197.06076515
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1029,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 277252,
+      "request_sha256": "cae021a83e4390e7fdff5b3cc1861d03dac165eeca019591c833b74c09695ab5"
+    },
+    {
+      "case": "B0289-B0290-1m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 6.039044819772243e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706649555,
+          "peak_hrr_W": 159810951.19948667
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020255052,
+          "peak_hrr_W": 64132197.06076515
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 1029,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 110.0,
+      "edge_count": 336884,
+      "request_sha256": "53d0fffb93601ce6b4e7149fc4b74b63eb6f33ea69faa9ec53ae008428bcdc48"
+    },
+    {
+      "case": "B0289-B0290-2.5m-mapped",
+      "max_building_area_error_m2": 6.233449312276207e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644589,
+          "peak_hrr_W": 159810951.19933763
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020376618,
+          "peak_hrr_W": 64132197.06112985
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 97,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2875.0,
+      "edge_count": 38370,
+      "request_sha256": "6f1815b518570ea6aa5789910fdf17b39a272b25b1abef13d2dc6951b3a08ed7"
+    },
+    {
+      "case": "B0289-B0290-2.5m-none",
+      "max_building_area_error_m2": 6.233449312276207e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644589,
+          "peak_hrr_W": 159810951.19933763
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020376618,
+          "peak_hrr_W": 64132197.06112985
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 97,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 8524,
+      "request_sha256": "ca3dac3e229a35648fcda9079719d09b5e87e954917cd50599cc6ad14de4b70a"
+    },
+    {
+      "case": "B0289-B0290-2.5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 6.233449312276207e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644589,
+          "peak_hrr_W": 159810951.19933763
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.77399020376618,
+          "peak_hrr_W": 64132197.06112985
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 97,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 125.0,
+      "edge_count": 10556,
+      "request_sha256": "c510a1e4001eb4ce6cc5b9c8ae6eef195abc8eacb4601ef354fe0e9e942852c1"
+    },
+    {
+      "case": "B0289-B0290-5m-mapped",
+      "max_building_area_error_m2": 6.776872396585532e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644045,
+          "peak_hrr_W": 159810951.19932136
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.7739902025703,
+          "peak_hrr_W": 64132197.06077109
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2675.0,
+      "edge_count": 2470,
+      "request_sha256": "f46fff48d187b78f785d4e46e8986d046af00383be8c5a7cf3058bd8d1f4dbc7"
+    },
+    {
+      "case": "B0289-B0290-5m-none",
+      "max_building_area_error_m2": 6.776872396585532e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644045,
+          "peak_hrr_W": 159810951.19932136
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.7739902025703,
+          "peak_hrr_W": 64132197.06077109
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 682,
+      "request_sha256": "b6d2bccdc91cf0e25eea653e28e643c422a933b76b3870ceb8ce54c81c1e289c"
+    },
+    {
+      "case": "B0289-B0290-5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 6.776872396585532e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 288,
+          "vector_area_m2": 532.7031706650822,
+          "mesh_area_m2": 532.7031706644045,
+          "peak_hrr_W": 159810951.19932136
+        },
+        {
+          "owner": 289,
+          "vector_area_m2": 213.77399020315443,
+          "mesh_area_m2": 213.7739902025703,
+          "peak_hrr_W": 64132197.06077109
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 125.0,
+      "edge_count": 822,
+      "request_sha256": "5f4f80dadd0567ba9f67fe12d9768d0f59fccb137834ac779a1260f78b310940"
+    },
+    {
+      "case": "B0329-B0330-1m-mapped",
+      "max_building_area_error_m2": 6.913580818945775e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075708853,
+          "peak_hrr_W": 51413822.27126558
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591714645,
+          "peak_hrr_W": 42606295.77514394
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 400,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2166.0,
+      "edge_count": 940184,
+      "request_sha256": "bb2ca97ad6cc0820130cf494814653d84b8760ebd1566a217b492ec8dd264692"
+    },
+    {
+      "case": "B0329-B0330-1m-none",
+      "max_building_area_error_m2": 6.913580818945775e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075708853,
+          "peak_hrr_W": 51413822.27126558
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591714645,
+          "peak_hrr_W": 42606295.77514394
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 400,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 74056,
+      "request_sha256": "dbb11f95fece70effb779f23799b3337bf7fb7e19d04f612aee1d2f8f20ff9a9"
+    },
+    {
+      "case": "B0329-B0330-1m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 6.913580818945775e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 1,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075708853,
+          "peak_hrr_W": 51413822.27126558
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591714645,
+          "peak_hrr_W": 42606295.77514394
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 400,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 79.0,
+      "edge_count": 112758,
+      "request_sha256": "839d12d34b2b341f7690d7f064110ca716e6fb78177b5926e2ba1fb7c3cda0b8"
+    },
+    {
+      "case": "B0329-B0330-2.5m-mapped",
+      "max_building_area_error_m2": 4.4585135583474766e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.37940757045467,
+          "peak_hrr_W": 51413822.2711364
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591690094,
+          "peak_hrr_W": 42606295.77507027
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 42,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2193.75,
+      "edge_count": 26012,
+      "request_sha256": "efe7dd18f7e9dd73af962abf6b59969a93ee68224f2b06de9e06b0741e2710b3"
+    },
+    {
+      "case": "B0329-B0330-2.5m-none",
+      "max_building_area_error_m2": 4.4585135583474766e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.37940757045467,
+          "peak_hrr_W": 51413822.2711364
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591690094,
+          "peak_hrr_W": 42606295.77507027
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 42,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 2842,
+      "request_sha256": "a69782d78c66ba49cc2b60e0a94fe51d6732a9188c3f597e6dd8f275304bbe28"
+    },
+    {
+      "case": "B0329-B0330-2.5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 4.4585135583474766e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 2.5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.37940757045467,
+          "peak_hrr_W": 51413822.2711364
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.02098591690094,
+          "peak_hrr_W": 42606295.77507027
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 42,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 81.25,
+      "edge_count": 4020,
+      "request_sha256": "8ede5289a8631d16012dee5450f032eef8199fad73676c154b537419ca1b0c11"
+    },
+    {
+      "case": "B0329-B0330-5m-mapped",
+      "max_building_area_error_m2": 9.551968105370179e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075707352,
+          "peak_hrr_W": 51413822.27122054
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.0209859154999,
+          "peak_hrr_W": 42606295.77464996
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "mapped",
+      "active_ground_area_m2": 2050.0,
+      "edge_count": 1906,
+      "request_sha256": "8b4de0b1f951616da926cc5bd0976ebe1be952050fa26c05d9a905e30e3b8541"
+    },
+    {
+      "case": "B0329-B0330-5m-none",
+      "max_building_area_error_m2": 9.551968105370179e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075707352,
+          "peak_hrr_W": 51413822.27122054
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.0209859154999,
+          "peak_hrr_W": 42606295.77464996
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "none",
+      "active_ground_area_m2": 0.0,
+      "edge_count": 374,
+      "request_sha256": "dd5f16acaa24ed087908dad2be892d2094ee6ac25aa809830e5ebf4b0229c8ca"
+    },
+    {
+      "case": "B0329-B0330-5m-synthetic_grass_bridge",
+      "max_building_area_error_m2": 9.551968105370179e-10,
+      "ground_clearance_building_overlap_m2": 0.0,
+      "cleared_equals_no_ground_request": true,
+      "spacing_m": 5,
+      "building_area": [
+        {
+          "owner": 328,
+          "vector_area_m2": 171.3794075704276,
+          "mesh_area_m2": 171.3794075707352,
+          "peak_hrr_W": 51413822.27122054
+        },
+        {
+          "owner": 329,
+          "vector_area_m2": 142.0209859164551,
+          "mesh_area_m2": 142.0209859154999,
+          "peak_hrr_W": 42606295.77464996
+        }
+      ],
+      "mixed_pair_cells": 0,
+      "direct_building_face_pairs": 0,
+      "unobserved_gap_ground_cells": 0,
+      "ground_mode": "synthetic_grass_bridge",
+      "active_ground_area_m2": 50.0,
+      "edge_count": 438,
+      "request_sha256": "452fa2f78d0ec0b5667d296a998d6774c97eb2660b1dd16d790a0409f2955c6f"
+    }
+  ],
+  "time_step_checks": [
+    {
+      "source_owner": 162,
+      "same_ignition_outcome": true,
+      "time_difference_s": 0.5
+    },
+    {
+      "source_owner": 179,
+      "same_ignition_outcome": true,
+      "time_difference_s": 0.5
+    }
+  ]
+}

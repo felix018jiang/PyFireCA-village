@@ -8,6 +8,7 @@ import argparse
 import csv
 import html
 import json
+from dataclasses import replace
 from pathlib import Path
 
 import numpy as np
@@ -55,7 +56,10 @@ def check(output):
         bundle = load_v3_case_bundle(folder)
         q = bundle.request
         a = bundle.metadata["mesh_audit"]
-        if request_fingerprint(q) != a["request_sha256"]:
+        # Bundle loading casts scenario durations to float; the prepared request
+        # used integer literals. Verify its exact original representation too.
+        prepared = replace(q, scenario=replace(q.scenario, max_dt_s=1, end_time_s=5400))
+        if request_fingerprint(prepared) != a["request_sha256"]:
             raise AssertionError("prepared request fingerprint differs")
         # Fine outlines must conserve both buildings and separate their faces.
         errors = [abs(x["vector_area_m2"] - x["mesh_area_m2"]) for x in a["building_area"]]
@@ -286,6 +290,9 @@ def render(output):
             "",
             "## 证据边界与下一步",
             "",
+            "1米与0.5米的两个方向首次点燃时间分别相差14秒、28秒；1米时间步从1秒减半只改变0.5秒。"
+            "目前只能说引燃结局一致，不能宣称点燃时间已完成空间收敛。",
+            "7.85米和14.92米两组在无清理时也没有受体引燃，不能把其未引燃归因于清理措施。",
             "1. 5米网格会把3.50米间隙处理为建筑相邻；2.5米仍有一条伪共享边，1米和0.5米则无直接建筑共享边。",
             "2. 全清理后两栋建筑的质量、热释放率及建筑间辐射图与无地面燃料控制完全一致。清理不产生防火墙。",
             "3. 各网格按真实轮廓交面积重建，保持单位面积木构参数。5米存在一个双建筑混合格，损失约0.043㎡，在表中保留，不伪称严格守恒。",
@@ -331,7 +338,7 @@ def render(output):
         + "</tr>"
         for r in summary["extra_controls"]
     )
-    page = """<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>岜团村｜局部细网格验证</title><style>body{margin:0;background:#f6f4ee;color:#1f2d35;font:16px/1.65 system-ui,sans-serif}main{max-width:1200px;margin:45px auto;padding:0 24px}h1{font-size:34px}h2{margin-top:38px;font-size:24px}.meta{color:#51666b}section{background:white;padding:22px;border-radius:12px;margin:20px 0}img{width:100%}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:9px;border-bottom:1px solid #dae1df;text-align:left}th{background:#edf1ed}a{color:#16615e}.scroll{overflow-x:auto}code{background:#e9eeeb;padding:2px 6px}</style><main><p class="meta">PYFIRECA · B A T U A N · 2026-10-17</p><h1>窄巷被网格抹掉后，清理措施还有多大作用？</h1><p>已完成98项局部90分钟对照。建筑来自人工轮廓；保留原传播核、固定合成木材参数。此页展示数值核验，尚不能给出现场安全间距。</p><section><strong>先读比较方式</strong><p>原映射地表与“全清理地表”比较地面燃料的作用。假定草本连接是独立合成控制。全清理不会遮挡建筑间辐射；源建筑全屋面同时点燃，为高暴露测试。</p></section><h2>同一个3.50米间隙，四种网格</h2><img src="narrow-gap-mesh.svg" alt="5米、2.5米、1米和0.5米网格对同一个人工建筑间隙的表达"><p class="meta">黑线为标注轮廓；色格为建筑元胞。1米和0.5米已消除两栋建筑的伪共享边。0.5米只核验最窄建筑对的无地表控制。</p><h2>三组间隙：首次受体建筑引燃时间</h2><div class="scroll"><table><thead><tr><th>建筑对</th><th>网格m</th><th>源建筑</th><th>原映射地表</th><th>全清理地表</th><th>假定草本连接</th><th>清理㎡</th></tr></thead><tbody>TABLE</tbody></table></div><h2>最窄间隙的时间步与传播通道对照</h2><table><tr><th>网格m</th><th>源建筑</th><th>时间步s</th><th>通道</th><th>首次引燃</th></tr>EXTRAS</table><section><strong>数据边界</strong><p>局部只保留两栋活动建筑与固定范围地表，其他建筑作为不活动机制控制。细网格地表仍继承5米推测分类；DEM仍来自约30米FABDEM。新露出但缺少地表记录的间隙设为不燃控制，并单独记录。98项均达到5400秒、未触及活动边界、通过能量审计。</p><p>结果用于区分清理连接燃料与建筑跨间隙辐射，不能把模型内未引燃解释为施工标准。</p></section><p><a href="records.csv">下载全部对照 CSV</a> · <a href="../">返回完整场地验证报告</a></p></main></html>"""
+    page = """<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>岜团村｜局部细网格验证</title><style>body{margin:0;background:#f6f4ee;color:#1f2d35;font:16px/1.65 system-ui,sans-serif}main{max-width:1200px;margin:45px auto;padding:0 24px}h1{font-size:34px}h2{margin-top:38px;font-size:24px}.meta{color:#51666b}section{background:white;padding:22px;border-radius:12px;margin:20px 0}img{width:100%}table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:9px;border-bottom:1px solid #dae1df;text-align:left}th{background:#edf1ed}a{color:#16615e}.scroll{overflow-x:auto}code{background:#e9eeeb;padding:2px 6px}</style><main><p class="meta">PYFIRECA · B A T U A N · 2026-10-17</p><h1>岜团村窄巷与建筑间隙：细网格核验</h1><p>已完成98项局部90分钟对照。建筑来自人工轮廓；保留原传播核、固定合成木材参数。此页展示数值核验，尚不能给出现场安全间距。</p><section><strong>先读比较方式</strong><p>原映射地表与“全清理地表”比较地面燃料的作用。假定草本连接是独立合成控制。全清理不会遮挡建筑间辐射；源建筑全屋面同时点燃，为高暴露测试。</p></section><h2>同一个3.50米间隙，四种网格</h2><img src="narrow-gap-mesh.svg" alt="5米、2.5米、1米和0.5米网格对同一个人工建筑间隙的表达"><p class="meta">黑线为标注轮廓；色格为建筑元胞。1米和0.5米已消除两栋建筑的伪共享边。0.5米只核验最窄建筑对的无地表控制。</p><h2>三组间隙：首次受体建筑引燃时间</h2><div class="scroll"><table><thead><tr><th>建筑对</th><th>网格m</th><th>源建筑</th><th>原映射地表</th><th>全清理地表</th><th>假定草本连接</th><th>清理㎡</th></tr></thead><tbody>TABLE</tbody></table></div><p>1米到0.5米的首次点燃时间仍相差14秒和28秒；引燃结局一致，但点燃时间尚不能视为已空间收敛。另两组间隙在无清理时也未引燃，不能归因为清理成功。</p><h2>最窄间隙的时间步与传播通道对照</h2><table><tr><th>网格m</th><th>源建筑</th><th>时间步s</th><th>通道</th><th>首次引燃</th></tr>EXTRAS</table><section><strong>数据边界</strong><p>局部只保留两栋活动建筑与固定范围地表，其他建筑作为不活动机制控制。细网格地表仍继承5米推测分类；DEM仍来自约30米FABDEM。新露出但缺少地表记录的间隙设为不燃控制，并单独记录。98项均达到5400秒、未触及活动边界、通过能量审计。</p><p>结果用于区分清理连接燃料与建筑跨间隙辐射，不能把模型内未引燃解释为施工标准。</p></section><p><a href="records.csv">下载全部对照 CSV</a> · <a href="../">返回完整场地验证报告</a></p></main></html>"""
     (review / "index.html").write_text(page.replace("TABLE", table).replace("EXTRAS", extras))
     print(json.dumps({"report": str(review / "index.html"), "runs": len(rows), "audit": True}))
 
