@@ -206,7 +206,17 @@ def render(study):
             full = json.loads((study / "full-validation.json").read_text())
             body += '<section class="card"><h2>完整场地复核</h2>'
             for label, row in full["plans"].items():
-                body += f"<p>{LABELS[label]}：完整312×347网格，{row['passed']}/{row['total']}项零引燃；局部/完整引燃指标一致：{row['crop_full_match']}。</p>"
+                differences = row["differences"]
+                structure_match = not any(d["metric"] != "ignited_cells" for d in differences)
+                vegetation = [d for d in differences if d["metric"] == "ignited_cells"]
+                delta = max((abs(d["full"] - d["crop"]) for d in vegetation), default=0)
+                body += f"<p>{LABELS[label]}：完整312×347网格，{row['passed']}/{row['total']}项零引燃；民居/桥引燃数量与扩展域一致：{'是' if structure_match else '否'}。"
+                if vegetation:
+                    body += f"累计引燃元胞数有{len(vegetation)}项差异，最大{delta}格（5m元胞）；未据此声称数值收敛。"
+                else:
+                    body += "累计引燃元胞数也一致。"
+                body += "</p>"
+            body += '<p><a href="full-validation.json">完整场地逐项核对与差异 JSON</a></p>'
             body += "</section>"
         else:
             body += '<p class="subtle">当前表为140×140扩展域结果；完整场地复核如未完成，不据此宣称全村全部建筑已获保护。</p>'
