@@ -72,3 +72,52 @@ def test_report_distinguishes_design_and_held_out_bridge_failures(tmp_path, monk
     (tmp_path / "selection.json").write_text(json.dumps(selection))
     with pytest.raises(ValueError, match="checksum"):
         module.render(tmp_path)
+
+
+def test_control_prefetch_does_not_overwrite_optimizer_screen(tmp_path, monkeypatch):
+    import importlib
+
+    from pyfireca.planning.evaluation import EvaluationResult
+
+    monkeypatch.syspath_prepend(str(Path(__file__).parents[2] / "scripts"))
+    module = importlib.import_module("prefetch_batuan_multiscenario_controls")
+
+    class FakeOracle:
+        def __init__(self, *_args):
+            self.protocol = {"training": [{"scenario_id": "a"}, {"scenario_id": "b"}]}
+
+        def preflight(self, _plan):
+            pass
+
+        def evaluate(self, sid, plan, *, complete):
+            assert complete
+            return EvaluationResult(
+                "test",
+                "case",
+                sid,
+                "ca",
+                sid,
+                plan.plan_id,
+                5400,
+                {
+                    "ignited_house_count": 0,
+                    "ignited_bridge_count": 0,
+                    "burning_reached_domain_edge": False,
+                },
+                {},
+                {"reached_requested_horizon": True},
+                {},
+            )
+
+        def screen(self, *_args, **_kwargs):
+            raise AssertionError("control prefetch must not touch search screening ledger")
+
+    monkeypatch.setattr(module, "ScenarioOracle", FakeOracle)
+    path = tmp_path / "screens/training/none.json"
+    path.parent.mkdir(parents=True)
+    path.write_text("unchanged-search-prefix")
+    module.control_task(tmp_path, "control", {"plan_id": "none", "zone_id": "vegetation"})
+    assert path.read_text() == "unchanged-search-prefix"
+    output = json.loads((tmp_path / "final-evaluations/control-training.json").read_text())
+    assert len(output["records"]) == 2
+    assert output["screen"]["protection_goal_met"]

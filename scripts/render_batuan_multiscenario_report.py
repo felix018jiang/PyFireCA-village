@@ -239,7 +239,7 @@ def render(study):
             for row in json.loads((study / "replays.json").read_text()):
                 body += f'<li><a href="{row["viewer"]}/">{html.escape(row["label"])}</a> · {html.escape(row["scenario_id"])}</li>'
             body += "</ul></section>"
-    body += '<section class="card" id="scope"><h2>如何解释本轮结果</h2><p>已有V3风致辐射源倾斜闭合实际参与传热：θ=atan(0.2×风速)，并重新构建辐射图。0.2s/m与风况是合成压力测试；未增加风驱接触或飞火。原基准案例与参数未改。</p><p>5m元胞中的部分清理使用剩余燃料均匀缩放；本轮“村内”是建筑20m近邻的植被清理，未模拟拆房或木结构改造。模型尚未经本村实测校准，有限搜索无全局最优证明，结果不能直接作为施工标准。</p><p>提前发现一次保护失败即可淘汰该候选；未算完的损失只是下界。仅全部24项完成且为零才能计作达标。最终对照表已补齐每个方案全部32项。</p><p>更新前回退标签：<code>batuan-before-multiscenario-20261017</code> → <code>0de2e37</code>。旧报告：<a href="http://127.0.0.1:8856/">上一轮90分钟对照</a>。</p></section>'
+    body += '<section class="card" id="scope"><h2>如何解释本轮结果</h2><p>已有V3风致辐射源倾斜闭合实际参与传热：θ=atan(0.2×风速)，并重新构建辐射图。0.2s/m与风况是合成压力测试；未增加风驱接触或飞火。原基准案例与参数未改。</p><p>5m元胞中的部分清理使用剩余燃料均匀缩放；本轮“村内”是建筑20m近邻的植被清理，未模拟拆房或木结构改造。模型尚未经本村实测校准，有限搜索无全局最优证明，结果不能直接作为施工标准。</p><p>提前发现一次保护失败即可淘汰该候选；未算完的损失只是下界。仅全部24项完成且为零才能计作达标。最终对照表只使用算满90分钟的完整情景结果。</p><p>更新前回退标签：<code>batuan-before-multiscenario-20261017</code> → <code>0de2e37</code>。旧报告：<a href="http://127.0.0.1:8856/">上一轮90分钟对照</a>。</p></section>'
     page = f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{refresh}<title>岜团村多情景防火线优化</title><style>{STYLE}</style></head><body><main>{body}</main></body></html>'
     (study / "index.html").write_text(page)
 

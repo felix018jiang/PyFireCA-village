@@ -83,7 +83,7 @@ def main():
                 "--phase",
                 "full",
                 "--workers",
-                "4",
+                "6",
             ],
         )
         final.result()
@@ -101,7 +101,7 @@ def main():
             "--phase",
             "full",
             "--workers",
-            "4",
+            "6",
         ],
     )
     phase(
