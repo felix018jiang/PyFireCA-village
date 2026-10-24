@@ -1,0 +1,26 @@
+{
+  "schema_version": "heritage-area-radiation-1",
+  "study_path": "../../../runs/research/heritage-geometry-20261023-r2/study.json",
+  "purpose": "Fixed-source geometry control for roof area-integrated radiation. No demolition, source selection, calibration or optimization.",
+  "technical_probes": [
+    {"probe_id": "gulou", "target_id": "B0073", "source_id": "B0076", "anchor_m": [347254.178025463, 2869765.069342395]},
+    {"probe_id": "bridge", "target_id": "B0120", "source_id": "B0061", "anchor_m": [347329.4901841689, 2869724.235276254]}
+  ],
+  "areas_m2": [25.0, "all"],
+  "roof_scales_m": [1.0, 0.5],
+  "quadrature_spacing_m": 0.5,
+  "reference_quadrature_spacing_m": 0.25,
+  "reference_scale_m": 1.0,
+  "horizon_s": 1200.0,
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 3.0,
+  "acceptance": {
+    "direct_source_core_peak_coupling_relative_tolerance": 0.01,
+    "require_same_ignition_class_between_1m_and_0.5m": true,
+    "ignition_time_absolute_s": 10.0,
+    "ignition_time_relative": 0.05,
+    "unignited_peak_temperature_K": 10.0,
+    "interpretation": "Local source/core roof-scale control with fixed 5 m background grid, fixed ignition polygons and unchanged material/transport parameters."
+  }
+}

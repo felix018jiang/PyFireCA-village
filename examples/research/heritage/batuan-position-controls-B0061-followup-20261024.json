@@ -1,0 +1,17 @@
+{
+  "schema_version": "heritage-position-controls-followup-1",
+  "parent_manifest_sha256": "d628c7a99b6062b6974118f9771ca761e2823435f23e7e260103dd007c65c9dc",
+  "trigger": "bridge_swap_passed_the_retained_B0062_stress_so_replay_the_previously_saved_B0061_source_failure_to_test_source_reentry",
+  "prior_summary_sha256": "b2abbff41742ab7930cd4bf4376a35c4860c2163bfd717d45cd5a2788b681230",
+  "config": "batuan-position-known-B0061-20261024.json",
+  "config_sha256": "af47d9b133bf1169f84b724a82ed5defa51dd5c506cbca5d14158a5664c8209d",
+  "source_protocol": "batuan-position-known-B0061-source-20261024.json",
+  "source_protocol_sha256": "4b70c6f9fa1177221f01ca3adf00f8e84d8336b20679d9751d778c754a51f566",
+  "source_reference": "../../../runs/research/heritage-random-source-pilot-20261023",
+  "source_draw_id": "near-B0120-002",
+  "output": "../../../runs/research/heritage-position-known-B0061-20261024",
+  "new_simulations": 10,
+  "is_independent_confirmation": false,
+  "source_replacement_expected": true,
+  "claim": "known_B0061_source_reentry_check;distinguishes_direct_source_removal_from_same_source_barrier_effect"
+}

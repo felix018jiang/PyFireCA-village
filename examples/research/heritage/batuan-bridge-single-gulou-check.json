@@ -1,0 +1,23 @@
+{
+  "schema_version": "heritage-bridge-manual-plans-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "reference_dir": "../../../runs/research/heritage-random-source-pilot-20261023",
+  "evidence_path": "../../../docs/results/heritage-bridge-paths-20261023.json",
+  "purpose": "Conditional development check: run only if remove-B0061 passes both bridge draws at both scales; reuse the two already-frozen gulou draws;not independent heldout",
+  "roof_scales_m": [1.0, 0.5],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "plans": [
+    {
+      "plan_id": "remove-B0061",
+      "demolished_ids": ["B0061"],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "draw_ids": ["near-B0073-001", "near-B0073-002"]
+    }
+  ],
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 3.0,
+  "interpretation": "development confirmation of the single-building candidate;no whole-village risk or minimality claim"
+}

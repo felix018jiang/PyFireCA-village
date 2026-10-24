@@ -1,0 +1,31 @@
+{
+  "schema_version": "heritage-ignition-scale-1",
+  "study_path": "../../../runs/research/heritage-geometry-20261023-r2/study.json",
+  "purpose": "Predeclared source-area and local roof-component scale audit. These are diagnostic source buildings, not selected research sources or demolition candidates.",
+  "technical_probes": [
+    {"probe_id": "gulou", "target_id": "B0073", "source_id": "B0076", "anchor_m": [347254.178025463, 2869765.069342395]},
+    {"probe_id": "bridge", "target_id": "B0120", "source_id": "B0061", "anchor_m": [347329.4901841689, 2869724.235276254]}
+  ],
+  "primary_area_m2": 25.0,
+  "areas_m2": [5.0, 25.0, "all"],
+  "roof_scales_m": [5.0, 2.5, 1.0],
+  "confirmations": [
+    {"h_m": 0.5, "area_m2": 25.0, "phase": [0.0, 0.0], "dt_s": 1.0, "kind": "fine_grid"},
+    {"h_m": 0.5, "area_m2": "all", "phase": [0.0, 0.0], "dt_s": 1.0, "kind": "fine_grid"},
+    {"h_m": 1.0, "area_m2": 25.0, "phase": [0.5, 0.5], "dt_s": 1.0, "kind": "phase"},
+    {"h_m": 0.5, "area_m2": 25.0, "phase": [0.5, 0.5], "dt_s": 1.0, "kind": "phase"},
+    {"h_m": 1.0, "area_m2": "all", "phase": [0.0, 0.0], "dt_s": 0.5, "kind": "time_step"}
+  ],
+  "horizon_s": 1200.0,
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 3.0,
+  "acceptance": {
+    "source_budget_relative_tolerance": 0.000001,
+    "require_same_ignition_class": true,
+    "ignition_time_absolute_s": 10.0,
+    "ignition_time_relative": 0.05,
+    "unignited_peak_temperature_K": 10.0,
+    "interpretation": "Local roof-scale checks with fixed 5 m ground/DEM and full background. No global-grid or field validation claim. If a gate fails, demolition comparisons remain sensitivity diagnostics."
+  }
+}

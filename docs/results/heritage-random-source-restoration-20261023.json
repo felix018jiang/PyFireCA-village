@@ -1,0 +1,16 @@
+{
+  "schema_version": "heritage-random-source-restoration-1",
+  "runs": [
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/background-001-h1p0/baseline",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true
+    },
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/background-001-h1p0/remove-B0067",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true
+    }
+  ],
+  "method": "run_heritage_roof_study.restore_simulation;rerun_saved_request_with_saved_physical_contact_graph_and_compare_all_final_state_fields_exactly"
+}

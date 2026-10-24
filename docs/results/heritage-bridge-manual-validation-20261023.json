@@ -1,0 +1,7 @@
+{
+  "case": "runs/research/heritage-bridge-manual-20261023/near-B0120-001-h1p0/remove-B0063",
+  "all_retained_component_parameters_equal_to_saved_baseline": true,
+  "removed_fuel_matches_ledger": true,
+  "all_final_state_fields_equal": true,
+  "saved_contact_used": true
+}

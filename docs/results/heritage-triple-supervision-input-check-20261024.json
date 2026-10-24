@@ -1,0 +1,6 @@
+{
+  "observed_utc": "2026-10-24T04:53:05.853694+00:00",
+  "frozen_configurations_match_manifest": true,
+  "current_producer_code_matches_frozen_snapshots": true,
+  "supervision_active": true
+}

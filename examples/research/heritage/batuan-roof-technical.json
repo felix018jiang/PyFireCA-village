@@ -1,0 +1,54 @@
+{
+  "schema_version": "heritage-roof-experiments-1",
+  "source_policy": "technical_probe",
+  "evidence": "synthetic ignition probes on frozen Batuan geometry, inherited equivalent materials, not historical events or fixed study sources",
+  "frozen_study": "runs/research/heritage-geometry-20261023-r2/study.json",
+  "scenarios": [
+    {
+      "scenario_id": "technical-gulou-neighbor",
+      "horizon_s": 1200.0,
+      "ignitions": [
+        {
+          "point_m": [
+            347254.178025463,
+            2869765.069342395
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "technical_source_building_id": "B0076",
+      "target_of_diagnostic": "B0073",
+      "source_component_id": "cell48730:B0076:1",
+      "shares_coarse_cell_with_target": true,
+      "selection_basis": "nearest unambiguous source roof patch; prefer shared coarse cell to test state separation; not a fixed research source"
+    },
+    {
+      "scenario_id": "technical-bridge-neighbor",
+      "horizon_s": 1200.0,
+      "ignitions": [
+        {
+          "point_m": [
+            347329.4901841689,
+            2869724.235276254
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "technical_source_building_id": "B0061",
+      "target_of_diagnostic": "B0120",
+      "source_component_id": "cell51868:B0061:0",
+      "shares_coarse_cell_with_target": true,
+      "selection_basis": "nearest unambiguous source roof patch; prefer shared coarse cell to test state separation; not a fixed research source"
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "baseline"
+    }
+  ],
+  "pending": [
+    "ordinary_building_demolition_eligibility",
+    "fixed_internal_study_source",
+    "surveyed_heritage_thermal_properties"
+  ]
+}

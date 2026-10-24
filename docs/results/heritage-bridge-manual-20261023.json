@@ -1,0 +1,2557 @@
+{
+  "schema_version": "heritage-bridge-manual-audit-1",
+  "complete": true,
+  "new_simulations": 20,
+  "unique_saved_baselines_reused": 8,
+  "baseline_simulations_rerun": 0,
+  "validation": {
+    "frozen_matrices_complete": true,
+    "producer_snapshots_verified": true,
+    "core_source_energy_checks_passed": true,
+    "same_source_polygons_and_budgets_preserved": true,
+    "clearance_and_shared_areas_match_vector_geometry": true
+  },
+  "plans": [
+    {
+      "plan_id": "remove-B0061",
+      "new_simulations": 8,
+      "draws": [
+        {
+          "draw_id": "near-B0073-001",
+          "source_id": "B0031",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0073-002",
+          "source_id": "B0031",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0120-001",
+          "source_id": "B0062",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0120-002",
+          "source_id": "B0063",
+          "source_replaced": true,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        }
+      ],
+      "core_failure_counts": {
+        "B0073": 0,
+        "B0120": 0
+      },
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      }
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "new_simulations": 8,
+      "draws": [
+        {
+          "draw_id": "near-B0073-001",
+          "source_id": "B0031",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0073-002",
+          "source_id": "B0031",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0120-001",
+          "source_id": "B0062",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0120-002",
+          "source_id": "B0062",
+          "source_replaced": true,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        }
+      ],
+      "core_failure_counts": {
+        "B0073": 0,
+        "B0120": 0
+      },
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436910662415,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      }
+    },
+    {
+      "plan_id": "remove-B0063",
+      "new_simulations": 4,
+      "draws": [
+        {
+          "draw_id": "near-B0120-001",
+          "source_id": "B0062",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": false
+          }
+        },
+        {
+          "draw_id": "near-B0120-002",
+          "source_id": "B0061",
+          "source_replaced": false,
+          "core_ignited_any_scale": {
+            "B0073": false,
+            "B0120": true
+          }
+        }
+      ],
+      "core_failure_counts": {
+        "B0073": 0,
+        "B0120": 1
+      },
+      "intervention": {
+        "plan_id": "remove-B0063",
+        "demolished_ids": [
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 58.91600086537069,
+        "cleared_roof_union_area_m2": 54.13681624342799,
+        "retained_shared_roof_area_m2": 4.77918462124569,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 974.462686292489,
+        "removed_available_energy_J": 9506857967.469522,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      }
+    }
+  ],
+  "runs": [
+    {
+      "plan_id": "remove-B0063",
+      "draw_id": "near-B0120-001",
+      "scale_m": 1.0,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 321.20769696678707,
+          "absorbed_radiation_J": 679777.7874506741,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0063",
+        "demolished_ids": [
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 58.91600086537069,
+        "cleared_roof_union_area_m2": 54.13681624342799,
+        "retained_shared_roof_area_m2": 4.77918462124569,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 974.462686292489,
+        "removed_available_energy_J": 9506857967.469522,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659257696,
+        "initial_dry_fuel_mass_kg": 449.9999938666384,
+        "water_mass_kg": 44.999999386663845,
+        "available_energy_J": 4390199940.162925,
+        "peak_hrr_W": 7499999.897777309
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1031.0,
+          "ignited_component_count": 16,
+          "maximum_valid_surface_temperature_K": 519.9871348638385,
+          "absorbed_radiation_J": 66674442.24614112,
+          "received_convection_J": 518288.5264043057
+        }
+      ],
+      "baseline_evaluation_sha256": "38daf80b3acd63e8b8243b2467cbacf944bd41d6e87ab56a7fc10883d0d0d47d",
+      "energy_error_J": 8.392333984375e-05,
+      "energy_tolerance_J": 17.891582938716283,
+      "elapsed_s": 27.880755125079304
+    },
+    {
+      "plan_id": "remove-B0063",
+      "draw_id": "near-B0120-001",
+      "scale_m": 0.5,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 323.0457732793469,
+          "absorbed_radiation_J": 676410.270929105,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0063",
+        "demolished_ids": [
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 58.91600086537069,
+        "cleared_roof_union_area_m2": 54.13681624342799,
+        "retained_shared_roof_area_m2": 4.779184621003453,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 974.462686292489,
+        "removed_available_energy_J": 9506857967.469522,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659182198,
+        "initial_dry_fuel_mass_kg": 449.99999386527935,
+        "water_mass_kg": 44.99999938652796,
+        "available_energy_J": 4390199940.149668,
+        "peak_hrr_W": 7499999.897754657
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1136.0,
+          "ignited_component_count": 17,
+          "maximum_valid_surface_temperature_K": 519.8907555147213,
+          "absorbed_radiation_J": 44006453.55718278,
+          "received_convection_J": 4133.40974716703
+        }
+      ],
+      "baseline_evaluation_sha256": "9b44538ef822fe509ddf2467db6a08ae63fc845092923d40b80ff57af3ff1381",
+      "energy_error_J": 0.0001373291015625,
+      "energy_tolerance_J": 13.150955748860008,
+      "elapsed_s": 97.94966433290392
+    },
+    {
+      "plan_id": "remove-B0063",
+      "draw_id": "near-B0120-002",
+      "scale_m": 1.0,
+      "source_id": "B0061",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "failed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 754.0,
+          "ignited_component_count": 33,
+          "maximum_valid_surface_temperature_K": 519.9940994199254,
+          "absorbed_radiation_J": 142423028.6942984,
+          "received_convection_J": 3754207.105003032
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0063",
+        "demolished_ids": [
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 58.91600086537069,
+        "cleared_roof_union_area_m2": 54.13681624342799,
+        "retained_shared_roof_area_m2": 4.779184621387143,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 974.462686292489,
+        "removed_available_energy_J": 9506857967.469522,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0061"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.000000004267722,
+        "initial_dry_fuel_mass_kg": 450.00000007681916,
+        "water_mass_kg": 45.00000000768192,
+        "available_energy_J": 4390200000.749448,
+        "peak_hrr_W": 7500000.00128032
+      },
+      "footprint_sha256": "2cb59251e6baf38557c542bd1f139d2a2156ad9c3927303fcf559518fc98d552",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 742.0,
+          "ignited_component_count": 45,
+          "maximum_valid_surface_temperature_K": 519.986769093291,
+          "absorbed_radiation_J": 166432350.55578044,
+          "received_convection_J": 4175225.4831658998
+        }
+      ],
+      "baseline_evaluation_sha256": "5f61f78ff12eb34f19c4dca945a784dd986b8fa682265692d290649f69a8feb7",
+      "energy_error_J": 8.392333984375e-05,
+      "energy_tolerance_J": 49.604871400537014,
+      "elapsed_s": 28.73590529197827
+    },
+    {
+      "plan_id": "remove-B0063",
+      "draw_id": "near-B0120-002",
+      "scale_m": 0.5,
+      "source_id": "B0061",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "failed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 810.0,
+          "ignited_component_count": 52,
+          "maximum_valid_surface_temperature_K": 519.997305962826,
+          "absorbed_radiation_J": 117407401.15901233,
+          "received_convection_J": 746680.5975579873
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0063",
+        "demolished_ids": [
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 58.91600086537069,
+        "cleared_roof_union_area_m2": 54.13681624342799,
+        "retained_shared_roof_area_m2": 4.779184621254326,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 974.462686292489,
+        "removed_available_energy_J": 9506857967.469522,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0061"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.00000000425381,
+        "initial_dry_fuel_mass_kg": 450.0000000765686,
+        "water_mass_kg": 45.000000007656865,
+        "available_energy_J": 4390200000.747002,
+        "peak_hrr_W": 7500000.001276143
+      },
+      "footprint_sha256": "2cb59251e6baf38557c542bd1f139d2a2156ad9c3927303fcf559518fc98d552",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 800.0,
+          "ignited_component_count": 92,
+          "maximum_valid_surface_temperature_K": 519.9993387709554,
+          "absorbed_radiation_J": 134034667.61655536,
+          "received_convection_J": 682280.7166067241
+        }
+      ],
+      "baseline_evaluation_sha256": "cfc593922101660c1c208bd3028bdc97ce7892a7be8735fed62243d0c9abbf6e",
+      "energy_error_J": 2.288818359375e-05,
+      "energy_tolerance_J": 43.63691859820827,
+      "elapsed_s": 100.02457020804286
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0120-001",
+      "scale_m": 1.0,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 17321978.271236353,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659257696,
+        "initial_dry_fuel_mass_kg": 449.9999938666384,
+        "water_mass_kg": 44.999999386663845,
+        "available_energy_J": 4390199940.162925,
+        "peak_hrr_W": 7499999.897777309
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1031.0,
+          "ignited_component_count": 16,
+          "maximum_valid_surface_temperature_K": 519.9871348638385,
+          "absorbed_radiation_J": 66674442.24614112,
+          "received_convection_J": 518288.5264043057
+        }
+      ],
+      "baseline_evaluation_sha256": "38daf80b3acd63e8b8243b2467cbacf944bd41d6e87ab56a7fc10883d0d0d47d",
+      "energy_error_J": 2.47955322265625e-05,
+      "energy_tolerance_J": 28.057868183662325,
+      "elapsed_s": 27.487901584012434
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0120-001",
+      "scale_m": 0.5,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 14623398.555030923,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659182198,
+        "initial_dry_fuel_mass_kg": 449.99999386527935,
+        "water_mass_kg": 44.99999938652796,
+        "available_energy_J": 4390199940.149668,
+        "peak_hrr_W": 7499999.897754657
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1136.0,
+          "ignited_component_count": 17,
+          "maximum_valid_surface_temperature_K": 519.8907555147213,
+          "absorbed_radiation_J": 44006453.55718278,
+          "received_convection_J": 4133.40974716703
+        }
+      ],
+      "baseline_evaluation_sha256": "9b44538ef822fe509ddf2467db6a08ae63fc845092923d40b80ff57af3ff1381",
+      "energy_error_J": 3.814697265625e-05,
+      "energy_tolerance_J": 23.51520154242927,
+      "elapsed_s": 91.01131158298813
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0120-002",
+      "scale_m": 1.0,
+      "source_id": "B0063",
+      "source_replaced": true,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 21198646.353709415,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345716308,
+        "retained_shared_roof_area_m2": 3.81504093019662,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0063"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999913033644,
+        "initial_dry_fuel_mass_kg": 449.9999984346054,
+        "water_mass_kg": 44.99999984346056,
+        "available_energy_J": 4390199984.728011,
+        "peak_hrr_W": 7499999.973910092
+      },
+      "footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 742.0,
+          "ignited_component_count": 45,
+          "maximum_valid_surface_temperature_K": 519.986769093291,
+          "absorbed_radiation_J": 166432350.55578044,
+          "received_convection_J": 4175225.4831658998
+        }
+      ],
+      "baseline_evaluation_sha256": "5f61f78ff12eb34f19c4dca945a784dd986b8fa682265692d290649f69a8feb7",
+      "energy_error_J": 7.2479248046875e-05,
+      "energy_tolerance_J": 27.21291060037554,
+      "elapsed_s": 26.560027458006516
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0120-002",
+      "scale_m": 0.5,
+      "source_id": "B0063",
+      "source_replaced": true,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 18600881.98595941,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.8460134568084,
+        "retained_shared_roof_area_m2": 3.8150409300638026,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0063"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999913088768,
+        "initial_dry_fuel_mass_kg": 449.9999984355977,
+        "water_mass_kg": 44.99999984355978,
+        "available_energy_J": 4390199984.737692,
+        "peak_hrr_W": 7499999.97392663
+      },
+      "footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 800.0,
+          "ignited_component_count": 92,
+          "maximum_valid_surface_temperature_K": 519.9993387709554,
+          "absorbed_radiation_J": 134034667.61655536,
+          "received_convection_J": 682280.7166067241
+        }
+      ],
+      "baseline_evaluation_sha256": "cfc593922101660c1c208bd3028bdc97ce7892a7be8735fed62243d0c9abbf6e",
+      "energy_error_J": 8.0108642578125e-05,
+      "energy_tolerance_J": 24.10902225155083,
+      "elapsed_s": 86.9991607919801
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0120-001",
+      "scale_m": 1.0,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 321.20768494044813,
+          "absorbed_radiation_J": 679774.1685785756,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436910662415,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659257696,
+        "initial_dry_fuel_mass_kg": 449.9999938666384,
+        "water_mass_kg": 44.999999386663845,
+        "available_energy_J": 4390199940.162925,
+        "peak_hrr_W": 7499999.897777309
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1031.0,
+          "ignited_component_count": 16,
+          "maximum_valid_surface_temperature_K": 519.9871348638385,
+          "absorbed_radiation_J": 66674442.24614112,
+          "received_convection_J": 518288.5264043057
+        }
+      ],
+      "baseline_evaluation_sha256": "38daf80b3acd63e8b8243b2467cbacf944bd41d6e87ab56a7fc10883d0d0d47d",
+      "energy_error_J": 7.2479248046875e-05,
+      "energy_tolerance_J": 17.891578073246333,
+      "elapsed_s": 26.430627000052482
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0120-001",
+      "scale_m": 0.5,
+      "source_id": "B0062",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 323.0457669500322,
+          "absorbed_radiation_J": 676406.6895624431,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436908240041,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999659182198,
+        "initial_dry_fuel_mass_kg": 449.99999386527935,
+        "water_mass_kg": 44.99999938652796,
+        "available_energy_J": 4390199940.149668,
+        "peak_hrr_W": 7499999.897754657
+      },
+      "footprint_sha256": "23257d72dafba2900fc5ea791eb4d840ff06138810ad26dc74e6507edeba7d5d",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1136.0,
+          "ignited_component_count": 17,
+          "maximum_valid_surface_temperature_K": 519.8907555147213,
+          "absorbed_radiation_J": 44006453.55718278,
+          "received_convection_J": 4133.40974716703
+        }
+      ],
+      "baseline_evaluation_sha256": "9b44538ef822fe509ddf2467db6a08ae63fc845092923d40b80ff57af3ff1381",
+      "energy_error_J": 0.0001220703125,
+      "energy_tolerance_J": 13.150950933815048,
+      "elapsed_s": 101.0265831251163
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0120-002",
+      "scale_m": 1.0,
+      "source_id": "B0062",
+      "source_replaced": true,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.94085388032556,
+          "absorbed_radiation_J": 375522.2684691868,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063078768,
+        "retained_shared_roof_area_m2": 0.9641436909387922,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495775,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.000000279338824,
+        "initial_dry_fuel_mass_kg": 450.00000502809877,
+        "water_mass_kg": 45.00000050280988,
+        "available_energy_J": 4390200049.0541315,
+        "peak_hrr_W": 7500000.083801646
+      },
+      "footprint_sha256": "627243a0b72f23d599c0d133f46a569f3be50257ef7ce50bedc057f2c9869a5a",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 742.0,
+          "ignited_component_count": 45,
+          "maximum_valid_surface_temperature_K": 519.986769093291,
+          "absorbed_radiation_J": 166432350.55578044,
+          "received_convection_J": 4175225.4831658998
+        }
+      ],
+      "baseline_evaluation_sha256": "5f61f78ff12eb34f19c4dca945a784dd986b8fa682265692d290649f69a8feb7",
+      "energy_error_J": 4.1961669921875e-05,
+      "energy_tolerance_J": 30.992664555241003,
+      "elapsed_s": 34.80049987509847
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0120-002",
+      "scale_m": 0.5,
+      "source_id": "B0062",
+      "source_replaced": true,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 317.8365783404675,
+          "absorbed_radiation_J": 227500.63352294004,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.7978706303002,
+        "retained_shared_roof_area_m2": 0.9641436908238966,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0062"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.000000279313277,
+        "initial_dry_fuel_mass_kg": 450.000005027639,
+        "water_mass_kg": 45.000000502763896,
+        "available_energy_J": 4390200049.049645,
+        "peak_hrr_W": 7500000.083793983
+      },
+      "footprint_sha256": "627243a0b72f23d599c0d133f46a569f3be50257ef7ce50bedc057f2c9869a5a",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 800.0,
+          "ignited_component_count": 92,
+          "maximum_valid_surface_temperature_K": 519.9993387709554,
+          "absorbed_radiation_J": 134034667.61655536,
+          "received_convection_J": 682280.7166067241
+        }
+      ],
+      "baseline_evaluation_sha256": "cfc593922101660c1c208bd3028bdc97ce7892a7be8735fed62243d0c9abbf6e",
+      "energy_error_J": 3.4332275390625e-05,
+      "energy_tolerance_J": 21.542746153281012,
+      "elapsed_s": 161.9758798328694
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0073-001",
+      "scale_m": 1.0,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 451.6762231926179,
+          "absorbed_radiation_J": 42098221.23962395,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436911905232,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.99999970161642,
+        "initial_dry_fuel_mass_kg": 449.9999946290956,
+        "water_mass_kg": 44.99999946290956,
+        "available_energy_J": 4390199947.601457,
+        "peak_hrr_W": 7499999.910484927
+      },
+      "footprint_sha256": "231d008c8fcded25b4379ae6d0d7a4b0d98053d68ae6f86cc109c3ae54cb3682",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 451.6762231926179,
+          "absorbed_radiation_J": 42098221.23962395,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "ba7398d38587d93a7b1b86a0407ec31cc5f5339da2ff0ee949988870e7244670",
+      "energy_error_J": 0.00012969970703125,
+      "energy_tolerance_J": 99.13566850086404,
+      "elapsed_s": 73.82307183300145
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0073-001",
+      "scale_m": 0.5,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 401.05335666021097,
+          "absorbed_radiation_J": 35702530.24062055,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436911905232,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999701633214,
+        "initial_dry_fuel_mass_kg": 449.9999946293978,
+        "water_mass_kg": 44.99999946293977,
+        "available_energy_J": 4390199947.604404,
+        "peak_hrr_W": 7499999.910489962
+      },
+      "footprint_sha256": "231d008c8fcded25b4379ae6d0d7a4b0d98053d68ae6f86cc109c3ae54cb3682",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 401.05335666021097,
+          "absorbed_radiation_J": 35702530.24062055,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "0523f94034232c98f48a8104b87ab6eddbb8e92de679a25996b023fbb390ebc9",
+      "energy_error_J": 0.0002899169921875,
+      "energy_tolerance_J": 75.66032925698134,
+      "elapsed_s": 338.7262110840529
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0073-002",
+      "scale_m": 1.0,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 31836450.058210745,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436911905232,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.00000040026235,
+        "initial_dry_fuel_mass_kg": 450.0000072047223,
+        "water_mass_kg": 45.000000720472244,
+        "available_energy_J": 4390200070.289271,
+        "peak_hrr_W": 7500000.120078705
+      },
+      "footprint_sha256": "5916fb9b6e52b4f9771241722eb0c4299385a1d07db802e3b69243d3501f3de5",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 31836450.058210745,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "9412aefe9f0bac8660b08db001c583b9b56c6dd8da4cde3d4e397b5445690ae4",
+      "energy_error_J": 0.0001373291015625,
+      "energy_tolerance_J": 55.5052925765409,
+      "elapsed_s": 71.34587866719812
+    },
+    {
+      "plan_id": "remove-B0061-B0063",
+      "draw_id": "near-B0073-002",
+      "scale_m": 0.5,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 28676116.65892759,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061-B0063",
+        "demolished_ids": [
+          "B0061",
+          "B0063"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 2,
+        "demolished_footprint_area_m2": 260.57705525425246,
+        "cleared_roof_union_area_m2": 255.79787063070296,
+        "retained_shared_roof_area_m2": 0.9641436911905232,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 4604.361695495776,
+        "removed_available_energy_J": 44920152701.25679,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.00000040028546,
+        "initial_dry_fuel_mass_kg": 450.0000072051384,
+        "water_mass_kg": 45.00000072051383,
+        "available_energy_J": 4390200070.293329,
+        "peak_hrr_W": 7500000.120085639
+      },
+      "footprint_sha256": "5916fb9b6e52b4f9771241722eb0c4299385a1d07db802e3b69243d3501f3de5",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 28676116.65892759,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "34eb106f28ba83a9af953bd80dc8681dd6117e17e5acca30140a961b68f98455",
+      "energy_error_J": 0.000217437744140625,
+      "energy_tolerance_J": 32.274381652308136,
+      "elapsed_s": 171.92954483395442
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0073-001",
+      "scale_m": 1.0,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 451.6762231926179,
+          "absorbed_radiation_J": 42098221.23962395,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.99999970161642,
+        "initial_dry_fuel_mass_kg": 449.9999946290956,
+        "water_mass_kg": 44.99999946290956,
+        "available_energy_J": 4390199947.601457,
+        "peak_hrr_W": 7499999.910484927
+      },
+      "footprint_sha256": "231d008c8fcded25b4379ae6d0d7a4b0d98053d68ae6f86cc109c3ae54cb3682",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 451.6762231926179,
+          "absorbed_radiation_J": 42098221.23962395,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "ba7398d38587d93a7b1b86a0407ec31cc5f5339da2ff0ee949988870e7244670",
+      "energy_error_J": 0.00012969970703125,
+      "energy_tolerance_J": 99.13566850086404,
+      "elapsed_s": 47.75932900002226
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0073-001",
+      "scale_m": 0.5,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 401.05335666021097,
+          "absorbed_radiation_J": 35702530.24062055,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 24.999999701633214,
+        "initial_dry_fuel_mass_kg": 449.9999946293978,
+        "water_mass_kg": 44.99999946293977,
+        "available_energy_J": 4390199947.604404,
+        "peak_hrr_W": 7499999.910489962
+      },
+      "footprint_sha256": "231d008c8fcded25b4379ae6d0d7a4b0d98053d68ae6f86cc109c3ae54cb3682",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 401.05335666021097,
+          "absorbed_radiation_J": 35702530.24062055,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "0523f94034232c98f48a8104b87ab6eddbb8e92de679a25996b023fbb390ebc9",
+      "energy_error_J": 0.0002899169921875,
+      "energy_tolerance_J": 75.66032925698134,
+      "elapsed_s": 300.39856312493794
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0073-002",
+      "scale_m": 1.0,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 31836450.058210745,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.00000040026235,
+        "initial_dry_fuel_mass_kg": 450.0000072047223,
+        "water_mass_kg": 45.000000720472244,
+        "available_energy_J": 4390200070.289271,
+        "peak_hrr_W": 7500000.120078705
+      },
+      "footprint_sha256": "5916fb9b6e52b4f9771241722eb0c4299385a1d07db802e3b69243d3501f3de5",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 31836450.058210745,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "9412aefe9f0bac8660b08db001c583b9b56c6dd8da4cde3d4e397b5445690ae4",
+      "energy_error_J": 0.0001373291015625,
+      "energy_tolerance_J": 55.5052925765409,
+      "elapsed_s": 71.18375562503934
+    },
+    {
+      "plan_id": "remove-B0061",
+      "draw_id": "near-B0073-002",
+      "scale_m": 0.5,
+      "source_id": "B0031",
+      "source_replaced": false,
+      "complete": true,
+      "invalid_reasons": [],
+      "source_verified": true,
+      "protection_status": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 28676116.65892759,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "intervention": {
+        "plan_id": "remove-B0061",
+        "demolished_ids": [
+          "B0061"
+        ],
+        "ground_policy": "cleared_inert",
+        "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+        "overlap_policy": "retain_shared_roof",
+        "kind": "whole_building_demolition",
+        "demolished_count": 1,
+        "demolished_footprint_area_m2": 201.66105438888178,
+        "cleared_roof_union_area_m2": 197.84601345709552,
+        "retained_shared_roof_area_m2": 3.8150409301794483,
+        "overlap_ownership_survey_verified": false,
+        "overlap_interpretation": "retain_all_fuel_where_any_declared_roof_owner_survives;hypothetical_geometry_policy",
+        "removed_dry_fuel_kg": 3561.2282735804647,
+        "removed_available_energy_J": 34743343037.05101,
+        "affected_household_count": null,
+        "implementation_feasibility_verified": false,
+        "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+        "retained_component_parameters_unchanged": true,
+        "post_demolition_ground": "cleared_inert_no_opaque_wall",
+        "actual_source_ids": [
+          "B0031"
+        ],
+        "source_policy": "sampled_retained_sources",
+        "study_source_selection_pending": false,
+        "radiation_method": "roof_area_integrated_radiation_graph"
+      },
+      "source_budget": {
+        "covered_area_m2": 25.00000040028546,
+        "initial_dry_fuel_mass_kg": 450.0000072051384,
+        "water_mass_kg": 45.00000072051383,
+        "available_energy_J": 4390200070.293329,
+        "peak_hrr_W": 7500000.120085639
+      },
+      "footprint_sha256": "5916fb9b6e52b4f9771241722eb0c4299385a1d07db802e3b69243d3501f3de5",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 591,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 373.15,
+          "absorbed_radiation_J": 28676116.65892759,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 2824,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "baseline_evaluation_sha256": "34eb106f28ba83a9af953bd80dc8681dd6117e17e5acca30140a961b68f98455",
+      "energy_error_J": 0.000217437744140625,
+      "energy_tolerance_J": 32.274381652308136,
+      "elapsed_s": 333.43994416692294
+    }
+  ],
+  "whole_village_failure_estimate": null,
+  "interpretation": "focused development draws; no heldout or global minimality claim",
+  "optimization": false
+}

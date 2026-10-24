@@ -1,0 +1,624 @@
+{
+  "schema_version": "heritage-p0-p1-evidence-1",
+  "date": "2026-10-23",
+  "optimization_performed": false,
+  "real_site_simulations": 0,
+  "real_inventory": {
+    "annotation_count": 333,
+    "ordinary_annotation_count": 331,
+    "physical_building_annotation_count": 332,
+    "bridge_annotation_count": 1,
+    "raster_owner_count": 331,
+    "unrepresented_owner_ids": [
+      "B0086",
+      "B0149"
+    ],
+    "observation": {
+      "object_count": 333,
+      "unrepresented_labels": [],
+      "partly_unrepresented": [],
+      "shared_observation_cells": 1060,
+      "observation_sha256": "fa8359cba1d9423643261f95f2475385166c91a5d0ff2ab6c8b7551e4d22feaf",
+      "fuel_duplicated": false,
+      "subcell_independent_temperatures": false,
+      "object_semantics": "original annotation objects; nested identities unresolved"
+    },
+    "targets": [
+      {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "vector_area_m2": 130.6813009657283,
+        "shared_temperature_cells": 3,
+        "nearest_objects": [
+          {
+            "building_id": "B0076",
+            "gap_m": 0.7822847407576603,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0031",
+            "gap_m": 5.036063503757587,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0075",
+            "gap_m": 5.801588023429711,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0071",
+            "gap_m": 9.387264199358075,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0074",
+            "gap_m": 9.737900500118096,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0077",
+            "gap_m": 11.517281031771835,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0067",
+            "gap_m": 12.585204821048597,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0149",
+            "gap_m": 15.413684837791017,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0068",
+            "gap_m": 16.962739346236535,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0030",
+            "gap_m": 17.09227943676167,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0078",
+            "gap_m": 17.528220900494983,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0069",
+            "gap_m": 17.65301552028619,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0079",
+            "gap_m": 19.704935953654417,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0080",
+            "gap_m": 25.15815808407716,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0066",
+            "gap_m": 25.82931612903639,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0026",
+            "gap_m": 28.09029524963015,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0083",
+            "gap_m": 28.97455706444484,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0028",
+            "gap_m": 29.104492543061273,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0029",
+            "gap_m": 29.97213267340436,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0081",
+            "gap_m": 30.614856002409493,
+            "candidate_status": "not_declared"
+          }
+        ]
+      },
+      {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "vector_area_m2": 661.6069348310967,
+        "shared_temperature_cells": 1,
+        "nearest_objects": [
+          {
+            "building_id": "B0061",
+            "gap_m": 4.309053091414644,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0063",
+            "gap_m": 6.872831890824957,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0062",
+            "gap_m": 11.130339450081111,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0060",
+            "gap_m": 23.96040717573075,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0109",
+            "gap_m": 27.237337773369834,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0066",
+            "gap_m": 29.06555061034671,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0064",
+            "gap_m": 29.939704076398723,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0065",
+            "gap_m": 32.05665530217862,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0059",
+            "gap_m": 33.24641381892636,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0067",
+            "gap_m": 37.12383903525861,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0108",
+            "gap_m": 38.83507685677362,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0055",
+            "gap_m": 40.6268601767838,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0058",
+            "gap_m": 40.74567504228104,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0068",
+            "gap_m": 41.444872953911236,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0056",
+            "gap_m": 42.68393963695922,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0107",
+            "gap_m": 46.72562451896978,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0054",
+            "gap_m": 47.73597796121263,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0110",
+            "gap_m": 50.76086187462379,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0074",
+            "gap_m": 53.051154065645086,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0057",
+            "gap_m": 57.64406046618167,
+            "candidate_status": "not_declared"
+          }
+        ]
+      }
+    ],
+    "missing_data": [
+      {
+        "field": "demolition_eligibility",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_implementation_feasibility_claim"
+      },
+      {
+        "field": "household_identity_and_occupancy",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "household_impact_unknown_not_zero"
+      },
+      {
+        "field": "floors_and_gross_floor_area",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "use_footprint_area_only"
+      },
+      {
+        "field": "structural_independence_and_eaves",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_structural_feasibility_claim"
+      },
+      {
+        "field": "cultural_activity_and_access_spaces",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_cultural_space_feasibility_claim"
+      },
+      {
+        "field": "post_demolition_ground_and_debris",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "requires_explicit_physical_assumption"
+      },
+      {
+        "field": "measured_timber_and_moisture",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "equivalent_fuel_assumption_requires_validation"
+      },
+      {
+        "field": "fixed_source_ids",
+        "status": "not_frozen",
+        "impact": "required_before_internal_fire_evaluation"
+      },
+      {
+        "field": "prepared_case_geometry",
+        "status": "stale_against_updated_labelme",
+        "affected_ids": [
+          "B0024"
+        ],
+        "impact": "rebuild_physical_case_before_real_simulation"
+      }
+    ],
+    "candidate_ids": [],
+    "candidate_evidence": "pending_user_and_field_identification_no_real_candidates_declared",
+    "real_dual_heritage_ready": false,
+    "annotation_reconciliation": {
+      "role_bindings": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only"
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only"
+        }
+      ],
+      "geometry_changes": [
+        {
+          "building_id": "B0024",
+          "source_shape_index": 23,
+          "old_area_m2": 333.5767858499305,
+          "updated_area_m2": 333.5767858488483,
+          "symmetric_difference_m2": 122.65252727928265,
+          "old_centroid_m": [
+            347209.84547421423,
+            2869803.4803073276
+          ],
+          "updated_centroid_m": [
+            347208.9809736692,
+            2869805.6415586905
+          ]
+        }
+      ],
+      "physical_case_matches_updated_annotations": false,
+      "physical_geometry_policy": "preserve_parent_geometry_for_audit_only_if_stale",
+      "identity_binding": "source_index_and_exact_target_geometry_not_new_label_order"
+    }
+  },
+  "positive_area_overlap_pairs": 147,
+  "synthetic_controls": [
+    {
+      "directory": "runs/research/heritage-p1-synthetic-20261023-r3",
+      "physical_assumptions": {
+        "exposure_radius_m": 3.0,
+        "ignition_temperature_K": 520.0,
+        "scope": "mechanism_control_not_measured_timber_or_safe_distance"
+      },
+      "records": [
+        {
+          "plan_id": "baseline",
+          "evaluation_sha256": "bb6b9262abda230aae1cd70195e4a556c7ca5fb168c4f0cf0c40d39c0a356ab7",
+          "status": "failed",
+          "core_outcomes": [
+            {
+              "building_id": "G",
+              "role": "gulou",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 786.0,
+              "shared_temperature_cells": 0
+            },
+            {
+              "building_id": "F",
+              "role": "fengyuqiao",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 916.36,
+              "shared_temperature_cells": 0
+            }
+          ],
+          "demolished_ids": [],
+          "demolished_footprint_area_m2": 0,
+          "affected_household_count": null,
+          "energy_closure_errors_J": {
+            "fuel_release": 3.814697265625e-06,
+            "release_split": 3.5762786865234375e-06,
+            "radiation_split": 1.1920928955078125e-07,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 2.551823854446411e-07
+          },
+          "energy_tolerance_J": 2.0499022207999977
+        },
+        {
+          "plan_id": "remove-middle",
+          "evaluation_sha256": "b5eb0ce8b863da871471c5ab67192c8aa82c63ffb1e0ba6420dee1e3d121a568",
+          "status": "passed",
+          "core_outcomes": [
+            {
+              "building_id": "G",
+              "role": "gulou",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": false,
+              "first_ignition_s": null,
+              "shared_temperature_cells": 0
+            },
+            {
+              "building_id": "F",
+              "role": "fengyuqiao",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": false,
+              "first_ignition_s": null,
+              "shared_temperature_cells": 0
+            }
+          ],
+          "demolished_ids": [
+            "M"
+          ],
+          "demolished_footprint_area_m2": 4.0,
+          "affected_household_count": null,
+          "energy_closure_errors_J": {
+            "fuel_release": 2.2649765014648438e-06,
+            "release_split": 5.960464477539063e-08,
+            "radiation_split": 0.0,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 0.0
+          },
+          "energy_tolerance_J": 0.7024419999999976
+        }
+      ],
+      "retained_ordinary_comparisons": [
+        {
+          "scenario_id": "internal-source",
+          "plan_id": "remove-middle",
+          "cohort_ids": [
+            "S",
+            "U"
+          ],
+          "cohort_count": 2,
+          "baseline_ignited_ids": [
+            "S"
+          ],
+          "treated_ignited_ids": [
+            "S"
+          ],
+          "newly_ignited_ids": [],
+          "avoided_ignited_ids": [],
+          "planned_demolished_ids": [
+            "M"
+          ],
+          "affected_household_count": null
+        }
+      ]
+    },
+    {
+      "directory": "runs/research/heritage-p1-cross-gap-20261023-r3",
+      "physical_assumptions": {
+        "exposure_radius_m": 8.0,
+        "ignition_temperature_K": 350.0,
+        "scope": "mechanism_control_not_measured_timber_or_safe_distance"
+      },
+      "records": [
+        {
+          "plan_id": "baseline",
+          "evaluation_sha256": "b154f93e5b7b2331561e6be7c0125bfced167e062071fd220e83ff584ce710a6",
+          "status": "failed",
+          "core_outcomes": [
+            {
+              "building_id": "G",
+              "role": "gulou",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 178.0,
+              "shared_temperature_cells": 0
+            },
+            {
+              "building_id": "F",
+              "role": "fengyuqiao",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 198.0,
+              "shared_temperature_cells": 0
+            }
+          ],
+          "demolished_ids": [],
+          "demolished_footprint_area_m2": 0,
+          "affected_household_count": null,
+          "energy_closure_errors_J": {
+            "fuel_release": 8.58306884765625e-06,
+            "release_split": 7.152557373046875e-07,
+            "radiation_split": 3.814697265625e-06,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 5.820766091346741e-11
+          },
+          "energy_tolerance_J": 2.809737999999991
+        },
+        {
+          "plan_id": "remove-middle",
+          "evaluation_sha256": "8fe8c90d14d9ef58d19bb3ac61dfa204988ec11083a0e0470c82da72cf4f8a83",
+          "status": "failed",
+          "core_outcomes": [
+            {
+              "building_id": "G",
+              "role": "gulou",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 211.0,
+              "shared_temperature_cells": 0
+            },
+            {
+              "building_id": "F",
+              "role": "fengyuqiao",
+              "identity_evidence": "synthetic_role_not_real_building",
+              "identity_status": "synthetic",
+              "ignited": true,
+              "first_ignition_s": 247.0,
+              "shared_temperature_cells": 0
+            }
+          ],
+          "demolished_ids": [
+            "M"
+          ],
+          "demolished_footprint_area_m2": 4.0,
+          "affected_household_count": null,
+          "energy_closure_errors_J": {
+            "fuel_release": 5.7220458984375e-06,
+            "release_split": 0.0,
+            "radiation_split": 1.1920928955078125e-06,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 7.2177499532699585e-09
+          },
+          "energy_tolerance_J": 2.107305999999994
+        }
+      ],
+      "retained_ordinary_comparisons": [
+        {
+          "scenario_id": "internal-source",
+          "plan_id": "remove-middle",
+          "cohort_ids": [
+            "S",
+            "U"
+          ],
+          "cohort_count": 2,
+          "baseline_ignited_ids": [
+            "S"
+          ],
+          "treated_ignited_ids": [
+            "S"
+          ],
+          "newly_ignited_ids": [],
+          "avoided_ignited_ids": [],
+          "planned_demolished_ids": [
+            "M"
+          ],
+          "affected_household_count": null
+        }
+      ]
+    }
+  ],
+  "independent_state_checks": [
+    {
+      "directory": "runs/research/heritage-p1-synthetic-20261023-r3/results/scenario-000/plan-000",
+      "request_fingerprint_verified": true,
+      "completed_horizon_s": 1200,
+      "core_first_ignitions_s": {
+        "G": 786.0,
+        "F": 916.36
+      },
+      "source_ignition_verified": true,
+      "no_nonfuel_ignitions": true
+    },
+    {
+      "directory": "runs/research/heritage-p1-synthetic-20261023-r3/results/scenario-000/plan-001",
+      "request_fingerprint_verified": true,
+      "completed_horizon_s": 1200,
+      "core_first_ignitions_s": {
+        "G": null,
+        "F": null
+      },
+      "source_ignition_verified": true,
+      "no_nonfuel_ignitions": true
+    },
+    {
+      "directory": "runs/research/heritage-p1-cross-gap-20261023-r3/results/scenario-000/plan-000",
+      "request_fingerprint_verified": true,
+      "completed_horizon_s": 1200,
+      "core_first_ignitions_s": {
+        "G": 178.0,
+        "F": 198.0
+      },
+      "source_ignition_verified": true,
+      "no_nonfuel_ignitions": true
+    },
+    {
+      "directory": "runs/research/heritage-p1-cross-gap-20261023-r3/results/scenario-000/plan-001",
+      "request_fingerprint_verified": true,
+      "completed_horizon_s": 1200,
+      "core_first_ignitions_s": {
+        "G": 211.0,
+        "F": 247.0
+      },
+      "source_ignition_verified": true,
+      "no_nonfuel_ignitions": true
+    }
+  ],
+  "artifact_trees": [
+    {
+      "directory": "runs/research/batuan-heritage-p0-20261023-r3",
+      "file_count": 5,
+      "tree_sha256": "ab489de8758571a4eba3c64c8794e43461f73df8416a529318e7aa10e0734327"
+    },
+    {
+      "directory": "runs/research/heritage-p1-synthetic-20261023-r3",
+      "file_count": 153,
+      "tree_sha256": "14e0dc7f5b05f041f9f023bed282994371479eae4eec04f6820b375c8f692032"
+    },
+    {
+      "directory": "runs/research/heritage-p1-cross-gap-20261023-r3",
+      "file_count": 153,
+      "tree_sha256": "69473d2e2565602cef876276bb6369658930a88c173ac1b3f8bff98c7517a8bb"
+    }
+  ],
+  "validation": {
+    "full_suite_passed": 1196,
+    "existing_dependency_warnings": 9,
+    "final_focused_tests_passed": 29,
+    "ruff": "passed"
+  }
+}

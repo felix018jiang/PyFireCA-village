@@ -1,0 +1,46 @@
+{
+  "schema_version": "heritage-bridge-manual-plans-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "reference_dir": "../../../runs/research/heritage-triple-validation-20261024-c",
+  "comparison_plan_id": "remove-B0061-B0071-B0076",
+  "evidence_path": "../../../docs/results/heritage-triple-validation-20261024.json",
+  "required_demolished_ids": [],
+  "plans": [
+    {
+      "plan_id": "restore-B0061",
+      "demolished_ids": [
+        "B0071",
+        "B0076"
+      ],
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "overlap_policy": "retain_shared_roof",
+      "draw_ids": [
+        "near-B0120-002"
+      ]
+    },
+    {
+      "plan_id": "restore-B0076",
+      "demolished_ids": [
+        "B0061",
+        "B0071"
+      ],
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "overlap_policy": "retain_shared_roof",
+      "draw_ids": [
+        "near-B0073-002"
+      ]
+    }
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "max_nodes": 200000,
+  "minimum_free_disk_GB": 2.0,
+  "max_radiation_edges": 20000000,
+  "archive_native_bundle": true,
+  "archive_layout": true,
+  "scope": "single_building_add_back_fixed_screen;paired_with_saved_triple;no_optimization"
+}

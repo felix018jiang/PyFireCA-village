@@ -1,0 +1,24 @@
+{
+  "schema_version": "heritage-roof-figure-1",
+  "script_sha256": "90ba2fec219511ef3500f0f8bcaf0ed3c2ca0569da7c72d1de02e6622bac2a91",
+  "inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-bridge-neighbor/baseline/evaluation.json": "6a9d557392eebbdde1d3adfadbcfe4f489d285c193879261971d8fa44dde313f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-bridge-neighbor/baseline/layout.json": "47ec681c5b6a9c08ff60adc1ed0010092b1f927337cf2082fdbf1ebdbbdf2a1b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-bridge-neighbor/baseline/selected-trace.json": "d8755f39ae03ae462f40fac975b653e957be5f2c180690e138981381387a8cf4",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-gulou-neighbor/baseline/evaluation.json": "b6095f29627fca72b4bff1b51a13275b8b35b9ae36f6d100b24a0911147c6c4c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-gulou-neighbor/baseline/layout.json": "47ec681c5b6a9c08ff60adc1ed0010092b1f927337cf2082fdbf1ebdbbdf2a1b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-20261023/technical-gulou-neighbor/baseline/selected-trace.json": "b6f8e692ef8232b5a32461d83aa13028c8628114718fa8f1bb1b6114e55aff34",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-bridge-neighbor-source-area-control/baseline/evaluation.json": "86106f7b8604d14871986e47cf66dfa88518341381a10683cd5aee09c829d23b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-bridge-neighbor-source-area-control/baseline/layout.json": "47ec681c5b6a9c08ff60adc1ed0010092b1f927337cf2082fdbf1ebdbbdf2a1b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-bridge-neighbor-source-area-control/baseline/selected-trace.json": "336cc209704d77d9bad6e076fb07c8cafd83557526e8d2aa01196b86fdfcc05d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-gulou-neighbor-source-area-control/baseline/evaluation.json": "c51b29ec4a10a711ef328dd7de60fe461b46e3b43a42a32e9c7752432c9c3216",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-gulou-neighbor-source-area-control/baseline/layout.json": "47ec681c5b6a9c08ff60adc1ed0010092b1f927337cf2082fdbf1ebdbbdf2a1b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-batuan-source-area-20261023/technical-gulou-neighbor-source-area-control/baseline/selected-trace.json": "ac527e00cd45016902e3ea110df76fa622c652a1718ef87e75da8bfa3a42fcf6",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/baseline/evaluation.json": "3ac3b3e577c474d60c687d2510065141ebc53d346b03b56d43e5d4218bf2ab7f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/baseline/layout.json": "59a336952e777fe84f1b563b8b3b8624cf3c11a36b574560035929246fcd0f85",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/baseline/selected-trace.json": "6926f5150aba00ab24659b8dcdca02b98f2fc6da31d99d310d046f12d62f931d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/remove-M/evaluation.json": "e98995072dde865f712072f91a0bf920ee6f2f08222db66f552d81409239d504",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/remove-M/layout.json": "59a336952e777fe84f1b563b8b3b8624cf3c11a36b574560035929246fcd0f85",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/remove-M/selected-trace.json": "20122ba93fcc5a1745d1e38acad68b3483d396ead8a4829d992aade6dfcb833d"
+  }
+}

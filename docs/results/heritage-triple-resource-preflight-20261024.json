@@ -1,0 +1,10 @@
+{
+  "draw_id": "near-B0073-001",
+  "scale_m": 0.5,
+  "source_id": "B0031",
+  "node_count": 118637,
+  "raw_point_edges": 15194398,
+  "original_limit": 14000000,
+  "exposure_radius_m": 15,
+  "no_graph_weights_or_simulation_computed": true
+}

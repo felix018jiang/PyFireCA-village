@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 from pathlib import Path
 
 from run_batuan_building_pairs import ROOT, dump, sha
@@ -22,11 +23,70 @@ TITLES = {
 }
 
 
+def validate_confirmation_record(item, declared, plan, protocol, full_cache_digests):
+    """Reject altered, truncated or mislabelled evidence before summarizing outcomes."""
+    record = item["record"]
+    d, m = record["diagnostics"], record["metrics"]
+    if (
+        item["scenario_id"] != declared["scenario_id"]
+        or record["scenario_id"] != declared["scenario_id"]
+        or item["source_family"] != declared["source_family"]
+        or item["assessment"]["source_family"] != declared["source_family"]
+        or record["intervention_id"] != plan["plan_id"]
+        or any(record["intervention"].get(k) != v for k, v in plan.items())
+        or digest(record) not in full_cache_digests
+    ):
+        raise AssertionError("confirmation identity or full-cache evidence mismatch")
+    horizon = protocol["horizon_s"]
+    actual = d["simulated_until_s"]
+    if (
+        record["horizon_s"] != horizon
+        or not d["reached_requested_horizon"]
+        or not math.isfinite(actual)
+        or abs(actual - horizon) > 1e-8
+        or m["burning_reached_domain_edge"] is not False
+    ):
+        raise AssertionError("confirmation incomplete or boundary affected")
+    obs = m["object_observation"]
+    if (
+        obs["object_count"] != 333
+        or obs["observation_sha256"] != protocol["full_observation"]["observation_sha256"]
+        or obs["unrepresented_labels"]
+        or obs["partly_unrepresented"]
+        or obs["fuel_duplicated"]
+        or obs["subcell_independent_temperatures"]
+    ):
+        raise AssertionError("full object observation incomplete or inconsistent")
+    tolerance = d["energy_tolerance_J"]
+    errors = d["energy_closure_errors_J"]
+    if (
+        not math.isfinite(tolerance)
+        or tolerance <= 0
+        or not errors
+        or any(not math.isfinite(x) or abs(x) > tolerance for x in errors.values())
+    ):
+        raise AssertionError("absolute energy closure failed")
+    sources = [declared["source_owner"]] if declared["source_family"] == "internal" else []
+    if item["assessment"]["source_building_ids"] != sources:
+        raise AssertionError("protection source exclusion differs from frozen scenario")
+
+
 def render(output):
     protocol = json.loads((output / "protocol.json").read_text())
     report_path = output / "report.json"
     rows = []
     modes = ["outer_proxy", "inner_proxy", "joint_conditional", "joint_diverse"]
+    request_counts = dict.fromkeys(modes, 0)
+    log = output / "pipeline.log"
+    if log.exists():
+        for line in log.read_text().splitlines():
+            try:
+                event = json.loads(line)
+            except json.JSONDecodeError:
+                continue
+            mode, query = event.get("mode"), event.get("query")
+            if mode in request_counts and isinstance(query, int):
+                request_counts[mode] = max(request_counts[mode], query)
     for mode in modes:
         path = output / f"{mode}-search.json"
         progress = output / f"{mode}-progress.json"
@@ -47,7 +107,7 @@ def render(output):
             rows.append(
                 {
                     "mode": mode,
-                    "queries": state.get("query_index", 0),
+                    "queries": max(state.get("query_index") or 0, request_counts[mode]),
                     "stage": "设计集搜索中" if state else "已预设，等待运行",
                     "area_m2": None,
                     "selected": None,
@@ -97,6 +157,7 @@ def render(output):
             if sha(name) != h:
                 raise AssertionError(f"frozen input changed: {name}")
         caches = 0
+        full_cache_digests = set()
         for folder in ["cache", "full-cache"]:
             for file in (output / folder).glob("*.json"):
                 entry = json.loads(file.read_text())
@@ -105,12 +166,15 @@ def render(output):
                     or digest(entry["record"]) != entry["record_sha256"]
                 ):
                     raise AssertionError("cache signature/checksum mismatch")
+                if folder == "full-cache":
+                    full_cache_digests.add(entry["record_sha256"])
                 caches += 1
-        expected = {
-            r["scenario_id"]
+        declared = {
+            r["scenario_id"]: r
             for role in ["training", "held_out", "internal_probes"]
             for r in protocol[role]
         }
+        expected = set(declared)
         summary = []
         for label in report["plans"]:
             records = [r for r in report["confirmation"] if r["label"] == label]
@@ -118,26 +182,13 @@ def render(output):
                 raise AssertionError("incomplete confirmation suite")
             first = records[0]["record"]
             for item in records:
-                record = item["record"]
-                d = record["diagnostics"]
-                m = record["metrics"]
-                a = item["assessment"]
-                if (
-                    not d["reached_requested_horizon"]
-                    or abs(d["simulated_until_s"] - 5400) > 1e-8
-                    or m["burning_reached_domain_edge"]
-                ):
-                    raise AssertionError("confirmation incomplete or boundary affected")
-                if (
-                    m["object_observation"]["object_count"] != 333
-                    or m["object_observation"]["unrepresented_labels"]
-                    or m["object_observation"]["partly_unrepresented"]
-                ):
-                    raise AssertionError("full object observation incomplete")
-                if a["source_family"] != item["source_family"]:
-                    raise AssertionError("source families mixed")
-                if max(d["energy_closure_errors_J"].values()) > d["energy_tolerance_J"]:
-                    raise AssertionError("energy closure failed")
+                validate_confirmation_record(
+                    item,
+                    declared[item["scenario_id"]],
+                    report["plans"][label],
+                    protocol,
+                    full_cache_digests,
+                )
                 cached = output / "confirm" / f"{label}-{item['scenario_id']}.json"
                 if json.loads(cached.read_text()) != item:
                     raise AssertionError("confirmation record differs")
@@ -170,6 +221,9 @@ def render(output):
             )
             + "</table>"
         )
+        auditor_copy = output / "independent-audits/render_batuan_observed_joint.py"
+        auditor_copy.parent.mkdir(exist_ok=True)
+        auditor_copy.write_bytes(Path(__file__).read_bytes())
         audit = {
             "protocol_sha256": sha(output / "protocol.json"),
             "frozen_selection_verified": True,
@@ -178,6 +232,9 @@ def render(output):
             "any_boundary_ignition": False,
             "observed_object_count": 333,
             "cache_records_verified": caches,
+            "confirmation_full_cache_equality_verified": True,
+            "absolute_energy_errors_verified": True,
+            "auditor_sha256": sha(auditor_copy),
             "summary": summary,
             "internal_probes_not_used_for_search": True,
             "field_accuracy_claimed": False,

@@ -1,0 +1,340 @@
+{
+  "schema_version": "heritage-triple-validation-checks-1",
+  "complete": true,
+  "run_count": 108,
+  "paired_plan_draw_count": 54,
+  "unique_fire_draws": 18,
+  "audit_driver_content_sha256": "5c49f7b8db884f4b668ff2ba41cd263de19211d365c509033f03994f9239dc78",
+  "current_original_producer_code_matches_frozen_snapshots": true,
+  "complete_1200s_native_evaluations_verified": true,
+  "native_and_summary_demolition_ledgers_equal": true,
+  "demolition_vector_geometry_verified_by_primary_report": true,
+  "restoration_checks_previously_completed": true,
+  "scale_classification_disagreement_count": 4,
+  "scale_classification_disagreements": [
+    {
+      "cohort": "c",
+      "draw_id": "near-B0073-002",
+      "plan_id": "baseline",
+      "core_ignition_by_scale": {
+        "1.0": {
+          "B0073": true,
+          "B0120": false
+        },
+        "0.5": {
+          "B0073": false,
+          "B0120": false
+        }
+      }
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0073-002",
+      "plan_id": "remove-B0061",
+      "core_ignition_by_scale": {
+        "1.0": {
+          "B0073": true,
+          "B0120": false
+        },
+        "0.5": {
+          "B0073": false,
+          "B0120": false
+        }
+      }
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-003",
+      "plan_id": "baseline",
+      "core_ignition_by_scale": {
+        "1.0": {
+          "B0073": false,
+          "B0120": true
+        },
+        "0.5": {
+          "B0073": false,
+          "B0120": false
+        }
+      }
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-002",
+      "plan_id": "baseline",
+      "core_ignition_by_scale": {
+        "1.0": {
+          "B0073": false,
+          "B0120": true
+        },
+        "0.5": {
+          "B0073": false,
+          "B0120": false
+        }
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "baseline_plan_id": "baseline",
+      "treated_plan_id": "remove-B0061",
+      "source_match_groups": [
+        {
+          "same_source": true,
+          "draws": 16,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 2
+            },
+            "B0120": {
+              "failed_to_protected": 4,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        },
+        {
+          "same_source": false,
+          "draws": 2,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            },
+            "B0120": {
+              "failed_to_protected": 2,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "baseline_plan_id": "baseline",
+      "treated_plan_id": "remove-B0061-B0071-B0076",
+      "source_match_groups": [
+        {
+          "same_source": true,
+          "draws": 14,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 2,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            },
+            "B0120": {
+              "failed_to_protected": 4,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        },
+        {
+          "same_source": false,
+          "draws": 4,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            },
+            "B0120": {
+              "failed_to_protected": 2,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "baseline_plan_id": "remove-B0061",
+      "treated_plan_id": "remove-B0061-B0071-B0076",
+      "source_match_groups": [
+        {
+          "same_source": true,
+          "draws": 16,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 2,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            },
+            "B0120": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        },
+        {
+          "same_source": false,
+          "draws": 2,
+          "by_core": {
+            "B0073": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            },
+            "B0120": {
+              "failed_to_protected": 0,
+              "protected_to_failed": 0,
+              "both_failed": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "failures": [
+    {
+      "cohort": "c",
+      "draw_id": "near-B0073-002",
+      "source_id": "B0075",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0073",
+      "first_ignition_s": 889.0
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0073-002",
+      "source_id": "B0075",
+      "plan_id": "remove-B0061",
+      "scale_m": 1.0,
+      "core_id": "B0073",
+      "first_ignition_s": 889.0
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0061",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 621.0
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0061",
+      "plan_id": "baseline",
+      "scale_m": 0.5,
+      "core_id": "B0120",
+      "first_ignition_s": 704.0
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 988.36
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 0.5,
+      "core_id": "B0120",
+      "first_ignition_s": 1031.0
+    },
+    {
+      "cohort": "c",
+      "draw_id": "near-B0120-003",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 1168.3600000000001
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0073-003",
+      "source_id": "B0077",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0073",
+      "first_ignition_s": 905.0
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0073-003",
+      "source_id": "B0077",
+      "plan_id": "remove-B0061",
+      "scale_m": 1.0,
+      "core_id": "B0073",
+      "first_ignition_s": 905.0
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0073-003",
+      "source_id": "B0077",
+      "plan_id": "baseline",
+      "scale_m": 0.5,
+      "core_id": "B0073",
+      "first_ignition_s": 959.36
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0073-003",
+      "source_id": "B0077",
+      "plan_id": "remove-B0061",
+      "scale_m": 0.5,
+      "core_id": "B0073",
+      "first_ignition_s": 959.36
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 1021.36
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 0.5,
+      "core_id": "B0120",
+      "first_ignition_s": 1143.3600000000001
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0062",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 1190.3600000000001
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-003",
+      "source_id": "B0061",
+      "plan_id": "baseline",
+      "scale_m": 1.0,
+      "core_id": "B0120",
+      "first_ignition_s": 782.0
+    },
+    {
+      "cohort": "d",
+      "draw_id": "near-B0120-003",
+      "source_id": "B0061",
+      "plan_id": "baseline",
+      "scale_m": 0.5,
+      "core_id": "B0120",
+      "first_ignition_s": 865.0
+    }
+  ],
+  "maximum_energy_error_J": 0.00034332275390625,
+  "maximum_energy_error_to_tolerance_ratio": 3.258994964959317e-05
+}

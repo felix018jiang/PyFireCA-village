@@ -1,0 +1,355 @@
+{
+  "schema_version": "heritage-bridge-path-audit-1",
+  "new_thermal_runs": 0,
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "neighbours": [
+    {
+      "building_id": "B0061",
+      "distance_to_bridge_m": 4.309053091414644,
+      "footprint_area_m2": 201.66105438888178,
+      "overlaps": [
+        {
+          "other_id": "B0063",
+          "area_m2": 3.815040930218032
+        }
+      ]
+    },
+    {
+      "building_id": "B0063",
+      "distance_to_bridge_m": 6.872831890824957,
+      "footprint_area_m2": 58.91600086537069,
+      "overlaps": [
+        {
+          "other_id": "B0061",
+          "area_m2": 3.815040930218032
+        },
+        {
+          "other_id": "B0062",
+          "area_m2": 0.9641436915795143
+        }
+      ]
+    },
+    {
+      "building_id": "B0062",
+      "distance_to_bridge_m": 11.130339450081111,
+      "footprint_area_m2": 130.28852762828154,
+      "overlaps": [
+        {
+          "other_id": "B0060",
+          "area_m2": 2.0587131103203453
+        },
+        {
+          "other_id": "B0063",
+          "area_m2": 0.9641436915795143
+        },
+        {
+          "other_id": "B0064",
+          "area_m2": 0.003231092222641789
+        }
+      ]
+    },
+    {
+      "building_id": "B0060",
+      "distance_to_bridge_m": 23.96040717573075,
+      "footprint_area_m2": 130.73741144054813,
+      "overlaps": [
+        {
+          "other_id": "B0059",
+          "area_m2": 1.4249007078594185
+        },
+        {
+          "other_id": "B0062",
+          "area_m2": 2.0587131103203458
+        }
+      ]
+    },
+    {
+      "building_id": "B0109",
+      "distance_to_bridge_m": 27.237337773369834,
+      "footprint_area_m2": 417.40583850447337,
+      "overlaps": [
+        {
+          "other_id": "B0110",
+          "area_m2": 1.1706139135852558
+        }
+      ]
+    },
+    {
+      "building_id": "B0066",
+      "distance_to_bridge_m": 29.06555061034671,
+      "footprint_area_m2": 147.6827754998205,
+      "overlaps": [
+        {
+          "other_id": "B0065",
+          "area_m2": 0.15119505138576064
+        },
+        {
+          "other_id": "B0068",
+          "area_m2": 0.7960486931558464
+        }
+      ]
+    },
+    {
+      "building_id": "B0064",
+      "distance_to_bridge_m": 29.939704076398723,
+      "footprint_area_m2": 108.18099968448007,
+      "overlaps": [
+        {
+          "other_id": "B0055",
+          "area_m2": 0.3071610155993769
+        },
+        {
+          "other_id": "B0059",
+          "area_m2": 0.008410498962727409
+        },
+        {
+          "other_id": "B0062",
+          "area_m2": 0.0032310922226417883
+        },
+        {
+          "other_id": "B0065",
+          "area_m2": 0.7450956431294891
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/near-B0120-001-h0p5/baseline",
+      "source_ids": [
+        "B0062"
+      ],
+      "first_bridge_ignition_s": 1136.0,
+      "critical_node": 55427,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 2216.017449610231,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0061"
+          ],
+          "energy_J": 1013.4957628400689,
+          "fraction": 0.45735008224701923
+        },
+        {
+          "owners": [
+            "B0063"
+          ],
+          "energy_J": 808.537424820067,
+          "fraction": 0.3648605858055307
+        },
+        {
+          "owners": [
+            "B0062"
+          ],
+          "energy_J": 277.16190740246736,
+          "fraction": 0.12507207804307524
+        },
+        {
+          "owners": [
+            "B0061",
+            "B0063"
+          ],
+          "energy_J": 87.32839005507317,
+          "fraction": 0.03940780794412658
+        },
+        {
+          "owners": [
+            "B0062",
+            "B0063"
+          ],
+          "energy_J": 29.493964492554195,
+          "fraction": 0.013309445960248105
+        }
+      ],
+      "building_first_ignitions": {
+        "B0060": 1051.0,
+        "B0061": 460.0,
+        "B0062": 0.0,
+        "B0063": 135.0,
+        "B0064": 1087.0,
+        "B0120": 1136.0
+      },
+      "final_bridge_incident_reconstruction_error_J": 5.960464477539063e-08,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths"
+    },
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/near-B0120-001-h1p0/baseline",
+      "source_ids": [
+        "B0062"
+      ],
+      "first_bridge_ignition_s": 1031.0,
+      "critical_node": 53961,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 357075.2034060391,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0061"
+          ],
+          "energy_J": 173475.27433446707,
+          "fraction": 0.48582279777407006
+        },
+        {
+          "owners": [
+            "B0063"
+          ],
+          "energy_J": 122638.22462997124,
+          "fraction": 0.3434520892522359
+        },
+        {
+          "owners": [
+            "B0062"
+          ],
+          "energy_J": 42107.71122524996,
+          "fraction": 0.11792392981533426
+        },
+        {
+          "owners": [
+            "B0061",
+            "B0063"
+          ],
+          "energy_J": 14084.846589456347,
+          "fraction": 0.03944504254315335
+        },
+        {
+          "owners": [
+            "B0062",
+            "B0063"
+          ],
+          "energy_J": 4769.146626894486,
+          "fraction": 0.0133561406152064
+        }
+      ],
+      "building_first_ignitions": {
+        "B0060": 926.0,
+        "B0061": 438.0,
+        "B0062": 0.0,
+        "B0063": 139.0,
+        "B0064": 969.36,
+        "B0120": 1031.0
+      },
+      "final_bridge_incident_reconstruction_error_J": 8.940696716308594e-08,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths"
+    },
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/near-B0120-002-h0p5/baseline",
+      "source_ids": [
+        "B0061"
+      ],
+      "first_bridge_ignition_s": 800.0,
+      "critical_node": 55704,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 2298.7037607983916,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0061"
+          ],
+          "energy_J": 2231.2956838028285,
+          "fraction": 0.9706756137327801
+        },
+        {
+          "owners": [
+            "B0063"
+          ],
+          "energy_J": 32.367666978964465,
+          "fraction": 0.0140808343949994
+        },
+        {
+          "owners": [
+            "B0061",
+            "B0063"
+          ],
+          "energy_J": 21.32847736749902,
+          "fraction": 0.009278480216211573
+        },
+        {
+          "owners": [
+            "B0062"
+          ],
+          "energy_J": 10.6143078625254,
+          "fraction": 0.004617518813663407
+        },
+        {
+          "owners": [
+            "B0062",
+            "B0063"
+          ],
+          "energy_J": 3.0976247865743907,
+          "fraction": 0.001347552842345599
+        }
+      ],
+      "building_first_ignitions": {
+        "B0060": 980.36,
+        "B0061": 0.0,
+        "B0062": 604.0,
+        "B0063": 583.0,
+        "B0064": 1142.3600000000001,
+        "B0120": 800.0
+      },
+      "final_bridge_incident_reconstruction_error_J": 2.980232238769531e-07,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths"
+    },
+    {
+      "case": "runs/research/heritage-random-source-pilot-20261023/near-B0120-002-h1p0/baseline",
+      "source_ids": [
+        "B0061"
+      ],
+      "first_bridge_ignition_s": 742.0,
+      "critical_node": 54033,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 318938.8421799705,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0061"
+          ],
+          "energy_J": 307929.73034806625,
+          "fraction": 0.9654820599565228
+        },
+        {
+          "owners": [
+            "B0063"
+          ],
+          "energy_J": 5888.927875186953,
+          "fraction": 0.01846412884343499
+        },
+        {
+          "owners": [
+            "B0061",
+            "B0063"
+          ],
+          "energy_J": 3114.265733493907,
+          "fraction": 0.00976446052229848
+        },
+        {
+          "owners": [
+            "B0062"
+          ],
+          "energy_J": 1541.3908018634513,
+          "fraction": 0.0048328726326587615
+        },
+        {
+          "owners": [
+            "B0062",
+            "B0063"
+          ],
+          "energy_J": 464.5274213599338,
+          "fraction": 0.0014564780450849277
+        }
+      ],
+      "building_first_ignitions": {
+        "B0059": 1166.3600000000001,
+        "B0060": 910.0,
+        "B0061": 0.0,
+        "B0062": 541.0,
+        "B0063": 536.0,
+        "B0064": 1075.0,
+        "B0120": 742.0
+      },
+      "final_bridge_incident_reconstruction_error_J": 2.980232238769531e-07,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths"
+    }
+  ]
+}

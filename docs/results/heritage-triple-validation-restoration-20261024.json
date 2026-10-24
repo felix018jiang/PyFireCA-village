@@ -1,0 +1,22 @@
+{
+  "schema_version": "heritage-triple-validation-restoration-1",
+  "complete": true,
+  "cases": [
+    {
+      "case": "runs/research/heritage-triple-validation-20261024-c/background-001-h1p0/baseline",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true,
+      "archived_layout_restored": true
+    },
+    {
+      "case": "runs/research/heritage-triple-validation-20261024-c/background-001-h1p0/remove-B0061-B0071-B0076",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true,
+      "archived_layout_restored": true
+    }
+  ],
+  "all_retained_parameters_equal": true,
+  "all_cleared_parameters_zero": true,
+  "clearance_fuel_and_energy_match_ledger": true,
+  "parameters_compared": 33
+}

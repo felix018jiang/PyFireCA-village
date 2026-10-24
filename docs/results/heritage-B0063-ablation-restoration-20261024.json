@@ -1,0 +1,12 @@
+{
+  "schema_version": "heritage-B0063-addback-restoration-1",
+  "complete": true,
+  "restored_case": "runs/research/heritage-B0063-confirmation-20261024-e/near-B0120-001-h1p0/remove-B0061-B0071-B0076",
+  "all_final_state_fields_equal": true,
+  "saved_contact_used": true,
+  "addback_case": "runs/research/heritage-ablation-screen-20261024-c/near-B0120-002-h1p0/restore-B0061",
+  "all_other_physical_parameters_equal_to_saved_triple": true,
+  "all_restored_physical_parameters_equal_to_original_baseline": true,
+  "restored_area_m2": 197.8460151989147,
+  "restored_area_matches_ledger_difference": true
+}

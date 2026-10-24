@@ -1,0 +1,17 @@
+{
+  "cases": [
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-a/background-001-h1p0/baseline",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true
+    },
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-a/background-001-h1p0/remove-B0061",
+      "all_final_state_fields_equal": true,
+      "saved_contact_used": true
+    }
+  ],
+  "archive_native_format_restored": true,
+  "retained_physical_parameters_equal_to_paired_baseline": true,
+  "cleared_area_and_removed_fuel_match_ledger": true
+}

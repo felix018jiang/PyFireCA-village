@@ -1,0 +1,54 @@
+{
+  "schema_version": "heritage-position-controls-1",
+  "date": "2026-10-24",
+  "reference_result": "../../../docs/results/heritage-B0063-ablation-20261024.json",
+  "reference_result_sha256": "71abbc5bbaf9e34c54ed43e3e81942376ec6cb8c859940bddb9f72c2265c3498",
+  "selection_reference_protocol": "../../../runs/research/heritage-triple-validation-20261024-c/source-protocol.json",
+  "selection_reference_protocol_sha256": "f6d53d3ffa6a40081f2f79fcd6b1b8e6c6d957c1bcb3b8f6e46a5fcc4f02e65d",
+  "cohorts": [
+    {
+      "label": "g",
+      "seed": 2026102407,
+      "config": "batuan-position-controls-20261024-g.json",
+      "config_sha256": "6d8ff41b19d00759d82131f50e88c54037cc515ad22a9514083bb709cd7c68a4",
+      "output": "../../../runs/research/heritage-position-controls-20261024-g"
+    },
+    {
+      "label": "h",
+      "seed": 2026102408,
+      "config": "batuan-position-controls-20261024-h.json",
+      "config_sha256": "2c64072bfd7c8543d415c02e6b75ab5bd47ea8e23ef9d623a9f049d014034d56",
+      "output": "../../../runs/research/heritage-position-controls-20261024-h"
+    }
+  ],
+  "source_ids": ["B0062", "B0075"],
+  "draws_per_source": 2,
+  "independent_fire_draws": 4,
+  "plans": [
+    {
+      "plan_id": "selected-B0061-B0071-B0076",
+      "demolished_ids": ["B0061", "B0071", "B0076"],
+      "selection_rule": "previously_frozen_mechanism_directed_candidate"
+    },
+    {
+      "plan_id": "bridge-swap-B0063-B0071-B0076",
+      "demolished_ids": ["B0063", "B0071", "B0076"],
+      "selection_rule": "equal_count_replace_only_bridge_side_B0061_with_B0063"
+    },
+    {
+      "plan_id": "drum-area-match-B0061-B0067-B0077",
+      "demolished_ids": ["B0061", "B0067", "B0077"],
+      "selection_rule": "retain_B0061_and_choose_nearest_nominal_area_pair_excluding_B0071_B0076"
+    },
+    {
+      "plan_id": "global-area-match-B0063-B0067-B0071",
+      "demolished_ids": ["B0063", "B0067", "B0071"],
+      "selection_rule": "nearest_nominal_area_other_one_bridge_two_drum_combination"
+    }
+  ],
+  "planned_new_simulations": 40,
+  "physical_parameters_unchanged": true,
+  "same_source_required_across_all_plans": true,
+  "optimization": false,
+  "claim": "focused_equal_count_and_area_matched_position_advantage;not_global_minimum;not_village_risk"
+}

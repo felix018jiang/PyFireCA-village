@@ -1,0 +1,47 @@
+{
+  "schema_version": "heritage-random-source-pilot-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "seed": 2026102403,
+  "draws_per_stratum": 3,
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "plans": [
+    {
+      "plan_id": "baseline",
+      "demolished_ids": []
+    },
+    {
+      "plan_id": "remove-B0061",
+      "demolished_ids": [
+        "B0061"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    },
+    {
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "plan_id": "remove-B0061-B0071-B0076"
+    }
+  ],
+  "demolition_selection_evidence": "B0061_B0071_B0076_frozen_from_completed_gulou_manual_before_new_random_confirmation",
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 2.0,
+  "scope": "independent_confirmation_of_frozen_triple;baseline_and_bridge_only_controls;all_three_strata;no_optimization",
+  "archive_native_bundle": true,
+  "selection_result_sha256": "985be194b252b838860feab889d2a443fff745b31cb45f740d22c4291cbadf8f",
+  "validation_cohort": "c",
+  "archive_layout": true
+}

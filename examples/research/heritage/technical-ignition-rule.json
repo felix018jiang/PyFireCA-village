@@ -1,0 +1,49 @@
+{
+  "schema_version": "heritage-demolition-technical-ignition-rule-1",
+  "status": "source_geometry_and_pairing_frozen_mesh_response_not_yet_accepted",
+  "real_fixed_source_ids": [],
+  "real_candidate_ids": [],
+  "source_policy": "technical_probe",
+  "source_scope": "unambiguous ordinary-building roof; heritage self-ignition excluded",
+  "anchor_policy": "declare a metric coordinate before simulation; otherwise freeze a vector-roof representative point; never reselect the anchor after changing the mesh or demolition plan",
+  "primary_initial_roof_area_m2": 25.0,
+  "small_initial_roof_area_m2": 5.0,
+  "developed_source_stress_control": "all_unambiguous_source_roof_not_normalized_between_buildings",
+  "footprint_policy": "nested disk intersected with unambiguous source roof; radius solved for prescribed square metres; save the polygon and content hash before meshing",
+  "localized_source_requires_connected_polygon": true,
+  "insufficient_source_roof_area": "reject the requested area; do not enlarge the roof or silently substitute a different source area",
+  "mesh_binding": "split roof states at the ignition polygon boundary; ignite the enclosed pieces at t=0; do not ignite every component merely intersecting the polygon",
+  "initial_burn_clock_s": 0.0,
+  "heat_release_policy": "inherit material growth, steady and decay curves; preserve prescribed fuel, water, peak HRR and chemical energy across meshes; no source forcing fitted to heritage outcomes",
+  "matched_plan_comparison": [
+    "freeze source building, anchor, ignition polygon, time, weather, terrain, material parameters and horizon",
+    "freeze the same baseline refinement set and local-grid origin before applying either plan; include source, both heritage cores and the named intervention neighborhood",
+    "apply no-demolition and the single hand-specified plan to that same layout; retained component parameters and prescribed source budgets must agree",
+    "actual source roofs and heritage cores remain protected from demolition; unknown eligibility remains a blocking input for real demolition",
+    "compare the same retained unambiguous ordinary-building cohort; record planned demolition separately from ignition"
+  ],
+  "technical_horizon_s": 1200.0,
+  "production_roof_scale_m": null,
+  "current_scale_controls_m": [1.0, 0.5],
+  "required_phase_controls": [[0.5, 0.0], [0.0, 0.5], [0.5, 0.5]],
+  "acceptance": {
+    "source_budget_relative_difference_max": 0.000001,
+    "same_ignition_class_required": true,
+    "ignition_time_difference_s": 10.0,
+    "ignition_time_relative_difference": 0.05,
+    "unignited_peak_temperature_difference_K": 10.0,
+    "time_tolerance_definition": "max(10 seconds, 5 percent of the smaller positive ignition time)",
+    "note": "engineering comparison gates, not a physical safety margin or field validation"
+  },
+  "decision_policy": {
+    "any_core_ignites_in_any_required_valid_control": "technical_protection_failure_observed",
+    "all_cores_unignited_but_mesh_or_phase_gate_fails": "unresolved_not_passed",
+    "all_cores_unignited_and_all_required_gates_pass": "technical_unignited_within_stated_horizon_only",
+    "timing_gate_fails": "do_not_claim_an_ignition_delay_benefit_or_temporal_convergence",
+    "invalid_source_geometry_or_source_deleted_or_boundary_reached": "invalid_evaluation",
+    "real_implementation_or_minimal_demolition_claim": "not_available_while_source_identity_eligibility_or_model_validation_remains_pending"
+  },
+  "diagnostic_data": "batuan-ignition-scale.json",
+  "phase_confirmations": "batuan-ignition-axis-confirmations.json",
+  "optimization": false
+}

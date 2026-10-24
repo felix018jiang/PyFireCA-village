@@ -1,0 +1,127 @@
+{
+  "protocol_sha256": "c273ef550f9852beb492d42ae3f115da54910ff61d82cd5c8fb1b6c591592613",
+  "frozen_selection_verified": true,
+  "confirmation_count": 90,
+  "all_full_horizon": true,
+  "any_boundary_ignition": false,
+  "observed_object_count": 333,
+  "cache_records_verified": 574,
+  "confirmation_full_cache_equality_verified": true,
+  "absolute_energy_errors_verified": true,
+  "auditor_sha256": "4a2a8e7aaf643c765e91e9f4dfe38817414280a12b76de61796813bf22a8690f",
+  "summary": [
+    {
+      "label": "baseline",
+      "area_m2": 0.0,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 0.0
+      },
+      "counts": {
+        "training": {
+          "passed": 0,
+          "count": 12
+        },
+        "held_out": {
+          "passed": 0,
+          "count": 4
+        },
+        "internal_probes": {
+          "passed": 1,
+          "count": 2
+        }
+      }
+    },
+    {
+      "label": "outer_proxy",
+      "area_m2": 1219.1293167948882,
+      "zone_areas_m2": {
+        "outer_proxy": 1219.129316794888,
+        "inner_proxy": 0.0
+      },
+      "counts": {
+        "training": {
+          "passed": 12,
+          "count": 12
+        },
+        "held_out": {
+          "passed": 3,
+          "count": 4
+        },
+        "internal_probes": {
+          "passed": 1,
+          "count": 2
+        }
+      }
+    },
+    {
+      "label": "inner_proxy",
+      "area_m2": 385.2474700500575,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 385.2474700500575
+      },
+      "counts": {
+        "training": {
+          "passed": 12,
+          "count": 12
+        },
+        "held_out": {
+          "passed": 4,
+          "count": 4
+        },
+        "internal_probes": {
+          "passed": 1,
+          "count": 2
+        }
+      }
+    },
+    {
+      "label": "joint_conditional",
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "counts": {
+        "training": {
+          "passed": 12,
+          "count": 12
+        },
+        "held_out": {
+          "passed": 4,
+          "count": 4
+        },
+        "internal_probes": {
+          "passed": 1,
+          "count": 2
+        }
+      }
+    },
+    {
+      "label": "joint_diverse",
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "counts": {
+        "training": {
+          "passed": 12,
+          "count": 12
+        },
+        "held_out": {
+          "passed": 4,
+          "count": 4
+        },
+        "internal_probes": {
+          "passed": 1,
+          "count": 2
+        }
+      }
+    }
+  ],
+  "internal_probes_not_used_for_search": true,
+  "field_accuracy_claimed": false,
+  "global_optimality_claimed": false
+}

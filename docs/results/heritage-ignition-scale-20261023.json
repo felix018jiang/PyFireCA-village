@@ -1,0 +1,2287 @@
+{
+  "schema_version": "heritage-ignition-scale-summary-1",
+  "runs": [
+    {
+      "h_m": 5.0,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 5.000000058230753,
+        "initial_dry_fuel_mass_kg": 90.00000104815355,
+        "water_mass_kg": 9.000000104815355,
+        "available_energy_J": 878040010.225786,
+        "configured_curve_energy_J": 878040010.225786,
+        "peak_hrr_W": 1500000.017469226
+      },
+      "ignition_geometry_sha256": "80685c3f4e5cac389eb6fbafb55176c74c14013e7322442393f5dafdc0fec574",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 45,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 333.15168429473374,
+        "absorbed_radiation_J": 19359096.67244182,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "5ce141c9cb3826a9a7b441bf727019d477145a4d665ec02f451ba96cffd51b48",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A5p0-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 5.364418029785156e-06,
+      "energy_tolerance_J": 0.8780500102257808,
+      "nodes": 109860,
+      "radiation_edges": 2214660,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 5.000000058230753,
+          "300": 5.000000058230753,
+          "600": 5.000000058230753,
+          "1200": 5.000000058230753
+        },
+        "source_released_energy_J": 878040010.2257842,
+        "prescribed_patch_released_energy_J": 878040010.2257842
+      }
+    },
+    {
+      "h_m": 5.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.00000059820098,
+        "initial_dry_fuel_mass_kg": 450.00001076761765,
+        "water_mass_kg": 45.00000107676176,
+        "available_energy_J": 4390200105.048878,
+        "configured_curve_energy_J": 4390200105.048878,
+        "peak_hrr_W": 7500000.179460294
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 45,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 561.0,
+        "ignited_component_count": 1,
+        "maximum_valid_surface_temperature_K": 519.945178388183,
+        "absorbed_radiation_J": 149647110.28145546,
+        "received_convection_J": 4649378.098614146
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "85f181414fffbdb7003ee7185f684475996b2c37c63aa4a9490eb6b3019f7626",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 9.1552734375e-05,
+      "energy_tolerance_J": 58.864758799485315,
+      "nodes": 109859,
+      "radiation_edges": 2214580,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.00000059820098,
+          "300": 43.131294792930014,
+          "600": 193.20627844968286,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 33770266947.42839,
+        "prescribed_patch_released_energy_J": 4390200105.048875
+      }
+    },
+    {
+      "h_m": 5.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 197.84601519882165,
+        "initial_dry_fuel_mass_kg": 3561.22827357879,
+        "water_mass_kg": 356.122827357879,
+        "available_energy_J": 34743343037.03467,
+        "configured_curve_energy_J": 34743343037.03467,
+        "peak_hrr_W": 59353804.559646495
+      },
+      "ignition_geometry_sha256": "28869370bbef2e5fa99e3a0e727faea6577535145b0e86b4b99f965e86d40a19",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 45,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 331.0,
+        "ignited_component_count": 24,
+        "maximum_valid_surface_temperature_K": 519.9496103511365,
+        "absorbed_radiation_J": 439703025.80557764,
+        "received_convection_J": 172055482.0742789
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "fd7083a954a3a1c02881ba1274641e9c25b8ccff0b302fd9c6fd0db208de1866",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/Aall-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.000335693359375,
+      "energy_tolerance_J": 139.45523944436334,
+      "nodes": 109860,
+      "radiation_edges": 2214748,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 197.84601519882165,
+          "300": 197.8460151989147,
+          "600": 197.8460151989147,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 34743343037.05084,
+        "prescribed_patch_released_energy_J": 34743343037.03457
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 5.000000058239641,
+        "initial_dry_fuel_mass_kg": 90.00000104831354,
+        "water_mass_kg": 9.000000104831354,
+        "available_energy_J": 878040010.2273469,
+        "configured_curve_energy_J": 878040010.2273469,
+        "peak_hrr_W": 1500000.0174718923
+      },
+      "ignition_geometry_sha256": "80685c3f4e5cac389eb6fbafb55176c74c14013e7322442393f5dafdc0fec574",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 143,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 333.1516842947816,
+        "absorbed_radiation_J": 18338086.77876173,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "5c0014fbcb6ff410182d761a6f823ee0b4601b88f82a91cf6a4b857e0f40035f",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A5p0-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 3.4570693969726562e-06,
+      "energy_tolerance_J": 0.8780500102273504,
+      "nodes": 109993,
+      "radiation_edges": 2228176,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 5.000000058239641,
+          "300": 5.000000058239641,
+          "600": 5.000000058239641,
+          "1200": 5.000000058239641
+        },
+        "source_released_energy_J": 878040010.2273461,
+        "prescribed_patch_released_energy_J": 878040010.2273461
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.00000059818159,
+        "initial_dry_fuel_mass_kg": 450.0000107672687,
+        "water_mass_kg": 45.00000107672687,
+        "available_energy_J": 4390200105.045473,
+        "configured_curve_energy_J": 4390200105.045473,
+        "peak_hrr_W": 7500000.1794544775
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 143,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 558.0,
+        "ignited_component_count": 18,
+        "maximum_valid_surface_temperature_K": 519.9559771391955,
+        "absorbed_radiation_J": 230621754.86266458,
+        "received_convection_J": 38110480.57730897
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "28fa7da2b9a6a358fd65af9932875a9871e0fd3a77a00a78d04a6e90da528671",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 4.57763671875e-05,
+      "energy_tolerance_J": 56.52459309540011,
+      "nodes": 109997,
+      "radiation_edges": 2228854,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.84601519891467,
+        "ignited_area_m2": {
+          "0": 25.00000059818159,
+          "300": 37.75363301332074,
+          "600": 158.52041610846473,
+          "1200": 197.84601519891467
+        },
+        "source_released_energy_J": 32604895698.78395,
+        "prescribed_patch_released_energy_J": 4390200105.045441
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 197.84601519877464,
+        "initial_dry_fuel_mass_kg": 3561.228273577943,
+        "water_mass_kg": 356.1228273577943,
+        "available_energy_J": 34743343037.026405,
+        "configured_curve_energy_J": 34743343037.026405,
+        "peak_hrr_W": 59353804.55963238
+      },
+      "ignition_geometry_sha256": "28869370bbef2e5fa99e3a0e727faea6577535145b0e86b4b99f965e86d40a19",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 143,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 259.0,
+        "ignited_component_count": 66,
+        "maximum_valid_surface_temperature_K": 519.9982752638421,
+        "absorbed_radiation_J": 512606713.22564596,
+        "received_convection_J": 63537865.1209966
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "113be22940aa6551bc4f10de87e224c03e3cf1dd8ebc8aefb07c838c9be2e930",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/Aall-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.000274658203125,
+      "energy_tolerance_J": 139.02182453392035,
+      "nodes": 109995,
+      "radiation_edges": 2228516,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 197.84601519877464,
+          "300": 197.8460151989147,
+          "600": 197.8460151989147,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 34743343037.05077,
+        "prescribed_patch_released_energy_J": 34743343037.02626
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 5.000000058218351,
+        "initial_dry_fuel_mass_kg": 90.00000104793033,
+        "water_mass_kg": 9.000000104793031,
+        "available_energy_J": 878040010.2236083,
+        "configured_curve_energy_J": 878040010.2236083,
+        "peak_hrr_W": 1500000.0174655055
+      },
+      "ignition_geometry_sha256": "80685c3f4e5cac389eb6fbafb55176c74c14013e7322442393f5dafdc0fec574",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 753,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 426.96668664386294,
+        "absorbed_radiation_J": 68057431.01486385,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "67eac098c9da95792bd5cc839112bdac2442f05acc91df0ccb6f0a8619c3d2a0",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A5p0-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 2.765655517578125e-05,
+      "energy_tolerance_J": 5.6646235744249145,
+      "nodes": 110802,
+      "radiation_edges": 2561436,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 5.000000058218351,
+          "300": 6.024805845897019,
+          "600": 15.017811538312515,
+          "1200": 90.52317302042438
+        },
+        "source_released_energy_J": 5664613574.42491,
+        "prescribed_patch_released_energy_J": 878040010.223607
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.00000059838152,
+        "initial_dry_fuel_mass_kg": 450.00001077086745,
+        "water_mass_kg": 45.000001077086736,
+        "available_energy_J": 4390200105.080583,
+        "configured_curve_energy_J": 4390200105.080583,
+        "peak_hrr_W": 7500000.179514457
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 753,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 763.0,
+        "ignited_component_count": 28,
+        "maximum_valid_surface_temperature_K": 519.9962764160574,
+        "absorbed_radiation_J": 151245211.8752518,
+        "received_convection_J": 4071746.926696957
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "e75167b18efb5858a8163ddee8d406fcf3290c94ba0f2c2aec240630bf80a5db",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 1.52587890625e-05,
+      "energy_tolerance_J": 40.65743459774179,
+      "nodes": 110812,
+      "radiation_edges": 2567986,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.00000059838152,
+          "300": 30.045430127637594,
+          "600": 94.27463627673208,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 27843279789.37127,
+        "prescribed_patch_released_energy_J": 4390200105.080556
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 197.84601519844898,
+        "initial_dry_fuel_mass_kg": 3561.228273572082,
+        "water_mass_kg": 356.12282735720817,
+        "available_energy_J": 34743343036.96923,
+        "configured_curve_energy_J": 34743343036.96923,
+        "peak_hrr_W": 59353804.55953471
+      },
+      "ignition_geometry_sha256": "28869370bbef2e5fa99e3a0e727faea6577535145b0e86b4b99f965e86d40a19",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 753,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 272.0,
+        "ignited_component_count": 255,
+        "maximum_valid_surface_temperature_K": 519.989196047817,
+        "absorbed_radiation_J": 508964748.6669925,
+        "received_convection_J": 10822661.635216251
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "f7a7407d3d42aa327b984932426c81f89d728a880b68368ae6c21e6d29e78bf7",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/Aall-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0003204345703125,
+      "energy_tolerance_J": 129.25297466128225,
+      "nodes": 110809,
+      "radiation_edges": 2563650,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 197.84601519844898,
+          "300": 197.8460151989147,
+          "600": 197.8460151989147,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 34743343037.05065,
+        "prescribed_patch_released_energy_J": 34743343036.9691
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_grid",
+      "case_id": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000598350777,
+        "initial_dry_fuel_mass_kg": 450.000010770314,
+        "water_mass_kg": 45.000001077031385,
+        "available_energy_J": 4390200105.075184,
+        "configured_curve_energy_J": 4390200105.075184,
+        "peak_hrr_W": 7500000.179505231
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 2824,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 929.0,
+        "ignited_component_count": 21,
+        "maximum_valid_surface_temperature_K": 519.9871408708335,
+        "absorbed_radiation_J": 123831951.37686956,
+        "received_convection_J": 282691.05720142
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "e6d88ec3d5f43a1200a6621167c979dfb00a6e6abc1bddeda0e2a821db593066",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 9.5367431640625e-05,
+      "energy_tolerance_J": 30.225548535927647,
+      "nodes": 113554,
+      "radiation_edges": 6952838,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.000000598350777,
+          "300": 28.910260109902786,
+          "600": 63.960880232987044,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 23459161177.839375,
+        "prescribed_patch_released_energy_J": 4390200105.075159
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_grid",
+      "case_id": "Aall-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 197.846015198573,
+        "initial_dry_fuel_mass_kg": 3561.2282735743142,
+        "water_mass_kg": 356.12282735743145,
+        "available_energy_J": 34743343036.99101,
+        "configured_curve_energy_J": 34743343036.99101,
+        "peak_hrr_W": 59353804.55957191
+      },
+      "ignition_geometry_sha256": "28869370bbef2e5fa99e3a0e727faea6577535145b0e86b4b99f965e86d40a19",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 2824,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 264.0,
+        "ignited_component_count": 541,
+        "maximum_valid_surface_temperature_K": 519.9989529948814,
+        "absorbed_radiation_J": 457587558.76989204,
+        "received_convection_J": 2785843.4287546193
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "981414000c6fea17ac0447516f7717da5b5c5ddd076ba0ac72c4873ce75a9560",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/Aall-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0005340576171875,
+      "energy_tolerance_J": 124.36148730455228,
+      "nodes": 113546,
+      "radiation_edges": 6917526,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 197.846015198573,
+          "300": 197.8460151989147,
+          "600": 197.8460151989147,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 34743343037.05054,
+        "prescribed_patch_released_energy_J": 34743343036.99093
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase",
+      "case_id": "A25p0-h1p0-p0p5-0p5-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000598280778,
+        "initial_dry_fuel_mass_kg": 450.00001076905403,
+        "water_mass_kg": 45.000001076905406,
+        "available_energy_J": 4390200105.062891,
+        "configured_curve_energy_J": 4390200105.062891,
+        "peak_hrr_W": 7500000.179484233
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 1064,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 815.0,
+        "ignited_component_count": 19,
+        "maximum_valid_surface_temperature_K": 519.9674824741691,
+        "absorbed_radiation_J": 135619381.70908827,
+        "received_convection_J": 875404.8025852918
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "929672c0f9930599b606fa6b0b1e9a10174473e11a66e7c159e9c0b88a2bb1d9",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h1p0-p0p5-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 9.1552734375e-05,
+      "energy_tolerance_J": 36.82394991486079,
+      "nodes": 111229,
+      "radiation_edges": 2911134,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.000000598280778,
+          "300": 31.91026019999972,
+          "600": 79.53103660126182,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 26435138123.432716,
+        "prescribed_patch_released_energy_J": 4390200105.062888
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase",
+      "case_id": "A25p0-h0p5-p0p5-0p5-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000598248725,
+        "initial_dry_fuel_mass_kg": 450.00001076847707,
+        "water_mass_kg": 45.000001076847695,
+        "available_energy_J": 4390200105.057262,
+        "configured_curve_energy_J": 4390200105.057262,
+        "peak_hrr_W": 7500000.179474617
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 3400,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 968.36,
+        "ignited_component_count": 21,
+        "maximum_valid_surface_temperature_K": 519.9993234477923,
+        "absorbed_radiation_J": 121558361.83322245,
+        "received_convection_J": 191248.6352284184
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "8e7559132595bcb67a00406714736e343e8267c102d2b66c4115c5383ff96b2e",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/A25p0-h0p5-p0p5-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0001373291015625,
+      "energy_tolerance_J": 28.439414681342218,
+      "nodes": 114314,
+      "radiation_edges": 9056090,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.000000598248725,
+          "300": 28.05724009906216,
+          "600": 59.61669750557444,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 22542113027.9321,
+        "prescribed_patch_released_energy_J": 4390200105.057272
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 0.5,
+      "kind": "time_step",
+      "case_id": "Aall-h1p0-p0p0-0p0-dt0p5",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 197.84601519844898,
+        "initial_dry_fuel_mass_kg": 3561.228273572082,
+        "water_mass_kg": 356.12282735720817,
+        "available_energy_J": 34743343036.96923,
+        "configured_curve_energy_J": 34743343036.96923,
+        "peak_hrr_W": 59353804.55953471
+      },
+      "ignition_geometry_sha256": "28869370bbef2e5fa99e3a0e727faea6577535145b0e86b4b99f965e86d40a19",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 753,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 272.0,
+        "ignited_component_count": 256,
+        "maximum_valid_surface_temperature_K": 519.9849079855303,
+        "absorbed_radiation_J": 509031897.0586184,
+        "received_convection_J": 10792401.119233077
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "81c0ac81c0c2c93d5202ec30819b971d4b985d1340ff63457b89389494b8bf42",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/bridge/Aall-h1p0-p0p0-0p0-dt0p5/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 9.1552734375e-05,
+      "energy_tolerance_J": 129.58889550522133,
+      "nodes": 110809,
+      "radiation_edges": 2563650,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 197.84601519844898,
+          "300": 197.8460151989147,
+          "600": 197.8460151989147,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 34743343037.050705,
+        "prescribed_patch_released_energy_J": 34743343036.96915
+      }
+    },
+    {
+      "h_m": 5.0,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 5.000000006532708,
+        "initial_dry_fuel_mass_kg": 90.00000011758874,
+        "water_mass_kg": 9.000000011758875,
+        "available_energy_J": 878040001.1471958,
+        "configured_curve_energy_J": 878040001.1471958,
+        "peak_hrr_W": 1500000.0019598124
+      },
+      "ignition_geometry_sha256": "2c328a93ae2e5bab9d3ac34d58981eb75418739f40bf5039b20e7a13641da4ef",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 12,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 357.75603483348505,
+        "absorbed_radiation_J": 36011980.71408721,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "bf3933162ec38b7969d362b04685c6bef7bc92bac2542fda26794f5436a4f151",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A5p0-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 3.814697265625e-06,
+      "energy_tolerance_J": 0.8780500011471921,
+      "nodes": 109858,
+      "radiation_edges": 2214532,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 5.000000006532708,
+          "300": 5.000000006532708,
+          "600": 5.000000006532708,
+          "1200": 5.000000006532708
+        },
+        "source_released_energy_J": 878040001.1471965,
+        "prescribed_patch_released_energy_J": 878040001.1471965
+      }
+    },
+    {
+      "h_m": 5.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953907007,
+        "initial_dry_fuel_mass_kg": 449.99999917032613,
+        "water_mass_kg": 44.9999999170326,
+        "available_energy_J": 4390199991.905702,
+        "configured_curve_energy_J": 4390199991.905702,
+        "peak_hrr_W": 7499999.986172101
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 12,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 466.38985762262524,
+        "absorbed_radiation_J": 151357080.27666298,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "f91727ad1585bddc2c4d054154da7d7a73855009d07982b0290772455655fe1d",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 3.24249267578125e-05,
+      "energy_tolerance_J": 4.422483532770504,
+      "nodes": 109859,
+      "radiation_edges": 2214646,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953907007,
+          "300": 25.183781677204358,
+          "600": 25.183781677204358,
+          "1200": 25.183781677204358
+        },
+        "source_released_energy_J": 4422473532.770467,
+        "prescribed_patch_released_energy_J": 4390199991.905664
+      }
+    },
+    {
+      "h_m": 5.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h5p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 32.82513931300821,
+        "initial_dry_fuel_mass_kg": 590.8525076341479,
+        "water_mass_kg": 59.08525076341478,
+        "available_energy_J": 5764357064.478746,
+        "configured_curve_energy_J": 5764357064.478746,
+        "peak_hrr_W": 9847541.793902464
+      },
+      "ignition_geometry_sha256": "33fef7f911cc4d53110b98001e34a04547a3ad1513ad3c665d6ea90d071c674c",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 12,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 487.80023731203306,
+        "absorbed_radiation_J": 183841701.010625,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "624de0e50887b916c1f2359c03eae7a5e836ab5c615cb2f5ba9f88e028c9134b",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/Aall-h5p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 7.82012939453125e-05,
+      "energy_tolerance_J": 5.852935122943048,
+      "nodes": 109858,
+      "radiation_edges": 2214560,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 32.82513931300821,
+          "300": 32.82513931312822,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5764357064.499796,
+        "prescribed_patch_released_energy_J": 5764357064.478752
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 5.000000006462675,
+        "initial_dry_fuel_mass_kg": 90.00000011632817,
+        "water_mass_kg": 9.000000011632814,
+        "available_energy_J": 878040001.1348975,
+        "configured_curve_energy_J": 878040001.1348975,
+        "peak_hrr_W": 1500000.0019388027
+      },
+      "ignition_geometry_sha256": "2c328a93ae2e5bab9d3ac34d58981eb75418739f40bf5039b20e7a13641da4ef",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 36,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 363.2270152209156,
+        "absorbed_radiation_J": 40398656.55513741,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "38a97d999ed0e502dec74206f135764a9c3011cf47afb86ae8b0829a0c68ce8f",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A5p0-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 2.9802322387695312e-06,
+      "energy_tolerance_J": 0.988834235794764,
+      "nodes": 109893,
+      "radiation_edges": 2218042,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 5.000000006462675,
+          "300": 5.630860984663372,
+          "600": 5.630860984663372,
+          "1200": 5.630860984663372
+        },
+        "source_released_energy_J": 988824235.7947576,
+        "prescribed_patch_released_energy_J": 878040001.1348903
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.99999995380341,
+        "initial_dry_fuel_mass_kg": 449.99999916846133,
+        "water_mass_kg": 44.99999991684613,
+        "available_energy_J": 4390199991.887509,
+        "configured_curve_energy_J": 4390199991.887509,
+        "peak_hrr_W": 7499999.986141023
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 36,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 501.21855574641455,
+        "absorbed_radiation_J": 183122176.22216356,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "e8c9022a5fd6e97541800a2f100981df9118a8a72ef01b416338bb36d56a16b3",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 4.291534423828125e-05,
+      "energy_tolerance_J": 5.843545596890452,
+      "nodes": 109896,
+      "radiation_edges": 2218494,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.99999995380341,
+          "300": 29.206834120050566,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5763449701.8932,
+        "prescribed_patch_released_energy_J": 4390199991.887504
+      }
+    },
+    {
+      "h_m": 2.5,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h2p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 32.82513931290991,
+        "initial_dry_fuel_mass_kg": 590.8525076323784,
+        "water_mass_kg": 59.08525076323784,
+        "available_energy_J": 5764357064.461484,
+        "configured_curve_energy_J": 5764357064.461484,
+        "peak_hrr_W": 9847541.793872975
+      },
+      "ignition_geometry_sha256": "33fef7f911cc4d53110b98001e34a04547a3ad1513ad3c665d6ea90d071c674c",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 36,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 513.5112601907006,
+        "absorbed_radiation_J": 186200532.7556973,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "c06e2d05215f34ebe70f3ecee3aa73117cf82668a556eac69d776b65e00a2736",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/Aall-h2p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 7.915496826171875e-05,
+      "energy_tolerance_J": 5.852869220219216,
+      "nodes": 109894,
+      "radiation_edges": 2218176,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 32.82513931290991,
+          "300": 32.82513931312822,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5764357064.499746,
+        "prescribed_patch_released_energy_J": 5764357064.461473
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A5p0-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 5.000000006409841,
+        "initial_dry_fuel_mass_kg": 90.00000011537716,
+        "water_mass_kg": 9.000000011537713,
+        "available_energy_J": 878040001.1256193,
+        "configured_curve_energy_J": 878040001.1256193,
+        "peak_hrr_W": 1500000.001922952
+      },
+      "ignition_geometry_sha256": "2c328a93ae2e5bab9d3ac34d58981eb75418739f40bf5039b20e7a13641da4ef",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 164,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 454.6900035805569,
+        "absorbed_radiation_J": 140082976.53786898,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "9e1fd588336a37488e8582beb0813aadf02ec7aaa8a909b4f97045fac1bd23fd",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A5p0-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 3.814697265625e-05,
+      "energy_tolerance_J": 4.138275685368359,
+      "nodes": 110066,
+      "radiation_edges": 2269682,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 5.000000006409841,
+          "300": 5.310935456145093,
+          "600": 13.73110569489544,
+          "1200": 32.82513931311392
+        },
+        "source_released_energy_J": 4138240909.520781,
+        "prescribed_patch_released_energy_J": 878040001.1256175
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953657827,
+        "initial_dry_fuel_mass_kg": 449.99999916584096,
+        "water_mass_kg": 44.999999916584095,
+        "available_energy_J": 4390199991.861944,
+        "configured_curve_energy_J": 4390199991.861944,
+        "peak_hrr_W": 7499999.986097348
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 164,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 508.69567865094467,
+        "absorbed_radiation_J": 183725747.7872862,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "40b013c020acf810cb4298d70830c7fdaf24eeb96113dae3a811a1219d539dbc",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.00014591217041015625,
+      "energy_tolerance_J": 5.847785916838619,
+      "nodes": 110074,
+      "radiation_edges": 2273382,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953657827,
+          "300": 26.863780261985667,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5761444590.108811,
+        "prescribed_patch_released_energy_J": 4390199991.861946
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "factorial",
+      "case_id": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 32.82513931270802,
+        "initial_dry_fuel_mass_kg": 590.8525076287443,
+        "water_mass_kg": 59.08525076287444,
+        "available_energy_J": 5764357064.426028,
+        "configured_curve_energy_J": 5764357064.426028,
+        "peak_hrr_W": 9847541.793812405
+      },
+      "ignition_geometry_sha256": "33fef7f911cc4d53110b98001e34a04547a3ad1513ad3c665d6ea90d071c674c",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 164,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 525.0,
+        "ignited_component_count": 131,
+        "maximum_valid_surface_temperature_K": 519.9989117475575,
+        "absorbed_radiation_J": 334008091.0203587,
+        "received_convection_J": 9362157.9561616
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "108f37037d0b3c1fc79d8c3f048ca5d4cd54529cfd6189c39917a85989c73baf",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/Aall-h1p0-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.000102996826171875,
+      "energy_tolerance_J": 32.72708461968166,
+      "nodes": 110072,
+      "radiation_edges": 2272162,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 32.82513931270802,
+          "300": 32.82513931307926,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5764357064.499554,
+        "prescribed_patch_released_energy_J": 5764357064.426
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_grid",
+      "case_id": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953646284,
+        "initial_dry_fuel_mass_kg": 449.9999991656332,
+        "water_mass_kg": 44.999999916563304,
+        "available_energy_J": 4390199991.859918,
+        "configured_curve_energy_J": 4390199991.859918,
+        "peak_hrr_W": 7499999.986093884
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 591,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 503.5285748876467,
+        "absorbed_radiation_J": 183030645.45256278,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "1ef0cf8ce7423c114e170de7a92effa50ae7428bbffa42aec2bbcbcf01dd40c1",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0002689361572265625,
+      "energy_tolerance_J": 5.791883696213117,
+      "nodes": 110631,
+      "radiation_edges": 2841440,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.825139313128226,
+        "ignited_area_m2": {
+          "0": 24.999999953646284,
+          "300": 26.271859948599555,
+          "600": 32.004839083901246,
+          "1200": 32.825139313128226
+        },
+        "source_released_energy_J": 5712635141.335479,
+        "prescribed_patch_released_energy_J": 4390199991.859907
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_grid",
+      "case_id": "Aall-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 32.82513931267378,
+        "initial_dry_fuel_mass_kg": 590.852507628128,
+        "water_mass_kg": 59.08525076281279,
+        "available_energy_J": 5764357064.420017,
+        "configured_curve_energy_J": 5764357064.420017,
+        "peak_hrr_W": 9847541.793802135
+      },
+      "ignition_geometry_sha256": "33fef7f911cc4d53110b98001e34a04547a3ad1513ad3c665d6ea90d071c674c",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 591,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 498.0,
+        "ignited_component_count": 271,
+        "maximum_valid_surface_temperature_K": 519.9964710638486,
+        "absorbed_radiation_J": 333519158.63783586,
+        "received_convection_J": 2633267.055202679
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "e6ca72dbd9747ca59dae046af29d36e97331d655e366dc5875746a883354fa54",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/Aall-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.00034332275390625,
+      "energy_tolerance_J": 29.97090359493657,
+      "nodes": 110629,
+      "radiation_edges": 2836466,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312821,
+        "ignited_area_m2": {
+          "0": 32.82513931267378,
+          "300": 32.82513931311466,
+          "600": 32.82513931312821,
+          "1200": 32.82513931312821
+        },
+        "source_released_energy_J": 5764357064.499301,
+        "prescribed_patch_released_energy_J": 5764357064.419994
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase",
+      "case_id": "A25p0-h1p0-p0p5-0p5-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953729187,
+        "initial_dry_fuel_mass_kg": 449.9999991671253,
+        "water_mass_kg": 44.99999991671253,
+        "available_energy_J": 4390199991.874475,
+        "configured_curve_energy_J": 4390199991.874475,
+        "peak_hrr_W": 7499999.986118755
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 231,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 498.46502152280027,
+        "absorbed_radiation_J": 183360220.78213018,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "3eede6f156c75733d4a52ab96c9a882945b5826b9c0cc4b38622f35be50d1bad",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h1p0-p0p5-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.00016689300537109375,
+      "energy_tolerance_J": 5.809841354973415,
+      "nodes": 110156,
+      "radiation_edges": 2319722,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953729187,
+          "300": 25.517494879689224,
+          "600": 32.82494713659962,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5733333014.295686,
+        "prescribed_patch_released_energy_J": 4390199991.874457
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase",
+      "case_id": "A25p0-h0p5-p0p5-0p5-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953726565,
+        "initial_dry_fuel_mass_kg": 449.9999991670783,
+        "water_mass_kg": 44.99999991670782,
+        "available_energy_J": 4390199991.874015,
+        "configured_curve_energy_J": 4390199991.874015,
+        "peak_hrr_W": 7499999.98611797
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 706,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 502.5915115389336,
+        "absorbed_radiation_J": 183184007.91603827,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "879c1c1723c6dac222b25a80920c687cb13575efff26df3ae98551e797810d9b",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/A25p0-h0p5-p0p5-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0002193450927734375,
+      "energy_tolerance_J": 5.796081314262893,
+      "nodes": 110769,
+      "radiation_edges": 3078240,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953726565,
+          "300": 25.893792075898645,
+          "600": 32.252650143856435,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5717187152.40983,
+        "prescribed_patch_released_energy_J": 4390199991.874
+      }
+    },
+    {
+      "h_m": 1.0,
+      "area_m2": "all",
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 0.5,
+      "kind": "time_step",
+      "case_id": "Aall-h1p0-p0p0-0p0-dt0p5",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 32.82513931270802,
+        "initial_dry_fuel_mass_kg": 590.8525076287443,
+        "water_mass_kg": 59.08525076287444,
+        "available_energy_J": 5764357064.426028,
+        "configured_curve_energy_J": 5764357064.426028,
+        "peak_hrr_W": 9847541.793812405
+      },
+      "ignition_geometry_sha256": "33fef7f911cc4d53110b98001e34a04547a3ad1513ad3c665d6ea90d071c674c",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 164,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 525.0,
+        "ignited_component_count": 131,
+        "maximum_valid_surface_temperature_K": 519.9906200237333,
+        "absorbed_radiation_J": 333924665.6261413,
+        "received_convection_J": 9315367.754575526
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "e371e1e984612c99126a78ffcd406b8161ff80ba180dbca411f445804f9c3ec8",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-scale-20261023/gulou/Aall-h1p0-p0p0-0p0-dt0p5/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.00019073486328125,
+      "energy_tolerance_J": 32.77510886995237,
+      "nodes": 110072,
+      "radiation_edges": 2272162,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 32.82513931270802,
+          "300": 32.82513931307926,
+          "600": 32.82513931312822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5764357064.49952,
+        "prescribed_patch_released_energy_J": 5764357064.42597
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_small_area",
+      "case_id": "A5p0-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 5.000000058233401,
+        "initial_dry_fuel_mass_kg": 90.00000104820123,
+        "water_mass_kg": 9.000000104820122,
+        "available_energy_J": 878040010.2262511,
+        "configured_curve_energy_J": 878040010.2262511,
+        "peak_hrr_W": 1500000.0174700203
+      },
+      "ignition_geometry_sha256": "80685c3f4e5cac389eb6fbafb55176c74c14013e7322442393f5dafdc0fec574",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 2824,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 373.15,
+        "absorbed_radiation_J": 43594648.53543808,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "778cfee9734b1e7833116bc7350b46f0be7ee952aa1d5429a8467c37473dca60",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/bridge/A5p0-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 3.814697265625e-06,
+      "energy_tolerance_J": 2.7101738417625234,
+      "nodes": 113534,
+      "radiation_edges": 6906916,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 5.000000058233401,
+          "300": 5.53565329745464,
+          "600": 9.619851820562346,
+          "1200": 26.93525280721545
+        },
+        "source_released_energy_J": 2710163841.7625217,
+        "prescribed_patch_released_energy_J": 878040010.2262485
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "phase_x",
+      "case_id": "A25p0-h0p5-p0p5-0p0-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000598267313,
+        "initial_dry_fuel_mass_kg": 450.00001076881165,
+        "water_mass_kg": 45.00000107688115,
+        "available_energy_J": 4390200105.060526,
+        "configured_curve_energy_J": 4390200105.060526,
+        "peak_hrr_W": 7500000.179480193
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 3102,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 931.0,
+        "ignited_component_count": 23,
+        "maximum_valid_surface_temperature_K": 519.9837549928574,
+        "absorbed_radiation_J": 123448105.35471272,
+        "received_convection_J": 246560.86583273887
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "5cc823e62256de9a3ec1adf4950d1c7a81c870de3c9b69490b4460c4816bf7c5",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/bridge/A25p0-h0p5-p0p5-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.000133514404296875,
+      "energy_tolerance_J": 30.165633791486176,
+      "nodes": 113920,
+      "radiation_edges": 7914644,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.000000598267313,
+          "300": 28.40739159326792,
+          "600": 63.02383086400409,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 23418501904.619675,
+        "prescribed_patch_released_energy_J": 4390200105.060524
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase_y",
+      "case_id": "A25p0-h0p5-p0p0-0p5-dt1p0",
+      "probe_id": "bridge",
+      "source_id": "B0061",
+      "target_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000598308077,
+        "initial_dry_fuel_mass_kg": 450.0000107695454,
+        "water_mass_kg": 45.00000107695454,
+        "available_energy_J": 4390200105.067684,
+        "configured_curve_energy_J": 4390200105.067684,
+        "peak_hrr_W": 7500000.179492423
+      },
+      "ignition_geometry_sha256": "e6292712d2c0da7175a4530ba9279d2bacfe7fb647bd0528ce00bd6bf3122c50",
+      "outcome": {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 3103,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": true,
+        "first_ignition_s": 951.36,
+        "ignited_component_count": 22,
+        "maximum_valid_surface_temperature_K": 519.9937652910218,
+        "absorbed_radiation_J": 123134031.45104806,
+        "received_convection_J": 228493.66896158358
+      },
+      "protection_status": "failed",
+      "evaluation_sha256": "0f859d0bf95e6b49624a71a3924169b72fef5363b72927c4b8ba8bcf86e0ebe6",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/bridge/A25p0-h0p5-p0p0-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.000171661376953125,
+      "energy_tolerance_J": 29.66574406972752,
+      "nodes": 113927,
+      "radiation_edges": 7930900,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 197.8460151989147,
+        "ignited_area_m2": {
+          "0": 25.000000598308077,
+          "300": 28.92254764956055,
+          "600": 62.46280286622312,
+          "1200": 197.8460151989147
+        },
+        "source_released_energy_J": 23128972773.2668,
+        "prescribed_patch_released_energy_J": 4390200105.067669
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 5.0,
+      "phase": [
+        0.0,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "fine_small_area",
+      "case_id": "A5p0-h0p5-p0p0-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 5.000000006393195,
+        "initial_dry_fuel_mass_kg": 90.00000011507753,
+        "water_mass_kg": 9.000000011507753,
+        "available_energy_J": 878040001.1226962,
+        "configured_curve_energy_J": 878040001.1226962,
+        "peak_hrr_W": 1500000.0019179585
+      },
+      "ignition_geometry_sha256": "2c328a93ae2e5bab9d3ac34d58981eb75418739f40bf5039b20e7a13641da4ef",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 591,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 373.15,
+        "absorbed_radiation_J": 90857722.39227054,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "2e2adfc300d0b7a12c3016727c3eea930282e083a704c9ee13e0fe63b705cfe9",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/gulou/A5p0-h0p5-p0p0-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 5.1975250244140625e-05,
+      "energy_tolerance_J": 2.453243671243753,
+      "nodes": 110613,
+      "radiation_edges": 2814820,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.825139313128226,
+        "ignited_area_m2": {
+          "0": 5.000000006393195,
+          "300": 5.440482714422957,
+          "600": 8.965016539812382,
+          "1200": 24.01108393056279
+        },
+        "source_released_energy_J": 2453233671.2437477,
+        "prescribed_patch_released_energy_J": 878040001.1226922
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.5,
+        0.0
+      ],
+      "dt_s": 1.0,
+      "kind": "phase_x",
+      "case_id": "A25p0-h0p5-p0p5-0p0-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953678852,
+        "initial_dry_fuel_mass_kg": 449.9999991662194,
+        "water_mass_kg": 44.99999991662193,
+        "available_energy_J": 4390199991.865636,
+        "configured_curve_energy_J": 4390199991.865636,
+        "peak_hrr_W": 7499999.986103656
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 646,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 501.7339875842023,
+        "absorbed_radiation_J": 183080813.26746327,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "8123a3d582be38e0c9a849caf510f6f89d547eec094881eed52a918f09c34a37",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/gulou/A25p0-h0p5-p0p5-0p0-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.0002574920654296875,
+      "energy_tolerance_J": 5.790006047754365,
+      "nodes": 110699,
+      "radiation_edges": 2954462,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953678852,
+          "300": 26.173370912130864,
+          "600": 32.08499113156822,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5710325232.07947,
+        "prescribed_patch_released_energy_J": 4390199991.865627
+      }
+    },
+    {
+      "h_m": 0.5,
+      "area_m2": 25.0,
+      "phase": [
+        0.0,
+        0.5
+      ],
+      "dt_s": 1.0,
+      "kind": "phase_y",
+      "case_id": "A25p0-h0p5-p0p0-0p5-dt1p0",
+      "probe_id": "gulou",
+      "source_id": "B0076",
+      "target_id": "B0073",
+      "source_budget": {
+        "covered_area_m2": 24.999999953737003,
+        "initial_dry_fuel_mass_kg": 449.99999916726614,
+        "water_mass_kg": 44.99999991672661,
+        "available_energy_J": 4390199991.875849,
+        "configured_curve_energy_J": 4390199991.875849,
+        "peak_hrr_W": 7499999.986121102
+      },
+      "ignition_geometry_sha256": "772417dcd6532350f7dcfeada02ad3b51cc4aec4e80cf9f7caacc0f11a5e9b3b",
+      "outcome": {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "component_count": 645,
+        "independent_temperature_states": true,
+        "shared_temperature_components": 0,
+        "ignited": false,
+        "first_ignition_s": null,
+        "ignited_component_count": 0,
+        "maximum_valid_surface_temperature_K": 502.9873389502556,
+        "absorbed_radiation_J": 183175658.18721405,
+        "received_convection_J": 0.0
+      },
+      "protection_status": "passed",
+      "evaluation_sha256": "cd1b57b1860d5e485737aa7c53416e173ad45b851acde9bbbf359d34bd0426cc",
+      "evaluation": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-ignition-axis-20261023/gulou/A25p0-h0p5-p0p0-0p5-dt1p0/evaluation.json",
+      "reached_requested_horizon": true,
+      "max_energy_closure_error_J": 0.00021266937255859375,
+      "energy_tolerance_J": 5.797580899617313,
+      "nodes": 110693,
+      "radiation_edges": 2942980,
+      "source_fire_development": {
+        "unambiguous_source_roof_area_m2": 32.82513931312822,
+        "ignited_area_m2": {
+          "0": 24.999999953737003,
+          "300": 26.009677239761494,
+          "600": 32.3411023021233,
+          "1200": 32.82513931312822
+        },
+        "source_released_energy_J": 5718355864.805267,
+        "prescribed_patch_released_energy_J": 4390199991.875813
+      }
+    }
+  ],
+  "checks": [
+    {
+      "probe_id": "gulou",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": 5.0,
+      "left": "A5p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A5p0-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 81.54000358055691,
+      "tolerance": 10.0,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": 25.0,
+      "left": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 5.167103763297973,
+      "tolerance": 10.0,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": "all",
+      "left": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "right": "Aall-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 27.0,
+      "tolerance": 24.900000000000002,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "phase",
+      "h_m": 1.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "left": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A25p0-h1p0-p0p5-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 10.2306571281444,
+      "tolerance": 10.0,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.5,
+        0.0
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p5-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 1.7945873034444162,
+      "tolerance": 10.0,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.0,
+        0.5
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p0-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 0.5412359373910931,
+      "tolerance": 10.0,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p5-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 0.9370633487130817,
+      "tolerance": 10.0,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "gulou",
+      "kind": "time_step",
+      "area_m2": "all",
+      "left": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "right": "Aall-h1p0-p0p0-0p0-dt0p5",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 0.0,
+      "tolerance": 26.25,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": 5.0,
+      "left": "A5p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A5p0-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "maximum_valid_surface_temperature_K",
+      "absolute_difference": 53.816686643862965,
+      "tolerance": 10.0,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": 25.0,
+      "left": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 166.0,
+      "tolerance": 38.15,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "spatial_1m_vs_0p5m",
+      "area_m2": "all",
+      "left": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "right": "Aall-h0p5-p0p0-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 8.0,
+      "tolerance": 13.200000000000001,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "phase",
+      "h_m": 1.0,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "left": "A25p0-h1p0-p0p0-0p0-dt1p0",
+      "right": "A25p0-h1p0-p0p5-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 52.0,
+      "tolerance": 38.15,
+      "response_gate_passed": false
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.5,
+        0.0
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p5-0p0-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 2.0,
+      "tolerance": 46.45,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.0,
+        0.5
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p0-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 22.360000000000014,
+      "tolerance": 46.45,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "phase",
+      "h_m": 0.5,
+      "phase": [
+        0.5,
+        0.5
+      ],
+      "left": "A25p0-h0p5-p0p0-0p0-dt1p0",
+      "right": "A25p0-h0p5-p0p5-0p5-dt1p0",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 39.360000000000014,
+      "tolerance": 46.45,
+      "response_gate_passed": true
+    },
+    {
+      "probe_id": "bridge",
+      "kind": "time_step",
+      "area_m2": "all",
+      "left": "Aall-h1p0-p0p0-0p0-dt1p0",
+      "right": "Aall-h1p0-p0p0-0p0-dt0p5",
+      "classification_stable": true,
+      "valid_full_horizon": true,
+      "metric": "first_ignition_s",
+      "absolute_difference": 0.0,
+      "tolerance": 13.600000000000001,
+      "response_gate_passed": true
+    }
+  ],
+  "source_budget_checks": [
+    {
+      "probe_id": "gulou",
+      "area_m2": 5.0,
+      "geometry_identical": true,
+      "max_budget_relative_difference": 2.7902680166391747e-11
+    },
+    {
+      "probe_id": "gulou",
+      "area_m2": 25.0,
+      "geometry_identical": true,
+      "max_budget_relative_difference": 1.042899100411887e-11
+    },
+    {
+      "probe_id": "gulou",
+      "area_m2": "all",
+      "geometry_identical": true,
+      "max_budget_relative_difference": 1.0188405674682599e-11
+    },
+    {
+      "probe_id": "bridge",
+      "area_m2": 5.0,
+      "geometry_identical": true,
+      "max_budget_relative_difference": 2.4803492593150622e-12
+    },
+    {
+      "probe_id": "bridge",
+      "area_m2": 25.0,
+      "geometry_identical": true,
+      "max_budget_relative_difference": 7.221778730581718e-12
+    },
+    {
+      "probe_id": "bridge",
+      "area_m2": "all",
+      "geometry_identical": true,
+      "max_budget_relative_difference": 1.8836043835790406e-12
+    }
+  ],
+  "legacy_point_source_geometry_audit": [
+    {
+      "probe_id": "gulou",
+      "h_m": 5.0,
+      "one_point_component_area_m2": 0.02372128075425875,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "gulou",
+      "h_m": 2.5,
+      "one_point_component_area_m2": 0.02372128075425875,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "gulou",
+      "h_m": 1.0,
+      "one_point_component_area_m2": 0.02318809539605967,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "gulou",
+      "h_m": 0.5,
+      "one_point_component_area_m2": 0.02318809539605967,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "bridge",
+      "h_m": 5.0,
+      "one_point_component_area_m2": 1.559473088586944,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "bridge",
+      "h_m": 2.5,
+      "one_point_component_area_m2": 1.559473088586944,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "bridge",
+      "h_m": 1.0,
+      "one_point_component_area_m2": 0.967571061007097,
+      "thermal_run_performed_for_this_point_rule": false
+    },
+    {
+      "probe_id": "bridge",
+      "h_m": 0.5,
+      "one_point_component_area_m2": 0.21757106100709697,
+      "thermal_run_performed_for_this_point_rule": false
+    }
+  ],
+  "acceptance": {
+    "source_budget_relative_tolerance": 1e-06,
+    "require_same_ignition_class": true,
+    "ignition_time_absolute_s": 10.0,
+    "ignition_time_relative": 0.05,
+    "unignited_peak_temperature_K": 10.0,
+    "interpretation": "Local roof-scale checks with fixed 5 m ground/DEM and full background. No global-grid or field validation claim. If a gate fails, demolition comparisons remain sensitivity diagnostics."
+  },
+  "background_grid_m": 5.0,
+  "whole_domain_background_retained": true,
+  "real_candidate_ids": [],
+  "real_fixed_source_ids": [],
+  "optimization": false,
+  "script_sha256": "d5543052321586947a57722605f114f549c471bcf5e254e2c940efe366e549cf"
+}

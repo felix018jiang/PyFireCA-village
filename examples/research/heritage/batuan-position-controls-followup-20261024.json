@@ -1,0 +1,21 @@
+{
+  "schema_version": "heritage-position-controls-followup-1",
+  "parent_manifest_sha256": "d628c7a99b6062b6974118f9771ca761e2823435f23e7e260103dd007c65c9dc",
+  "trigger": "both_new_B0062_baseline_draws_passed_both_scales_so_they_do_not_test_bridge_protection",
+  "trigger_baseline_evaluation_sha256": [
+    "a586898aaaa96d467fb027e47e67de3e3f6361a55fa9f7a80d22c751e3caf237",
+    "477742a1bb912cad2dbe5ce3c6e78df0a36b4d4b89973a92809d6a48055f6b37",
+    "d5be18964076afb5eded3e435e363795156257cf25a9cea8837c6205e5713c08",
+    "a54a1d2a0f3f64cf1667c096ac877f69ef20bcfcc15c9bfe1c2ed080bf00ade1"
+  ],
+  "config": "batuan-position-known-B0062-20261024.json",
+  "config_sha256": "be2673c97aadbbf0e06fefecbb0b5d85e6ce6bf8515b1290f87cbe69d08ce080",
+  "source_protocol": "batuan-position-known-B0062-source-20261024.json",
+  "source_protocol_sha256": "a67aa5b08213b518eeb9e52ab0c7c7bb705e8733446aafeaef941260a1bf5f5d",
+  "source_reference": "../../../runs/research/heritage-triple-validation-20261024-c",
+  "source_draw_id": "near-B0120-002",
+  "output": "../../../runs/research/heritage-position-known-B0062-20261024",
+  "new_simulations": 10,
+  "is_independent_confirmation": false,
+  "claim": "known_adverse_bridge_source_stress_only;five_arm_same_source_position_comparison"
+}

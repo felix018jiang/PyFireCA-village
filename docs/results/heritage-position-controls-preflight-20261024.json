@@ -1,0 +1,52 @@
+{
+  "schema_version": "heritage-position-controls-preflight-1",
+  "complete": true,
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "reference_result_sha256": "71abbc5bbaf9e34c54ed43e3e81942376ec6cb8c859940bddb9f72c2265c3498",
+  "plans": [
+    {
+      "plan_id": "selected-B0061-B0071-B0076",
+      "demolished_ids": ["B0061", "B0071", "B0076"],
+      "demolished_footprint_area_m2": 451.24045614570235,
+      "cleared_roof_union_area_m2": 443.84196874193674,
+      "retained_shared_roof_area_m2": 7.398487403734617,
+      "nominal_area_difference_from_selected_m2": 0.0
+    },
+    {
+      "plan_id": "bridge-swap-B0063-B0071-B0076",
+      "demolished_ids": ["B0063", "B0071", "B0076"],
+      "demolished_footprint_area_m2": 308.49540262219125,
+      "cleared_roof_union_area_m2": 300.1327715274724,
+      "retained_shared_roof_area_m2": 8.362631095411627,
+      "nominal_area_difference_from_selected_m2": -142.7450535235111
+    },
+    {
+      "plan_id": "drum-area-match-B0061-B0067-B0077",
+      "demolished_ids": ["B0061", "B0067", "B0077"],
+      "demolished_footprint_area_m2": 453.59709618104876,
+      "cleared_roof_union_area_m2": 446.4284846915957,
+      "retained_shared_roof_area_m2": 7.16861148773936,
+      "nominal_area_difference_from_selected_m2": 2.356640035346402
+    },
+    {
+      "plan_id": "global-area-match-B0063-B0067-B0071",
+      "demolished_ids": ["B0063", "B0067", "B0071"],
+      "demolished_footprint_area_m2": 452.0260028237742,
+      "cleared_roof_union_area_m2": 443.71897211124804,
+      "retained_shared_roof_area_m2": 8.307030713590539,
+      "nominal_area_difference_from_selected_m2": 0.785546678071853
+    }
+  ],
+  "rules_verified_before_simulation": {
+    "all_interventions_demolish_three_buildings": true,
+    "bridge_swap_changes_only_B0061_to_B0063": true,
+    "drum_area_match_is_closest_pair_when_B0061_retained_and_selected_drum_ids_excluded": true,
+    "global_area_match_is_closest_other_one_bridge_two_drum_combination": true,
+    "two_area_controls_within_one_percent_of_selected_nominal_area": true,
+    "source_buildings_B0062_B0075_retained_by_every_plan": true,
+    "core_buildings_never_demolished": true
+  },
+  "planned_independent_fire_draws": 4,
+  "planned_new_simulations": 40,
+  "optimization": false
+}
