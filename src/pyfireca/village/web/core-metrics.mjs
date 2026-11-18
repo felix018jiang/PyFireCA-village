@@ -1,4 +1,12 @@
 // A frame's state counts and mass-weighted remaining combustible fuel.
+export function scalarDisplaySpec(kind, spec) {
+  if (!spec) return null;
+  // Fuel exports are fractions; legacy manifests omit scalar range metadata.
+  if (kind === "fuel") return {...spec, minimum:0, maximum:1, unit:"%", legendMultiplier:100};
+  if (!Number.isFinite(spec.minimum) || !Number.isFinite(spec.maximum) || spec.maximum < spec.minimum) return null;
+  return {...spec, legendMultiplier:1};
+}
+
 export function eventOccurredBy(time, seconds) {
   return Number.isFinite(time) && time >= 0 && time <= seconds + 1e-9;
 }

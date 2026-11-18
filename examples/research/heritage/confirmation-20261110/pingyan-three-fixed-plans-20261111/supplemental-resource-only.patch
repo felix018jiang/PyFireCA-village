@@ -1,0 +1,110 @@
+--- a/scripts/run_heritage_joint_comparison.py
++++ b/scripts/run_heritage_joint_comparison.py
+@@ -15,7 +15,7 @@
+ from pathlib import Path
+ 
+ import numpy as np
+-from preflight_heritage_exact_expansion import edge_bounds
++from preflight_heritage_exact_expansion import edge_bounds  # noqa: F401 - public native counter
+ from run_heritage_area_study import observation_status
+ from run_heritage_area_study import read_complete as read_area_complete
+ from run_heritage_fixed_comparison import (
+@@ -772,14 +772,24 @@
+             "run_heritage_fixed_comparison.py",
+             "preflight_heritage_exact_expansion.py",
+             "run_heritage_roof_study.py",
++            "heritage_confirmation_stage_capacity.py",
+         )
+     )
+     return sorted(paths)
+ 
+ 
+-def prepare_geometry_preflight(oracle):
++def prepare_geometry_preflight(oracle, config):
++    from heritage_confirmation_stage_capacity import stage_counts
++
++    binding = config["supplemental_geometry_receipt"]
++    if file_sha256(binding["path"]) != binding["sha256"]:
++        raise ValueError("supplemental action-specific capacity receipt changed")
++    measured = read_json(binding["path"])
++    if not measured.get("supplemental_diagnostics_for_all_eight_common_layouts"):
++        raise ValueError("all common layouts need independent stage-count evidence")
++    approved = {(p.plan_id, s) for p, s in execution_checks(config)}
+     rows = []
+-    for label, fire in oracle.fires.items():
++    for number, (label, fire) in enumerate(oracle.fires.items(), 1):
+         for scale in oracle.scales_m:
+             layout = refine_roof_layout(
+                 oracle.base,
+@@ -797,16 +807,38 @@
+             )
+             for plan in oracle.plans.values():
+                 checker._vegetation_nodes(scenario, plan)
+-            bounds = edge_bounds(layout, oracle.transport, fire["refined_ids"])
++            bounds, stages = stage_counts(
++                layout, oracle.transport, fire["refined_ids"], oracle.plans.values()
++            )
+             row = {"fire_id": label, "scale_m": scale, "nodes": len(layout.owners), **bounds}
+-            row["passed"] = (
++            row["original_intact_layout_passed"] = (
+                 row["nodes"] <= oracle.max_nodes
+                 and max(row["raw_point_edges"], row["integrated_edges_upper_bound"])
+                 <= oracle.max_radiation_edges
+             )
++            witness = next(
++                w for w in measured["rows"] if w["draw_ordinal"] == number and w["scale_m"] == scale
++            )
++            if (
++                witness["nodes"] != row["nodes"]
++                or any(witness[key] != value for key, value in bounds.items())
++                or witness["actual_graph_stage_bound_by_plan"] != stages
++            ):
++                raise ValueError("recomputed native stage geometry differs from original evidence")
++            row["actual_graph_stage_bound_by_plan"] = stages
++            all_fit = row["nodes"] <= oracle.max_nodes and all(
++                max(stage.values()) <= oracle.max_radiation_edges
++                for pair in stages.values()
++                for stage in pair.values()
++            )
++            name = f"{label}-h{scale:g}"
++            admitted = [(plan.plan_id, name) in approved for plan in oracle.plans.values()]
++            if any(value != all_fit for value in admitted):
++                raise ValueError(
++                    "selection must include all three arms exactly on qualified layouts"
++                )
++            row.update(passed=all_fit, selected_for_supplemental_execution=all_fit)
+             rows.append(row)
+-            if not row["passed"]:
+-                raise ValueError("joint geometry capacity preflight failed before any CA")
+     return rows
+ 
+ 
+@@ -824,7 +856,7 @@
+             raise ValueError("source changed while freezing joint comparison")
+     config_hash = file_sha256(config_path)
+     oracle, references = make_oracle(config_path, config, content_hash(hashes))
+-    rows = prepare_geometry_preflight(oracle)
++    rows = prepare_geometry_preflight(oracle, config)
+     if any(file_sha256(p) != hashes[str(p.relative_to(ROOT))] for p in paths):
+         raise ValueError("frozen source changed during preparation")
+     if file_sha256(config_path) != config_hash or any(
+@@ -856,7 +888,18 @@
+             "global_optimality_proven": False,
+         },
+     )
+-    write_json(output / "preflight.json", {"rows": rows, "passed": True})
++    write_json(
++        output / "preflight.json",
++        {
++            "rows": rows,
++            "passed": True,
++            "passed_scope": "only selected common layouts of three arms",
++            "original_intact_all_layout_preflight_passed": all(
++                row["original_intact_layout_passed"] for row in rows
++            ),
++            "individual_native_graph_builders_retain_original_hard_limits": True,
++        },
++    )
+     atomic_json(
+         output / "execution-budget.json", {"elapsed_s": 0.0, "started_checks": 0, "active": None}
+     )

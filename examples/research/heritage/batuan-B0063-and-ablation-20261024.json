@@ -1,0 +1,95 @@
+{
+  "schema_version": "heritage-B0063-and-addback-1",
+  "date": "2026-10-24",
+  "fixed_candidate": {
+    "demolished_ids": [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    "overlap_policy": "retain_shared_roof",
+    "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+    "plan_id": "remove-B0061-B0071-B0076"
+  },
+  "reference_result_sha256": "d4859373582f0a5eed512ef6df333d00430e4cbd557dba84ebdb0209316007ce",
+  "targeted_cohorts": [
+    {
+      "label": "e",
+      "seed": 2026102405,
+      "config": "batuan-B0063-confirmation-20261024-e.json",
+      "config_sha256": "3321a8b611e4dd5f38f7f365354ae07c77d5dc0c1727c44063275f306c6894fe",
+      "output": "runs/research/heritage-B0063-confirmation-20261024-e"
+    },
+    {
+      "label": "f",
+      "seed": 2026102406,
+      "config": "batuan-B0063-confirmation-20261024-f.json",
+      "config_sha256": "5539050d547d077c5ff9210921c3b6cdc254290550ac28cc7f6f7588bee59340",
+      "output": "runs/research/heritage-B0063-confirmation-20261024-f"
+    }
+  ],
+  "B0063_draws": 6,
+  "targeted_new_runs": 24,
+  "screen_configs": [
+    {
+      "cohort": "c",
+      "config": "batuan-ablation-screen-20261024-c.json",
+      "config_sha256": "6da9ca70ca89d597996e487b9b870baccaa07c38116a6a3cc6e6e955279dc9bc",
+      "output": "runs/research/heritage-ablation-screen-20261024-c",
+      "plans": [
+        {
+          "plan_id": "restore-B0061",
+          "demolished_ids": [
+            "B0071",
+            "B0076"
+          ],
+          "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+          "overlap_policy": "retain_shared_roof",
+          "draw_ids": [
+            "near-B0120-002"
+          ]
+        },
+        {
+          "plan_id": "restore-B0076",
+          "demolished_ids": [
+            "B0061",
+            "B0071"
+          ],
+          "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+          "overlap_policy": "retain_shared_roof",
+          "draw_ids": [
+            "near-B0073-002"
+          ]
+        }
+      ]
+    },
+    {
+      "cohort": "d",
+      "config": "batuan-ablation-screen-20261024-d.json",
+      "config_sha256": "d9aec2c471e209ce463b3135815aa259275da64927a66c1c0bb8234a364b49a1",
+      "output": "runs/research/heritage-ablation-screen-20261024-d",
+      "plans": [
+        {
+          "plan_id": "restore-B0071",
+          "demolished_ids": [
+            "B0061",
+            "B0076"
+          ],
+          "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+          "overlap_policy": "retain_shared_roof",
+          "draw_ids": [
+            "near-B0073-003"
+          ]
+        }
+      ]
+    }
+  ],
+  "screen_new_runs": 6,
+  "initial_matrix_new_runs": 30,
+  "initial_scenario_rule": "complete_both_scales_even_after_a_failure;all_fixed_matrix_results_retained",
+  "screen_rule": "any_core_ignition_at_any_scale_rejects_that_single_addback_for_the_declared_constraint_bank;no_missing_case_counted_as_pass",
+  "continuation_rule": "if_an_addback_passes_screen_freeze_remaining_original_18_draws_and_new_B0063_draws_for_that_plan;restore71_also_retest_known_old_B0071_failure_polygon_with_fresh_common_layout_and_full_triple_control;no_reduced_plan_declared_admissible_before_all_required_checks",
+  "claim": "local_single_building_addback_necessity_only;not_global_minimum;new_B0063_is_independent_for_frozen_triple_but_not_heldout_for_selected_reduced_plans",
+  "physical_parameters_unchanged": true,
+  "optimization": false
+}

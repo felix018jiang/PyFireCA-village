@@ -371,3 +371,7 @@ def test_component_mode_rejects_single_state_receiver_band(config, contact):
         resolve_components(
             request, config, contact=replace(contact, receiver_vertical_half_extent_m=0.15)
         )
+    with pytest.raises(ValueError, match="shared-face terrain"):
+        resolve_components(
+            request, config, contact=replace(contact, terrain_reference="shared_face")
+        )

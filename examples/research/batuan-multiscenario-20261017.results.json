@@ -1,0 +1,377 @@
+{
+  "schema": "batuan-multiscenario-accepted-results-1",
+  "date": "2026-10-17",
+  "study": "runs/research/batuan-multiscenario-20261017-r4",
+  "objective": "all_24_design_scenarios_zero_house_and_bridge_ignition_at_5400s_then_minimum_eligible_vegetation_area",
+  "scenario_counts": {
+    "design": 24,
+    "held_out": 8,
+    "full_scene_per_selected_plan": 32
+  },
+  "geometry_limits": "<=3 paths, <=5 nodes/path, width2.5-30m length10-240m; removal and simplification allowed",
+  "scope": "140x140 expanded window, 5m cells; proxy20m building buffer; synthetic static tilt, no embers",
+  "plans": {
+    "outer_proxy": {
+      "plan": {
+        "plan_id": "outer_proxy-adaptive-e40ad0b39fd9195f180b",
+        "strips": [],
+        "zone_id": "outer_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347220.69392,
+                2869698.75
+              ],
+              [
+                347337.60735,
+                2869631.25
+              ]
+            ],
+            "width_m": 10.0
+          }
+        ]
+      },
+      "training_goal_met": true,
+      "cleared_area_m2": 1269.129316485042,
+      "protection_screen": {
+        "expected_scenario_ids": [
+          "design-r163c151-southwest4-rise0.95",
+          "design-r160c151-southwest4-rise0.95",
+          "design-r168c143-southwest4-rise0.95",
+          "design-r170c159-southwest4-rise0.95",
+          "design-r163c151-southwest4-rise1",
+          "design-r160c151-southwest4-rise1",
+          "design-r168c143-southwest4-rise1",
+          "design-r170c159-southwest4-rise1",
+          "design-r163c151-southeast2-rise0.95",
+          "design-r160c151-southeast2-rise0.95",
+          "design-r168c143-southeast2-rise0.95",
+          "design-r170c159-southeast2-rise0.95",
+          "design-r163c151-southeast2-rise1",
+          "design-r160c151-southeast2-rise1",
+          "design-r168c143-southeast2-rise1",
+          "design-r170c159-southeast2-rise1",
+          "design-r163c151-calm-rise0.95",
+          "design-r160c151-calm-rise0.95",
+          "design-r168c143-calm-rise0.95",
+          "design-r170c159-calm-rise0.95",
+          "design-r163c151-calm-rise1",
+          "design-r160c151-calm-rise1",
+          "design-r168c143-calm-rise1",
+          "design-r170c159-calm-rise1"
+        ],
+        "evaluated_scenario_ids": [
+          "design-r163c151-southwest4-rise0.95",
+          "design-r160c151-southwest4-rise0.95",
+          "design-r168c143-southwest4-rise0.95",
+          "design-r170c159-southwest4-rise0.95",
+          "design-r163c151-southwest4-rise1",
+          "design-r160c151-southwest4-rise1",
+          "design-r168c143-southwest4-rise1",
+          "design-r170c159-southwest4-rise1",
+          "design-r163c151-southeast2-rise0.95",
+          "design-r160c151-southeast2-rise0.95",
+          "design-r168c143-southeast2-rise0.95",
+          "design-r170c159-southeast2-rise0.95",
+          "design-r163c151-southeast2-rise1",
+          "design-r160c151-southeast2-rise1",
+          "design-r168c143-southeast2-rise1",
+          "design-r170c159-southeast2-rise1",
+          "design-r163c151-calm-rise0.95",
+          "design-r160c151-calm-rise0.95",
+          "design-r168c143-calm-rise0.95",
+          "design-r170c159-calm-rise0.95",
+          "design-r163c151-calm-rise1",
+          "design-r160c151-calm-rise1",
+          "design-r168c143-calm-rise1",
+          "design-r170c159-calm-rise1"
+        ],
+        "complete": true,
+        "protection_goal_met": true,
+        "losses_are_lower_bounds": false,
+        "stop_reason": "all_scenarios",
+        "evaluation_sha256": [
+          "fd0a712019d426675daa4d7438a4d80f3c2c80297030e5590725dbee66144a24",
+          "4522a2fada95ed30fc07bfa4a13f2735b24ae350698d74a3d2bc4fa72ae6130a",
+          "544792566e86e9fedf484174cbd1d464020c06b0e3523793fd3f0b7c5f69c814",
+          "2c1bc8c2e5e6677c87302d8b73e878813c7f021c6b1a2ab9992ce5b03e1bd5a8",
+          "bf661b5adfaa118cd591e58f380a3b6a6077d59d29947a85b2263a72ab472d67",
+          "163084ea80be36c1c2b5c3d4689ef37aa3b6b81be3627ddb2137c2fcaa3cc033",
+          "412968aaec53fa15b879b8e67233ccc74b19e2d3ed5196daa3bda328fff570e1",
+          "f25e1920bfb17d88933c1cf1abcd542cbe9575e07cd7149bde36b59bbca7838b",
+          "43efdaadcc73abab25f46e25fc027a1114ce45c775606c3f2fb41497d8f0fe86",
+          "4f5b37ac8747315d036ad3533768022993dca7f5183204331abd9c1baf80db10",
+          "b5c67d578b93cf6c5420c183a980ab4069407ad5ed7dc1223ab75a060fdc990f",
+          "86c62b1eb2c2505738a18d2fd91bc649257facad8f1eedd0b913126a8d895b19",
+          "3fbf3be2c2af4542f56d8abbf0627df25bb0b972773a21d12df16f1f62f452d6",
+          "f8628c76350963f438009f00edca01f0dff8973014c5f3741c9ca29da8de7ee1",
+          "43c00dc7aed076da8327c6e45118ac73f874890613a15868ae434006d8cec04e",
+          "a58c67bc04a89ef2d566f5448e9166da883455138db61cffd5be183aa5373c68",
+          "c1506c835902b722f62fdc9a751de1d078b7f4bf9b12397e0c17e82515305ac4",
+          "df0424b92b74f50a13dd6bb26a899bddbb1f7e1a5cf2ae8466f838b392ad4e71",
+          "e08ab76b9183bedbbb789e34f39158013ed477e1ca6011d47eb62d7e890b50a7",
+          "1f5b5f1430b27791aa988cca1a8a4e0a43cf4866925cbdf35e82d252c14780c2",
+          "a098e19b6dbc2263b7db204b6ad70d45fee9fbfb358307508a137d2e7a75b567",
+          "48ad06a46d71dd9a71e383cd7bcf898f5ea693ae523976529306d236af5c661c",
+          "7834ef16617ba0af6ad027bcf6bb297ad1378a962382f6f829baf2c0817f1540",
+          "ba3387d25ab70837f9d32f24b9e114a96f25d80c1f4543d0f4a41c9f924f9c4f"
+        ]
+      }
+    },
+    "inner_proxy": {
+      "plan": {
+        "plan_id": "inner_proxy-adaptive-40851b03ac31414e37d3",
+        "strips": [],
+        "zone_id": "inner_proxy",
+        "paths": [
+          {
+            "points_m": [
+              [
+                347272.49,
+                2869697.855752
+              ],
+              [
+                347299.301556,
+                2869675.358186
+              ]
+            ],
+            "width_m": 20.0
+          }
+        ]
+      },
+      "training_goal_met": true,
+      "cleared_area_m2": 445.3362741763701,
+      "protection_screen": {
+        "expected_scenario_ids": [
+          "design-r163c151-southwest4-rise0.95",
+          "design-r160c151-southwest4-rise0.95",
+          "design-r168c143-southwest4-rise0.95",
+          "design-r170c159-southwest4-rise0.95",
+          "design-r163c151-southwest4-rise1",
+          "design-r160c151-southwest4-rise1",
+          "design-r168c143-southwest4-rise1",
+          "design-r170c159-southwest4-rise1",
+          "design-r163c151-southeast2-rise0.95",
+          "design-r160c151-southeast2-rise0.95",
+          "design-r168c143-southeast2-rise0.95",
+          "design-r170c159-southeast2-rise0.95",
+          "design-r163c151-southeast2-rise1",
+          "design-r160c151-southeast2-rise1",
+          "design-r168c143-southeast2-rise1",
+          "design-r170c159-southeast2-rise1",
+          "design-r163c151-calm-rise0.95",
+          "design-r160c151-calm-rise0.95",
+          "design-r168c143-calm-rise0.95",
+          "design-r170c159-calm-rise0.95",
+          "design-r163c151-calm-rise1",
+          "design-r160c151-calm-rise1",
+          "design-r168c143-calm-rise1",
+          "design-r170c159-calm-rise1"
+        ],
+        "evaluated_scenario_ids": [
+          "design-r163c151-southwest4-rise0.95",
+          "design-r160c151-southwest4-rise0.95",
+          "design-r168c143-southwest4-rise0.95",
+          "design-r170c159-southwest4-rise0.95",
+          "design-r163c151-southwest4-rise1",
+          "design-r160c151-southwest4-rise1",
+          "design-r168c143-southwest4-rise1",
+          "design-r170c159-southwest4-rise1",
+          "design-r163c151-southeast2-rise0.95",
+          "design-r160c151-southeast2-rise0.95",
+          "design-r168c143-southeast2-rise0.95",
+          "design-r170c159-southeast2-rise0.95",
+          "design-r163c151-southeast2-rise1",
+          "design-r160c151-southeast2-rise1",
+          "design-r168c143-southeast2-rise1",
+          "design-r170c159-southeast2-rise1",
+          "design-r163c151-calm-rise0.95",
+          "design-r160c151-calm-rise0.95",
+          "design-r168c143-calm-rise0.95",
+          "design-r170c159-calm-rise0.95",
+          "design-r163c151-calm-rise1",
+          "design-r160c151-calm-rise1",
+          "design-r168c143-calm-rise1",
+          "design-r170c159-calm-rise1"
+        ],
+        "complete": true,
+        "protection_goal_met": true,
+        "losses_are_lower_bounds": false,
+        "stop_reason": "all_scenarios",
+        "evaluation_sha256": [
+          "65db372a7fa32afb55bfc0b88db6eece71a9726678989bd7a7cb2d70eff0f1c3",
+          "e232c333eb03736a7dacbe349a1ae92b621b8317c132089b835a6aac6739f86c",
+          "e9651a8ea23273ed711455923ddafac452e9df864f931b9a6e58052814da54be",
+          "59c8569bbf7be35a8e3277d66edde4e51e2b7529b3bb94372f70db594111d0e5",
+          "e03fb74f0b8e18741267a56c1c93fb3fcf819f47cf6af48364cc1ba281e13c12",
+          "bc5dd270dbcd0678d6db438db593f323e864050e9247bf864affd0e8e27fd218",
+          "cce8feb3935cc5f57d29df2b7dc39c885274f796dbcf0fdcc2696af2281082c1",
+          "d261ea7ec60bb1ea92287ce4e2fe21b83606ff126c56c3bdbf50eec5a1c8bd43",
+          "c8075ee0d0ba3d7afa6e1a7b05aba7460704542aefc20ec44b66e027f421e52b",
+          "b10f4b0aa469d8b926683deb87a5191c44a20b4ef7f2edea258bbd2e2876e9a0",
+          "781e0c4424aef34d8f6146057468b41c895726024d0b8c1491deac21813bd20d",
+          "353fc7731b3a9d99f77d340fc5a2990c7077253f13c9d009365ee690df702220",
+          "7538bf587831cafae35775c6f2b105ba904361eabffb748e0d584751d90f6c4c",
+          "68bcbd9c43533402468de9fcca29ab1e90b7b76ff5e720943625f1420f85bd2e",
+          "f6c9dfeda95ab7a5db80aeb45473f9025fe88bff1918cb61e880b3912ad6cfd8",
+          "26e233957d5d66ecf54b9c599c81c091ba28683861e5d8830c334ee07377a08a",
+          "3d079e68e00e919c011c8708b1aac1e9c3bd6fad973c66efb89d4a5f9b8e8064",
+          "38519620b6940853f13632bfc38c65690a995042eed80d263172c89aeca5ceb2",
+          "6850e4b1380325e3e8731c18e46794b57011979114a32d1fda5d4fb442bff525",
+          "83687b0d4b068941164bfab3a182a5be2ae5b0d4f42058693e4ed63864133b7a",
+          "df96f138b18acbf4c56ce8e77e48e68783df444c4569f454acd0ae0db2bf9677",
+          "667fae21f36fdbdb13b92c6dca0da4b422d60bf75b37bd237a234aa0e5280e0c",
+          "78f9b576beb8903bb2b56af67298d764b860bf962b46eca1795a7b5353659191",
+          "77946c8935509f91e10fdf11f05fdc707465cf042f533814703be04725fbe164"
+        ]
+      }
+    }
+  },
+  "full_validation": {
+    "selection_sha256": "0b6c7e8acbc8a0bb4ea381b37f81ccc351018e0f15b05c3220909a1228df89da",
+    "scope": "full312x347",
+    "plans": {
+      "outer_proxy": {
+        "passed": 32,
+        "total": 32,
+        "protected_structures": [
+          331
+        ],
+        "domain_edge_ignition": false,
+        "crop_full_match": false,
+        "differences": [
+          {
+            "scenario_id": "design-r168c143-southwest4-rise0.95",
+            "metric": "ignited_cells",
+            "crop": 1371,
+            "full": 1369
+          }
+        ],
+        "all_scenarios_protected": true
+      },
+      "inner_proxy": {
+        "passed": 32,
+        "total": 32,
+        "protected_structures": [
+          331
+        ],
+        "domain_edge_ignition": false,
+        "crop_full_match": false,
+        "differences": [
+          {
+            "scenario_id": "design-r168c143-southwest4-rise0.95",
+            "metric": "ignited_cells",
+            "crop": 1518,
+            "full": 1516
+          },
+          {
+            "scenario_id": "design-r170c159-calm-rise1",
+            "metric": "ignited_cells",
+            "crop": 1415,
+            "full": 1414
+          },
+          {
+            "scenario_id": "unseen-r171c146-south3-rise1",
+            "metric": "ignited_cells",
+            "crop": 1508,
+            "full": 1509
+          }
+        ],
+        "all_scenarios_protected": true
+      }
+    }
+  },
+  "controls": {
+    "baseline": {
+      "cleared_area_m2": 0.0,
+      "passes": {
+        "training": 0,
+        "held_out": 0
+      }
+    },
+    "previous_outer_proxy": {
+      "cleared_area_m2": 1019.1293084300125,
+      "passes": {
+        "training": 18,
+        "held_out": 4
+      }
+    },
+    "previous_inner_proxy": {
+      "cleared_area_m2": 544.0076257715017,
+      "passes": {
+        "training": 24,
+        "held_out": 8
+      }
+    },
+    "outer_proxy": {
+      "cleared_area_m2": 1269.129316485042,
+      "passes": {
+        "training": 24,
+        "held_out": 8
+      }
+    },
+    "inner_proxy": {
+      "cleared_area_m2": 445.3362741763701,
+      "passes": {
+        "training": 24,
+        "held_out": 8
+      }
+    }
+  },
+  "audit": {
+    "source_files": 89,
+    "input_files": 51,
+    "physical_records": 465,
+    "full_physical_records": 69,
+    "search_requests": 256,
+    "certified_search_records": 14,
+    "rejected_requests": 108,
+    "partial_failure_records": 97
+  },
+  "resume": {
+    "status": "passed",
+    "original_outputs_untouched": true,
+    "selection_sha256": "0b6c7e8acbc8a0bb4ea381b37f81ccc351018e0f15b05c3220909a1228df89da",
+    "searches": [
+      {
+        "zone": "outer_proxy",
+        "replica": 0,
+        "requests": 64,
+        "same_choices_and_trajectory": true,
+        "fresh_solves": 0
+      },
+      {
+        "zone": "outer_proxy",
+        "replica": 1,
+        "requests": 64,
+        "same_choices_and_trajectory": true,
+        "fresh_solves": 0
+      },
+      {
+        "zone": "inner_proxy",
+        "replica": 0,
+        "requests": 64,
+        "same_choices_and_trajectory": true,
+        "fresh_solves": 0
+      },
+      {
+        "zone": "inner_proxy",
+        "replica": 1,
+        "requests": 64,
+        "same_choices_and_trajectory": true,
+        "fresh_solves": 0
+      }
+    ],
+    "fresh_CA_solves": 0
+  },
+  "tests": {
+    "full_regression_passed": 1090,
+    "later_targeted_passed": 23,
+    "overlap_not_additive": true
+  },
+  "rollback_tag": "batuan-before-multiscenario-20261017",
+  "completed_tag": "batuan-multiscenario-20261017",
+  "protocol_sha256": "6bc5954decd2eae3e587e4fdfe56bd6b9fd8d533426f5c8cc721bae534652b08",
+  "selection_sha256": "0b6c7e8acbc8a0bb4ea381b37f81ccc351018e0f15b05c3220909a1228df89da"
+}

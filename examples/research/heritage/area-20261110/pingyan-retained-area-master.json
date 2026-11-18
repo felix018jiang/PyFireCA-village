@@ -1,0 +1,153 @@
+{
+  "schema_version": "heritage-area-master-config-1",
+  "village_id": "pingyan",
+  "place_name": "平岩村",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-study-20261029.json",
+  "source_policy": "area_bounded_retained_sources",
+  "fixed_source_ids": [],
+  "source_fires": [
+    {
+      "fire_id": "near-B0035",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0035-20261029.json",
+      "draw_id": "design-near-B0035-001"
+    },
+    {
+      "fire_id": "near-B0036",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0036-20261029.json",
+      "draw_id": "design-near-B0036-001"
+    },
+    {
+      "fire_id": "near-B0166",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0166-20261029.json",
+      "draw_id": "design-near-B0166-001"
+    },
+    {
+      "fire_id": "background",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-background-20261029.json",
+      "draw_id": "background-001"
+    }
+  ],
+  "source_area_limit_m2": 1531.6288649185644,
+  "source_area_tolerance_m2": 1e-06,
+  "refinement_ids": [
+    "B0034",
+    "B0035",
+    "B0036",
+    "B0119",
+    "B0120",
+    "B0164",
+    "B0165",
+    "B0166",
+    "B0167",
+    "B0168",
+    "B0177",
+    "B0188",
+    "B0190"
+  ],
+  "seed_plans": [
+    [
+      "B0034",
+      "B0119",
+      "B0165",
+      "B0168",
+      "B0188"
+    ],
+    [
+      "B0119",
+      "B0165",
+      "B0167",
+      "B0177",
+      "B0190"
+    ],
+    [
+      "B0034",
+      "B0119",
+      "B0165",
+      "B0167",
+      "B0168",
+      "B0177",
+      "B0190",
+      "B0191"
+    ]
+  ],
+  "prefetch_baseline_witnesses": true,
+  "enable_physical_group_cuts": true,
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_new_checks": 64,
+  "max_wall_time_s": 14400.0,
+  "max_mip_time_s": 1200.0,
+  "mip_call_time_limit_s": 60.0,
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "minimum_free_disk_GB": 10.0,
+  "core_overlap_policy": "heritage_priority",
+  "new_independent_fire_draws": 0,
+  "initial_cap_is_verified_upper_bound_for_new_problem": false,
+  "cap_selection_rule": "geometric_actual_clearance_of_historical_initial_plan",
+  "prior_fixed_problem_seed_receipt": {
+    "problem_sha256": "d567aca8e58c146efbb8b9a96b3067a13d3c0057ae01b39bb45008f7a83e3df6",
+    "source_search_sha256": "0147107b8e16a804715d124e7d389d9755885b17e906517555ede724c73e312b",
+    "verified_feasible_rows": [
+      {
+        "demolished_ids": [
+          "B0034",
+          "B0119",
+          "B0165",
+          "B0168",
+          "B0188"
+        ],
+        "cleared_area_m2": 974.4542322625402,
+        "worst_case_loss_metrics": {
+          "ignited_roof_area_m2": 8754.949670593862,
+          "ignited_nonroof_area_m2": 4025.0,
+          "consumed_fuel_kg": 80844.89497068402,
+          "roof_fire_depleted_kg": 75969.0497478794,
+          "nonroof_fire_depleted_kg": 4875.845222804632,
+          "active_roof_area_m2": 4020.9485786840673,
+          "active_nonroof_area_m2": 550.0,
+          "clearing_plus_ignited_roof_area_m2": 9729.403901526428,
+          "clearing_plus_ignited_annotation_count_lower": 50,
+          "clearing_plus_ignited_annotation_count_upper": 50
+        },
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": []
+      },
+      {
+        "demolished_ids": [
+          "B0119",
+          "B0165",
+          "B0167",
+          "B0177",
+          "B0190"
+        ],
+        "cleared_area_m2": 985.6078364045122,
+        "worst_case_loss_metrics": {
+          "ignited_roof_area_m2": 10290.207150515924,
+          "ignited_nonroof_area_m2": 4025.0,
+          "consumed_fuel_kg": 94451.14584106268,
+          "roof_fire_depleted_kg": 89500.3968402835,
+          "nonroof_fire_depleted_kg": 4950.749000779171,
+          "active_roof_area_m2": 4976.234936308192,
+          "active_nonroof_area_m2": 575.0,
+          "clearing_plus_ignited_roof_area_m2": 11275.814987945385,
+          "clearing_plus_ignited_annotation_count_lower": 57,
+          "clearing_plus_ignited_annotation_count_upper": 58
+        },
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": []
+      }
+    ],
+    "validity": "proposal_only;all_seeds_must_be_reverified_in_new_source_mesh"
+  },
+  "parent_full_config_sha256": "03259f1880e4f48a748fe23771f398d8df89c1e13d3c6fe91c35065ffc37f2f7",
+  "generator_sha256": "f75b55711bcdba90a6ddff8053b09fe3cd18a4d3691866d513f921d96283bf44",
+  "scope": "all_inventory_ordinary_actions;four_historical_global_retained_source_priorities;60min_dual_model_support;area_cap_domain_not_assumed_feasible;no_new_independent_draws;not_joint_global_loss_or_field_safety"
+}

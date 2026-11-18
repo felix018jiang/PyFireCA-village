@@ -1,0 +1,90 @@
+{
+  "canonical_construction_C_m2": 1089.0173624408872,
+  "confirmation_registration_sha256": "631393acf6e2c7904225a0e20ecddf2fa1222c97ed2fe293d2e96b103bc8d5a1",
+  "core_ids": [
+    "B0073",
+    "B0120"
+  ],
+  "core_overlap_policy": "reject",
+  "design_complete8_receipt_sha256": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+  "frozen": true,
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "original_design_refinement_ids_retained": [
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0067",
+    "B0071",
+    "B0073",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "original_physical_action_geometry_receipt": {
+    "C_construction_action_area_m2": 1089.0173624408872,
+    "actual_cleared_base_node_mask_sha256": "de1e60ffe1b9114c254aecc459fe7e144d9bdd429c80a7b7743bcc74ad3d54d4",
+    "cleared_physical_cell_ids": [],
+    "cleared_roof_covered_fuel_area_m2": 1089.0173673138215,
+    "cleared_roof_geometry_union_area_m2": 1089.0173624408872,
+    "cleared_roof_node_count": 112,
+    "cleared_vegetation_covered_fuel_area_m2": 0.0,
+    "cleared_vegetation_ground_footprint_area_m2": 0.0,
+    "cleared_vegetation_parent_cell_count": 0,
+    "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+    "covered_area_is_not_added_to_construction_footprint": true,
+    "demolished_ids": [
+      "B0060",
+      "B0061",
+      "B0064",
+      "B0065",
+      "B0068",
+      "B0071",
+      "B0074",
+      "B0076",
+      "B0077"
+    ],
+    "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+    "physical_union_recomputed_area_m2": 1089.0173624408872,
+    "plan_id": "direct-thin-D9-with-no-grass",
+    "planned_roof_ID_count": 9,
+    "protected_original_roof_node_cleared_count": 0
+  },
+  "plans": [
+    {
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+      "plan_id": "direct-thin-D9-with-no-grass"
+    }
+  ],
+  "refinement_ids": [
+    "B0060",
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0064",
+    "B0065",
+    "B0067",
+    "B0068",
+    "B0071",
+    "B0073",
+    "B0074",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "schema_version": "heritage-frozen-final-candidates-1",
+  "scope": "one_final_action;not_entire_Pareto_archive_or_action_space",
+  "source_priorities_revealed_before_this_final_freeze": false,
+  "village": "batuan"
+}

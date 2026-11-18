@@ -1,0 +1,273 @@
+{
+  "all_sources_in_immutable_reference_mesh_prefix": true,
+  "certificate_sha256": "f3ee8bc89a9b6f70e06cf8291b4662d46f6b2ea76eb8b7b982753b89efab53d5",
+  "coverage_scope": "only_exact_declared_roof_and_ground_plans",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "reference_area_cap_is_not_an_admissibility_bound_for_this_catalog": true,
+  "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+  "rows": [
+    {
+      "actual_source_id": "B0063",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "prepared_prefix_ids": [
+        "B0061",
+        "B0063",
+        "B0062",
+        "B0124"
+      ],
+      "priority_sha256": "0aeb1d744c959db9e31297041d845b2a6e97b3d594b8dfa71e2db0c6bfe14537",
+      "protocol_sha256": "48711ee80b7b7d11eaf2e013f3ac5bc4388b4c3a9b84aad51150eacd058879e0",
+      "removed_priority_prefix": [
+        "B0061"
+      ],
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8"
+    },
+    {
+      "actual_source_id": "B0062",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "prepared_prefix_ids": [
+        "B0062",
+        "B0061",
+        "B0063",
+        "B0144"
+      ],
+      "priority_sha256": "ec688cc9ad1c8132d0f2b95280109c7fce15d77dfd7e236ffb9a2db1fb3d35e2",
+      "protocol_sha256": "e7b350b0ca7834fd3e34306e2f3188b7ca75735837faf139e6271c575df9e0a0",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+    },
+    {
+      "actual_source_id": "B0067",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "prepared_prefix_ids": [
+        "B0071",
+        "B0067",
+        "B0076",
+        "B0074"
+      ],
+      "priority_sha256": "da4d9128582925cf22d6e4a5947fe87a1eab77ee2042e98238f6cc3ccecc9d54",
+      "protocol_sha256": "df47d34d6b68d7672c00c30bf93972c136b18b74208b65c1806a8bd6c8af2bff",
+      "removed_priority_prefix": [
+        "B0071"
+      ],
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0"
+    },
+    {
+      "actual_source_id": "B0075",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "prepared_prefix_ids": [
+        "B0075",
+        "B0074",
+        "B0076",
+        "B0067",
+        "B0031"
+      ],
+      "priority_sha256": "9f5462268d8db39d3e084ceb84579a68d72a0683ba022cc323be2b0bef71383d",
+      "protocol_sha256": "c6d858349bda54894be17022269deab5d5e21ffee13b1742258fddd674e131b3",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade"
+    },
+    {
+      "actual_source_id": "B0063",
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "prepared_prefix_ids": [
+        "B0061",
+        "B0063",
+        "B0062",
+        "B0124"
+      ],
+      "priority_sha256": "0aeb1d744c959db9e31297041d845b2a6e97b3d594b8dfa71e2db0c6bfe14537",
+      "protocol_sha256": "48711ee80b7b7d11eaf2e013f3ac5bc4388b4c3a9b84aad51150eacd058879e0",
+      "removed_priority_prefix": [
+        "B0061"
+      ],
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8"
+    },
+    {
+      "actual_source_id": "B0062",
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "prepared_prefix_ids": [
+        "B0062",
+        "B0061",
+        "B0063",
+        "B0144"
+      ],
+      "priority_sha256": "ec688cc9ad1c8132d0f2b95280109c7fce15d77dfd7e236ffb9a2db1fb3d35e2",
+      "protocol_sha256": "e7b350b0ca7834fd3e34306e2f3188b7ca75735837faf139e6271c575df9e0a0",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+    },
+    {
+      "actual_source_id": "B0067",
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "prepared_prefix_ids": [
+        "B0071",
+        "B0067",
+        "B0076",
+        "B0074"
+      ],
+      "priority_sha256": "da4d9128582925cf22d6e4a5947fe87a1eab77ee2042e98238f6cc3ccecc9d54",
+      "protocol_sha256": "df47d34d6b68d7672c00c30bf93972c136b18b74208b65c1806a8bd6c8af2bff",
+      "removed_priority_prefix": [
+        "B0071"
+      ],
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0"
+    },
+    {
+      "actual_source_id": "B0075",
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "prepared_prefix_ids": [
+        "B0075",
+        "B0074",
+        "B0076",
+        "B0067",
+        "B0031"
+      ],
+      "priority_sha256": "9f5462268d8db39d3e084ceb84579a68d72a0683ba022cc323be2b0bef71383d",
+      "protocol_sha256": "c6d858349bda54894be17022269deab5d5e21ffee13b1742258fddd674e131b3",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade"
+    }
+  ],
+  "schema_version": "finite-declared-retained-source-catalog-1"
+}

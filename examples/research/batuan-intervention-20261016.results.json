@@ -1,0 +1,590 @@
+{
+  "schema_version": "batuan-intervention-example-1",
+  "evidence": "synthetic_fuels_and_proposed_clearance_not_field_optimality",
+  "objective": "effectiveness_only_no_cost_or_area_penalty",
+  "baseline_tag": "batuan-before-intervention-20261016",
+  "study_directory": "runs/research/batuan-intervention-20261016-r1",
+  "protocol_sha256": "319f64cb70eb7e5ef807be322e8ff0ad90df0b5062ba9fa6da19d1b6d3760ccd",
+  "evaluated_candidate_count": 24,
+  "training_scenarios": 2,
+  "held_out_scenarios": 1,
+  "full_domain_60min": {
+    "no-clearing": {
+      "metrics": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 4,
+        "ignited_house_count": 3,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 908.2811368774856,
+        "first_house_ignition_s": 3016.0,
+        "house_ignition_free_time_s": 3016.0,
+        "ignited_cells": 681,
+        "burned_out_cells": 435,
+        "consumed_fuel_kg": 83185.16812329105,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1515.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3016.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3242.0
+          },
+          {
+            "building_index": 61,
+            "source_label": "building",
+            "time_s": 3498.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "cleared_area_m2_record_only": 0.0
+    },
+    "outer_proxy-r157-w10-a0": {
+      "metrics": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 4,
+        "ignited_house_count": 3,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 848.3247054886306,
+        "first_house_ignition_s": 3114.0,
+        "house_ignition_free_time_s": 3114.0,
+        "ignited_cells": 623,
+        "burned_out_cells": 379,
+        "consumed_fuel_kg": 73225.20903824255,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1617.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3114.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3339.9999999999995
+          },
+          {
+            "building_index": 61,
+            "source_label": "building",
+            "time_s": 3595.0
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "cleared_area_m2_record_only": 906.25
+    },
+    "outer_proxy-r158-w10-a-30": {
+      "metrics": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 0,
+        "ignited_house_count": 0,
+        "ignited_bridge_count": 0,
+        "ignited_building_area_m2": 0.0,
+        "first_house_ignition_s": null,
+        "house_ignition_free_time_s": 3600,
+        "ignited_cells": 433,
+        "burned_out_cells": 246,
+        "consumed_fuel_kg": 49819.91308967686,
+        "building_first_ignitions": [],
+        "burning_reached_domain_edge": false
+      },
+      "cleared_area_m2_record_only": 1288.2659192878923
+    },
+    "inner_proxy-r153-w10-a-30": {
+      "metrics": {
+        "protected_structure_count": 331,
+        "ignited_structure_count": 3,
+        "ignited_house_count": 2,
+        "ignited_bridge_count": 1,
+        "ignited_building_area_m2": 761.6476378083462,
+        "first_house_ignition_s": 3202.0,
+        "house_ignition_free_time_s": 3202.0,
+        "ignited_cells": 665,
+        "burned_out_cells": 410,
+        "consumed_fuel_kg": 79370.5894535621,
+        "building_first_ignitions": [
+          {
+            "building_index": 119,
+            "source_label": "fengyuqiao",
+            "time_s": 1557.0
+          },
+          {
+            "building_index": 60,
+            "source_label": "building",
+            "time_s": 3202.0
+          },
+          {
+            "building_index": 62,
+            "source_label": "building",
+            "time_s": 3428.9999999999995
+          }
+        ],
+        "burning_reached_domain_edge": false
+      },
+      "cleared_area_m2_record_only": 616.9079112863762
+    }
+  },
+  "held_out_60min": {
+    "no-clearing": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 3,
+      "ignited_house_count": 2,
+      "ignited_bridge_count": 1,
+      "ignited_building_area_m2": 693.9752644539112,
+      "first_house_ignition_s": 3318.0,
+      "house_ignition_free_time_s": 3318.0,
+      "ignited_cells": 705,
+      "burned_out_cells": 444,
+      "consumed_fuel_kg": 86663.32888537053,
+      "building_first_ignitions": [
+        {
+          "building_index": 119,
+          "source_label": "fengyuqiao",
+          "time_s": 1823.0
+        },
+        {
+          "building_index": 60,
+          "source_label": "building",
+          "time_s": 3318.0
+        },
+        {
+          "building_index": 62,
+          "source_label": "building",
+          "time_s": 3545.0
+        }
+      ],
+      "burning_reached_domain_edge": false
+    },
+    "outer_proxy-r157-w10-a0": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 2,
+      "ignited_house_count": 1,
+      "ignited_bridge_count": 1,
+      "ignited_building_area_m2": 671.5932491846615,
+      "first_house_ignition_s": 3409.0,
+      "house_ignition_free_time_s": 3409.0,
+      "ignited_cells": 641,
+      "burned_out_cells": 383,
+      "consumed_fuel_kg": 75733.86820732584,
+      "building_first_ignitions": [
+        {
+          "building_index": 119,
+          "source_label": "fengyuqiao",
+          "time_s": 1912.0
+        },
+        {
+          "building_index": 60,
+          "source_label": "building",
+          "time_s": 3409.0
+        }
+      ],
+      "burning_reached_domain_edge": false
+    },
+    "outer_proxy-r158-w10-a-30": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 0,
+      "ignited_house_count": 0,
+      "ignited_bridge_count": 0,
+      "ignited_building_area_m2": 0.0,
+      "first_house_ignition_s": null,
+      "house_ignition_free_time_s": 3600,
+      "ignited_cells": 480,
+      "burned_out_cells": 287,
+      "consumed_fuel_kg": 56573.46084303842,
+      "building_first_ignitions": [],
+      "burning_reached_domain_edge": false
+    },
+    "inner_proxy-r153-w10-a-30": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 2,
+      "ignited_house_count": 1,
+      "ignited_bridge_count": 1,
+      "ignited_building_area_m2": 663.1664074637229,
+      "first_house_ignition_s": 3496.0,
+      "house_ignition_free_time_s": 3496.0,
+      "ignited_cells": 688,
+      "burned_out_cells": 410,
+      "consumed_fuel_kg": 82067.71437086897,
+      "building_first_ignitions": [
+        {
+          "building_index": 119,
+          "source_label": "fengyuqiao",
+          "time_s": 1863.0
+        },
+        {
+          "building_index": 60,
+          "source_label": "building",
+          "time_s": 3496.0
+        }
+      ],
+      "burning_reached_domain_edge": false
+    }
+  },
+  "held_out_90min_local_domain": {
+    "no-clearing": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 26,
+      "ignited_house_count": 25,
+      "ignited_bridge_count": 1,
+      "ignited_building_area_m2": 3542.5951633718796,
+      "first_house_ignition_s": 3318.0,
+      "house_ignition_free_time_s": 3318.0,
+      "ignited_cells": 1497,
+      "burned_out_cells": 1071,
+      "consumed_fuel_kg": 190291.79221617704,
+      "building_first_ignitions": [
+        {
+          "building_index": 119,
+          "source_label": "fengyuqiao",
+          "time_s": 1823.0
+        },
+        {
+          "building_index": 60,
+          "source_label": "building",
+          "time_s": 3318.0
+        },
+        {
+          "building_index": 62,
+          "source_label": "building",
+          "time_s": 3545.0
+        },
+        {
+          "building_index": 61,
+          "source_label": "building",
+          "time_s": 3801.0
+        },
+        {
+          "building_index": 59,
+          "source_label": "building",
+          "time_s": 4081.3600000000015
+        },
+        {
+          "building_index": 63,
+          "source_label": "building",
+          "time_s": 4201.833333333335
+        },
+        {
+          "building_index": 64,
+          "source_label": "building",
+          "time_s": 4322.0
+        },
+        {
+          "building_index": 58,
+          "source_label": "building",
+          "time_s": 4323.0
+        },
+        {
+          "building_index": 65,
+          "source_label": "building",
+          "time_s": 4479.000000000002
+        },
+        {
+          "building_index": 57,
+          "source_label": "building",
+          "time_s": 4485.0
+        },
+        {
+          "building_index": 54,
+          "source_label": "building",
+          "time_s": 4512.000000000003
+        },
+        {
+          "building_index": 55,
+          "source_label": "building",
+          "time_s": 4557.0
+        },
+        {
+          "building_index": 53,
+          "source_label": "building",
+          "time_s": 4691.0
+        },
+        {
+          "building_index": 67,
+          "source_label": "building",
+          "time_s": 4722.0
+        },
+        {
+          "building_index": 106,
+          "source_label": "building",
+          "time_s": 4744.360000000002
+        },
+        {
+          "building_index": 107,
+          "source_label": "building",
+          "time_s": 4773.0
+        },
+        {
+          "building_index": 56,
+          "source_label": "building",
+          "time_s": 4900.720000000004
+        },
+        {
+          "building_index": 52,
+          "source_label": "building",
+          "time_s": 4940.360000000004
+        },
+        {
+          "building_index": 66,
+          "source_label": "building",
+          "time_s": 5010.0
+        },
+        {
+          "building_index": 73,
+          "source_label": "building",
+          "time_s": 5033.000000000001
+        },
+        {
+          "building_index": 51,
+          "source_label": "building",
+          "time_s": 5066.833333333336
+        },
+        {
+          "building_index": 71,
+          "source_label": "building",
+          "time_s": 5212.833333333335
+        },
+        {
+          "building_index": 69,
+          "source_label": "building",
+          "time_s": 5225.193333333336
+        },
+        {
+          "building_index": 50,
+          "source_label": "building",
+          "time_s": 5293.0
+        },
+        {
+          "building_index": 70,
+          "source_label": "building",
+          "time_s": 5370.833333333337
+        },
+        {
+          "building_index": 110,
+          "source_label": "building",
+          "time_s": 5395.3600000000015
+        }
+      ],
+      "burning_reached_domain_edge": false
+    },
+    "outer_proxy-r158-w10-a-30": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 0,
+      "ignited_house_count": 0,
+      "ignited_bridge_count": 0,
+      "ignited_building_area_m2": 0.0,
+      "first_house_ignition_s": null,
+      "house_ignition_free_time_s": 5400,
+      "ignited_cells": 1104,
+      "burned_out_cells": 784,
+      "consumed_fuel_kg": 137925.5489959804,
+      "building_first_ignitions": [],
+      "burning_reached_domain_edge": false
+    },
+    "inner_proxy-r153-w10-a-30": {
+      "protected_structure_count": 137,
+      "ignited_structure_count": 22,
+      "ignited_house_count": 21,
+      "ignited_bridge_count": 1,
+      "ignited_building_area_m2": 2907.2466155630536,
+      "first_house_ignition_s": 3496.0,
+      "house_ignition_free_time_s": 3496.0,
+      "ignited_cells": 1450,
+      "burned_out_cells": 1045,
+      "consumed_fuel_kg": 183501.34318400745,
+      "building_first_ignitions": [
+        {
+          "building_index": 119,
+          "source_label": "fengyuqiao",
+          "time_s": 1863.0
+        },
+        {
+          "building_index": 60,
+          "source_label": "building",
+          "time_s": 3496.0
+        },
+        {
+          "building_index": 62,
+          "source_label": "building",
+          "time_s": 3723.000000000001
+        },
+        {
+          "building_index": 61,
+          "source_label": "building",
+          "time_s": 3978.0
+        },
+        {
+          "building_index": 59,
+          "source_label": "building",
+          "time_s": 4259.000000000003
+        },
+        {
+          "building_index": 63,
+          "source_label": "building",
+          "time_s": 4379.0
+        },
+        {
+          "building_index": 64,
+          "source_label": "building",
+          "time_s": 4500.0
+        },
+        {
+          "building_index": 58,
+          "source_label": "building",
+          "time_s": 4501.0
+        },
+        {
+          "building_index": 65,
+          "source_label": "building",
+          "time_s": 4657.000000000001
+        },
+        {
+          "building_index": 57,
+          "source_label": "building",
+          "time_s": 4663.833333333335
+        },
+        {
+          "building_index": 54,
+          "source_label": "building",
+          "time_s": 4689.0
+        },
+        {
+          "building_index": 55,
+          "source_label": "building",
+          "time_s": 4734.0
+        },
+        {
+          "building_index": 53,
+          "source_label": "building",
+          "time_s": 4869.0
+        },
+        {
+          "building_index": 67,
+          "source_label": "building",
+          "time_s": 4900.0
+        },
+        {
+          "building_index": 106,
+          "source_label": "building",
+          "time_s": 4922.3600000000015
+        },
+        {
+          "building_index": 107,
+          "source_label": "building",
+          "time_s": 4951.0
+        },
+        {
+          "building_index": 56,
+          "source_label": "building",
+          "time_s": 5078.0
+        },
+        {
+          "building_index": 52,
+          "source_label": "building",
+          "time_s": 5118.360000000002
+        },
+        {
+          "building_index": 66,
+          "source_label": "building",
+          "time_s": 5187.0
+        },
+        {
+          "building_index": 73,
+          "source_label": "building",
+          "time_s": 5210.000000000002
+        },
+        {
+          "building_index": 51,
+          "source_label": "building",
+          "time_s": 5245.000000000002
+        },
+        {
+          "building_index": 71,
+          "source_label": "building",
+          "time_s": 5391.000000000004
+        }
+      ],
+      "burning_reached_domain_edge": false
+    }
+  },
+  "selected": {
+    "outer_proxy": {
+      "score": [
+        0,
+        0,
+        0.0,
+        0,
+        -3600
+      ],
+      "tied_plan_ids": [
+        "outer_proxy-r158-w10-a-30"
+      ],
+      "representative": "outer_proxy-r158-w10-a-30"
+    },
+    "inner_proxy": {
+      "score": [
+        2,
+        1.5,
+        715.7865177054191,
+        1,
+        -3325.0
+      ],
+      "tied_plan_ids": [
+        "inner_proxy-r153-w10-a-30"
+      ],
+      "representative": "inner_proxy-r153-w10-a-30"
+    }
+  },
+  "validation": {
+    "full_replay_checks": {
+      "no-clearing": {
+        "saved_replay_counts_match_evaluation": true
+      },
+      "outer_proxy-r157-w10-a0": {
+        "saved_replay_counts_match_evaluation": true
+      },
+      "outer_proxy-r158-w10-a-30": {
+        "saved_replay_counts_match_evaluation": true
+      },
+      "inner_proxy-r153-w10-a-30": {
+        "saved_replay_counts_match_evaluation": true
+      }
+    },
+    "original_case_files_byte_unchanged": 48,
+    "actual_source_snapshot_hashes_verified": true,
+    "repository_tests": {
+      "passed": 1036,
+      "warnings": 9,
+      "elapsed_s": 145.78
+    },
+    "additional_export_and_entry_tests_passed": 5
+  },
+  "evaluation_accounting": {
+    "candidate_evaluations": 52,
+    "held_out_evaluations": 4,
+    "full_domain_evaluations": 4,
+    "extended_horizon_evaluations": 3,
+    "additional_replay_solves": 4
+  },
+  "environment": {
+    "python": "3.13.5",
+    "packages": {
+      "numpy": "2.5.3",
+      "shapely": "2.1.2",
+      "rasterio": "1.5.2",
+      "Pillow": "12.3.0",
+      "PyYAML": "6.0.3"
+    }
+  }
+}

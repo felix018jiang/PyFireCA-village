@@ -1,0 +1,2299 @@
+{
+  "schema_version": "heritage-joint-proposals-1",
+  "date": "2026-11-10",
+  "new_CA_checks": 0,
+  "generator_sha256": "ceb732605d89d23f1139a193b194486a9dbd15f9e78c80f99ddb2728ef958466",
+  "construction_and_covered_area_are_separate": true,
+  "independent_future_validation_required": true,
+  "global_optimality_proven": false,
+  "elapsed_s": 2.9375323340063915,
+  "villages": [
+    {
+      "village_id": "batuan",
+      "inventory_object_count": 333,
+      "design_source_id": "B0077",
+      "design_fire_id": "drum-B0077-known-hot",
+      "design_support_m": 1.0,
+      "design_horizon_s": 3600.0,
+      "design_data_role": "archived_no_intervention_trajectory;not_independent_validation",
+      "design_artifact_folder": "runs/research/heritage-followup-batuan-20261103/evaluations/a9bf9ac279add0acc2038a1a6a04bfaa2948aff31ebe05960d644aa69f4acb46",
+      "design_problem_sha256": "5fe2c6d4911598ada64649fb0546b2c7b4d40db23d55cf62fb423f8e62eecc5a",
+      "design_files_sha256": {
+        "evaluation.json": "f816fdf6a8101a82777081ce7cc8c4444d9ed9709829faade8283ddb93ebf2be",
+        "check.json": "39f389392e108d836ab2663fcbd032c2e88a053b331b16b0cde6e2383318c246",
+        "layout.npz": "fec89e5a0a71794c3be7e66cfb170a3946caf249fa159876ebd6771484286692",
+        "final-state.npz": "e2a564844b67167cbe235657e4b86e6369ee1ebf8b2ea2ab7a0901c58234b2f2"
+      },
+      "study_path": "examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+      "study_sha256": "666e657efbc926f63f8ca764a0ee27b469584ef7c921269fec3bb8d044a82fe9",
+      "parent_case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+      "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+      "primary_core_id": "B0073",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 164,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 857.0,
+          "ignited_component_count": 164,
+          "maximum_valid_surface_temperature_K": 519.9991780307543,
+          "absorbed_radiation_J": 233004393.99746507,
+          "received_convection_J": 4171448.2698281812
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 753,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "first_vegetation_ignition_s": 1363.0,
+      "source_to_first_vegetation_direction_unit_xy": [
+        -0.7307050755949999,
+        -0.6826932638452686
+      ],
+      "baseline_nonroof_ignited_area_m2": 1300.0,
+      "whole_village_eligible_vegetation_parent_cell_count": 78386,
+      "design_window_radius_m": 100.0,
+      "design_window_eligible_cell_count": 442,
+      "minimum_eligible_cell_gap_to_primary_core_m": 7.453255655861552,
+      "eligible_cells_within_15m_of_primary_core": 6,
+      "core_gap_feasibility_note": "closest available whole-cell band;not a continuous core enclosure;surveyed access_and_cultural_space_eligibility_unknown",
+      "enumerated_straight_strip_count": 455,
+      "selected_strip_length_cells": 4,
+      "physical_grid": {
+        "shape": [
+          312,
+          347
+        ],
+        "cell_size_m": 5.0,
+        "x_min_m": 346500.0,
+        "y_max_m": 2870470.0,
+        "cell_id_policy": "row_major_parent_grid;not_thermal_storage_index"
+      },
+      "causal_interpretation": "nearby roof/vegetation event ordering is a design cue, not identified causal heat transfer",
+      "scope": "three_local_joint_candidates;no_effectiveness_or_optimality_claim;field_eligibility_pending",
+      "plans": [
+        {
+          "plan_id": "batuan-early-vegetation-connection",
+          "proposal_class": "early-vegetation-connection",
+          "cleared_physical_cell_ids": [
+            50806,
+            50807,
+            50808,
+            50809
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "vegetation_parent_cell_count": 4,
+          "construction_footprint_area_m2": 100.0,
+          "covered_fuel_clearing_area_m2": 100.0,
+          "selection_rule": "maximum cells in first-vegetation+300s window, then observed vegetation connection count, mean arrival, source direction alignment, roof gap;baseline design data only",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 4,
+            "observed_ignited_vegetation_cell_count": 4,
+            "first_observed_vegetation_ignition_s": 1363.0,
+            "capped_mean_design_ignition_s": 1380.43,
+            "mean_roof_gap_m": 3.499329972500578,
+            "mean_primary_core_gap_m": 33.67997776192118,
+            "minimum_primary_core_gap_m": 28.024365792692855,
+            "mean_source_gap_m": 14.977962325416597,
+            "parallel_alignment_with_first_vegetation_direction": 0.7307050755949999,
+            "covered_fuel_area_m2": 100.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  347220.0,
+                  2869740.0
+                ],
+                [
+                  347225.0,
+                  2869740.0
+                ],
+                [
+                  347230.0,
+                  2869740.0
+                ],
+                [
+                  347235.0,
+                  2869740.0
+                ],
+                [
+                  347240.0,
+                  2869740.0
+                ],
+                [
+                  347240.0,
+                  2869735.0
+                ],
+                [
+                  347235.0,
+                  2869735.0
+                ],
+                [
+                  347230.0,
+                  2869735.0
+                ],
+                [
+                  347225.0,
+                  2869735.0
+                ],
+                [
+                  347220.0,
+                  2869735.0
+                ],
+                [
+                  347220.0,
+                  2869740.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 50806,
+              "row": 146,
+              "col": 144,
+              "center_xy_m": [
+                347222.5,
+                2869737.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1363.0,
+              "primary_core_footprint_gap_m": 39.33558973114951,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0081",
+                  "footprint_gap_m": 1.019119584467262,
+                  "baseline_first_ignition_s": 982.36,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 5.088611877117259,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0082",
+                  "footprint_gap_m": 6.30872362165758,
+                  "baseline_first_ignition_s": 1240.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 14.020593280274237,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347225.0,
+                      2869735.0
+                    ],
+                    [
+                      347225.0,
+                      2869740.0
+                    ],
+                    [
+                      347220.0,
+                      2869740.0
+                    ],
+                    [
+                      347220.0,
+                      2869735.0
+                    ],
+                    [
+                      347225.0,
+                      2869735.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50807,
+              "row": 146,
+              "col": 145,
+              "center_xy_m": [
+                347227.5,
+                2869737.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1370.3600000000001,
+              "primary_core_footprint_gap_m": 35.56518175166396,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0081",
+                  "footprint_gap_m": 2.474802018181109,
+                  "baseline_first_ignition_s": 982.36,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 4.03406523540616,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0082",
+                  "footprint_gap_m": 8.276380073566582,
+                  "baseline_first_ignition_s": 1240.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 10.334986971441328,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347230.0,
+                      2869735.0
+                    ],
+                    [
+                      347230.0,
+                      2869740.0
+                    ],
+                    [
+                      347225.0,
+                      2869740.0
+                    ],
+                    [
+                      347225.0,
+                      2869735.0
+                    ],
+                    [
+                      347230.0,
+                      2869735.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50808,
+              "row": 146,
+              "col": 146,
+              "center_xy_m": [
+                347232.5,
+                2869737.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1382.3600000000001,
+              "primary_core_footprint_gap_m": 31.794773772178406,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0081",
+                  "footprint_gap_m": 4.157743001657743,
+                  "baseline_first_ignition_s": 982.36,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 4.452491057171952,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 8.1882156462109,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0082",
+                  "footprint_gap_m": 12.092574890470345,
+                  "baseline_first_ignition_s": 1240.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0077",
+                  "footprint_gap_m": 12.676366056266525,
+                  "baseline_first_ignition_s": 0.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347235.0,
+                      2869735.0
+                    ],
+                    [
+                      347235.0,
+                      2869740.0
+                    ],
+                    [
+                      347230.0,
+                      2869740.0
+                    ],
+                    [
+                      347230.0,
+                      2869735.0
+                    ],
+                    [
+                      347235.0,
+                      2869735.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50809,
+              "row": 146,
+              "col": 147,
+              "center_xy_m": [
+                347237.5,
+                2869737.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1406.0,
+              "primary_core_footprint_gap_m": 28.024365792692855,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 6.345655285696197,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0081",
+                  "footprint_gap_m": 7.827530704639962,
+                  "baseline_first_ignition_s": 982.36,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 8.053992769215256,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0077",
+                  "footprint_gap_m": 10.028780798950343,
+                  "baseline_first_ignition_s": 0.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0075",
+                  "footprint_gap_m": 12.693104583648601,
+                  "baseline_first_ignition_s": 306.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347240.0,
+                      2869735.0
+                    ],
+                    [
+                      347240.0,
+                      2869740.0
+                    ],
+                    [
+                      347235.0,
+                      2869740.0
+                    ],
+                    [
+                      347235.0,
+                      2869735.0
+                    ],
+                    [
+                      347240.0,
+                      2869735.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "plan_id": "batuan-core-geometric-gap",
+          "proposal_class": "core-geometric-gap",
+          "cleared_physical_cell_ids": [
+            50465,
+            50466,
+            50467,
+            50468
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "vegetation_parent_cell_count": 4,
+          "construction_footprint_area_m2": 100.0,
+          "covered_fuel_clearing_area_m2": 100.0,
+          "selection_rule": "longest available strip up to four cells wholly within 15m of source-side core, then minimum mean core/roof gap;disjoint from connection strip;no fire outcome ranking;15m is a design window, not a safety distance",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 2,
+            "observed_ignited_vegetation_cell_count": 2,
+            "first_observed_vegetation_ignition_s": 1515.0,
+            "capped_mean_design_ignition_s": 2713.84,
+            "mean_roof_gap_m": 5.176545838255075,
+            "mean_primary_core_gap_m": 12.731830759205376,
+            "minimum_primary_core_gap_m": 12.098829721100628,
+            "mean_source_gap_m": 11.596221460702624,
+            "parallel_alignment_with_first_vegetation_direction": 0.7307050755949999,
+            "covered_fuel_area_m2": 100.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  347250.0,
+                  2869745.0
+                ],
+                [
+                  347255.0,
+                  2869745.0
+                ],
+                [
+                  347260.0,
+                  2869745.0
+                ],
+                [
+                  347265.0,
+                  2869745.0
+                ],
+                [
+                  347270.0,
+                  2869745.0
+                ],
+                [
+                  347270.0,
+                  2869740.0
+                ],
+                [
+                  347265.0,
+                  2869740.0
+                ],
+                [
+                  347260.0,
+                  2869740.0
+                ],
+                [
+                  347255.0,
+                  2869740.0
+                ],
+                [
+                  347250.0,
+                  2869740.0
+                ],
+                [
+                  347250.0,
+                  2869745.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 50465,
+              "row": 145,
+              "col": 150,
+              "center_xy_m": [
+                347252.5,
+                2869742.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1515.0,
+              "primary_core_footprint_gap_m": 14.115585266754413,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0075",
+                  "footprint_gap_m": 4.631350269189204,
+                  "baseline_first_ignition_s": 306.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0077",
+                  "footprint_gap_m": 6.489509960678469,
+                  "baseline_first_ignition_s": 0.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 8.229272466387217,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0076",
+                  "footprint_gap_m": 11.428841799031943,
+                  "baseline_first_ignition_s": 627.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0073",
+                  "footprint_gap_m": 14.115585266754413,
+                  "baseline_first_ignition_s": 857.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 14.672252667015654,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347255.0,
+                      2869740.0
+                    ],
+                    [
+                      347255.0,
+                      2869745.0
+                    ],
+                    [
+                      347250.0,
+                      2869745.0
+                    ],
+                    [
+                      347250.0,
+                      2869740.0
+                    ],
+                    [
+                      347255.0,
+                      2869740.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50466,
+              "row": 145,
+              "col": 151,
+              "center_xy_m": [
+                347257.5,
+                2869742.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1540.3600000000001,
+              "primary_core_footprint_gap_m": 12.310130668788148,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0075",
+                  "footprint_gap_m": 7.720732319667915,
+                  "baseline_first_ignition_s": 306.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0077",
+                  "footprint_gap_m": 9.098894923125652,
+                  "baseline_first_ignition_s": 0.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0067",
+                  "footprint_gap_m": 11.656876531107791,
+                  "baseline_first_ignition_s": null,
+                  "temporal_relation": "no_roof_ignition_observed"
+                },
+                {
+                  "building_id": "B0076",
+                  "footprint_gap_m": 11.687193613088976,
+                  "baseline_first_ignition_s": 627.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0073",
+                  "footprint_gap_m": 12.310130668788148,
+                  "baseline_first_ignition_s": 857.0,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0078",
+                  "footprint_gap_m": 12.818228913175366,
+                  "baseline_first_ignition_s": 451.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347260.0,
+                      2869740.0
+                    ],
+                    [
+                      347260.0,
+                      2869745.0
+                    ],
+                    [
+                      347255.0,
+                      2869745.0
+                    ],
+                    [
+                      347255.0,
+                      2869740.0
+                    ],
+                    [
+                      347260.0,
+                      2869740.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50467,
+              "row": 145,
+              "col": 152,
+              "center_xy_m": [
+                347262.5,
+                2869742.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": null,
+              "primary_core_footprint_gap_m": 12.098829721100628,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0067",
+                  "footprint_gap_m": 6.66138356425844,
+                  "baseline_first_ignition_s": null,
+                  "temporal_relation": "no_roof_ignition_observed"
+                },
+                {
+                  "building_id": "B0075",
+                  "footprint_gap_m": 11.368418340358458,
+                  "baseline_first_ignition_s": 306.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0073",
+                  "footprint_gap_m": 12.098829721100628,
+                  "baseline_first_ignition_s": 857.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0077",
+                  "footprint_gap_m": 13.131145516128454,
+                  "baseline_first_ignition_s": 0.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0076",
+                  "footprint_gap_m": 13.639219660666184,
+                  "baseline_first_ignition_s": 627.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347265.0,
+                      2869740.0
+                    ],
+                    [
+                      347265.0,
+                      2869745.0
+                    ],
+                    [
+                      347260.0,
+                      2869745.0
+                    ],
+                    [
+                      347260.0,
+                      2869740.0
+                    ],
+                    [
+                      347265.0,
+                      2869740.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 50468,
+              "row": 145,
+              "col": 153,
+              "center_xy_m": [
+                347267.5,
+                2869742.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": null,
+              "primary_core_footprint_gap_m": 12.40277738017831,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0067",
+                  "footprint_gap_m": 1.6927171999047406,
+                  "baseline_first_ignition_s": null,
+                  "temporal_relation": "no_roof_ignition_observed"
+                },
+                {
+                  "building_id": "B0073",
+                  "footprint_gap_m": 12.40277738017831,
+                  "baseline_first_ignition_s": 857.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347270.0,
+                      2869740.0
+                    ],
+                    [
+                      347270.0,
+                      2869745.0
+                    ],
+                    [
+                      347265.0,
+                      2869745.0
+                    ],
+                    [
+                      347265.0,
+                      2869740.0
+                    ],
+                    [
+                      347270.0,
+                      2869740.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "plan_id": "batuan-same-area-geometric-control",
+          "proposal_class": "same-area-geometric-control",
+          "cleared_physical_cell_ids": [
+            51502,
+            51503,
+            51504,
+            51505
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "vegetation_parent_cell_count": 4,
+          "construction_footprint_area_m2": 100.0,
+          "covered_fuel_clearing_area_m2": 100.0,
+          "selection_rule": "disjoint same-cell-count strip matched first by covered fuel area, then sum of absolute core/source/roof mean-distance differences;no ignition-time ranking",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 4,
+            "observed_ignited_vegetation_cell_count": 4,
+            "first_observed_vegetation_ignition_s": 1438.3600000000001,
+            "capped_mean_design_ignition_s": 1478.02,
+            "mean_roof_gap_m": 16.389247301812418,
+            "mean_primary_core_gap_m": 33.851030605443384,
+            "minimum_primary_core_gap_m": 29.747690152285923,
+            "mean_source_gap_m": 19.93343226325687,
+            "parallel_alignment_with_first_vegetation_direction": 0.7307050755949999,
+            "covered_fuel_area_m2": 100.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  347230.0,
+                  2869730.0
+                ],
+                [
+                  347235.0,
+                  2869730.0
+                ],
+                [
+                  347240.0,
+                  2869730.0
+                ],
+                [
+                  347245.0,
+                  2869730.0
+                ],
+                [
+                  347250.0,
+                  2869730.0
+                ],
+                [
+                  347250.0,
+                  2869725.0
+                ],
+                [
+                  347245.0,
+                  2869725.0
+                ],
+                [
+                  347240.0,
+                  2869725.0
+                ],
+                [
+                  347235.0,
+                  2869725.0
+                ],
+                [
+                  347230.0,
+                  2869725.0
+                ],
+                [
+                  347230.0,
+                  2869730.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 51502,
+              "row": 148,
+              "col": 146,
+              "center_xy_m": [
+                347232.5,
+                2869727.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1438.3600000000001,
+              "primary_core_footprint_gap_m": 38.44549857158229,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0081",
+                  "footprint_gap_m": 13.562373109986124,
+                  "baseline_first_ignition_s": 982.36,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0080",
+                  "footprint_gap_m": 14.16187436776324,
+                  "baseline_first_ignition_s": 776.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347235.0,
+                      2869725.0
+                    ],
+                    [
+                      347235.0,
+                      2869730.0
+                    ],
+                    [
+                      347230.0,
+                      2869730.0
+                    ],
+                    [
+                      347230.0,
+                      2869725.0
+                    ],
+                    [
+                      347235.0,
+                      2869725.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 51503,
+              "row": 148,
+              "col": 147,
+              "center_xy_m": [
+                347237.5,
+                2869727.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1466.3600000000001,
+              "primary_core_footprint_gap_m": 35.07628729037839,
+              "nearby_roof_temporal_relations_within_15m": [],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347240.0,
+                      2869725.0
+                    ],
+                    [
+                      347240.0,
+                      2869730.0
+                    ],
+                    [
+                      347235.0,
+                      2869730.0
+                    ],
+                    [
+                      347235.0,
+                      2869725.0
+                    ],
+                    [
+                      347240.0,
+                      2869725.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 51504,
+              "row": 148,
+              "col": 148,
+              "center_xy_m": [
+                347242.5,
+                2869727.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1493.3600000000001,
+              "primary_core_footprint_gap_m": 32.13464640752695,
+              "nearby_roof_temporal_relations_within_15m": [],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347245.0,
+                      2869725.0
+                    ],
+                    [
+                      347245.0,
+                      2869730.0
+                    ],
+                    [
+                      347240.0,
+                      2869730.0
+                    ],
+                    [
+                      347240.0,
+                      2869725.0
+                    ],
+                    [
+                      347245.0,
+                      2869725.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 51505,
+              "row": 148,
+              "col": 149,
+              "center_xy_m": [
+                347247.5,
+                2869727.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1514.0,
+              "primary_core_footprint_gap_m": 29.747690152285923,
+              "nearby_roof_temporal_relations_within_15m": [],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      347250.0,
+                      2869725.0
+                    ],
+                    [
+                      347250.0,
+                      2869730.0
+                    ],
+                    [
+                      347245.0,
+                      2869730.0
+                    ],
+                    [
+                      347245.0,
+                      2869725.0
+                    ],
+                    [
+                      347250.0,
+                      2869725.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "area_match_reference_plan_id": "batuan-early-vegetation-connection",
+          "covered_fuel_area_difference_from_reference_m2": 0.0,
+          "geometry_match_absolute_distance_differences_m": {
+            "mean_primary_core_gap_m": 0.1710528435222045,
+            "mean_source_gap_m": 4.955469937840272,
+            "mean_roof_gap_m": 12.889917329311839
+          }
+        }
+      ]
+    },
+    {
+      "village_id": "pingyan",
+      "inventory_object_count": 950,
+      "design_source_id": "B0164",
+      "design_fire_id": "drum-B0164-late-ignition",
+      "design_support_m": 1.0,
+      "design_horizon_s": 3600.0,
+      "design_data_role": "archived_no_intervention_trajectory;not_independent_validation",
+      "design_artifact_folder": "runs/research/heritage-followup-pingyan-20261103/evaluations/e998abb847c4575b628111302c759538090c014eddfafe62b94c0b88bf4357fc",
+      "design_problem_sha256": "18c96867a05cfc11259de12a4224b15445064612d346afc7123d8394b15a9c31",
+      "design_files_sha256": {
+        "evaluation.json": "5134da5dea6adad6050adafdb9434df1d9e5275d3bb30b3553306130b69894cd",
+        "check.json": "1a4b509028438f307989d16927a5bf2c1285e6d64536bac779f57bd123999909",
+        "layout.npz": "227575ee19b5cabfce7b278ab6c2ea30d9be105a76a11633d6d8dfa6840bbac2",
+        "final-state.npz": "bc33ab85b9f692e6278bfe8f346612d5f47362d9deeea5ec34f58895537def86"
+      },
+      "study_path": "examples/research/heritage/pingyan-study-20261029.json",
+      "study_sha256": "08714ec3e35b9403f8102c2a7139b49f8473fffb6631651cdd918daf9871a7e4",
+      "parent_case_sha256": "82dab01dc852ec47e4ff9aaa6d0f7b1f2f235cc6bd6b502fd7cd9137838f414c",
+      "inventory_sha256": "288b06716cce53135b6fcc4c2288b80a54b07abfd077893794db892d99003747",
+      "primary_core_id": "B0166",
+      "baseline_core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 1168.3600000000001,
+          "ignited_component_count": 480,
+          "maximum_valid_surface_temperature_K": 519.9976406865778,
+          "absorbed_radiation_J": 662374963.2379012,
+          "received_convection_J": 2627333.7101278766
+        }
+      ],
+      "first_vegetation_ignition_s": 1757.3600000000001,
+      "source_to_first_vegetation_direction_unit_xy": [
+        0.9494613195249759,
+        -0.3138840593688878
+      ],
+      "baseline_nonroof_ignited_area_m2": 4200.0,
+      "whole_village_eligible_vegetation_parent_cell_count": 212887,
+      "design_window_radius_m": 100.0,
+      "design_window_eligible_cell_count": 414,
+      "minimum_eligible_cell_gap_to_primary_core_m": 12.841649016257994,
+      "eligible_cells_within_15m_of_primary_core": 1,
+      "core_gap_feasibility_note": "closest available whole-cell band;not a continuous core enclosure;surveyed access_and_cultural_space_eligibility_unknown",
+      "enumerated_straight_strip_count": 419,
+      "selected_strip_length_cells": 4,
+      "physical_grid": {
+        "shape": [
+          473,
+          598
+        ],
+        "cell_size_m": 5.0,
+        "x_min_m": 362155.0,
+        "y_max_m": 2867055.0,
+        "cell_id_policy": "row_major_parent_grid;not_thermal_storage_index"
+      },
+      "causal_interpretation": "nearby roof/vegetation event ordering is a design cue, not identified causal heat transfer",
+      "scope": "three_local_joint_candidates;no_effectiveness_or_optimality_claim;field_eligibility_pending",
+      "plans": [
+        {
+          "plan_id": "pingyan-early-vegetation-connection",
+          "proposal_class": "early-vegetation-connection",
+          "cleared_physical_cell_ids": [
+            159398,
+            159996,
+            160594,
+            161192
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "vegetation_parent_cell_count": 4,
+          "construction_footprint_area_m2": 100.0,
+          "covered_fuel_clearing_area_m2": 100.0,
+          "selection_rule": "maximum cells in first-vegetation+300s window, then observed vegetation connection count, mean arrival, source direction alignment, roof gap;baseline design data only",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 2,
+            "observed_ignited_vegetation_cell_count": 3,
+            "first_observed_vegetation_ignition_s": 1922.3600000000001,
+            "capped_mean_design_ignition_s": 2511.95,
+            "mean_roof_gap_m": 3.022493457498154,
+            "mean_primary_core_gap_m": 43.90847610767487,
+            "minimum_primary_core_gap_m": 38.20983174949837,
+            "mean_source_gap_m": 35.294798002267,
+            "parallel_alignment_with_first_vegetation_direction": 0.3138840593688878,
+            "covered_fuel_area_m2": 100.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  363805.0,
+                  2865705.0
+                ],
+                [
+                  363805.0,
+                  2865710.0
+                ],
+                [
+                  363805.0,
+                  2865715.0
+                ],
+                [
+                  363805.0,
+                  2865720.0
+                ],
+                [
+                  363805.0,
+                  2865725.0
+                ],
+                [
+                  363810.0,
+                  2865725.0
+                ],
+                [
+                  363810.0,
+                  2865720.0
+                ],
+                [
+                  363810.0,
+                  2865715.0
+                ],
+                [
+                  363810.0,
+                  2865710.0
+                ],
+                [
+                  363810.0,
+                  2865705.0
+                ],
+                [
+                  363805.0,
+                  2865705.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 159398,
+              "row": 266,
+              "col": 330,
+              "center_xy_m": [
+                363807.5,
+                2865722.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 6,
+              "material_label": "林木/灌丛等效燃料（阴影/邻域推测补全）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": null,
+              "primary_core_footprint_gap_m": 38.20983174949837,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0175",
+                  "footprint_gap_m": 0.9934101318467146,
+                  "baseline_first_ignition_s": 2408.7200000000003,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0140",
+                  "footprint_gap_m": 5.35472593828636,
+                  "baseline_first_ignition_s": 1101.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0169",
+                  "footprint_gap_m": 6.432933557329275,
+                  "baseline_first_ignition_s": 1360.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0168",
+                  "footprint_gap_m": 10.814935049871298,
+                  "baseline_first_ignition_s": 1750.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0179",
+                  "footprint_gap_m": 13.625101787190145,
+                  "baseline_first_ignition_s": 2080.0,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0139",
+                  "footprint_gap_m": 13.874193525641767,
+                  "baseline_first_ignition_s": 1683.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0174",
+                  "footprint_gap_m": 14.81741877179767,
+                  "baseline_first_ignition_s": 2846.0800000000004,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363810.0,
+                      2865720.0
+                    ],
+                    [
+                      363810.0,
+                      2865725.0
+                    ],
+                    [
+                      363805.0,
+                      2865725.0
+                    ],
+                    [
+                      363805.0,
+                      2865720.0
+                    ],
+                    [
+                      363810.0,
+                      2865720.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 159996,
+              "row": 267,
+              "col": 330,
+              "center_xy_m": [
+                363807.5,
+                2865717.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1934.7200000000003,
+              "primary_core_footprint_gap_m": 41.846962175357454,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0175",
+                  "footprint_gap_m": 3.4234512198822467,
+                  "baseline_first_ignition_s": 2408.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0140",
+                  "footprint_gap_m": 4.733708584797569,
+                  "baseline_first_ignition_s": 1101.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0169",
+                  "footprint_gap_m": 6.8522817346225136,
+                  "baseline_first_ignition_s": 1360.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0139",
+                  "footprint_gap_m": 9.352904245702119,
+                  "baseline_first_ignition_s": 1683.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0168",
+                  "footprint_gap_m": 14.98868451321992,
+                  "baseline_first_ignition_s": 1750.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363810.0,
+                      2865715.0
+                    ],
+                    [
+                      363810.0,
+                      2865720.0
+                    ],
+                    [
+                      363805.0,
+                      2865720.0
+                    ],
+                    [
+                      363805.0,
+                      2865715.0
+                    ],
+                    [
+                      363810.0,
+                      2865715.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 160594,
+              "row": 268,
+              "col": 330,
+              "center_xy_m": [
+                363807.5,
+                2865712.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 15.0,
+              "pyrolysable_fuel_mass_kg": 14.25,
+              "material_index": 1,
+              "material_label": "草地/农田等效燃料（RGB推测）",
+              "landcover_index": 1,
+              "landcover_label": "草地/农田等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 1922.3600000000001,
+              "primary_core_footprint_gap_m": 45.74216046806952,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0140",
+                  "footprint_gap_m": 5.042384330535422,
+                  "baseline_first_ignition_s": 1101.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0139",
+                  "footprint_gap_m": 5.669825637360399,
+                  "baseline_first_ignition_s": 1683.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0175",
+                  "footprint_gap_m": 6.987803646979554,
+                  "baseline_first_ignition_s": 2408.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0169",
+                  "footprint_gap_m": 9.490601558133694,
+                  "baseline_first_ignition_s": 1360.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0138",
+                  "footprint_gap_m": 14.368036952968874,
+                  "baseline_first_ignition_s": 1434.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363810.0,
+                      2865710.0
+                    ],
+                    [
+                      363810.0,
+                      2865715.0
+                    ],
+                    [
+                      363805.0,
+                      2865715.0
+                    ],
+                    [
+                      363805.0,
+                      2865710.0
+                    ],
+                    [
+                      363810.0,
+                      2865710.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 161192,
+              "row": 269,
+              "col": 330,
+              "center_xy_m": [
+                363807.5,
+                2865707.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 2290.7200000000003,
+              "primary_core_footprint_gap_m": 49.834950037774156,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0139",
+                  "footprint_gap_m": 2.630728147723226,
+                  "baseline_first_ignition_s": 1683.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0140",
+                  "footprint_gap_m": 5.758093058865721,
+                  "baseline_first_ignition_s": 1101.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0138",
+                  "footprint_gap_m": 11.628054026209194,
+                  "baseline_first_ignition_s": 1434.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0175",
+                  "footprint_gap_m": 11.646146309359624,
+                  "baseline_first_ignition_s": 2408.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0154",
+                  "footprint_gap_m": 12.602254175913842,
+                  "baseline_first_ignition_s": 2172.7200000000003,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0169",
+                  "footprint_gap_m": 13.534743104317055,
+                  "baseline_first_ignition_s": 1360.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363810.0,
+                      2865705.0
+                    ],
+                    [
+                      363810.0,
+                      2865710.0
+                    ],
+                    [
+                      363805.0,
+                      2865710.0
+                    ],
+                    [
+                      363805.0,
+                      2865705.0
+                    ],
+                    [
+                      363810.0,
+                      2865705.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "plan_id": "pingyan-core-geometric-gap",
+          "proposal_class": "core-geometric-gap",
+          "cleared_physical_cell_ids": [
+            151023
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "vegetation_parent_cell_count": 1,
+          "construction_footprint_area_m2": 25.0,
+          "covered_fuel_clearing_area_m2": 25.0,
+          "selection_rule": "longest available strip up to four cells wholly within 15m of source-side core, then minimum mean core/roof gap;disjoint from connection strip;no fire outcome ranking;15m is a design window, not a safety distance",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 0,
+            "observed_ignited_vegetation_cell_count": 0,
+            "first_observed_vegetation_ignition_s": null,
+            "capped_mean_design_ignition_s": 3900.0,
+            "mean_roof_gap_m": 0.34668299136683345,
+            "mean_primary_core_gap_m": 12.841649016257994,
+            "minimum_primary_core_gap_m": 12.841649016257994,
+            "mean_source_gap_m": 53.1834394157661,
+            "parallel_alignment_with_first_vegetation_direction": 0.0,
+            "covered_fuel_area_m2": 25.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  363795.0,
+                  2865790.0
+                ],
+                [
+                  363795.0,
+                  2865795.0
+                ],
+                [
+                  363790.0,
+                  2865795.0
+                ],
+                [
+                  363790.0,
+                  2865790.0
+                ],
+                [
+                  363795.0,
+                  2865790.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 151023,
+              "row": 252,
+              "col": 327,
+              "center_xy_m": [
+                363792.5,
+                2865792.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": null,
+              "primary_core_footprint_gap_m": 12.841649016257994,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0185",
+                  "footprint_gap_m": 0.34668299136683345,
+                  "baseline_first_ignition_s": 3458.08,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0187",
+                  "footprint_gap_m": 2.2188514361592055,
+                  "baseline_first_ignition_s": 3032.08,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0177",
+                  "footprint_gap_m": 3.9784475746598056,
+                  "baseline_first_ignition_s": 1730.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0034",
+                  "footprint_gap_m": 8.547421824070625,
+                  "baseline_first_ignition_s": 2100.36,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0208",
+                  "footprint_gap_m": 11.942643339047208,
+                  "baseline_first_ignition_s": null,
+                  "temporal_relation": "no_roof_ignition_observed"
+                },
+                {
+                  "building_id": "B0166",
+                  "footprint_gap_m": 12.841649016257994,
+                  "baseline_first_ignition_s": 1168.3600000000001,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                },
+                {
+                  "building_id": "B0178",
+                  "footprint_gap_m": 14.745729833020095,
+                  "baseline_first_ignition_s": 2131.7200000000003,
+                  "temporal_relation": "vegetation_unignited_in_design"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363795.0,
+                      2865790.0
+                    ],
+                    [
+                      363795.0,
+                      2865795.0
+                    ],
+                    [
+                      363790.0,
+                      2865795.0
+                    ],
+                    [
+                      363790.0,
+                      2865790.0
+                    ],
+                    [
+                      363795.0,
+                      2865790.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "plan_id": "pingyan-same-area-geometric-control",
+          "proposal_class": "same-area-geometric-control",
+          "cleared_physical_cell_ids": [
+            159976,
+            159977,
+            159978,
+            159979
+          ],
+          "suggested_joint_demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "vegetation_parent_cell_count": 4,
+          "construction_footprint_area_m2": 100.0,
+          "covered_fuel_clearing_area_m2": 100.0,
+          "selection_rule": "disjoint same-cell-count strip matched first by covered fuel area, then sum of absolute core/source/roof mean-distance differences;no ignition-time ranking",
+          "design_trajectory_statistics": {
+            "early_vegetation_cell_count": 1,
+            "observed_ignited_vegetation_cell_count": 4,
+            "first_observed_vegetation_ignition_s": 2049.7200000000003,
+            "capped_mean_design_ignition_s": 2317.9700000000003,
+            "mean_roof_gap_m": 2.4917948058846155,
+            "mean_primary_core_gap_m": 61.529907170101154,
+            "minimum_primary_core_gap_m": 56.650066210850596,
+            "mean_source_gap_m": 36.25212826784934,
+            "parallel_alignment_with_first_vegetation_direction": 0.9494613195249759,
+            "covered_fuel_area_m2": 100.0
+          },
+          "physical_checks": {
+            "all_known": true,
+            "all_burnable": true,
+            "all_parent_cells_5m": true,
+            "roof_overlap_area_m2": 0.0,
+            "face_connected": true
+          },
+          "implementation_eligibility_surveyed": false,
+          "protection_or_fire_loss_effect_evaluated": false,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  363705.0,
+                  2865720.0
+                ],
+                [
+                  363710.0,
+                  2865720.0
+                ],
+                [
+                  363715.0,
+                  2865720.0
+                ],
+                [
+                  363720.0,
+                  2865720.0
+                ],
+                [
+                  363725.0,
+                  2865720.0
+                ],
+                [
+                  363725.0,
+                  2865715.0
+                ],
+                [
+                  363720.0,
+                  2865715.0
+                ],
+                [
+                  363715.0,
+                  2865715.0
+                ],
+                [
+                  363710.0,
+                  2865715.0
+                ],
+                [
+                  363705.0,
+                  2865715.0
+                ],
+                [
+                  363705.0,
+                  2865720.0
+                ]
+              ]
+            ]
+          },
+          "cells": [
+            {
+              "physical_cell_id": 159976,
+              "row": 267,
+              "col": 310,
+              "center_xy_m": [
+                363707.5,
+                2865717.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 2619.7200000000003,
+              "primary_core_footprint_gap_m": 66.63611259924457,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0201",
+                  "footprint_gap_m": 2.408478788875571,
+                  "baseline_first_ignition_s": 2776.0800000000004,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0260",
+                  "footprint_gap_m": 4.787393924440326,
+                  "baseline_first_ignition_s": 2421.7200000000003,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0258",
+                  "footprint_gap_m": 7.593781102675175,
+                  "baseline_first_ignition_s": 1538.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0257",
+                  "footprint_gap_m": 8.171755232753732,
+                  "baseline_first_ignition_s": 1947.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0196",
+                  "footprint_gap_m": 12.867397215007077,
+                  "baseline_first_ignition_s": 2620.7200000000003,
+                  "temporal_relation": "roof_later"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363710.0,
+                      2865715.0
+                    ],
+                    [
+                      363710.0,
+                      2865720.0
+                    ],
+                    [
+                      363705.0,
+                      2865720.0
+                    ],
+                    [
+                      363705.0,
+                      2865715.0
+                    ],
+                    [
+                      363710.0,
+                      2865715.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 159977,
+              "row": 267,
+              "col": 311,
+              "center_xy_m": [
+                363712.5,
+                2865717.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 6,
+              "material_label": "林木/灌丛等效燃料（阴影/邻域推测补全）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 2398.7200000000003,
+              "primary_core_footprint_gap_m": 63.0871899640641,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0201",
+                  "footprint_gap_m": 4.92598607113539,
+                  "baseline_first_ignition_s": 2776.0800000000004,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0258",
+                  "footprint_gap_m": 5.062803288189167,
+                  "baseline_first_ignition_s": 1538.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0257",
+                  "footprint_gap_m": 6.613137221429497,
+                  "baseline_first_ignition_s": 1947.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0260",
+                  "footprint_gap_m": 8.142454111264923,
+                  "baseline_first_ignition_s": 2421.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0196",
+                  "footprint_gap_m": 10.353648082954384,
+                  "baseline_first_ignition_s": 2620.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0197",
+                  "footprint_gap_m": 11.845076872268692,
+                  "baseline_first_ignition_s": 1265.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363715.0,
+                      2865715.0
+                    ],
+                    [
+                      363715.0,
+                      2865720.0
+                    ],
+                    [
+                      363710.0,
+                      2865720.0
+                    ],
+                    [
+                      363710.0,
+                      2865715.0
+                    ],
+                    [
+                      363715.0,
+                      2865715.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 159978,
+              "row": 267,
+              "col": 312,
+              "center_xy_m": [
+                363717.5,
+                2865717.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 2203.7200000000003,
+              "primary_core_footprint_gap_m": 59.74625990624535,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0258",
+                  "footprint_gap_m": 2.565172550618138,
+                  "baseline_first_ignition_s": 1538.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0257",
+                  "footprint_gap_m": 6.616018907669829,
+                  "baseline_first_ignition_s": 1947.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0197",
+                  "footprint_gap_m": 6.845076872268692,
+                  "baseline_first_ignition_s": 1265.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0201",
+                  "footprint_gap_m": 8.235944706235212,
+                  "baseline_first_ignition_s": 2776.0800000000004,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0196",
+                  "footprint_gap_m": 9.80108173796907,
+                  "baseline_first_ignition_s": 2620.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0260",
+                  "footprint_gap_m": 12.63645430175498,
+                  "baseline_first_ignition_s": 2421.7200000000003,
+                  "temporal_relation": "roof_later"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363720.0,
+                      2865715.0
+                    ],
+                    [
+                      363720.0,
+                      2865720.0
+                    ],
+                    [
+                      363715.0,
+                      2865720.0
+                    ],
+                    [
+                      363715.0,
+                      2865715.0
+                    ],
+                    [
+                      363720.0,
+                      2865715.0
+                    ]
+                  ]
+                ]
+              }
+            },
+            {
+              "physical_cell_id": 159979,
+              "row": 267,
+              "col": 313,
+              "center_xy_m": [
+                363722.5,
+                2865717.5
+              ],
+              "construction_footprint_area_m2": 25.0,
+              "covered_fuel_area_m2": 25.0,
+              "dry_fuel_mass_kg": 200.0,
+              "pyrolysable_fuel_mass_kg": 150.0,
+              "material_index": 4,
+              "material_label": "林木/灌丛等效燃料（RGB推测）",
+              "landcover_index": 4,
+              "landcover_label": "林木/灌丛等效燃料（RGB推测）",
+              "baseline_first_ignition_s": 2049.7200000000003,
+              "primary_core_footprint_gap_m": 56.650066210850596,
+              "nearby_roof_temporal_relations_within_15m": [
+                {
+                  "building_id": "B0258",
+                  "footprint_gap_m": 0.06754181304710824,
+                  "baseline_first_ignition_s": 1538.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0197",
+                  "footprint_gap_m": 1.8450768722686917,
+                  "baseline_first_ignition_s": 1265.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0257",
+                  "footprint_gap_m": 8.40976806340797,
+                  "baseline_first_ignition_s": 1947.3600000000001,
+                  "temporal_relation": "roof_earlier"
+                },
+                {
+                  "building_id": "B0196",
+                  "footprint_gap_m": 9.94113404811333,
+                  "baseline_first_ignition_s": 2620.7200000000003,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0201",
+                  "footprint_gap_m": 12.679280486661426,
+                  "baseline_first_ignition_s": 2776.0800000000004,
+                  "temporal_relation": "roof_later"
+                },
+                {
+                  "building_id": "B0163",
+                  "footprint_gap_m": 12.712959721865996,
+                  "baseline_first_ignition_s": 612.0,
+                  "temporal_relation": "roof_earlier"
+                }
+              ],
+              "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                  [
+                    [
+                      363725.0,
+                      2865715.0
+                    ],
+                    [
+                      363725.0,
+                      2865720.0
+                    ],
+                    [
+                      363720.0,
+                      2865720.0
+                    ],
+                    [
+                      363720.0,
+                      2865715.0
+                    ],
+                    [
+                      363725.0,
+                      2865715.0
+                    ]
+                  ]
+                ]
+              }
+            }
+          ],
+          "area_match_reference_plan_id": "pingyan-early-vegetation-connection",
+          "covered_fuel_area_difference_from_reference_m2": 0.0,
+          "geometry_match_absolute_distance_differences_m": {
+            "mean_primary_core_gap_m": 17.621431062426282,
+            "mean_source_gap_m": 0.9573302655823426,
+            "mean_roof_gap_m": 0.5306986516135384
+          }
+        }
+      ]
+    }
+  ]
+}

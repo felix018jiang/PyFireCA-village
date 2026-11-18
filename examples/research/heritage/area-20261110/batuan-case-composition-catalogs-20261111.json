@@ -1,0 +1,14 @@
+[
+  {
+    "run_root": "../../../../runs/research/heritage-joint-longcap-batuan-20261111",
+    "config": "batuan-joint-longcap-comparison-20261111.json"
+  },
+  {
+    "run_root": "../../../../runs/research/heritage-joint-longcap-clockfix-batuan-20261111",
+    "config": "batuan-joint-longcap-clockfix-comparison-20261111.json"
+  },
+  {
+    "run_root": "../../../../runs/research/heritage-balanced-optimized-batuan-20261111",
+    "config": "batuan-balanced-optimized-longcap-comparison-20261111.json"
+  }
+]

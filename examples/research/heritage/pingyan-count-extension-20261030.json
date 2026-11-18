@@ -1,0 +1,39 @@
+{
+  "schema_version": "heritage-count-extension-config-1",
+  "parent_root": "../../../runs/research/pingyan-full-bounded-20261029",
+  "frontier_path": "../../../docs/results/heritage-pingyan-pair-frontier-20261029.json",
+  "frontier_sha256": "41c74f0a68c469197e9cbd4e120c56c36c0981a6aa247973045abf5f27fda7ae",
+  "parent_result_sha256": "bcc5bf06f6e60ceb4bc36946d7bdb2b07ec93993d416aef054d9cc241b8f5b3f",
+  "problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "initial_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "stage_limits": {
+    "2": {
+      "new_CA_checks": 136,
+      "wall_time_s": 21600,
+      "bound_calls": 0
+    },
+    "3": {
+      "new_CA_checks": 32,
+      "wall_time_s": 7200,
+      "bound_calls": 100000
+    },
+    "4": {
+      "new_CA_checks": 32,
+      "wall_time_s": 7200,
+      "bound_calls": 100000
+    }
+  },
+  "native_audit_CA_reserve": 1,
+  "maximum_new_search_CA_checks": 200,
+  "maximum_new_CA_including_native_audit": 201,
+  "stage_gate": "classify_all_17_pairs;only_if_all_fail_enter_bounded_triples_then_quadruples;stop_larger_counts_on_smaller_feasible_plan",
+  "selection_scope": "original_design_families_only;heldout_not_used_for_reselection",
+  "resume_policy": "immutable_driver_and_budget;cumulative_per_stage_CA_wall_and_bound_limits",
+  "stop_policy": "no_automatic_budget_extension;no_five_layer_area_search;no_external_fire_or_village_enumeration"
+}

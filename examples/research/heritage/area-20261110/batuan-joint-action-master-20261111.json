@@ -1,0 +1,109 @@
+{
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "cap_selection_rule": "geometric_actual_clearance_of_historical_initial_plan",
+  "core_overlap_policy": "reject",
+  "fixed_source_ids": [],
+  "generator_sha256": "f75b55711bcdba90a6ddff8053b09fe3cd18a4d3691866d513f921d96283bf44",
+  "horizon_s": 172800.0,
+  "initial_cap_is_verified_upper_bound_for_new_problem": false,
+  "max_dt_s": 1.0,
+  "max_matrix_nonzeros": 5000000,
+  "max_mip_time_s": 2400.0,
+  "max_new_checks": 128,
+  "max_nodes": 200000,
+  "max_radiation_edges": 60000000,
+  "max_wall_time_s": 172800.0,
+  "minimum_free_disk_GB": 10.0,
+  "mip_call_time_limit_s": 120.0,
+  "new_independent_fire_draws": 0,
+  "parent_full_config_sha256": "6c127fbc701f8f8667080a057232751857132bfcfe8cbb0b5d72a866abaa454c",
+  "place_name": "\u5c9c\u56e2\u6751",
+  "prefetch_baseline_witnesses": true,
+  "prior_fixed_problem_seed_receipt": {
+    "problem_sha256": "ed65b77d167a370ab1a850b8e3ba0056afa1b669ca5642e71e08b174003c76a9",
+    "source_search_sha256": "b8089769b663e78fa0a4ac37a5dd806c5ca2196743df3ceb1ffbbbf7e3f2242b",
+    "validity": "proposal_only;all_seeds_must_be_reverified_in_new_source_mesh",
+    "verified_feasible_rows": [
+      {
+        "cleared_area_m2": 443.8419687401409,
+        "demolished_ids": [
+          "B0061",
+          "B0071",
+          "B0076"
+        ],
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": [],
+        "worst_case_loss_metrics": {
+          "active_nonroof_area_m2": 125.0,
+          "active_roof_area_m2": 3237.6273743769852,
+          "clearing_plus_ignited_annotation_count_lower": 48,
+          "clearing_plus_ignited_annotation_count_upper": 48,
+          "clearing_plus_ignited_roof_area_m2": 7381.767859877756,
+          "consumed_fuel_kg": 58287.29354725336,
+          "ignited_nonroof_area_m2": 1300.0,
+          "ignited_roof_area_m2": 6937.925886982923,
+          "nonroof_fire_depleted_kg": 3005.6130870581487,
+          "roof_fire_depleted_kg": 55281.68046019521
+        }
+      }
+    ]
+  },
+  "quadrature_spacing_m": 0.5,
+  "reference_horizon_s": 3600.0,
+  "reference_phase_master_experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json",
+  "reference_phase_master_experiment_sha256": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+  "refinement_ids": [
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0067",
+    "B0071",
+    "B0073",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "schema_version": "heritage-joint-action-master-config-1",
+  "scope": "all_inventory_roof_AND_plus_all_eligible_whole5m_ground;strict_extinction_core_safety;declared_total_C_cap_not_verified_terminal_UB",
+  "seed_action_plans": [
+    {
+      "action_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ]
+    }
+  ],
+  "source_area_limit_m2": 443.8419687401409,
+  "source_area_tolerance_m2": 1e-06,
+  "source_fires": [
+    {
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-1-20261029.json"
+    },
+    {
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-2-20261029.json"
+    },
+    {
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-3-20261029.json"
+    },
+    {
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-4-20261029.json"
+    }
+  ],
+  "source_policy": "area_bounded_retained_sources",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+  "village_id": "batuan"
+}

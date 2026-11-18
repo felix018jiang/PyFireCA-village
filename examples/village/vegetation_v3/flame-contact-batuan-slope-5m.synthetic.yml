@@ -1,0 +1,12 @@
+schema_version: village-flame-contact-1
+evidence: synthetic
+provenance: synthetic:batuan_continuous_slope_shared_face_5m_demo_not_field_calibrated
+# Reuse the heat-transfer inputs and receiver heights of the previous demo.
+gas_temperature_K: 1100
+heat_transfer_coefficient_W_m2_K: 50
+contact_fraction: 0.5
+max_cell_size_m: 5
+# Contact is evaluated where adjacent cells share a continuous terrain face.
+# DEM cell centers are not independent vertical walls. Radiation still uses DEM.
+# Requires continuous fuel at that face; subcell gaps/cliffs are not resolved.
+terrain_reference: shared_face

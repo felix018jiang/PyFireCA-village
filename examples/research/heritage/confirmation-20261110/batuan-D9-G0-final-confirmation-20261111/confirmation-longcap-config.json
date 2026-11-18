@@ -1,0 +1,119 @@
+{
+  "additional_frozen_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-D9-G0-complete8-audit-20261111.json": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-action-ablation-20261111-catalog.json": "dfb45500dbe7edff74fd91f0e7ff82ab5ce120d5bf37854afaae8b5957da0c6a",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-priority-longcap-20261111.json": "9ccb45e975237c875adcb4e3039c87d4e5dc0f2c2ffd97f17c242d0603c3e9bb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/execution-amendment.json": "a2182f80f63aaa838881b9dab73f27ea3c7d7bbb8f440e6f644d1a2e4aaf82c4",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/final-candidates.json": "aab068008faee5940570f6f1b32b1da5891f5da9ef629f0bdcf7175a3b8754b7",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/binding-receipt.json": "90093fbf64734468923f507e7db9d93e8a04d15f148ce34e1351addc94c09e9a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/confirmation-config.json": "b3df568d9dbdefbf862dcf9ebaaf7a73320ac5460541dfa964f710348063a2eb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-1.json": "92ada8e2c600c7d379504d8be0db40dcba440418bee3637861dc74391ddad035",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-2.json": "f6b04f439ab59b674eab1964d3d2b7099dfc4515b4d411746c22df7dc20908a7",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-3.json": "fc673eb59118c1531e24f75d3f14a31cde1f99d5a5fd16df6b8f14de3e3c589d",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-4.json": "ab8745773b24ee20f3486b99880a7fb419410fff77f0807b0360dd384641271a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-registration.json": "b6e33fd320d3025dcf07a068580e1b49e733e5576b19b134d00095d7480c1b2f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-action-ablation-batuan-20261111/experiment.json": "ef29c1afa17c405de9a52d6fb143c026a4bdafa8ea789c7c5f7453ae431120d4",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_batuan_final_confirmation.py": "31b885394ae65bb973a6011d766f053ae92a81e532455653464ace4cd1ff58e9",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_independent_confirmation.py": "cb7d2baabef64901ddce8baf4ed0a25a32f01b41f2e3383eeec040750ef9c21b",
+    "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py": "10647b74bd85588f943951782756f71ebb84e242ede482ae86a9eccbafc9f64c",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/heritage.py": "48dd14155afd8985fc8a92e8bc6197f75cc317c64cb9be6aa1cbde34851259d3",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/random_sources.py": "815d3cf12965cd2863a7bbacbf38824d6cbf8574a365841a1556b9c4f720bbfc",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/retained_sources.py": "e1a525b9a58498cfd82fd79b89ace0babc31bba48b53225fd58c51409c81256c",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4"
+  },
+  "checkpoints_s": [
+    1200.0,
+    2400.0,
+    3600.0
+  ],
+  "clock_compatibility_receipt_path": "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json",
+  "clock_compatibility_receipt_sha256": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+  "confirmation_registration_sha256": "631393acf6e2c7904225a0e20ecddf2fa1222c97ed2fe293d2e96b103bc8d5a1",
+  "core_overlap_policy": "reject",
+  "execution_case_order": "plans_first",
+  "execution_priority_plan_ids": [
+    "direct-thin-D9-with-no-grass"
+  ],
+  "final_candidates_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/final-candidates.json",
+  "final_candidates_sha256": "aab068008faee5940570f6f1b32b1da5891f5da9ef629f0bdcf7175a3b8754b7",
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_new_checks": 8,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "max_total_checks": 8,
+  "max_wall_time_s": 172800.0,
+  "minimum_free_disk_GB": 5.0,
+  "new_independent_fire_draw_count": 4,
+  "plans": [
+    {
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+      "plan_id": "direct-thin-D9-with-no-grass"
+    }
+  ],
+  "quadrature_spacing_m": 0.5,
+  "refinement_ids": [
+    "B0060",
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0064",
+    "B0065",
+    "B0067",
+    "B0068",
+    "B0071",
+    "B0073",
+    "B0074",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "required_solver_source_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "schema_version": "heritage-joint-comparison-1",
+  "scope": "independent_D9_G0_confirmation;new_source_mesh;no_design_loss_or_optimality_transfer;strict_primary_all8;unclosed_or_edge_invalid_remains_unknown",
+  "source_fires": [
+    {
+      "draw_id": "near-B0073-001",
+      "fire_id": "independent-1-near-B0073-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-1.json"
+    },
+    {
+      "draw_id": "near-B0120-001",
+      "fire_id": "independent-2-near-B0120-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-2.json"
+    },
+    {
+      "draw_id": "background-001",
+      "fire_id": "independent-3-background-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-3.json"
+    },
+    {
+      "draw_id": "background-002",
+      "fire_id": "independent-4-background-002",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-4.json"
+    }
+  ],
+  "source_policy": "retained_sources",
+  "stop_plan_after_protection_failure": true,
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+  "terminal_fire_verification": true,
+  "terminal_horizon_cap_s": 172800.0
+}

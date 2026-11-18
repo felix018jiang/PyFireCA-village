@@ -1,0 +1,14 @@
+{
+  "schema_version": "heritage-p1-study-1",
+  "case_dir": "../../../runs/batuan-slope-contact-20261016/case",
+  "labelme_annotations": "../../../data/local/imagery/batuan-mosaic-20261014/batuan-composite-utm49n.json",
+  "image_reference": "../../../runs/batuan-slope-contact-20261016/spatial/image_ref.json",
+  "targets": [],
+  "protected_ids": ["B0073", "B0120"],
+  "fixed_source_ids": [],
+  "candidate_ids": [],
+  "candidate_evidence": "pending_user_and_field_identification_no_real_candidates_declared",
+  "pending": ["ordinary_building_demolition_eligibility", "fixed_internal_source"],
+  "scenarios": [],
+  "plans": []
+}

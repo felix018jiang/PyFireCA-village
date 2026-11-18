@@ -1,0 +1,29 @@
+{
+  "schema_version": "heritage-random-source-pilot-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "seed": 2026102403,
+  "draws_per_stratum": 1,
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "roof_scales_m": [1.0, 0.5],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "plans": [
+    {"plan_id": "baseline", "demolished_ids": []},
+    {"plan_id": "selected-B0061-B0071-B0076", "demolished_ids": ["B0061", "B0071", "B0076"], "overlap_policy": "retain_shared_roof", "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"},
+    {"plan_id": "bridge-swap-B0063-B0071-B0076", "demolished_ids": ["B0063", "B0071", "B0076"], "overlap_policy": "retain_shared_roof", "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"},
+    {"plan_id": "drum-area-match-B0061-B0067-B0077", "demolished_ids": ["B0061", "B0067", "B0077"], "overlap_policy": "retain_shared_roof", "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"},
+    {"plan_id": "global-area-match-B0063-B0067-B0071", "demolished_ids": ["B0063", "B0067", "B0071"], "overlap_policy": "retain_shared_roof", "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"}
+  ],
+  "demolition_selection_evidence": "same_frozen_position_controls;known_B0062_stress_triggered_only_by_new_baseline_non_exposure",
+  "max_nodes": 200000,
+  "max_radiation_edges": 20000000,
+  "minimum_free_disk_GB": 2.0,
+  "scope": "prescribed_known_B0062_bridge_stress_for_position_controls;not_independent_sampling;no_optimization",
+  "archive_native_bundle": true,
+  "archive_layout": true,
+  "selection_result_sha256": "71abbc5bbaf9e34c54ed43e3e81942376ec6cb8c859940bddb9f72c2265c3498",
+  "validation_cohort": "known-B0062",
+  "source_protocol_path": "batuan-position-known-B0062-source-20261024.json",
+  "source_protocol_sha256": "a67aa5b08213b518eeb9e52ab0c7c7bb705e8733446aafeaef941260a1bf5f5d"
+}

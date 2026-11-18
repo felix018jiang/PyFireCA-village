@@ -308,6 +308,16 @@ def _empty_edges(grid: VillageGridSpec) -> ExposureEdges:
     )
 
 
+def _ground_elevation(grid: VillageGridSpec, value) -> np.ndarray:
+    """Terrain is an elevation datum, separate from relative flame/receiver heights."""
+    if value is None:
+        return np.zeros(grid.shape, dtype=np.float64)
+    array = np.asarray(value, dtype=np.float64)
+    if array.shape != grid.shape or not np.isfinite(array).all():
+        raise ValueError("transport ground elevation must be finite and match the grid")
+    return array
+
+
 def build_v3_radiative_transport_edges_reference(
     grid: VillageGridSpec,
     source_mask: NDArray[np.bool_],
@@ -319,8 +329,9 @@ def build_v3_radiative_transport_edges_reference(
     parameters: V3RadiativeTransportParameters,
     *,
     profile_id: NDArray[np.str_] | None = None,
+    ground_elevation_m: NDArray[np.floating] | None = None,
 ) -> ExposureEdges:
-    """Direct per-edge implementation used as the small-domain oracle."""
+    """Small-domain oracle with heights above ground and a separate terrain datum."""
 
     source, target, area, source_height, receiver_height, transmission = _validate_transport_arrays(
         grid,
@@ -332,6 +343,7 @@ def build_v3_radiative_transport_edges_reference(
         blocker_transmissivity,
     )
     offsets = _offsets(grid, parameters)
+    ground = _ground_elevation(grid, ground_elevation_m)
     tilt, wind_sin, wind_cos = _wind_geometry(parameters)
     sources: list[int] = []
     targets: list[int] = []
@@ -362,7 +374,13 @@ def build_v3_radiative_transport_edges_reference(
                 np.sqrt(
                     delta_x**2
                     + delta_y**2
-                    + (receiver_height[target_row, target_col] - source_z) ** 2
+                    + (
+                        ground[target_row, target_col]
+                        - ground[source_row, source_col]
+                        + receiver_height[target_row, target_col]
+                        - source_z
+                    )
+                    ** 2
                 )
             )
             denominator = distance**2 + parameters.near_field_regularization_m**2
@@ -401,8 +419,13 @@ def build_v3_radiative_transport_edges(
     max_memory_mb: int = 2048,
     block_rows: int = 64,
     profile_id: NDArray[np.str_] | None = None,
+    ground_elevation_m: NDArray[np.floating] | None = None,
 ) -> ExposureEdges:
-    """Build every in-radius directed edge using offset-vectorized row blocks."""
+    """Build edges from relative flame/receiver heights and optional ground elevation.
+
+    Source height is the flame length above local ground: its radiative centre
+    lies halfway along the tilted flame. Do not add absolute elevation to it.
+    """
 
     source, target, area, source_height, receiver_height, transmission = _validate_transport_arrays(
         grid,
@@ -413,6 +436,7 @@ def build_v3_radiative_transport_edges(
         receiver_height_m,
         blocker_transmissivity,
     )
+    ground = _ground_elevation(grid, ground_elevation_m)
     if isinstance(block_rows, bool) or not isinstance(block_rows, int) or block_rows <= 0:
         raise ValueError("block_rows must be a positive integer")
     estimate = estimate_v3_transport_resources(grid, source, target, parameters)
@@ -459,7 +483,15 @@ def build_v3_radiative_transport_edges(
             delta_y = -drow * grid.cell_size_m - horizontal_shift * wind_cos
             source_z = half_flame * cos(tilt)
             distance = np.sqrt(
-                delta_x**2 + delta_y**2 + (receiver_height[target_row, target_col] - source_z) ** 2
+                delta_x**2
+                + delta_y**2
+                + (
+                    ground[target_row, target_col]
+                    - ground[source_row, source_col]
+                    + receiver_height[target_row, target_col]
+                    - source_z
+                )
+                ** 2
             )
             denominator = distance**2 + parameters.near_field_regularization_m**2
             if np.any(denominator <= 0.0):

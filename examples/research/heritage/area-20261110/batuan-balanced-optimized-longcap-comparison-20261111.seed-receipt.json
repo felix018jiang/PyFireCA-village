@@ -1,0 +1,598 @@
+{
+  "all_eight_retained_checks": [
+    {
+      "complete_manifest_sha256": "32ca65a8cf4d1686c1b6b580ad015c2a1507f58ec95caf1ca2d9a4c7bb1ce311",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 180044603.77138007,
+            "building_id": "B0073",
+            "component_count": 164,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 480.2346510474708,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 0.0,
+            "building_id": "B0120",
+            "component_count": 753,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 300.0,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 101.31060308299493,
+        "evaluation_sha256": "61deff3e5b9519ae170b5d5e800b69e950bcf797a12a5683a4649b5390853023",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 250.0,
+          "active_roof_area_m2": 2697.7730577135826,
+          "clearing_plus_ignited_annotation_count_lower": 39,
+          "clearing_plus_ignited_annotation_count_upper": 40,
+          "clearing_plus_ignited_roof_area_m2": 5903.871029144555,
+          "consumed_fuel_kg": 47064.85959567811,
+          "ignited_nonroof_area_m2": 1200.0,
+          "ignited_roof_area_m2": 5460.029056249721,
+          "nonroof_fire_depleted_kg": 2853.457821284722,
+          "roof_fire_depleted_kg": 44211.40177439338
+        },
+        "nodes": 113040,
+        "prepared_s": 4.006288000033237,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 3347516,
+        "reached_horizon": true,
+        "scale_m": 1.0,
+        "simulated_until_s": 3600.0,
+        "solve_s": 97.30426129099214,
+        "source_budget": {
+          "available_energy_J": 4390200013.162099,
+          "covered_area_m2": 25.000000074951597,
+          "initial_dry_fuel_mass_kg": 450.00000134912875
+        },
+        "source_id": "B0075",
+        "source_replaced": false
+      },
+      "scenario_id": "B0075-known-h1",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "9545f731453d87f63e9308a280e07b6e1ae5dc3e0d11e586c326c932c47b22db",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 175969963.99425435,
+            "building_id": "B0073",
+            "component_count": 591,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 485.92740004989514,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 0.0,
+            "building_id": "B0120",
+            "component_count": 2824,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 300.0,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 366.06387358298525,
+        "evaluation_sha256": "de35873fd365a5af4f8bbb10ea1ff3b47add374e6aeca23010913c3552de1a91",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 350.0,
+          "active_roof_area_m2": 2420.5175906740924,
+          "clearing_plus_ignited_annotation_count_lower": 31,
+          "clearing_plus_ignited_annotation_count_upper": 31,
+          "clearing_plus_ignited_roof_area_m2": 4784.699431716971,
+          "consumed_fuel_kg": 37164.90330645017,
+          "ignited_nonroof_area_m2": 1150.0,
+          "ignited_roof_area_m2": 4340.857458822137,
+          "nonroof_fire_depleted_kg": 2399.005139151389,
+          "roof_fire_depleted_kg": 34765.89816729878
+        },
+        "nodes": 121649,
+        "prepared_s": 5.1766438750200905,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 15175890,
+        "reached_horizon": true,
+        "scale_m": 0.5,
+        "simulated_until_s": 3600.0,
+        "solve_s": 360.88713287498103,
+        "source_budget": {
+          "available_energy_J": 4390200013.165462,
+          "covered_area_m2": 25.00000007497075,
+          "initial_dry_fuel_mass_kg": 450.00000134947334
+        },
+        "source_id": "B0075",
+        "source_replaced": false
+      },
+      "scenario_id": "B0075-known-h0.5",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "af731f9a6bd83f3019fa698010c92bef54777f2ffd8a3b2421278be844d8f32d",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 8037213.616013706,
+            "building_id": "B0073",
+            "component_count": 164,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 366.7031858284982,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 23029472.931667015,
+            "building_id": "B0120",
+            "component_count": 753,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 389.1186805967533,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 76.33036729198648,
+        "evaluation_sha256": "eb3b4fc57d12879f0f7ecab6e115b07c6ee13907031a12a90b50a8d2bd1757d2",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 1978.149608499683,
+          "clearing_plus_ignited_annotation_count_lower": 32,
+          "clearing_plus_ignited_annotation_count_upper": 32,
+          "clearing_plus_ignited_roof_area_m2": 4742.972106660452,
+          "consumed_fuel_kg": 36781.9328626129,
+          "ignited_nonroof_area_m2": 25.0,
+          "ignited_roof_area_m2": 4299.130133765617,
+          "nonroof_fire_depleted_kg": 150.0,
+          "roof_fire_depleted_kg": 36631.9328626129
+        },
+        "nodes": 112000,
+        "prepared_s": 4.640182624978479,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 2719154,
+        "reached_horizon": true,
+        "scale_m": 1.0,
+        "simulated_until_s": 3600.0,
+        "solve_s": 71.69008566701086,
+        "source_budget": {
+          "available_energy_J": 4390200075.683611,
+          "covered_area_m2": 25.000000430980432,
+          "initial_dry_fuel_mass_kg": 450.00000775764767
+        },
+        "source_id": "B0067",
+        "source_replaced": true
+      },
+      "scenario_id": "B0071-known-h1",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "2eabff515a1500806ea23efb22b4387f51456a859532c3083e5bd47216661ddd",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 8037213.615883519,
+            "building_id": "B0073",
+            "component_count": 591,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 373.15,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 22702989.458993383,
+            "building_id": "B0120",
+            "component_count": 2824,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 397.0207721271086,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 216.6515192920342,
+        "evaluation_sha256": "ea97a910f4a3048a7db5600a465e2a3ffee41e85befba4c74ca99117981e4798",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 1897.155200249926,
+          "clearing_plus_ignited_annotation_count_lower": 32,
+          "clearing_plus_ignited_annotation_count_upper": 32,
+          "clearing_plus_ignited_roof_area_m2": 4482.300330985904,
+          "consumed_fuel_kg": 34502.50131433971,
+          "ignited_nonroof_area_m2": 25.0,
+          "ignited_roof_area_m2": 4038.45835809107,
+          "nonroof_fire_depleted_kg": 150.0,
+          "roof_fire_depleted_kg": 34352.50131433971
+        },
+        "nodes": 117871,
+        "prepared_s": 5.219985583040398,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 8393134,
+        "reached_horizon": true,
+        "scale_m": 0.5,
+        "simulated_until_s": 3600.0,
+        "solve_s": 211.4314331249916,
+        "source_budget": {
+          "available_energy_J": 4390200075.680282,
+          "covered_area_m2": 25.000000430961478,
+          "initial_dry_fuel_mass_kg": 450.0000077573065
+        },
+        "source_id": "B0067",
+        "source_replaced": true
+      },
+      "scenario_id": "B0071-known-h0.5",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "bfc2b3b14e38a7a6e09ed9cdbff48446675f7feb50688782f6da9b93deb042ef",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 23023205.456923265,
+            "building_id": "B0073",
+            "component_count": 164,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 458.7591517076447,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 23079670.42715921,
+            "building_id": "B0120",
+            "component_count": 753,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 382.0338366691215,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 87.50820537499385,
+        "evaluation_sha256": "52ac8b631f7da9a11d27608bf6ede4cd8e2d51d6350e6ba430567eb54f11a0dc",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 2398.4841712139796,
+          "clearing_plus_ignited_annotation_count_lower": 44,
+          "clearing_plus_ignited_annotation_count_upper": 44,
+          "clearing_plus_ignited_roof_area_m2": 6541.362445442264,
+          "consumed_fuel_kg": 52073.169362617016,
+          "ignited_nonroof_area_m2": 50.0,
+          "ignited_roof_area_m2": 6097.5204725474305,
+          "nonroof_fire_depleted_kg": 164.25,
+          "roof_fire_depleted_kg": 51908.919362617016
+        },
+        "nodes": 112055,
+        "prepared_s": 4.095345499983523,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 2746074,
+        "reached_horizon": true,
+        "scale_m": 1.0,
+        "simulated_until_s": 3600.0,
+        "solve_s": 83.41277941700537,
+        "source_budget": {
+          "available_energy_J": 4390200014.22747,
+          "covered_area_m2": 25.000000081018353,
+          "initial_dry_fuel_mass_kg": 450.0000014583302
+        },
+        "source_id": "B0062",
+        "source_replaced": false
+      },
+      "scenario_id": "B0062-known-h1",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "6d5ad5bbe89d1458b2b08a459724e2a6a3e4525c7867895f0e0cbd752f229960",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 17297129.25540605,
+            "building_id": "B0073",
+            "component_count": 591,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 396.90481101744547,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 23079670.427103706,
+            "building_id": "B0120",
+            "component_count": 2824,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 389.83478711470207,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 232.28122608398553,
+        "evaluation_sha256": "fa1b39e9521f9223ed8246ff3dd5d9978bb2e3d131eb921a96f7bf5f93dfabcf",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 2216.1017760041887,
+          "clearing_plus_ignited_annotation_count_lower": 40,
+          "clearing_plus_ignited_annotation_count_upper": 41,
+          "clearing_plus_ignited_roof_area_m2": 6200.365153028323,
+          "consumed_fuel_kg": 49500.707010029604,
+          "ignited_nonroof_area_m2": 50.0,
+          "ignited_roof_area_m2": 5756.523180133487,
+          "nonroof_fire_depleted_kg": 164.25,
+          "roof_fire_depleted_kg": 49336.4570100296
+        },
+        "nodes": 118078,
+        "prepared_s": 5.542844249983318,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 8622382,
+        "reached_horizon": true,
+        "scale_m": 0.5,
+        "simulated_until_s": 3600.0,
+        "solve_s": 226.7381934580044,
+        "source_budget": {
+          "available_energy_J": 4390200014.235422,
+          "covered_area_m2": 25.000000081063636,
+          "initial_dry_fuel_mass_kg": 450.00000145914527
+        },
+        "source_id": "B0062",
+        "source_replaced": false
+      },
+      "scenario_id": "B0062-known-h0.5",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "e78f880738028389521a6c3479906d186768711d6ce25c333517c5d677ad19c0",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 6352372.844496975,
+            "building_id": "B0073",
+            "component_count": 164,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 373.15,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 23037128.194890592,
+            "building_id": "B0120",
+            "component_count": 753,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 373.15,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 97.62522345897742,
+        "evaluation_sha256": "87e3af5445dcc3eb32ffdbe0cfeb31e12f392dd909f867f2a804bd68ff0f853a",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 1936.1638013050333,
+          "clearing_plus_ignited_annotation_count_lower": 35,
+          "clearing_plus_ignited_annotation_count_upper": 35,
+          "clearing_plus_ignited_roof_area_m2": 5306.509911726587,
+          "consumed_fuel_kg": 42873.57456002549,
+          "ignited_nonroof_area_m2": 50.0,
+          "ignited_roof_area_m2": 4862.667938831753,
+          "nonroof_fire_depleted_kg": 164.25,
+          "roof_fire_depleted_kg": 42709.32456002549
+        },
+        "nodes": 112038,
+        "prepared_s": 4.947055292024743,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 2736164,
+        "reached_horizon": true,
+        "scale_m": 1.0,
+        "simulated_until_s": 3600.0,
+        "solve_s": 92.67772508296184,
+        "source_budget": {
+          "available_energy_J": 4390199984.728011,
+          "covered_area_m2": 24.999999913033644,
+          "initial_dry_fuel_mass_kg": 449.9999984346054
+        },
+        "source_id": "B0063",
+        "source_replaced": true
+      },
+      "scenario_id": "B0061-known-h1",
+      "status": "passed"
+    },
+    {
+      "complete_manifest_sha256": "f85ef3fb53a8a149aafd7ae59793d800952a5db63185055d64f9912e8c3cac98",
+      "evidence": {
+        "core_outcomes": [
+          {
+            "absorbed_radiation_J": 6089765.288977442,
+            "building_id": "B0073",
+            "component_count": 591,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 373.15,
+            "received_convection_J": 0.0,
+            "role": "gulou",
+            "shared_temperature_components": 0
+          },
+          {
+            "absorbed_radiation_J": 23034979.867946748,
+            "building_id": "B0120",
+            "component_count": 2824,
+            "first_ignition_s": null,
+            "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+            "identity_status": "annotation_only",
+            "ignited": false,
+            "ignited_component_count": 0,
+            "independent_temperature_states": true,
+            "maximum_valid_surface_temperature_K": 373.15,
+            "received_convection_J": 0.0,
+            "role": "fengyuqiao",
+            "shared_temperature_components": 0
+          }
+        ],
+        "elapsed_s": 247.6560227079899,
+        "evaluation_sha256": "e8a8ac2ce1f905087aeab419d2f756314bdedeac0e3c9265e67e25a8cd14a4e6",
+        "invalid_reasons": [],
+        "loss_metrics": {
+          "active_nonroof_area_m2": 0.0,
+          "active_roof_area_m2": 1988.6619625259996,
+          "clearing_plus_ignited_annotation_count_lower": 33,
+          "clearing_plus_ignited_annotation_count_upper": 33,
+          "clearing_plus_ignited_roof_area_m2": 4850.047360331677,
+          "consumed_fuel_kg": 38696.512105607806,
+          "ignited_nonroof_area_m2": 50.0,
+          "ignited_roof_area_m2": 4406.205387436843,
+          "nonroof_fire_depleted_kg": 164.25,
+          "roof_fire_depleted_kg": 38532.2621056078
+        },
+        "nodes": 118015,
+        "prepared_s": 5.352098250004929,
+        "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "radiation_edges": 8518388,
+        "reached_horizon": true,
+        "scale_m": 0.5,
+        "simulated_until_s": 3600.0,
+        "solve_s": 242.3037760000443,
+        "source_budget": {
+          "available_energy_J": 4390199984.737692,
+          "covered_area_m2": 24.999999913088768,
+          "initial_dry_fuel_mass_kg": 449.9999984355977
+        },
+        "source_id": "B0063",
+        "source_replaced": true
+      },
+      "scenario_id": "B0061-known-h0.5",
+      "status": "passed"
+    }
+  ],
+  "global_joint_optimality_proven": false,
+  "joint_outcomes_read": false,
+  "master_config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-retained-area-master.json",
+  "master_config_sha256": "d9aa8d882024601ece50bd721d444b90283450fbbec46d073c39ef1a8d4f93d8",
+  "master_experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json",
+  "master_experiment_sha256": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+  "master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+  "new_CA_checks": 0,
+  "roof_area_optimality_proven": false,
+  "schema_version": "joint-retained-roof-seed-receipt-1",
+  "search_bytes_sha256": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+  "search_snapshot_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json",
+  "seed_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "selection": "best_fully_validated_retained_roof_seed_at_captured_search_bytes",
+  "source_search_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/search.json",
+  "verified_feasible_row": {
+    "cleared_area_m2": 443.8419687401409,
+    "demolished_ids": [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    "loss_metrics_complete": true,
+    "unavailable_loss_metrics": [],
+    "worst_case_loss_metrics": {
+      "active_nonroof_area_m2": 350.0,
+      "active_roof_area_m2": 2697.7730577135826,
+      "clearing_plus_ignited_annotation_count_lower": 44,
+      "clearing_plus_ignited_annotation_count_upper": 44,
+      "clearing_plus_ignited_roof_area_m2": 6541.362445442264,
+      "consumed_fuel_kg": 52073.169362617016,
+      "ignited_nonroof_area_m2": 1200.0,
+      "ignited_roof_area_m2": 6097.5204725474305,
+      "nonroof_fire_depleted_kg": 2853.457821284722,
+      "roof_fire_depleted_kg": 51908.919362617016
+    }
+  },
+  "village_id": "batuan"
+}

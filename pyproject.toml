@@ -60,11 +60,15 @@ village = [
   "PyProj>=3.6",
   "Shapely>=2",
 ]
+village-vision = [
+  "opencv-python-headless>=4.10",
+]
 dev = [
   "pytest>=8",
   "pytest-cov>=5",
   "ruff>=0.6",
   "pre-commit>=3.8",
+  "scipy>=1.10",
 ]
 
 [tool.hatch.build.targets.wheel]

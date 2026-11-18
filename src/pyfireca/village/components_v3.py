@@ -248,6 +248,8 @@ def resolve_components(
             )
         if contact.receiver_vertical_half_extent_m > 0:
             raise ValueError("finite receiver bands require the single-state solver")
+        if contact.terrain_reference != "cell_center":
+            raise ValueError("shared-face terrain contact requires the single-state solver")
         if request.grid.cell_size_m > contact.max_cell_size_m + 1e-12:
             raise ValueError("component contact grid exceeds its explicit maximum cell size")
     count = request.grid.height * request.grid.width

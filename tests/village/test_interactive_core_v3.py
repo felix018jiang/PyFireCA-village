@@ -109,6 +109,33 @@ def test_failed_job_releases_run_slot_and_next_run_preserves_original_arrays(sta
         )
 
 
+def test_rerun_inherits_case_flame_contact_without_server_override(state, tmp_path):
+    from dataclasses import replace
+
+    from pyfireca.village.flame_contact_v3 import load_flame_contact_parameters
+    from pyfireca.village.workflow_v3 import load_v3_case_bundle
+
+    config = (
+        Path(__file__).parents[2]
+        / "examples/village/vegetation_v3/flame-contact-batuan-slope-5m.synthetic.yml"
+    )
+    contact = load_flame_contact_parameters(config)
+    old = load_v3_case_bundle(state.case_dir)
+    state.case_dir = write_v3_case_bundle(
+        replace(old.request, flame_contact=contact), tmp_path / "enabled-case"
+    )
+    assert state.flame_contact is None  # The server must retain the bundle's configuration.
+    interactive_v3._run_job(state, "contact-enabled", 0, 0, 1)
+    assert state.jobs["contact-enabled"]["status"] == "completed"
+    saved = load_v3_case_bundle(state.output_root / "contact-enabled/case")
+    assert saved.request.flame_contact == contact
+    manifest = json.loads(
+        (state.output_root / "contact-enabled/run/viewer/manifest.json").read_text()
+    )
+    assert manifest["flame_contact"]["heat_transfer_coefficient_W_m2_K"] == 50
+    assert manifest["flame_contact"]["terrain_reference"] == "shared_face"
+
+
 def test_progress_callback_does_not_change_solver_results(state):
     from pyfireca.village.solver_v3 import run_v3_simulation
     from pyfireca.village.workflow_v3 import load_v3_case_bundle

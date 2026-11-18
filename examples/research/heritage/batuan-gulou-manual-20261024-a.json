@@ -1,0 +1,62 @@
+{
+  "schema_version": "heritage-bridge-manual-plans-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "evidence_path": "../../../docs/results/heritage-gulou-paths-20261024.json",
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 3.0,
+  "archive_native_bundle": true,
+  "required_demolished_ids": [
+    "B0061"
+  ],
+  "comparison_plan_id": "remove-B0061",
+  "purpose": "predeclared_three_manual_gulou_supplements;retain_bridge_intervention;no_optimization",
+  "reference_dir": "../../../runs/research/heritage-B0061-validation-20261024-a",
+  "validation_cohort": "a",
+  "plans": [
+    {
+      "plan_id": "retain61-add76",
+      "demolished_ids": [
+        "B0061",
+        "B0076"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "draw_ids": [
+        "near-B0073-001"
+      ]
+    },
+    {
+      "plan_id": "retain61-add71-76",
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "draw_ids": [
+        "near-B0073-001"
+      ]
+    },
+    {
+      "plan_id": "retain61-add71-75",
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0075"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed",
+      "draw_ids": [
+        "near-B0073-001"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": "heritage-addback-followup-1",
+  "parent_manifest_sha256": "51aa5fd3b00ab1f4dca05636236e89e114903050ec85ad23d6c1d57d6b0bee7d",
+  "trigger_screen_result_sha256": "91145c120d7bb58eff43f45e3842d881e018f17068bf95279371944e6231cbbd",
+  "trigger": "restore71_passed_initial_B0077_both_scales;test_predeclared_known_B0071_failure",
+  "config": "batuan-restore71-regression-20261024.json",
+  "config_sha256": "fdd4e93320d82579621c6e8554d93dccd7e50ce23ce82405426d8bb941278c34",
+  "output": "runs/research/heritage-restore71-regression-20261024",
+  "source_reference": "runs/research/heritage-B0061-validation-20261024-b",
+  "source_draw_id": "near-B0073-003",
+  "new_runs": 6,
+  "stop_rule": "if_restore71_has_valid_core_failure_reject_it_without_running_remaining_bank;else_continue_remaining_original_draws_and_B0063_before_admissibility",
+  "optimization": false
+}

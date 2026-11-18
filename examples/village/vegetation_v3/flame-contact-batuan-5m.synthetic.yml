@@ -1,0 +1,9 @@
+schema_version: village-flame-contact-1
+# Explicit coarse-grid demonstration, not a field calibration or a validated 5m spread rate.
+# Heat-transfer values reuse the existing synthetic near-field model.
+evidence: synthetic
+provenance: synthetic:batuan_5m_near_field_demonstration_20261016_not_field_calibration
+gas_temperature_K: 1100
+heat_transfer_coefficient_W_m2_K: 50
+contact_fraction: 0.5
+max_cell_size_m: 5

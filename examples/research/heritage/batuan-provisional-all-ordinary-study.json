@@ -1,0 +1,33 @@
+{
+  "schema_version": "heritage-p1-study-1",
+  "case_dir": "../../../runs/research/heritage-geometry-20261023-r2/case",
+  "labelme_annotations": "../../../runs/research/heritage-geometry-20261023-r2/inputs/annotations.labelme.json",
+  "image_reference": "../../../runs/research/heritage-geometry-20261023-r2/spatial/image_ref.json",
+  "structures_path": "../../../runs/research/heritage-geometry-20261023-r2/spatial/buildings.json",
+  "targets": [
+    {
+      "building_id": "B0073",
+      "role": "gulou",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    },
+    {
+      "building_id": "B0120",
+      "role": "fengyuqiao",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    }
+  ],
+  "protected_ids": ["B0073", "B0120"],
+  "fixed_source_ids": [],
+  "candidate_ids": [],
+  "candidate_policy": "all_ordinary_except_protected_targets_and_sources",
+  "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+  "pending": [
+    "random_source_sampling_protocol",
+    "overlapping_annotation_group_actions_or_geometry_disambiguation",
+    "field_verification_of_demolition_feasibility_and_community_impact"
+  ],
+  "scenarios": [],
+  "plans": []
+}

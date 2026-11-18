@@ -1,0 +1,48 @@
+{
+  "schema_version": "heritage-random-source-pilot-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "seed": 2026102407,
+  "draws_per_stratum": 1,
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "roof_scales_m": [1.0, 0.5],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "plans": [
+    {"plan_id": "baseline", "demolished_ids": []},
+    {
+      "plan_id": "selected-B0061-B0071-B0076",
+      "demolished_ids": ["B0061", "B0071", "B0076"],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    },
+    {
+      "plan_id": "bridge-swap-B0063-B0071-B0076",
+      "demolished_ids": ["B0063", "B0071", "B0076"],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    },
+    {
+      "plan_id": "drum-area-match-B0061-B0067-B0077",
+      "demolished_ids": ["B0061", "B0067", "B0077"],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    },
+    {
+      "plan_id": "global-area-match-B0063-B0067-B0071",
+      "demolished_ids": ["B0063", "B0067", "B0071"],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    }
+  ],
+  "demolition_selection_evidence": "three_controls_frozen_by_equal_count_and_pre_simulation_vector_area_rules",
+  "max_nodes": 200000,
+  "max_radiation_edges": 20000000,
+  "minimum_free_disk_GB": 2.0,
+  "scope": "paired_position_advantage_controls_on_known_retained_threat_sources;no_optimization;not_village_risk",
+  "archive_native_bundle": true,
+  "archive_layout": true,
+  "selection_result_sha256": "71abbc5bbaf9e34c54ed43e3e81942376ec6cb8c859940bddb9f72c2265c3498",
+  "validation_cohort": "g",
+  "target_source_ids": ["B0062", "B0075"]
+}

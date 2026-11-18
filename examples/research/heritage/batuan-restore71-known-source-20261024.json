@@ -1,0 +1,100 @@
+{
+  "schema_version": "heritage-random-sources-1",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "seed": 2026102402,
+  "rng": "numpy-PCG64;SHA256-keyed-per-draw-and-building",
+  "draws_per_stratum": 1,
+  "sampling": "prescribed_known_failure_draw;not_new_independent_sampling",
+  "source_condition": "one_fire_in_retained_near_gulou_population_at_prescribed_priority_and_anchors",
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "strata": {
+    "near-B0073": [
+      "B0031",
+      "B0067",
+      "B0071",
+      "B0074",
+      "B0075",
+      "B0076",
+      "B0077"
+    ],
+    "near-B0120": [],
+    "background": []
+  },
+  "members": {
+    "B0031": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 388.1428512702262,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 5.036063503757587
+    },
+    "B0067": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 176.41133973125253,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 12.585204821048597
+    },
+    "B0071": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 213.17081613681844,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 9.387264199358075
+    },
+    "B0074": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 113.79916134136973,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 9.737900500118096
+    },
+    "B0075": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 82.60819032431837,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 5.801588023429711
+    },
+    "B0076": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 32.825139147476975,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 0.7822847407576603
+    },
+    "B0077": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 72.17113150270191,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 11.517281031771835
+    }
+  },
+  "excluded_sources": [
+    {
+      "building_id": "B0086",
+      "reason": "unambiguous_roof_smaller_than_prescribed_fire",
+      "unambiguous_area_m2": 0.0009532929937218289
+    },
+    {
+      "building_id": "B0149",
+      "reason": "no_unambiguous_roof"
+    }
+  ],
+  "anchor_policy": "uniform_in_frozen_unambiguous_roof;disk_intersection_exact_area",
+  "demolished_source_policy": "first_retained_in_frozen_priority;never_no_fire_success",
+  "weight_policy": "retained_stratum_count/retained_total/draws_per_stratum",
+  "draws": [
+    {
+      "draw_id": "near-B0073-003",
+      "stratum": "near-B0073",
+      "priority_ids": [
+        "B0071",
+        "B0067",
+        "B0076",
+        "B0074",
+        "B0077",
+        "B0075",
+        "B0031"
+      ],
+      "baseline_source_id": "B0071"
+    }
+  ],
+  "unrestricted_protocol_sha256": "78f5f199711eb6530b8f5d117730d859b630efe51f4e0b921e50a88c0990790b",
+  "protocol_sha256": "6ea11f3ce0fc4c3d7e1b8fc4050fbdaa49a4aa10bb6215c7350b21391953d9ba"
+}

@@ -657,7 +657,12 @@ def write_v3_village_viewer(
             "path": "ignition_cause.bin",
             "dtype": "uint8",
             "order": "C",
-            "labels": {"0": "无", "1": "直接火源", "2": "热引燃"},
+            "labels": {
+                "0": "无",
+                "1": "直接火源",
+                "2": "热引燃",
+                **({"3": "飞火起燃"} if request.firebrands is not None else {}),
+            },
         },
         "building_cells": "building_cells.json",
     }
@@ -695,6 +700,14 @@ def write_v3_village_viewer(
                 "255": "域外",
             },
         }
+    if request.firebrands is not None:
+        manifest["schema_version"] = "village-viewer-4"
+        manifest["firebrands"] = {
+            "configuration": request.firebrands.to_mapping(),
+            "counts": result.firebrands["counts"],
+            "events": "../firebrand_events.jsonl",
+            "budget": "../firebrand_budget.csv",
+        }
     (viewer / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
@@ -721,6 +734,22 @@ def write_v3_run_outputs(
     output.mkdir(parents=True)
     outputs = output / "outputs"
     outputs.mkdir()
+    if result.firebrands is not None:
+        report = result.firebrands
+        (output / "firebrand_events.jsonl").write_text(
+            "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in report["events"]),
+            encoding="utf-8",
+        )
+        with (output / "firebrand_budget.csv").open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.DictWriter(stream, fieldnames=list(report["budgets"][0]))
+            writer.writeheader()
+            writer.writerows(report["budgets"])
+        (output / "firebrand_summary.json").write_text(
+            json.dumps(
+                {k: v for k, v in report.items() if k not in {"events", "budgets"}}, indent=2
+            ),
+            encoding="utf-8",
+        )
     if snapshot_store is not None and chunk_frames is None:
         raise ValueError("streamed snapshots require chunk_frames")
     if snapshot_store is not None and not snapshot_store.closed:
@@ -786,6 +815,12 @@ def write_v3_run_outputs(
     groups: dict[str, dict[str, Any]] = {}
     labels = material_labels or {}
     state = final.state
+    source_removed = result.initial_fuel_kg - final.fuel_remaining_kg
+    locally_consumed = source_removed.copy()
+    if request.firebrands is not None:
+        for source in request.firebrands.sources:
+            selected = (request.material_index == source.material_index) & request.source_mask
+            locally_consumed[selected] *= 1 - source.release_mass_fraction
     for index in np.unique(request.material_index):
         if index < 0:
             continue
@@ -799,9 +834,7 @@ def write_v3_run_outputs(
             "nonbuilding_cell_count": int(np.count_nonzero(mask & (request.building_index < 0))),
             "covered_area_m2": float(np.sum(request.parameters.covered_area_m2[mask])),
             "initial_fuel_kg": float(np.sum(result.initial_fuel_kg[mask])),
-            "consumed_fuel_kg": float(
-                np.sum(result.initial_fuel_kg[mask] - final.fuel_remaining_kg[mask])
-            ),
+            "consumed_fuel_kg": float(np.sum(locally_consumed[mask])),
             "heated_cell_count": int(np.count_nonzero(mask & np.isin(state, [2, 3, 4]))),
             "ignited_cell_count": int(np.count_nonzero(mask & np.isfinite(final.ignition_time_s))),
             "burned_out_cell_count": int(np.count_nonzero(mask & (state == 4))),
@@ -844,6 +877,9 @@ def write_v3_run_outputs(
         encoding="utf-8",
     )
     run_record = dict(scenario_metadata or {})
+    if request.firebrands is not None:
+        run_record["firebrands"] = request.firebrands.to_mapping()
+        run_record["firebrand_counts"] = result.firebrands["counts"]
     run_record.update(
         {
             "schema_version": "village-run-v3-1",

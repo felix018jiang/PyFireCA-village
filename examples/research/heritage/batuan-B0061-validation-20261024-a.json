@@ -1,0 +1,36 @@
+{
+  "schema_version": "heritage-random-source-pilot-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "seed": 2026102401,
+  "draws_per_stratum": 3,
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 1200.0,
+  "plans": [
+    {
+      "plan_id": "baseline",
+      "demolished_ids": []
+    },
+    {
+      "plan_id": "remove-B0061",
+      "demolished_ids": [
+        "B0061"
+      ],
+      "overlap_policy": "retain_shared_roof",
+      "ground_evidence": "hypothetical_exclusive_roof_clearance;retain_all_shared_fuel_of_surviving_roofs;not_surveyed"
+    }
+  ],
+  "demolition_selection_evidence": "B0061_frozen_from_completed_development_manual_comparison_before_independent_validation",
+  "max_nodes": 200000,
+  "max_radiation_edges": 14000000,
+  "minimum_free_disk_GB": 3.0,
+  "scope": "independent_confirmation_of_fixed_B0061_only;no_candidate_updates;one_independent_roof_anchor_per_draw;all_three_strata;no_optimization",
+  "archive_native_bundle": true,
+  "selection_result_sha256": "2e31dd649ee9ba2b15918b90663280621014d3d6c6b3238730e1ad09dd38ea11",
+  "validation_cohort": "a"
+}

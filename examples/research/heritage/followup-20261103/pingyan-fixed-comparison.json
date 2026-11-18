@@ -1,0 +1,91 @@
+{
+  "schema_version": "heritage-fixed-comparison-1",
+  "place_name": "平岩村",
+  "study_path": "../pingyan-study-20261029.json",
+  "source_fires": [
+    {
+      "fire_id": "drum-B0164-late-ignition",
+      "protocol_path": "pingyan-B0164-source.json",
+      "draw_id": "near-B0166-001"
+    },
+    {
+      "fire_id": "bridge-B0120-coverage",
+      "protocol_path": "pingyan-B0120-source.json",
+      "draw_id": "near-B0035-001"
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "baseline",
+      "demolished_ids": []
+    },
+    {
+      "plan_id": "selected",
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ]
+    },
+    {
+      "plan_id": "area-matched-position",
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0168",
+        "B0188"
+      ]
+    }
+  ],
+  "horizon_s": 3600.0,
+  "checkpoints_s": [
+    1200.0,
+    2400.0,
+    3600.0
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "minimum_free_disk_GB": 5.0,
+  "max_total_checks": 12,
+  "max_wall_time_s": 14400.0,
+  "core_overlap_policy": "heritage_priority",
+  "source_audit": [
+    {
+      "fire_id": "drum-B0164-late-ignition",
+      "protocol_path": "examples/research/heritage/pingyan-heldout-20261029-source-3.json",
+      "draw_id": "near-B0166-001",
+      "source_id": "B0164",
+      "footprint_sha256": "5b799696a15ce36c43a5300d1a76470385a18c1e67c3add440e90c5caf947727",
+      "role": "previous_1169s_baseline_ignition_replay",
+      "parent_source_file_sha256": "b9c76d9d50b24db7cb3f74d568d262e56de80b3a45e14d7e3f7e6a5f9c429ef7",
+      "polygon_verified": true,
+      "ignition_area_m2": 25.00000000000067
+    },
+    {
+      "fire_id": "bridge-B0120-coverage",
+      "protocol_path": "examples/research/heritage/pingyan-heldout-20261029-source-2.json",
+      "draw_id": "near-B0035-001",
+      "source_id": "B0120",
+      "footprint_sha256": "3c324902d520acb8ee1c30d5e1f620010e0a6362d8621c688363a737b96507a8",
+      "role": "previous_nonigniting_bridge_source_duration_coverage",
+      "parent_source_file_sha256": "66757f95844dcce04563acf745cf699d7a61f03aff212719b5b04d6ef3df4eab",
+      "polygon_verified": true,
+      "ignition_area_m2": 25.000000000007038
+    }
+  ],
+  "position_selection_file": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-followup-position-selection-20261103.json",
+  "position_selection_sha256": "75bae2633125018186871b8a691ccfc1de0c6b8054f98c08da14c885ef7b25d7",
+  "scope": "paired_duration_and_position_study;no_reoptimization;not_independent_risk_estimation",
+  "layout_policy": "same_intervention_union_plus_cores_plus_fixed_source_in_every_arm",
+  "historical_comparison": "polygons_and_materials_preserved;common_refinement_changed;use_this_batch_1200s_checkpoint",
+  "parent_design_config_sha256": "03259f1880e4f48a748fe23771f398d8df89c1e13d3c6fe91c35065ffc37f2f7",
+  "no_adaptive_source_or_plan_reselection": true
+}

@@ -1,4 +1,4 @@
-import {adjacentFuelCounts, eventOccurredBy, summarizeCoreFrame} from "./core-metrics.mjs";
+import {adjacentFuelCounts, eventOccurredBy, scalarDisplaySpec, summarizeCoreFrame} from "./core-metrics.mjs";
 const $ = (id) => document.getElementById(id);
 const canvas = $("mapCanvas");
 const ctx = canvas.getContext("2d");
@@ -32,7 +32,7 @@ async function loadJson(path) {
 }
 
 async function loadBinary(path) {
-  const response = await fetch(path);
+  const response = await fetch(path, {cache:"no-store"});
   if (!response.ok) throw new Error(`无法读取 ${path} (${response.status})`);
   return response.arrayBuffer();
 }
@@ -61,7 +61,11 @@ async function init() {
     const [manifest, grid, imageRef, buildings] = await Promise.all([
       loadJson("manifest.json"), loadJson("grid.json"), loadJson("image_ref.json"), loadJson("buildings.json"),
     ]);
-    if (!["village-viewer-1","village-viewer-2","village-viewer-3","village-component-viewer-1"].includes(manifest.schema_version)) throw new Error("不支持的回放版本");
+    if (manifest.schema_version === "village-background-1") {
+      await initBackground(manifest, grid, imageRef, buildings);
+      return;
+    }
+    if (!["village-viewer-1","village-viewer-2","village-viewer-3","village-viewer-4","village-component-viewer-1"].includes(manifest.schema_version)) throw new Error("不支持的回放版本");
     const frameLocal = !manifest.components && Boolean(manifest.state.chunks);
     let firstFrame = null;
     if (frameLocal) {
@@ -96,7 +100,7 @@ async function init() {
     if (materialBuffer.byteLength !== cells * 4) throw new Error("材质文件长度不正确");
     if (moistureBuffer && moistureBuffer.byteLength !== cells * 4) throw new Error("初始含水率文件长度不正确");
     if (initialFuelBuffer && initialFuelBuffer.byteLength !== cells * 8) throw new Error("初始燃料文件长度不正确");
-    if (manifest.schema_version === "village-viewer-3" && landcoverBuffer?.byteLength !== cells * 4) throw new Error("地类文件长度不正确");
+    if (["village-viewer-3","village-viewer-4"].includes(manifest.schema_version) && landcoverBuffer?.byteLength !== cells * 4) throw new Error("地类文件长度不正确");
     data = {
       manifest, grid, imageRef, buildings, image, frameLocal,
       states: new Uint8Array(stateBuffer),
@@ -126,18 +130,27 @@ async function init() {
       await initComponentReplay();
     }
     for (const option of $("layerMode").options) {
-      const available = option.value === "state" || option.value === "material" || Boolean(data[option.value]);
+      const available = ["state","background","material"].includes(option.value) || Boolean(data[option.value]);
       option.disabled = !available;
     }
     $("timeline").max = manifest.frame_count - 1;
     $("mapBadge").textContent = `${grid.width} × ${grid.height} 元胞 · ${grid.cell_size_m} m`;
     if (manifest.scenario?.place_name) document.querySelector("h1").textContent = `${manifest.scenario.place_name}火灾模拟`;
+    if (manifest.scenario?.annotation_report?.bridge_count > 0) {
+      $("burningBuildingCount").previousElementSibling.textContent = "燃烧建筑/桥";
+      $("affectedBuildingCount").previousElementSibling.textContent = "受影响建筑/桥";
+    }
     const scenarioLabel = manifest.scenario?.scenario_id ? ` · ${manifest.scenario.scenario_id}` : "";
     const vegetationLabel = manifest.scenario?.includes_nonbuilding_fuels ? " · 含建筑外可燃材料" : "";
     const elevationLabel = manifest.scenario?.elevation_physics_activated ? " · DEM 已参与计算" : "";
     const contactLabel = manifest.flame_contact ? " · 近场火焰接触换热" : "";
     const contactOverrides = manifest.flame_contact?.receiver_height_overrides_m || [];
     const filled = manifest.scenario?.hypothetically_filled_unknown_cell_count;
+    if ($("unknownLegend")) $("unknownLegend").hidden=manifest.scenario?.unknown_domain_cell_count===0;
+    if (manifest.scenario?.input_summary) {
+      $("landcoverAssumptionNote").hidden=false;
+      $("landcoverAssumptionNote").textContent=manifest.scenario.input_summary;
+    }
     if (manifest.scenario?.place_name === "高友村" && Number.isInteger(filled) && filled > 0) {
       $("landcoverAssumptionNote").hidden = false;
       $("landcoverAssumptionNote").textContent = `${filled.toLocaleString()}格未辨明地表按案例假设补全。当前高友村演示将其设为不燃，可能切断燃料通路；需要实地核实。`;
@@ -150,6 +163,10 @@ async function init() {
     if (halfExtent > 0) {
       $("contactReceiverNote").hidden = false;
       $("contactReceiverNote").textContent += ` 有效受体高度带采用±${halfExtent} m演示假设；接触热量按高度重叠比例计算。`;
+    }
+    if (manifest.flame_contact?.terrain_reference === "shared_face") {
+      $("contactReceiverNote").hidden = false;
+      $("contactReceiverNote").textContent += " 相邻可燃格按连续坡面的公共边计算接触；辐射保留DEM高差。该接触模型为演示假设。";
     }
     $("runStatus").textContent = `${manifest.model_label || manifest.model}${scenarioLabel}${vegetationLabel}${elevationLabel}${contactLabel}`;
     if (manifest.hrr?.temporal_meaning === "mean_over_last_solver_step_ending_at_sample") {
@@ -211,6 +228,68 @@ function loadImage(path) {
   });
 }
 
+async function initBackground(manifest, grid, imageRef, buildings) {
+  data = {manifest, grid, imageRef, buildings, image:await loadImage(manifest.background), backgroundOnly:true};
+  layers.buildings = false;
+  document.title = `${manifest.place_name} · 村火推演台`;
+  document.querySelector("h1").textContent = `${manifest.place_name}火灾模拟`;
+  $("timeReadout").textContent = "待建模";
+  $("runStatus").textContent = "卫星底图已载入";
+  $("modelDescription").textContent = `${manifest.place_name}底图已就绪。建筑、燃料和地形数据待准备，完成后可启用火灾模拟。`;
+  const imagePixelSize=Math.abs(imageRef.affine_pixel_to_world[0]);
+  $("mapBadge").textContent = `${imageRef.width_px} × ${imageRef.height_px} 像素 · ${imagePixelSize.toFixed(2)} 米/像素`;
+  for (const element of [$("layerMode").closest("label"), $("toggleBuildings").closest("label"), $("toggleGrid").closest("label"), document.querySelector(".legend").closest("section"), $("coreMetrics"), document.querySelector(".transport")]) element.hidden = true;
+  document.querySelector(".shell").style.gridTemplateRows = "84px 1fr";
+  const inspector = document.querySelector(".inspector");
+  inspector.replaceChildren();
+  const heading = document.createElement("p"); heading.className="section-number"; heading.textContent="影像信息";
+  const info = document.createElement("p"); info.className="control-help";
+  info.textContent = `${manifest.place_name} · ${grid.crs} · ${imageRef.width_px} × ${imageRef.height_px} 像素。滚轮缩放，拖动平移，点击查询投影坐标。`;
+  const selection = document.createElement("p"); selection.id="backgroundSelection"; selection.className="control-help";
+  inspector.append(heading, info);
+  document.querySelector(".notice").append(selection);
+  if (manifest.mosaic) {
+    const quality=document.createElement("p"); quality.className="control-help";
+    quality.textContent=`高清拼接覆盖 ${(manifest.mosaic.high_resolution_fraction*100).toFixed(1)}%；原图补齐 ${(manifest.mosaic.fallback_fraction*100).toFixed(1)}%。补齐区域仍保留原图精度。`;
+    document.querySelector(".notice").append(quality);
+  }
+  if (manifest.landcover_preview) {
+    const spec=manifest.landcover_preview;
+    const buffer=await loadBinary(spec.path);
+    if (buffer.byteLength!==grid.width*grid.height) throw new Error("地表分类尺寸不匹配");
+    data.landcover=new Uint8Array(buffer);
+    data.landcoverCanvas=document.createElement("canvas");
+    data.landcoverCanvas.width=grid.width; data.landcoverCanvas.height=grid.height;
+    const context=data.landcoverCanvas.getContext("2d"), pixels=context.createImageData(grid.width,grid.height);
+    for(let i=0;i<data.landcover.length;i++) {
+      const code=data.landcover[i], color=spec.colors[code];
+      if (!color) throw new Error(`未知分类代码：${code}`);
+      pixels.data.set([parseInt(color.slice(1,3),16),parseInt(color.slice(3,5),16),parseInt(color.slice(5,7),16),code===255?0:115],i*4);
+    }
+    context.putImageData(pixels,0,0);
+    const picker=$("layerMode"); picker.replaceChildren();
+    for (const [value,label] of [["background","卫星原图"],["landcover","地表材质初步识别"]]) {
+      const option=document.createElement("option"); option.value=value; option.textContent=label; picker.append(option);
+    }
+    picker.closest("label").hidden=false; picker.value="landcover"; layerMode="landcover";
+    picker.closest("label").querySelector("span").textContent="查看图层";
+    const legend=document.createElement("section");
+    const title=document.createElement("p"); title.className="section-number"; title.textContent="地表分类 / RGB 推测"; legend.append(title);
+    for(const [code,label] of Object.entries(spec.labels)) {
+      if(code==="255") continue;
+      const row=document.createElement("p"); row.className="control-help";
+      const swatch=document.createElement("i"); swatch.className="swatch"; swatch.style.display="inline-block"; swatch.style.background=spec.colors[code]; swatch.style.marginRight="6px";
+      row.append(swatch,document.createTextNode(`${label} · ${(100*(spec.class_counts[code]||0)/Math.max(1,spec.valid_cell_count)).toFixed(1)}%`)); legend.append(row);
+    }
+    document.querySelector(".left-rail").append(legend);
+    $("modelDescription").textContent=`${manifest.place_name}整村地表已按 RGB 颜色初步分类。点击地图查询类别。树木与草地、道路与屋顶可能混淆；燃料量、建筑材质和地形待补充后再启用模拟。`;
+    $("runStatus").textContent="底图与地表分类已载入";
+    const report=document.createElement("a"); report.href=spec.report; report.textContent="查看分类依据与统计"; report.target="_blank"; inspector.append(report);
+  }
+  $("loading").hidden = true;
+  resize();
+}
+
 function frameOffset() { return data.frameLocal ? 0 : frame*data.grid.width*data.grid.height; }
 function viewport() {
   const {width, height} = data.grid;
@@ -224,12 +303,26 @@ function render() {
   ctx.clearRect(0,0,canvas.width,canvas.height);
   ctx.save(); ctx.translate(v.x,v.y); ctx.scale(v.scale,v.scale);
   if (layers.image) drawImageLayer();
+  if (data.backgroundOnly) {
+    if (layerMode==="landcover" && data.landcoverCanvas) {
+      ctx.save(); ctx.imageSmoothingEnabled=false; ctx.drawImage(data.landcoverCanvas,0,0); ctx.restore();
+    }
+    if (selected) {
+      ctx.strokeStyle="#fff7d6"; ctx.lineWidth=2/v.scale;
+      ctx.beginPath(); ctx.arc(selected.col+.5, selected.row+.5, 5/v.scale, 0, Math.PI*2); ctx.stroke();
+      const g=data.grid;
+      $("backgroundSelection").textContent=`投影坐标：E ${(g.x_min_m+(selected.col+.5)*g.cell_size_m).toFixed(2)} m，N ${(g.y_max_m-(selected.row+.5)*g.cell_size_m).toFixed(2)} m`;
+      if(data.landcover) $("backgroundSelection").textContent+=`；地表：${data.manifest.landcover_preview.labels[data.landcover[selected.row*g.width+selected.col]]}（影像推测）`;
+    }
+    ctx.restore();
+    return;
+  }
   if (layerMode === "state") drawStateLayer();
   else if (layerMode === "material_evidence") drawEvidenceLayer();
   else if (layerMode === "material" || layerMode === "landcover") drawCategoricalLayer(layerMode);
-  else drawScalarLayer(layerMode);
-  if (layers.buildings) drawBuildings();
-  if (layers.grid && v.scale > 7) drawGrid();
+  else if (layerMode !== "background") drawScalarLayer(layerMode);
+  if (layers.buildings && layerMode !== "background") drawBuildings();
+  if (layers.grid && layerMode !== "background" && v.scale > 7) drawGrid();
   if (materialDraft && location.pathname === "/") {
     ctx.strokeStyle="#38e8ec"; ctx.lineWidth=2/v.scale;
     for (const edit of materialDraft.edits) ctx.strokeRect(edit.col,edit.row,1,1);
@@ -263,14 +356,14 @@ function scalarColor(value, minimum, maximum, logScale) {
 }
 
 function drawScalarLayer(kind) {
-  const {width,height}=data.grid, spec=data.manifest[kind], values=data[kind];
+  const {width,height}=data.grid, spec=scalarDisplaySpec(kind,data.manifest[kind]), values=data[kind];
   if (!spec || !values) return;
   const image=ctx.createImageData(width,height);
   const dynamic = ["temperature","hrr","surface_water","fuel"].includes(kind);
   for(let i=0;i<width*height;i++) {
     const value=values[dynamic ? frameOffset()+i : i];
     const validMask = kind === "temperature" ? data.temperatureValid : kind === "elevation" ? data.elevationValid : null;
-    const valid=validMask ? validMask[dynamic ? frameOffset()+i : i] : 1;
+    const valid=kind==="fuel" ? (data.initialFuel ? data.initialFuel[i]>0 : ![0,254,255].includes(data.states[frameOffset()+i])) : validMask ? validMask[dynamic ? frameOffset()+i : i] : 1;
     image.data.set(valid ? scalarColor(value,spec.minimum,spec.maximum,spec.scale==="log1p") : [0,0,0,0],i*4);
   }
   const buffer=document.createElement("canvas"); buffer.width=width; buffer.height=height;
@@ -304,7 +397,9 @@ function drawStateLayer() {
   const image = ctx.createImageData(width,height);
   const offset = frameOffset();
   for (let i=0;i<width*height;i++) {
-    const color=stateColors[data.states[offset+i]] || [255,0,255,255];
+    const state=data.states[offset+i];
+    // Keep satellite detail visible; unknown remains queryable and shown in the evidence layer.
+    const color=state===254 && layers.image ? [0,0,0,0] : stateColors[state] || [255,0,255,255];
     image.data.set(color,i*4);
   }
   const buffer=document.createElement("canvas"); buffer.width=width; buffer.height=height;
@@ -412,6 +507,8 @@ function showSelection() {
   }
   const building=findBuilding(selected);
   $("cellBuilding").textContent=building?.startsWith("index:") ? `建筑标注索引 ${building.slice(6)}` : building||"—";
+  const structure=data.buildings.buildings.find(record=>record.building_id===building);
+  if(structure?.properties?.source_label==="fengyuqiao") $("cellBuilding").textContent+="（风雨桥）";
   const status=building ? buildingState(building) : null;
   $("cellBuildingState").textContent=status===null ? "—" : data.componentReplay && status===255 ? "无所选部位" : stateLabels[status];
 }
@@ -616,6 +713,6 @@ $("stepBack").onclick=()=>{setPlaying(false);setFrame(frame-1);};
 $("stepForward").onclick=()=>{setPlaying(false);setFrame(frame+1);};
 $("playPause").onclick=()=>{if(!playing&&frame===data.manifest.frame_count-1)setFrame(0);setPlaying(!playing);};
 for(const [id,key] of [["toggleImage","image"],["toggleBuildings","buildings"],["toggleGrid","grid"]]) $(id).onchange=e=>{layers[key]=e.target.checked;render();};
-$("layerMode").onchange=e=>{layerMode=e.target.value;const scalar=!['state','material','landcover','material_evidence'].includes(layerMode), spec=data?.manifest[layerMode];$("scalarLegend").hidden=!scalar;document.querySelector(".legend").hidden=scalar||layerMode==="material_evidence";$("evidenceLegend").hidden=layerMode!=="material_evidence";if(scalar&&spec){$("scalarMaximum").textContent=`${spec.maximum.toFixed(1)} ${spec.unit||''}`;$("scalarMinimum").textContent=`${spec.minimum.toFixed(1)} ${spec.unit||''}`;}render();};
+$("layerMode").onchange=e=>{layerMode=e.target.value;if(data?.backgroundOnly){render();return;}const scalar=!['state','background','material','landcover','material_evidence'].includes(layerMode), spec=scalarDisplaySpec(layerMode,data?.manifest[layerMode]);$("scalarLegend").hidden=!scalar;document.querySelector(".legend").hidden=scalar||layerMode==="material_evidence"||layerMode==="background";$("evidenceLegend").hidden=layerMode!=="material_evidence";if(scalar&&spec){$("scalarMaximum").textContent=`${(spec.maximum*spec.legendMultiplier).toFixed(1)} ${spec.unit||''}`;$("scalarMinimum").textContent=`${(spec.minimum*spec.legendMultiplier).toFixed(1)} ${spec.unit||''}`;}render();};
 function tick(now){if(playing&&data&&!loadingFrame){if(!lastTick)lastTick=now;accumulated+=(now-lastTick)*Number($("speed").value);if(accumulated>=500){setFrame(frame+1);accumulated=0;if(frame===data.manifest.frame_count-1){setPlaying(false);}}}lastTick=now;requestAnimationFrame(tick);} requestAnimationFrame(tick);
 init();

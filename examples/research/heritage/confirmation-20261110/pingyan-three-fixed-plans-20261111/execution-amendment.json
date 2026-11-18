@@ -1,0 +1,91 @@
+{
+  "schema_version": "heritage-confirmation-pre-unblinding-execution-amendment-1",
+  "registration_sha256": "4f2efb8a70c872c762f7cd1471e0f54e097752f37b746973a5c045ca87a0cc1c",
+  "final_sha256": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+  "execution_order": [
+    "fixed-core-and-first-escape-compartment",
+    "roof-seed-protected-union-ring-b0-w2.5",
+    "roof-seed-protected-union-ring-b0-w15.01"
+  ],
+  "eligible_arms": 3,
+  "independent_draws": 4,
+  "near_draws": 3,
+  "background_draws": 1,
+  "scales_per_draw": 2,
+  "observations_per_arm": 8,
+  "expected_observations": 24,
+  "source": "same registered draw; first retained; same 25m2 footprint for same realized owner; distinct owners compared as policies and identified as unmatched",
+  "mesh": "joint roof-action and heritage union plus original per-draw source prefix",
+  "acceptance": "each arm requires all eight strict native no-core-ignition and valid extinction; track peak K and worst N/A; time, edge or capacity unknown stays unknown",
+  "failure": "verified strict core ignition rejects that arm; skipped cases stay missing",
+  "held_source_parameters": {
+    "seed": 202611101102,
+    "rng": "numpy-PCG64;SHA256-keyed-per-draw-and-building",
+    "rng_namespace": "independent-confirmation-20261110-v1:pingyan",
+    "allocation": [
+      {
+        "kind": "near_core",
+        "core_id": "B0035",
+        "draw_number": 1
+      },
+      {
+        "kind": "near_core",
+        "core_id": "B0036",
+        "draw_number": 1
+      },
+      {
+        "kind": "near_core",
+        "core_id": "B0166",
+        "draw_number": 1
+      },
+      {
+        "kind": "background",
+        "draw_number": 1
+      }
+    ],
+    "ignition_area_m2": 25.0,
+    "near_distance_m": 15.0,
+    "empty_near_pool_policy": "within_60m_targeted_pressure_pool;otherwise_stop_before_CA",
+    "pressure_distance_m": 60.0,
+    "preferred_pool_policy": "nearest_core_disjoint_15m_strata;targeted60m_only_for_empty_core",
+    "fallback_policy": "entire_qualified_ordinary_village_pool;first_retained;never_no_fire_success",
+    "anchor_policy": "uniform_in_unambiguous_roof;fixed_25m2_disk_intersection",
+    "resampling_rule": "none;source_or_polygon_repeats_are_disclosed_not_replaced",
+    "confirmation_failure_rule": "retain_all_draws_and_failures;return_to_design;new_final_requires_new_confirmation",
+    "weight_policy": "stratified_confirmatory_constraints;not_population_failure_rate_or_annual_risk",
+    "roof_scales_m": [
+      1.0,
+      0.5
+    ],
+    "quadrature_spacing_m": 0.5,
+    "max_dt_s": 1.0
+  },
+  "original_limits": {
+    "max_new_checks": 24,
+    "max_total_checks": 40,
+    "max_wall_time_s": 28800.0,
+    "terminal_horizon_cap_s": 21600.0
+  },
+  "overrides": {
+    "max_new_checks": 24,
+    "max_total_checks": 24,
+    "max_wall_time_s": 172800.0,
+    "terminal_horizon_cap_s": 172800.0,
+    "execution_case_order": "plans_first",
+    "execution_priority_plan_ids": [
+      "fixed-core-and-first-escape-compartment",
+      "roof-seed-protected-union-ring-b0-w2.5",
+      "roof-seed-protected-union-ring-b0-w15.01"
+    ],
+    "stop_plan_after_protection_failure": true,
+    "required_solver_source_sha256": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3"
+  },
+  "unchanged_capacity_limits": {
+    "max_nodes": 500000,
+    "max_radiation_edges": 60000000,
+    "minimum_free_disk_GB": 5.0
+  },
+  "capacity_rule": "stop on a hard resource limit; no regrid, resample or inferred outcomes",
+  "design_loss_or_optimality_transferred": false,
+  "source_draws_or_CA_during_freeze": 0
+}

@@ -1,0 +1,64 @@
+{
+  "schema_version": "heritage-area-master-config-1",
+  "village_id": "batuan",
+  "place_name": "岜团村",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+  "source_fires": [
+    {
+      "fire_id": "drum-B0077-known-hot",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/followup-20261103/batuan-B0077-source.json",
+      "draw_id": "near-B0073-003"
+    },
+    {
+      "fire_id": "bridge-B0062-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/followup-20261103/batuan-B0062-source.json",
+      "draw_id": "near-B0120-002"
+    }
+  ],
+  "fixed_source_ids": [
+    "B0077",
+    "B0062"
+  ],
+  "refinement_ids": [
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0067",
+    "B0071",
+    "B0073",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "seed_plans": [
+    [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    [
+      "B0063",
+      "B0067",
+      "B0071"
+    ]
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_new_checks": 48,
+  "max_wall_time_s": 14400.0,
+  "max_mip_time_s": 1200.0,
+  "mip_call_time_limit_s": 60.0,
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "max_nodes": 200000,
+  "max_radiation_edges": 20000000,
+  "minimum_free_disk_GB": 10.0,
+  "core_overlap_policy": "reject",
+  "scope": "full_eligible_ordinary_except_two_fixed_technical_sources;two_support_scales_are_model_assumptions_not_spatial_convergence;core_nonignition_not_real_structural_damage",
+  "new_independent_fire_draws": 0
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "heritage-roof-experiments-1",
+  "source_policy": "technical_probe",
+  "evidence": "technical source-area sensitivity on frozen Batuan geometry; not an observed fire or research-source selection",
+  "frozen_study": "runs/research/heritage-geometry-20261023-r2/study.json",
+  "scenarios": [
+    {
+      "scenario_id": "technical-gulou-neighbor-source-area-control",
+      "horizon_s": 1200.0,
+      "ignitions": [
+        {
+          "point_m": [
+            347254.178025463,
+            2869765.069342395
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347249.8853181273,
+            2869762.3095147097
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347252.5,
+            2869762.4241965823
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347255.3940364235,
+            2869761.8025029013
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347253.0983129476,
+            2869758.185397003
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347255.36300677643,
+            2869759.334487576
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "technical_source_building_id": "B0076",
+      "target_of_diagnostic": "B0073",
+      "direct_source_component_count": 6,
+      "directly_ignited_unambiguous_roof_area_m2": 32.825139148122766,
+      "excluded_ambiguous_source_patch_count": 1,
+      "selection_basis": "explicit source-area control: ignite each unambiguous source roof patch, leave ambiguous annotation regions unforced; inherited timber parameters unchanged; not a fixed study source or actual fire event"
+    },
+    {
+      "scenario_id": "technical-bridge-neighbor-source-area-control",
+      "horizon_s": 1200.0,
+      "ignitions": [
+        {
+          "point_m": [
+            347329.8379988927,
+            2869740.3716495987
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347332.58315664367,
+            2869742.4913283233
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347335.6294475184,
+            2869740.809289667
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347324.9982553031,
+            2869735.00400254
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347328.5879988928,
+            2869737.50400254
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347332.5,
+            2869737.5
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347337.5,
+            2869736.841097212
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347340.4161529584,
+            2869736.306043408
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347324.1209302932,
+            2869731.8246262195
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347327.5,
+            2869732.5
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347332.5,
+            2869732.5
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347336.375611579,
+            2869732.5
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347324.17186126823,
+            2869728.462760605
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347327.5,
+            2869728.610276254
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347331.6699486466,
+            2869727.0507151084
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347335.1818534086,
+            2869729.5507151084
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347329.4901841689,
+            2869724.235276254
+          ],
+          "time_s": 0.0
+        },
+        {
+          "point_m": [
+            347330.53036625317,
+            2869724.235276254
+          ],
+          "time_s": 0.0
+        }
+      ],
+      "technical_source_building_id": "B0061",
+      "target_of_diagnostic": "B0120",
+      "direct_source_component_count": 18,
+      "directly_ignited_unambiguous_roof_area_m2": 197.84601345709552,
+      "excluded_ambiguous_source_patch_count": 2,
+      "selection_basis": "explicit source-area control: ignite each unambiguous source roof patch, leave ambiguous annotation regions unforced; inherited timber parameters unchanged; not a fixed study source or actual fire event"
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "baseline"
+    }
+  ],
+  "pending": [
+    "ordinary_building_demolition_eligibility",
+    "fixed_internal_study_source",
+    "surveyed_heritage_thermal_properties"
+  ]
+}
