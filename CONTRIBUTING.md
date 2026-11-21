@@ -5,8 +5,8 @@ PyFireCA is early-stage scientific software. Contributions should preserve both 
 ## Development setup
 
 ```bash
-git clone https://github.com/hujinghaoabcd/PyFireCA.git
-cd PyFireCA
+git clone https://github.com/felix018jiang/PyFireCA-village.git
+cd PyFireCA-village
 python -m pip install -e ".[dev]"
 pre-commit install
 ```

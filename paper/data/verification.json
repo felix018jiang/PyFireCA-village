@@ -1,0 +1,152 @@
+{
+  "solver_sha256": "319063e2c633e904876b58c89e333c7004e564cdd15f44e71dd12bab72e8b0be",
+  "tables": {
+    "output/heritage-wind-20261112/cases.csv": {
+      "rows": 760,
+      "sha256": "dfa173f8d33b7f6c5e0521b09cda0c3933223bd48be18f52478f28ea54dc57b0"
+    },
+    "output/heritage-wind-20261112/heritage.csv": {
+      "rows": 1900,
+      "sha256": "6c04155fd50694996bd21ab6e3f2bf41cfb69e4aea0090aad9ce6cadc1a27894"
+    },
+    "output/heritage-wind-20261112/by-wind.csv": {
+      "rows": 220,
+      "sha256": "f2eec1d41d33e9a02a781e4361d9a333d9a245e6bb1d1d9f187ca5d8364002f8"
+    },
+    "output/heritage-wind-20261112/by-source-stratum.csv": {
+      "rows": 310,
+      "sha256": "5666dc4982fc30708bb0c3c500430b674c094f44792a2b25c995e7a0121686a0"
+    },
+    "output/heritage-wind-20261112/layout-pairs.csv": {
+      "rows": 1216,
+      "sha256": "a1aa284cfe4dbc1eedb74a7c2ed493ab349d141e0ccdaddf44efd4b4c94452ec"
+    },
+    "output/heritage-wind-20261112/radius-pairs.csv": {
+      "rows": 40,
+      "sha256": "c622d83610c8ad8a671eda57683bff1a4ee718b2d297a6c3eeee62f319595a95"
+    },
+    "output/heritage-wind-20261112/wind-pairs.csv": {
+      "rows": 640,
+      "sha256": "b34e2447fafb5382904c5b8b06f10e3ff601ed11769c610b3b458a3cdabd5e5f"
+    },
+    "output/heritage-wind-final-20261112/cases.csv": {
+      "rows": 720,
+      "sha256": "21c7f15b968b65c0934833c1801109fb21f55f052da8c3a747460f11bbe63b5f"
+    },
+    "output/heritage-wind-final-20261112/by-layout.csv": {
+      "rows": 10,
+      "sha256": "47b36aef1b9c52bf2549f60c1cd1db7e9ca4e7d138760491ad88732843cd92cc"
+    },
+    "output/heritage-wind-validation-20261112/cases.csv": {
+      "rows": 4635,
+      "sha256": "fe2b18056c0d6c496f7d938472614425dcddd573854f258449c11ae6c58d6dce"
+    },
+    "output/heritage-wind-validation-20261112/by-stratum.csv": {
+      "rows": 20,
+      "sha256": "1679dcb6bccadecbbe41af97c20e96f3778952e5abb274cbda46a18ca2b42db6"
+    },
+    "output/heritage-wind-validation-20261112/paired-layouts.csv": {
+      "rows": 40,
+      "sha256": "c371fd79516c26ca57dcd3eb2a5e9f9f1c1572e333f254cfcda24bb9aecd3e59"
+    },
+    "output/heritage-wind-validation-20261112/by-village-weighted.csv": {
+      "rows": 10,
+      "sha256": "cd44bdb16109839cb3d811feaa23dc3c8b1c604f53d8e90c4c9e5845d0658aaa"
+    },
+    "output/heritage-geometry-validation-20261118/paired-cases.csv": {
+      "rows": 927,
+      "sha256": "947992b1d297fdff07cb395feba00ddd4b512ae9bd7f5a24fe51d09cbe4137ea"
+    },
+    "output/heritage-geometry-validation-20261118/heritage-by-case.csv": {
+      "rows": 2331,
+      "sha256": "db3961a1f38782c88574848d04600b3399e6322091312d2b304fb473b28e9287"
+    },
+    "output/heritage-geometry-validation-20261118/by-stratum.csv": {
+      "rows": 4,
+      "sha256": "b62d086006e21e7c066e75a9c50c4716b0c9e80739029be27ed02cb1cef856df"
+    },
+    "output/heritage-geometry-validation-20261118/by-heritage.csv": {
+      "rows": 10,
+      "sha256": "7cd52da0f67124fbb482cd2428b0ba7b4696e2653f842a66a125b675c8dbc7c3"
+    },
+    "output/heritage-midbudget-20261120/三方案配对.csv": {
+      "rows": 927,
+      "sha256": "a6d7a7086b6f2ce50108d579f58bedb25777d0c30cad1db645fd2e20a7f176f8"
+    },
+    "output/heritage-midbudget-20261120/分层结果.csv": {
+      "rows": 12,
+      "sha256": "69497300ea87625aecf6ddc5b147422feba630ef1bbf6477ab9d31b3104facdd"
+    },
+    "output/heritage-midbudget-20261120/分层配对差.csv": {
+      "rows": 12,
+      "sha256": "3f5afbf251d8ced13538e016acf1ee9ff541b9f75fcd06e8d430acddb1da8013"
+    },
+    "output/heritage-midbudget-20261120/路线清理量.csv": {
+      "rows": 6,
+      "sha256": "1719a57e027065764f341afe5434647d1fe49f4757af708f487e6557a2bea0f2"
+    },
+    "docs/results/heritage-followup-20261103/core-checkpoints-dual-scale.csv": {
+      "rows": 126,
+      "sha256": "9f52fde1ae7597865f1d040d0b58f19a1ce9d802f7d23aa67833af904998cef0"
+    },
+    "docs/results/heritage-followup-20261103/common-retained-ordinary.csv": {
+      "rows": 108,
+      "sha256": "d32f814baad8bf89f5ae8451880d37af913e6bab31fa2a70cb687f0948f46012"
+    },
+    "docs/results/heritage-followup-20261103/intervention-areas.csv": {
+      "rows": 24,
+      "sha256": "e9a3999b70dd118c885c5b3020ee06b77eff944236f8149c737405397c3d60e5"
+    },
+    "docs/results/heritage-followup-20261103/roof-ignition-curves.csv": {
+      "rows": 2904,
+      "sha256": "5007a76a71c48f1bbd6be1da77af82c651b2e074e24d0a7edee9f7a76e0b7a73"
+    }
+  },
+  "registrations": {
+    "heritage-wind-20261112": "6c6478782ede5faced9de991edec0bfb8c88bc7f91a1497ea5bfe221b9b3e240",
+    "heritage-wind-final-20261112": "848fe81ce452fb0d79161d6b5b693d7c30a33f4ca06b2ef723fe22af5a47db53",
+    "heritage-wind-validation-20261112": "35edf66e8437de7b28af8305598232acb94a3e31995a4858695ad47677291551",
+    "heritage-geometry-validation-20261118": "1fdd096e568ef48bb5300951baca8d5712d05faa1ff38b2dde50b36f674c5840",
+    "heritage-midbudget-20261120": "1d614881da982825da0dfa9e6141f7fed459f5c566a4836c61cf26a354f0ce8a"
+  },
+  "materials": {
+    "batuan": {
+      "building_material_code": 5,
+      "roof_material_parent_cells": 4808,
+      "ignition_K": 520,
+      "peak_W_m2_active": 300000,
+      "dry_kg_m2": 18,
+      "moisture_dry_basis": 0.1,
+      "manifest_sha256": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+      "base_roof_nodes": 6400,
+      "roof_labels": 333
+    },
+    "pingyan": {
+      "building_material_code": 5,
+      "roof_material_parent_cells": 17198,
+      "ignition_K": 520,
+      "peak_W_m2_active": 300000,
+      "dry_kg_m2": 18,
+      "moisture_dry_basis": 0.1,
+      "manifest_sha256": "7b032002033eaf5e8c0ee2f5d27ce4c3c86405598f176cbf00de2ef4dc499e7d",
+      "base_roof_nodes": 22316,
+      "roof_labels": 950
+    }
+  },
+  "paired_scenarios": 927,
+  "layout_cases": 7416,
+  "affected_village_heritage_cases": {
+    "baseline": 556,
+    "heritage-narrow": 548,
+    "heritage-wide": 41,
+    "multipoint-narrow": 486,
+    "multipoint-wide": 0,
+    "compact": 352,
+    "uniform-mid": 0,
+    "aligned-mid": 0
+  },
+  "pilot_one_hour_cases": 760,
+  "pilot_terminal_cases": 720,
+  "local_scale_cases": 24,
+  "verified_field_figure_originals": 8
+}

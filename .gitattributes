@@ -1,0 +1,11 @@
+# The registered solver hashes use LF. The manuscript CSV files retain their frozen bytes.
+*.py text eol=lf
+*.cpp text eol=lf
+paper/**/*.csv -text whitespace=cr-at-eol
+paper/data/input-index.json -text
+paper/data/verification.json -text
+paper/**/*.jpg binary
+paper/**/*.jpeg binary
+paper/**/*.png binary
+paper/*.docx binary
+paper/data/*.zip binary

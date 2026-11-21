@@ -1,5 +1,7 @@
 # Project status
 
+**当前论文版本（2026-11-21）**　平岩与岜团的恢复版实验、论文图表及复核命令见[论文代码与复核说明](HERITAGE_STUDY_CODE.md)。
+
 > **Latest replay, 2026-10-05:** component states now have physical-grid browser replay and opt-in ignition/duration selection, with full saved configuration restoration and explicit model matching. Fixed material moisture needs no per-cell entry; partial burn does not imply building loss. 791 repository tests pass, plus actual desktop/mobile browser submission and wheel checks. See [component replay](COMPONENT_VIEWER_V3.md) and plan28.12. Earlier next-viewer statements below are historical. Dynamic flame/wind and field calibration remain open.
 
 > **Latest geometry, 2026-10-04:** opt-in complete finite component radiation now replaces inherited edges, with analytic shadow clipping, segmented source-height quadrature, opaque receiver and stepwise terrain visibility. 50 fixed solves including two finer references pass; 752 tests pass. Formal repeats compare 2996 non-timing files. These are small synthetic scenes, not large-domain/field validation. See [finite graph](FINITE_COMPONENT_RADIATION_V3.md) and plan28.11. Next: component state viewer, then dynamic flame/wind with stated support domains.

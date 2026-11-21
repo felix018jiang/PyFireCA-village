@@ -1,5 +1,7 @@
 # PyFireCA development handoff
 
+**研究交接（2026-11-21）**　平岩与岜团的恢复版实验、论文图表及复核命令见[论文代码与复核说明](HERITAGE_STUDY_CODE.md)。
+
 > Updated: 2026-08-13
 >
 > This is the current handoff entrypoint. Read this before continuing development.
