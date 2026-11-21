@@ -6,12 +6,12 @@ from pathlib import Path
 
 import numpy as np
 import shapely
-
 from audit_heritage_compartment_bounds import components
 from check_heritage_compartment_first_escape import load_bound_inputs, pair_conditional_doses
 from check_heritage_registered_roof_compartment import area_outward, footprint_budget, verify
 from export_heritage_joint_loss_actions import physical_features
 from verify_heritage_total_protection_and_loss import NativeSupport, direct_witness
+
 from pyfireca.planning.heritage import content_hash
 from pyfireca.planning.random_sources import realize_sources
 from pyfireca.planning.strategy_io import file_sha256, read_json
@@ -102,7 +102,7 @@ def audit(root):
     D = D0 | {o for i in must_clear for o in layout.owners[i]}
     G = G0 | {int(layout.cell_id[i]) for i in must_clear if not layout.owners[i]}
     verify(
-        D <= set(inv.candidate_ids) and D.isdisjoint(target_ids | full_sources),
+        set(inv.candidate_ids) >= D and D.isdisjoint(target_ids | full_sources),
         "obligatory exterior conflicts with a protected/retained owner",
     )
     cleared = native.mask(D, G)
@@ -127,7 +127,7 @@ def audit(root):
         and math.isclose(largest, independent_max, abs_tol=1e-10, rel_tol=1e-10),
         "independent escape energy failed",
     )
-    # Verify the actual combined action by searching all surviving emitters against all protected receivers.
+    # Check every surviving emitter against every protected receiver for the combined action.
     all_external = np.flatnonzero(fuel & ~(cleared | core))
     core_i = np.flatnonzero(core)
     rad = shapely.STRtree(native.support[core_i]).query(
@@ -196,8 +196,17 @@ def audit(root):
         exterior_to_core_possible_radiative_pairs=rad.shape[1],
         exterior_to_core_possible_contact_pairs=contact.shape[1],
         core_forced_external_heat_zero_K_rise_from_ambient_for_all_exterior_ignitions=True,
-        fixed_design_loss_scope="Each of four original retained-source priority lists realizes a positive 25 m2 physical footprint under the frozen zero-core-heat base. It remains the same under all added actions. Only these four families share the reported whole-village loss ceiling.",
-        core_scope="All passive, initially ambient heritage receivers, for any direct exterior ignition, finite original zero-wind and no-firebrands model, no imposed new core ignition or external heating.",
+        fixed_design_loss_scope=(
+            "Each of four original retained-source priority lists realizes a positive 25 m2 "
+            "physical footprint under the frozen zero-core-heat base. It remains the same "
+            "under all added actions. Only these four families share the reported "
+            "whole-village loss ceiling."
+        ),
+        core_scope=(
+            "All passive, initially ambient heritage receivers, for any direct exterior "
+            "ignition, finite original zero-wind and no-firebrands model, no imposed new "
+            "core ignition or external heating."
+        ),
         maximum_remaining_exterior_lifetime_dose_fraction=largest,
         independently_recomputed_maximum_fraction=independent_max,
         retained_ordinary_positive_contact_edges_from_containment=0,
@@ -205,7 +214,11 @@ def audit(root):
         worst_registered_burned_area_upper_m2=max(a for a, _ in bounds),
         worst_registered_original_building_owner_count_upper=max(n for _, n in bounds),
         modeled_terminal_losses_measured=False,
-        construction_scope="Feasible placement with minimum added clearance for these fixed containment sets, zero-heat base and sufficient full-life dose/contact inequalities. Other compartment selections or full dynamics may admit cheaper placement.",
+        construction_scope=(
+            "Feasible placement with minimum added clearance for these fixed containment "
+            "sets, zero-heat base and sufficient full-life dose/contact inequalities. Other "
+            "compartment selections or full dynamics may admit cheaper placement."
+        ),
         model_action=plan,
         receipt_sources_sha256={
             "base_zero_heat": file_sha256(zero_path),
@@ -221,7 +234,10 @@ def audit(root):
                 )
             },
         },
-        geojson_coordinate_check="projected union area and WGS84 round trip checked independently for both building union and ground layer",
+        geojson_coordinate_check=(
+            "projected union area and WGS84 round trip checked independently for both "
+            "building union and ground layer"
+        ),
     )
     result["receipt_sha256"] = content_hash(result)
     out = res / "heritage-pingyan-zero-heat-and-design-loss-20261111.json"

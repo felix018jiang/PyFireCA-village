@@ -115,7 +115,8 @@ def snapshot():
                 "ledger_updated_unix_s": ledger["updated_unix_s"],
             }
         overlap = (
-            run / "resource-scheduling/registered-corridor-family-shards"
+            run
+            / "resource-scheduling/registered-corridor-family-shards"
             / "priority-preserving-overlap"
         )
         if (overlap / "ledger.json").is_file():

@@ -19,11 +19,11 @@ def calculate():
     if (
         done["original_declared"] != 24
         or done["completed_native"] + done["skipped_by_verified_core_failure"] != 24
-        or done["native_summary_sha256"]
-        != dispatch.digest(dispatch.RUN / "summary.json")
+        or done["native_summary_sha256"] != dispatch.digest(dispatch.RUN / "summary.json")
     ):
         raise ValueError(
-            "every original slot must have a validated native terminal file or an authenticated strict-failure skip"
+            "every original slot must have a validated native terminal file or an "
+            "authenticated strict-failure skip"
         )
     output = {}
     with tempfile.TemporaryDirectory() as tmp:
@@ -55,15 +55,11 @@ def calculate():
                 or not full["native_saved_state_and_peak_certificates_verified"]
                 or full["new_CA_checks"] != 0
             ):
-                raise ValueError(
-                    "final Pareto archive is not the verified original comparison"
-                )
+                raise ValueError("final Pareto archive is not the verified original comparison")
             acceptable = []
             for p in archive["fully_evaluated_feasible_plans"]:
                 if len(p["scenario_observations"]) != 8:
-                    raise ValueError(
-                        "incomplete candidate entered the complete feasible archive"
-                    )
+                    raise ValueError("incomplete candidate entered the complete feasible archive")
                 w = p["worst_case"]
                 acceptable.append(
                     {
@@ -97,9 +93,7 @@ def calculate():
     return dict(
         schema="heritage-fixed-three-arm-independent-final-pareto-1",
         reconciliation_sha256=dispatch.digest(receipt_path),
-        preregistered_candidate_sha256=dispatch.read(dispatch.CONFIG)[
-            "final_candidates_sha256"
-        ],
+        preregistered_candidate_sha256=dispatch.read(dispatch.CONFIG)["final_candidates_sha256"],
         design_data_in_objectives=False,
         independent_draw_families=4,
         roof_scales_per_family=2,
@@ -108,11 +102,17 @@ def calculate():
         not_run_due_to_strict_core_failure=done["skipped_by_verified_core_failure"],
         charged_native=done["total_global_budget"]["started_checks"],
         geometry_matches_required_for_direct_paired_contrasts=True,
-        candidate_comparison_basis="Same predeclared retained-source policy; per-plan worst losses. Actual patches can differ between arms.",
+        candidate_comparison_basis=(
+            "Same predeclared retained-source policy; per-plan worst losses. Actual patches "
+            "can differ between arms."
+        ),
         selected_preference_weights=None,
         global_minimum_claim=False,
         stronger_real_site_conclusion=False,
-        area_scope="full model domain; per-case roof and nonroof components in the companion three-arm aggregate",
+        area_scope=(
+            "full model domain; per-case roof and nonroof components in the companion "
+            "three-arm aggregate"
+        ),
         analyses=output,
         strict_full_and_matched_source_frontiers=matched_receipt,
     )
@@ -136,9 +136,6 @@ if __name__ == "__main__":
     dispatch.save(target, result)
     print(
         json.dumps(
-            {
-                k: v["nondominated_on_cost_upper_count_area"]
-                for k, v in result["analyses"].items()
-            }
+            {k: v["nondominated_on_cost_upper_count_area"] for k, v in result["analyses"].items()}
         )
     )

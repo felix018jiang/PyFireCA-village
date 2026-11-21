@@ -15,12 +15,11 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-RUN = (
-    ROOT / "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111"
-)
+RUN = ROOT / "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111"
 CONFIG = (
     ROOT
-    / "examples/research/heritage/confirmation-20261110/pingyan-three-fixed-plans-20261111/supplemental-stage-capacity-config.json"
+    / "examples/research/heritage/confirmation-20261110/pingyan-three-fixed-plans-20261111"
+    / "supplemental-stage-capacity-config.json"
 )
 AREA = RUN / "resource-scheduling/registered-joint-family-shards"
 PID = 39628
@@ -53,16 +52,14 @@ def frozen_native():
 
 
 def ps(pid, field):
-    p = subprocess.run(
-        ["ps", "-p", str(pid), "-o", field + "="], capture_output=True, text=True
-    )
+    p = subprocess.run(["ps", "-p", str(pid), "-o", field + "="], capture_output=True, text=True)
     return p.stdout.strip()
 
 
 def power():
     value = subprocess.check_output(["pmset", "-g", "batt"], text=True)
     m = re.search(r"(\d+)%", value)
-    return "'AC Power'" in value, bool(m and int(m[1]) <= 3 or "Final" in value)
+    return "'AC Power'" in value, bool((m and int(m[1]) <= 3) or "Final" in value)
 
 
 def memory_free():
@@ -92,10 +89,7 @@ def tables(native):
         p for p in cfg["execution_priority_plan_ids"] for _ in range(8)
     ]:
         raise ValueError("the original 3 x 4 x 2 declared sequence changed")
-    if (
-        not cfg["terminal_fire_verification"]
-        or not cfg["stop_plan_after_protection_failure"]
-    ):
+    if not cfg["terminal_fire_verification"] or not cfg["stop_plan_after_protection_failure"]:
         raise ValueError("strict full fire course or first-counterexample rule changed")
     if not all(
         rows[i][1].endswith("-h1") and rows[i + 1][1] == rows[i][1][:-1] + "0.5"
@@ -152,9 +146,24 @@ def initialize(native, cfg, rows):
         residual_original_ordinals=list(range(9, 25)),
         native_problem_or_inputs_changed=False,
         resident_fence=str(guard.relative_to(RUN)),
-        native_resume_predicate="If evaluation folder exists, read_complete precedes all slot charges. A scheduler-only directory has no valid endpoints; it seals this resident budget after slot 1.",
-        worker_rule="Original first case retained. Launch a family coarse case before its fine case. Among eligible idle families use original ordinal. At most one active scale per family. One registered ordinal per private native invocation; no retry. Check strict native core counterexample before further starts; already started runs finish.",
-        resource_rule="Every legacy or projected native attempt counts against the same 24; count cumulative worker wall time including pauses with conservative live bounds. Stop before the shared 172800s cap. New arms wait until all joint-family jobs settle.",
+        native_resume_predicate=(
+            "If evaluation folder exists, read_complete precedes all slot charges. A "
+            "scheduler-only directory has no valid endpoints; it seals this resident budget "
+            "after slot 1."
+        ),
+        worker_rule=(
+            "Original first case retained. Launch a family coarse case before its fine case. "
+            "Among eligible idle families use original ordinal. At most one active scale per "
+            "family. One registered ordinal per private native invocation; no retry. Check "
+            "strict native core counterexample before further starts; already started runs "
+            "finish."
+        ),
+        resource_rule=(
+            "Every legacy or projected native attempt counts against the same 24; count "
+            "cumulative worker wall time including pauses with conservative live bounds. "
+            "Stop before the shared 172800s cap. New arms wait until all joint-family jobs "
+            "settle."
+        ),
     )
     save(REG, reg)
     guard.mkdir(parents=True)
@@ -174,9 +183,7 @@ def prepare_child(index):
     owner.mkdir()
     for name in ("experiment.json", "preflight.json"):
         os.link(RUN / name, owner / name)
-    (owner / "source-snapshot").symlink_to(
-        RUN / "source-snapshot", target_is_directory=True
-    )
+    (owner / "source-snapshot").symlink_to(RUN / "source-snapshot", target_is_directory=True)
     save(
         owner / "execution-budget.json",
         {"elapsed_s": 0.0, "started_checks": 0, "active": None},
@@ -251,7 +258,9 @@ def supervise():
     interruptions = {}
     last_signature = None
     settled = {}
-    owner = lambda i: RUN if i == 1 else child_home(i)
+
+    def owner(i):
+        return RUN if i == 1 else child_home(i)
 
     while True:
         now = time.time()
@@ -295,9 +304,7 @@ def supervise():
                     + reg["resident_elapsed_at_registration_s"]
                 )
             else:
-                spent_s += max(
-                    0, now - read(owner(i) / "reservation.json")["unix_before_launch_s"]
-                )
+                spent_s += max(0, now - read(owner(i) / "reservation.json")["unix_before_launch_s"])
         # Stop no later than the shared cap even when all three running slots are charged.
         if spent_s >= cfg["max_wall_time_s"] - 300 and pids:
             for i, pid in pids.items():
@@ -326,7 +333,7 @@ def supervise():
             for i in range(2, 9):
                 if available <= 0:
                     break
-                if i in jobs or i % 2 == 0 and i - 1 not in settled:
+                if i in jobs or (i % 2 == 0 and i - 1 not in settled):
                     continue
                 # The successor to the resident is never dispatched until it has
                 # released its own fenced native budget.
@@ -365,10 +372,7 @@ def supervise():
             tuple(sorted(pauses)),
             tuple(sorted(interruptions)),
         )
-        if (
-            sig != last_signature
-            or now - int(read(AREA / "ledger.json")["updated_unix_s"]) >= 30
-        ):
+        if sig != last_signature or now - int(read(AREA / "ledger.json")["updated_unix_s"]) >= 30:
             save(
                 AREA / "ledger.json",
                 dict(
@@ -404,19 +408,16 @@ def supervise():
     # Canonical root has exactly one former writer and is now closed. Verify every
     # private record and its native input identity before moving its native output.
     guard = case_folder(native, 2, RUN, checks)
-    if read(guard / "scheduler-reservation.json")["registration_sha256"] != digest(
-        REG
-    ) or {p.name for p in guard.iterdir()} != {"scheduler-reservation.json"}:
+    if read(guard / "scheduler-reservation.json")["registration_sha256"] != digest(REG) or {
+        p.name for p in guard.iterdir()
+    } != {"scheduler-reservation.json"}:
         raise RuntimeError("scheduler-only fence changed")
     (guard / "scheduler-reservation.json").rename(AREA / "retired-fence.json")
     guard.rmdir()
     for i in sorted(jobs):
         src = case_folder(native, i, child_home(i), checks)
         dest = case_folder(native, i, RUN, checks)
-        if (
-            dest.exists()
-            or digest(src / "complete.json") != observed[i]["manifest_sha256"]
-        ):
+        if dest.exists() or digest(src / "complete.json") != observed[i]["manifest_sha256"]:
             raise RuntimeError("ambiguous native output provenance")
         # Keep the independently written shard as a byte-for-byte audit source.
         staging = dest.with_name(dest.name + ".importing")

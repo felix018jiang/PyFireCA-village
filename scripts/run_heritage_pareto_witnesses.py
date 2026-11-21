@@ -20,7 +20,8 @@ ORIGIN = ROOT / "runs/research/heritage-protected-union-pingyan-20261111"
 SHARD = ROOT / "runs/research/heritage-pingyan-pareto-design-witnesses-20261111"
 CONFIG = (
     ROOT
-    / "examples/research/heritage/area-20261110/pingyan-protected-union-priority-longcap-comparison-20261111.json"
+    / "examples/research/heritage/area-20261110"
+    / "pingyan-protected-union-priority-longcap-comparison-20261111.json"
 )
 TABLE = ROOT / "docs/results/heritage-pingyan-three-policies-complete8-table-20261111.json"
 MINIMUM = ROOT / "docs/results/heritage-pingyan-six-options-loss-capped-minimum-20261111.json"
@@ -125,8 +126,16 @@ def register():
                 original_budget=budget,
                 slots=len(selection),
                 selected_cases=selection,
-                selection_rule="All unresolved local enclosures, on each coarse design witness attaining the reduced plan's worst A or N upper. No holdout used.",
-                exclusion_rule="Any strict valid heritage failure excludes feasibility. Under worst-case A and N upper, separate valid cases can prove both lower bounds. Greater C establishes dominance even if the other outcomes are unknown.",
+                selection_rule=(
+                    "All unresolved local enclosures, on each coarse design witness "
+                    "attaining the reduced plan's worst A or N upper. No holdout used."
+                ),
+                exclusion_rule=(
+                    "Any strict valid heritage failure excludes feasibility. Under "
+                    "worst-case A and N upper, separate valid cases can prove both lower "
+                    "bounds. Greater C establishes dominance even if the other outcomes are "
+                    "unknown."
+                ),
                 new_independent_fires=0,
                 imported_outcomes=0,
             ),

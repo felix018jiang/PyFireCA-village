@@ -220,8 +220,7 @@ def prepare(thin_config_path, seed_config_path, thin_run, seed_run, output, repo
         p for p in read_json(inputs["thin-catalog.json"])["plans"] if p["plan_id"] == THIN_PLAN
     )
     if any(
-        thin[k] != external[1]["plan"][k]
-        for k in ("demolished_ids", "cleared_physical_cell_ids")
+        thin[k] != external[1]["plan"][k] for k in ("demolished_ids", "cleared_physical_cell_ids")
     ):
         raise ValueError("the external thin physical action differs from its frozen catalog")
     rows = ablation_rows(external[0]["plan"]["demolished_ids"], thin)
@@ -283,8 +282,7 @@ def prepare(thin_config_path, seed_config_path, thin_run, seed_run, output, repo
         "reference_master_problem_sha256": reference["problem_sha256"],
         "finite_source_certificate_sha256": certificate["certificate_sha256"],
         "external_existing_arms": [
-            {**e, "geometry_cost_receipt": c}
-            for e, c in zip(external, external_costs, strict=True)
+            {**e, "geometry_cost_receipt": c} for e, c in zip(external, external_costs, strict=True)
         ],
         "source_coverage_scope": "exact_two_declared_plans;old_roof_area_bound_not_extended",
         "global_optimality_proven": False,

@@ -32,7 +32,7 @@ def test_validation_table_reports_all_structures(monkeypatch, bridges, area, wor
             "validation": {
                 "legacy_outer_proxy": {"held_out": metrics(), "extended": metrics()},
                 "adaptive_outer_proxy": {"held_out": metrics(), "extended": metrics(bridges, area)},
-            }
+            },
         }
     )
     assert "留出桥" in section and "延时桥" in section

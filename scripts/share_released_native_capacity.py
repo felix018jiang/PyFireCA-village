@@ -1,4 +1,4 @@
-"""Move finished design-worker capacity to the original 24 independent slots without resetting them."""
+"""Move released worker capacity to the original 24 independent slots without resetting them."""
 
 import fcntl
 import os
@@ -46,17 +46,9 @@ def released(verified):
         exp = first.read(run / "experiment.json")
         if (
             len(manifests) != 8
-            or len(
-                {
-                    (first.read(p)["plan_id"], first.read(p)["scenario_id"])
-                    for p in manifests
-                }
-            )
+            or len({(first.read(p)["plan_id"], first.read(p)["scenario_id"]) for p in manifests})
             != 8
-            or not all(
-                first.read(p)["problem_sha256"] == exp["problem_sha256"]
-                for p in manifests
-            )
+            or not all(first.read(p)["problem_sha256"] == exp["problem_sha256"] for p in manifests)
         ):
             raise RuntimeError(
                 "design completion does not agree with its actual eight native files"
@@ -73,19 +65,14 @@ def released(verified):
 def resources(history):
     vm = subprocess.check_output(["vm_stat"], text=True)
     page = int(re.search(r"page size of (\d+) bytes", vm)[1])
-    total = sum(
-        int(re.search(k + r":\s+(\d+)", vm)[1]) for k in ("Swapins", "Swapouts")
-    )
+    total = sum(int(re.search(k + r":\s+(\d+)", vm)[1]) for k in ("Swapins", "Swapouts"))
     now = time.monotonic()
     history.append((now, total))
     while len(history) > 2 and history[1][0] < now - 45:
         history.popleft()
     delta = now - history[0][0]
     rate = (total - history[0][1]) * page / 1048576 / delta if delta else None
-    cpu = sum(
-        float(v)
-        for v in subprocess.check_output(["ps", "-Ao", "%cpu="], text=True).split()
-    )
+    cpu = sum(float(v) for v in subprocess.check_output(["ps", "-Ao", "%cpu="], text=True).split())
     return {
         "free_pct": first.memory_free(),
         "swap_MiB_per_s": rate,
@@ -133,9 +120,7 @@ def cleanup_old():
         os.kill(52050, signal.SIGSTOP)
     if inherited is None:
         os.kill(52050, signal.SIGCONT)
-        raise RuntimeError(
-            "a native process could not be identified at the stable handoff"
-        )
+        raise RuntimeError("a native process could not be identified at the stable handoff")
     os.kill(52050, signal.SIGTERM)
     os.kill(52050, signal.SIGCONT)
     lock = (corridor.AREA / "writer.lock").open("a")
@@ -156,9 +141,7 @@ def main():
         max(base["swap_delta_combined_MiB_per_s"]) >= 1
         or min(r["free_pct"] for r in base["samples"]) < 35
     ):
-        raise RuntimeError(
-            "five-process live baseline does not support additional capacity"
-        )
+        raise RuntimeError("five-process live baseline does not support additional capacity")
     AREA.mkdir(exist_ok=False)
     reg = AREA / "registration.json"
     first.save(
@@ -172,18 +155,24 @@ def main():
             prior_passive_capacity_driver_sha256=first.digest(
                 corridor.AREA / "released-design-capacity/original-passive-waiter.py"
             ),
-            baseline_vacancy_rule="A strict same-arm stop may free one of the original three positions for the next previously frozen arm before any design release.",
-            fifth_seat_requires_stable_four_running_seconds=60,
-            same_final_settlement_sha256=first.digest(
-                handoff.AREA / "registration.json"
+            baseline_vacancy_rule=(
+                "A strict same-arm stop may free one of the original three positions for the "
+                "next previously frozen arm before any design release."
             ),
+            fifth_seat_requires_stable_four_running_seconds=60,
+            same_final_settlement_sha256=first.digest(handoff.AREA / "registration.json"),
             fixed_worker_sha256=first.digest(corridor.SCRIPT),
             resource_driver_sha256=first.digest(Path(__file__)),
             witnessed_five_process_baseline_sha256=first.digest(BASE),
             frozen_reference_design_producers=REFERENCE,
             total_original_ordinal_budget=24,
             aggregate_registered_work_s=cfg["max_wall_time_s"],
-            admission="A design producer must have eight original native manifests, a closed budget and its original PID gone. After >=25s of low page churn allow a fourth or fifth independent process. Prior arms' actual native starts or their validated strict same-arm stop precede a later arm.",
+            admission=(
+                "A design producer must have eight original native manifests, a closed "
+                "budget and its original PID gone. After >=25s of low page churn allow a "
+                "fourth or fifth independent process. Prior arms' actual native starts or "
+                "their validated strict same-arm stop precede a later arm."
+            ),
             thresholds={
                 "four": {
                     "min_free_pct": 35,
@@ -197,7 +186,11 @@ def main():
                 },
                 "pause_one_extra": {"free_pct_at_most": 18, "or_swap_MiB_s_above": 8},
             },
-            fine_rule="Extra capacity takes ready coarse cases first. A second same-arm fine mesh requires one released design producer, >40% available memory and <=0.5 MiB/s swap traffic; at most two same-arm fine meshes.",
+            fine_rule=(
+                "Extra capacity takes ready coarse cases first. A second same-arm fine mesh "
+                "requires one released design producer, >40% available memory and <=0.5 "
+                "MiB/s swap traffic; at most two same-arm fine meshes."
+            ),
             physical_limits_unchanged=[cfg["max_nodes"], cfg["max_radiation_edges"]],
             same_source_order=True,
             no_new_research_candidates=True,
@@ -219,7 +212,8 @@ def main():
         ) and first.power()[0]:
             break
         time.sleep(4)
-    lock, jobs = cleanup_old()
+    # Keep the exclusive writer lock open until this supervisor finishes.
+    _writer_lock, jobs = cleanup_old()
     first.save(
         AREA / "exclusive-handoff.json",
         dict(
@@ -253,16 +247,12 @@ def main():
                 fourth_running_since = now
         else:
             fourth_running_since = None
-        if available == 5 and (
-            fourth_running_since is None or now - fourth_running_since < 60
-        ):
+        if available == 5 and (fourth_running_since is None or now - fourth_running_since < 60):
             available = 4
 
-        for i, p in jobs.items():
+        for i in jobs:
             if i not in seen:
-                result, wit = first.strict_result(
-                    native, corridor.folder(i), rows[i - 1]
-                )
+                result, wit = first.strict_result(native, corridor.folder(i), rows[i - 1])
                 if result:
                     seen[i] = result
                     if wit:
@@ -280,8 +270,7 @@ def main():
                 closed[i] = b
         work = earlier_wall + sum(b["elapsed_s"] for b in closed.values())
         work += sum(
-            now
-            - first.read(corridor.folder(i) / "admission.json")["unix_before_launch_s"]
+            now - first.read(corridor.folder(i) / "admission.json")["unix_before_launch_s"]
             for i in active
         )
         if work >= cfg["max_wall_time_s"] - 300:
@@ -299,14 +288,8 @@ def main():
                 os.kill(p.pid, signal.SIGSTOP)
                 paused.add(i)
         count = len(earlier) + len(active) - len(paused & active.keys())
-        if (
-            ac
-            and count > 3
-            and (metrics["free_pct"] <= 18 or metrics["swap_MiB_per_s"] > 8)
-        ):
-            candidates = [
-                i for i in reversed(extras) if i in active and i not in paused
-            ]
+        if ac and count > 3 and (metrics["free_pct"] <= 18 or metrics["swap_MiB_per_s"] > 8):
+            candidates = [i for i in reversed(extras) if i in active and i not in paused]
             if candidates:
                 i = candidates[0]
                 os.kill(active[i].pid, signal.SIGSTOP)
@@ -321,27 +304,15 @@ def main():
         narrow_failed = any(9 <= i <= 16 for i in witnesses)
         narrow_charged = all(
             i in jobs
-            and first.read(corridor.folder(i) / "execution-budget.json")[
-                "started_checks"
-            ]
-            == 1
+            and first.read(corridor.folder(i) / "execution-budget.json")["started_checks"] == 1
             for i in range(9, 17)
         )
         phase = 3 if narrow_failed or narrow_charged else 2
         within = list(range(8 * (phase - 1) + 1, 8 * phase + 1))
         have_failure = any(i in witnesses for i in within)
-        if (
-            ac
-            and not have_failure
-            and metrics["free_pct"] >= 18
-            and not (paused & active.keys())
-        ):
+        if ac and not have_failure and metrics["free_pct"] >= 18 and not (paused & active.keys()):
             while len(earlier) + len(active) < available:
-                ready = [
-                    i
-                    for i in within
-                    if i not in jobs and (i % 2 == 1 or i - 1 in closed)
-                ]
+                ready = [i for i in within if i not in jobs and (i % 2 == 1 or i - 1 in closed)]
                 fine_running = sum(i % 2 == 0 for i in active if i in within)
                 allow_two = (
                     bool(verified)
@@ -355,15 +326,10 @@ def main():
                 if len(earlier) + len(active) >= 3:
                     ready.sort(key=lambda i: (i % 2 == 0, i))
                 i = ready[0]
-                if (
-                    shutil.disk_usage(first.RUN).free
-                    < cfg["minimum_free_disk_GB"] * 1e9
-                ):
+                if shutil.disk_usage(first.RUN).free < cfg["minimum_free_disk_GB"] * 1e9:
                     raise RuntimeError("original free-disk minimum")
                 if phase == 3 and not (narrow_failed or narrow_charged):
-                    raise RuntimeError(
-                        "next arm cannot precede original earlier eligible starts"
-                    )
+                    raise RuntimeError("next arm cannot precede original earlier eligible starts")
                 first.save(
                     AREA / f"admit-{i:02d}.json",
                     dict(

@@ -66,7 +66,7 @@ village-vision = [
 dev = [
   "pytest>=8",
   "pytest-cov>=5",
-  "ruff>=0.6",
+  "ruff==0.17.6",
   "pre-commit>=3.8",
   "scipy>=1.10",
   "numba>=0.60",
@@ -97,7 +97,20 @@ select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
 
 [tool.ruff.lint.per-file-ignores]
 "src/pyfireca/behavior/fbp.py" = ["SIM114"]
+# The published solver signature covers the raw bytes of every src module.
+# The Heritage manuscript job checks these files against the frozen archive.
+"src/pyfireca/village/building_candidates.py" = ["B007", "E501", "I001"]
+"src/pyfireca/village/wind_v3.py" = ["RUF007"]
+# Three preparation scripts are SHA-256 inputs to the registered Pingyan experiments.
+"scripts/prepare_heritage_pingyan_zero_heat_base_control.py" = ["E501", "I001"]
+"scripts/prepare_heritage_pingyan_zero_heat_full_fire.py" = ["E501", "F401", "I001"]
+"scripts/prepare_heritage_pingyan_zero_heat_minimum_native.py" = ["E501", "I001"]
 
 [tool.ruff.format]
 docstring-code-format = true
-exclude = ["src/pyfireca/behavior/fbp.py"]
+exclude = [
+  "src/pyfireca/behavior/fbp.py",
+  # These exact copies are signed by the manuscript and the Batuan ablation registration.
+  "src/pyfireca/village/building_candidates.py",
+  "examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.preparer.py",
+]

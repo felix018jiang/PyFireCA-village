@@ -22,7 +22,8 @@ def audit(root, *, extension=False):
     run = root / "runs/research/heritage-pingyan-zero-core-heat-and-design-loss-20261111"
     config = (
         root
-        / "examples/research/heritage/area-20261110/pingyan-zero-core-heat-and-design-loss-native-20261111.json"
+        / "examples/research/heritage/area-20261110"
+        / "pingyan-zero-core-heat-and-design-loss-native-20261111.json"
     )
     files = dict(
         geometry=results / "heritage-pingyan-zero-heat-and-design-loss-20261111.json",
@@ -41,7 +42,8 @@ def audit(root, *, extension=False):
         run = root / "runs/research/heritage-pingyan-zero-heat-minimum-native-20261111"
         config = (
             root
-            / "examples/research/heritage/area-20261110/pingyan-zero-heat-minimum-native-20261111.json"
+            / "examples/research/heritage/area-20261110"
+            / "pingyan-zero-heat-minimum-native-20261111.json"
         )
         files.update(
             geometry=results / "heritage-pingyan-zero-heat-first-extensions-minimum-20261111.json",

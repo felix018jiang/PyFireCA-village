@@ -2,13 +2,13 @@
 
 import argparse
 import json
-import tempfile
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 
-import schedule_heritage_registered_joint_families as dispatch
 import continue_heritage_registered_corridor_arms as corridor
+import schedule_heritage_registered_joint_families as dispatch
 
 
 def audit(slot):
@@ -46,7 +46,10 @@ def audit(slot):
             stdout=subprocess.DEVNULL,
         )
         report = json.loads(report_path.read_text())
-    matched = lambda x: x["plan_id"] == plan.plan_id and x["scenario_id"] == scenario
+
+    def matched(record):
+        return record["plan_id"] == plan.plan_id and record["scenario_id"] == scenario
+
     raw = next(x for x in report["native_checks"] if matched(x))
     cond = next(x for x in report["finite_domain_checks"] if matched(x))
     terminal = n.read_json(folder / "check.json")["evidence"]["terminal_verification"]
@@ -105,9 +108,7 @@ def audit(slot):
         global_or_plans_complete_claim=False,
     )
     if slot > 8:
-        result.update(
-            registered_campaign_ordinal=slot, ordinal_within_frozen_arm=within_arm
-        )
+        result.update(registered_campaign_ordinal=slot, ordinal_within_frozen_arm=within_arm)
     return result
 
 

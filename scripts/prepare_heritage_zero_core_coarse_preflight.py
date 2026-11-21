@@ -12,7 +12,8 @@ def main():
     out = base / "heritage-pingyan-zero-core-only-coarse-control-20261111"
     cfg = (
         root
-        / "examples/research/heritage/area-20261110/pingyan-zero-core-only-coarse-control-20261111.json"
+        / "examples/research/heritage/area-20261110"
+        / "pingyan-zero-core-only-coarse-control-20261111.json"
     )
     evidence_path = (
         root / "docs/results/heritage-pingyan-zero-heat-native-support-and-capacity-20261111.json"
@@ -23,6 +24,7 @@ def main():
     )
     sys.path[:0] = [str(prod / "scripts"), str(prod / "src")]
     import run_heritage_joint_comparison as native
+
     from pyfireca.planning.heritage import content_hash
     from pyfireca.planning.strategy_io import file_sha256, read_json
 
@@ -111,7 +113,12 @@ def main():
         method_sha256=file_sha256(__file__),
         verified_common_source_mesh_rows=4,
         unselected_half_metre_cases_authorized=0,
-        proof="Both native builders retain the registered integrated mask and quadrature, and remove emitters or targets under clearing. Each point or area-integrated admissible pair is a subset of the same counted intact geometry. Physical budget 4 independently; no half-metre trajectory allowed.",
+        proof=(
+            "Both native builders retain the registered integrated mask and quadrature, and "
+            "remove emitters or targets under clearing. Each point or area-integrated "
+            "admissible pair is a subset of the same counted intact geometry. Physical "
+            "budget 4 independently; no half-metre trajectory allowed."
+        ),
         new_CA_checks=0,
     )
     binding["receipt_sha256"] = content_hash(binding)

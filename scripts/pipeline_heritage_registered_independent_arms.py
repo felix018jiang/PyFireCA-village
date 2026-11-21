@@ -1,4 +1,4 @@
-"""Admit a subsequent registered arm when all earlier slots have started and worker capacity is free."""
+"""Admit the next registered arm when earlier slots have started and worker capacity is free."""
 
 import difflib
 import fcntl
@@ -22,8 +22,12 @@ def adopted_handler():
     """Keep the prior settlement implementation with two explicit administrative changes."""
     original = inspect.getsource(corridor.execute_arm)
     replacements = {
-        "def execute_arm(number, native, exp, cfg, rows):": "def execute_arm(number, native, exp, cfg, rows, *, already_admitted):",
-        "jobs, results, witnesses, closed, interrupted = {}, {}, {}, {}, {}": "jobs, results, witnesses, closed, interrupted = dict(already_admitted), {}, {}, {}, {}",
+        "def execute_arm(number, native, exp, cfg, rows):": (
+            "def execute_arm(number, native, exp, cfg, rows, *, already_admitted):"
+        ),
+        "jobs, results, witnesses, closed, interrupted = {}, {}, {}, {}, {}": (
+            "jobs, results, witnesses, closed, interrupted = dict(already_admitted), {}, {}, {}, {}"
+        ),
     }
     modified = original
     for old, new in replacements.items():
@@ -43,11 +47,12 @@ def adopted_handler():
         )
     )
     path = AREA / "adopt_registered_processes.py"
-    header = "from continue_heritage_registered_corridor_arms import AREA, admit, first, folder, os, shutil, signal, time\n\n"
-    path.write_text(header + modified)
-    spec = importlib.util.spec_from_file_location(
-        "verified_original_arm_adoption", path
+    header = (
+        "from continue_heritage_registered_corridor_arms import "
+        "AREA, admit, first, folder, os, shutil, signal, time\n\n"
     )
+    path.write_text(header + modified)
+    spec = importlib.util.spec_from_file_location("verified_original_arm_adoption", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module.execute_arm, path
@@ -55,10 +60,7 @@ def adopted_handler():
 
 def joint_state(now):
     ledger = first.read(first.AREA / "ledger.json")
-    if (
-        sorted(ledger["reserved_ordinals"]) != list(range(1, 9))
-        or ledger["interruptions"]
-    ):
+    if sorted(ledger["reserved_ordinals"]) != list(range(1, 9)) or ledger["interruptions"]:
         raise RuntimeError(
             "earlier scientific priority has incomplete admissions or an interruption"
         )
@@ -86,9 +88,7 @@ def joint_state(now):
             ):
                 raise RuntimeError("an earlier live worker identity changed")
             open_jobs[i] = pid
-            work_s += (
-                now - first.read(home / "reservation.json")["unix_before_launch_s"]
-            )
+            work_s += now - first.read(home / "reservation.json")["unix_before_launch_s"]
         else:
             work_s += budget["elapsed_s"]
     return open_jobs, work_s, charges
@@ -106,9 +106,7 @@ def main():
         or cfg["execution_case_order"] != "plans_first"
         or not cfg["stop_plan_after_protection_failure"]
     ):
-        raise RuntimeError(
-            "scientific priority or plan-local stopping contract changed"
-        )
+        raise RuntimeError("scientific priority or plan-local stopping contract changed")
     if (
         list(corridor.AREA.glob("slot-*"))
         or (first.AREA / "merged-registration-receipt.json").exists()
@@ -119,9 +117,7 @@ def main():
         first.ps(OLD_WAITER, "command")
         != "/opt/anaconda3/bin/python scripts/continue_heritage_registered_corridor_arms.py"
     ):
-        raise RuntimeError(
-            "the original passive waiting controller cannot be identified"
-        )
+        raise RuntimeError("the original passive waiting controller cannot be identified")
     AREA.mkdir(exist_ok=False)
     handle, source = adopted_handler()
     first.save(
@@ -141,12 +137,17 @@ def main():
             earlier_complete_reconciliation_required_before_merging_any_next_arm=True,
             superseded_passive_controller={
                 "pid": OLD_WAITER,
-                "previous_scope": "waiting for first joint merge; no previous corridor native issue",
+                "previous_scope": (
+                    "waiting for first joint merge; no previous corridor native issue"
+                ),
             },
             unchanged_checks_limit=24,
             unchanged_cumulative_worker_wall_s=cfg["max_wall_time_s"],
             combined_maximum_workers=3,
-            strict_failure_stop_scope="per frozen candidate, native verified strict terminal core ignition only; previously issued work finishes",
+            strict_failure_stop_scope=(
+                "per frozen candidate, native verified strict terminal core ignition only; "
+                "previously issued work finishes"
+            ),
             patch_sha256=first.digest(AREA / "adoption.patch"),
             adopted_handler_sha256=first.digest(source),
             supervisor_sha256=first.digest(Path(__file__)),
@@ -177,11 +178,9 @@ def main():
         now = time.time()
         live_joint, joint_wall, _ = joint_state(now)
         active = {i: p for i, p in jobs.items() if p.poll() is None}
-        for i, p in jobs.items():
+        for i in jobs:
             if i not in seen:
-                result, witness = first.strict_result(
-                    native, corridor.folder(i), rows[i - 1]
-                )
+                result, witness = first.strict_result(native, corridor.folder(i), rows[i - 1])
                 if result:
                     seen[i] = result
                     if witness:
@@ -197,10 +196,7 @@ def main():
             joint_wall
             + sum(b["elapsed_s"] for b in closed.values())
             + sum(
-                now
-                - first.read(corridor.folder(i) / "admission.json")[
-                    "unix_before_launch_s"
-                ]
+                now - first.read(corridor.folder(i) / "admission.json")["unix_before_launch_s"]
                 for i in active
             )
         )
@@ -223,16 +219,11 @@ def main():
             for i in range(9, 17):
                 if len(live_joint) + len(active) >= 3:
                     break
-                if (
-                    i in jobs
-                    or i % 2 == 0
-                    and (i - 1 not in closed or any(j % 2 == 0 for j in active))
+                if i in jobs or (
+                    i % 2 == 0 and (i - 1 not in closed or any(j % 2 == 0 for j in active))
                 ):
                     continue
-                if (
-                    shutil.disk_usage(first.RUN).free
-                    < cfg["minimum_free_disk_GB"] * 1e9
-                ):
+                if shutil.disk_usage(first.RUN).free < cfg["minimum_free_disk_GB"] * 1e9:
                     raise RuntimeError("registered disk minimum reached")
                 first.save(
                     AREA / f"early-admission-{i}.json",

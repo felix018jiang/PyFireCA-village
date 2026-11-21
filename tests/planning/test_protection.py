@@ -29,8 +29,10 @@ spec.loader.exec_module(fixture)
 def example():
     q = fixture.make_request(("building", "grass", "building"), end_time_s=4)
     grid = VillageGridSpec(7, 9, 2, 0, 14)
+
     def pad(a, value=0):
         return np.pad(a, ((3, 3), (3, 3)), constant_values=value)
+
     edges = q.exposure_edges
     ids = np.arange(63).reshape(grid.shape)[3:4, 3:6].ravel()
     q = replace(

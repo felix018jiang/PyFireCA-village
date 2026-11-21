@@ -27,9 +27,10 @@ def summarize(output):
         assert override["frozen_experiment_sha256"] == content_hash(experiment)
         assert override["frozen_config_sha256"] == content_hash(experiment["config"])
         assert override["effective_max_radiation_edges"] > override["original_max_radiation_edges"]
-        assert content_hash(
-            (output / "execution-resource-source" / override["driver"]).read_text()
-        ) == override["driver_content_sha256"]
+        assert (
+            content_hash((output / "execution-resource-source" / override["driver"]).read_text())
+            == override["driver_content_sha256"]
+        )
     for relative, expected in experiment["source_sha256"].items():
         actual = content_hash((output / "source-snapshot" / relative).read_text())
         if actual != expected:
@@ -37,13 +38,15 @@ def summarize(output):
     assert summary["parent_case_unchanged"] and summary["inventory_unchanged"]
     protocol = experiment["source_protocol"]
     if "targeted_sampler_source_sha256" in protocol:
-        assert content_hash((output / "targeted-source-snapshot.py").read_text()) == protocol[
-            "targeted_sampler_source_sha256"
-        ]
+        assert (
+            content_hash((output / "targeted-source-snapshot.py").read_text())
+            == protocol["targeted_sampler_source_sha256"]
+        )
     if "prescribed_sampler_source_sha256" in protocol:
-        assert content_hash((output / "prescribed-source-snapshot.py").read_text()) == protocol[
-            "prescribed_sampler_source_sha256"
-        ]
+        assert (
+            content_hash((output / "prescribed-source-snapshot.py").read_text())
+            == protocol["prescribed_sampler_source_sha256"]
+        )
     by_key = {(row["plan_id"], row["draw_id"], row["scale_m"]): row for row in summary["runs"]}
     assert len(by_key) == summary["planned_runs"]
     budgets, footprints, records = {}, {}, []
@@ -55,9 +58,10 @@ def summarize(output):
         execution_hash = native["diagnostics"].get("execution_resource_override_sha256")
         if execution_hash is not None:
             assert override is not None and execution_hash == content_hash(override)
-            assert native["diagnostics"]["effective_max_radiation_edges"] == override[
-                "effective_max_radiation_edges"
-            ]
+            assert (
+                native["diagnostics"]["effective_max_radiation_edges"]
+                == override["effective_max_radiation_edges"]
+            )
         assert row["complete"] and row["source_verified"] and not row["invalid_reasons"]
         assert row["energy_error_J"] <= row["energy_tolerance_J"]
         assert {o["building_id"] for o in row["core_outcomes"]} == {

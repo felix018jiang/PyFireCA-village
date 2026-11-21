@@ -35,7 +35,7 @@ def partition(layout, inventory, D0, support):
             indexes = sorted(positions[k] for k in surviving)
             owners[i] = indexes[0]
             edges.extend((indexes[0], j) for j in indexes[1:])
-    x, y = zip(*edges) if edges else ([], [])
+    x, y = zip(*edges, strict=True) if edges else ([], [])
     graph = coo_matrix((np.ones(len(x)), (x, y)), shape=(len(candidates), len(candidates)))
     _, labels = connected_components(graph, directed=False)
     nodes, removable = defaultdict(list), defaultdict(set)
@@ -80,7 +80,7 @@ def optimize(allowed, cost, grounds, conflicts, confirmed, want_retention=None):
     shared = sorted(c for c, uses in cell_uses.items() if len(uses) > 1)
     n = len(cost)
     objective = np.r_[-cost, np.full(len(shared), 25.0)]
-    for cell, uses in cell_uses.items():
+    for uses in cell_uses.values():
         if len(uses) == 1:
             objective[uses[0]] += 25
     if want_retention is not None:
@@ -214,9 +214,21 @@ def run(village):
     return dict(
         village=village,
         whole_village_original_ordinary_roof_labels=len(inv.candidate_ids),
-        scope="Every single retained ordinary-roof ignition with all directly ignited material on that roof, both supported meshes; any exterior ignition for core zero heat. Fixed action domain of whole shared-roof groups; other ground fires do not have the village loss cap.",
-        admissibility="At least one retained label has an originally exclusive physical footprint capable of supporting 25 square metres of direct ignition.",
-        screening="Each shared-ownership group fits the caps, every pair of retained groups passes the group-to-receiver lifetime dose and contact tests, and every required ground cell is cleared.",
+        scope=(
+            "Every single retained ordinary-roof ignition with all directly ignited material "
+            "on that roof, both supported meshes; any exterior ignition for core zero heat. "
+            "Fixed action domain of whole shared-roof groups; other ground fires do not have "
+            "the village loss cap."
+        ),
+        admissibility=(
+            "At least one retained label has an originally exclusive physical footprint "
+            "capable of supporting 25 square metres of direct ignition."
+        ),
+        screening=(
+            "Each shared-ownership group fits the caps, every pair of retained groups passes "
+            "the group-to-receiver lifetime dose and contact tests, and every required "
+            "ground cell is cleared."
+        ),
         loss_caps=dict(physical_burned_m2=A, original_owner_upper=N),
         eligible_groups=int(allowed.sum()),
         total_groups=len(groups),

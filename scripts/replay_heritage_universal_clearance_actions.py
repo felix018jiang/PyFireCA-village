@@ -40,7 +40,9 @@ def recover(village):
         village=village,
         controls=controls,
         original_receipt_file_sha256=file_sha256(source),
-        interpretation="Protective clearance decisions for the universal-loss sensitivity experiment.",
+        interpretation=(
+            "Protective clearance decisions for the universal-loss sensitivity experiment."
+        ),
         method_sha256=file_sha256(__file__),
     )
     result["receipt_sha256"] = content_hash(result)

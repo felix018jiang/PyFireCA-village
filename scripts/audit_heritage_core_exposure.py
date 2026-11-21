@@ -157,8 +157,16 @@ def audit():
         model_initial_temperature_K=300,
         cohorts=rows,
         source_receipts_sha256=inputs,
-        measure="Any positive incident radiation or received contact heat on the union of protected physical nodes; cumulative absorbed heat and maximum valid temperature separately reconstructed. No building-specific exposure or origin ranking.",
-        interpretation="Thermal exposure is a model output; material or decoration damage is not measured by these experiments.",
+        measure=(
+            "Any positive incident radiation or received contact heat on the union of "
+            "protected physical nodes; cumulative absorbed heat and maximum valid "
+            "temperature separately reconstructed. No building-specific exposure or origin "
+            "ranking."
+        ),
+        interpretation=(
+            "Thermal exposure is a model output; material or decoration damage is not "
+            "measured by these experiments."
+        ),
         additional_fire_simulations=0,
         method_sha256=file_sha256(__file__),
     )

@@ -1,6 +1,5 @@
-"""Evaluate the strict held-out frontier on every registered family and on identical physical fires."""
+"""Evaluate the strict held-out frontier on registered families and identical physical fires."""
 
-import hashlib
 import json
 import math
 from pathlib import Path
@@ -35,20 +34,20 @@ def maps_for(original):
         if (
             set(members) != {"roof_union", "whole_ground_cells"}
             or set(members["roof_union"]) != set(plan["demolished_ids"])
-            or set(members["whole_ground_cells"])
-            != set(plan["cleared_physical_cell_ids"])
+            or set(members["whole_ground_cells"]) != set(plan["cleared_physical_cell_ids"])
             or not math.isclose(geo["construction_m2"], cost, rel_tol=0, abs_tol=1e-6)
         ):
-            raise ValueError(
-                "defensive map resources disagree with the frozen physical actions"
-            )
+            raise ValueError("defensive map resources disagree with the frozen physical actions")
         bound[plan["plan_id"]] = dict(
             workspace_path=str(p.relative_to(s.ROOT)),
             sha256=s.digest(p),
             canonical_C_m2=cost,
             roof_actions=len(members["roof_union"]),
             ground_actions=len(members["whole_ground_cells"]),
-            scope="protective clearance only; outcomes in the final receipt supersede design-set outcomes in map metadata",
+            scope=(
+                "protective clearance only; outcomes in the final receipt supersede "
+                "design-set outcomes in map metadata"
+            ),
         )
     return bound
 
@@ -111,13 +110,13 @@ def reduce_front(eligible, costs, observations, ordinals):
             r["worst_burned_original_building_owner_bounds"]["upper"],
         ]
         output[plan] = r
-    for p, row in output.items():
+    for row in output.values():
         target = row["objective_vector_C_maxA_maxNupper"]
         row["strictly_dominated_by"] = []
         for q, other in output.items():
             x = other["objective_vector_C_maxA_maxNupper"]
-            if all(l <= r for l, r in zip(x, target, strict=True)) and any(
-                l < r for l, r in zip(x, target, strict=True)
+            if all(value <= limit for value, limit in zip(x, target, strict=True)) and any(
+                value < limit for value, limit in zip(x, target, strict=True)
             ):
                 row["strictly_dominated_by"].append(q)
     return dict(
@@ -136,21 +135,14 @@ def generate(strict, done):
         strict["temporal_mode"] != "strict"
         or strict["native_comparison_problem_sha256"] != s.PROBLEM
     ):
-        raise ValueError(
-            "common-source comparison requires the unmodified strict physical problem"
-        )
+        raise ValueError("common-source comparison requires the unmodified strict physical problem")
     exp = s.read(s.RUN / "experiment.json")
     cfg = exp["config"]
     original = s.read(s.CONFIG.parent / "final-candidates.json")
-    if (
-        s.digest(s.CONFIG.parent / "final-candidates.json")
-        != cfg["final_candidates_sha256"]
-    ):
+    if s.digest(s.CONFIG.parent / "final-candidates.json") != cfg["final_candidates_sha256"]:
         raise ValueError("final candidate declaration changed")
     maps = maps_for(original)
-    feasible = {
-        p["plan_id"]: p for p in strict["archive"]["fully_evaluated_feasible_plans"]
-    }
+    feasible = {p["plan_id"]: p for p in strict["archive"]["fully_evaluated_feasible_plans"]}
     eligible = [pid for pid in cfg["execution_priority_plan_ids"] if pid in feasible]
     costs = {pid: feasible[pid]["cleared_area_m2"] for pid in eligible}
     all_cases = list(range(1, 9))
@@ -158,9 +150,7 @@ def generate(strict, done):
     signatures = {}
     for pid in eligible:
         declared = [
-            p["scenario_id"]
-            for p in cfg["execution_case_selection"]
-            if p["plan_id"] == pid
+            p["scenario_id"] for p in cfg["execution_case_selection"] if p["plan_id"] == pid
         ]
         if len(set(declared)) != 8 or len(declared) != 8:
             raise ValueError(
@@ -170,35 +160,25 @@ def generate(strict, done):
         signatures[pid] = {}
         for i, sc in enumerate(declared, 1):
             checks = [
-                r
-                for r in strict["native_checks"]
-                if r["plan_id"] == pid and r["scenario_id"] == sc
+                r for r in strict["native_checks"] if r["plan_id"] == pid and r["scenario_id"] == sc
             ]
             if (
                 len(checks) != 1
                 or checks[0]["status"] != "passed"
                 or not checks[0]["terminal_complete"]
             ):
-                raise ValueError(
-                    "unverified or incomplete plan in the full-arm eligible set"
-                )
+                raise ValueError("unverified or incomplete plan in the full-arm eligible set")
             ref = checks[0]
             manifest = Path(ref["manifest"])
             if s.digest(manifest) != ref["manifest_sha256"]:
                 raise ValueError("archived native witness changed")
             m = s.read(manifest)
             base = manifest.parent
-            if (
-                m["problem_sha256"] != s.PROBLEM
-                or m["plan_id"] != pid
-                or m["scenario_id"] != sc
-            ):
+            if m["problem_sha256"] != s.PROBLEM or m["plan_id"] != pid or m["scenario_id"] != sc:
                 raise ValueError("mixed native identity")
             for name in ("check.json", "fire-loss.json"):
                 if s.digest(base / name) != m["files_sha256"][name]:
-                    raise ValueError(
-                        "native physical support or loss decomposition changed"
-                    )
+                    raise ValueError("native physical support or loss decomposition changed")
             ev = s.read(base / "check.json")["evidence"]
             loss = s.read(base / "fire-loss.json")
             phys = loss["physical"]
@@ -213,25 +193,19 @@ def generate(strict, done):
             if (
                 a["all"] != checked["A_burned_out_m2"]
                 or count != checked["N_burned_out"]
-                or not math.isclose(
-                    a["roof"] + a["nonroof"], a["all"], rel_tol=1e-10, abs_tol=1e-7
-                )
+                or not math.isclose(a["roof"] + a["nonroof"], a["all"], rel_tol=1e-10, abs_tol=1e-7)
             ):
                 raise ValueError(
                     "physical area or owner bounds differ from strict native postprocessing"
                 )
             if abs(ev["source_budget"]["covered_area_m2"] - 25) > 1e-5:
-                raise ValueError(
-                    "actual ignition support differs from the frozen 25 m2 patch"
-                )
+                raise ValueError("actual ignition support differs from the frozen 25 m2 patch")
             family = (i + 1) // 2
             scale = 1.0 if i % 2 else 0.5
             if not sc.endswith(f"-h{scale:g}"):
                 raise ValueError("wrong native mesh ordering")
             core = ev["core_outcomes"]
-            if len(core) != len(original["core_ids"]) or any(
-                node["ignited"] for node in core
-            ):
+            if len(core) != len(original["core_ids"]) or any(node["ignited"] for node in core):
                 raise ValueError(
                     "strict full-arm eligibility conflicts with the protected surfaces"
                 )
@@ -258,9 +232,7 @@ def generate(strict, done):
     if set(full["exact_non_dominated_plan_ids"]) != {
         p["plan_id"] for p in strict["archive"]["non_dominated_archive"]
     }:
-        raise ValueError(
-            "independent exact frontier does not match frozen strict postprocessing"
-        )
+        raise ValueError("independent exact frontier does not match frozen strict postprocessing")
     support_ref = cfg["supplemental_geometry_receipt"]
     support = Path(support_ref["path"])
     if s.digest(support) != support_ref["sha256"]:
@@ -283,23 +255,16 @@ def generate(strict, done):
             )
     eligible_or_all_common = sorted(eligible_or_all_common)
     if any(
-        (i in eligible_or_all_common) != ((i + 1) in eligible_or_all_common)
-        for i in (1, 3, 5, 7)
+        (i in eligible_or_all_common) != ((i + 1) in eligible_or_all_common) for i in (1, 3, 5, 7)
     ):
-        raise ValueError(
-            "registered common physical footprint changed between mesh scales"
-        )
+        raise ValueError("registered common physical footprint changed between mesh scales")
     common = []
     if len(eligible) >= 2:
         for family in range(1, 5):
             coarse, fine = 2 * family - 1, 2 * family
-            match = [
-                len({signatures[p][i] for p in eligible}) == 1 for i in (coarse, fine)
-            ]
+            match = [len({signatures[p][i] for p in eligible}) == 1 for i in (coarse, fine)]
             if match[0] != match[1]:
-                raise ValueError(
-                    "a declared family lost common physical support across scales"
-                )
+                raise ValueError("a declared family lost common physical support across scales")
             if all(match):
                 common.extend((coarse, fine))
     if len(eligible) == 1:
@@ -307,13 +272,9 @@ def generate(strict, done):
         # on the actual patches shared by all three original frozen actions.
         common = eligible_or_all_common
     if len(eligible) > 1 and not set(eligible_or_all_common) <= set(common):
-        raise ValueError(
-            "native verification disagrees with the original common physical support"
-        )
+        raise ValueError("native verification disagrees with the original common physical support")
     matched = reduce_front(eligible, costs, observations, common)
-    matched["original_preverified_all_three_common_mesh_ordinals"] = (
-        eligible_or_all_common
-    )
+    matched["original_preverified_all_three_common_mesh_ordinals"] = eligible_or_all_common
     matched["common_set_basis"] = (
         "fully eligible plans' verified native supports"
         if len(eligible) > 1
@@ -348,16 +309,31 @@ def generate(strict, done):
     if sum(map(len, reasons.values())) != done["skipped_by_verified_core_failure"]:
         raise ValueError("an original skipped slot lost its native strict witness")
     return dict(
-        original_question="4 frozen new families x 2 roof refinements = 8 proposed native observations per arm. Each arm requires eight strict passes for either frontier. An original verified strict core failure stops unissued members of its own arm.",
+        original_question=(
+            "4 frozen new families x 2 roof refinements = 8 proposed native observations per "
+            "arm. Each arm requires eight strict passes for either frontier. An original "
+            "verified strict core failure stops unissued members of its own arm."
+        ),
         exact_minimization_axes=[
             "C_m2",
             "max_A_total_burned_m2",
             "max_N_original_owner_upper",
         ],
         dominance_comparison_tolerance=0,
-        full_policy="Per-plan worst losses across all four retained-source-policy families. Actual physical patches can differ by plan in the same family.",
-        same_source_policy="Use only families whose actual retained source, footprint, heat/fuel/area budget, common geometry and frozen integration membership coincide for every fully qualified candidate, at both scales.",
-        scope_of_area="Full model-domain covered fuel. Maxima of roof and nonroof can occur in different observations; the exact maximum-total cases list their own matched components.",
+        full_policy=(
+            "Per-plan worst losses across all four retained-source-policy families. Actual "
+            "physical patches can differ by plan in the same family."
+        ),
+        same_source_policy=(
+            "Use only families whose actual retained source, footprint, heat/fuel/area "
+            "budget, common geometry and frozen integration membership coincide for every "
+            "fully qualified candidate, at both scales."
+        ),
+        scope_of_area=(
+            "Full model-domain covered fuel. Maxima of roof and nonroof can occur in "
+            "different observations; the exact maximum-total cases list their own matched "
+            "components."
+        ),
         all_strict_original_families=full,
         common_actual_physical_source_families=matched,
         archived_native_skip_causes=reasons,

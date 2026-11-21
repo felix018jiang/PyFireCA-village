@@ -50,37 +50,39 @@ def audit(output):
         cross_owner = owners[ids] != obj.object_id
         shared = cell_counts[ids] > 1
         tiny = areas < 0.01 * cell_area
-        rows.append({
-            "object_id": obj.object_id,
-            "label": obj.label,
-            "source_label": obj.source_label,
-            "vector_area_m2": obj.vector_area_m2,
-            "observed_area_m2": float(areas.sum()),
-            "observation_cells": len(ids),
-            "shared_cells": int(shared.sum()),
-            "shared_observed_area_m2": float(areas[shared].sum()),
-            "different_owner_cells": int(cross_owner.sum()),
-            "different_owner_observed_area_m2": float(areas[cross_owner].sum()),
-            "different_owner_area_fraction": float(areas[cross_owner].sum() / areas.sum()),
-            "minimum_cell_intersection_m2": float(areas.min()),
-            "cells_below_one_percent_grid_cell": int(tiny.sum()),
-            "area_below_one_percent_grid_cell_m2": float(areas[tiny].sum()),
-            "fuel_owners_observed": {
-                str(int(owner)): float(areas[owners[ids] == owner].sum())
-                for owner in np.unique(owners[ids])
-            },
-            "small_or_different_owner_cells": [
-                {
-                    "row": int(cid // bundle.request.grid.width),
-                    "column": int(cid % bundle.request.grid.width),
-                    "fuel_owner_id": int(owners[cid]),
-                    "intersection_area_m2": float(area),
-                }
-                for cid, area in zip(
-                    ids[tiny | cross_owner], areas[tiny | cross_owner], strict=True
-                )
-            ],
-        })
+        rows.append(
+            {
+                "object_id": obj.object_id,
+                "label": obj.label,
+                "source_label": obj.source_label,
+                "vector_area_m2": obj.vector_area_m2,
+                "observed_area_m2": float(areas.sum()),
+                "observation_cells": len(ids),
+                "shared_cells": int(shared.sum()),
+                "shared_observed_area_m2": float(areas[shared].sum()),
+                "different_owner_cells": int(cross_owner.sum()),
+                "different_owner_observed_area_m2": float(areas[cross_owner].sum()),
+                "different_owner_area_fraction": float(areas[cross_owner].sum() / areas.sum()),
+                "minimum_cell_intersection_m2": float(areas.min()),
+                "cells_below_one_percent_grid_cell": int(tiny.sum()),
+                "area_below_one_percent_grid_cell_m2": float(areas[tiny].sum()),
+                "fuel_owners_observed": {
+                    str(int(owner)): float(areas[owners[ids] == owner].sum())
+                    for owner in np.unique(owners[ids])
+                },
+                "small_or_different_owner_cells": [
+                    {
+                        "row": int(cid // bundle.request.grid.width),
+                        "column": int(cid % bundle.request.grid.width),
+                        "fuel_owner_id": int(owners[cid]),
+                        "intersection_area_m2": float(area),
+                    }
+                    for cid, area in zip(
+                        ids[tiny | cross_owner], areas[tiny | cross_owner], strict=True
+                    )
+                ],
+            }
+        )
     geometry = {
         s["building_id"]: unary_union([Polygon(p["exterior"], p["holes"]) for p in s["polygons"]])
         for s in structures
@@ -95,13 +97,15 @@ def audit(output):
                 continue
             other = byid[owner]["label"]
             a, b = geometry[row["label"]], geometry[other]
-            bridge_pairs.append({
-                "bridge": row["label"],
-                "other_label": other,
-                "vector_gap_m": a.distance(b),
-                "vector_overlap_m2": a.intersection(b).area,
-                "bridge_area_in_other_owner_cells_m2": row["fuel_owners_observed"][str(owner)],
-            })
+            bridge_pairs.append(
+                {
+                    "bridge": row["label"],
+                    "other_label": other,
+                    "vector_gap_m": a.distance(b),
+                    "vector_overlap_m2": a.intersection(b).area,
+                    "bridge_area_in_other_owner_cells_m2": row["fuel_owners_observed"][str(owner)],
+                }
+            )
     return {
         "protocol_sha256": sha(output / "protocol.json"),
         "observation_sha256": observer.sha256,

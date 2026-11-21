@@ -80,16 +80,18 @@ def audit(output):
         counts["boundary_affected"] += bool(m["burning_reached_domain_edge"])
         if problems:
             errors.append({"file": str(path.relative_to(output)), "problems": problems})
-        rows.append({
-            "file": str(path.relative_to(output)),
-            "sha256": hashlib.sha256(content).hexdigest(),
-            "scenario_id": record["scenario_id"],
-            "plan_id": record["intervention_id"],
-            "category": category,
-            "simulated_until_s": until,
-            "maximum_absolute_energy_closure_J": max(map(abs, energy.values())),
-            "energy_tolerance_J": tolerance,
-        })
+        rows.append(
+            {
+                "file": str(path.relative_to(output)),
+                "sha256": hashlib.sha256(content).hexdigest(),
+                "scenario_id": record["scenario_id"],
+                "plan_id": record["intervention_id"],
+                "category": category,
+                "simulated_until_s": until,
+                "maximum_absolute_energy_closure_J": max(map(abs, energy.values())),
+                "energy_tolerance_J": tolerance,
+            }
+        )
     return {
         "created_at": datetime.now().astimezone().isoformat(),
         "protocol_sha256": sha(output / "protocol.json"),

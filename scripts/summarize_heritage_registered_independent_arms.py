@@ -1,4 +1,4 @@
-"""Aggregate the three frozen independent treatment arms with strict and conditional denominators."""
+"""Aggregate the three frozen independent arms with strict and conditional denominators."""
 
 import argparse
 import itertools
@@ -16,9 +16,22 @@ OUT = (
 )
 FINAL = dispatch.CONFIG.parent / "final-candidates.json"
 SOURCE_AUDIT = (
-    dispatch.ROOT
-    / "docs/results/heritage-pingyan-independent-three-stage-bounds-20261111.json"
+    dispatch.ROOT / "docs/results/heritage-pingyan-independent-three-stage-bounds-20261111.json"
 )
+
+
+def worst(hits, keys):
+    if not keys:
+        return None
+    return {
+        "N_burned_original_owner_lower": max(
+            hits[i]["burned_buildings_original_owner_bounds"]["lower"] for i in keys
+        ),
+        "N_burned_original_owner_upper": max(
+            hits[i]["burned_buildings_original_owner_bounds"]["upper"] for i in keys
+        ),
+        "A_burned_physical_m2": max(hits[i]["burned_physical_m2"] for i in keys),
+    }
 
 
 def update():
@@ -35,11 +48,7 @@ def update():
     admitted, stopped_plans = set(), set()
     for i, (plan, scenario) in enumerate(rows, 1):
         area = dispatch.AREA if i <= 8 else corridor.AREA
-        home = (
-            dispatch.RUN
-            if i == 1
-            else dispatch.child_home(i) if i <= 8 else corridor.folder(i)
-        )
+        home = dispatch.RUN if i == 1 else dispatch.child_home(i) if i <= 8 else corridor.folder(i)
         budget = home / "execution-budget.json"
         if i == 1 and (dispatch.AREA / "resident-budget-before-merge.json").exists():
             budget = dispatch.AREA / "resident-budget-before-merge.json"
@@ -59,16 +68,11 @@ def update():
             result["native_manifest_sha256"] != dispatch.digest(manifest)
             or result["native_problem_sha256"] != dispatch.PROBLEM
         ):
-            raise ValueError(
-                "previously verified endpoint no longer matches the native archive"
-            )
+            raise ValueError("previously verified endpoint no longer matches the native archive")
         # Split the same audited covered-area metric. No settlement polygon is
         # imposed on the full-domain grass/fuel footprint by the original experiment.
         loss_path = folder / "fire-loss.json"
-        if (
-            dispatch.digest(loss_path)
-            != n.read_json(manifest)["files_sha256"][loss_path.name]
-        ):
+        if dispatch.digest(loss_path) != n.read_json(manifest)["files_sha256"][loss_path.name]:
             raise ValueError("native roof/ground loss decomposition changed")
         physical = n.read_json(loss_path)["physical"]
         if result["burned_physical_m2"] is not None:
@@ -83,9 +87,7 @@ def update():
             result = {**result, "burned_roof_physical_m2": roof}
         observations[i] = {
             **result,
-            "native_full_domain_baseline_covered_m2": physical["all"][
-                "baseline_covered_area_m2"
-            ],
+            "native_full_domain_baseline_covered_m2": physical["all"]["baseline_covered_area_m2"],
         }
         evidence[i] = n.read_json(folder / "check.json")["evidence"]
         if result["strict_status"] == "failed" and result["strict_complete"]:
@@ -103,27 +105,19 @@ def update():
         else [by_key[(x["plan_id"], x["scenario_id"])] for x in ledger["skipped_cases"]]
     )
     after_stop = {
-        i
-        for i, (p, _) in enumerate(rows, 1)
-        if p.plan_id in stopped_plans and i not in admitted
+        i for i, (p, _) in enumerate(rows, 1) if p.plan_id in stopped_plans and i not in admitted
     }
     if not set(skipped) <= after_stop:
-        raise ValueError(
-            "canonical skip receipt conflicts with native admissions or strict stops"
-        )
+        raise ValueError("canonical skip receipt conflicts with native admissions or strict stops")
     arms = []
     for ai, pid in enumerate(cfg["execution_priority_plan_ids"]):
         ordinals = list(range(ai * 8 + 1, ai * 8 + 9))
         hits = {i: observations[i] for i in ordinals if i in observations}
         strict = [
-            i
-            for i, r in hits.items()
-            if r["strict_status"] == "passed" and r["strict_complete"]
+            i for i, r in hits.items() if r["strict_status"] == "passed" and r["strict_complete"]
         ]
         failed = [
-            i
-            for i, r in hits.items()
-            if r["strict_status"] == "failed" and r["strict_complete"]
+            i for i, r in hits.items() if r["strict_status"] == "failed" and r["strict_complete"]
         ]
         cond = [
             i
@@ -136,23 +130,6 @@ def update():
         )
         definitive = len(strict) == 8
 
-        def worst(keys):
-            if not keys:
-                return None
-            return {
-                "N_burned_original_owner_lower": max(
-                    hits[i]["burned_buildings_original_owner_bounds"]["lower"]
-                    for i in keys
-                ),
-                "N_burned_original_owner_upper": max(
-                    hits[i]["burned_buildings_original_owner_bounds"]["upper"]
-                    for i in keys
-                ),
-                "A_burned_physical_m2": max(
-                    hits[i]["burned_physical_m2"] for i in keys
-                ),
-            }
-
         arms.append(
             dict(
                 plan=pid,
@@ -163,31 +140,23 @@ def update():
                 native_manifests=len(hits),
                 strict_pass_count=len(strict),
                 strict_protection_failure_count=len(failed),
-                strict_unknown_count=sum(
-                    r["strict_status"] == "unknown" for r in hits.values()
-                ),
+                strict_unknown_count=sum(r["strict_status"] == "unknown" for r in hits.values()),
                 strict_pass_families_at_both_scales=completed_families,
                 finite_domain_pass_count=len(cond),
-                not_run_due_to_verified_core_failure=sum(
-                    i in after_stop for i in ordinals
-                ),
+                not_run_due_to_verified_core_failure=sum(i in after_stop for i in ordinals),
                 counterexample_stops_already_merged_into_canonical_ledger=sum(
                     i in skipped for i in ordinals
                 ),
-                strict_arm_status=(
-                    "passed" if definitive else "failed" if failed else "unknown"
-                ),
-                strict_full_arm_worst=worst(strict) if definitive else None,
-                observed_strict_pass_subset_max_only=(
-                    worst(strict) if not definitive else None
-                ),
-                finite_domain_full_arm_worst=worst(cond) if len(cond) == 8 else None,
+                strict_arm_status=("passed" if definitive else "failed" if failed else "unknown"),
+                strict_full_arm_worst=worst(hits, strict) if definitive else None,
+                observed_strict_pass_subset_max_only=worst(hits, strict)
+                if not definitive
+                else None,
+                finite_domain_full_arm_worst=worst(hits, cond) if len(cond) == 8 else None,
                 partial_maxima_are_not_the_full_arm_worst=not definitive,
             )
         )
-    n.verify_pairing(
-        [{"scenario_id": rows[i - 1][1], "evidence": e} for i, e in evidence.items()]
-    )
+    n.verify_pairing([{"scenario_id": rows[i - 1][1], "evidence": e} for i, e in evidence.items()])
     frozen_support = cfg["supplemental_geometry_receipt"]
     if (
         str(SOURCE_AUDIT) != frozen_support["path"]
@@ -215,12 +184,8 @@ def update():
             if not all(i in evidence for i in pair):
                 continue
             left, right = [evidence[i] for i in pair]
-            if (
-                left["source_footprint_sha256"] == right["source_footprint_sha256"]
-            ) != equal:
-                raise ValueError(
-                    "registered support and observed native signatures disagree"
-                )
+            if (left["source_footprint_sha256"] == right["source_footprint_sha256"]) != equal:
+                raise ValueError("registered support and observed native signatures disagree")
             if equal:
                 for key in (
                     "source_id",
@@ -237,15 +202,15 @@ def update():
                     and observations[i]["strict_complete"]
                     for i in pair
                 ):
-                    l, r = [observations[i] for i in pair]
+                    first_case, second_case = [observations[i] for i in pair]
                     matched.append(
                         dict(
                             family=family,
                             roof_scale_m=scale,
-                            difference_second_minus_first_A_m2=r["burned_physical_m2"]
-                            - l["burned_physical_m2"],
-                            first_N_bounds=l["burned_buildings_original_owner_bounds"],
-                            second_N_bounds=r["burned_buildings_original_owner_bounds"],
+                            difference_second_minus_first_A_m2=second_case["burned_physical_m2"]
+                            - first_case["burned_physical_m2"],
+                            first_N_bounds=first_case["burned_buildings_original_owner_bounds"],
+                            second_N_bounds=second_case["burned_buildings_original_owner_bounds"],
                         )
                     )
         pairs.append(
@@ -254,16 +219,13 @@ def update():
                 same_physical_source_cases=equal_support,
                 out_of=8,
                 native_verified_strict_paired_observations=matched,
-                unequal_physical_source_cases_excluded_from_paired_contrasts=8
-                - equal_support,
+                unequal_physical_source_cases_excluded_from_paired_contrasts=8 - equal_support,
             )
         )
     report = dict(
         schema="heritage-fixed-independent-three-arm-protection-and-loss-1",
         native_problem_sha256=dispatch.PROBLEM,
-        original_native_experiment_sha256=dispatch.digest(
-            dispatch.RUN / "experiment.json"
-        ),
+        original_native_experiment_sha256=dispatch.digest(dispatch.RUN / "experiment.json"),
         final_preunblind_candidate_sha256=dispatch.digest(FINAL),
         total_original_slots=24,
         charged_native_ordinals=actual_charged,
@@ -280,7 +242,10 @@ def update():
             }
             for i, r in observations.items()
         },
-        area_scope="Cumulative fuel-covered area burned out in the original simulated domain, split into roof and nonroof; no surveyed village-border clipping in this metric.",
+        area_scope=(
+            "Cumulative fuel-covered area burned out in the original simulated domain, split "
+            "into roof and nonroof; no surveyed village-border clipping in this metric."
+        ),
         registered_after_optimizing_design=True,
         later_design_candidates_included=False,
         validation_refers_to_four_sampled_families_and_two_meshes=True,

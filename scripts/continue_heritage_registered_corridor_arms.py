@@ -27,8 +27,7 @@ def verify():
     if (
         reg["driver_sha256"] != first.digest(SCRIPT)
         or reg["joint_administration_registration_sha256"] != first.digest(first.REG)
-        or reg["native_experiment_sha256"]
-        != first.digest(first.RUN / "experiment.json")
+        or reg["native_experiment_sha256"] != first.digest(first.RUN / "experiment.json")
         or reg["config_sha256"] != first.digest(first.CONFIG)
     ):
         raise RuntimeError("registered continuation inputs changed")
@@ -42,8 +41,7 @@ def run_one(i):
     home = folder(i)
     if (
         i not in range(9, 25)
-        or first.read(home / "admission.json")["registration_sha256"]
-        != first.digest(REG)
+        or first.read(home / "admission.json")["registration_sha256"] != first.digest(REG)
         or first.read(home / "execution-budget.json")
         != {"elapsed_s": 0.0, "started_checks": 0, "active": None}
     ):
@@ -52,9 +50,7 @@ def run_one(i):
 
     def project(c):
         selected = [
-            r
-            for r in old(c)
-            if r[0].plan_id == rows[i - 1][0].plan_id and r[1] == rows[i - 1][1]
+            r for r in old(c) if r[0].plan_id == rows[i - 1][0].plan_id and r[1] == rows[i - 1][1]
         ]
         if len(selected) != 1 or c != cfg:
             raise ValueError("case is not the unique originally declared result")
@@ -71,9 +67,7 @@ def admit(i, prior_started, ordinal_count):
     home.mkdir()
     for name in ("experiment.json", "preflight.json"):
         os.link(first.RUN / name, home / name)
-    (home / "source-snapshot").symlink_to(
-        first.RUN / "source-snapshot", target_is_directory=True
-    )
+    (home / "source-snapshot").symlink_to(first.RUN / "source-snapshot", target_is_directory=True)
     first.save(
         home / "execution-budget.json",
         {"elapsed_s": 0.0, "started_checks": 0, "active": None},
@@ -117,7 +111,7 @@ def execute_arm(number, native, exp, cfg, rows):
     while True:
         now = time.time()
         active = {i: p for i, p in jobs.items() if p.poll() is None}
-        for i, p in jobs.items():
+        for i in jobs:
             if i not in results:
                 result, witness = first.strict_result(native, folder(i), rows[i - 1])
                 if result:
@@ -126,19 +120,14 @@ def execute_arm(number, native, exp, cfg, rows):
                         witnesses[i] = witness
             if i not in active and i not in closed:
                 b = first.read(folder(i) / "execution-budget.json")
-                if (
-                    b["active"] is not None
-                    or b["started_checks"] != 1
-                    or i not in results
-                ):
+                if b["active"] is not None or b["started_checks"] != 1 or i not in results:
                     interrupted[i] = (
                         "worker exited without a closed original native result and charge"
                     )
                 closed[i] = b
         wall = original["elapsed_s"] + sum(b["elapsed_s"] for b in closed.values())
         wall += sum(
-            now - first.read(folder(i) / "admission.json")["unix_before_launch_s"]
-            for i in active
+            now - first.read(folder(i) / "admission.json")["unix_before_launch_s"] for i in active
         )
         if wall >= cfg["max_wall_time_s"] - 300:
             for i, p in active.items():
@@ -160,16 +149,13 @@ def execute_arm(number, native, exp, cfg, rows):
             for i in ordinals:
                 if len(active) >= 3:
                     break
-                if i in jobs or i % 2 == 0 and i - 1 not in closed:
+                if i in jobs or (i % 2 == 0 and i - 1 not in closed):
                     continue
                 # The narrow arm has the largest geometric envelope. Keep one fine
                 # mesh at a time on this 16-GB host and allow other coarse families.
                 if i % 2 == 0 and any(j % 2 == 0 for j in active):
                     continue
-                if (
-                    shutil.disk_usage(first.RUN).free
-                    < cfg["minimum_free_disk_GB"] * 1e9
-                ):
+                if shutil.disk_usage(first.RUN).free < cfg["minimum_free_disk_GB"] * 1e9:
                     interrupted[i] = "registered disk minimum"
                     break
                 jobs[i] = admit(i, original["started_checks"], len(jobs))
@@ -198,8 +184,7 @@ def execute_arm(number, native, exp, cfg, rows):
                     completed_native_shard_budgets=closed,
                     active_pids={i: p.pid for i, p in active.items()},
                     cumulative_used_or_live_wall_s=wall,
-                    ceiling_on_started_with_reserved=original["started_checks"]
-                    + len(jobs),
+                    ceiling_on_started_with_reserved=original["started_checks"] + len(jobs),
                     paused_ordinals=sorted(paused),
                 ),
             )
@@ -218,10 +203,7 @@ def execute_arm(number, native, exp, cfg, rows):
         plan, scenario = rows[i - 1]
         src = native.result_folder(folder(i), plan, scenario)
         dest = native.result_folder(first.RUN, plan, scenario)
-        if (
-            dest.exists()
-            or first.digest(src / "complete.json") != results[i]["manifest_sha256"]
-        ):
+        if dest.exists() or first.digest(src / "complete.json") != results[i]["manifest_sha256"]:
             raise RuntimeError("native source lineage or target conflict")
         staging = dest.with_name(dest.name + ".importing")
         shutil.copytree(src, staging, copy_function=os.link)
@@ -245,15 +227,9 @@ def execute_arm(number, native, exp, cfg, rows):
             if i not in results:
                 native.persist_execution_skip(first.RUN, exp, *rows[i - 1], witness)
                 skipped.append(i)
-    charged = original["started_checks"] + sum(
-        b["started_checks"] for b in closed.values()
-    )
+    charged = original["started_checks"] + sum(b["started_checks"] for b in closed.values())
     wall = original["elapsed_s"] + sum(b["elapsed_s"] for b in closed.values())
-    if (
-        charged > 24
-        or wall > cfg["max_wall_time_s"]
-        or len(results) + len(skipped) != 8
-    ):
+    if charged > 24 or wall > cfg["max_wall_time_s"] or len(results) + len(skipped) != 8:
         raise RuntimeError("registered arm does not reconcile to the declared bounds")
     final = dict(started_checks=charged, elapsed_s=wall, active=None)
     first.save(first.RUN / "execution-budget.json", final)
@@ -281,9 +257,7 @@ def supervise():
     lock = (AREA / "writer.lock").open("a")
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     if REG.exists():
-        raise RuntimeError(
-            "existing registration requires targeted recovery, no automatic repeat"
-        )
+        raise RuntimeError("existing registration requires targeted recovery, no automatic repeat")
     first.save(
         REG,
         dict(
@@ -294,7 +268,9 @@ def supervise():
             config_sha256=first.digest(first.CONFIG),
             driver_sha256=first.digest(SCRIPT),
             joint_administration_registration_sha256=first.digest(first.REG),
-            prior_arm_required="validated joint-arm merge and reconciliation before any new projection",
+            prior_arm_required=(
+                "validated joint-arm merge and reconciliation before any new projection"
+            ),
             capacity=dict(
                 max_simultaneous_independent=3,
                 maximum_simultaneous_fine=1,
@@ -307,8 +283,14 @@ def supervise():
                 {"ordinals": list(range(9, 17)), "plan": rows[8][0].plan_id},
                 {"ordinals": list(range(17, 25)), "plan": rows[16][0].plan_id},
             ],
-            failure_rule="Use original native strict complete protected-core witness. Already admitted ordinals complete. Earn no loss endpoint for omitted slots.",
-            comparator="Three separate original arms. Compare loss by a common source only where the verified actual physical patch is identical; no source redraws.",
+            failure_rule=(
+                "Use original native strict complete protected-core witness. Already "
+                "admitted ordinals complete. Earn no loss endpoint for omitted slots."
+            ),
+            comparator=(
+                "Three separate original arms. Compare loss by a common source only where "
+                "the verified actual physical patch is identical; no source redraws."
+            ),
             physical_or_scientific_input_changed=False,
         ),
     )
@@ -346,8 +328,7 @@ def supervise():
             total_global_budget=first.read(first.RUN / "execution-budget.json"),
             native_summary_sha256=first.digest(first.RUN / "summary.json"),
             all_original_frozen_arms=True,
-            every_declared_slot_is_an_actual_simulation=len(failures["skipped_cases"])
-            == 0,
+            every_declared_slot_is_an_actual_simulation=len(failures["skipped_cases"]) == 0,
         ),
     )
 

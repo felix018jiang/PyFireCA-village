@@ -1,5 +1,5 @@
-from pathlib import Path
 import json
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -8,11 +8,14 @@ from pyfireca.village.imagery_landcover import classify_rgb_candidates, prepare_
 
 
 def test_spectral_candidates_preserve_shadows_and_missing_data():
-    rgb = np.array([
-        [[40, 90, 140, 150, 30, 10, 80]],
-        [[70, 140, 100, 150, 60, 10, 80]],
-        [[30, 70, 70, 150, 80, 10, 80]],
-    ], dtype=np.uint8)
+    rgb = np.array(
+        [
+            [[40, 90, 140, 150, 30, 10, 80]],
+            [[70, 140, 100, 150, 60, 10, 80]],
+            [[30, 70, 70, 150, 80, 10, 80]],
+        ],
+        dtype=np.uint8,
+    )
     valid = np.array([[True, True, True, True, True, True, False]])
     result = classify_rgb_candidates(rgb, valid)
     assert result.tolist() == [[1, 2, 3, 4, 5, 0, 255]]
@@ -30,10 +33,23 @@ def test_preparation_keeps_georeferencing_alpha_and_unknown_evidence(tmp_path: P
     rgba[3] = 255
     rgba[3, 0, 0] = 0
     transform = rasterio.transform.from_origin(346000, 2870000, 2, 2)
-    with rasterio.open(imagery, "w", driver="GTiff", width=4, height=4, count=4,
-                       dtype="uint8", crs="EPSG:32649", transform=transform) as source:
-        source.colorinterp = (rasterio.enums.ColorInterp.red, rasterio.enums.ColorInterp.green,
-                              rasterio.enums.ColorInterp.blue, rasterio.enums.ColorInterp.alpha)
+    with rasterio.open(
+        imagery,
+        "w",
+        driver="GTiff",
+        width=4,
+        height=4,
+        count=4,
+        dtype="uint8",
+        crs="EPSG:32649",
+        transform=transform,
+    ) as source:
+        source.colorinterp = (
+            rasterio.enums.ColorInterp.red,
+            rasterio.enums.ColorInterp.green,
+            rasterio.enums.ColorInterp.blue,
+            rasterio.enums.ColorInterp.alpha,
+        )
         source.write(rgba)
     output = prepare_rgb_landcover(imagery, tmp_path / "classified")
     with rasterio.open(output / "landcover.tif") as result:

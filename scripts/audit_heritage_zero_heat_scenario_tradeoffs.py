@@ -117,7 +117,10 @@ def audit(root):
         )
     cost = (paired["original_cost_m2"], paired["enumerated_minimum_cost_m2"])
     need(cost[0] > cost[1], "new placement no longer cheaper")
-    worst = lambda arm: (max(x["a" + arm] for x in rows), max(x["n" + arm] for x in rows))
+
+    def worst(arm):
+        return max(x["a" + arm] for x in rows), max(x["n" + arm] for x in rows)
+
     w0, w1 = worst("0"), worst("1")
     minimax = w1[0] <= w0[0] + 1e-7 and w1[1] <= w0[1]
     each = all(x["a1"] <= x["a0"] + 1e-7 and x["n1"] <= x["n0"] for x in rows)
@@ -159,7 +162,11 @@ def audit(root):
         ),
         all_burned_original_building_count_bounds_unchanged=all(x["all_N_equal"] for x in rows),
         by_local_mesh_scale=per_scale,
-        interpretation_of_means="Each of the four prespecified design sources gets equal weight within a mesh. This is a descriptive finite-design average and makes no assumption about village ignition frequency.",
+        interpretation_of_means=(
+            "Each of the four prespecified design sources gets equal weight within a mesh. "
+            "This is a descriptive finite-design average and makes no assumption about "
+            "village ignition frequency."
+        ),
         method_sha256=file_sha256(__file__),
     )
     result["receipt_sha256"] = content_hash(result)

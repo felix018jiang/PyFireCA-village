@@ -5,6 +5,7 @@ import math
 from pathlib import Path
 
 import numpy as np
+
 from pyfireca.planning.heritage import content_hash
 from pyfireca.planning.strategy_io import file_sha256, read_json
 

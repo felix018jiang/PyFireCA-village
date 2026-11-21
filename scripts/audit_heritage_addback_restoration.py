@@ -29,8 +29,7 @@ def audit():
     )
     reference = ROOT / "runs/research/heritage-triple-validation-20261024-c/near-B0120-002-h1p0"
     addback = ROOT / (
-        "runs/research/heritage-ablation-screen-20261024-c/"
-        "near-B0120-002-h1p0/restore-B0061"
+        "runs/research/heritage-ablation-screen-20261024-c/near-B0120-002-h1p0/restore-B0061"
     )
     with tempfile.TemporaryDirectory(prefix="heritage-addback-restore-") as directory:
         directory = Path(directory)

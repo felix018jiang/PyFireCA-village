@@ -169,9 +169,7 @@ def summarize(manifest_path):
         assert len(runs) == expected_runs
 
     geometry = {
-        b["building_id"]: unary_union(
-            [Polygon(p["exterior"], p["holes"]) for p in b["polygons"]]
-        )
+        b["building_id"]: unary_union([Polygon(p["exterior"], p["holes"]) for p in b["polygons"]])
         for b in inventory["buildings"]
     }
     selected = manifest["plans"][0]
@@ -206,9 +204,7 @@ def summarize(manifest_path):
         draws = []
         for cohort in sorted({r["cohort"] for r in plan_rows}):
             for draw_id in sorted({r["draw_id"] for r in plan_rows if r["cohort"] == cohort}):
-                rows = [
-                    r for r in plan_rows if r["cohort"] == cohort and r["draw_id"] == draw_id
-                ]
+                rows = [r for r in plan_rows if r["cohort"] == cohort and r["draw_id"] == draw_id]
                 assert {r["scale_m"] for r in rows} == {1.0, 0.5}
                 ignited = {
                     core: any(
@@ -255,9 +251,7 @@ def summarize(manifest_path):
                     core: sum(d["core_ignited"][core] for d in draws) for core in core_ids
                 },
                 "source_failures": {
-                    source: sum(
-                        d["status"] == "failed" and d["source_id"] == source for d in draws
-                    )
+                    source: sum(d["status"] == "failed" and d["source_id"] == source for d in draws)
                     for source in sorted({d["source_id"] for d in draws})
                 },
                 "intervention": ledger,

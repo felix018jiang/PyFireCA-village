@@ -104,9 +104,12 @@ def main():
     )
     futures = {}
     submitted = completed = 0
-    with (study / "design-prefetch-history.jsonl").open("a") as log, ProcessPoolExecutor(
-        max_workers=args.workers, initializer=initialize, initargs=(str(study),)
-    ) as pool:
+    with (
+        (study / "design-prefetch-history.jsonl").open("a") as log,
+        ProcessPoolExecutor(
+            max_workers=args.workers, initializer=initialize, initargs=(str(study),)
+        ) as pool,
+    ):
         while not (study / "selection.json").exists():
             for future in list(futures):
                 if future.done():

@@ -6,15 +6,15 @@ from pathlib import Path
 
 import numpy as np
 import shapely
-from pyproj import Transformer
-from shapely.geometry import box, shape
-from shapely.ops import transform
-
 from audit_heritage_compartment_bounds import components, potential_edges
 from audit_heritage_disclosed_subset_new_source_bounds import envelope
 from check_heritage_compartment_first_escape import load_bound_inputs
 from check_heritage_registered_roof_compartment import area_outward, verify
+from pyproj import Transformer
+from shapely.geometry import box, shape
+from shapely.ops import transform
 from verify_heritage_total_protection_and_loss import NativeSupport, direct_witness
+
 from pyfireca.planning.heritage import content_hash
 from pyfireca.planning.random_sources import realize_sources
 from pyfireca.planning.strategy_io import file_sha256, read_json
@@ -64,7 +64,7 @@ def audit(root):
         & (parent.parameters.covered_area_m2 > 0)
     ).ravel()
     verify(
-        D <= set(inv.candidate_ids) and D.isdisjoint(core) and all(eligible[g] for g in G),
+        set(inv.candidate_ids) >= D and D.isdisjoint(core) and all(eligible[g] for g in G),
         "action not in frozen eligibility domain",
     )
     keep_shapes = shapely.union_all([x.geometry for x in inv.buildings if x.building_id not in D])
@@ -206,7 +206,11 @@ def audit(root):
         baseline_native_manifest_checks_at_audit=sum(
             x["currently_saved_manifest_count"] for x in base_runs
         ),
-        physical_control_scope="The analytic zero-core baseline and combined construction share four initial ordinary sources. A coarse upper bound for the baseline does not establish greater actual loss.",
+        physical_control_scope=(
+            "The analytic zero-core baseline and combined construction share four initial "
+            "ordinary sources. A coarse upper bound for the baseline does not establish "
+            "greater actual loss."
+        ),
         CA_evaluations=0,
         method_sha256=file_sha256(__file__),
     )

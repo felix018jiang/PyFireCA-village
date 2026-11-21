@@ -13,7 +13,8 @@ def main(mode):
     root = Path(__file__).resolve().parents[1]
     cfg = (
         root
-        / "examples/research/heritage/area-20261110/pingyan-zero-core-only-coarse-control-20261111.json"
+        / "examples/research/heritage/area-20261110"
+        / "pingyan-zero-core-only-coarse-control-20261111.json"
     )
     res = root / "docs/results"
     run = root / "runs/research/heritage-pingyan-zero-core-only-coarse-control-20261111"
@@ -59,8 +60,17 @@ def main(mode):
         support_config_sha256=file_sha256(cfg),
         native_problem_sha256=exp["problem_sha256"],
         independent_started_slots_allowed=4,
-        only_allowed_difference="Read-only observation after scheduled events, using unchanged natural-extinction observer first. Selected step can truncate independently after the burned-area ceiling is already exceeded. Time horizon, event times, source area, graph and solver arithmetic are untouched.",
-        early_return_metric="Compensated lower bound from previously burned (physically known) area only. Existing native files preserve an incomplete/unknown temporal endpoint after observational stop.",
+        only_allowed_difference=(
+            "Read-only observation after scheduled events, using unchanged "
+            "natural-extinction observer first. Selected step can truncate independently "
+            "after the burned-area ceiling is already exceeded. Time horizon, event times, "
+            "source area, graph and solver arithmetic are untouched."
+        ),
+        early_return_metric=(
+            "Compensated lower bound from previously burned (physically known) area only. "
+            "Existing native files preserve an incomplete/unknown temporal endpoint after "
+            "observational stop."
+        ),
         prefix_check_period_native_steps=10,
         strict_witness_threshold_A_m2=limit,
         unambiguous_original_owner_witness_threshold=cap,

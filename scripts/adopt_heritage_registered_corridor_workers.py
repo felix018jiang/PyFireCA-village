@@ -17,9 +17,7 @@ import schedule_heritage_registered_joint_families as first
 
 AREA = pipeline.AREA / "settlement-binding"
 PIPE_PID = 52050
-PIPE_COMMAND = (
-    "/opt/anaconda3/bin/python scripts/pipeline_heritage_registered_independent_arms.py"
-)
+PIPE_COMMAND = "/opt/anaconda3/bin/python scripts/pipeline_heritage_registered_independent_arms.py"
 
 
 def resolve_handler():
@@ -50,9 +48,7 @@ def resolve_handler():
         raise ValueError("unexpected unresolved frozen administrative names")
     mod.REG = corridor.REG
     if missing(mod.execute_arm.__code__):
-        raise ValueError(
-            "the administrative adoption procedure still has unresolved names"
-        )
+        raise ValueError("the administrative adoption procedure still has unresolved names")
     return mod.execute_arm
 
 
@@ -70,16 +66,12 @@ class ExistingWorker:
         b = first.read(corridor.folder(self.ordinal) / "execution-budget.json")
         if b["active"] is None:
             return 0 if b["started_checks"] == 1 else 1
-        raise RuntimeError(
-            "adopted worker lost its identity before its native budget was closed"
-        )
+        raise RuntimeError("adopted worker lost its identity before its native budget was closed")
 
 
 def identify():
     active = {}
-    for line in subprocess.check_output(
-        ["ps", "-Ao", "pid=,command="], text=True
-    ).splitlines():
+    for line in subprocess.check_output(["ps", "-Ao", "pid=,command="], text=True).splitlines():
         fields = line.strip().split(None, 1)
         if len(fields) != 2:
             continue
@@ -135,7 +127,11 @@ def main():
             settlement_source_unchanged=True,
             original_worker_pids_retained=True,
             additional_CA_slots=0,
-            takeover_trigger="All 8 earlier native terminal artifacts exist, then transfer the single administrative writer lock. All inherited actual narrow workers are recognized by exact command, native budget and ticket.",
+            takeover_trigger=(
+                "All 8 earlier native terminal artifacts exist, then transfer the single "
+                "administrative writer lock. All inherited actual narrow workers are "
+                "recognized by exact command, native budget and ticket."
+            ),
         ),
     )
     native = first.frozen_native()
@@ -193,9 +189,7 @@ def main():
                 b["elapsed_s"]
                 if p.poll() is not None
                 else time.time()
-                - first.read(corridor.folder(i) / "admission.json")[
-                    "unix_before_launch_s"
-                ]
+                - first.read(corridor.folder(i) / "admission.json")["unix_before_launch_s"]
             )
         if wall >= cfg["max_wall_time_s"] - 300:
             for pid in [
