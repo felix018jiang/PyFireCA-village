@@ -1,0 +1,33 @@
+{
+  "village": "batuan",
+  "scope": "Fixed whole-roof groups and registered containment screening.",
+  "components": 38,
+  "largest_component_roof_groups": 34,
+  "C_lower_m2": 71380.70968833957,
+  "C_feasible_upper_m2": 71380.7096883396,
+  "interval_width_m2": 2.2457968644473694e-13,
+  "lower_bound_exact_rational": [
+    "658370841710280072952583",
+    "9223372036854775808"
+  ],
+  "feasible_cost_exact_rational": [
+    "658370841710280075023965",
+    "9223372036854775808"
+  ],
+  "rounded_minimum_C_m2": 71380.71,
+  "bounds_round_to_same_hundredth_m2": true,
+  "exact_equal_for_stored_atom_costs": false,
+  "branch_counts": {
+    "rational_LP_nodes": 24,
+    "dual_pruned_nodes": 21,
+    "single_group_components": 20
+  },
+  "arithmetic": "Nonnegative floating dual multipliers are converted to exact rationals. Residuals are maximized over binary branch bounds. Shared ground costs link groups into the same component.",
+  "new_native_fire_runs": 0,
+  "per_village_branch_time_limit_s": 90.0,
+  "applied_to_physical_certificate_sha256": "a79c29dce1732875fc889b43b1a7e1f56afd97a39c3ca184148d3aeb085e0097",
+  "registered_action_inputs_sha256": "4a650e762a62cebc3d67e1908ab48e513061f2b38db700be30c30369528b8272",
+  "physical_auditor_sha256": "0280d02e4935f305c5765e7c7b1e72b82a19c42b0cabedf44fa725302c473305",
+  "method_sha256": "10b8ca9dce50bba3f20a22b96d0ca99dec1809a627da5b106d287cfb50432158",
+  "receipt_sha256": "04454e4c53cadc571dfdd43b66d86f2eca4fcace624fdd9c80f93e4aeaa5b8e5"
+}

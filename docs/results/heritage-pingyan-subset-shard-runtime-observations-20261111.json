@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "command": "/opt/anaconda3/bin/python runs/research/heritage-pingyan-protected-union-narrow-first-schedule-20261111/resume_heritage_joint_schedule.py --resume --receipt runs/research/heritage-pingyan-protected-union-narrow-first-schedule-20261111/receipt.json",
+      "experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+      "loaded_interpreter_verified_via_lsof": true,
+      "pid": 10860
+    },
+    {
+      "command": "/opt/anaconda3/bin/python runs/research/heritage-pingyan-observed-clearance-subset-20261111/source-snapshot/scripts/run_heritage_joint_comparison.py --resume --config examples/research/heritage/area-20261110/pingyan-observed-clearance-subset-20261111.json --output runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "experiment_sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+      "loaded_interpreter_verified_via_lsof": true,
+      "pid": 30235
+    },
+    {
+      "command": "/opt/anaconda3/bin/python -",
+      "experiment_sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+      "loaded_interpreter_verified_via_lsof": true,
+      "pid": 59204
+    }
+  ],
+  "runtime": {
+    "geos_version": "3.13.1",
+    "machine": "arm64",
+    "numpy_version": "2.1.3",
+    "python_executable": "/opt/anaconda3/bin/python3.13",
+    "python_version": "3.13.5",
+    "scipy_version": "1.15.3",
+    "shapely_version": "2.1.2"
+  },
+  "time": "2026-11-11T13:37:24.915225+00:00"
+}

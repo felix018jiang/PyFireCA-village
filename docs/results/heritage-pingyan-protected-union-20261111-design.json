@@ -1,0 +1,49 @@
+{
+  "actual_sources": {
+    "background": "B0201",
+    "near-B0035": "B0120",
+    "near-B0036": "B0037",
+    "near-B0166": "B0191"
+  },
+  "all_five_widths_will_be_evaluated_without_outcome_selection": true,
+  "cross_partition_distances_and_pairs_are_diagnostic_only": true,
+  "geometric_capacity_proxy_is_not_fire_safety_or_loss_prediction": true,
+  "hull_rule": "union_full_core_and_actual_source_roof_polygons;no_convex_hull",
+  "inner_offset_m": 0,
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-balanced-geometry-20261111-catalog.json": "67193d9bd5e4507cfd53bafcab5cb06d2da3ebcd2e05e236d4f118015932bc03",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json": "3ec4a4e0f01cdb4df3b7c889dda8fdc3d22bbbaa56d1dc115c6fc12abccb2ade",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-receipt.json": "5f306a1e08e856e4a17c7efeca84832279388e5319141972809d4de159e36b63",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-search.json": "b54ba8fdbdf9f008749fd007ef9c923a5a3fb3023485f56317953ac971e792f1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json": "f5afcf928696cba69fd2cd9b037794188fa1d472d6179d28df332c4d59ec017c",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_protected_union_bands.py": "4e570c75a234cfa36843d6a60140a8a18819fa9dc3d965e46e88411ee5032f7c",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_protected_union_catalog.py": "2b9598d19f3c9a71085c5f726dd558fd857bc253c612838d5e7eed38e41404cd"
+  },
+  "isolation_is_required": false,
+  "native_CA_outcomes_read_for_selection": [],
+  "new_CA_checks": 0,
+  "old_global_hull_w15_01_is_not_rescheduled": true,
+  "original_seed_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "physical_duplicate_actions_are_merged": true,
+  "proposal_round": "adaptive_local_union_followup_to_long_horizon_P_core_failure",
+  "registered_before_parameter_calculation": true,
+  "schema_version": "heritage-protected-union-band-design-1",
+  "village_id": "pingyan",
+  "widths_m": [
+    0.01,
+    2.5,
+    5.0,
+    10.0,
+    15.01
+  ]
+}

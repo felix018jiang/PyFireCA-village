@@ -1,0 +1,104 @@
+{
+  "schema_version": "heritage-user-paused-checkpoint-1",
+  "paused_at_utc": "2026-11-10T13:05:05.304421+00:00",
+  "pause_reason": "User requested breakpoint and continuation tomorrow because quota is exhausted. Do not resume automatically.",
+  "new_experiments_authorized_while_paused": false,
+  "runs": [
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110",
+      "budget": {
+        "elapsed_s": 4948.649813833006,
+        "mip_elapsed_s": 0.21552512503694743,
+        "started_checks": 29,
+        "active": null
+      },
+      "completed_native_evaluations": 28,
+      "completed_manifest_sha256": {
+        "evaluations/0a843481239a7606d1609acebdc64916a18230a62485f380fdca9856c985f575/complete.json": "3cb4d797a0fd97e0a7e698517459ec79d1186666aa5ce0638afc94c0a65742b4",
+        "evaluations/13ba148b037b08c8a9d31b756e9fbad4e9285d9b084300f3e52d850296f492cc/complete.json": "fffa466fd694c0a9d312ef81760eb133b4f35dd378c27feb15e75131be9d760b",
+        "evaluations/1920b32084f24d71664472d30403c1e5b8e124eb689739f4555ecded78127c94/complete.json": "2eabff515a1500806ea23efb22b4387f51456a859532c3083e5bd47216661ddd",
+        "evaluations/1d4b19c7c862705400ca238e849702e15ba6a01c7bf66e61d2ed306a7e3ce1f1/complete.json": "5ffe61545fef4bf0ef32ff7d66e5ea95b5c9d687cad6095a196ccdf674348764",
+        "evaluations/23b0b50e4db55c21195ce74ba49cd1ed9cb6fcbd4fa4b38d08bcdaebf8cebe53/complete.json": "9a34adde8f3563cb517961fefbb427724d5bf84a1a63837ada37a61e9ddc9643",
+        "evaluations/28a95d0b1290447fff375e86d245a2ce1636de969afef16bdf3886fc0a21c732/complete.json": "9545f731453d87f63e9308a280e07b6e1ae5dc3e0d11e586c326c932c47b22db",
+        "evaluations/30cb48d526c5f366e83a35a85b44f8cd50fb025cf1dd37c9c8be2bf0857c0ed7/complete.json": "e64f6671023bebd638633a753f48bfa560696bc46b7a6769f991508701421652",
+        "evaluations/331ad3285cb50280d133455edca6a14c1f7317df68f978260f78136fd6b3fc42/complete.json": "3790ef528aa67d533338007e284e17502804480a7d82eeb90c78c93a4dbf8f72",
+        "evaluations/3aee8c053e4ebfdd597b67d48bb718749de03583bec6f5bbaedae1c8af86a13d/complete.json": "e78f880738028389521a6c3479906d186768711d6ce25c333517c5d677ad19c0",
+        "evaluations/3eef0a3d247a1fbcd3c8ada9c20615ced4aa4880e8651c4ff826eed44ea40d70/complete.json": "805f1306c1393ed7cdea518e678cd648be98cd758c398720a514b85e8b20de08",
+        "evaluations/4a1b74a9cd2633d2ad815832e31be703fdf7607e614739e1bdd7cbd9c4699cc0/complete.json": "0c0b1f20f40cfc80c0d9348f00f3fae954e0eaaba26b5741876d3e1dc7301dce",
+        "evaluations/4edd8d28b2965c2be04e760cff52f54d17a474f325fd8d50aa3c8ade5a716931/complete.json": "d89ac10c6d4fc09b68f5f94c70e372c3b7aa1f68b35edb6278739b91c3c6229d",
+        "evaluations/555ea5a1b0467180e73a58c6d649f9f10c59e87d77e3e7ff51213298e7ce2bde/complete.json": "32ca65a8cf4d1686c1b6b580ad015c2a1507f58ec95caf1ca2d9a4c7bb1ce311",
+        "evaluations/608ea5355f6f9b5c0d7e52b669a86672ae266232355a8c6372f3e5c53bc7e760/complete.json": "a6163f2b3d2e19e7374a39f8422ffb85d0ba71f651194f158f75674d20b79f64",
+        "evaluations/63834733c997353272d4284d93d416deaf159f12a9f85729378450b010d91fca/complete.json": "af731f9a6bd83f3019fa698010c92bef54777f2ffd8a3b2421278be844d8f32d",
+        "evaluations/648e691eee26eed51d181907f7012847c4f945670bfdac5a24587edd680dd174/complete.json": "5e8de7b02d1b6390a90b93281c2bad381ef6576084f8cec4fdba03dfa02d1d3b",
+        "evaluations/6a2324dedda3ac06934e9cfe58e59d7f2e103603f669989e6362191ad73f0a52/complete.json": "cc7795432163a12687c40a625da8aebcf4e5ea9d79af2139911ea32628c428cb",
+        "evaluations/7f85a8e58d1c97c594bdb0f8fd93984d882aaa2f1426fe10167f8f06a87e3231/complete.json": "f85ef3fb53a8a149aafd7ae59793d800952a5db63185055d64f9912e8c3cac98",
+        "evaluations/a4fa78849481d8ceac9e0f876c41fbc5c5efef7f136b6b42e2a0c17f007eea7f/complete.json": "086ae3e58934252c50fda441020319c9489db7818b65b3ababe5aaf6fde8a37a",
+        "evaluations/acc68a88139220e4b29210d0a177d6159a0585cde96f4bb914a68d5a8f79c827/complete.json": "4348279df61da53d40c4a6b9b6b985bc3e11a0268b43dd09aef498b0e4fd8956",
+        "evaluations/b5a85b5607097ad4d8acfdb6116b4652df6156e2b5327737c3ad283affae588c/complete.json": "156ae0467a80b4150a25f517b55a3bfe45adc74b5893ec2560a6a6fee879f74a",
+        "evaluations/b60580dde4caf85469b4ddf982bdd8650e110de6c94ef9d2227f88a0bba2fa31/complete.json": "89cc2eda676891769d8b6b46d46307a4eb2309264664f02c9c39f2fbeb7dfb07",
+        "evaluations/c1db12fd4ab8c403c5dae08e0a74cd950eb59e851fe3737f2dd5fc280718bfed/complete.json": "6bcbe34d1b7272e30a5ad41c143393ff49e14258df072cbc6ed6bd5b5e0224c7",
+        "evaluations/c267fa84c1162862e15d2c1859f641a5eb76ad7e99acaf1f12c03320ec231156/complete.json": "dae35d878ee7ba7f2c197a8bda3082c87d29d90f04cb9f2edcda92f46c35ea78",
+        "evaluations/c39a2b7535a8549ecb66123c555d3185490922ad1af81eaa70e776b2fc0b2404/complete.json": "45df9f8039040c48c8bd57711719ac4546fdd54b757ba32967a8d17b110ac22a",
+        "evaluations/d2346886c38ebba95dad1b7456da9ae15d4ad03c6c964ab89de6381b77c27d86/complete.json": "bfc2b3b14e38a7a6e09ed9cdbff48446675f7feb50688782f6da9b93deb042ef",
+        "evaluations/e6b37a3dbf0a521ab87a4e8fb2d16ef5846227d8f461428cc0c12deb5edb1e65/complete.json": "6d5ad5bbe89d1458b2b08a459724e2a6a3e4525c7867895f0e0cbd752f229960",
+        "evaluations/f39b615c647f8257df64d0d77b48b85e3103cd2de3cdbe69ae4f82fb4af5ca4c/complete.json": "651f70fe043193e800c18391c182aac3196ffb9e760d8e35b2f26e0807eedce0"
+      },
+      "metadata_file_sha256": {
+        "experiment.json": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+        "search.json": "508d952537601efdefbf28f3ffab8b3ab085b2bb0634a8abb90610dadea9accb",
+        "execution-budget.json": "6af366217692a160cca4260f2e568afe8d1ab0a688127f8bebbc38fef1c703bc",
+        "preflight.json": "2462e3bc3af4daf4d0d41f266210ee709c1a482f0fda8b27b69a5a01a9eb5aef"
+      },
+      "pending_evaluation_directories": [],
+      "interrupted_started_slots_not_refunded": 1,
+      "resume_granularity": "completed_scenario;interrupted_scenario_restarts_without_refunding_spent_budget"
+    },
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110",
+      "budget": {
+        "elapsed_s": 3442.3009229580057,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 8,
+        "active": null
+      },
+      "completed_native_evaluations": 7,
+      "completed_manifest_sha256": {
+        "evaluations/111895ff056bd031054a575850c83b0b4fd5df45dacbedeb1529697e0bc203f8/complete.json": "a9c0b681ed23baab048b208c628d87a45dced29a24d5f7c5ba60f6e84d57e250",
+        "evaluations/3343ee13f688f8919f47e270388923192a00d39c97ee04e652fac7b37c34168a/complete.json": "58f9f14be7126e0ac36e3b0552576abca0c1054810690cf0122bda4ea127960f",
+        "evaluations/6b7f355ea80d59ea25ab32d1c77cd2bcf0cf7503270d20380f2976e8deb3d8a9/complete.json": "444f035ecfe0fa0dc8a033a57dcaae038053b19af5ace91689314da05a80b329",
+        "evaluations/76565cf1dd6ccc884d17bd775eb24665736d2bc9e26440a67cbc0f85219d3a75/complete.json": "ae03810cd9f098d07e4c8413b03acc36b4d61ef6804c1472141e4866c7bb0046",
+        "evaluations/a700f44c51550c4a6682932ebf89221388335dad52e51de916db40a9bd50999d/complete.json": "75d00098428877f234bfd0c00c458f70e1cde3b34ba0b3826c1ec1bda2d32311",
+        "evaluations/d98515c556a41c42c26dece6abb07ec096bcaf19cbf389a1858126b1a612e73e/complete.json": "6531935d34eb07d4acc5e54ff58bb77949454c99d07425ec2bc37f530784aed3",
+        "evaluations/f4ebaefd11f32fde9e51f95e65c47625d29785477e94feb8c406d4b8e3b9b00b/complete.json": "c64b0c7290f89a859e0b85b1c122b0dbef8ad3748e2fcd35b090f210c76ee8b2"
+      },
+      "metadata_file_sha256": {
+        "experiment.json": "97a031d448a4cc4534712b906a6fb19b9c061561f26de35e7fc0ce7c54543ddb",
+        "execution-budget.json": "734e1b5a9143b1ef3962bfc137e5611977ae49843c520f6bdb57db71e459650d",
+        "preflight.json": "2a78ae6b5368eaf118e83c4d04933dbc57d17398b743eca11e617aff8b6247d8"
+      },
+      "pending_evaluation_directories": [],
+      "interrupted_started_slots_not_refunded": 1,
+      "resume_granularity": "completed_scenario;interrupted_scenario_restarts_without_refunding_spent_budget"
+    },
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-terminal-batuan-20261110",
+      "budget": {
+        "elapsed_s": 533.3987848749966,
+        "started_checks": 2,
+        "active": null
+      },
+      "completed_native_evaluations": 1,
+      "completed_manifest_sha256": {
+        "evaluations/470ad36ae32d5700ff067a2aa62a188ba36779b481f62cc619063050a5dd3dc2/complete.json": "234621e9932320cd150cd371da0240546e5a645e7a7fccb80a2c87fe760e57d0"
+      },
+      "metadata_file_sha256": {
+        "experiment.json": "8336c0220c115cbc774bf9f324d30eee2746a55b2ade49b0ed66807c9d85aa47",
+        "execution-budget.json": "e48ee358f7a93ae32e3c0d1f8a2503cdc94e90032dfbfe8c28c29ff4c87efcbd",
+        "preflight.json": "c2354cab3463510fe1aaf227d0de6434f4501e651a133d282a0f689da642d444"
+      },
+      "pending_evaluation_directories": [],
+      "interrupted_started_slots_not_refunded": 1,
+      "resume_granularity": "completed_scenario;interrupted_scenario_restarts_without_refunding_spent_budget"
+    }
+  ]
+}

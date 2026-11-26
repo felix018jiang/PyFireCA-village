@@ -1,0 +1,45 @@
+{
+  "new_CA_runs": 0,
+  "maps": [
+    {
+      "village": "batuan",
+      "fire_id": "bridge-B0062-known",
+      "scale_m": 0.5,
+      "horizon_s": 3600,
+      "full_building_extent": true,
+      "statistics": [
+        {
+          "arm": "baseline",
+          "cumulative_roof_m2": 6969.65061946953,
+          "core_ignition": true
+        },
+        {
+          "arm": "selected",
+          "cumulative_roof_m2": 5756.5231801334885,
+          "core_ignition": false
+        }
+      ],
+      "asset": "/Users/tone/Documents/github/PyFireCA/docs/presentations/20261104/assets/batuan_macro_fire.png"
+    },
+    {
+      "village": "pingyan",
+      "fire_id": "drum-B0164-late-ignition",
+      "scale_m": 0.5,
+      "horizon_s": 3600,
+      "full_building_extent": true,
+      "statistics": [
+        {
+          "arm": "baseline",
+          "cumulative_roof_m2": 12786.321067539866,
+          "core_ignition": true
+        },
+        {
+          "arm": "selected",
+          "cumulative_roof_m2": 10023.680434713488,
+          "core_ignition": false
+        }
+      ],
+      "asset": "/Users/tone/Documents/github/PyFireCA/docs/presentations/20261104/assets/pingyan_macro_fire.png"
+    }
+  ]
+}

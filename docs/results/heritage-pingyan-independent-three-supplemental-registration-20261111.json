@@ -1,0 +1,125 @@
+{
+  "schema_version": "supplementary-three-arm-native-capacity-selection-1",
+  "method": "precomputed conservative geometry verified before CA; native producer independently recomputes each admissibility check and retains native hard guards",
+  "inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/pingyan-three-fixed-plans-20261111/confirmation-longcap-config.json": "501c9ed305d0672becb409a0e533705806e83abd8662070b61d07b240f7c84d3",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-independent-three-stage-bounds-20261111.json": "ffda25ac3bd75433e697acac6c54f33a7d10a1c1514bd79737971439ac178113",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-registered-stage-capacity-producer-20261111/producer-manifest.json": "039a515d37bbca2f0db11df95213c2bcbeb8d2c7578daac05c0b3278b8536970",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_confirmation_stage_subset.py": "b9e0a31012ce92d988b77506d0e7ee2e460fb0df41f3d3fc0ff83dbce2b9a45f"
+  },
+  "supplemental_config_sha256": "f4bc77750fcbbe416f2c7e46e99c26f18dcfab0dee7192435c1dd010f85c2fad",
+  "source_draws_total": 4,
+  "new_source_draws": 0,
+  "expected_checks_per_plan": 8,
+  "expected_total": 24,
+  "selected_total": 24,
+  "groups": [
+    {
+      "draw_ordinal": 1,
+      "scale_m": 1.0,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": true,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 1,
+      "scale_m": 0.5,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": false,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 2,
+      "scale_m": 1.0,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": true,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 2,
+      "scale_m": 0.5,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": false,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 3,
+      "scale_m": 1.0,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": true,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 3,
+      "scale_m": 0.5,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": false,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 4,
+      "scale_m": 1.0,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": true,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    },
+    {
+      "draw_ordinal": 4,
+      "scale_m": 0.5,
+      "source_supports_by_arm_verified": true,
+      "intact_preflight_passed": false,
+      "actual_stage_bound_passed_by_arm": {
+        "fixed-core-and-first-escape-compartment": true,
+        "roof-seed-protected-union-ring-b0-w2.5": true,
+        "roof-seed-protected-union-ring-b0-w15.01": true
+      },
+      "true_node_or_point_limit_violation_for_at_least_one_arm": false,
+      "admitted_for_all_arms": true
+    }
+  ],
+  "registered_intact_primary_status": "unknown_resource_stop_zero_CA",
+  "new_CA_checks_in_registration": 0,
+  "intact_registered_state_and_native_artifacts_modified": false
+}

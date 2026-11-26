@@ -1,0 +1,406 @@
+{
+  "all_checks_passed": true,
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111-catalog.json": "cb14c97c7f3ea0a03420c5f5c294f8ba0397bee56de4c36c47f1ab2b4c1057ec",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111-design.json": "48e2ea29ff25c11a22a60c58f76903a1b20dbcb690a5fd383d5833302b22c29d",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111.geojson": "b9c516f56f0b17961a9c37aec3ad016c8868779c9dc582afa4e30b4523e9d5e5",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.comparison-catalog.json": "2f47df739defd81a2b83aeedefb5df832af72efa1ac70f54217429f42a05e6a9",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.json": "0ce1536620768579526125c691311e3e21f5682e82118e8f2cfc27b03d8708e1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.finite-source-certificate.json": "20e5603b36f7ce8b4c3153cd0ca657bae614a91b72a439dd333961d4435495bb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json": "e03330d67bcf23caec0b14ba6994bfb7d116c9504f8d9498a058d54276564c01",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_narrow_hull_catalog.py": "7eaa313008baa1fb0aa5a43a06e21e6b9e78b9dd4e4b03af99bb5a50f11ff0d2",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "new_CA_checks": 0,
+  "plan_parent_cost_matrix": [
+    {
+      "D_count": 9,
+      "G_count": 23,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 575.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 1089.0173624408872,
+      "total_construction_C_m2": 1664.0173624408872,
+      "whole_parent_construction_C_m2": 575
+    },
+    {
+      "D_count": 10,
+      "G_count": 34,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 850.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 1477.1602137112702,
+      "total_construction_C_m2": 2327.1602137112704,
+      "whole_parent_construction_C_m2": 850
+    },
+    {
+      "D_count": 11,
+      "G_count": 42,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 1050.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 1546.6249842565737,
+      "total_construction_C_m2": 2596.624984256574,
+      "whole_parent_construction_C_m2": 1050
+    },
+    {
+      "D_count": 14,
+      "G_count": 56,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 1400.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 1952.251082220934,
+      "total_construction_C_m2": 3352.251082220934,
+      "whole_parent_construction_C_m2": 1400
+    },
+    {
+      "D_count": 16,
+      "G_count": 66,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 1650.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 2466.5719795480554,
+      "total_construction_C_m2": 4116.571979548055,
+      "whole_parent_construction_C_m2": 1650
+    }
+  ],
+  "protection_or_fire_loss_effect_proven": false,
+  "radiation_or_contact_graphs_built": 0,
+  "schema_version": "heritage-joint-independent-parent-source-audit-1",
+  "source_covered_budget_absolute_tolerance_m2": 1e-06,
+  "source_footprint_geometry_absolute_tolerance_m2": 1e-08,
+  "source_matrix": [
+    {
+      "G_count": 23,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0075-known",
+      "first_retained_source_id": "B0075",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200013.158758,
+        "covered_area_m2": 25.000000074932572,
+        "initial_dry_fuel_mass_kg": 450.00000134878627
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "source_footprint_geometry_area_m2": 25.000000000021757,
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 23,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0071-known",
+      "first_retained_source_id": "B0067",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200075.689374,
+        "covered_area_m2": 25.00000043101324,
+        "initial_dry_fuel_mass_kg": 450.0000077582383
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "source_footprint_geometry_area_m2": 25.00000000002406,
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 23,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0062-known",
+      "first_retained_source_id": "B0062",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200014.167436,
+        "covered_area_m2": 25.000000080676482,
+        "initial_dry_fuel_mass_kg": 450.00000145217666
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "source_footprint_geometry_area_m2": 25.000000000023164,
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 23,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0061-known",
+      "first_retained_source_id": "B0063",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.774022,
+        "covered_area_m2": 24.999999913295646,
+        "initial_dry_fuel_mass_kg": 449.99999843932164
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "source_footprint_geometry_area_m2": 25.000000000038835,
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 34,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0075-known",
+      "first_retained_source_id": "B0075",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200013.158758,
+        "covered_area_m2": 25.000000074932572,
+        "initial_dry_fuel_mass_kg": 450.00000134878627
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "source_footprint_geometry_area_m2": 25.000000000021757,
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 34,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0071-known",
+      "first_retained_source_id": "B0067",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200075.689374,
+        "covered_area_m2": 25.00000043101324,
+        "initial_dry_fuel_mass_kg": 450.0000077582383
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "source_footprint_geometry_area_m2": 25.00000000002406,
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 34,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0062-known",
+      "first_retained_source_id": "B0062",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200014.167436,
+        "covered_area_m2": 25.000000080676482,
+        "initial_dry_fuel_mass_kg": 450.00000145217666
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "source_footprint_geometry_area_m2": 25.000000000023164,
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 34,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0061-known",
+      "first_retained_source_id": "B0063",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.774022,
+        "covered_area_m2": 24.999999913295646,
+        "initial_dry_fuel_mass_kg": 449.99999843932164
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "source_footprint_geometry_area_m2": 25.000000000038835,
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 42,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0075-known",
+      "first_retained_source_id": "B0075",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200013.158758,
+        "covered_area_m2": 25.000000074932572,
+        "initial_dry_fuel_mass_kg": 450.00000134878627
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "source_footprint_geometry_area_m2": 25.000000000021757,
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 42,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0071-known",
+      "first_retained_source_id": "B0067",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200075.689374,
+        "covered_area_m2": 25.00000043101324,
+        "initial_dry_fuel_mass_kg": 450.0000077582383
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "source_footprint_geometry_area_m2": 25.00000000002406,
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 42,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0062-known",
+      "first_retained_source_id": "B0062",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200014.167436,
+        "covered_area_m2": 25.000000080676482,
+        "initial_dry_fuel_mass_kg": 450.00000145217666
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "source_footprint_geometry_area_m2": 25.000000000023164,
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 42,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0061-known",
+      "first_retained_source_id": "B0063",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.774022,
+        "covered_area_m2": 24.999999913295646,
+        "initial_dry_fuel_mass_kg": 449.99999843932164
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "source_footprint_geometry_area_m2": 25.000000000038835,
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 56,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0075-known",
+      "first_retained_source_id": "B0075",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200013.158758,
+        "covered_area_m2": 25.000000074932572,
+        "initial_dry_fuel_mass_kg": 450.00000134878627
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "source_footprint_geometry_area_m2": 25.000000000021757,
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 56,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0071-known",
+      "first_retained_source_id": "B0067",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200075.689374,
+        "covered_area_m2": 25.00000043101324,
+        "initial_dry_fuel_mass_kg": 450.0000077582383
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "source_footprint_geometry_area_m2": 25.00000000002406,
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 56,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0062-known",
+      "first_retained_source_id": "B0062",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200014.167436,
+        "covered_area_m2": 25.000000080676482,
+        "initial_dry_fuel_mass_kg": 450.00000145217666
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "source_footprint_geometry_area_m2": 25.000000000023164,
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 56,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0061-known",
+      "first_retained_source_id": "B0063",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.774022,
+        "covered_area_m2": 24.999999913295646,
+        "initial_dry_fuel_mass_kg": 449.99999843932164
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "source_footprint_geometry_area_m2": 25.000000000038835,
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 66,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0075-known",
+      "first_retained_source_id": "B0075",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200013.158758,
+        "covered_area_m2": 25.000000074932572,
+        "initial_dry_fuel_mass_kg": 450.00000134878627
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "source_footprint_geometry_area_m2": 25.000000000021757,
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 66,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0071-known",
+      "first_retained_source_id": "B0067",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200075.689374,
+        "covered_area_m2": 25.00000043101324,
+        "initial_dry_fuel_mass_kg": 450.0000077582383
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "source_footprint_geometry_area_m2": 25.00000000002406,
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 66,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0062-known",
+      "first_retained_source_id": "B0062",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200014.167436,
+        "covered_area_m2": 25.000000080676482,
+        "initial_dry_fuel_mass_kg": 450.00000145217666
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "source_footprint_geometry_area_m2": 25.000000000023164,
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 66,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+      "fire_id": "B0061-known",
+      "first_retained_source_id": "B0063",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.774022,
+        "covered_area_m2": 24.999999913295646,
+        "initial_dry_fuel_mass_kg": 449.99999843932164
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "source_footprint_geometry_area_m2": 25.000000000038835,
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8",
+      "source_in_prepared_prefix": true
+    }
+  ],
+  "uses_comparison_oracle_or_native_solver": false
+}

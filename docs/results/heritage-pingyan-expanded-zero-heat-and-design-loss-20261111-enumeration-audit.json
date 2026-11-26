@@ -1,0 +1,45 @@
+{
+  "schema_version": "bounded-compartment-enumeration-independent-1",
+  "parent_source_sha256": "391bea7f08de1e9e6cc461c896d7490e38bf431df97d8ed2df50f90bf3568bfd",
+  "published_winner_sha256": "31f2f0fe92696de808393df4ad5df445a41d06fd5b8b87fa14e95c5749de6e0d",
+  "original_search_method_sha256": "3d37a4284a7524cf7f746fc3969e63485fd718478a4079c5bdb077966057195d",
+  "trials": [
+    {
+      "stage": 1,
+      "candidate_count": 13,
+      "admissible_count": 13,
+      "candidate_membership_sha256": "ab6e703c7b8690492604e29caa39a99265a00c7f4ed36c64a53539ba86979ec8",
+      "protective_actions_and_costs_sha256": "cc02966e54185f5dcc772511a8b03e95e92bccbdf583555cb50b48589156a4e6",
+      "lowest_cost_m2": 9840.173036443528,
+      "tied_lowest_cost_compartment_choices": 4,
+      "distinct_tied_physical_actions": 4
+    },
+    {
+      "stage": 2,
+      "candidate_count": 11,
+      "admissible_count": 11,
+      "candidate_membership_sha256": "4a9fb229a939793391c7ce201bc7e884b52e5768631b4484a928f02e0754c1b8",
+      "protective_actions_and_costs_sha256": "79ed4c3631566bb9d4ac4c23fa77fe8c23c49b2e4a04369689430f456d0af4d9",
+      "lowest_cost_m2": 9815.173036443528,
+      "tied_lowest_cost_compartment_choices": 3,
+      "distinct_tied_physical_actions": 3
+    }
+  ],
+  "physical_budget_and_cross_warehouse_checks": {
+    "roof_union_m2": 6065.173036443527,
+    "whole_ground_m2": 3750,
+    "worst_A_upper_m2": 241.49,
+    "worst_original_N_upper": 3,
+    "largest_group_to_exterior_energy_fraction": 0.791636889153694,
+    "positive_external_contact_edges": 0,
+    "external_core_radiation_edges": 0,
+    "external_core_contact_edges": 0,
+    "unchanged_25m2_source_mass_and_energy_budgets": 4
+  },
+  "final_C_m2": 9815.173036443528,
+  "saving_m2": 50.0,
+  "holdout_families_used": 0,
+  "new_CA_runs": 0,
+  "method_sha256": "3949eeab8a98070f465b1a056bfce554133ed1c6de2c9fbb3f58d4d0a2d3f15d",
+  "receipt_sha256": "55ee626decfeb114832a347a63b8f2bfebd8bcbaae87706149ba5e5ab533ba7a"
+}

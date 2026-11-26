@@ -132,11 +132,13 @@ class RoofLayout:
         }
 
 
-def resolve_roof_layout(request, inventory, *, max_nodes=200_000):
+def resolve_roof_layout(request, inventory, *, max_nodes=200_000, core_overlap_policy="reject"):
     """Partition parent roof budgets by vector area; keep nonroof cells unchanged."""
     if request.firebrands is not None:
         raise ValueError("independent roof layout does not support firebrands")
     _, rows, coverage, _ = _raster(inventory, request.grid)
+    if core_overlap_policy not in {"reject", "heritage_priority"}:
+        raise ValueError("unsupported core overlap ownership policy")
     occupied = coverage > 0
     if not np.array_equal(occupied, request.building_index >= 0) or not np.allclose(
         coverage[occupied], request.parameters.coverage_fraction[occupied], rtol=1e-6, atol=1e-8
@@ -181,7 +183,16 @@ def resolve_roof_layout(request, inventory, *, max_nodes=200_000):
         for part_index, (ids, geometry) in enumerate(parts):
             if len(ids) > 1:
                 if core_ids.intersection(ids):
-                    raise ValueError("core overlaps another annotation; semantic review required")
+                    if (
+                        core_overlap_policy != "heritage_priority"
+                        or len(core_ids.intersection(ids)) != 1
+                    ):
+                        raise ValueError(
+                            "core overlaps another annotation; semantic review required"
+                        )
+                    # Explicit survey/data policy, never an area tolerance:
+                    # the protected owner retains the whole shared atom.
+                    ids = tuple(sorted(core_ids.intersection(ids)))
                 ambiguous.update(ids)
             point = geometry.representative_point() if ids else Point(x, y)
             cells.append(cell)
@@ -338,6 +349,7 @@ def roof_area_integrated_radiation_graph(
     integrated_ids,
     quadrature_spacing_m=0.5,
     max_edges=5_000_000,
+    frozen_integrated_node_mask=None,
 ):
     """Integrate radiation over selected roofs while retaining the V3 kernel.
 
@@ -346,10 +358,15 @@ def roof_area_integrated_radiation_graph(
     quadrature; every other node keeps its existing representative point. This
     local correction targets source and heritage roofs without remeshing the
     full village or replacing the validated background transport model.
+
+    An optional pre-intervention node mask freezes which physical patches use
+    quadrature. A surviving shared patch then keeps the same kernel even when
+    a removed annotation disappears from its owner list. Without this option,
+    the historical owner-based membership and validation are unchanged.
     """
     selected = frozenset(integrated_ids)
     available = {identifier for ids in layout.owners for identifier in ids}
-    if not selected or not selected <= available:
+    if frozen_integrated_node_mask is None and (not selected or not selected <= available):
         raise ValueError("area-integrated radiation requires known selected roof IDs")
     if not np.isfinite(quadrature_spacing_m) or quadrature_spacing_m <= 0:
         raise ValueError("radiation quadrature spacing must be finite and positive")
@@ -358,7 +375,12 @@ def roof_area_integrated_radiation_graph(
     physics = request.parameters
     source_mask = request.source_mask.ravel()
     target_mask = request.target_mask.ravel()
-    integrated = np.asarray([bool(selected.intersection(ids)) for ids in layout.owners])
+    if frozen_integrated_node_mask is None:
+        integrated = np.asarray([bool(selected.intersection(ids)) for ids in layout.owners])
+    else:
+        integrated = np.asarray(frozen_integrated_node_mask)
+        if integrated.dtype != np.bool_ or integrated.shape != (len(layout.owners),):
+            raise ValueError("frozen integration mask must be boolean and match physical nodes")
 
     # Keep the old graph exactly for pairs unrelated to the selected roofs.
     point_graph = roof_radiation_graph(layout, transport, max_edges=max_edges)

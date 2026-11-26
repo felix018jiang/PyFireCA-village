@@ -1,0 +1,710 @@
+{
+  "schema_version": "heritage-joint-plan-first-inspection-1",
+  "run_root": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111",
+  "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-thin-hull-longcap-comparison-20261111.json",
+  "native_problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+  "original_experiment_sha256": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+  "original_config_sha256": "db6b0b12e7a41ef3b1c63f99738153ecc1ede024846877ec0a98eee77571d554",
+  "original_source_sha256": {
+    "scripts/preflight_heritage_exact_expansion.py": "c673c725a2e3b287fffb841519034e59561f00b2a050cc9f458168574940ed75",
+    "scripts/run_heritage_area_study.py": "275ab1c1db2724a143cf0d9dc8ba5662496069f02d180162d4b1934c0f3d31d1",
+    "scripts/run_heritage_fixed_comparison.py": "12032723c86a0c12edd5a0d91088c5d546a1fc88729ed137560550752a171d76",
+    "scripts/run_heritage_joint_comparison.py": "e7a99e03107aba59502dce236d7372a668cf66d56d5ff8a458514bc5defc730b",
+    "scripts/run_heritage_roof_study.py": "06382d1a9f3b33aabdf7da7384eb3c89b725467752be0384bf4596965706630e",
+    "src/pyfireca/__init__.py": "e62f55207cfa9683eb1a1e5517b93e7f348ce6f337f297f3bfa901ad17e318f9",
+    "src/pyfireca/arrival.py": "611dbfb5f0d0b8f8a9544c5ab0adfa9d5ac7e20d729d046a4d6023c067bebb4f",
+    "src/pyfireca/behavior/__init__.py": "da011c7eb7b68247d6cad9ff4af7c9db999cb09c3e233ac255d11473ac5e6c43",
+    "src/pyfireca/behavior/_directions.py": "ebad8faa3bc2c6c18b31bfb74ab55db845d87ff54df792402805be61d26dd564",
+    "src/pyfireca/behavior/_fbp_constants.py": "62a529849f5f235fd614ff3c7f8a5e9c73051d4980ce0a3f43685a63d633ce5e",
+    "src/pyfireca/behavior/_rothermel_base.py": "9c6d1f9bceb13c8a5e95cb0462dc0d0d6e94fd00067908a6686693914edf40a9",
+    "src/pyfireca/behavior/_rothermel_dynamic.py": "be2b201882d9f8c4a147150e39874ee09aafd15318bbe8d4449250a900a71428",
+    "src/pyfireca/behavior/_rothermel_effects.py": "c81f017aa4df3dde171f858dec36969f0cea1d6c42f71b4c040a2b595d27ad8d",
+    "src/pyfireca/behavior/_rothermel_equations.py": "32f6d418d1e546fb6d9a03926a35a6546f7bfaf8dfc60adc33fe9347f6b7adae",
+    "src/pyfireca/behavior/_rothermel_vectors.py": "f98de53f7d46688605e2ae41f8c9184d192d7de9e458b44e05682f710bc7306f",
+    "src/pyfireca/behavior/_surface_ellipse.py": "e43f14090b0ead2512df0029d32ef13dd7d3b41da23a58592126315524838c04",
+    "src/pyfireca/behavior/_units.py": "af51bd63cc93e1f6d9410459bf316fdab964a0559f70012993c5fcd9e68e7eb7",
+    "src/pyfireca/behavior/base.py": "b370e09e7a8334f08278eacd2b20d131a0ee771032155038956630cbc2762af1",
+    "src/pyfireca/behavior/crown.py": "ac2b795195b479b5ef0a085cc014b0fb2696b7b7abbdb9f0033b80b1ed25faa0",
+    "src/pyfireca/behavior/fbp.py": "aaaf79744b13c0bdcdd226a269c4e77df282d2f1acd506660c6a81da8d77d0cf",
+    "src/pyfireca/behavior/fbp_directional.py": "a675d9f080138962e14007dc5e29a843ac6cfeadf5839460e0aa3a672ef46689",
+    "src/pyfireca/behavior/fbp_landscape.py": "13dc12e14de01a096329801744b3b90ce1cc08a0723c3704833bb90397c9d3ef",
+    "src/pyfireca/behavior/fbp_layers.py": "fe4bd82c10e8d94bdd6ca852d618e99e604ad1de19e9913cfc74c580fe68cd13",
+    "src/pyfireca/behavior/fbp_spatial.py": "dc4330cfa2d269472a18461f75889b85cf300266612e96faa65781944a476679",
+    "src/pyfireca/behavior/fuel_catalog.py": "e469d344e76cd9b23f23212c1ae24bfb294e76eeb9b4f2e4277cc1a7cbfc3741",
+    "src/pyfireca/behavior/rothermel.py": "d1bac197e3e37945a20ce1ce5ba684c11ecdbe381abfa6aed183f9ee6ea1c3f8",
+    "src/pyfireca/behavior/rothermel_directional.py": "e5a71fd0fe636863c8d61c0c9799b46d3653049813c997d52685fccf572b0045",
+    "src/pyfireca/behavior/rothermel_landscape.py": "f4c07e4cd6dce23a4d44f8d04ae05372813fc2f43e86d79a68785851fdd54ef7",
+    "src/pyfireca/behavior/rothermel_layers.py": "da695a581b0719038eea73685b32f6417f070bfb8c40b586b793a4b5f305a4ae",
+    "src/pyfireca/behavior/rothermel_model.py": "ca7e87efeb9003d459f6ba56b4b1908fe3136fde0a73f6f9c13cab28e369b705",
+    "src/pyfireca/behavior/rothermel_spatial.py": "652101b6cb6e989297fc57aecff363af61acdb789da0aebc8dce7f1ace09301f",
+    "src/pyfireca/config.py": "0aec57cc09f8d738f41a47043ce96a143a137b7efae2dc06933663a82fcab213",
+    "src/pyfireca/data.py": "a8ec44e2a0a20562d2c7f2cf60c4594c666a25b15afea841272798c8bacdc28e",
+    "src/pyfireca/edge_coupling.py": "f47b170d09fb55a3a902b808e0e9d01b5b02ca13362a003d54ba047c921dd176",
+    "src/pyfireca/fbp_config.py": "ab52246d16a475f469f3c2548f415a76b73f734be6d90d5e021e6d1a1658d4d1",
+    "src/pyfireca/fbp_simulator.py": "1dc72b4ab4cb9c005ee829b798332f1875eb1e942572922ba16337c22e210735",
+    "src/pyfireca/fbp_workflow.py": "803ed4dc6da850180a8efc8e05f4a333ccffc1db78ae6558404dfd979fdb6c04",
+    "src/pyfireca/gis.py": "f7fd0eee0980c208c311732fae17528031c0a415551fa64a04d65f82eebb7215",
+    "src/pyfireca/grid.py": "9621e549a29228596063f86d64e97177d0e0b00a8736887c9e59b91c913e2129",
+    "src/pyfireca/ignition.py": "1b3b7cb05c811f41c2c60867e64a47dc851666de1b7f76166e7557ef6c893ef2",
+    "src/pyfireca/neighborhood.py": "4e687d22fa2b4d81292fa018fa6ca259622114b837eb92e3b1ef7b980a895aa6",
+    "src/pyfireca/outputs.py": "6c6e2c70f7596f5eeb393b6378a7d05228ac27b7ff853e7a0673cb6362ca37d8",
+    "src/pyfireca/planning/__init__.py": "859727e27a9776cef45f4586b0aadfb627ed128fe30bc0e5c020f639a4ded4bd",
+    "src/pyfireca/planning/area_candidates.py": "ad407b82931bb556478260654b98c858060a5a63441cf3e0bdf212e599c01172",
+    "src/pyfireca/planning/building_search.py": "9fc2d012d90a587b1ce453b0897d291c3a49b4ba2ee8ffa1c5e4bdb582ef68de",
+    "src/pyfireca/planning/contracts.py": "83a0f8389356d1eb85ef5217ad0806d812cab19f7abf9bf4391f74bb1321d770",
+    "src/pyfireca/planning/engines/__init__.py": "1f95829368fc293179bc196cc53f9edd4d132b37ef2cb56cc5901a17e229d807",
+    "src/pyfireca/planning/engines/heritage.py": "1a111bcdfc114a7f20aa9739f124297c215df179cca1586bf6c265751ccd051a",
+    "src/pyfireca/planning/engines/roof_heritage.py": "fd655b5c329f350f3b3dc3040abaed67a8a0047cc3f1415acecea85cab25e248",
+    "src/pyfireca/planning/engines/roof_joint.py": "62587a33149dfc0473a3dbdc2ede78711ed3b9167ee1cf7764e780cb91384e8c",
+    "src/pyfireca/planning/engines/roof_search.py": "d2ad638f3a9492e029687b83e93433befa8355cfb2dee80091cad098e610bf83",
+    "src/pyfireca/planning/engines/village.py": "8711b5ad9fa4f36458166729b38722176c3a7130ca9f6554a7f2eb4e7a21e572",
+    "src/pyfireca/planning/evaluation.py": "4d6a6b5b314326960b1e8d4714c50356c91180d1150be441442395d474bb07b3",
+    "src/pyfireca/planning/fire_loss.py": "4e92719bfa333acef3746125a3cbc75b17567747243ff2af6ce56c01ca5c6ce6",
+    "src/pyfireca/planning/heritage.py": "48dd14155afd8985fc8a92e8bc6197f75cc317c64cb9be6aa1cbde34851259d3",
+    "src/pyfireca/planning/interventions/__init__.py": "4343dba8ee7d040cfe11fa61bb36bf476793c5a57cadddfc842f0b086ae2c303",
+    "src/pyfireca/planning/interventions/buildings.py": "06776eff2b12ca9fc5ffb15829dc9338894d3cf3ecbc6611c0ed9457636cdd0d",
+    "src/pyfireca/planning/interventions/clearing.py": "2b68075588b0b31d0bb6c92fe3901ab70dad0cc336f3f723b4a99d2e0ade17fc",
+    "src/pyfireca/planning/observations.py": "d6298208c9b71fc323f29f3c77ae18b1e241d0a498a4ca193fd904500ae248f8",
+    "src/pyfireca/planning/random_sources.py": "815d3cf12965cd2863a7bbacbf38824d6cbf8574a365841a1556b9c4f720bbfc",
+    "src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "src/pyfireca/planning/roof_thermal.py": "bc40bffce107d63221b4bdfefa538ac2b0f65d5565a78ec6cfafdc685fb51ed5",
+    "src/pyfireca/planning/source_area_coverage.py": "e819abf2c3ca6e0cd0d21424abf60aa0298e150dc087ae323a9a9df44330ffad",
+    "src/pyfireca/planning/spatial.py": "ee820e04a6e9765a3a5e5254d02f259ff67a2d8d4c014e05bf3c580b0a01887d",
+    "src/pyfireca/planning/strategy_io.py": "088ff823c6036962e254b3769998e908394004c1db1ae11c4e84c195688bc768",
+    "src/pyfireca/planning/study_io.py": "74f1547a05134fdb1b748cf4ea16f240de84b164845c82b141b06bd46e9ce7c8",
+    "src/pyfireca/planning/terminal_verification.py": "e08194e4c459e972e367b0bd6d1329615119cb7c17bbc11c08e66e884e4b1f87",
+    "src/pyfireca/propagation.py": "ef3c40412bd95b37aa1142470e49deeb6ae3b63463b0e9db97d96c4890551452",
+    "src/pyfireca/rules.py": "96f9334db90a5196f7b61bb447469d87087b5795a51a6495f489781184313d20",
+    "src/pyfireca/run_config.py": "a1391c10636886102f54a1e2d56ff6b4ea2218f68b349313de781ea7a60431ad",
+    "src/pyfireca/simulation.py": "9b6db5017fc9182bc8f2d71dc1289abbbd82a0887cae809b201fa80de6fa9828",
+    "src/pyfireca/simulator.py": "24cb9756eb4c38892ee91b101b509e45c0df462d665d8f18971c2b41bb003794",
+    "src/pyfireca/state.py": "3475b88769f942bd96d03bf3f34884d88073370b5dd1e3894bd4fd678494d11b",
+    "src/pyfireca/village/__init__.py": "ef6af626ed857d35f985d16b604a2c16b0922bef835eff442bb2708273befea0",
+    "src/pyfireca/village/annotations.py": "7a77888beaf6da4ed754c62583805e59bd68197efed0ccf9603714da65580c27",
+    "src/pyfireca/village/assembly_presets.py": "335d0ef3c98413580f16ac29054a630ed24cb0a9233955970990710382441c87",
+    "src/pyfireca/village/combustion.py": "3c5bd480233c7737d6998e594322045f4e9576392c36c1528e92ecb400a60eb8",
+    "src/pyfireca/village/config.py": "8d23d7d943c1071d028d4fa53cc59ef71a751102c695a5f421421464640170b6",
+    "src/pyfireca/village/core_validation_v3.py": "d4160246b9440621a3bed6debc982db1c9bffc41edd1c45db90382c1ce0c1022",
+    "src/pyfireca/village/domain.py": "8b9b192ca1e18217275d4c23c31b0d4b151e0bed2c704514884ac97d281a9b7d",
+    "src/pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+    "src/pyfireca/village/extinction_v3.py": "b8f824c5ea109a8132f29a4c884e520f1bd3995b03725997619f92aea64270a6",
+    "src/pyfireca/village/firebrands_v3.py": "cc4be404abf8cd3106d64c8869f66484a40a7dc0220aa03cd280be144b172c59",
+    "src/pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+    "src/pyfireca/village/gaoyou_v3.py": "11b4499a2b7c6933979470354ea17c11a51f92eaec21acd43f197e81a9509f1e",
+    "src/pyfireca/village/ignition.py": "ef9fb19d7df5940c97a30ca4680c2227414f4407ec08a8c1e2dfc9aa3453b448",
+    "src/pyfireca/village/inspection_v3.py": "0f21b0cba8ff4753f44db6e125f19de18b7e7bd534ebfaf33ff8317862ce1977",
+    "src/pyfireca/village/material_cards.py": "e635a1283d8ec9de5effe5ebbdfec2a8f8b0b755c7a4eeb6fb523aa42a11f6f0",
+    "src/pyfireca/village/material_resolution.py": "690cd3d21b2c5ad158d5c188b7abe71c99b0eca9d968f4c04d8dd15a42598386",
+    "src/pyfireca/village/materials.py": "a6d495f46c5c126668d6829ca8aabf460ce68feb047232ae1a87d975c0e070bf",
+    "src/pyfireca/village/moisture.py": "023e459d3b0259667b4228551385e1b1a46882793a9422a0152436a47f87c668",
+    "src/pyfireca/village/outputs.py": "b40f353c969e2aba765c663ec409844017a1bdbe9bc1a9a3130a7b55a21ffc08",
+    "src/pyfireca/village/outputs_v3.py": "19909314a4eb8ddf95c0defdb64169896fd4c7719838676f4461d67813dfa4f6",
+    "src/pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084",
+    "src/pyfireca/village/physics_v3.py": "e34eeb53f1f18443d0b4e4d04970715dbea6e996d6719ab947b2cf4dde6a1536",
+    "src/pyfireca/village/preflight_v3.py": "b0ca571a573dfe42d6d6b5415f7db3706debbb42c67ec0f7f8d89de7140385dd",
+    "src/pyfireca/village/prepare.py": "a9717da24eae8c994ee0ce045f2142b90411d0f10e7a94e29143cf23c9fa2ea7",
+    "src/pyfireca/village/prepared_workflow_v2.py": "72e5d58fad724533756365c4eca4ca42f379826b9791a9198ff642d2192e43ae",
+    "src/pyfireca/village/resolution_workflow_v3.py": "a2eddd0aefcb1feded668c2be31b4d744f1b48cc45459bf5b9d768c40ccbae72",
+    "src/pyfireca/village/resource_sensitivity_v3.py": "4a6d90fad9ec2e35bd42f2e99b98d5c223796522afa0d61089405f4f9d7bc7c4",
+    "src/pyfireca/village/rgb_hypothesis_v3.py": "273a74229774b29ca4e73fd90a9280073fb38c59e6560b65e199670e82d40029",
+    "src/pyfireca/village/solver.py": "ead70d55ac8432ea6ed0c03b56986e4708ec5c46bda43487bf0e87675db25212",
+    "src/pyfireca/village/solver_v2.py": "5e9cf1752aa8eae950738ece9167901f3456d04621e80c80e1e7fdec566158b1",
+    "src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+    "src/pyfireca/village/state.py": "435d849cd32636af3dcd52e2ca257f1b5837f300c77903382347171f6aeb01d4",
+    "src/pyfireca/village/survey.py": "e4a1d1601d3c95043a35f95d96d4a7d35669a7fa83c85e28734b1b3ee50079e1",
+    "src/pyfireca/village/survey_adapter.py": "850396d9f99827693cb51e2e673a4a1f82c8aa03a1600efaf85d1204cb3fdd1e",
+    "src/pyfireca/village/survey_mapping_v3.py": "f8a2445b9e01b8334d59969d4c6f75f9239b009cffc90aaf7dee8f47a31d9d30",
+    "src/pyfireca/village/transport_v2.py": "6a58373eefce1f3f8bd5970192c51433adc251bb3aababc01e8091c0f76af86a",
+    "src/pyfireca/village/transport_v3.py": "227203d8b97463bbd1a1beffb8fd55de8cc10afe89fba9d37e5e5e295cc8c3e6",
+    "src/pyfireca/village/unknown_review_v3.py": "95d664827fe9ec5dc478acdeb5bfc7fd7054b3bcdc194e63a38259469d2afb75",
+    "src/pyfireca/village/vegetation_config.py": "b395f290e81a965b29215738adbc60a02326b3f963f60ac676ef3a206572dbd5",
+    "src/pyfireca/village/vegetation_materials.py": "f2dbe1bfa003cbdc17ad64c3369a85f8ea03bd5bce5ced58ac737f9d9972eb02",
+    "src/pyfireca/village/vegetation_prepare.py": "3c1ca3c2e7102ceac8919facbe7783c8123ca8e7d9f303aea7c05f1c6f081942",
+    "src/pyfireca/village/wind_v3.py": "fbc01d4df3a6a9c20709c66999471ab736802f185dd05ec77fcee518da5bf0e1",
+    "src/pyfireca/village/workflow_v2.py": "fe79fb592555c29f84c2be0b521eb6320f834142d58ca0bc6c3821861c789800",
+    "src/pyfireca/village/workflow_v3.py": "eb667482db9d9b355ed2a27ed503b534ad366dd02f6a253ad3f760bc3b096257",
+    "src/pyfireca/workflow.py": "bdd1fbe238ccda4e4ca638e5a698e9b6607fead71da3956a77939a0f73bd4b3a"
+  },
+  "original_references_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-1-20261029.json": "c2227a72351ec760c3a366a567f880b4fc11acc9286f6c9ebbc874d901a4e42c",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-2-20261029.json": "14a45b4e4967a26b665277ce6e9aa0fbd5b9e00f541232d3826962bd8b3aac62",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-3-20261029.json": "a85835a3d65f68ab96fac52ce78ebd77c92cbb427a452246bafb50a5e953de00",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-4-20261029.json": "780ef3a398b3575d7f06a384af9ef0fede188efd415272e144688cc38e381167",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-retained-area-master.json": "d9aa8d882024601ece50bd721d444b90283450fbbec46d073c39ef1a8d4f93d8",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json": "666e657efbc926f63f8ca764a0ee27b469584ef7c921269fec3bb8d044a82fe9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/inputs/annotations.labelme.json": "f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/image_ref.json": "7103bc6be37185c57aee64723bfa643094fe44667b412b3c0e7f312c7395f9b9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/buildings.json": "fd501803d5120068af631dd37f5a8f8f243625dee3ff8f5de95e3072ed5a584d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/absorptivity.npy": "a965d5de9026756d0b82164255a14e886a3638f550c2e12f2a964acfa32eaf68",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_m2.npy": "b01499a9794be7564363c09e290bc8ce58b808b00bd234e505a92d39bc166722",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_ratio.npy": "0eb53a684cc7733820cdb3974b59a45a075027ee314ff8468da9182b93c81146",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ambient_heat_transfer_coefficient_W_m2_K.npy": "062115fc2415d0d65d25d639e4949c8dd09c10aa2a52e9b8e5f8b2a52a1f7596",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/available_energy_J.npy": "e9e211da24c1144bb4431f2893adc31140db39bb319813968bfafd2883be2a71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/backing_conductance_W_m2_K.npy": "93c4a33bcb67df4cc612f57ec2bcd22dd000f3488c8be792cd93f4d93d723e0c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/building_index.npy": "c3b0af6bb0d33eee1184f67ea383b8dd08156eecc6cd323a0d542c23a39e1945",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/burnable_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/configured_curve_energy_J.npy": "cc1f6577e6e395e053c5b041d219c8522259583e4dcba2442dfa45559fb7f55f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/coverage_fraction.npy": "1870138abd72db98133945fe038c0aa4fb9156ba7965d642408bfb757aee0a11",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/covered_area_m2.npy": "4fe9c4480044c43781569689a9c1e1d26750ac233100fe7779116d475ce9b706",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_dry_fuel_mass_kg.npy": "34dc58a95bce19dca50542c5e046ac076b57c271e35e4282d7332129a9142b3c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_water_mass_kg.npy": "cd07ff52aed032e3dd8285e859246deb38767ec8119c1b3da8de59095a240272",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/decay_time_s.npy": "d2b5ba4fd49c0c3e7c9fdae6b3816d8a406e6180641dd432bdcf8af9906ac068",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/domain_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_source.npy": "9e118ff4558d3d41bb407a758cedf2a6a877b40174db45198e89e4b6689c4fc5",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_target.npy": "b10b592c93afbdcc4245230e7306283191e3d6a03842f92fb15ce5e265c10c8b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_weight.npy": "d4974916bbf732fd4ac66364be50fbfca08b5ce41edfd6cb19cb399786cd5b6b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/effective_heated_dry_mass_kg.npy": "a118c27e608ace2fd338d065ba9b2d986a0b6968c1144f5f61c01b1101a9ebfa",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/emissivity.npy": "99338a5bb3872eeaa2eaf535c737a3b2bcfb226c5f66c4b1b2f30d2c44c61a7a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ground_elevation_m.npy": "4d1aada1fe875622f11357eef904e0d83c8d05001b1be05927ff44647cbfe266",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/growth_time_s.npy": "6f2a2656e9420d372fc020ea1385682ff33cfc9ed16ae165f571d0525216b871",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/heat_of_combustion_J_kg_dry.npy": "e9f5857b3f94e238a5c9018947289e23fd8e4b6b82d811bb27090f683ed583e0",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ignition_temperature_K.npy": "b2f15b941dc425dc05e6014557c52356eefed6c2eb5251e70e8f9b39df75609f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/initial_dry_fuel_mass_kg.npy": "d1fd8dc965769f548a02b58a592576ab5ef543a634a3625074d5ee4fd05c2771",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/known_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/landcover_index.npy": "8a10b1544f4716a472c150731bd4886eb8b006e40d058ebd9635406c34e34318",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_dry_fuel_mass_kg.npy": "076af847fabc8a73fefbe5c0bf8d899c71d2fbae3715b376fd0cb3dfca607f89",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_water_mass_kg.npy": "3c2735b7fef6c3d5bbee4e0b58b926def923316c754ba011ae22270f3592143f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/manifest.json": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_evidence_index.npy": "20f3bc88f3f312584b075070327f009f68bd879890651a76c2aa16da44652e71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_index.npy": "2dbe67e1b31e134110ed5ef76f94fcadc0460baac72ad493ac8e90ef8e8c99fb",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/moisture_content_dry_basis.npy": "875383dfa3ffa8b4eee314b568c3f15d8ef63cc9eec2fd6ecf8e21efb640ee47",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrr_W.npy": "6fc058e2edc744a6c1246a7ba56ac732526a0e05ef733c9e7fb778c1ba20115a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrrpua_W_m2_active.npy": "5bfa85607111c35b6246f015e7a00fdf52a32c7f7770eabcd1ad979f2ab1fb98",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/piloted_ignition_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_fuel_mass_kg.npy": "0a86c97a93c2fd64af686f0d72d88011d871d74fce1c9830bf5f3cb696eb2647",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_mass_fraction.npy": "f1289d8b3d0ae0208ca9da0ac3640e696961f7872bf80f0128bb0e87d812061e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/radiative_fraction.npy": "fbfadfe07f42310041ddbc02b4504c71e73b4c06183bfb7bc28d03d26c9e7bd9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_m2.npy": "d27349bbe341397538aee9588d62cceb91e6b55de2c21ebd44782f543fb6892e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_ratio.npy": "7fca5e9c476333a6705a9869c7b4ef06cc593cb812f21bfe035c85ed4e854a35",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_height_m.npy": "a2474c1eecb79af172c74f2646f68e4c81176b515b7822d1c6f24658097f77f4",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_height_m.npy": "14d2ab6ea56f3639ee0c0facfe007f8e7bd95df3bffc02ddc75b0347bee24727",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/specific_heat_J_kg_K.npy": "56ffcba1660bfd3eda4bb6ea48622e2d5369734891f5c797f70e934071f1c287",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/steady_time_s.npy": "67d18ee7e0576ae36bf87c5b5d375b076c0fc328aa78a1fc3e1d77de6072ff4d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/target_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/water_mass_kg.npy": "926928350053d7c03de8c85b0fb68bdee1e7a318492e0383812e5e5acd77a51f",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thin-hull-20261111-catalog.json": "5e1af3d2d05fb5f4e0f7ab6d376b453ef65cec647ee4adcbeb4cfd2dda708951",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thin-hull-20261111-design.json": "5c768a47b3625b5594f0fd25ef890d9bb17836840d44fb9bfbc459cd2d7abe98",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thin-hull-20261111.geojson": "598b4fa2df6a9ba0a92bcbed7d13ce27af8269e0ed59fdb175d663b6e3e26dd4",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.comparison-catalog.json": "2f47df739defd81a2b83aeedefb5df832af72efa1ac70f54217429f42a05e6a9",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.json": "0ce1536620768579526125c691311e3e21f5682e82118e8f2cfc27b03d8708e1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-thin-hull-longcap-comparison-20261111.finite-source-certificate.json": "91c1bf217f1749756ce92e69915f94f2458f8293355cb9e281508ead2b52394f",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_thin_hull_catalog.py": "cd970f083e84cb730a5d7ca0eecd99e98b8f766d2c5f86263ccb144abc418d5f"
+  },
+  "priority_plan_ids": [
+    "roof-seed-core-source-hull-ring-b0-w0.01",
+    "roof-seed-core-source-hull-ring-b0-w0.5",
+    "roof-seed-core-source-hull-ring-b0-w1",
+    "roof-seed-core-source-hull-ring-b0-w1.5",
+    "roof-seed-core-source-hull-ring-b0-w2"
+  ],
+  "original_selected_case_order": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h0.5"
+    }
+  ],
+  "scheduled_selected_case_order": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0075-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h0.5"
+    }
+  ],
+  "expected_full_case_count": 40,
+  "selected_case_set_unchanged": true,
+  "cached_native_manifests_sha256": {
+    "evaluations/49380b1bdde1ef584b50ee5368844ee1616a7fc2880d4cb61b2c0226087266b2/complete.json": "476bf70cb26e67fc6185d7927d508ce26260bc52e9e9b8521378132492358b73",
+    "evaluations/47f94800c452be86a010c04dfc21fc3767ec3f0b9c60295fc1fd5966db8925a6/complete.json": "40e3bb29d6b5a915fa82428f8e49d88a94a8412ad6567f20b3761c0a2372b2bf",
+    "evaluations/2dfa049f9b29935a8a71d101e126ab45b4ee6b8c45b8dec1413b93742933e206/complete.json": "62ff098a6685dcebc2d1f78b1de860ff406b9294df924d6e90a1e149b152e8e3",
+    "evaluations/4696c712440a009e5c180ee7682df95e8e45e1ee9be459fceee035198cf7905e/complete.json": "e7bc105dc02d1f37fe5519a0570675341e791db257cdf1fd0d41b7370d4327a0",
+    "evaluations/caa9de0c898d8f478693d2ac0ee06005360fa8e77da747a8b0f32e76cf24d6d7/complete.json": "25bd03456dfd4eae2a96ef62a0d1734d027f65163dd7b468c5e80b82d7022188",
+    "evaluations/a8d7ccd01c75a1c4a95ffa905da9402cd5ac5e9c1485879adfc3257dd9c78f17/complete.json": "56e49d806d2b47b1d45260c0bce06759ffc00e45a0ec0622fece0516ca1a19b2"
+  },
+  "cached_source_unknown_manifests_sha256": {},
+  "cached_native_case_count": 6,
+  "next_uncomputed_cases": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w1.5",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2",
+      "scenario_id": "B0061-known-h0.5"
+    }
+  ],
+  "cumulative_budget_snapshot": {
+    "elapsed_s": 1818.2490580839803,
+    "started_checks": 7,
+    "active": {
+      "pid": 22195
+    }
+  },
+  "original_budget_snapshot_sha256": "332c7761c4f6d3cad62da003c9b005f7455e030513d23011f2332cc8a57dbffb",
+  "original_limits": {
+    "max_new_checks": 40,
+    "max_wall_time_s": 172800.0
+  },
+  "pending_native_artifacts": [],
+  "handoff_ready": false,
+  "active_worker_stop_attempted": false,
+  "external_safe_case_boundary_pause_supported": false,
+  "runtime": {
+    "python_executable": "/opt/anaconda3/bin/python3.13",
+    "python_version": "3.13.5",
+    "machine": "arm64",
+    "numpy_version": "2.1.3",
+    "scipy_version": null,
+    "shapely_version": "2.1.2",
+    "geos_version": "3.13.1"
+  },
+  "new_CA_checks_in_inspection": 0,
+  "original_config_or_source_modified": false
+}

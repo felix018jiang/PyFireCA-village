@@ -1,0 +1,3075 @@
+{
+  "schema_version": "heritage-hull-thin-width-event-audit-1",
+  "new_CA_checks": 0,
+  "graphs_built": 0,
+  "native_CA_outcome_files_read": [],
+  "width_domain_m": [
+    0,
+    2.5
+  ],
+  "inner_offset_m": 0,
+  "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "seed_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "protected_core_and_actual_source_ids": [
+    "B0062",
+    "B0063",
+    "B0067",
+    "B0073",
+    "B0075",
+    "B0120"
+  ],
+  "actual_sources": {
+    "B0075-known": "B0075",
+    "B0071-known": "B0067",
+    "B0062-known": "B0062",
+    "B0061-known": "B0063"
+  },
+  "current_rules": {
+    "roof": "per_original_patch_area_intersection_strictly_greater_than1e-8m2;owners_union;seed_always;protected_never",
+    "grass": "whole_eligible5m_footprint_intersects_closed_GEOS_ring_including_hole_boundary",
+    "buffer_quad_segs": 64,
+    "roof_area_threshold_m2": 1e-08
+  },
+  "exact_arithmetic_scope": "binary64_input_coordinates_as_rationals;convex_halfplane_area_and_segment_squared_distance;not_a_proof_of_GEOS_floating_offset_implementation",
+  "grass_limit_closed_ring_ids": [
+    50118,
+    50465,
+    50812,
+    50813,
+    51160,
+    51508,
+    51856,
+    52203,
+    52550,
+    52551,
+    52898,
+    53593
+  ],
+  "grass_limit_positive_outside_hull_ids": [
+    50118,
+    50465,
+    50812,
+    50813,
+    51160,
+    51508,
+    51856,
+    52203,
+    52550,
+    52551,
+    52898,
+    53593
+  ],
+  "inside_only_tangent_grass_ids": [],
+  "grass_critical_records": [
+    {
+      "physical_cell_id": 50118,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "332650392847651415756773678249303189186561/318170917725840825786464868113206906716160",
+      "outside_area_m2_float": 1.045508480867152,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 50464,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "332650392847651415756773678249303189186561",
+        "squared_distance_denominator": "365073216370415672538298326776462383775744",
+        "distance_decimal_enclosure_m": [
+          "0.954561764124219150",
+          "0.954561764124219151"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.9545617640105775,
+        "true_width_m": 0.954561764083337,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -1.1364165164451379e-10,
+        -4.088207550267953e-11
+      ]
+    },
+    {
+      "physical_cell_id": 50465,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "1339279077819737328639/104315521513168044032",
+      "outside_area_m2_float": 12.838732514515362,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 50812,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "1099735352880118214879128451671289866566217/45452988246548689398066409730458129530880",
+      "outside_area_m2_float": 24.195006649835012,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 50813,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "148323517033517098487398287735977417033143/45452988246548689398066409730458129530880",
+      "outside_area_m2_float": 3.263229168321612,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 51159,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "1038264619234619689411788014151841919232001",
+        "squared_distance_denominator": "365073216370415672538298326776462383775744",
+        "distance_decimal_enclosure_m": [
+          "1.686413388441414823",
+          "1.686413388441414824"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 1.686413388379151,
+        "true_width_m": 1.6864133884519106,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -6.226374971163295e-11,
+        1.0495826430201305e-11
+      ]
+    },
+    {
+      "physical_cell_id": 51160,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "1781473262756179102719/104315521513168044032",
+      "outside_area_m2_float": 17.077739121797887,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 51508,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "2134950240004796101431920545418576168970241/318170917725840825786464868113206906716160",
+      "outside_area_m2_float": 6.710073489005756,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 51856,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "143110863938785938774097647540130286888961/318170917725840825786464868113206906716160",
+      "outside_area_m2_float": 0.44979241019790706,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 52202,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "143110863938785938774097647540130286888961",
+        "squared_distance_denominator": "365073216370415672538298326776462383775744",
+        "distance_decimal_enclosure_m": [
+          "0.626103765498942315",
+          "0.626103765498942316"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.6261037654621759,
+        "true_width_m": 0.6261037655349355,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -3.676636772809161e-11,
+        3.599320841374265e-11
+      ]
+    },
+    {
+      "physical_cell_id": 52203,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "1140820521246241213439/104315521513168044032",
+      "outside_area_m2_float": 10.936249032721676,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 52550,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "324255935784543588302333653043726713483353/13833518161993079382020211657095952465920",
+      "outside_area_m2_float": 23.439874946304048,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 52551,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "673210650990394545454962493790916908902401/318170917725840825786464868113206906716160",
+      "outside_area_m2_float": 2.115877390058892,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 52898,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "1583014706182682987519/104315521513168044032",
+      "outside_area_m2_float": 15.175255640004202,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 53256,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "292478977802894801483755575684351252754849",
+        "squared_distance_denominator": "234807768648683231648195893146483926499328",
+        "distance_decimal_enclosure_m": [
+          "1.116069133747186170",
+          "1.116069133747186171"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 1.1160691337863682,
+        "true_width_m": 1.1160691338591278,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        3.9181990985071025e-11,
+        1.1194156712690528e-10
+      ]
+    },
+    {
+      "physical_cell_id": 53592,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "1594381832425211290500945535405899050608641",
+        "squared_distance_denominator": "365073216370415672538298326776462383775744",
+        "distance_decimal_enclosure_m": [
+          "2.089807014133333661",
+          "2.089807014133333662"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 2.089807014053804,
+        "true_width_m": 2.0898070141265634,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -7.952971614599846e-11,
+        -6.7701400041642046e-12
+      ]
+    },
+    {
+      "physical_cell_id": 53593,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "6144710703804971299156057966068112259061759/318170917725840825786464868113206906716160",
+      "outside_area_m2_float": 19.312609548744806,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": true,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true
+    },
+    {
+      "physical_cell_id": 53601,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "10710471278952639158668621575728215355809",
+        "squared_distance_denominator": "234807768648683231648195893146483926499328",
+        "distance_decimal_enclosure_m": [
+          "0.213573841718945387",
+          "0.213573841718945388"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.21357384153816383,
+        "true_width_m": 0.2135738416109234,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -1.8078155639145166e-10,
+        -1.080219802496174e-10
+      ]
+    },
+    {
+      "physical_cell_id": 53940,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "32342932384391578026023809929940726671361",
+        "squared_distance_denominator": "365073216370415672538298326776462383775744",
+        "distance_decimal_enclosure_m": [
+          "0.297645766873665480",
+          "0.297645766873665481"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.297645766986534,
+        "true_width_m": 0.2976457670592936,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        1.1286849233016483e-10,
+        1.8562806847199909e-10
+      ]
+    },
+    {
+      "physical_cell_id": 53947,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "848412544397555443765629779176580737135009",
+        "squared_distance_denominator": "234807768648683231648195893146483926499328",
+        "distance_decimal_enclosure_m": [
+          "1.900847648436814788",
+          "1.900847648436814789"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 1.9008476485032588,
+        "true_width_m": 1.9008476485760184,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        6.644396144395159e-11,
+        1.3920353758578585e-10
+      ]
+    },
+    {
+      "physical_cell_id": 54292,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "234034647057775075501316204488306915275169",
+        "squared_distance_denominator": "234807768648683231648195893146483926499328",
+        "distance_decimal_enclosure_m": [
+          "0.998352356408574006",
+          "0.998352356408574007"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.998352356327814,
+        "true_width_m": 0.9983523564005736,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -8.07599542795856e-11,
+        -8.00037813775134e-12
+      ]
+    },
+    {
+      "physical_cell_id": 54635,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "5343759279890717638195438021853236441125",
+        "squared_distance_denominator": "2050609200828664818563196877871515697152",
+        "distance_decimal_enclosure_m": [
+          "1.614291620018377760",
+          "1.614291620018377761"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 1.6142916198441526,
+        "true_width_m": 1.6142916199169122,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -1.7422507880837657e-10,
+        -1.0146550266654231e-10
+      ]
+    },
+    {
+      "physical_cell_id": 54637,
+      "construction_footprint_m2": 25,
+      "covered_fuel_m2": 25.0,
+      "has_positive_area_outside_hull_exact": true,
+      "outside_area_m2_exact_fraction": "25",
+      "outside_area_m2_float": 25.0,
+      "inside_only_boundary_contact": false,
+      "closed_ring_positive_width_limit_member": false,
+      "euclidean_boundary_distance": {
+        "squared_distance_numerator": "2157549213496276785406303943435532890529",
+        "squared_distance_denominator": "234807768648683231648195893146483926499328",
+        "distance_decimal_enclosure_m": [
+          "0.095857064380333223",
+          "0.095857064380333224"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "selected_at2_5": true,
+      "buffer64_transition_bracket_m": {
+        "false_width_m": 0.09585706429788843,
+        "true_width_m": 0.095857064370648,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "buffer_transition_minus_exact_euclidean_distance_interval_m": [
+        -8.244480098618112e-11,
+        -9.685224844346862e-12
+      ]
+    }
+  ],
+  "roof_owner_critical_records": [
+    {
+      "building_id": "B0060",
+      "support_witness_node": 51238,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 2.7694113668985665e-09,
+        "true_width_m": 2.7699798010871746e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 3
+    },
+    {
+      "building_id": "B0064",
+      "support_witness_node": 51237,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 5.165361471881624e-09,
+        "true_width_m": 5.165929906070232e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 4
+    },
+    {
+      "building_id": "B0065",
+      "support_witness_node": 50845,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 1.7217871572938748e-09,
+        "true_width_m": 1.7223555914824829e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 6
+    },
+    {
+      "building_id": "B0068",
+      "support_witness_node": 50418,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 1.7217871572938748e-09,
+        "true_width_m": 1.7223555914824829e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 7
+    },
+    {
+      "building_id": "B0074",
+      "support_witness_node": 50025,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 2.213482730439864e-09,
+        "true_width_m": 2.214051164628472e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 6
+    },
+    {
+      "building_id": "B0077",
+      "support_witness_node": 50826,
+      "geometric_zero_threshold_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      },
+      "buffer64_fixed_area_threshold_transition": {
+        "false_width_m": 7.45217221265193e-09,
+        "true_width_m": 7.452740646840539e-09,
+        "bracket_width_m": 5.684341886080801e-13,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "fixed_area_threshold_m2": 1e-08,
+      "selected_by_w2_5": true,
+      "candidate_physical_patch_count": 7
+    }
+  ],
+  "roof_patch_support_records": [
+    {
+      "baseline_node_id": 49634,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "158718900278395694105/73786976294838206464",
+      "outside_area_m2_float": 2.1510422062043344,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "25067914644972380633280419430879695280669529",
+        "squared_distance_denominator": "5462547062170442200626204217157959045611520",
+        "distance_decimal_enclosure_m": [
+          "2.142207363648717704",
+          "2.142207363648717705"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50025,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "122230808485800141270397393280257944504593905118351939/23127493512374081431867825899991702638255923087278080",
+      "outside_area_m2_float": 5.285086705154713,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50026,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "44965579620772295118425/2212278136795587149824",
+      "outside_area_m2_float": 20.32546399699247,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50027,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "83190486834925647171526053721088094424505975/3335694389076289768870671370412718947303424",
+      "outside_area_m2_float": 24.939480999025964,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50028,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "392347180328920027779/73786976294838206464",
+      "outside_area_m2_float": 5.317295816014713,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "17730935920414937446678295935215731860796449",
+        "squared_distance_denominator": "5462547062170442200626204217157959045611520",
+        "distance_decimal_enclosure_m": [
+          "1.801640907838132956",
+          "1.801640907838132957"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50029,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "129770009901715130591/18446744073709551616",
+      "outside_area_m2_float": 7.034846332945248,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "18810050997902396163682894894186502541908449",
+        "squared_distance_denominator": "5462547062170442200626204217157959045611520",
+        "distance_decimal_enclosure_m": [
+          "1.855655660341417792",
+          "1.855655660341417793"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50406,
+      "original_owner_ids": [
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "789244092990246303477/73786976294838206464",
+      "outside_area_m2_float": 10.696252003017207,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "419921505566951632412541940484512854561",
+        "squared_distance_denominator": "86302194792406696189275524156014236532736",
+        "distance_decimal_enclosure_m": [
+          "0.069754645853178568",
+          "0.069754645853178569"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50418,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "26363605040387248777063078626440265848618122786234175/97932373564198047801309895340556533150906539837489152",
+      "outside_area_m2_float": 0.2692021451221643,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50419,
+      "original_owner_ids": [
+        "B0074"
+      ],
+      "outside_area_exact_fraction_m2": "110476558769515173320646928440962355464813567844021875/42323476983209982163465095385332245977881171650936832",
+      "outside_area_m2_float": 2.6102902371027312,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50420,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "915072849231654680638765446864905/76013297977542888364895457247232",
+      "outside_area_m2_float": 12.03832584006552,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50421,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "18182554651871553000466217121236927896660175/1111898129692096589623557123470906315767808",
+      "outside_area_m2_float": 16.35271628427562,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50422,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "696465173117916975/288230376151711744",
+      "outside_area_m2_float": 2.416348972015803,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "913228045188199929253298574354135974995125",
+        "squared_distance_denominator": "1092509412434088440125240843431591809122304",
+        "distance_decimal_enclosure_m": [
+          "0.914275382926615942",
+          "0.914275382926615943"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50423,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "62484146788661242175/18446744073709551616",
+      "outside_area_m2_float": 3.3872723847084836,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "810754793011662762250367412984674919045",
+        "squared_distance_denominator": "1092509412434088440125240843431591809122304",
+        "distance_decimal_enclosure_m": [
+          "0.027241572215330857",
+          "0.027241572215330858"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50424,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "762173152162907705821/36893488147419103232",
+      "outside_area_m2_float": 20.658744684628736,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "2938674411125603400243722507556431741461125",
+        "squared_distance_denominator": "1092509412434088440125240843431591809122304",
+        "distance_decimal_enclosure_m": [
+          "1.640072860242721657",
+          "1.640072860242721658"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50826,
+      "original_owner_ids": [
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "25044910179231069093276108083832135039521932033807/1044243665187884535420627994164276279151427584000",
+      "outside_area_m2_float": 23.98377985345488,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50828,
+      "original_owner_ids": [
+        "B0075",
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "110520738095964961713140959/3459392606613289699069748740133564186624",
+      "outside_area_m2_float": 3.1948018240162583e-14,
+      "can_ever_exceed_fixed_area_threshold": false,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50829,
+      "original_owner_ids": [
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "427535423655500750857829710278035859863/226432970615085471126409749194604544000",
+      "outside_area_m2_float": 1.8881323797242864,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50844,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "1351257988352771270417279021641124865075/1111898129692096589623557123470906315767808",
+      "outside_area_m2_float": 0.0012152713924673635,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50845,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "118787470234089957880266395855782259065210641092105625/34977099553017717040844399760082242783947649789722624",
+      "outside_area_m2_float": 3.3961498166545754,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50847,
+      "original_owner_ids": [
+        "B0068"
+      ],
+      "outside_area_exact_fraction_m2": "7576430961051671324309397173563304181812103546779151/34634050926412015353847491655166352901457800113160192",
+      "outside_area_m2_float": 0.218756707875424,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50848,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "28589777768662302363225/2212278136795587149824",
+      "outside_area_m2_float": 12.923229359430215,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50851,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "4194961983501498844680545534827748912345243160242416397/214053929761517482734480388712008452889176024421498880",
+      "outside_area_m2_float": 19.597687312609512,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50852,
+      "original_owner_ids": [
+        "B0064"
+      ],
+      "outside_area_exact_fraction_m2": "44893373524234859079/2305843009213693952",
+      "outside_area_m2_float": 19.469397242071466,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "4620643071528074243050821016410046831345801",
+        "squared_distance_denominator": "5462547062170442200626204217157959045611520",
+        "distance_decimal_enclosure_m": [
+          "0.919715731897681742",
+          "0.919715731897681743"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50854,
+      "original_owner_ids": [
+        "B0065"
+      ],
+      "outside_area_exact_fraction_m2": "15508988282879365797/18446744073709551616",
+      "outside_area_m2_float": 0.840743939467502,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "20352675587199093208109542858345772598469689",
+        "squared_distance_denominator": "5462547062170442200626204217157959045611520",
+        "distance_decimal_enclosure_m": [
+          "1.930248213973340565",
+          "1.930248213973340566"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 50856,
+      "original_owner_ids": [
+        "B0064"
+      ],
+      "outside_area_exact_fraction_m2": "98963517755337066355/4611686018427387904",
+      "outside_area_m2_float": 21.459292189428847,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "3329892629607330054501041322821407621653125",
+        "squared_distance_denominator": "1092509412434088440125240843431591809122304",
+        "distance_decimal_enclosure_m": [
+          "1.745832288889084863",
+          "1.745832288889084864"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51212,
+      "original_owner_ids": [
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "545417916815/34359738368",
+      "outside_area_m2_float": 15.873750579048647,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "8785321647092296867077991769443958253925",
+        "squared_distance_denominator": "6638630368646668937636578781231864348672",
+        "distance_decimal_enclosure_m": [
+          "1.150375408038199964",
+          "1.150375408038199965"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51215,
+      "original_owner_ids": [
+        "B0075",
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "25324693521168698121157251/106573568472181898966679814780259139584",
+      "outside_area_m2_float": 2.376264010318751e-13,
+      "can_ever_exceed_fixed_area_threshold": false,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51216,
+      "original_owner_ids": [
+        "B0077"
+      ],
+      "outside_area_exact_fraction_m2": "7091687782638926810880740848410234172794396194565/746536794203206767429112597678025955249894719488",
+      "outside_area_m2_float": 9.499448436708365,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51237,
+      "original_owner_ids": [
+        "B0064"
+      ],
+      "outside_area_exact_fraction_m2": "632473571684747243845215631898447933694128893167879883/194994187016162811330383611260474880178440100298883072",
+      "outside_area_m2_float": 3.2435509045832345,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51238,
+      "original_owner_ids": [
+        "B0060"
+      ],
+      "outside_area_exact_fraction_m2": "2366441206128019898846790503308210945108469568879/225090821741223583028738359087230726766956904448",
+      "outside_area_m2_float": 10.513272766175277,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51242,
+      "original_owner_ids": [
+        "B0064"
+      ],
+      "outside_area_exact_fraction_m2": "2765654553270664241146936684328736404949597516652303/1133064733795671808066420898740150310846112760594432",
+      "outside_area_m2_float": 2.4408619126340234,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51243,
+      "original_owner_ids": [
+        "B0060"
+      ],
+      "outside_area_exact_fraction_m2": "1142585009956505177585632517828187387460011/47401357342346342774822555642235264696320",
+      "outside_area_m2_float": 24.104478732632593,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    },
+    {
+      "baseline_node_id": 51618,
+      "original_owner_ids": [
+        "B0060"
+      ],
+      "outside_area_exact_fraction_m2": "296078284799281130444029174898229242257009656012968883/38498236614296726177513559263873014445774541464535040",
+      "outside_area_m2_float": 7.690697310778368,
+      "can_ever_exceed_fixed_area_threshold": true,
+      "zero_area_threshold_support_onset": {
+        "squared_distance_numerator": "0",
+        "squared_distance_denominator": "1",
+        "distance_decimal_enclosure_m": [
+          "0",
+          "0"
+        ],
+        "exact_for_stored_binary_coordinate_segments": true
+      }
+    }
+  ],
+  "practical_ground_event_plateau_witnesses": [
+    {
+      "width_m": 0.01,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.748978767238441,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69",
+      "numerically_bracketed_width_interval_m": [
+        1e-06,
+        0.09585706429788843
+      ],
+      "current_thin_widths_with_same_DG": [
+        0.01
+      ],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 0.15471545295440592,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 325,
+      "C_m2": 1414.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 325.0,
+      "ring_area_m2": 42.60128189671559,
+      "ring_is_empty": false,
+      "action_sha256": "576feec498df02d6fff22bf5604f8376cfc32f48411982c9378bf19eac65b48a",
+      "actual_cleared_base_node_mask_sha256": "377cdff442d0803afb71eb645e2a718231aa12d33e183d5c050e12335556a3f7",
+      "numerically_bracketed_width_interval_m": [
+        0.095857064370648,
+        0.21357384153816383
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 0.2556098042987287,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 350,
+      "C_m2": 1439.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 350.0,
+      "ring_area_m2": 70.46380288036107,
+      "ring_is_empty": false,
+      "action_sha256": "3bbf172a725cb7d56880fe0ed80ba506627960fa842657e31fcb571117427731",
+      "actual_cleared_base_node_mask_sha256": "1a23cc6dcc13d10ee60e37a4ca8b0d61f4d54c7131ef405bc7cbff0da8fbb1e9",
+      "numerically_bracketed_width_interval_m": [
+        0.2135738416109234,
+        0.297645766986534
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 0.46187476626073476,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 375,
+      "C_m2": 1464.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 375.0,
+      "ring_area_m2": 127.62400762195284,
+      "ring_is_empty": false,
+      "action_sha256": "2eba0d14aa6aa81e4f3a619653541f8a3db79edc445b25e5959bb9fecf76bf32",
+      "actual_cleared_base_node_mask_sha256": "73fd7e2c22174128eb881591edd6124830232b926d0bdc4aa847e36a47ec8ebd",
+      "numerically_bracketed_width_interval_m": [
+        0.2976457670592936,
+        0.6261037654621759
+      ],
+      "current_thin_widths_with_same_DG": [
+        0.5
+      ],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 0.7903327647727565,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 400,
+      "C_m2": 1489.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 400.0,
+      "ring_area_m2": 219.19809685965993,
+      "ring_is_empty": false,
+      "action_sha256": "4a1d39f7521f543a771a48c6885e6730fce1d95c17e7f762932f2477922b97c9",
+      "actual_cleared_base_node_mask_sha256": "435383f77f178153148da2487072a553826b396e34e7c3da0605d339fc1056b2",
+      "numerically_bracketed_width_interval_m": [
+        0.6261037655349355,
+        0.9545617640105775
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 0.9764570602055755,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 425,
+      "C_m2": 1514.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 425.0,
+      "ring_area_m2": 271.3904100093341,
+      "ring_is_empty": false,
+      "action_sha256": "034543a2beb5596cfedc4c95f9bc7b9283740928830d935251b96219c74020b6",
+      "actual_cleared_base_node_mask_sha256": "905ca2a69e3b02d6a9994e28da770632dad0e6fc4fb67e7ea0b90357e947b3b3",
+      "numerically_bracketed_width_interval_m": [
+        0.954561764083337,
+        0.998352356327814
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 1.057210745093471,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54292,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 450,
+      "C_m2": 1539.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 450.0,
+      "ring_area_m2": 294.1027700995137,
+      "ring_is_empty": false,
+      "action_sha256": "508a70bdc89e167ae57611814ddb666e058532ce884b37c2bef30f42a9202f9c",
+      "actual_cleared_base_node_mask_sha256": "d8ed37f017c3e6451a9be05f6194c1f9f369ec60673e39a26fbe2ff552c4f6fd",
+      "numerically_bracketed_width_interval_m": [
+        0.9983523564005736,
+        1.1160691337863682
+      ],
+      "current_thin_widths_with_same_DG": [
+        1.0
+      ],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 1.3651803768516402,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        54292,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 475,
+      "C_m2": 1564.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 475.0,
+      "ring_area_m2": 381.0967601319762,
+      "ring_is_empty": false,
+      "action_sha256": "4d75758b3d0b7f2c4cb19c9fdef60b5bb1e214ca4e78d944dae08f3e5308fa57",
+      "actual_cleared_base_node_mask_sha256": "3da6955847ab5559cd2e6cfc1b29816fa2927a788b75fddd9f4d68cab8e20277",
+      "numerically_bracketed_width_interval_m": [
+        1.1160691338591278,
+        1.6142916198441526
+      ],
+      "current_thin_widths_with_same_DG": [
+        1.5
+      ],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 1.6503525041480316,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 500,
+      "C_m2": 1589.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 500.0,
+      "ring_area_m2": 462.18234480661886,
+      "ring_is_empty": false,
+      "action_sha256": "aae9d8bfef17e59b2757a455deea28f01da4f26abc6173086f0a0e90442c5ecf",
+      "actual_cleared_base_node_mask_sha256": "38a42d08ff4f3537d6d586d4e415998e9a5a4ecb367f9c635c8cdb049f0ddd02",
+      "numerically_bracketed_width_interval_m": [
+        1.6142916199169122,
+        1.686413388379151
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 1.7936305184775847,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51159,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 525,
+      "C_m2": 1614.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 525.0,
+      "ring_area_m2": 503.11472101396885,
+      "ring_is_empty": false,
+      "action_sha256": "788faeccc77b00963719e6103d7616229d07b3cf9ead14ab43bbf23d369dff01",
+      "actual_cleared_base_node_mask_sha256": "8943b6c53ed7a83acda4cf51f2ce060e8d3cded50d2cd5aab8919df787e9a53e",
+      "numerically_bracketed_width_interval_m": [
+        1.6864133884519106,
+        1.9008476485032588
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 1.9953273313149111,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51159,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        53947,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 550,
+      "C_m2": 1639.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 550.0,
+      "ring_area_m2": 560.9550415709537,
+      "ring_is_empty": false,
+      "action_sha256": "4c02f3b0e61c0d5c1f4a886719e886d75509a793081e97ca8f7246026b0df8ef",
+      "actual_cleared_base_node_mask_sha256": "dee8ccf558912936d6d2189a05c9a20a87a92e07e74d09f93ba215ea7fd8dcdb",
+      "numerically_bracketed_width_interval_m": [
+        1.9008476485760184,
+        2.089807014053804
+      ],
+      "current_thin_widths_with_same_DG": [
+        2.0
+      ],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    },
+    {
+      "width_m": 2.2949035070632817,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51159,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53592,
+        53593,
+        53601,
+        53940,
+        53947,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 575,
+      "C_m2": 1664.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 575.0,
+      "ring_area_m2": 647.3358179729748,
+      "ring_is_empty": false,
+      "action_sha256": "552c8f42c69237927cd9e272060d20d5428b83b329b132c31624d911b75640a1",
+      "actual_cleared_base_node_mask_sha256": "e5f44d691581002cf9b2437e184f0fa25c8979b7bd1af97c9816f11cd3be3f0f",
+      "numerically_bracketed_width_interval_m": [
+        2.0898070141265634,
+        2.5
+      ],
+      "current_thin_widths_with_same_DG": [],
+      "interval_not_formally_verified_for_all_IEEE_widths": true
+    }
+  ],
+  "sorted_positive_ground_events": [
+    {
+      "physical_cell_id": 54637,
+      "exact_euclidean_distance_decimal_m": [
+        "0.095857064380333223",
+        "0.095857064380333224"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.09585706429788843,
+        "true_width_m": 0.095857064370648,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 53601,
+      "exact_euclidean_distance_decimal_m": [
+        "0.213573841718945387",
+        "0.213573841718945388"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.21357384153816383,
+        "true_width_m": 0.2135738416109234,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 53940,
+      "exact_euclidean_distance_decimal_m": [
+        "0.297645766873665480",
+        "0.297645766873665481"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.297645766986534,
+        "true_width_m": 0.2976457670592936,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 52202,
+      "exact_euclidean_distance_decimal_m": [
+        "0.626103765498942315",
+        "0.626103765498942316"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.6261037654621759,
+        "true_width_m": 0.6261037655349355,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 50464,
+      "exact_euclidean_distance_decimal_m": [
+        "0.954561764124219150",
+        "0.954561764124219151"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.9545617640105775,
+        "true_width_m": 0.954561764083337,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 54292,
+      "exact_euclidean_distance_decimal_m": [
+        "0.998352356408574006",
+        "0.998352356408574007"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 0.998352356327814,
+        "true_width_m": 0.9983523564005736,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 53256,
+      "exact_euclidean_distance_decimal_m": [
+        "1.116069133747186170",
+        "1.116069133747186171"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 1.1160691337863682,
+        "true_width_m": 1.1160691338591278,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 54635,
+      "exact_euclidean_distance_decimal_m": [
+        "1.614291620018377760",
+        "1.614291620018377761"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 1.6142916198441526,
+        "true_width_m": 1.6142916199169122,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 51159,
+      "exact_euclidean_distance_decimal_m": [
+        "1.686413388441414823",
+        "1.686413388441414824"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 1.686413388379151,
+        "true_width_m": 1.6864133884519106,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 53947,
+      "exact_euclidean_distance_decimal_m": [
+        "1.900847648436814788",
+        "1.900847648436814789"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 1.9008476485032588,
+        "true_width_m": 1.9008476485760184,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    },
+    {
+      "physical_cell_id": 53592,
+      "exact_euclidean_distance_decimal_m": [
+        "2.089807014133333661",
+        "2.089807014133333662"
+      ],
+      "buffer64_numerical_transition_bracket": {
+        "false_width_m": 2.089807014053804,
+        "true_width_m": 2.0898070141265634,
+        "bracket_width_m": 7.275957614183426e-11,
+        "floating_endpoint_witness_only_not_a_real_arithmetic_proof": true
+      },
+      "added_whole_cell_construction_C_m2": 25
+    }
+  ],
+  "monotonicity_scope": {
+    "real_geometry_proof": "nested_outer_buffers_with_fixed_inner_imply_nested_rings;positive_area_roof_and_closed_G_predicates_monotone;owner_AND_clearance_and_unique25m2_ground_cost_non_decreasing",
+    "sampled_floating_masks_non_decreasing": true,
+    "formal_all_IEEE_widths_monotonicity_proof_claimed": false
+  },
+  "candidate_window_is_conservative_bbox_not_distance_prefilter": true,
+  "width0_01_action": {
+    "width_m": 0.01,
+    "demolished_ids": [
+      "B0060",
+      "B0061",
+      "B0064",
+      "B0065",
+      "B0068",
+      "B0071",
+      "B0074",
+      "B0076",
+      "B0077"
+    ],
+    "cleared_physical_cell_ids": [
+      50118,
+      50465,
+      50812,
+      50813,
+      51160,
+      51508,
+      51856,
+      52203,
+      52550,
+      52551,
+      52898,
+      53593
+    ],
+    "cleared_roof_node_count": 112,
+    "roof_C_geometry_m2": 1089.0173624408872,
+    "grass_footprint_C_m2": 300,
+    "C_m2": 1389.0173624408872,
+    "roof_covered_removed_m2": 1089.0173673138215,
+    "grass_covered_removed_m2": 300.0,
+    "ring_area_m2": 2.748978767238441,
+    "ring_is_empty": false,
+    "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+    "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+  },
+  "zero_area_threshold_geometric_support_limit": {
+    "roof_area_threshold_m2": 0,
+    "demolished_ids": [
+      "B0060",
+      "B0061",
+      "B0064",
+      "B0065",
+      "B0068",
+      "B0071",
+      "B0074",
+      "B0076",
+      "B0077"
+    ],
+    "cleared_physical_cell_ids": [
+      50118,
+      50465,
+      50812,
+      50813,
+      51160,
+      51508,
+      51856,
+      52203,
+      52550,
+      52551,
+      52898,
+      53593
+    ],
+    "roof_C_geometry_m2": 1089.0173624408872,
+    "C_m2": 1389.0173624408872,
+    "matches_width0_01_DG": true,
+    "matches_width0_01_actual_cleared_node_mask": true,
+    "first_positive_grass_euclidean_distance_lower_bound_m": 0.09585706438033323,
+    "is_not_current_positive_area_threshold_implementation_limit": true
+  },
+  "fixed_positive_area_threshold_continuum_limit": {
+    "theorem": "area_each_roof_patch_intersection<=perimeter(H)*w+pi*w^2;finite_positive_tau_implies_no_additional_D_for_sufficiently_small_w",
+    "roof_ids": [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    "grass_closed_ring_limit_ids": [
+      50118,
+      50465,
+      50812,
+      50813,
+      51160,
+      51508,
+      51856,
+      52203,
+      52550,
+      52551,
+      52898,
+      53593
+    ],
+    "seed_roof_C_geometry_m2": 443.8419687401408,
+    "ideal_continuum_C_m2": 743.8419687401408,
+    "sufficient_all_patch_area_below_tau_width_upper_m": 1.7920629459463755e-11,
+    "bound_ring_area_at_that_width_m2": 4.92578005268399e-09,
+    "width_bound_below_global_coordinate_ulp": true,
+    "not_claimed_as_a_reliable_GEOS_double_width_or_a_fire_safe_strategy": true,
+    "direct_seed_plus_boundary_ground_candidate_untested": {
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "C_m2": 743.8419687401408,
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236",
+      "CA_feasibility_unknown": true,
+      "no_isolation_certificate_claimed": true
+    }
+  },
+  "floating_width_probes": [
+    {
+      "width_m": 0.0,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 0,
+      "C_m2": 443.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 0.0,
+      "ring_area_m2": 0.0,
+      "ring_is_empty": true,
+      "action_sha256": "005209806b553221ba8398d8d11a7f1e81bc15a778f9225541f26b96277f6da7",
+      "actual_cleared_base_node_mask_sha256": "53e8b09582127244079cd53db22acce2d36b04ee4d23d546a66fb4f6f676956b"
+    },
+    {
+      "width_m": 1e-12,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 0,
+      "C_m2": 443.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 0.0,
+      "ring_area_m2": 0.0,
+      "ring_is_empty": true,
+      "action_sha256": "005209806b553221ba8398d8d11a7f1e81bc15a778f9225541f26b96277f6da7",
+      "actual_cleared_base_node_mask_sha256": "53e8b09582127244079cd53db22acce2d36b04ee4d23d546a66fb4f6f676956b"
+    },
+    {
+      "width_m": 1e-11,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 0,
+      "C_m2": 443.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 0.0,
+      "ring_area_m2": 0.0,
+      "ring_is_empty": true,
+      "action_sha256": "005209806b553221ba8398d8d11a7f1e81bc15a778f9225541f26b96277f6da7",
+      "actual_cleared_base_node_mask_sha256": "53e8b09582127244079cd53db22acce2d36b04ee4d23d546a66fb4f6f676956b"
+    },
+    {
+      "width_m": 1e-10,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 743.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 1.3618789316351175e-08,
+      "ring_is_empty": false,
+      "action_sha256": "e0d797977a5426f09acd0e1994e689b5ae3c64a3e4faee7c5161c5a45833119c",
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236"
+    },
+    {
+      "width_m": 2e-10,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 743.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.6560302066681906e-08,
+      "ring_is_empty": false,
+      "action_sha256": "e0d797977a5426f09acd0e1994e689b5ae3c64a3e4faee7c5161c5a45833119c",
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236"
+    },
+    {
+      "width_m": 5e-10,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 743.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 1.4265515346778557e-07,
+      "ring_is_empty": false,
+      "action_sha256": "e0d797977a5426f09acd0e1994e689b5ae3c64a3e4faee7c5161c5a45833119c",
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236"
+    },
+    {
+      "width_m": 1e-09,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 42,
+      "roof_C_geometry_m2": 443.8419687401408,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 743.8419687401408,
+      "roof_covered_removed_m2": 443.8419728948336,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.77163962891791e-07,
+      "ring_is_empty": false,
+      "action_sha256": "e0d797977a5426f09acd0e1994e689b5ae3c64a3e4faee7c5161c5a45833119c",
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236"
+    },
+    {
+      "width_m": 2e-09,
+      "demolished_ids": [
+        "B0061",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 65,
+      "roof_C_geometry_m2": 664.4032288054074,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 964.4032288054074,
+      "roof_covered_removed_m2": 664.4032324144229,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 5.561760190175846e-07,
+      "ring_is_empty": false,
+      "action_sha256": "e9c388c5e94979ea0bca50c029f242d1539afe933644920edb85d0ad966beeb7",
+      "actual_cleared_base_node_mask_sha256": "7b6af2e348c1e402e31b4279a2006f73e0f500978edc7462fa4e81ebe858b1d8"
+    },
+    {
+      "width_m": 5e-09,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 89,
+      "roof_C_geometry_m2": 908.984033860801,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1208.984033860801,
+      "roof_covered_removed_m2": 908.9840386562025,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 1.356060238322243e-06,
+      "ring_is_empty": false,
+      "action_sha256": "6454f4a8a008a996f99d4d9b1aa9bdba511b5567b6974b942212cd489e03f237",
+      "actual_cleared_base_node_mask_sha256": "cac6fc5f59aeaec87090d065a30c20003c6a3621ccce03ee679bc40f9dbea9d0"
+    },
+    {
+      "width_m": 1e-08,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.732872417254839e-06,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 1e-07,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.7478904485178646e-05,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 1e-06,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 0.0002748771385086002,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 1e-05,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 0.002748681842604128,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 0.0001,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 0.027486686110023584,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 0.001,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 0.2748696055969049,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 0.005,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 1.3744108542568938,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 0.01,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 300,
+      "C_m2": 1389.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 300.0,
+      "ring_area_m2": 2.748978767238441,
+      "ring_is_empty": false,
+      "action_sha256": "66ea6fc2604db563f0a1fc61696936de12407117ae504ec975b5d8640491a4eb",
+      "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69"
+    },
+    {
+      "width_m": 0.5,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 375,
+      "C_m2": 1464.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 375.0,
+      "ring_area_m2": 138.21855185209097,
+      "ring_is_empty": false,
+      "action_sha256": "2eba0d14aa6aa81e4f3a619653541f8a3db79edc445b25e5959bb9fecf76bf32",
+      "actual_cleared_base_node_mask_sha256": "73fd7e2c22174128eb881591edd6124830232b926d0bdc4aa847e36a47ec8ebd"
+    },
+    {
+      "width_m": 1.0,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593,
+        53601,
+        53940,
+        54292,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 450,
+      "C_m2": 1539.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 450.0,
+      "ring_area_m2": 278.007743387574,
+      "ring_is_empty": false,
+      "action_sha256": "508a70bdc89e167ae57611814ddb666e058532ce884b37c2bef30f42a9202f9c",
+      "actual_cleared_base_node_mask_sha256": "d8ed37f017c3e6451a9be05f6194c1f9f369ec60673e39a26fbe2ff552c4f6fd"
+    },
+    {
+      "width_m": 1.5,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        54292,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 475,
+      "C_m2": 1564.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 475.0,
+      "ring_area_m2": 419.3675746083063,
+      "ring_is_empty": false,
+      "action_sha256": "4d75758b3d0b7f2c4cb19c9fdef60b5bb1e214ca4e78d944dae08f3e5308fa57",
+      "actual_cleared_base_node_mask_sha256": "3da6955847ab5559cd2e6cfc1b29816fa2927a788b75fddd9f4d68cab8e20277"
+    },
+    {
+      "width_m": 2.0,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51159,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53593,
+        53601,
+        53940,
+        53947,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 550,
+      "C_m2": 1639.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 550.0,
+      "ring_area_m2": 562.2980455338202,
+      "ring_is_empty": false,
+      "action_sha256": "4c02f3b0e61c0d5c1f4a886719e886d75509a793081e97ca8f7246026b0df8ef",
+      "actual_cleared_base_node_mask_sha256": "dee8ccf558912936d6d2189a05c9a20a87a92e07e74d09f93ba215ea7fd8dcdb"
+    },
+    {
+      "width_m": 2.5,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "cleared_physical_cell_ids": [
+        50118,
+        50464,
+        50465,
+        50812,
+        50813,
+        51159,
+        51160,
+        51508,
+        51856,
+        52202,
+        52203,
+        52550,
+        52551,
+        52898,
+        53256,
+        53592,
+        53593,
+        53601,
+        53940,
+        53947,
+        54292,
+        54635,
+        54637
+      ],
+      "cleared_roof_node_count": 112,
+      "roof_C_geometry_m2": 1089.0173624408872,
+      "grass_footprint_C_m2": 575,
+      "C_m2": 1664.0173624408872,
+      "roof_covered_removed_m2": 1089.0173673138215,
+      "grass_covered_removed_m2": 575.0,
+      "ring_area_m2": 706.7991561154677,
+      "ring_is_empty": false,
+      "action_sha256": "552c8f42c69237927cd9e272060d20d5428b83b329b132c31624d911b75640a1",
+      "actual_cleared_base_node_mask_sha256": "e5f44d691581002cf9b2437e184f0fa25c8979b7bd1af97c9816f11cd3be3f0f"
+    }
+  ],
+  "sampled_monotonicity_violations": [],
+  "critical_event_counts": {
+    "ordinary_owner_tau_events_in0to2_5": 6,
+    "positive_distance_grass_events_in0to2_5": 11,
+    "grass_zero_distance_limit_count": 12
+  },
+  "width0_01_equals_implementation_infinitesimal_limit": false,
+  "reason": "fixed_positive_area_threshold_and_double_coordinate_offset_collapse_are_different_from_zero_threshold_geometric_support;do_not_identify_an_epsilon_with_a_limit",
+  "strict_real_width_transition_proof_claimed_for_buffer64": false,
+  "case_cost_definition": "all_owner_AND_actual_roof_geometry_plus25m2_unique_ground_footprints;covered_fuel_reported_separately",
+  "prior51_parameter_grid_result_unchanged": true,
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thin-hull-20261111-catalog.json": "5e1af3d2d05fb5f4e0f7ab6d376b453ef65cec647ee4adcbeb4cfd2dda708951",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-thin-hull-longcap-comparison-20261111.json": "db6b0b12e7a41ef3b1c63f99738153ecc1ede024846877ec0a98eee77571d554",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_thin_hull_catalog.py": "cd970f083e84cb730a5d7ca0eecd99e98b8f766d2c5f86263ccb144abc418d5f",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_narrow_hull_catalog.py": "7eaa313008baa1fb0aa5a43a06e21e6b9e78b9dd4e4b03af99bb5a50f11ff0d2",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117"
+  },
+  "generator_sha256": "691707793ce2cfb95a38f5917f19a2c111b08f896e9a2e7df918c21ede5ea01a",
+  "elapsed_s": 8.950932666019071
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "heritage-area-master-config-1",
+  "village_id": "pingyan",
+  "place_name": "平岩村",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-study-20261029.json",
+  "source_fires": [
+    {
+      "fire_id": "drum-B0164-late-ignition",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/followup-20261103/pingyan-B0164-source.json",
+      "draw_id": "near-B0166-001"
+    },
+    {
+      "fire_id": "bridge-B0120-coverage",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/followup-20261103/pingyan-B0120-source.json",
+      "draw_id": "near-B0035-001"
+    }
+  ],
+  "fixed_source_ids": [
+    "B0164",
+    "B0120"
+  ],
+  "refinement_ids": [
+    "B0034",
+    "B0035",
+    "B0036",
+    "B0119",
+    "B0120",
+    "B0164",
+    "B0165",
+    "B0166",
+    "B0167",
+    "B0168",
+    "B0177",
+    "B0188",
+    "B0190"
+  ],
+  "seed_plans": [
+    [
+      "B0119",
+      "B0165",
+      "B0167",
+      "B0177",
+      "B0190"
+    ],
+    [
+      "B0034",
+      "B0119",
+      "B0165",
+      "B0168",
+      "B0188"
+    ]
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_new_checks": 48,
+  "max_wall_time_s": 14400.0,
+  "max_mip_time_s": 1200.0,
+  "mip_call_time_limit_s": 60.0,
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "minimum_free_disk_GB": 10.0,
+  "core_overlap_policy": "heritage_priority",
+  "scope": "full_eligible_ordinary_except_two_fixed_technical_sources;two_support_scales_are_model_assumptions_not_spatial_convergence;core_nonignition_not_real_structural_damage",
+  "new_independent_fire_draws": 0
+}

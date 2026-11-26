@@ -130,6 +130,7 @@ def refine_roof_layout(
     footprints,
     phase_fraction=(0.0, 0.0),
     max_nodes=200_000,
+    cell_size_by_id=None,
 ):
     """Refine selected roofs; split exactly at fixed ignition polygon boundaries.
 
@@ -148,6 +149,11 @@ def refine_roof_layout(
         or not set(refined_ids) <= inventory.by_id.keys()
     ):
         raise ValueError("invalid phase or refinement IDs")
+    overrides = {} if cell_size_by_id is None else dict(cell_size_by_id)
+    if not set(overrides) <= set(refined_ids) or any(
+        not np.isfinite(value) or not 0 < value <= grid.cell_size_m for value in overrides.values()
+    ):
+        raise ValueError("per-building roof scales must be positive and explicitly refined")
     for footprint in footprints:
         roof = unambiguous_roof(inventory, footprint.source_id)
         if footprint.geometry.difference(roof).area > 1e-7:
@@ -160,19 +166,20 @@ def refine_roof_layout(
         ):
             raise ValueError("prescribed ignition footprints may not overlap")
     old_nodes, geometries, owners, names, support, seed, fractions = [], [], [], [], [], [], []
-    x0 = grid.x_min_m + phase_fraction[0] * cell_size_m
-    y0 = grid.y_max_m + phase_fraction[1] * cell_size_m
     for old, (ids, geometry) in enumerate(zip(layout.owners, layout.geometry, strict=True)):
         if set(ids).intersection(refined_ids):
+            local_size = min(overrides.get(i, cell_size_m) for i in ids)
+            x0 = grid.x_min_m + phase_fraction[0] * local_size
+            y0 = grid.y_max_m + phase_fraction[1] * local_size
             xmin, ymin, xmax, ymax = geometry.bounds
             pieces = []
-            for rr in range(floor((y0 - ymax) / cell_size_m), ceil((y0 - ymin) / cell_size_m)):
-                for cc in range(floor((xmin - x0) / cell_size_m), ceil((xmax - x0) / cell_size_m)):
+            for rr in range(floor((y0 - ymax) / local_size), ceil((y0 - ymin) / local_size)):
+                for cc in range(floor((xmin - x0) / local_size), ceil((xmax - x0) / local_size)):
                     tile = box(
-                        x0 + cc * cell_size_m,
-                        y0 - (rr + 1) * cell_size_m,
-                        x0 + (cc + 1) * cell_size_m,
-                        y0 - rr * cell_size_m,
+                        x0 + cc * local_size,
+                        y0 - (rr + 1) * local_size,
+                        x0 + (cc + 1) * local_size,
+                        y0 - rr * local_size,
                     )
                     pieces.extend(_polygons(geometry.intersection(tile)))
             parts = [(p, None) for p in pieces]
@@ -190,7 +197,7 @@ def refine_roof_layout(
                     else:
                         updated.extend((q, footprint.source_id) for q in hits)
                 parts = updated
-            area = cell_size_m**2
+            area = local_size**2
         else:
             parts, area = [(geometry, None)], grid.cell_area_m2
         parts.sort(key=lambda p: (p[0].bounds, p[0].wkb_hex, p[1] or ""))
@@ -257,6 +264,8 @@ def refine_roof_layout(
         "background_scene": "full_parent_domain_no_crop",
         "refinement_conservation_max_abs_error": closure,
     }
+    if overrides:
+        protocol["cell_size_by_id"] = overrides
     xy = np.asarray(
         [
             (p.representative_point().x, p.representative_point().y)

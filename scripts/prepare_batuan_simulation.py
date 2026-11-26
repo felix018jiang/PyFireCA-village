@@ -39,6 +39,11 @@ TRANSPORT = V3RadiativeTransportParameters(15, 5, 0.001, 0, 0, 0)
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--imagery", type=Path)
+    parser.add_argument("--place-name", default="岜团村")
+    parser.add_argument("--profiles", type=Path)
+    parser.add_argument("--prepare-only", action="store_true")
+    parser.add_argument("--max-edges", type=int, default=5000000)
     parser.add_argument(
         "--annotations",
         type=Path,
@@ -67,7 +72,9 @@ def main():
     if output.exists():
         raise FileExistsError(output)
     imagery_root = ROOT / "data/local/imagery/batuan-mosaic-20261014"
-    imagery = imagery_root / "batuan-composite-utm49n.tif"
+    imagery = (
+        args.imagery.resolve() if args.imagery else imagery_root / "batuan-composite-utm49n.tif"
+    )
     with rasterio.open(imagery) as source:
         reference = dict(
             width_px=source.width,
@@ -75,8 +82,12 @@ def main():
             affine_pixel_to_world=list(source.transform)[:6],
         )
     roofs = load_labelme_buildings(
-        args.annotations, reference, labels=("building", "fengyuqiao"), repair_invalid=True
+        args.annotations, reference, labels=("building", "gulou", "fengyuqiao"), repair_invalid=True
     )
+    for roof in roofs:
+        roof["properties"]["annotation_source_label"] = roof["properties"]["source_label"]
+        if roof["properties"]["source_label"] == "gulou":
+            roof["properties"]["source_label"] = "building"
     output.mkdir(parents=True)
     (output / "buildings").mkdir()
     write_prepared_buildings(roofs, output / "buildings/buildings.json")
@@ -165,7 +176,9 @@ def main():
 
     profile_file = output / "profiles.synthetic.yml"
     library_raw = yaml.safe_load(
-        (ROOT / "examples/village/vegetation_v3/profiles.synthetic.yml").read_text()
+        (
+            args.profiles or (ROOT / "examples/village/vegetation_v3/profiles.synthetic.yml")
+        ).read_text()
     )
     library_raw["library_id"] = "batuan-demo-synthetic-profiles"
     profile_file.write_text(yaml.safe_dump(library_raw, allow_unicode=True, sort_keys=False))
@@ -247,7 +260,7 @@ def main():
         physics.receiver_height_m,
         np.ones(grid.shape),
         TRANSPORT,
-        max_edge_count=5_000_000,
+        max_edge_count=args.max_edges,
         max_memory_mb=2048,
         ground_elevation_m=elevation,
     )
@@ -316,7 +329,7 @@ def main():
         scenario_id="batuan-manual-inferred-terrain-demo"
         if not args.keep_unknown
         else "batuan-manual-terrain-demo",
-        place_name="岜团村",
+        place_name=args.place_name,
         assumptions=True,
         simulation_scope="mosaic_extent",
         includes_nonbuilding_fuels=True,
@@ -395,6 +408,9 @@ def main():
         f"计算网格{grid.shape}，建筑格{building_cells.sum()}，可燃格{burnable.sum()}，辐射边{len(edges.source)}；初始起火点{row},{col}",
         flush=True,
     )
+    if args.prepare_only:
+        print("Prepared physical case; no thermal simulation executed", flush=True)
+        return
     result, _ = run_v3_case_bundle(
         bundle,
         output / "run",

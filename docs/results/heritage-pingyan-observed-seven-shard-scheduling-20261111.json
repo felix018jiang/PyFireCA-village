@@ -1,0 +1,35 @@
+{
+  "budget_at_stop": {
+    "active": {
+      "pid": 30235
+    },
+    "elapsed_s": 3364.63232770795,
+    "started_checks": 7
+  },
+  "budget_before_signal": {
+    "active": {
+      "pid": 30235
+    },
+    "elapsed_s": 3364.63232770795,
+    "started_checks": 7
+  },
+  "budget_written_by_monitor": false,
+  "confirmed_process_state": "Ts",
+  "native_problem_sha256": "7bb17badc17000448c088511d69e34ec6494cd971e7519c4dd8c62262d4c0577",
+  "native_run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+  "pid": 30235,
+  "raw_budget_file_sha256": "95bea245931c111d86e79f8059d930acfaa482fc323a404d990c44331b9f85e7",
+  "reason": "parallel verification of the eighth registered scenario by a separately budgeted identical-native-problem sibling",
+  "schema_version": "native-seven-case-resource-stop-1",
+  "stopped_utc": "2026-11-11T13:39:12.687561+00:00",
+  "unique_native_manifests_at_stop": 7,
+  "untouched_native_manifest_sha256": [
+    "087173f133ac871d7475b3859c469cc6bd7da3f516adf6f6ecc238e70676eed4",
+    "02277700d3b3c7cbcdfdd30eda735490713ada4c81e33e31c5b4af2d1ffd62ef",
+    "312f77fbafbf3e9cbbbe658a6486a1ed61415e2035d6bd5fdd8fc1500cb414b1",
+    "91f6ba44c33416d563d17b8b652700355eba982f0246ee64f03fe41a8e194512",
+    "d99e79f76c2c605f940a3c26119ea26d5fd7a47a2cb410f23ff9e254532f177b",
+    "90f1043698099fd2bdf693c4e4900b78c3b42cc93bea51378be15d785dbd2345",
+    "3905a786c3774f1dcf80d7a542e3dd2daeb006a1f784a23f2af3c63d9f454084"
+  ]
+}

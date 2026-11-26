@@ -1,0 +1,35 @@
+{
+  "new_only": true,
+  "case_count": 4635,
+  "paired_60min_and_certified_terminal_observations": 4635,
+  "active_cases_at_60min": 4020,
+  "active_cases_at_certified_end": 0,
+  "cases_first_heritage_ignition_after_60min": 715,
+  "additional_heritage_building_ignitions_after_60min": 2033,
+  "independent_roof_count": 103,
+  "strata": 4,
+  "village_stratum_layout_count": 20,
+  "paired_layout_rows": 40,
+  "registration_sha256": "35edf66e8437de7b28af8305598232acb94a3e31995a4858695ad47677291551",
+  "original_registration_sha256": "6c6478782ede5faced9de991edec0bfb8c88bc7f91a1497ea5bfe221b9b3e240",
+  "reference_solver_sha256": "11e0636afcff99a2f9cfeae7f8a02591fc02351ba630ea7224af50c1b238b721",
+  "solver_signatures_and_counts": {
+    "11e0636afcff99a2f9cfeae7f8a02591fc02351ba630ea7224af50c1b238b721": 1085,
+    "7983357e4c3290d79e64babec5cc58a724840bf27cce2f08fc6211a6751b6f10": 3550
+  },
+  "backend_verification_file_sha256": "7bf4e0bf51064c72a4905f0ba830186ac96241f16ca547c7970dbc246297f7e4",
+  "additional_execution_backends": [
+    "8194384c2fd21b55be2c43b6ef175d39a1f87dad532b39ef317844395dfa4b63"
+  ],
+  "independent_native_replay": {
+    "count": 5,
+    "verification_file_sha256": "6755a46b5cadc65e31c1e15c4adab0cdd1af652e9d1af604d60a9f7b3184679a"
+  },
+  "table_file_sha256": {
+    "cases.csv": "fe2b18056c0d6c496f7d938472614425dcddd573854f258449c11ae6c58d6dce",
+    "by-stratum.csv": "1679dcb6bccadecbbe41af97c20e96f3778952e5abb274cbda46a18ca2b42db6",
+    "paired-layouts.csv": "c371fd79516c26ca57dcd3eb2a5e9f9f1c1572e333f254cfcda24bb9aecd3e59",
+    "by-village-weighted.csv": "cd44bdb16109839cb3d811feaa23dc3c8b1c604f53d8e90c4c9e5845d0658aaa"
+  },
+  "case_and_extinction_certificate_fingerprints_sha256": "5edde3bb006e05ace07934b73781a9f3bf4b59b07ee9237f1e6a35b5cb0a8a79"
+}

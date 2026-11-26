@@ -1,0 +1,47 @@
+{
+  "schema_version": "protected-roof-deterministic-prefix-1",
+  "village": "pingyan",
+  "plan": "roof-seed-protected-union-ring-b0-w0.01",
+  "roof_actions": 6,
+  "ground_actions": 0,
+  "native_master_manifest": "runs/research/heritage-joint-action-pingyan-20261111/evaluations/a5f7123544bfc46cfa1972608be65be32d8b7db80b0247795297a9d93567ee72/complete.json",
+  "native_master_manifest_sha256": "6eab404630326bf94758d7b3bec009c666f1f422ebe6de8fe3d7997536e48c71",
+  "seven_master_artifact_hashes": {
+    "curves.json": "e4d4c6f902e171a557f3ff2bd9b32316a98b4e903bcae61ebc8d11bd44d002ff",
+    "fire-loss.json": "c1d2a5f82ec8c021c718050607cfc9bb29ac335a5b27c7c5ddf535b0e5571ce9",
+    "loss-basis.npz": "608868fd3d21c02faf53346453d63f08b1deff59ace1f042febf9b3155cb75de",
+    "layout.npz": "7b2d83c167e4b77341137d3806ac526cb22f76d7b9ca34b1e70e0a95d808fe15",
+    "check.json": "061a531de9ad0edb24de2396be76bbc04b3d1501ec594d6ade5ed2013e6bec1c",
+    "evaluation.json": "1c00d8ad6a533e7a2ba548d0d3bacb8d64dcee2e999261fb6e75009f87bece32",
+    "final-state.npz": "1a3b81d196599414bd44ab4ac289bbabd8998dfd15196269b67ee6c138a8ac98"
+  },
+  "physical_module_count": 113,
+  "shared_frozen_physical_module_digest": "24cae9ef52ca5c2102f2f0b6cf62f5cb3fd99b8d3d753a9992e40d6f72f17a34",
+  "frozen_drivers_sha256": {
+    "runs/research/heritage-joint-action-pingyan-20261111/source-snapshot/scripts/run_heritage_joint_master.py": "419bf75c295081ee619a90f6dfee4948bf5e1de37df545445fed01d33e6a46ab",
+    "runs/research/heritage-protected-union-pingyan-20261111/source-snapshot/scripts/run_heritage_joint_comparison.py": "10647b74bd85588f943951782756f71ebb84e242ede482ae86a9eccbafc9f64c"
+  },
+  "experiments_sha256": {
+    "runs/research/heritage-joint-action-pingyan-20261111/experiment.json": "5425eb542f43fbef061e742204145ee2f928b0cae2a097265c37e1804fad5742",
+    "runs/research/heritage-protected-union-pingyan-20261111/experiment.json": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7"
+  },
+  "equivalent_mesh_source_and_budget_native_comparators": {
+    "runs/research/heritage-protected-union-pingyan-20261111/evaluations/7680d884e419cd86e1fc7df0503953178f960ee09fb5839a2dc22ea3f974e0ee/complete.json": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+    "runs/research/heritage-protected-union-pingyan-20261111/evaluations/08df3015322b19d9045db8c41a11382bccaa0f879b488e1d97da38164d7e3345/complete.json": "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d"
+  },
+  "actual_end_cap_s": 172800.0,
+  "same_action_source_mesh_integrated_membership_transport_and_time_step": true,
+  "state_fingerprints": {
+    "actual_state_arrays_sha256": "5b6a6c01043cffbdb2242901cf8e2cb5c5d67887da7bede1fe68168f1be15a8d",
+    "historical_valid_temperature_maximum_sha256": "8a39f2a2ac0b7ba3ccf0f29da78569031a4968eb882f2ac19e10b10ed76d75ea"
+  },
+  "first_protected_ignition_at_saved_stop": true,
+  "observed_time_s": 19559.359999999946,
+  "inference": "Same deterministic state updates and cap. Both observe extinction after events. Until the master detects the first finite core ignition, callbacks agree. At that state the local full trajectory already contains the ignition.",
+  "scope": "A failed protection condition on the four-design-family mesh. The native master status is preserved. Full fire losses remain unmeasured.",
+  "original_native_strict_status": "unknown",
+  "new_CA_checks": 0,
+  "local_native_rows_added": 0,
+  "method_sha256": "6ecfe57fa94c31451f705c2f4d1274cb9ee5f7cc5c09a116fd4f1d44401b0f5b",
+  "receipt_sha256": "c7815342af4ae751622a76c5acc4cf6c2be9818bd7d4d8cabdb7b3624d4b59e7"
+}

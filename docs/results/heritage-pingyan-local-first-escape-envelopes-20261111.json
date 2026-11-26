@@ -1,0 +1,110 @@
+{
+  "registered_families": 4,
+  "plans": [
+    {
+      "plan_id": "roof-seed-protected-union-ring-b0-w2.5",
+      "families": [
+        {
+          "family_ordinal": 1,
+          "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 2,
+          "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 3,
+          "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 4,
+          "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+          "certified": false,
+          "sufficient_test": "local_search_size_limit"
+        }
+      ],
+      "certified_family_count": 0
+    },
+    {
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "families": [
+        {
+          "family_ordinal": 1,
+          "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 2,
+          "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+          "certified": true,
+          "sufficient_test": "no_external_contact_or_ignition_energy",
+          "core_nonignition": true,
+          "N_owner_upper": 1,
+          "A_upper_m2": 241.49
+        },
+        {
+          "family_ordinal": 3,
+          "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 4,
+          "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+          "certified": true,
+          "sufficient_test": "no_external_contact_or_ignition_energy",
+          "core_nonignition": true,
+          "N_owner_upper": 1,
+          "A_upper_m2": 111.18
+        }
+      ],
+      "certified_family_count": 2
+    },
+    {
+      "plan_id": "local-band-with-observed-clearance-subset",
+      "families": [
+        {
+          "family_ordinal": 1,
+          "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 2,
+          "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 3,
+          "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+          "certified": false,
+          "sufficient_test": "potential_envelope_includes_core"
+        },
+        {
+          "family_ordinal": 4,
+          "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+          "certified": false,
+          "sufficient_test": "local_search_size_limit"
+        }
+      ],
+      "certified_family_count": 0
+    }
+  ],
+  "native_CA_checks": 0,
+  "scope": "fixed local actions, no core immunity assumed, no new fire draws",
+  "noncertification": "the sufficient bound is inconclusive, not an ignition outcome",
+  "parent_experiments_sha256": [
+    "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+    "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735"
+  ],
+  "method_sha256": "524b13405c5100b7bf10b1cbd255a64c7076ed5aadfcae67188c4ad93862d591",
+  "receipt_sha256": "191db9cb46e5c66c434fea2c0cf8b7643d5c554dd8e7ea40182427bfc4493789"
+}

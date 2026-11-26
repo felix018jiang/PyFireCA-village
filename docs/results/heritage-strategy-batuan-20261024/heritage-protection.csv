@@ -1,0 +1,17 @@
+﻿scenario_id,actual_source_id,source_replaced,scale_m,building_id,role,ignited,first_ignition_s,maximum_valid_surface_temperature_K,simulated_until_s
+B0075-known-h1,B0075,False,1.0,B0073,gulou,False,,429.7221251013549,1200.0
+B0075-known-h1,B0075,False,1.0,B0120,fengyuqiao,False,,300.0,1200.0
+B0075-known-h0.5,B0075,False,0.5,B0073,gulou,False,,373.15,1200.0
+B0075-known-h0.5,B0075,False,0.5,B0120,fengyuqiao,False,,300.0,1200.0
+B0071-known-h1,B0067,True,1.0,B0073,gulou,False,,327.51884763408685,1200.0
+B0071-known-h1,B0067,True,1.0,B0120,fengyuqiao,False,,300.0,1200.0
+B0071-known-h0.5,B0067,True,0.5,B0073,gulou,False,,327.1760983020526,1200.0
+B0071-known-h0.5,B0067,True,0.5,B0120,fengyuqiao,False,,300.0,1200.0
+B0062-known-h1,B0062,False,1.0,B0073,gulou,False,,300.0,1200.0
+B0062-known-h1,B0062,False,1.0,B0120,fengyuqiao,False,,373.15,1200.0
+B0062-known-h0.5,B0062,False,0.5,B0073,gulou,False,,300.0,1200.0
+B0062-known-h0.5,B0062,False,0.5,B0120,fengyuqiao,False,,373.15,1200.0
+B0061-known-h1,B0063,True,1.0,B0073,gulou,False,,300.0,1200.0
+B0061-known-h1,B0063,True,1.0,B0120,fengyuqiao,False,,373.15,1200.0
+B0061-known-h0.5,B0063,True,0.5,B0073,gulou,False,,300.0,1200.0
+B0061-known-h0.5,B0063,True,0.5,B0120,fengyuqiao,False,,373.15,1200.0

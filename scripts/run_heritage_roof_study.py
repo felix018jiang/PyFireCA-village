@@ -19,19 +19,13 @@ from pyfireca.planning.engines.heritage import compare_retained_ordinary
 from pyfireca.planning.engines.roof_heritage import RoofHeritageEvaluationEngine
 from pyfireca.planning.engines.village import request_fingerprint
 from pyfireca.planning.evaluation import EvaluationScenario
-from pyfireca.planning.heritage import (
-    HeritageTarget,
-    bind_labelme_targets,
-    content_hash,
-    inventory_from_records,
-)
+from pyfireca.planning.heritage import content_hash
 from pyfireca.planning.interventions.buildings import BuildingDemolitionPlan
 from pyfireca.planning.roof_thermal import roof_contact_operator
-from pyfireca.village.annotations import load_labelme_buildings
+from pyfireca.planning.study_io import load_study, resolve_candidate_ids  # noqa: F401
 from pyfireca.village.core_validation_v3 import check_final
 from pyfireca.village.flame_contact_v3 import FlameContactOperator, FlameContactParameters
 from pyfireca.village.solver_v3 import _run_resolved_v3_simulation
-from pyfireca.village.transport_v3 import V3RadiativeTransportParameters
 from pyfireca.village.workflow_v3 import load_v3_case_bundle, write_v3_case_bundle
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,79 +33,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def dump(path, value):
     Path(path).write_text(json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + "\n")
-
-
-def resolve_candidate_ids(config, records):
-    """Resolve an explicit list or the user-authorized provisional all-ordinary policy."""
-    explicit = tuple(config.get("candidate_ids", ()))
-    policy = config.get("candidate_policy")
-    if policy is None:
-        return explicit
-    if explicit:
-        raise ValueError("candidate policy and explicit candidate IDs cannot be combined")
-    if policy != "all_ordinary_except_protected_targets_and_sources":
-        raise ValueError("unsupported demolition candidate policy")
-    forbidden = (
-        set(config.get("protected_ids", ()))
-        | {target["building_id"] for target in config.get("targets", ())}
-        | set(config.get("fixed_source_ids", ()))
-    )
-    return tuple(
-        sorted(
-            row["building_id"]
-            for row in records
-            if row["properties"]["source_label"] == "building"
-            and row["building_id"] not in forbidden
-        )
-    )
-
-
-def load_study(path):
-    path = Path(path).resolve()
-    config = json.loads(path.read_text())
-    if config.get("schema_version") != "heritage-p1-study-1":
-        raise ValueError("unsupported study schema")
-    bundle = load_v3_case_bundle(path.parent / config["case_dir"])
-    structures_path = config.get("structures_path")
-    structures_path = (
-        path.parent / structures_path
-        if structures_path
-        else Path(bundle.metadata["spatial_assets_dir"]) / "buildings.json"
-    )
-    records = json.loads(structures_path.read_text())["buildings"]
-    candidate_ids = resolve_candidate_ids(config, records)
-    targets = tuple(HeritageTarget(**t) for t in config.get("targets", []))
-    if config.get("labelme_annotations"):
-        raw = path.parent / config["labelme_annotations"]
-        reference = path.parent / config["image_reference"]
-        latest = load_labelme_buildings(
-            raw,
-            json.loads(reference.read_text()),
-            labels=("building", "gulou", "fengyuqiao"),
-            repair_invalid=True,
-        )
-        bound, reconciliation = bind_labelme_targets(
-            records,
-            latest,
-            identity_evidence=f"labelme_sha256:{hashlib.sha256(raw.read_bytes()).hexdigest()}",
-        )
-        if not reconciliation["physical_case_matches_updated_annotations"]:
-            raise ValueError("stale physical geometry; refresh before independent roof simulation")
-        if {(t.building_id, t.role) for t in bound} != {(t.building_id, t.role) for t in targets}:
-            raise ValueError("core identities do not match frozen annotation")
-    inventory = inventory_from_records(
-        records,
-        bundle.metadata["building_labels"],
-        targets=targets,
-        protected_ids=tuple(config.get("protected_ids", [])),
-        fixed_source_ids=tuple(config.get("fixed_source_ids", [])),
-        candidate_ids=candidate_ids,
-        candidate_evidence=config.get(
-            "candidate_evidence", "pending_survey_no_candidates_declared"
-        ),
-    )
-    transport = V3RadiativeTransportParameters(**bundle.metadata["transport_parameters"])
-    return bundle, transport, inventory
 
 
 class SelectedTrace:

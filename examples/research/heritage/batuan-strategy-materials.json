@@ -1,0 +1,15 @@
+{
+  "schema_version": "heritage-material-binding-1",
+  "profile_library": "../../../runs/batuan-contact-20261016/profiles.synthetic.yml",
+  "material_profiles": {
+    "0": "inert_bare_or_road",
+    "1": "synthetic_grass",
+    "4": "synthetic_tree_equivalent",
+    "5": "synthetic_building",
+    "6": "synthetic_tree_equivalent",
+    "7": "synthetic_grass",
+    "8": "inert_bare_or_road"
+  },
+  "roof_profile_id": "synthetic_building",
+  "evidence": "Existing frozen synthetic equivalent-building and RGB/inferred background profiles; not field measured. No parameter changes."
+}

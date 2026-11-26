@@ -1,0 +1,158 @@
+{
+  "basis": "Original positive modeled ordinary roof union before fire, including shared physical roof retained until all its owners are selected.",
+  "method_sha256": "07033ca1f6f7179f0f023f1170c3f79463a389a688e3627e85aa5a0f4bda2085",
+  "new_CA_runs": 0,
+  "receipt_sha256": "b45754db14a1a441c44caf637220282986b6bd31b2974def4039b5b5595bcdf8",
+  "villages": [
+    {
+      "original_ordinary_labels": 331,
+      "original_ordinary_roof_union_m2": 76242.29309151437,
+      "policies": [
+        {
+          "C_m2": 11236.448481374588,
+          "fully_physically_removed_original_ordinary_labels": 41,
+          "ground_cleared_m2": 1375.0,
+          "ordinary_original_labels_with_remaining_roof": 290,
+          "ordinary_roof_removed_m2": 9861.448481374588,
+          "original_ordinary_roof_union_retained_fraction": 0.8706564548165178,
+          "partly_physically_removed_original_ordinary_labels": 15,
+          "policy": "design-compartment",
+          "selected_ordinary_roof_labels": 56
+        },
+        {
+          "C_m2": 1089.0173624408872,
+          "fully_physically_removed_original_ordinary_labels": 2,
+          "ground_cleared_m2": 0.0,
+          "ordinary_original_labels_with_remaining_roof": 329,
+          "ordinary_roof_removed_m2": 1089.0173624408872,
+          "original_ordinary_roof_union_retained_fraction": 0.9857163613752575,
+          "partly_physically_removed_original_ordinary_labels": 7,
+          "policy": "economic",
+          "selected_ordinary_roof_labels": 9
+        },
+        {
+          "C_m2": 11736.448481377087,
+          "fully_physically_removed_original_ordinary_labels": 41,
+          "ground_cleared_m2": 1875.0,
+          "ordinary_original_labels_with_remaining_roof": 290,
+          "ordinary_roof_removed_m2": 9861.448481374588,
+          "original_ordinary_roof_union_retained_fraction": 0.8706564548165178,
+          "partly_physically_removed_original_ordinary_labels": 15,
+          "policy": "zero-heat-compartment",
+          "selected_ordinary_roof_labels": 56
+        }
+      ],
+      "source_files_sha256": {
+        "docs/results/heritage-batuan-direct-D9-G0-complete8-audit-20261111.json": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+        "docs/results/heritage-no-external-core-heat-with-fixed-loss-bounds-20261111.json": "87d72c8d6424cb547be943cd9d680ee8d6de460cb3234ebc2436bd0c44284ca7",
+        "docs/results/heritage-total-protection-and-loss-batuan-20261111.json": "9652052624353a5d2a252c47327df716ab870d12c7c321871f6038fca1d324f5"
+      },
+      "village": "batuan"
+    },
+    {
+      "original_ordinary_labels": 947,
+      "original_ordinary_roof_union_m2": 286331.3928041348,
+      "policies": [
+        {
+          "C_m2": 8465.532897386734,
+          "fully_physically_removed_original_ordinary_labels": 21,
+          "ground_cleared_m2": 2500.0,
+          "ordinary_original_labels_with_remaining_roof": 926,
+          "ordinary_roof_removed_m2": 5965.532897386735,
+          "original_ordinary_roof_union_retained_fraction": 0.9791656344805074,
+          "partly_physically_removed_original_ordinary_labels": 13,
+          "policy": "design-compartment",
+          "selected_ordinary_roof_labels": 34
+        },
+        {
+          "C_m2": 2543.456175290825,
+          "fully_physically_removed_original_ordinary_labels": 5,
+          "ground_cleared_m2": 725.0,
+          "ordinary_original_labels_with_remaining_roof": 942,
+          "ordinary_roof_removed_m2": 1818.456175290825,
+          "original_ordinary_roof_union_retained_fraction": 0.993649120491183,
+          "partly_physically_removed_original_ordinary_labels": 5,
+          "policy": "roof-seed-protected-union-ring-b0-w2.5",
+          "selected_ordinary_roof_labels": 10
+        },
+        {
+          "C_m2": 10669.276972304711,
+          "fully_physically_removed_original_ordinary_labels": 15,
+          "ground_cleared_m2": 6075.0,
+          "ordinary_original_labels_with_remaining_roof": 932,
+          "ordinary_roof_removed_m2": 4594.276972304711,
+          "original_ordinary_roof_union_retained_fraction": 0.9839546864655269,
+          "partly_physically_removed_original_ordinary_labels": 8,
+          "policy": "roof-seed-protected-union-ring-b0-w15.01",
+          "selected_ordinary_roof_labels": 23
+        },
+        {
+          "C_m2": 3585.5659372857185,
+          "fully_physically_removed_original_ordinary_labels": 9,
+          "ground_cleared_m2": 750.0,
+          "ordinary_original_labels_with_remaining_roof": 938,
+          "ordinary_roof_removed_m2": 2835.565937285018,
+          "original_ordinary_roof_union_retained_fraction": 0.9900969086570794,
+          "partly_physically_removed_original_ordinary_labels": 6,
+          "policy": "local-compact",
+          "selected_ordinary_roof_labels": 15
+        },
+        {
+          "C_m2": 9865.173036443528,
+          "fully_physically_removed_original_ordinary_labels": 20,
+          "ground_cleared_m2": 3800.0,
+          "ordinary_original_labels_with_remaining_roof": 927,
+          "ordinary_roof_removed_m2": 6065.173036443527,
+          "original_ordinary_roof_union_retained_fraction": 0.978817645606214,
+          "partly_physically_removed_original_ordinary_labels": 13,
+          "policy": "zero-heat-original-four",
+          "selected_ordinary_roof_labels": 33
+        },
+        {
+          "C_m2": 5600.070776859304,
+          "fully_physically_removed_original_ordinary_labels": 10,
+          "ground_cleared_m2": 2875.0,
+          "ordinary_original_labels_with_remaining_roof": 937,
+          "ordinary_roof_removed_m2": 2725.0707768593043,
+          "original_ordinary_roof_union_retained_fraction": 0.9904828082238143,
+          "partly_physically_removed_original_ordinary_labels": 4,
+          "policy": "core-only-zero-heat",
+          "selected_ordinary_roof_labels": 14
+        },
+        {
+          "C_m2": 9765.173036443528,
+          "fully_physically_removed_original_ordinary_labels": 20,
+          "ground_cleared_m2": 3700.0,
+          "ordinary_original_labels_with_remaining_roof": 927,
+          "ordinary_roof_removed_m2": 6065.173036443527,
+          "original_ordinary_roof_union_retained_fraction": 0.978817645606214,
+          "partly_physically_removed_original_ordinary_labels": 13,
+          "policy": "zero-heat-enumerated-four",
+          "selected_ordinary_roof_labels": 33
+        },
+        {
+          "C_m2": 12853.90118112162,
+          "fully_physically_removed_original_ordinary_labels": 25,
+          "ground_cleared_m2": 4375.0,
+          "ordinary_original_labels_with_remaining_roof": 922,
+          "ordinary_roof_removed_m2": 8478.90118112162,
+          "original_ordinary_roof_union_retained_fraction": 0.970387804501333,
+          "partly_physically_removed_original_ordinary_labels": 19,
+          "policy": "zero-heat-known-eight",
+          "selected_ordinary_roof_labels": 44
+        }
+      ],
+      "source_files_sha256": {
+        "docs/results/heritage-pingyan-eight-known-zero-heat-and-design-loss-20261111.json": "ede4ce000bd8aa947c63ebed59244b6e4111a23235c3f3a4ecf4e0e744a6989b",
+        "docs/results/heritage-pingyan-observed-clearance-subset-registration-20261111.json": "d510c786f4259fbc3ce7983b599f35f9a9236ccbcac315d77e968a4ce980d248",
+        "docs/results/heritage-pingyan-six-options-loss-capped-minimum-20261111.json": "45e0b422dda12f6ffad40e0f796cb50f30ae7dcedba93737ddf3f4845fd50adc",
+        "docs/results/heritage-pingyan-zero-heat-and-design-loss-20261111.json": "391bea7f08de1e9e6cc461c896d7490e38bf431df97d8ed2df50f90bf3568bfd",
+        "docs/results/heritage-pingyan-zero-heat-first-extensions-minimum-20261111.json": "fc44fd9a1fac8ffb78707453fa78281448d8b4b5a21271557742e366fa41d9d4",
+        "docs/results/heritage-total-protection-and-loss-pingyan-20261111.json": "a011fa5086d6df3dbf69537a6987f1c42d41e43eb64d2407daf2cfb53a1bed91",
+        "runs/research/heritage-protected-union-pingyan-20261111/experiment.json": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+        "runs/research/heritage-thermal-and-geometric-pareto-pingyan-20261111/experiment.json": "9fe4f3e4c393918317d977b44a7f974fdb6cc43d2aaa646f092838e3b3667aae"
+      },
+      "village": "pingyan"
+    }
+  ]
+}

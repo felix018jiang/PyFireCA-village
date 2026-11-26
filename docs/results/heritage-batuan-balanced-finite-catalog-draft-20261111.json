@@ -1,0 +1,226 @@
+{
+  "all_new_arms_require_independent_evaluation_from_zero": true,
+  "catalog_snapshot_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-finite-longcap-comparison-20261111.draft.catalog.json",
+  "catalog_snapshot_sha256": "1d7ac8a29f4703f7bf276f48957b1273db5ed4f0049e67eeafb3422389245ab0",
+  "changed_configuration_keys": [
+    "finite_source_catalog_certificate_file_sha256",
+    "finite_source_catalog_certificate_path",
+    "finite_source_catalog_certificate_sha256",
+    "max_new_checks",
+    "max_total_checks",
+    "plans",
+    "preparation_status",
+    "roof_replacement_rule",
+    "scope",
+    "seed_reverification",
+    "source_coverage_policy",
+    "vegetation_proposals_path",
+    "vegetation_proposals_sha256"
+  ],
+  "declared_joint_arms": 3,
+  "draft_manager_path": "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py",
+  "draft_manager_sha256": "0acd494378392fcac700b5c46fe707acde046cb9ed1c8ffead0d6ee25af8f634",
+  "finite_first_retained_matrix": [
+    {
+      "actual_source_id": "B0063",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "removed_priority_prefix": [
+        "B0061"
+      ],
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8"
+    },
+    {
+      "actual_source_id": "B0062",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+    },
+    {
+      "actual_source_id": "B0067",
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "removed_priority_prefix": [
+        "B0071"
+      ],
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0"
+    },
+    {
+      "actual_source_id": "B0075",
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade"
+    },
+    {
+      "actual_source_id": "B0063",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b20-w20",
+      "removed_priority_prefix": [
+        "B0061"
+      ],
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8"
+    },
+    {
+      "actual_source_id": "B0062",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b20-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+    },
+    {
+      "actual_source_id": "B0067",
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b20-w20",
+      "removed_priority_prefix": [
+        "B0071"
+      ],
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0"
+    },
+    {
+      "actual_source_id": "B0075",
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b20-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade"
+    },
+    {
+      "actual_source_id": "B0063",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0061-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b30-w20",
+      "removed_priority_prefix": [
+        "B0061"
+      ],
+      "source_footprint_sha256": "6916d168e6af17fbd174480205ecde2cb82d8af087e2a1e0a275db3f109d74a8"
+    },
+    {
+      "actual_source_id": "B0062",
+      "draw_id": "near-B0120-002",
+      "fire_id": "B0062-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b30-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+    },
+    {
+      "actual_source_id": "B0067",
+      "draw_id": "near-B0073-003",
+      "fire_id": "B0071-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b30-w20",
+      "removed_priority_prefix": [
+        "B0071"
+      ],
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0"
+    },
+    {
+      "actual_source_id": "B0075",
+      "draw_id": "near-B0073-002",
+      "fire_id": "B0075-known",
+      "plan_id": "roof-seed-core-source-hull-ring-b30-w20",
+      "removed_priority_prefix": [],
+      "source_footprint_sha256": "33e2a5a3bf4794ac894ac36914bf9bded5f807fc8ede72e7f4795ae4f2b1dade"
+    }
+  ],
+  "finite_source_certificate_file_sha256": "8cebd981ec9080caf651c32964833ea63c3558f17f4ae69c60dfe5e495159d34",
+  "finite_source_certificate_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-finite-longcap-comparison-20261111.draft.finite-source-certificate.json",
+  "finite_source_certificate_sha256": "82c2e5065aaef05b0e193755a562b5f65da2dfaf31271749aaf80f78113d6569",
+  "frozen_input_reference_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-bands-20261111.geojson": "d254e9bd20ad059136a1fcf8a1d14e35359f2a196adeaea20b2e01191ae95f1a",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-bands-20261111.json": "1d7ac8a29f4703f7bf276f48957b1273db5ed4f0049e67eeafb3422389245ab0",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-retained-area-master.json": "d9aa8d882024601ece50bd721d444b90283450fbbec46d073c39ef1a8d4f93d8",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-1-20261029.json": "c2227a72351ec760c3a366a567f880b4fc11acc9286f6c9ebbc874d901a4e42c",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-2-20261029.json": "14a45b4e4967a26b665277ce6e9aa0fbd5b9e00f541232d3826962bd8b3aac62",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-3-20261029.json": "a85835a3d65f68ab96fac52ce78ebd77c92cbb427a452246bafb50a5e953de00",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-4-20261029.json": "780ef3a398b3575d7f06a384af9ef0fede188efd415272e144688cc38e381167",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json": "666e657efbc926f63f8ca764a0ee27b469584ef7c921269fec3bb8d044a82fe9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/absorptivity.npy": "a965d5de9026756d0b82164255a14e886a3638f550c2e12f2a964acfa32eaf68",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_m2.npy": "b01499a9794be7564363c09e290bc8ce58b808b00bd234e505a92d39bc166722",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_ratio.npy": "0eb53a684cc7733820cdb3974b59a45a075027ee314ff8468da9182b93c81146",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ambient_heat_transfer_coefficient_W_m2_K.npy": "062115fc2415d0d65d25d639e4949c8dd09c10aa2a52e9b8e5f8b2a52a1f7596",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/available_energy_J.npy": "e9e211da24c1144bb4431f2893adc31140db39bb319813968bfafd2883be2a71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/backing_conductance_W_m2_K.npy": "93c4a33bcb67df4cc612f57ec2bcd22dd000f3488c8be792cd93f4d93d723e0c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/building_index.npy": "c3b0af6bb0d33eee1184f67ea383b8dd08156eecc6cd323a0d542c23a39e1945",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/burnable_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/configured_curve_energy_J.npy": "cc1f6577e6e395e053c5b041d219c8522259583e4dcba2442dfa45559fb7f55f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/coverage_fraction.npy": "1870138abd72db98133945fe038c0aa4fb9156ba7965d642408bfb757aee0a11",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/covered_area_m2.npy": "4fe9c4480044c43781569689a9c1e1d26750ac233100fe7779116d475ce9b706",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_dry_fuel_mass_kg.npy": "34dc58a95bce19dca50542c5e046ac076b57c271e35e4282d7332129a9142b3c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_water_mass_kg.npy": "cd07ff52aed032e3dd8285e859246deb38767ec8119c1b3da8de59095a240272",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/decay_time_s.npy": "d2b5ba4fd49c0c3e7c9fdae6b3816d8a406e6180641dd432bdcf8af9906ac068",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/domain_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_source.npy": "9e118ff4558d3d41bb407a758cedf2a6a877b40174db45198e89e4b6689c4fc5",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_target.npy": "b10b592c93afbdcc4245230e7306283191e3d6a03842f92fb15ce5e265c10c8b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_weight.npy": "d4974916bbf732fd4ac66364be50fbfca08b5ce41edfd6cb19cb399786cd5b6b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/effective_heated_dry_mass_kg.npy": "a118c27e608ace2fd338d065ba9b2d986a0b6968c1144f5f61c01b1101a9ebfa",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/emissivity.npy": "99338a5bb3872eeaa2eaf535c737a3b2bcfb226c5f66c4b1b2f30d2c44c61a7a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ground_elevation_m.npy": "4d1aada1fe875622f11357eef904e0d83c8d05001b1be05927ff44647cbfe266",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/growth_time_s.npy": "6f2a2656e9420d372fc020ea1385682ff33cfc9ed16ae165f571d0525216b871",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/heat_of_combustion_J_kg_dry.npy": "e9f5857b3f94e238a5c9018947289e23fd8e4b6b82d811bb27090f683ed583e0",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ignition_temperature_K.npy": "b2f15b941dc425dc05e6014557c52356eefed6c2eb5251e70e8f9b39df75609f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/initial_dry_fuel_mass_kg.npy": "d1fd8dc965769f548a02b58a592576ab5ef543a634a3625074d5ee4fd05c2771",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/known_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/landcover_index.npy": "8a10b1544f4716a472c150731bd4886eb8b006e40d058ebd9635406c34e34318",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_dry_fuel_mass_kg.npy": "076af847fabc8a73fefbe5c0bf8d899c71d2fbae3715b376fd0cb3dfca607f89",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_water_mass_kg.npy": "3c2735b7fef6c3d5bbee4e0b58b926def923316c754ba011ae22270f3592143f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/manifest.json": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_evidence_index.npy": "20f3bc88f3f312584b075070327f009f68bd879890651a76c2aa16da44652e71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_index.npy": "2dbe67e1b31e134110ed5ef76f94fcadc0460baac72ad493ac8e90ef8e8c99fb",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/moisture_content_dry_basis.npy": "875383dfa3ffa8b4eee314b568c3f15d8ef63cc9eec2fd6ecf8e21efb640ee47",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrr_W.npy": "6fc058e2edc744a6c1246a7ba56ac732526a0e05ef733c9e7fb778c1ba20115a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrrpua_W_m2_active.npy": "5bfa85607111c35b6246f015e7a00fdf52a32c7f7770eabcd1ad979f2ab1fb98",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/piloted_ignition_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_fuel_mass_kg.npy": "0a86c97a93c2fd64af686f0d72d88011d871d74fce1c9830bf5f3cb696eb2647",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_mass_fraction.npy": "f1289d8b3d0ae0208ca9da0ac3640e696961f7872bf80f0128bb0e87d812061e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/radiative_fraction.npy": "fbfadfe07f42310041ddbc02b4504c71e73b4c06183bfb7bc28d03d26c9e7bd9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_m2.npy": "d27349bbe341397538aee9588d62cceb91e6b55de2c21ebd44782f543fb6892e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_ratio.npy": "7fca5e9c476333a6705a9869c7b4ef06cc593cb812f21bfe035c85ed4e854a35",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_height_m.npy": "a2474c1eecb79af172c74f2646f68e4c81176b515b7822d1c6f24658097f77f4",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_height_m.npy": "14d2ab6ea56f3639ee0c0facfe007f8e7bd95df3bffc02ddc75b0347bee24727",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/specific_heat_J_kg_K.npy": "56ffcba1660bfd3eda4bb6ea48622e2d5369734891f5c797f70e934071f1c287",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/steady_time_s.npy": "67d18ee7e0576ae36bf87c5b5d375b076c0fc328aa78a1fc3e1d77de6072ff4d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/target_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/water_mass_kg.npy": "926928350053d7c03de8c85b0fb68bdee1e7a318492e0383812e5e5acd77a51f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/inputs/annotations.labelme.json": "f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/buildings.json": "fd501803d5120068af631dd37f5a8f8f243625dee3ff8f5de95e3072ed5a584d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/image_ref.json": "7103bc6be37185c57aee64723bfa643094fe44667b412b3c0e7f312c7395f9b9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/experiment.json": "6f8d28a05d48cc77c5c6f733bea0c0a28db4d42604bb683ed7e872ec21c4dcfd"
+  },
+  "geometry_preflight_executed": false,
+  "global_optimality_or_frontier_completeness_claimed": false,
+  "max_wall_time_s": 172800.0,
+  "new_CA_checks": 0,
+  "new_independent_fire_draws": 0,
+  "old_cache_or_spent_budget_transferred": false,
+  "old_roof_cap_is_admissibility_for_this_catalog": false,
+  "output_config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-finite-longcap-comparison-20261111.draft.json",
+  "output_config_sha256": "065767dc50d754eb9badbabcab132cb83185e48ba6e8f9ed1b26d1308ac6d14d",
+  "planned_CA_checks": 24,
+  "preparer_sha256": "6e48a232b63af94ae124819c5e14066501aa593696ee64cd66d4843d8408e533",
+  "producer_snapshot_frozen": false,
+  "roof_supports": 2,
+  "schema_version": "heritage-balanced-finite-catalog-draft-1",
+  "source_families": 4,
+  "source_geometry_catalog_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-bands-20261111.json",
+  "source_geometry_catalog_sha256": "1d7ac8a29f4703f7bf276f48957b1273db5ed4f0049e67eeafb3422389245ab0",
+  "source_refinement_mesh_and_numerics_preserved": true,
+  "template_config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json",
+  "template_config_sha256": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+  "template_experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json",
+  "template_experiment_sha256": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+  "terminal_horizon_cap_s": 172800.0,
+  "whole_fire_losses_only_when_strictly_closed": true
+}

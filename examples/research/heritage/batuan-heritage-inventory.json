@@ -1,0 +1,24 @@
+{
+  "targets": [
+    {
+      "building_id": "B0073",
+      "role": "gulou",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    },
+    {
+      "building_id": "B0120",
+      "role": "fengyuqiao",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    }
+  ],
+  "protected_ids": [
+    "B0073",
+    "B0120"
+  ],
+  "fixed_source_ids": [],
+  "candidate_policy": "all_ordinary_except_protected_targets_and_sources",
+  "candidate_evidence": "user_authorized_provisional_all_noncore_buildings_2026-10-23_not_field_verified",
+  "schema_version": "heritage-inventory-1"
+}

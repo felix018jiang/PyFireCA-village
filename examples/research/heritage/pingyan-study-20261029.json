@@ -1,0 +1,44 @@
+{
+  "schema_version": "heritage-p1-study-1",
+  "case_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-physical-core-priority-20261029/case",
+  "labelme_annotations": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-inputs-core-priority-20261029/annotations.labelme.json",
+  "image_reference": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-physical-core-priority-20261029/spatial/image_ref.json",
+  "structures_path": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-physical-core-priority-20261029/spatial/buildings.json",
+  "targets": [
+    {
+      "building_id": "B0035",
+      "role": "fengyuqiao",
+      "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+      "identity_status": "annotation_only"
+    },
+    {
+      "building_id": "B0036",
+      "role": "fengyuqiao",
+      "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+      "identity_status": "annotation_only"
+    },
+    {
+      "building_id": "B0166",
+      "role": "gulou",
+      "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+      "identity_status": "annotation_only"
+    }
+  ],
+  "protected_ids": [
+    "B0035",
+    "B0036",
+    "B0166"
+  ],
+  "fixed_source_ids": [],
+  "candidate_policy": "all_ordinary_except_protected_targets_and_sources",
+  "candidate_evidence": "user_authorized_same_method_provisional_noncore_pingyan_20261029_not_field_verified",
+  "pending": [
+    "economic_costs",
+    "households_and_cultural_space",
+    "surveyed_demolition_eligibility",
+    "field_material_validation"
+  ],
+  "scenarios": [],
+  "plans": [],
+  "geometry_correction_receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-inputs-core-priority-20261029/geometry-correction.json"
+}

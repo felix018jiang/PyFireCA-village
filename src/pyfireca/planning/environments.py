@@ -7,6 +7,7 @@ import numpy as np
 from pyfireca.planning.contracts import require_id, require_number
 from pyfireca.planning.sensitivity import ignition_rise_sensitivity
 from pyfireca.village.transport_v3 import (
+    DEFAULT_MAX_V3_TRANSPORT_EDGES,
     V3RadiativeTransportParameters,
     build_v3_radiative_transport_edges,
 )
@@ -46,14 +47,43 @@ def apply_environment(bundle, environment):
     if not isinstance(environment, ProtectionEnvironment):
         raise TypeError("environment must be ProtectionEnvironment")
     changed = ignition_rise_sensitivity(bundle, environment.ignition_rise_factor)
-    request = changed.request
-    transport = replace(
-        V3RadiativeTransportParameters(**bundle.metadata["transport_parameters"]),
-        wind_speed_m_s=environment.wind_speed_m_s,
-        wind_from_deg=environment.wind_from_deg,
-        flame_tilt_coefficient_s_m=environment.flame_tilt_coefficient_s_m,
+    changed, _ = _rebuild_wind_transport(changed, environment, DEFAULT_MAX_V3_TRANSPORT_EDGES)
+    return changed
+
+
+def apply_static_wind(
+    bundle,
+    *,
+    wind_speed_m_s,
+    wind_from_deg,
+    flame_tilt_coefficient_s_m,
+    max_edge_count=DEFAULT_MAX_V3_TRANSPORT_EDGES,
+):
+    """Apply one uniform background wind to the transparent V3 thermal model.
+
+    Direction is the meteorological FROM angle clockwise from grid north. Return
+    both the rebuilt parent case and the matching transport to be used when
+    constructing any refined roof/ground graph for that case.
+    """
+    if bundle.request.firebrands is not None:
+        raise ValueError("static-wind-only comparisons require firebrands disabled")
+    environment = ProtectionEnvironment(
+        "static_wind", 1.0, wind_speed_m_s, wind_from_deg, flame_tilt_coefficient_s_m
     )
-    edges = build_v3_radiative_transport_edges(
+    request = bundle.request
+    baseline = V3RadiativeTransportParameters(**bundle.metadata["transport_parameters"])
+    expected = _transparent_edges(request, baseline, max_edge_count)
+    if any(
+        not np.array_equal(getattr(expected, field), getattr(request.exposure_edges, field))
+        for field in ("source", "target", "weight")
+    ):
+        raise ValueError("static wind requires a verified transparent parent graph")
+    del expected
+    return _rebuild_wind_transport(bundle, environment, max_edge_count)
+
+
+def _transparent_edges(request, transport, max_edge_count):
+    return build_v3_radiative_transport_edges(
         request.grid,
         request.source_mask,
         request.target_mask,
@@ -63,8 +93,20 @@ def apply_environment(bundle, environment):
         np.ones(request.grid.shape),
         transport,
         ground_elevation_m=request.ground_elevation_m,
+        max_edge_count=max_edge_count,
     )
-    metadata = dict(changed.metadata)
+
+
+def _rebuild_wind_transport(bundle, environment, max_edge_count):
+    request = bundle.request
+    transport = replace(
+        V3RadiativeTransportParameters(**bundle.metadata["transport_parameters"]),
+        wind_speed_m_s=environment.wind_speed_m_s,
+        wind_from_deg=environment.wind_from_deg,
+        flame_tilt_coefficient_s_m=environment.flame_tilt_coefficient_s_m,
+    )
+    edges = _transparent_edges(request, transport, max_edge_count)
+    metadata = dict(bundle.metadata)
     metadata.update(
         protection_environment=asdict(environment),
         transport_parameters=asdict(transport),
@@ -78,8 +120,11 @@ def apply_environment(bundle, environment):
             wind_from_deg=environment.wind_from_deg,
         )
         metadata["wind_scope"] = "static_radiative_tilt_and_prescribed_terminal_firebrands"
-    return replace(
-        changed,
-        request=replace(request, exposure_edges=edges, firebrands=brands),
-        metadata=metadata,
+    return (
+        replace(
+            bundle,
+            request=replace(request, exposure_edges=edges, firebrands=brands),
+            metadata=metadata,
+        ),
+        transport,
     )

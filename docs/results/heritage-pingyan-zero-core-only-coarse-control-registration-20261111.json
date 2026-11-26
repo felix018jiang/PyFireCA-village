@@ -1,0 +1,16 @@
+{
+  "base_preparation_SHA256": "ddbc3f3b1122e56ecb1531e1c86be5288c3b3f46f77111dc4b1877c2bb206135",
+  "comparison_produces_four_identical_25m2_footprints": true,
+  "control_budget_slots": 4,
+  "declared_coarse_scale_m": 1,
+  "final_analytic_audit_SHA256": "95708d3eab8d8c83b0e8e5ffe2c926cd824cfda22d91fb5dfb3123a0981b8ca8",
+  "first_witness_condition": "A durable saved burnout area lower bound strictly above the certified ceiling, or more than 3 distinct positively and uniquely attributed original burned owners. A wide annotation upper bound alone is insufficient for an unconditional count.",
+  "freeze_integration_membership": true,
+  "full_common_source_footprints_layout_and_quadrature_specs_sha256": "289bacc43f1d833cd4973c84f5ba12ee583f42cfdcdc11e76bf584dcd437a71e",
+  "method_sha256": "5993d4e4fd554705e4180e1538cc2a9aa89dd7b2418d8eddf65d6a9304a70ecc",
+  "native_incumbent_verification_slots_separate": 8,
+  "no_native_evaluations_launched": true,
+  "receipt_sha256": "c08eeecf66d4e47101cdb976ecfbddcfe4e70aa1325035415c90c6f34edb6aec",
+  "schema_version": "separate-four-coarse-zero-core-base-control-1",
+  "stopping_rule": "Design ordinal order. A single qualifying material witness falsifies the corresponding bound. Inconclusive and invalid cases preserve their status; all unobserved cases remain unknown."
+}

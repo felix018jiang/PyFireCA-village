@@ -1,0 +1,61 @@
+{
+  "schema_version": "fixed-pingyan-compact-new-source-aggregated-extrapolation-1",
+  "four_new_families_already_drawn": 4,
+  "reused_scales_m": [
+    1.0,
+    0.5
+  ],
+  "candidate_added_to_registered_arms": false,
+  "native_CA_evaluations_for_this_audit": 0,
+  "new_source_draws": 0,
+  "native_compact_confirmation_results_imported": 0,
+  "source_identity_and_full_25m2_footprint_matched_between_both_plans": 3,
+  "native_topology_common_to_both_plans_for_families": 4,
+  "unchanged_registered_mesh_and_verified_direct_support_plan_family_scale_tuples": 16,
+  "paired_families_with_no_possible_transfer_edge_to_restored_material": 0,
+  "paired_native_trajectory_equality_certified_families": 0,
+  "independent_compact_dominance_established": false,
+  "complete_common_geometric_scope": "Parent polygon/radius support bounds all source/target refinements. Contact, cumulative lifetime dry ignition dose and all retained core parents are included. Fallback uses the full reachable component, including unknown original owners in the count. No native trajectory or actual loss inferred.",
+  "numerical_invariance_scope": "A silent changed-material boundary is only a physical screen. Native graph rows, integrated mask, control time step, and updates would also have to agree to transfer an observed loss.",
+  "results": [
+    {
+      "plan_id": "local-band-with-observed-clearance-subset",
+      "C_m2": 3585.565937285018,
+      "families_bounded": 4,
+      "closed_energy_envelopes": 0,
+      "geometric_component_fallbacks": 4,
+      "heritage_nonignition_proved_families": 0,
+      "worst_burned_area_upper_m2": 5596673.76,
+      "worst_possible_original_owner_count_upper": 941
+    },
+    {
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "C_m2": 10669.276972304711,
+      "families_bounded": 4,
+      "closed_energy_envelopes": 2,
+      "geometric_component_fallbacks": 2,
+      "heritage_nonignition_proved_families": 2,
+      "worst_burned_area_upper_m2": 5587391.35,
+      "worst_possible_original_owner_count_upper": 926
+    }
+  ],
+  "input_file_sha256": {
+    "registration": "ec74631b0a6e14de1ec3ab0734d697f29906b4d341a5d7d35c961e5bfa3428b9",
+    "three_prespecified_plans": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+    "independent_config": "f4bc77750fcbbe416f2c7e46e99c26f18dcfab0dee7192435c1dd010f85c2fad",
+    "independent_experiment": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+    "physical_support_witness": "ffda25ac3bd75433e697acac6c54f33a7d10a1c1514bd79737971439ac178113",
+    "compact_plan": "45cfca8c6bce7f1c6e9da258eeac5023362bad7c7e6ceb48b9610c92e7594297",
+    "compact_design_experiment": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+    "completed_design_comparison": "a64abcc4f7386ff7fed7221417f047b46136f00654e2eae54519d513b59a7e8b",
+    "design_merge": "58e9eb5fc9db03aec8f80c36a335d139c09d8f39335d7b45de0cc793ba52645d"
+  },
+  "method_sha256": "901892f9b33e551d38b2a2e577a1438ac8aca6c3a02006689a46a81ae537e696",
+  "helper_sha256": {
+    "audit_heritage_compartment_bounds.py": "cf70bf7e03d3dd5f2f576e01444376bc99e66f1c02a4d83d677d5d46c9bed25b",
+    "check_heritage_compartment_first_escape.py": "87aaa860ada9909350f2e647364cf8daf688da15efd4e2a298758ca337059610",
+    "check_heritage_registered_roof_compartment.py": "56e6343a53d1c38d93219d1bcb24bed5ade617530673d23999b7bca0b164998d",
+    "verify_heritage_multiplan_confirmation_sources.py": "fc6f1c90acf374ae4a79ac828cce73e53e289b0901cd90c44b4106990018c2ce"
+  },
+  "receipt_sha256": "e755c5d21da136bf560a87cc7f7f3ed0e1f1bfd3d735327902240f9de0a1f20a"
+}

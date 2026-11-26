@@ -1,0 +1,103 @@
+{
+  "schema_version": "heritage-pingyan-count-frontier-audit-1",
+  "checked_at": "2026-10-29T15:03:35.498254+00:00",
+  "physical_problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "design_result_sha256": "bcc5bf06f6e60ceb4bc36946d7bdb2b07ec93993d416aef054d9cc241b8f5b3f",
+  "native_and_cut_audit_passed": true,
+  "new_CA_checks": 0,
+  "candidate_count": 947,
+  "layers": {
+    "0": {
+      "total": 1,
+      "direct_failed": 1,
+      "proved_by_valid_cut": 0,
+      "undecided": 0
+    },
+    "1": {
+      "total": 947,
+      "direct_failed": 0,
+      "proved_by_valid_cut": 947,
+      "undecided": 0
+    },
+    "2": {
+      "total": 447931,
+      "direct_failed": 13,
+      "proved_by_valid_cut": 447901,
+      "undecided": 17
+    }
+  },
+  "unresolved_two_building_plans": [
+    [
+      "B0119",
+      "B0160"
+    ],
+    [
+      "B0119",
+      "B0163"
+    ],
+    [
+      "B0119",
+      "B0164"
+    ],
+    [
+      "B0119",
+      "B0165"
+    ],
+    [
+      "B0119",
+      "B0167"
+    ],
+    [
+      "B0119",
+      "B0168"
+    ],
+    [
+      "B0119",
+      "B0191"
+    ],
+    [
+      "B0120",
+      "B0163"
+    ],
+    [
+      "B0120",
+      "B0164"
+    ],
+    [
+      "B0120",
+      "B0167"
+    ],
+    [
+      "B0121",
+      "B0160"
+    ],
+    [
+      "B0121",
+      "B0163"
+    ],
+    [
+      "B0121",
+      "B0164"
+    ],
+    [
+      "B0121",
+      "B0165"
+    ],
+    [
+      "B0121",
+      "B0167"
+    ],
+    [
+      "B0121",
+      "B0168"
+    ],
+    [
+      "B0121",
+      "B0191"
+    ]
+  ],
+  "minimum_count_lower_bound": 2,
+  "feasible_count_upper_bound": 5,
+  "larger_counts_not_enumerated": true,
+  "unresolved_scope": "17 two-building plans; three/four-building plans; cheaper five-building plans; six or more cannot improve count-first incumbent"
+}

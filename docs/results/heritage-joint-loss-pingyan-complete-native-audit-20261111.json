@@ -1,0 +1,160 @@
+{
+  "village": "pingyan",
+  "C_m2": 8465.532897386734,
+  "native_problem_sha256": "f72d28f23891e2c6daa697f817454c563195c02f15e7fc48d5c76ac2f9e78ad5",
+  "experiment_sha256": "100370700a1eaa9e0d7b5f63624419a3b66c74a3987a55253eddddd9acf16d23",
+  "bound_certificate_sha256": "a011fa5086d6df3dbf69537a6987f1c42d41e43eb64d2407daf2cfb53a1bed91",
+  "cost_optimality_certificate_sha256": "6e8bdd337e5c7063ae201875b24e0331452045570ed9b25f8076cb1fa70c1ac4",
+  "checked_native_cases": [
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 132.92,
+      "certified_N_upper": 2,
+      "measured_A_m2": 132.91601335609758,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1629.3600000000001,
+      "manifest_sha256": "3e74b72e9da709514044692e2ea27874d4eded2a2fa31d4fc12735cffa95b1e7"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 132.92,
+      "certified_N_upper": 2,
+      "measured_A_m2": 132.9160133560976,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1745.3600000000001,
+      "manifest_sha256": "6930718a85824cf1c35f0a3186c9b44019d86ed78cedafef8317db645e098217"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 241.49,
+      "certified_N_upper": 1,
+      "measured_A_m2": 241.48854379824064,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1615.3600000000001,
+      "manifest_sha256": "8428e61ddb51767ced23d262611b3b4abf644aeb1e2c93676d389cc01903367e"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 241.49,
+      "certified_N_upper": 1,
+      "measured_A_m2": 241.48854379824064,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1693.3600000000001,
+      "manifest_sha256": "2efd70cf8af1d5411bad15f97ef9fc6c087f79b3e59deeab1fc4cb5e4160ed0f"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 316.13,
+      "certified_N_upper": 3,
+      "measured_A_m2": 316.12811537783193,
+      "measured_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.3498720432906,
+      "all_core_incoming_fire_heat_J": 1070.7643111653665,
+      "stop_time_s": 1675.3600000000001,
+      "manifest_sha256": "70f039d6ebaeee01efe5c63f60ff102cd5d9df06161537dc54dc1fe4139e6068"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 316.13,
+      "certified_N_upper": 3,
+      "measured_A_m2": 316.12811537783193,
+      "measured_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.3496533969489,
+      "all_core_incoming_fire_heat_J": 1070.7643111880043,
+      "stop_time_s": 1750.3600000000001,
+      "manifest_sha256": "d9e57ea3e0b1063d5b63e3c9c710cd828ceb889ae2df7fa04539702238485250"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 111.18,
+      "certified_N_upper": 1,
+      "measured_A_m2": 111.17746509794179,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1401.3600000000001,
+      "manifest_sha256": "efa09eb1c7df95ce72b345b069a3dcf9430ac128a3e846696dc1e5af56355701"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 111.18,
+      "certified_N_upper": 1,
+      "measured_A_m2": 111.17746509794178,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "maximum_core_temperature_K": 300.0,
+      "all_core_incoming_fire_heat_J": 0.0,
+      "stop_time_s": 1468.3600000000001,
+      "manifest_sha256": "a8941f9bc329210a9ca42fd9ae6ec4ddbde371b85b74570ac5661c4d17ce4755"
+    }
+  ],
+  "registered_families": 4,
+  "total_registered_families_in_native_run": 4,
+  "cohort": "all_registered_families",
+  "strict_heritage_no_ignition_all": true,
+  "all_cases_within_their_specific_loss_upper_bounds": true,
+  "cases_with_any_positive_core_incoming_fire_heat": 2,
+  "maximum_measured_core_temperature_K": 300.3498720432906,
+  "worst_measured_A_m2": 316.12811537783193,
+  "worst_measured_N": {
+    "lower": 1,
+    "upper": 3
+  },
+  "method_sha256": "b00edb673b7d2abdcc335d250621c54305d9f30fa324314a0515700533d8ee61",
+  "receipt_sha256": "257967664b2b9d128881d8403525432a008dc18d298945006b9908f8df41a9ab"
+}

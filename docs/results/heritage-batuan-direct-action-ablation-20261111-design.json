@@ -1,0 +1,35 @@
+{
+  "external_factorial_arms_not_rescheduled": [
+    "D3-G0",
+    "D9-G12"
+  ],
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thin-hull-20261111-catalog.json": "5e1af3d2d05fb5f4e0f7ab6d376b453ef65cec647ee4adcbeb4cfd2dda708951",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-thin-hull-longcap-comparison-20261111.json": "db6b0b12e7a41ef3b1c63f99738153ecc1ede024846877ec0a98eee77571d554",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/experiment.json": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_direct_action_ablation.py": "de2e88126ee8b0571d04311cef8800052053fbe118f1dc647096b04dcbfa2609",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "native_CA_outcomes_read_for_selection_by_this_preparer": [],
+  "new_factorial_arms": [
+    "D3-G12",
+    "D9-G0"
+  ],
+  "new_independent_fire_draw_count": 0,
+  "no_nanometre_width_or_geometric_fire_safety_claim": true,
+  "planned_new_CA_checks": 16,
+  "same_four_actual_sources_required": {
+    "B0061-known": "B0063",
+    "B0062-known": "B0062",
+    "B0071-known": "B0067",
+    "B0075-known": "B0075"
+  },
+  "schema_version": "heritage-direct-action-factorial-design-1",
+  "selection": "parent_authorized_whole_object_roof_grass_contribution_ablation"
+}

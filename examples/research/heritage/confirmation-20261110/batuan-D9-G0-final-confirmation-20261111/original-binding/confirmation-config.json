@@ -1,0 +1,87 @@
+{
+  "schema_version": "heritage-joint-comparison-1",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+  "source_policy": "retained_sources",
+  "source_fires": [
+    {
+      "fire_id": "independent-1-near-B0073-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-1.json",
+      "draw_id": "near-B0073-001"
+    },
+    {
+      "fire_id": "independent-2-near-B0120-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-2.json",
+      "draw_id": "near-B0120-001"
+    },
+    {
+      "fire_id": "independent-3-background-001",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-3.json",
+      "draw_id": "background-001"
+    },
+    {
+      "fire_id": "independent-4-background-002",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-4.json",
+      "draw_id": "background-002"
+    }
+  ],
+  "plans": [
+    {
+      "cleared_physical_cell_ids": [],
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+      "plan_id": "direct-thin-D9-with-no-grass"
+    }
+  ],
+  "refinement_ids": [
+    "B0060",
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0064",
+    "B0065",
+    "B0067",
+    "B0068",
+    "B0071",
+    "B0073",
+    "B0074",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "horizon_s": 3600.0,
+  "checkpoints_s": [
+    1200.0,
+    2400.0,
+    3600.0
+  ],
+  "terminal_fire_verification": true,
+  "terminal_horizon_cap_s": 21600.0,
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "max_dt_s": 1.0,
+  "core_overlap_policy": "reject",
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "max_new_checks": 8,
+  "max_total_checks": 40,
+  "max_wall_time_s": 28800.0,
+  "minimum_free_disk_GB": 5.0,
+  "new_independent_fire_draw_count": 4,
+  "confirmation_registration_sha256": "631393acf6e2c7904225a0e20ecddf2fa1222c97ed2fe293d2e96b103bc8d5a1",
+  "final_candidates_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/final-candidates.json",
+  "final_candidates_sha256": "aab068008faee5940570f6f1b32b1da5891f5da9ef629f0bdcf7175a3b8754b7",
+  "scope": "independent_frozen_candidate_confirmation;no_reselection_or_resampling;not_global_fire_coverage"
+}

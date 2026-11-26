@@ -1,0 +1,7 @@
+﻿适用村落,原清单功能类别,构造类型代码,构造赋值,构件说明,照片与推断范围,热模型材料代码,原热学参数组
+岜团,普通建筑,ordinary_mixed,含木构件的混合建筑,可见木板围护、瓦面及砖砌山墙等。单栋的覆盖与承重构造可不同。,岜团现场照片归纳的类型假设。不由照片数量推算木构比例。,5,synthetic_building
+平岩,普通建筑,ordinary_timber_tile,瓦面木构民居,可见瓦面、檐下木构、木板围护，局部可见石砌基脚。,以指定供平岩参考的民居照片归纳代表类型，其余构造细节参照岜团同类。,5,synthetic_building
+岜团,指定鼓楼,tower_tile_timber,瓦覆木构鼓楼,覆瓦重檐下可见木梁架。瓦件不另计屋面燃料。,岜团鼓楼专题照片。,5,synthetic_building
+平岩,指定鼓楼,tower_tile_timber,瓦覆木构鼓楼,采用瓦覆木构鼓楼假设。,参照岜团同类构造。,5,synthetic_building
+岜团,指定风雨桥,bridge_tile_timber,瓦覆木廊桥,覆瓦，木质上部结构，石砌桥墩不另计屋面燃料。,岜团风雨桥专题照片。,5,synthetic_building
+平岩,指定风雨桥,bridge_tile_timber,瓦覆木廊桥,采用瓦覆木廊桥假设，砌体支承不另计屋面燃料。,参照岜团同类构造。,5,synthetic_building

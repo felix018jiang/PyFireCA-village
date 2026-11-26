@@ -1,0 +1,9 @@
+{
+  "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-thermal-vs-D9-revealed-sources-20261111",
+  "pid": 64661,
+  "timestamp": "2026-11-11T20:18:00.453535+08:00",
+  "budget_sha256_before_signal": "d1da5dbff7dab03476833ee921d7a9163e72969244f609695084515618c602a3",
+  "started_checks_without_refund": 2,
+  "reason": "prioritize complete registered joint placements, constant-source cost/loss pairs and independent Pingyan verification",
+  "resume_original_process": "SIGCONT only after confirming process identity"
+}

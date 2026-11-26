@@ -1,0 +1,61 @@
+{
+  "CA_runs": 0,
+  "C_m2": 142579.48754417477,
+  "action_sha256": "eeff79b521a8284cc7b3a28b87ec5c6f41548c7818898748a1f6a7188219487f",
+  "all_roof_simultaneous_C_m2": 142604.48754417477,
+  "claim_scope": "A single direct ignition on any retained ordinary roof. Before any ground ignition, with heritage cores protected, only roof components touching that ordinary label can burn. All components of the same owner enter one combined dose. The maximum ranges over owners. Bounds apply to the whole finite modeled domain.",
+  "core_protection_additional_ground_proof": {
+    "core_contact_additional_whole_cells": 0,
+    "integer_preceding_ground_tier_infeasible": true,
+    "integer_proof_counts": {
+      "branch_nodes": 31017,
+      "integer_single_row_exclusions": 5302,
+      "integer_weighted_exclusions": 10207
+    },
+    "optimal_optional_core_whole_cells": 58
+  },
+  "distinct_possible_emitting_component_unions": 40,
+  "ground_cells": 5606,
+  "ground_cost_m2": 140150.0,
+  "mandatory_ground_from_contact_or_any_component_dose": 5548,
+  "max_core_absorbed_energy_fraction": 0.9615949849383583,
+  "max_ground_component_absorbed_energy_fraction": 0.9949894894094591,
+  "method_sha256": "8afb63c25fd0f078ed2b55ec27949d45bd69b1c5b4ae68bf5be76353402ec358",
+  "multiple_component_owners_counted_across_all_pieces": 0,
+  "prior_all_roof_bound_sha256": "70c79eaf9345c864c02022350abda71e25965a10f6485116381330b0f83239d5",
+  "receipt_sha256": "280092f1eb44415ae4c2468f8b32f71e421413be1e5d47361e24977c37bc4789",
+  "retained_roof_owners_in_component_dose": 934,
+  "saved_vs_all_roof_simultaneous_m2": 25.0,
+  "saved_vs_geometric_m2": 12325.0,
+  "schema_version": "single-ordinary-roof-component-thermal-ground-cut-1",
+  "source_cohort_ground_receiver_doses_independently_recomputed": 6124,
+  "source_orders_consumed_for_design": 0,
+  "unchanged_roof_only_loss_envelopes": {
+    "all_ordinary_inventory": 947,
+    "all_represented_retained_ordinary_source_labels": {
+      "fraction_meeting_both_caps": 0.011777301927194861,
+      "meet_both_loss_caps": 11,
+      "roofs": 934,
+      "worst_area_upper_m2": 144325.95,
+      "worst_original_owner_upper": 366
+    },
+    "eligible_original_geometry_25m2_sources": 947,
+    "physically_surviving_fraction": 0.989440337909187,
+    "physically_surviving_ordinary_owner_count": 937,
+    "possible_roof_components": 40,
+    "retained_25m2_eligible_ordinary_sources": {
+      "fraction_meeting_both_caps": 0.011777301927194861,
+      "meet_both_loss_caps": 11,
+      "roofs": 934,
+      "worst_area_upper_m2": 144325.95,
+      "worst_original_owner_upper": 366
+    },
+    "retained_eligible_fraction": 0.986272439281943,
+    "two_caps_area_m2_and_owner_count": [
+      316.13,
+      3
+    ],
+    "unrepresented_original_owner_count_included_in_upper": 0
+  },
+  "village": "pingyan"
+}

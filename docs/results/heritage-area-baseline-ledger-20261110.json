@@ -1,0 +1,2466 @@
+{
+  "schema_version": "heritage-full-domain-recount-1",
+  "date": "2026-11-10",
+  "new_CA_checks": 0,
+  "recounted_evaluations": 24,
+  "script_sha256": "41c13419f17748c5c7dc0307e01697617b3a04a8a723f27ab82bbc7de810b0b5",
+  "rows": [
+    {
+      "village_id": "batuan",
+      "plan_id": "selected",
+      "scenario_id": "drum-B0077-known-hot-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "geometric_cleared_area_m2": 443.84196874011786,
+      "reconstructed_area_error_m2": 4.154715725235292e-06,
+      "reconstruction_error_tolerance_m2": 0.0004438419728948336,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.7393713603,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 8237.925886982923,
+          "cumulative_burned_out_covered_area_m2": 4875.298512605937,
+          "active_burning_covered_area_m2": 3362.6273743769852,
+          "ignited_node_count": 894,
+          "active_burning_node_count": 323,
+          "clearing_plus_ignited_union_area_m2": 8681.767859877757,
+          "clearing_plus_burned_out_union_area_m2": 5319.14048550077
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.73937136035,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 6937.925886982923,
+          "cumulative_burned_out_covered_area_m2": 3700.2985126059366,
+          "active_burning_covered_area_m2": 3237.6273743769852,
+          "ignited_node_count": 842,
+          "active_burning_node_count": 318,
+          "clearing_plus_ignited_union_area_m2": 7381.767859877756,
+          "clearing_plus_burned_out_union_area_m2": 4144.1404855007695
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1300.0,
+          "cumulative_burned_out_covered_area_m2": 1175.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 52,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1300.0,
+          "clearing_plus_burned_out_union_area_m2": 1175.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 48,
+          "upper": 48
+        },
+        "intersected_annotation_count": 45
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 48,
+          "upper": 48
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331971.735210693,
+        "remaining_kg": 11273684.441663438,
+        "fire_depleted_kg": 58287.29354725336,
+        "roof_fire_depleted_kg": 55281.68046019521,
+        "nonroof_fire_depleted_kg": 3005.613087058149,
+        "actively_burning_remaining_kg": 19691.056032162203,
+        "planned_removed_kg": 4793.4933072642025,
+        "clearing_plus_fire_depleted_kg": 63080.786854517566
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "420e304e18837909f3d17046ee294cfe55134f06cf14a340a860be0e5193af0c"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "bridge-B0062-known-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": true,
+      "demolished_ids": [
+        "B0063",
+        "B0067",
+        "B0071"
+      ],
+      "geometric_cleared_area_m2": 443.7189721094598,
+      "reconstructed_area_error_m2": 2.0886780589535192e-06,
+      "reconstruction_error_tolerance_m2": 0.00044371897419813786,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.862370057,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 6235.52509425587,
+          "cumulative_burned_out_covered_area_m2": 3750.4310557360786,
+          "active_burning_covered_area_m2": 2485.0940385197914,
+          "ignited_node_count": 4435,
+          "active_burning_node_count": 1721,
+          "clearing_plus_ignited_union_area_m2": 6679.244068454009,
+          "clearing_plus_burned_out_union_area_m2": 4194.150029934217
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425517,
+          "retained_covered_area_m2": 76590.86237005706,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 6060.5250942558705,
+          "cumulative_burned_out_covered_area_m2": 3650.4310557360786,
+          "active_burning_covered_area_m2": 2410.0940385197914,
+          "ignited_node_count": 4428,
+          "active_burning_node_count": 1718,
+          "clearing_plus_ignited_union_area_m2": 6504.244068454008,
+          "clearing_plus_burned_out_union_area_m2": 4094.150029934217
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 175.0,
+          "cumulative_burned_out_covered_area_m2": 100.0,
+          "active_burning_covered_area_m2": 75.0,
+          "ignited_node_count": 7,
+          "active_burning_node_count": 3,
+          "clearing_plus_ignited_union_area_m2": 175.0,
+          "clearing_plus_burned_out_union_area_m2": 100.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 37,
+          "upper": 38
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 40,
+          "upper": 41
+        },
+        "intersected_annotation_count": 38
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 36,
+          "upper": 37
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 39,
+          "upper": 40
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331973.063596617,
+        "remaining_kg": 11279503.137229985,
+        "fire_depleted_kg": 52469.92636663293,
+        "roof_fire_depleted_kg": 52221.9410931056,
+        "nonroof_fire_depleted_kg": 247.98527352731483,
+        "actively_burning_remaining_kg": 13490.744651330482,
+        "planned_removed_kg": 4792.164921339889,
+        "clearing_plus_fire_depleted_kg": 57262.09128797281
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "49d812910ec238ff589a81f1f314268e175dd4256ff921a64efdebdf606141a9"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "selected",
+      "scenario_id": "drum-B0077-known-hot-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "geometric_cleared_area_m2": 443.84196874005784,
+      "reconstructed_area_error_m2": 4.154775751885609e-06,
+      "reconstruction_error_tolerance_m2": 0.0004438419728948336,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.7393713603,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 7866.973234913656,
+          "cumulative_burned_out_covered_area_m2": 4699.827624653431,
+          "active_burning_covered_area_m2": 3167.145610260225,
+          "ignited_node_count": 1147,
+          "active_burning_node_count": 312,
+          "clearing_plus_ignited_union_area_m2": 8310.81520780849,
+          "clearing_plus_burned_out_union_area_m2": 5143.669597548264
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.73937136035,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 6616.973234913655,
+          "cumulative_burned_out_covered_area_m2": 3574.827624653431,
+          "active_burning_covered_area_m2": 3042.145610260225,
+          "ignited_node_count": 1097,
+          "active_burning_node_count": 307,
+          "clearing_plus_ignited_union_area_m2": 7060.8152078084895,
+          "clearing_plus_burned_out_union_area_m2": 4018.669597548265
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1250.0,
+          "cumulative_burned_out_covered_area_m2": 1125.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 50,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1250.0,
+          "clearing_plus_burned_out_union_area_m2": 1125.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 43,
+          "upper": 43
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 46,
+          "upper": 46
+        },
+        "intersected_annotation_count": 43
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 43,
+          "upper": 43
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 46,
+          "upper": 46
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331971.735210693,
+        "remaining_kg": 11276207.754855976,
+        "fire_depleted_kg": 55763.980354716645,
+        "roof_fire_depleted_kg": 52776.8018949597,
+        "nonroof_fire_depleted_kg": 2987.1784597569444,
+        "actively_burning_remaining_kg": 18719.580582350834,
+        "planned_removed_kg": 4793.4933072642025,
+        "clearing_plus_fire_depleted_kg": 60557.47366198085
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "98462760fdf1efd331548e478b7dc51913e7d9a011813cc54fe9aa712a87e13d"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "selected",
+      "scenario_id": "bridge-B0062-known-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "geometric_cleared_area_m2": 443.84196874011786,
+      "reconstructed_area_error_m2": 4.154715725235292e-06,
+      "reconstruction_error_tolerance_m2": 0.0004438419728948336,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.7393713603,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 6147.520472547431,
+          "cumulative_burned_out_covered_area_m2": 3749.036301333452,
+          "active_burning_covered_area_m2": 2398.4841712139796,
+          "ignited_node_count": 1167,
+          "active_burning_node_count": 251,
+          "clearing_plus_ignited_union_area_m2": 6591.362445442264,
+          "clearing_plus_burned_out_union_area_m2": 4192.878274228286
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.73937136035,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 6097.5204725474305,
+          "cumulative_burned_out_covered_area_m2": 3699.0363013334513,
+          "active_burning_covered_area_m2": 2398.4841712139796,
+          "ignited_node_count": 1165,
+          "active_burning_node_count": 251,
+          "clearing_plus_ignited_union_area_m2": 6541.362445442264,
+          "clearing_plus_burned_out_union_area_m2": 4142.878274228286
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 50.0,
+          "cumulative_burned_out_covered_area_m2": 50.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 2,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 50.0,
+          "clearing_plus_burned_out_union_area_m2": 50.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 41,
+          "upper": 41
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 44,
+          "upper": 44
+        },
+        "intersected_annotation_count": 41
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 41,
+          "upper": 41
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 44,
+          "upper": 44
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331971.735210693,
+        "remaining_kg": 11279898.565848075,
+        "fire_depleted_kg": 52073.169362617016,
+        "roof_fire_depleted_kg": 51908.919362617016,
+        "nonroof_fire_depleted_kg": 164.25,
+        "actively_burning_remaining_kg": 13944.30174089524,
+        "planned_removed_kg": 4793.493307264203,
+        "clearing_plus_fire_depleted_kg": 56866.66266988122
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "9d92df404409bb94b30b26ce67d3164330337b14ba8357589a23f5cba9f943bb"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "baseline",
+      "scenario_id": "bridge-B0062-known-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646984.5813442552,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 7444.65061946953,
+          "cumulative_burned_out_covered_area_m2": 4616.617772966358,
+          "active_burning_covered_area_m2": 2828.032846503173,
+          "ignited_node_count": 7064,
+          "active_burning_node_count": 1212,
+          "clearing_plus_ignited_union_area_m2": 7444.65061946953,
+          "clearing_plus_burned_out_union_area_m2": 4616.617772966358
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425517,
+          "retained_covered_area_m2": 77034.58134425517,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 6969.65061946953,
+          "cumulative_burned_out_covered_area_m2": 4416.617772966358,
+          "active_burning_covered_area_m2": 2553.032846503173,
+          "ignited_node_count": 7045,
+          "active_burning_node_count": 1201,
+          "clearing_plus_ignited_union_area_m2": 6969.65061946953,
+          "clearing_plus_burned_out_union_area_m2": 4416.617772966358
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 475.0,
+          "cumulative_burned_out_covered_area_m2": 200.0,
+          "active_burning_covered_area_m2": 275.0,
+          "ignited_node_count": 19,
+          "active_burning_node_count": 11,
+          "clearing_plus_ignited_union_area_m2": 475.0,
+          "clearing_plus_burned_out_union_area_m2": 200.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 333,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 43,
+          "upper": 43
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 43,
+          "upper": 43
+        },
+        "intersected_annotation_count": 43
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 332,
+        "ignited_annotation_attribution_count": {
+          "lower": 42,
+          "upper": 42
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 42,
+          "upper": 42
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 2
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 2,
+          "upper": 2
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11336765.228517957,
+        "remaining_kg": 11273962.301697016,
+        "fire_depleted_kg": 62802.92682093992,
+        "roof_fire_depleted_kg": 61658.07574877418,
+        "nonroof_fire_depleted_kg": 1144.8510721657444,
+        "actively_burning_remaining_kg": 14504.799869331007,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 62802.92682093992
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "414cb7f379b4cf4f64b4451662909f037aa3031162d747649bd26022b2f76ca7"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "drum-B0077-known-hot-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": true,
+      "demolished_ids": [
+        "B0063",
+        "B0067",
+        "B0071"
+      ],
+      "geometric_cleared_area_m2": 443.7189721094598,
+      "reconstructed_area_error_m2": 2.0886780589535192e-06,
+      "reconstruction_error_tolerance_m2": 0.00044371897419813786,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.862370057,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 8030.47967537019,
+          "cumulative_burned_out_covered_area_m2": 4863.334065109966,
+          "active_burning_covered_area_m2": 3167.145610260225,
+          "ignited_node_count": 1902,
+          "active_burning_node_count": 312,
+          "clearing_plus_ignited_union_area_m2": 8474.198649568329,
+          "clearing_plus_burned_out_union_area_m2": 5307.0530393081035
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.86237005705,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 6780.479675370191,
+          "cumulative_burned_out_covered_area_m2": 3738.334065109967,
+          "active_burning_covered_area_m2": 3042.145610260225,
+          "ignited_node_count": 1852,
+          "active_burning_node_count": 307,
+          "clearing_plus_ignited_union_area_m2": 7224.1986495683295,
+          "clearing_plus_burned_out_union_area_m2": 4182.053039308104
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1250.0,
+          "cumulative_burned_out_covered_area_m2": 1125.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 50,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1250.0,
+          "clearing_plus_burned_out_union_area_m2": 1125.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 48,
+          "upper": 48
+        },
+        "intersected_annotation_count": 45
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 48,
+          "upper": 48
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331973.063596617,
+        "remaining_kg": 11274375.102398673,
+        "fire_depleted_kg": 57597.96119794322,
+        "roof_fire_depleted_kg": 54610.30017345247,
+        "nonroof_fire_depleted_kg": 2987.6610244907415,
+        "actively_burning_remaining_kg": 18651.469296054845,
+        "planned_removed_kg": 4792.164921339889,
+        "clearing_plus_fire_depleted_kg": 62390.12611928311
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "ad96cfded304c4999be580a3d267771653c43f1e75b3725788cd15d5f5d8b18f"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "baseline",
+      "scenario_id": "drum-B0077-known-hot-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646984.5813442552,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 8382.2567018492,
+          "cumulative_burned_out_covered_area_m2": 4910.484677673296,
+          "active_burning_covered_area_m2": 3471.772024175904,
+          "ignited_node_count": 2901,
+          "active_burning_node_count": 1094,
+          "clearing_plus_ignited_union_area_m2": 8382.2567018492,
+          "clearing_plus_burned_out_union_area_m2": 4910.484677673296
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 77034.58134425519,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 7132.2567018492,
+          "cumulative_burned_out_covered_area_m2": 3785.484677673295,
+          "active_burning_covered_area_m2": 3346.7720241759043,
+          "ignited_node_count": 2851,
+          "active_burning_node_count": 1089,
+          "clearing_plus_ignited_union_area_m2": 7132.2567018492,
+          "clearing_plus_burned_out_union_area_m2": 3785.484677673295
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1250.0,
+          "cumulative_burned_out_covered_area_m2": 1125.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 50,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1250.0,
+          "clearing_plus_burned_out_union_area_m2": 1125.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 333,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 47,
+          "upper": 47
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 47,
+          "upper": 47
+        },
+        "intersected_annotation_count": 47
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 332,
+        "ignited_annotation_attribution_count": {
+          "lower": 47,
+          "upper": 47
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 47,
+          "upper": 47
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11336765.228517957,
+        "remaining_kg": 11276610.893962337,
+        "fire_depleted_kg": 60154.33455561923,
+        "roof_fire_depleted_kg": 57166.7085622396,
+        "nonroof_fire_depleted_kg": 2987.6259933796305,
+        "actively_burning_remaining_kg": 19894.287824352123,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 60154.33455561923
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "77dda99390b61631269d86590b517df9a6830cfc5eb4c756665027a4d73c4096"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "selected",
+      "scenario_id": "bridge-B0062-known-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "geometric_cleared_area_m2": 443.84196874005784,
+      "reconstructed_area_error_m2": 4.154775751885609e-06,
+      "reconstruction_error_tolerance_m2": 0.0004438419728948336,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.7393713603,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 5806.523180133488,
+          "cumulative_burned_out_covered_area_m2": 3590.4214041293,
+          "active_burning_covered_area_m2": 2216.1017760041887,
+          "ignited_node_count": 2371,
+          "active_burning_node_count": 227,
+          "clearing_plus_ignited_union_area_m2": 6250.365153028322,
+          "clearing_plus_burned_out_union_area_m2": 4034.2633770241328
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425517,
+          "retained_covered_area_m2": 76590.73937136037,
+          "cleared_covered_area_m2": 443.8419728948336,
+          "cumulative_ignited_covered_area_m2": 5756.5231801334885,
+          "cumulative_burned_out_covered_area_m2": 3540.4214041292994,
+          "active_burning_covered_area_m2": 2216.1017760041887,
+          "ignited_node_count": 2369,
+          "active_burning_node_count": 227,
+          "clearing_plus_ignited_union_area_m2": 6200.365153028322,
+          "clearing_plus_burned_out_union_area_m2": 3984.263377024133
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 50.0,
+          "cumulative_burned_out_covered_area_m2": 50.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 2,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 50.0,
+          "clearing_plus_burned_out_union_area_m2": 50.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 37,
+          "upper": 38
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 40,
+          "upper": 41
+        },
+        "intersected_annotation_count": 38
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 37,
+          "upper": 38
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 40,
+          "upper": 41
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331971.735210693,
+        "remaining_kg": 11282471.028200662,
+        "fire_depleted_kg": 49500.70701002959,
+        "roof_fire_depleted_kg": 49336.45701002959,
+        "nonroof_fire_depleted_kg": 164.25,
+        "actively_burning_remaining_kg": 12833.99333541208,
+        "planned_removed_kg": 4793.493307264203,
+        "clearing_plus_fire_depleted_kg": 54294.2003172938
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "9b14ec8cdb57aa5c497c2d058390d2399a34697f852b902907dde07e87aa66a9"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "baseline",
+      "scenario_id": "bridge-B0062-known-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646984.5813442552,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 8109.389967537254,
+          "cumulative_burned_out_covered_area_m2": 4909.789719441585,
+          "active_burning_covered_area_m2": 3199.6002480956686,
+          "ignited_node_count": 2474,
+          "active_burning_node_count": 414,
+          "clearing_plus_ignited_union_area_m2": 8109.389967537254,
+          "clearing_plus_burned_out_union_area_m2": 4909.789719441585
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 77034.58134425519,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 7359.389967537254,
+          "cumulative_burned_out_covered_area_m2": 4684.7897194415855,
+          "active_burning_covered_area_m2": 2674.6002480956686,
+          "ignited_node_count": 2444,
+          "active_burning_node_count": 393,
+          "clearing_plus_ignited_union_area_m2": 7359.389967537254,
+          "clearing_plus_burned_out_union_area_m2": 4684.7897194415855
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 750.0,
+          "cumulative_burned_out_covered_area_m2": 225.0,
+          "active_burning_covered_area_m2": 525.0,
+          "ignited_node_count": 30,
+          "active_burning_node_count": 21,
+          "clearing_plus_ignited_union_area_m2": 750.0,
+          "clearing_plus_burned_out_union_area_m2": 225.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 333,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 46,
+          "upper": 46
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 46,
+          "upper": 46
+        },
+        "intersected_annotation_count": 46
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 332,
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 45,
+          "upper": 45
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 2
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 2,
+          "upper": 2
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11336765.228517957,
+        "remaining_kg": 11270300.337133719,
+        "fire_depleted_kg": 66464.89138423844,
+        "roof_fire_depleted_kg": 64688.10466348584,
+        "nonroof_fire_depleted_kg": 1776.786720752596,
+        "actively_burning_remaining_kg": 16159.020265163897,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 66464.89138423844
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "f149108b0552e84b6f61692ae7c4a2b2e59c87de6e37bcfdb3b53db904ce64f5"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "baseline",
+      "scenario_id": "drum-B0077-known-hot-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646984.5813442552,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 8836.612225513712,
+          "cumulative_burned_out_covered_area_m2": 5128.210024138696,
+          "active_burning_covered_area_m2": 3708.4022013750177,
+          "ignited_node_count": 1409,
+          "active_burning_node_count": 538,
+          "clearing_plus_ignited_union_area_m2": 8836.612225513712,
+          "clearing_plus_burned_out_union_area_m2": 5128.210024138696
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 77034.58134425519,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 7536.612225513714,
+          "cumulative_burned_out_covered_area_m2": 3953.2100241386956,
+          "active_burning_covered_area_m2": 3583.4022013750173,
+          "ignited_node_count": 1357,
+          "active_burning_node_count": 533,
+          "clearing_plus_ignited_union_area_m2": 7536.612225513714,
+          "clearing_plus_burned_out_union_area_m2": 3953.2100241386956
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1300.0,
+          "cumulative_burned_out_covered_area_m2": 1175.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 52,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1300.0,
+          "clearing_plus_burned_out_union_area_m2": 1175.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 333,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 50,
+          "upper": 50
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        },
+        "intersected_annotation_count": 50
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 332,
+        "ignited_annotation_attribution_count": {
+          "lower": 50,
+          "upper": 50
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11336765.228517957,
+        "remaining_kg": 11273827.692751167,
+        "fire_depleted_kg": 62937.53576678954,
+        "roof_fire_depleted_kg": 59931.89587184361,
+        "nonroof_fire_depleted_kg": 3005.6398949459267,
+        "actively_burning_remaining_kg": 21506.62626875857,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 62937.53576678954
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "82fd18c43543161259b7de0a142de166742ad3c9c43884a40ffc7e914475b90c"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "bridge-B0062-known-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [
+        "B0063",
+        "B0067",
+        "B0071"
+      ],
+      "geometric_cleared_area_m2": 443.71897210949504,
+      "reconstructed_area_error_m2": 2.0886428160338255e-06,
+      "reconstruction_error_tolerance_m2": 0.00044371897419813786,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.862370057,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 7087.735328191891,
+          "cumulative_burned_out_covered_area_m2": 4234.385762012385,
+          "active_burning_covered_area_m2": 2853.349566179505,
+          "ignited_node_count": 1875,
+          "active_burning_node_count": 519,
+          "clearing_plus_ignited_union_area_m2": 7531.45430239003,
+          "clearing_plus_burned_out_union_area_m2": 4678.104736210524
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.86237005705,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 6687.735328191891,
+          "cumulative_burned_out_covered_area_m2": 4084.385762012386,
+          "active_burning_covered_area_m2": 2603.3495661795055,
+          "ignited_node_count": 1859,
+          "active_burning_node_count": 509,
+          "clearing_plus_ignited_union_area_m2": 7131.454302390028,
+          "clearing_plus_burned_out_union_area_m2": 4528.104736210524
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 400.0,
+          "cumulative_burned_out_covered_area_m2": 150.0,
+          "active_burning_covered_area_m2": 250.0,
+          "ignited_node_count": 16,
+          "active_burning_node_count": 10,
+          "clearing_plus_ignited_union_area_m2": 400.0,
+          "clearing_plus_burned_out_union_area_m2": 150.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 41,
+          "upper": 41
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 44,
+          "upper": 44
+        },
+        "intersected_annotation_count": 41
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 40,
+          "upper": 40
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 43,
+          "upper": 43
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331973.063596617,
+        "remaining_kg": 11273355.973799465,
+        "fire_depleted_kg": 58617.08979715092,
+        "roof_fire_depleted_kg": 57704.185934934256,
+        "nonroof_fire_depleted_kg": 912.9038622166677,
+        "actively_burning_remaining_kg": 15331.701747321506,
+        "planned_removed_kg": 4792.16492133989,
+        "clearing_plus_fire_depleted_kg": 63409.25471849081
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "6cd13c76ce45ef9635ffe4afd2a006bb9c24aa951720026c9a565803fcfd4ba9"
+    },
+    {
+      "village_id": "batuan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "drum-B0077-known-hot-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [
+        "B0063",
+        "B0067",
+        "B0071"
+      ],
+      "geometric_cleared_area_m2": 443.71897210949504,
+      "reconstructed_area_error_m2": 2.0886428160338255e-06,
+      "reconstruction_error_tolerance_m2": 0.00044371897419813786,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 2646984.5813442552,
+          "retained_covered_area_m2": 2646540.862370057,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 8426.432327439457,
+          "cumulative_burned_out_covered_area_m2": 5038.804953062472,
+          "active_burning_covered_area_m2": 3387.6273743769852,
+          "ignited_node_count": 1112,
+          "active_burning_node_count": 324,
+          "clearing_plus_ignited_union_area_m2": 8870.151301637596,
+          "clearing_plus_burned_out_union_area_m2": 5482.52392726061
+        },
+        "roof": {
+          "baseline_covered_area_m2": 77034.58134425519,
+          "retained_covered_area_m2": 76590.86237005706,
+          "cleared_covered_area_m2": 443.71897419813786,
+          "cumulative_ignited_covered_area_m2": 7126.432327439457,
+          "cumulative_burned_out_covered_area_m2": 3863.804953062472,
+          "active_burning_covered_area_m2": 3262.6273743769852,
+          "ignited_node_count": 1060,
+          "active_burning_node_count": 319,
+          "clearing_plus_ignited_union_area_m2": 7570.151301637596,
+          "clearing_plus_burned_out_union_area_m2": 4307.5239272606095
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 2569950.0,
+          "retained_covered_area_m2": 2569950.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1300.0,
+          "cumulative_burned_out_covered_area_m2": 1175.0,
+          "active_burning_covered_area_m2": 125.0,
+          "ignited_node_count": 52,
+          "active_burning_node_count": 5,
+          "clearing_plus_ignited_union_area_m2": 1300.0,
+          "clearing_plus_burned_out_union_area_m2": 1175.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 330,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 47,
+          "upper": 47
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        },
+        "intersected_annotation_count": 47
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 329,
+        "ignited_annotation_attribution_count": {
+          "lower": 47,
+          "upper": 47
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 2,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 11331973.063596617,
+        "remaining_kg": 11271873.147943335,
+        "fire_depleted_kg": 60099.91565328128,
+        "roof_fire_depleted_kg": 57094.34055389091,
+        "nonroof_fire_depleted_kg": 3005.5750993903707,
+        "actively_burning_remaining_kg": 19914.30348306486,
+        "planned_removed_kg": 4792.164921339889,
+        "clearing_plus_fire_depleted_kg": 64892.08057462116
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "8b6d762ddf9aacbcd51b0dac1cff3192d895dcf5175957ef5a4f728827cff954"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "bridge-B0120-coverage-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0168",
+        "B0188"
+      ],
+      "geometric_cleared_area_m2": 974.4542322629048,
+      "reconstructed_area_error_m2": -1.3303395007824292e-06,
+      "reconstruction_error_tolerance_m2": 0.0009744542309325653,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6744259.627294112,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 1087.5817491792532,
+          "clearing_plus_burned_out_union_area_m2": 1087.5817491792532
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286909.6272941113,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 1087.5817491792532,
+          "clearing_plus_burned_out_union_area_m2": 1087.5817491792532
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 6,
+          "upper": 6
+        },
+        "intersected_annotation_count": 1
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 6,
+          "upper": 6
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334180.974776402,
+        "remaining_kg": 30332959.19757934,
+        "fire_depleted_kg": 1221.7771970642298,
+        "roof_fire_depleted_kg": 1221.7771970642293,
+        "nonroof_fire_depleted_kg": 0.0,
+        "actively_burning_remaining_kg": 0.0,
+        "planned_removed_kg": 10524.105694071706,
+        "clearing_plus_fire_depleted_kg": 11745.882891135936
+      },
+      "fire_extinguished_at_observation": true,
+      "source_manifest_sha256": "408097ca055632cec827c218e30823a7557acda1b66c6bbcef071c2d271203c1"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "selected",
+      "scenario_id": "drum-B0164-late-ignition-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "geometric_cleared_area_m2": 985.6078364046011,
+      "reconstructed_area_error_m2": 1.0248622857034206e-06,
+      "reconstruction_error_tolerance_m2": 0.0009856078374294633,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6744248.473687615,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 11348.68043471349,
+          "cumulative_burned_out_covered_area_m2": 5797.445498405297,
+          "active_burning_covered_area_m2": 5551.234936308192,
+          "ignited_node_count": 3230,
+          "active_burning_node_count": 472,
+          "clearing_plus_ignited_union_area_m2": 12334.28827214295,
+          "clearing_plus_burned_out_union_area_m2": 6783.05333583476
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286898.47368761443,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 10023.680434713488,
+          "cumulative_burned_out_covered_area_m2": 5047.445498405295,
+          "active_burning_covered_area_m2": 4976.234936308192,
+          "ignited_node_count": 3177,
+          "active_burning_node_count": 449,
+          "clearing_plus_ignited_union_area_m2": 11009.288272142952,
+          "clearing_plus_burned_out_union_area_m2": 6033.053335834759
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1325.0,
+          "cumulative_burned_out_covered_area_m2": 750.0,
+          "active_burning_covered_area_m2": 575.0,
+          "ignited_node_count": 53,
+          "active_burning_node_count": 23,
+          "clearing_plus_ignited_union_area_m2": 1325.0,
+          "clearing_plus_burned_out_union_area_m2": 750.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 51,
+          "upper": 52
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 56,
+          "upper": 57
+        },
+        "intersected_annotation_count": 52
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 51,
+          "upper": 52
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 56,
+          "upper": 57
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334060.515826236,
+        "remaining_kg": 30244734.176125422,
+        "fire_depleted_kg": 89326.33970081231,
+        "roof_fire_depleted_kg": 84632.63492083314,
+        "nonroof_fire_depleted_kg": 4693.704779979172,
+        "actively_burning_remaining_kg": 25114.65899409337,
+        "planned_removed_kg": 10644.564644238206,
+        "clearing_plus_fire_depleted_kg": 99970.90434505051
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "79a27a3281fa2696eb676cd6a44bcc4599ba8aaa5ac5158f0b4b4a3e8edb7d1a"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "baseline",
+      "scenario_id": "bridge-B0120-coverage-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 950,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "intersected_annotation_count": 1
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 948,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30344705.080470473,
+        "remaining_kg": 30343483.30327341,
+        "fire_depleted_kg": 1221.7771970642298,
+        "roof_fire_depleted_kg": 1221.7771970642295,
+        "nonroof_fire_depleted_kg": 0.0,
+        "actively_burning_remaining_kg": 0.0,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 1221.7771970642298
+      },
+      "fire_extinguished_at_observation": true,
+      "source_manifest_sha256": "02fcd0d61689528b498bcc3c60b160daab4d4c26b82f01190254e991a5ead67a"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "drum-B0164-late-ignition-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0168",
+        "B0188"
+      ],
+      "geometric_cleared_area_m2": 974.4542322629048,
+      "reconstructed_area_error_m2": -1.3303395007824292e-06,
+      "reconstruction_error_tolerance_m2": 0.0009744542309325653,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6744259.627294112,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 9752.8840852393,
+          "cumulative_burned_out_covered_area_m2": 5218.933233107934,
+          "active_burning_covered_area_m2": 4533.950852131367,
+          "ignited_node_count": 2264,
+          "active_burning_node_count": 362,
+          "clearing_plus_ignited_union_area_m2": 10727.338316171867,
+          "clearing_plus_burned_out_union_area_m2": 6193.3874640405
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286909.6272941113,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 8502.884085239302,
+          "cumulative_burned_out_covered_area_m2": 4518.933233107934,
+          "active_burning_covered_area_m2": 3983.9508521313674,
+          "ignited_node_count": 2214,
+          "active_burning_node_count": 340,
+          "clearing_plus_ignited_union_area_m2": 9477.338316171867,
+          "clearing_plus_burned_out_union_area_m2": 5493.387464040499
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1250.0,
+          "cumulative_burned_out_covered_area_m2": 700.0,
+          "active_burning_covered_area_m2": 550.0,
+          "ignited_node_count": 50,
+          "active_burning_node_count": 22,
+          "clearing_plus_ignited_union_area_m2": 1250.0,
+          "clearing_plus_burned_out_union_area_m2": 700.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 44,
+          "upper": 44
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 49,
+          "upper": 49
+        },
+        "intersected_annotation_count": 44
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 44,
+          "upper": 44
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 49,
+          "upper": 49
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334180.974776402,
+        "remaining_kg": 30257626.758063804,
+        "fire_depleted_kg": 76554.21671259952,
+        "roof_fire_depleted_kg": 71914.70365137034,
+        "nonroof_fire_depleted_kg": 4639.5130612291705,
+        "actively_burning_remaining_kg": 21283.681407984943,
+        "planned_removed_kg": 10524.105694071704,
+        "clearing_plus_fire_depleted_kg": 87078.32240667121
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "546606beab83c4c8772cadc99610cf2541d6334599846d7fce2cdf01efd7cdb3"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "bridge-B0120-coverage-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0168",
+        "B0188"
+      ],
+      "geometric_cleared_area_m2": 974.4542322633569,
+      "reconstructed_area_error_m2": -1.3307915196492104e-06,
+      "reconstruction_error_tolerance_m2": 0.0009744542309325653,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6744259.627294111,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 5796.270639449548,
+          "cumulative_burned_out_covered_area_m2": 5118.041290431037,
+          "active_burning_covered_area_m2": 678.2293490185111,
+          "ignited_node_count": 456,
+          "active_burning_node_count": 51,
+          "clearing_plus_ignited_union_area_m2": 6770.724870382113,
+          "clearing_plus_burned_out_union_area_m2": 6092.495521363602
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286909.6272941113,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 1771.2706394495483,
+          "cumulative_burned_out_covered_area_m2": 1093.0412904310372,
+          "active_burning_covered_area_m2": 678.2293490185111,
+          "ignited_node_count": 295,
+          "active_burning_node_count": 51,
+          "clearing_plus_ignited_union_area_m2": 2745.7248703821133,
+          "clearing_plus_burned_out_union_area_m2": 2067.4955213636026
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 4025.0,
+          "cumulative_burned_out_covered_area_m2": 4025.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 161,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 4025.0,
+          "clearing_plus_burned_out_union_area_m2": 4025.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 9,
+          "upper": 9
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        },
+        "intersected_annotation_count": 9
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 9,
+          "upper": 9
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334180.974776402,
+        "remaining_kg": 30316605.281686444,
+        "fire_depleted_kg": 17575.693089959743,
+        "roof_fire_depleted_kg": 15281.443089959746,
+        "nonroof_fire_depleted_kg": 2294.25,
+        "actively_burning_remaining_kg": 3848.2798160953757,
+        "planned_removed_kg": 10524.105694071706,
+        "clearing_plus_fire_depleted_kg": 28099.798784031453
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "ae179aac408457ef0fa2597d586e7696fba164354ebd79f3085d6a3fe47eb89e"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "baseline",
+      "scenario_id": "bridge-B0120-coverage-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6745234.0815250445,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 8834.070094807365,
+          "cumulative_burned_out_covered_area_m2": 7525.909710604722,
+          "active_burning_covered_area_m2": 1308.1603842026416,
+          "ignited_node_count": 1140,
+          "active_burning_node_count": 222,
+          "clearing_plus_ignited_union_area_m2": 8834.070094807365,
+          "clearing_plus_burned_out_union_area_m2": 7525.909710604722
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 2259.0700948073636,
+          "cumulative_burned_out_covered_area_m2": 1450.909710604722,
+          "active_burning_covered_area_m2": 808.1603842026417,
+          "ignited_node_count": 877,
+          "active_burning_node_count": 202,
+          "clearing_plus_ignited_union_area_m2": 2259.0700948073636,
+          "clearing_plus_burned_out_union_area_m2": 1450.909710604722
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 6575.0,
+          "cumulative_burned_out_covered_area_m2": 6075.0,
+          "active_burning_covered_area_m2": 500.0,
+          "ignited_node_count": 263,
+          "active_burning_node_count": 20,
+          "clearing_plus_ignited_union_area_m2": 6575.0,
+          "clearing_plus_burned_out_union_area_m2": 6075.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 950,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 11,
+          "upper": 11
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 11,
+          "upper": 11
+        },
+        "intersected_annotation_count": 11
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 948,
+        "ignited_annotation_attribution_count": {
+          "lower": 10,
+          "upper": 10
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 10,
+          "upper": 10
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30344705.080470473,
+        "remaining_kg": 30321138.5537444,
+        "fire_depleted_kg": 23566.526726071283,
+        "roof_fire_depleted_kg": 19921.875816752392,
+        "nonroof_fire_depleted_kg": 3644.6509093188893,
+        "actively_burning_remaining_kg": 4579.180297848247,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 23566.526726071283
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "c6331a8b5ff4341ccd185c20024892925c38fddf35b89431cbd878768ef259b9"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "selected",
+      "scenario_id": "bridge-B0120-coverage-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "geometric_cleared_area_m2": 985.6078364044408,
+      "reconstructed_area_error_m2": 1.0250225841446081e-06,
+      "reconstruction_error_tolerance_m2": 0.0009856078374294633,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6744248.473687614,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 5796.270639449548,
+          "cumulative_burned_out_covered_area_m2": 5118.041290431037,
+          "active_burning_covered_area_m2": 678.2293490185111,
+          "ignited_node_count": 456,
+          "active_burning_node_count": 51,
+          "clearing_plus_ignited_union_area_m2": 6781.878476879012,
+          "clearing_plus_burned_out_union_area_m2": 6103.649127860501
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286898.47368761443,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 1771.2706394495483,
+          "cumulative_burned_out_covered_area_m2": 1093.0412904310372,
+          "active_burning_covered_area_m2": 678.2293490185111,
+          "ignited_node_count": 295,
+          "active_burning_node_count": 51,
+          "clearing_plus_ignited_union_area_m2": 2756.878476879012,
+          "clearing_plus_burned_out_union_area_m2": 2078.649127860501
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 4025.0,
+          "cumulative_burned_out_covered_area_m2": 4025.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 161,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 4025.0,
+          "clearing_plus_burned_out_union_area_m2": 4025.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 9,
+          "upper": 9
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        },
+        "intersected_annotation_count": 9
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 9,
+          "upper": 9
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334060.515826236,
+        "remaining_kg": 30316484.82273628,
+        "fire_depleted_kg": 17575.693089959743,
+        "roof_fire_depleted_kg": 15281.443089959746,
+        "nonroof_fire_depleted_kg": 2294.25,
+        "actively_burning_remaining_kg": 3848.2798160953757,
+        "planned_removed_kg": 10644.564644238206,
+        "clearing_plus_fire_depleted_kg": 28220.257734197952
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "66187857e77fd3e5ce7f42e6b34de7f1de2f9b5f1091bb01de4a7d9bd10e1f0e"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "baseline",
+      "scenario_id": "drum-B0164-late-ignition-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 15511.321067539866,
+          "cumulative_burned_out_covered_area_m2": 8598.581082596495,
+          "active_burning_covered_area_m2": 6912.73998494337,
+          "ignited_node_count": 10881,
+          "active_burning_node_count": 2420,
+          "clearing_plus_ignited_union_area_m2": 15511.321067539866,
+          "clearing_plus_burned_out_union_area_m2": 8598.581082596495
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 12786.321067539866,
+          "cumulative_burned_out_covered_area_m2": 6723.5810825964945,
+          "active_burning_covered_area_m2": 6062.73998494337,
+          "ignited_node_count": 10772,
+          "active_burning_node_count": 2386,
+          "clearing_plus_ignited_union_area_m2": 12786.321067539866,
+          "clearing_plus_burned_out_union_area_m2": 6723.5810825964945
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 2725.0,
+          "cumulative_burned_out_covered_area_m2": 1875.0,
+          "active_burning_covered_area_m2": 850.0,
+          "ignited_node_count": 109,
+          "active_burning_node_count": 34,
+          "clearing_plus_ignited_union_area_m2": 2725.0,
+          "clearing_plus_burned_out_union_area_m2": 1875.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 950,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 64,
+          "upper": 65
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 64,
+          "upper": 65
+        },
+        "intersected_annotation_count": 65
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 948,
+        "ignited_annotation_attribution_count": {
+          "lower": 64,
+          "upper": 65
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 64,
+          "upper": 65
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30344705.080470473,
+        "remaining_kg": 30230483.211293645,
+        "fire_depleted_kg": 114221.86917682755,
+        "roof_fire_depleted_kg": 108530.3857374,
+        "nonroof_fire_depleted_kg": 5691.483439427548,
+        "actively_burning_remaining_kg": 31260.898352602988,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 114221.86917682755
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "5518b8d92cd59502a3e412a21e21f5472c08b09d0f90df0527f26d1e5fdf553e"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "selected",
+      "scenario_id": "drum-B0164-late-ignition-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "geometric_cleared_area_m2": 985.6078364044408,
+      "reconstructed_area_error_m2": 1.0250225841446081e-06,
+      "reconstruction_error_tolerance_m2": 0.0009856078374294633,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6744248.473687615,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 11715.207150515922,
+          "cumulative_burned_out_covered_area_m2": 6239.080036568362,
+          "active_burning_covered_area_m2": 5476.12711394756,
+          "ignited_node_count": 1566,
+          "active_burning_node_count": 459,
+          "clearing_plus_ignited_union_area_m2": 12700.814987945387,
+          "clearing_plus_burned_out_union_area_m2": 7224.687873997826
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250438,
+          "retained_covered_area_m2": 286898.47368761443,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 10290.207150515924,
+          "cumulative_burned_out_covered_area_m2": 5389.080036568361,
+          "active_burning_covered_area_m2": 4901.127113947561,
+          "ignited_node_count": 1509,
+          "active_burning_node_count": 436,
+          "clearing_plus_ignited_union_area_m2": 11275.814987945385,
+          "clearing_plus_burned_out_union_area_m2": 6374.687873997826
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1425.0,
+          "cumulative_burned_out_covered_area_m2": 850.0,
+          "active_burning_covered_area_m2": 575.0,
+          "ignited_node_count": 57,
+          "active_burning_node_count": 23,
+          "clearing_plus_ignited_union_area_m2": 1425.0,
+          "clearing_plus_burned_out_union_area_m2": 850.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 52,
+          "upper": 53
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 57,
+          "upper": 58
+        },
+        "intersected_annotation_count": 53
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 52,
+          "upper": 53
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 57,
+          "upper": 58
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334060.515826233,
+        "remaining_kg": 30239609.26832146,
+        "fire_depleted_kg": 94451.24750477768,
+        "roof_fire_depleted_kg": 89500.49850399852,
+        "nonroof_fire_depleted_kg": 4950.74900077917,
+        "actively_burning_remaining_kg": 23468.239720794267,
+        "planned_removed_kg": 10644.564644238206,
+        "clearing_plus_fire_depleted_kg": 105095.8121490159
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "dd9c95eb61c1658d5acfca5e453b37f38a60fb63369c7ff711699f9fda1b289a"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "area-matched-position",
+      "scenario_id": "drum-B0164-late-ignition-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0168",
+        "B0188"
+      ],
+      "geometric_cleared_area_m2": 974.4542322633569,
+      "reconstructed_area_error_m2": -1.3307915196492104e-06,
+      "reconstruction_error_tolerance_m2": 0.0009744542309325653,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6744259.627294112,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 10104.949670593862,
+          "cumulative_burned_out_covered_area_m2": 5534.001091909794,
+          "active_burning_covered_area_m2": 4570.948578684067,
+          "ignited_node_count": 1205,
+          "active_burning_node_count": 364,
+          "clearing_plus_ignited_union_area_m2": 11079.403901526424,
+          "clearing_plus_burned_out_union_area_m2": 6508.455322842359
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250438,
+          "retained_covered_area_m2": 286909.6272941113,
+          "cleared_covered_area_m2": 974.4542309325653,
+          "cumulative_ignited_covered_area_m2": 8754.949670593862,
+          "cumulative_burned_out_covered_area_m2": 4734.001091909794,
+          "active_burning_covered_area_m2": 4020.9485786840673,
+          "ignited_node_count": 1151,
+          "active_burning_node_count": 342,
+          "clearing_plus_ignited_union_area_m2": 9729.403901526428,
+          "clearing_plus_burned_out_union_area_m2": 5708.455322842359
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 1350.0,
+          "cumulative_burned_out_covered_area_m2": 800.0,
+          "active_burning_covered_area_m2": 550.0,
+          "ignited_node_count": 54,
+          "active_burning_node_count": 22,
+          "clearing_plus_ignited_union_area_m2": 1350.0,
+          "clearing_plus_burned_out_union_area_m2": 800.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        },
+        "intersected_annotation_count": 45
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 45,
+          "upper": 45
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 50,
+          "upper": 50
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334180.974776402,
+        "remaining_kg": 30253336.079805717,
+        "fire_depleted_kg": 80844.89497068402,
+        "roof_fire_depleted_kg": 75969.04974787938,
+        "nonroof_fire_depleted_kg": 4875.845222804632,
+        "actively_burning_remaining_kg": 20315.311471729674,
+        "planned_removed_kg": 10524.105694071706,
+        "clearing_plus_fire_depleted_kg": 91369.00066475573
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "aa6143957711217843bd2ca7c6333add8eb938ca41be767183c3a6df1b58c530"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "selected",
+      "scenario_id": "bridge-B0120-coverage-h0.5",
+      "scale_m": 0.5,
+      "core_joint_failure": false,
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "geometric_cleared_area_m2": 985.6078364046011,
+      "reconstructed_area_error_m2": 1.0248622857034206e-06,
+      "reconstruction_error_tolerance_m2": 0.0009856078374294633,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6744248.473687615,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 1098.7353556761514,
+          "clearing_plus_burned_out_union_area_m2": 1098.7353556761514
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 286898.47368761443,
+          "cleared_covered_area_m2": 985.6078374294634,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 1098.7353556761514,
+          "clearing_plus_burned_out_union_area_m2": 1098.7353556761514
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 945,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 6,
+          "upper": 6
+        },
+        "intersected_annotation_count": 1
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 943,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 6,
+          "upper": 6
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 0,
+          "upper": 0
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 0,
+          "upper": 0
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30334060.515826236,
+        "remaining_kg": 30332838.738629173,
+        "fire_depleted_kg": 1221.7771970642298,
+        "roof_fire_depleted_kg": 1221.7771970642293,
+        "nonroof_fire_depleted_kg": 0.0,
+        "actively_burning_remaining_kg": 0.0,
+        "planned_removed_kg": 10644.564644238206,
+        "clearing_plus_fire_depleted_kg": 11866.341841302436
+      },
+      "fire_extinguished_at_observation": true,
+      "source_manifest_sha256": "f4a87a80aae70467173d9100f593445700d7fb2cb7c2a19d1e958510d5eaeb65"
+    },
+    {
+      "village_id": "pingyan",
+      "plan_id": "baseline",
+      "scenario_id": "drum-B0164-late-ignition-h1",
+      "scale_m": 1.0,
+      "core_joint_failure": true,
+      "demolished_ids": [],
+      "geometric_cleared_area_m2": 0,
+      "reconstructed_area_error_m2": 0.0,
+      "reconstruction_error_tolerance_m2": 1e-06,
+      "physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6745234.0815250445,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 17662.41898930403,
+          "cumulative_burned_out_covered_area_m2": 10367.786670351315,
+          "active_burning_covered_area_m2": 7294.632318952716,
+          "ignited_node_count": 3851,
+          "active_burning_node_count": 786,
+          "clearing_plus_ignited_union_area_m2": 17662.41898930403,
+          "clearing_plus_burned_out_union_area_m2": 10367.786670351315
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250438,
+          "retained_covered_area_m2": 287884.0815250438,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 13462.418989304031,
+          "cumulative_burned_out_covered_area_m2": 7567.786670351314,
+          "active_burning_covered_area_m2": 5894.632318952716,
+          "ignited_node_count": 3683,
+          "active_burning_node_count": 730,
+          "clearing_plus_ignited_union_area_m2": 13462.418989304031,
+          "clearing_plus_burned_out_union_area_m2": 7567.786670351314
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 4200.0,
+          "cumulative_burned_out_covered_area_m2": 2800.0,
+          "active_burning_covered_area_m2": 1400.0,
+          "ignited_node_count": 168,
+          "active_burning_node_count": 56,
+          "clearing_plus_ignited_union_area_m2": 4200.0,
+          "clearing_plus_burned_out_union_area_m2": 2800.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "annotation_counts": {
+        "retained_inventory_count": 950,
+        "unrepresented_retained_ids": [],
+        "ignited_annotation_attribution_count": {
+          "lower": 69,
+          "upper": 70
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 69,
+          "upper": 70
+        },
+        "intersected_annotation_count": 70
+      },
+      "ordinary_annotation_counts": {
+        "retained_inventory_count": 948,
+        "ignited_annotation_attribution_count": {
+          "lower": 69,
+          "upper": 70
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 69,
+          "upper": 70
+        }
+      },
+      "core_annotation_counts": {
+        "retained_inventory_count": 3,
+        "ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 1
+        },
+        "clearing_plus_ignited_annotation_count": {
+          "lower": 1,
+          "upper": 1
+        }
+      },
+      "fuel": {
+        "available": true,
+        "basis": "pyrolysable_fuel;mass_depletion_not_structural_damage",
+        "initial_post_intervention_kg": 30344705.080470473,
+        "remaining_kg": 30219121.47611852,
+        "fire_depleted_kg": 125583.60435195653,
+        "roof_fire_depleted_kg": 118785.33499085232,
+        "nonroof_fire_depleted_kg": 6798.269361104207,
+        "actively_burning_remaining_kg": 28584.770732527,
+        "planned_removed_kg": 0.0,
+        "clearing_plus_fire_depleted_kg": 125583.60435195653
+      },
+      "fire_extinguished_at_observation": false,
+      "source_manifest_sha256": "5896dbcf363025ff29fb219cd674106ab1add812cfc40773fcf533c99db1f6fa"
+    }
+  ],
+  "scope": "full physical domain; annotation attribution bounds; not real structural destruction"
+}

@@ -1,0 +1,120 @@
+{
+  "common_physics_sha256": "7bb17badc17000448c088511d69e34ec6494cd971e7519c4dd8c62262d4c0577",
+  "complete_original_manifest_hashes_and_files_verified": [
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 113.12751824668793,
+      "invalid_reasons": [],
+      "manifest_sha256": "087173f133ac871d7475b3859c469cc6bd7da3f516adf6f6ecc238e70676eed4",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 113.12751824668791,
+      "invalid_reasons": [],
+      "manifest_sha256": "02277700d3b3c7cbcdfdd30eda735490713ada4c81e33e31c5b4af2d1ffd62ef",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 241.48854379824064,
+      "invalid_reasons": [],
+      "manifest_sha256": "312f77fbafbf3e9cbbbe658a6486a1ed61415e2035d6bd5fdd8fc1500cb414b1",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 241.48854379824064,
+      "invalid_reasons": [],
+      "manifest_sha256": "91f6ba44c33416d563d17b8b652700355eba982f0246ee64f03fe41a8e194512",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "area": 180.21842301902592,
+      "invalid_reasons": [],
+      "manifest_sha256": "d99e79f76c2c605f940a3c26119ea26d5fd7a47a2cb410f23ff9e254532f177b",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "area": 180.21842301902592,
+      "invalid_reasons": [],
+      "manifest_sha256": "90f1043698099fd2bdf693c4e4900b78c3b42cc93bea51378be15d785dbd2345",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 111.17746509794179,
+      "invalid_reasons": [],
+      "manifest_sha256": "3905a786c3774f1dcf80d7a542e3dd2daeb006a1f784a23f2af3c63d9f454084",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111",
+      "physically_terminal_complete": true
+    },
+    {
+      "N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "area": 111.17746509794178,
+      "invalid_reasons": [],
+      "manifest_sha256": "1edf0e08c102c5fbf35f392ad55b01ba3c7cd664378d83e0b0935b36c9a16d23",
+      "native_status": "passed",
+      "original_native_dir": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-last-scale-shard-20261111",
+      "physically_terminal_complete": true
+    }
+  ],
+  "main_eighth_duplicate_completed_at_accounting": false,
+  "native_experiment_sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+  "native_original_main_budget_snapshot": {
+    "active": {
+      "pid": 30235
+    },
+    "elapsed_s": 3364.63232770795,
+    "started_checks": 7
+  },
+  "native_original_shard_budget_snapshot": {
+    "active": null,
+    "elapsed_s": 629.1262672909652,
+    "started_checks": 1
+  },
+  "native_preflight_sha256": "983cd1fa5968bef9e2559d259b2bd0a6db3cba6f3c1037b9d7bbac449e0e48db",
+  "same_eight_predeclared_cases": true,
+  "schema_version": "unmodified-native-identical-seven-plus-one-handoff-1",
+  "started_attempts_combined": 8,
+  "strict_result_pending_full_state_reverification": true
+}

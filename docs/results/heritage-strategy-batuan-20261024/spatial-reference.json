@@ -1,0 +1,7 @@
+{
+  "input_crs": "EPSG:32649",
+  "geojson_crs": "EPSG:4326",
+  "geojson_axis_order": "longitude_latitude",
+  "area_calculation_crs": "EPSG:32649",
+  "clearance_is_vector_geometry_not_a_fire_safety_distance": true
+}

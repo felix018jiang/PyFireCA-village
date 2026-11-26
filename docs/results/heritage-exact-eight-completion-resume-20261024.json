@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "first_new_CA_checks": 60,
+  "resumed_new_CA_checks": 0,
+  "cumulative_new_checks": 60,
+  "parent_checks_reused": 48,
+  "same_proof_and_stage_results": true,
+  "budget_max_new_checks": 288,
+  "budget_preserved": true
+}

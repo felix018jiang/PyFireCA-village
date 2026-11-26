@@ -1,0 +1,10 @@
+{
+  "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-clockfix-batuan-20261111",
+  "pid": 11272,
+  "local_time": "2026-11-11T20:36:32.271729+08:00",
+  "D3_full_audit_sha256": "b1894ea5c58d71986a83f291495e1e5d53003aeccb08e5104d39810d34d4a90a",
+  "budget_sha256": "3c4acd721ee55e850df3b9539096f863f054392393d263a7b6325390544be3cf",
+  "started_without_refund": 9,
+  "purpose": "D3 complete; pending lower-priority trajectories kept in memory",
+  "resume": "SIGCONT after live process identity check"
+}

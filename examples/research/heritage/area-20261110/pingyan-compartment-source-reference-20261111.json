@@ -1,0 +1,68 @@
+{
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "cap_selection_rule": "prefix coverage uses only roof construction cost of heat-certified base, every new protected plan must retain its exact realized physical source",
+  "core_overlap_policy": "heritage_priority",
+  "fixed_source_ids": [],
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_mip_time_s": 1200.0,
+  "max_new_checks": 64,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "max_wall_time_s": 14400.0,
+  "minimum_free_disk_GB": 10.0,
+  "mip_call_time_limit_s": 60.0,
+  "new_independent_fire_draws": 0,
+  "parent_heat_model_sha256": "d91e51ac3c1659171b2567c3c0a8c026b9ef6a24f59ba867e80975cf3914952d",
+  "quadrature_spacing_m": 0.5,
+  "refinement_ids": [
+    "B0034",
+    "B0035",
+    "B0036",
+    "B0119",
+    "B0120",
+    "B0164",
+    "B0165",
+    "B0166",
+    "B0167",
+    "B0168",
+    "B0177",
+    "B0188",
+    "B0190"
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "schema_version": "heritage-area-master-config-1",
+  "scope": "geometry_only_reference_for_frozen_compartment_comparison;no_CA_or_search_requested",
+  "seed_plans": [],
+  "source_area_limit_m2": 2429.4875441747736,
+  "source_area_tolerance_m2": 1e-06,
+  "source_fires": [
+    {
+      "draw_id": "design-near-B0035-001",
+      "fire_id": "near-B0035",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0035-20261029.json"
+    },
+    {
+      "draw_id": "design-near-B0036-001",
+      "fire_id": "near-B0036",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0036-20261029.json"
+    },
+    {
+      "draw_id": "design-near-B0166-001",
+      "fire_id": "near-B0166",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0166-20261029.json"
+    },
+    {
+      "draw_id": "background-001",
+      "fire_id": "background",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-background-20261029.json"
+    }
+  ],
+  "source_policy": "area_bounded_retained_sources",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-study-20261029.json",
+  "village_id": "pingyan"
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "zero-heat-pingyan-eight-full-fire-endpoint-1",
+  "C_m2": 9765.173036443528,
+  "eight_design_checks": 8,
+  "independent_source_draws": 0,
+  "all_started_natively_and_artifact_hashes_verified": 64,
+  "strict_terminal": {
+    "observations": 8,
+    "worst_A_m2": 241.48854379824064,
+    "worst_N_bounds": [
+      1,
+      3
+    ]
+  },
+  "conditional_finite_domain": {
+    "observations": 8,
+    "worst_A_m2": 241.48854379824064,
+    "worst_N_bounds": [
+      1,
+      3
+    ]
+  },
+  "strict_by_mesh": {
+    "1.0": {
+      "observations": 4,
+      "worst_A_m2": 241.48854379824064,
+      "worst_N_bounds": [
+        1,
+        3
+      ]
+    },
+    "0.5": {
+      "observations": 4,
+      "worst_A_m2": 241.48854379824064,
+      "worst_N_bounds": [
+        1,
+        3
+      ]
+    }
+  },
+  "all_covered_by_theory": true,
+  "all_ignitions_remained_on_original_containment_roofs": false,
+  "peak_heritage_temperature_K": 300.0,
+  "peak_above_initial_ambient_K": 0.0,
+  "cumulative_heritage_incident_radiation_absorption_convection_and_release_J": 0.0,
+  "zero_core_heat_confirmed_for_all_heritage_and_8_native_checks": true,
+  "modeled_gis_and_physical_support_verified": true,
+  "physically_matched_zero_core_only_control": {
+    "matched_source_budgets_layout_and_quadrature": true,
+    "strict_combined_fire_closed": true,
+    "zero_core_only_burned_m2_lower_bound": 244.16941445475922,
+    "combined_full_burned_m2": 132.9160133560976,
+    "observed_same_case_burned_area_improvement_at_least_m2": 111.25340109866161,
+    "original_baseline_manifest_sha256": "fbdb3d04b309d427d304ea31ca65db9bcf6d146b9ac8d2620fa2782807cfcf5d",
+    "original_combined_manifest_sha256": "6d30df0a2c7afb32bb118f6811bf53fc927dea41dc0a9d157e39cab0b91f4e4a"
+  },
+  "native_budget_elapsed_s": 3268.0599428749993,
+  "original_manifests_combined_sha256": "aa9b6b96ca07f6dfb67b18bbca91398946086733687a94f0e8b1aa9ee443b91a",
+  "source_file_sha256": {
+    "geometry": "fc44fd9a1fac8ffb78707453fa78281448d8b4b5a21271557742e366fa41d9d4",
+    "independent": "95708d3eab8d8c83b0e8e5ffe2c926cd824cfda22d91fb5dfb3123a0981b8ca8",
+    "source_and_stages": "f2cc357fbbc2813a641f7e34986e5e40b0d176df13a78582060ee77ae893cdb4",
+    "baseline_prefix": "4f0e7156433d4c175f3bf8acca9f8a9bbbf95254cb237b3b9297265be82cf36d",
+    "experiment": "d8cd683a73dc25fac04277dd7592aef24d96ac3c3ffb1d7f178676a3a66785c8",
+    "native_preflight": "a0396888c8ba504f5d2ee748c727cb707aef537cd20d0c189aea5367173075db",
+    "native_budget": "a007b5cb7e2fe7a3dcde9ce37c8872259f3642e4c1cea7ba3951d98d5d9f3550",
+    "config": "61a131d77c2eb07590fa50785ccfec171aa220fd93b207d64870d1bff225eadf",
+    "roof_geometry_equivalence": "5a576b933761670760e6008d543053a48dc9856ab33209e26a78686d68b2d5e0"
+  },
+  "method_sha256": "0406f2db8f511146ad39b7643100664740659d5d267245b47cd8345b2eb0a69d",
+  "receipt_sha256": "30ae306f3eebd383d7a56981054ca0e6aff74be1b37065cba33f581434fd5283"
+}

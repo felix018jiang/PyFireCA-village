@@ -1,0 +1,1039 @@
+{
+  "schema_version": "heritage-area-numerics-audit-1",
+  "audited_experiment": "runs/research/heritage-area-numerics-20261110-v2/experiment.json",
+  "audited_experiment_file_sha256": "67b8a40541ae9f74b750e667c488dd7e729605d9205c6cb692e0eb2f298ee56a",
+  "audit_script": "/tmp/audit_heritage_area_numerics_20261110.py",
+  "new_CA_checks": 0,
+  "job_count": 6,
+  "all_source_snapshot_files_match": true,
+  "all_referenced_inputs_match": true,
+  "all_runs_full_valid_3600_s": true,
+  "all_same_source_footprint": true,
+  "initial_source_budget_area_range_m2": [
+    25.00000003280681,
+    25.000000033218676
+  ],
+  "all_terminal_losses_closed": false,
+  "reference_for_layout_comparison": "h05-dt05",
+  "interpretation": {
+    "purpose": "mechanism/numerical sensitivity under one fixed source and no intervention;not strategy optimization or independent fire sampling",
+    "dt": "h1-dt05 and h05-dt05 use dt0.5;other four diagnostics use dt1;the matched Nov3 dt1 q0.5 baseline supplies a same-support dt1 reference",
+    "support": "changing thermal support changes within-source contact propagation and HRR history;these are alternative model supports,not a demonstrated convergent discretization",
+    "phase": "half-cell phase changes support layout,not only time integration",
+    "source025": "at 3600 s source roof is incompletely ignited and still burning;smaller observed area means delayed modeled spread,not terminal safety improvement",
+    "receiver025": "adds B0121 to refinement and changes its thermal support;not a quadrature-only change",
+    "quadrature025": "against matched Nov3 dt1 q0.5 archive, all saved layout arrays and freshly reconstructed nonradiative native inputs/support/ignition events are equal and thermal solver source unchanged;B0121 solver-step historical peak changes by -0.0178533 K;source last ignition is unchanged and individual source-node ignition times differ by at most 2 s;quadrature refinement does not resolve the thermal-support dependence in this case",
+    "closure": "reached 3600 s is a protection-horizon observation,not extinction;active-fire outputs cannot establish final burned area or final building loss",
+    "damage": "covered roof fuel burnout is not proof of structural whole-building destruction",
+    "HRR": "peak is sampled at 12 s intervals;not an exact solver-step peak"
+  },
+  "rows": [
+    {
+      "job_id": "h1-dt05",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h1-dt05/evaluations/460e1e8fe26430fabe06a808482238c6d16e32f697a809aa5d73ab9d645ccd3b",
+      "problem_sha256": "5b0e8a8c415d4f9ca6b50da243957962ae075db561de443fbe80b43475320fce",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 1.0,
+      "max_dt_s": 0.5,
+      "quadrature_spacing_m": 0.5,
+      "phase_fraction": [
+        0,
+        0
+      ],
+      "cell_size_by_id": {},
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.00000003280681,
+        "initial_dry_fuel_mass_kg": 450.0000005905226,
+        "available_energy_J": 4390200005.761138
+      },
+      "independent_initial_ignited_source_area_m2": 25.00000003280681,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.0000003543135,
+      "modeled_source_roof_area_m2": 113.12751824668793,
+      "source_ignited_area_at_3600_m2": 113.12751824668793,
+      "source_burned_out_area_at_3600_m2": 113.12751824668793,
+      "source_active_area_at_3600_m2": 0.0,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 1287.5,
+      "source_entire_roof_ignited": true,
+      "source_latest_observed_burnout_s": 2102.8600000000006,
+      "source_entire_roof_burned_out": true,
+      "source_released_energy_J": 19866097224.2642,
+      "sampled_source_peak_hrr_W": 16609085.348223424,
+      "sampled_source_peak_hrr_time_s": 1320.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": 522.5,
+        "B0119": 981.5,
+        "B0035": 1562.5
+      },
+      "core_status_at_requested_horizon": "failed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": true,
+          "first_ignition_s": 1562.5
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 223,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.0815250445,
+          "retained_covered_area_m2": 6745234.0815250445,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 8884.070094807365,
+          "cumulative_burned_out_covered_area_m2": 7529.095895145113,
+          "active_burning_covered_area_m2": 1354.9741996622506,
+          "ignited_node_count": 1142,
+          "active_burning_node_count": 223,
+          "clearing_plus_ignited_union_area_m2": 8884.070094807365,
+          "clearing_plus_burned_out_union_area_m2": 7529.095895145113
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 2259.0700948073636,
+          "cumulative_burned_out_covered_area_m2": 1454.095895145113,
+          "active_burning_covered_area_m2": 804.9741996622507,
+          "ignited_node_count": 877,
+          "active_burning_node_count": 201,
+          "clearing_plus_ignited_union_area_m2": 2259.0700948073636,
+          "clearing_plus_burned_out_union_area_m2": 1454.095895145113
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 6625.0,
+          "cumulative_burned_out_covered_area_m2": 6075.0,
+          "active_burning_covered_area_m2": 550.0,
+          "ignited_node_count": 265,
+          "active_burning_node_count": 22,
+          "clearing_plus_ignited_union_area_m2": 6625.0,
+          "clearing_plus_burned_out_union_area_m2": 6075.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 291670,
+      "radiation_edges": 7973388,
+      "solve_s": 200.5458980409894,
+      "layout_array_sha256": {
+        "physical_cell_id": "e8843962f02d443fa6f3d26c9d05e9cd6c179d2f41bd16c2b3f0cf799f3fac95",
+        "xy_m": "59c51467b4756af9ef48cdf622303efb916baf13ea1096f22eaa6424b2c2f669",
+        "component_id": "b69791e201eaad7578e0f7669752be0eff347082e7dbc62ec4bc5ae935957c4e",
+        "area_fraction": "614dfc301e83c43503b655313c120f78aa3dc747692f7c4c07dbc411ce2db20f",
+        "covered_area_m2": "c06fca373dd09346a1d99d380b88fa6fe32f70d5cb0d112040626853bcb9363b",
+        "owner_offsets": "60c9c1987a3da77c87246f77ee3ad5a665e56740c0a7f39d1f19a6c7a38ac922",
+        "owner_ids": "be300e3f65070bafe89269eb8bf056c1bbe2fa0f2e1aae84b3534174691c17e9",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": false,
+      "changed_saved_layout_arrays_vs_h05_dt05": [
+        "physical_cell_id",
+        "xy_m",
+        "component_id",
+        "area_fraction",
+        "covered_area_m2",
+        "owner_offsets",
+        "owner_ids"
+      ],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.921625990608,
+        "B0121": 519.9860965139522,
+        "B0119": 519.9630965556439,
+        "B0035": 519.9738382944328
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.9881291473502,
+        "B0121": 519.9860965139522,
+        "B0119": 519.997127513703,
+        "B0035": 519.9993891446478
+      }
+    },
+    {
+      "job_id": "h05-dt05",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h05-dt05/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+      "problem_sha256": "3b16e123cbb80bf488e20da601d409b6ec49f557e5f2a6a68eb6e64c5119f462",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 0.5,
+      "max_dt_s": 0.5,
+      "quadrature_spacing_m": 0.5,
+      "phase_fraction": [
+        0,
+        0
+      ],
+      "cell_size_by_id": {},
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.000000033019035,
+        "initial_dry_fuel_mass_kg": 450.00000059434257,
+        "available_energy_J": 4390200005.798407
+      },
+      "independent_initial_ignited_source_area_m2": 25.000000033019035,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.00000035660565,
+      "modeled_source_roof_area_m2": 113.12751824668791,
+      "source_ignited_area_at_3600_m2": 113.12751824668791,
+      "source_burned_out_area_at_3600_m2": 113.12751824668791,
+      "source_active_area_at_3600_m2": 0.0,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 2320.86,
+      "source_entire_roof_ignited": true,
+      "source_latest_observed_burnout_s": 3136.2200000000003,
+      "source_entire_roof_burned_out": true,
+      "source_released_energy_J": 19866097224.264313,
+      "sampled_source_peak_hrr_W": 10413430.653593795,
+      "sampled_source_peak_hrr_time_s": 516.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": null,
+        "B0119": null,
+        "B0035": null
+      },
+      "core_status_at_requested_horizon": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 0,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 302228,
+      "radiation_edges": 26568352,
+      "solve_s": 409.5699337910046,
+      "layout_array_sha256": {
+        "physical_cell_id": "2773323df11746c949e11e34466db3c21d502e20272ddb97eef4d6a4373818b5",
+        "xy_m": "8ef429c4fcab5e8c95903162c99992214cc3aba83dd078d68fa2ad81c470ab6e",
+        "component_id": "20f333277e421de5cf1daf13014dbbb6c745fce69cdcc2e460bef08d51580c59",
+        "area_fraction": "9795516f6618eb99afc136881e30c539d22ebe9458f5ccda55eedf3ecb8dd7d6",
+        "covered_area_m2": "6355a9377611772c56ca36d6ddadb8e8d8407199161306d7ba8e1bd5f6af1b40",
+        "owner_offsets": "1b910abfd870141e249c9bd6f8612dbcfcdc6d776a7fac90f11643ff6e0ad0dd",
+        "owner_ids": "c7b462e4e49a4c89303c5e43879f59bafbf3963e2dae9627857675048a182b17",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": true,
+      "changed_saved_layout_arrays_vs_h05_dt05": [],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.9877708148465,
+        "B0121": 516.6019299431865,
+        "B0119": 488.978160287305,
+        "B0035": 316.3712528930167
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.9999855625423,
+        "B0121": 516.6076341277201,
+        "B0119": 488.9844054229013,
+        "B0035": 316.37179548979844
+      }
+    },
+    {
+      "job_id": "h05-phase-half",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h05-phase-half/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+      "problem_sha256": "35ef074eb41a7673c065dff05b66df723db77bcd89812e7034611fc53cb2b95d",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 0.5,
+      "max_dt_s": 1.0,
+      "quadrature_spacing_m": 0.5,
+      "phase_fraction": [
+        0.5,
+        0.5
+      ],
+      "cell_size_by_id": {},
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.000000033218676,
+        "initial_dry_fuel_mass_kg": 450.00000059793615,
+        "available_energy_J": 4390200005.833465
+      },
+      "independent_initial_ignited_source_area_m2": 25.000000033218676,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.00000035876167,
+      "modeled_source_roof_area_m2": 113.12751824668791,
+      "source_ignited_area_at_3600_m2": 113.12751824668791,
+      "source_burned_out_area_at_3600_m2": 113.12751824668791,
+      "source_active_area_at_3600_m2": 0.0,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 2750.0800000000004,
+      "source_entire_roof_ignited": true,
+      "source_latest_observed_burnout_s": 3565.4400000000005,
+      "source_entire_roof_burned_out": true,
+      "source_released_energy_J": 19866097224.264282,
+      "sampled_source_peak_hrr_W": 10090571.909170609,
+      "sampled_source_peak_hrr_time_s": 516.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": null,
+        "B0119": null,
+        "B0035": null
+      },
+      "core_status_at_requested_horizon": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 0,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 631,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 631,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 305089,
+      "radiation_edges": 35930756,
+      "solve_s": 581.4297962909914,
+      "layout_array_sha256": {
+        "physical_cell_id": "5f37f372ecc1e0f19cf17b82229cbc6249ad75f188163fe1e6008b793a273704",
+        "xy_m": "0663d4dcd92af8809e5ae8df440d3810a29b21d131f04e8bdf2f6cb3c455f55f",
+        "component_id": "09807a57c04065c8aa22af46320be1ca397d1e4077c3dbfbbbc8d4c8a6e717c7",
+        "area_fraction": "81e7d925aef5c614f77a34bd24728c36abd33baf0d5c030f11ebeac1aebd1cbc",
+        "covered_area_m2": "917b071951948e25ddc81d2d2f589a6bd17bb8304a99cc5e6e24ef79cef7adf5",
+        "owner_offsets": "accf30d59398f10050167442756da3d28ba35527fbd790eb95b14d1bb7a4895b",
+        "owner_ids": "75238d674e6aa1a0a17609ad20752d33d9083442f531484c519d8f49ca2513cd",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": false,
+      "changed_saved_layout_arrays_vs_h05_dt05": [
+        "physical_cell_id",
+        "xy_m",
+        "component_id",
+        "area_fraction",
+        "covered_area_m2",
+        "owner_offsets",
+        "owner_ids"
+      ],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.9882806300436,
+        "B0121": 513.8423648336945,
+        "B0119": 487.2803991244006,
+        "B0035": 313.96479989301855
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.9995970374507,
+        "B0121": 513.8747458393545,
+        "B0119": 487.32558839263567,
+        "B0035": 313.96499508781477
+      }
+    },
+    {
+      "job_id": "h05-source025",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h05-source025/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+      "problem_sha256": "4323710958c3eda8f6af9e9a7cc03a97f5b703dec144854bf5ebcd11c55e7ae2",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 0.5,
+      "max_dt_s": 1.0,
+      "quadrature_spacing_m": 0.5,
+      "phase_fraction": [
+        0,
+        0
+      ],
+      "cell_size_by_id": {
+        "B0120": 0.25
+      },
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.00000003315884,
+        "initial_dry_fuel_mass_kg": 450.0000005968591,
+        "available_energy_J": 4390200005.822958
+      },
+      "independent_initial_ignited_source_area_m2": 25.00000003315884,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.0000003581155,
+      "modeled_source_roof_area_m2": 113.1275182466879,
+      "source_ignited_area_at_3600_m2": 86.60424485838769,
+      "source_burned_out_area_at_3600_m2": 72.81270738006384,
+      "source_active_area_at_3600_m2": 13.791537478323844,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 3594.0,
+      "source_entire_roof_ignited": false,
+      "source_latest_observed_burnout_s": 3599.36,
+      "source_entire_roof_burned_out": false,
+      "source_released_energy_J": 14053029821.856256,
+      "sampled_source_peak_hrr_W": 9290583.825771613,
+      "sampled_source_peak_hrr_time_s": 516.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": null,
+        "B0119": null,
+        "B0035": null
+      },
+      "core_status_at_requested_horizon": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 229,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 86.60424485838769,
+          "cumulative_burned_out_covered_area_m2": 72.81270738006384,
+          "active_burning_covered_area_m2": 13.791537478323844,
+          "ignited_node_count": 1527,
+          "active_burning_node_count": 229,
+          "clearing_plus_ignited_union_area_m2": 86.60424485838769,
+          "clearing_plus_burned_out_union_area_m2": 72.81270738006384
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 86.60424485838769,
+          "cumulative_burned_out_covered_area_m2": 72.81270738006384,
+          "active_burning_covered_area_m2": 13.791537478323844,
+          "ignited_node_count": 1527,
+          "active_burning_node_count": 229,
+          "clearing_plus_ignited_union_area_m2": 86.60424485838769,
+          "clearing_plus_burned_out_union_area_m2": 72.81270738006384
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 303670,
+      "radiation_edges": 31604606,
+      "solve_s": 507.386616957956,
+      "layout_array_sha256": {
+        "physical_cell_id": "a299285c1925d2c299e00721cc1966d6f259ebd68ec981fc2861093069be0404",
+        "xy_m": "2b61326614c92cba2a2aefee78ca60974c22d84c11ae7a1f6d2b39e27768b06d",
+        "component_id": "c9beeb9e539efb34a74346d73d3dfa37c1fe120903f0b12083232f359c45f99f",
+        "area_fraction": "c28e26357886992fc6783d12126b36687307a475a286a131be779f03c7378d51",
+        "covered_area_m2": "b17322813a60dd09227f7cb4419a3a0315d1a7d88feb76649ca23e6131b96131",
+        "owner_offsets": "02071b6810775eb829caefb7bee3ded1c105fc8d510f2b8e3097712d31e5d84c",
+        "owner_ids": "826f19c099fcaa2ddc8aaeead834a51de0a6ceb815efe086ab7c4cb85ae31645",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": false,
+      "changed_saved_layout_arrays_vs_h05_dt05": [
+        "physical_cell_id",
+        "xy_m",
+        "component_id",
+        "area_fraction",
+        "covered_area_m2",
+        "owner_offsets",
+        "owner_ids"
+      ],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.9561836200375,
+        "B0121": 500.0032386074719,
+        "B0119": 477.6206914024794,
+        "B0035": 305.73120855482455
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.9996113353722,
+        "B0121": 500.03418035700554,
+        "B0119": 477.64128505237875,
+        "B0035": 305.7312386083722
+      }
+    },
+    {
+      "job_id": "h05-receiver025",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h05-receiver025/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+      "problem_sha256": "e2731b60e0eed9df80ea0e96a0af1e94b49be93206a13b75ebdf532ebe345eb9",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 0.5,
+      "max_dt_s": 1.0,
+      "quadrature_spacing_m": 0.5,
+      "phase_fraction": [
+        0,
+        0
+      ],
+      "cell_size_by_id": {
+        "B0121": 0.25
+      },
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0121",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.000000033019035,
+        "initial_dry_fuel_mass_kg": 450.00000059434257,
+        "available_energy_J": 4390200005.798407
+      },
+      "independent_initial_ignited_source_area_m2": 25.000000033019035,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.00000035660565,
+      "modeled_source_roof_area_m2": 113.12751824668791,
+      "source_ignited_area_at_3600_m2": 113.12751824668791,
+      "source_burned_out_area_at_3600_m2": 113.12751824668791,
+      "source_active_area_at_3600_m2": 0.0,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 2328.36,
+      "source_entire_roof_ignited": true,
+      "source_latest_observed_burnout_s": 3143.7200000000003,
+      "source_entire_roof_burned_out": true,
+      "source_released_energy_J": 19866097224.264282,
+      "sampled_source_peak_hrr_W": 10407802.298957007,
+      "sampled_source_peak_hrr_time_s": 516.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": null,
+        "B0119": null,
+        "B0035": null
+      },
+      "core_status_at_requested_horizon": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 0,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 304915,
+      "radiation_edges": 36375042,
+      "solve_s": 596.8278903339524,
+      "layout_array_sha256": {
+        "physical_cell_id": "903043736277d0f31ee784c957bc168e9e7516f90d55279da0f8590b5c37be3c",
+        "xy_m": "40106e02206d5ff1f87ecc25ba9ed09cc098043b0407d345190b3370bbc30836",
+        "component_id": "835072813de2552c7a0cc7372cb72dfbd811518eef725e1cf3870d13840c83d8",
+        "area_fraction": "7527a357da6cbe0a6961cb5edc8be9f7714f8e6d3771c47ad3776d4e429078d9",
+        "covered_area_m2": "f839f85cd3fbb6c01bffa2539fc48aa276415080df50479e2279b6ad9ac68fbd",
+        "owner_offsets": "0063988bea8034e31e833fefa414f9376ef673b96679736dac8df47289e64a3a",
+        "owner_ids": "e6768877f00cd207179f1e0fd54867b82c2ae610139778ab980caa377b05ce82",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": false,
+      "changed_saved_layout_arrays_vs_h05_dt05": [
+        "physical_cell_id",
+        "xy_m",
+        "component_id",
+        "area_fraction",
+        "covered_area_m2",
+        "owner_offsets",
+        "owner_ids"
+      ],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.993159116624,
+        "B0121": 516.5216001544002,
+        "B0119": 488.95390377205484,
+        "B0035": 316.3210893056393
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.994961441678,
+        "B0121": 516.5303193585987,
+        "B0119": 488.95762045368406,
+        "B0035": 316.3210893056393
+      }
+    },
+    {
+      "job_id": "h05-quadrature025",
+      "artifact_directory": "runs/research/heritage-area-numerics-20261110-v2/h05-quadrature025/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+      "problem_sha256": "b46ba414cf05e2e62fff8c0f04829da30ec6ecc3ab74179741ba06e0f0286ed6",
+      "manifest_problem_matches_experiment": true,
+      "all_manifest_files_sha256_match": true,
+      "evaluation_hash_matches_check": true,
+      "evaluation_case_matches_problem": true,
+      "demolished_ids": [],
+      "scale_m": 0.5,
+      "max_dt_s": 1.0,
+      "quadrature_spacing_m": 0.25,
+      "phase_fraction": [
+        0,
+        0
+      ],
+      "cell_size_by_id": {},
+      "refined_ids": [
+        "B0034",
+        "B0035",
+        "B0036",
+        "B0119",
+        "B0120",
+        "B0165",
+        "B0166",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0188",
+        "B0190"
+      ],
+      "source_id": "B0120",
+      "source_replaced": false,
+      "source_footprint_sha256": "6783a5822d8067f4197498af9c84a1c5a5d9e8759e69ef86327f222414f85bee",
+      "reported_initial_source_budget": {
+        "covered_area_m2": 25.000000033019035,
+        "initial_dry_fuel_mass_kg": 450.00000059434257,
+        "available_energy_J": 4390200005.798407
+      },
+      "independent_initial_ignited_source_area_m2": 25.000000033019035,
+      "independent_initial_pyrolysable_source_fuel_kg": 270.00000035660565,
+      "modeled_source_roof_area_m2": 113.12751824668791,
+      "source_ignited_area_at_3600_m2": 113.12751824668791,
+      "source_burned_out_area_at_3600_m2": 113.12751824668791,
+      "source_active_area_at_3600_m2": 0.0,
+      "source_first_secondary_ignition_s": 136.0,
+      "source_latest_observed_ignition_s": 2328.36,
+      "source_entire_roof_ignited": true,
+      "source_latest_observed_burnout_s": 3143.7200000000003,
+      "source_entire_roof_burned_out": true,
+      "source_released_energy_J": 19866097224.264282,
+      "sampled_source_peak_hrr_W": 10406450.639119755,
+      "sampled_source_peak_hrr_time_s": 516.0,
+      "sampled_trace_interval_s": 12.0,
+      "selected_building_first_ignition_s": {
+        "B0120": 0.0,
+        "B0121": null,
+        "B0119": null,
+        "B0035": null
+      },
+      "core_status_at_requested_horizon": "passed",
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0036",
+          "ignited": false,
+          "first_ignition_s": null
+        },
+        {
+          "building_id": "B0166",
+          "ignited": false,
+          "first_ignition_s": null
+        }
+      ],
+      "invalid_reasons": [],
+      "requested_horizon_s": 3600.0,
+      "saved_final_time_s": 3600.0,
+      "reached_horizon_reported": true,
+      "all_checkpoints_valid": true,
+      "temporal_extinction_closure_present": false,
+      "final_active_node_count": 0,
+      "fire_loss_physical": {
+        "all": {
+          "baseline_covered_area_m2": 6745234.081525044,
+          "retained_covered_area_m2": 6745234.081525044,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "roof": {
+          "baseline_covered_area_m2": 287884.0815250439,
+          "retained_covered_area_m2": 287884.0815250439,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 113.12751824668791,
+          "cumulative_burned_out_covered_area_m2": 113.12751824668791,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 545,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 113.12751824668791,
+          "clearing_plus_burned_out_union_area_m2": 113.12751824668791
+        },
+        "nonroof": {
+          "baseline_covered_area_m2": 6457350.0,
+          "retained_covered_area_m2": 6457350.0,
+          "cleared_covered_area_m2": 0.0,
+          "cumulative_ignited_covered_area_m2": 0.0,
+          "cumulative_burned_out_covered_area_m2": 0.0,
+          "active_burning_covered_area_m2": 0.0,
+          "ignited_node_count": 0,
+          "active_burning_node_count": 0,
+          "clearing_plus_ignited_union_area_m2": 0.0,
+          "clearing_plus_burned_out_union_area_m2": 0.0
+        },
+        "unknown_baseline_covered_area_m2": 0.0
+      },
+      "nodes": 302228,
+      "radiation_edges": 27129024,
+      "solve_s": 523.3542090000119,
+      "layout_array_sha256": {
+        "physical_cell_id": "2773323df11746c949e11e34466db3c21d502e20272ddb97eef4d6a4373818b5",
+        "xy_m": "8ef429c4fcab5e8c95903162c99992214cc3aba83dd078d68fa2ad81c470ab6e",
+        "component_id": "20f333277e421de5cf1daf13014dbbb6c745fce69cdcc2e460bef08d51580c59",
+        "area_fraction": "9795516f6618eb99afc136881e30c539d22ebe9458f5ccda55eedf3ecb8dd7d6",
+        "covered_area_m2": "6355a9377611772c56ca36d6ddadb8e8d8407199161306d7ba8e1bd5f6af1b40",
+        "owner_offsets": "1b910abfd870141e249c9bd6f8612dbcfcdc6d776a7fac90f11643ff6e0ad0dd",
+        "owner_ids": "c7b462e4e49a4c89303c5e43879f59bafbf3963e2dae9627857675048a182b17",
+        "physical_grid_shape": "7a6dda9515a3e2fa70ca38680ad610a3d87d40fcfe38cde1309e60def2c85aa3"
+      },
+      "snapshot_and_case_inputs_immutable": true,
+      "same_saved_layout_as_h05_dt05": true,
+      "changed_saved_layout_arrays_vs_h05_dt05": [],
+      "selected_building_sampled_peak_valid_temperature_K": {
+        "B0120": 519.9829581482783,
+        "B0121": 516.5042617176285,
+        "B0119": 487.5286793481158,
+        "B0035": 316.1493869780308
+      },
+      "selected_building_historical_solver_peak_valid_temperature_K": {
+        "B0120": 519.9983835667085,
+        "B0121": 516.51246610795,
+        "B0119": 487.5704032217449,
+        "B0035": 316.1500225474457
+      }
+    }
+  ],
+  "matched_dt1_quadrature_reference": {
+    "artifact_directory": "runs/research/heritage-followup-pingyan-20261103/evaluations/3dc3e1ee88fcdcf3fc68181157016eaac7440ecab7d008ba4a233e48eecd5747",
+    "problem_sha256": "18c96867a05cfc11259de12a4224b15445064612d346afc7123d8394b15a9c31",
+    "all_manifest_files_sha256_match": true,
+    "all_old_source_snapshot_files_match": true,
+    "parent_case_sha256_equal": true,
+    "saved_layout_arrays_bitwise_equal": {
+      "physical_cell_id": true,
+      "xy_m": true,
+      "component_id": true,
+      "area_fraction": true,
+      "covered_area_m2": true,
+      "owner_offsets": true,
+      "owner_ids": true,
+      "physical_grid_shape": true
+    },
+    "reconstructed_nonradiative_native_inputs_equal": {
+      "ignition_events": true,
+      "ignition_owner": true,
+      "node_inputs": true,
+      "nodes": true,
+      "parent_scenario": true,
+      "support_area_m2": true
+    },
+    "reconstruction_script": "/tmp/reconstruct_heritage_numeric_inputs_20261110.py",
+    "reconstruction_new_CA_checks": 0,
+    "reconstruction_built_radiation_graphs": false,
+    "village_physics_source_files_changed": [],
+    "roof_thermal_and_engine_source_sha256_equal": true,
+    "same_complete_roof_resolution_protocol": true,
+    "contact_edge_count_old": 891386,
+    "contact_edge_count_new": 891386,
+    "radiation_edge_count_old": 26568352,
+    "radiation_edge_count_new": 27129024,
+    "old_q_m": 0.5,
+    "new_q_m": 0.25,
+    "both_max_dt_s": 1,
+    "source_ignition_times_bitwise_equal": false,
+    "source_released_energy_difference_J": 0.0,
+    "B0121_maximum_valid_temperature_old_K": 516.5303193585987,
+    "B0121_maximum_valid_temperature_new_K": 516.51246610795,
+    "B0121_temperature_difference_K": -0.017853250648727226,
+    "physical_request_sha256_equal": false,
+    "source_conditions_sha256_equal": false,
+    "isolation_scope": "identical native nonradiative thermal arrays/support/ignition/events and identical physics source;declared quadrature graph changes;metadata problem and source-condition hashes intentionally differ",
+    "isolated_quadrature_contrast_established": true,
+    "radiation_graph_weights_recomputed_by_audit": false,
+    "source_ignition_time_max_abs_difference_s": 2.0,
+    "source_last_ignition_old_s": 2328.36,
+    "source_last_ignition_new_s": 2328.36,
+    "source_ignition_nodes_changed": 178
+  }
+}

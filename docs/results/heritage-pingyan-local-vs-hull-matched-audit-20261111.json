@@ -1,0 +1,60 @@
+{
+  "schema_version": "heritage-pingyan-hull-local-matched-closed-comparison-1",
+  "as_of_utc": "2026-11-11T10:58:17.726432+00:00",
+  "case_selection": "all_common_completed_observations_of_both_15.01m_plans_at_audit_time",
+  "planned_scenario_count_per_plan": 8,
+  "native_completed_by_arm": [
+    1,
+    7
+  ],
+  "matched_complete_count": 1,
+  "matched": [
+    {
+      "case_identity_hash": "7c94586533493328b548f42b04ad53040510cd774879b19000d8d40cf504258c",
+      "pairing_evidence_fields": [
+        "source_id",
+        "source_budget",
+        "source_footprint_sha256",
+        "common_layout_sha256",
+        "frozen_integrated_node_mask_sha256"
+      ],
+      "global_hull": {
+        "protected_ignition_count": 1,
+        "strict_status": "failed",
+        "C_m2": 19324.764785783027,
+        "N_burned_roof_original_owner_bounds": {
+          "lower": 44,
+          "upper": 46
+        },
+        "A_burned_covered_m2": 39845.481196392095,
+        "manifest": "runs/research/heritage-balanced-optimized-pingyan-20261111/evaluations/0212afade964dcd59ca4f7fe9ed919cfe8d1cf8d635b119fb799418bd30167bb/complete.json",
+        "manifest_sha256": "1d6caaf17943f2a02ceaf965a9c44a065680e926f01b8630e867ad7cf85da91a"
+      },
+      "local_union": {
+        "protected_ignition_count": 0,
+        "strict_status": "passed",
+        "C_m2": 10669.276972304711,
+        "N_burned_roof_original_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_covered_m2": 113.12751824668793,
+        "manifest": "runs/research/heritage-protected-union-pingyan-20261111/evaluations/7680d884e419cd86e1fc7df0503953178f960ee09fb5839a2dc22ea3f974e0ee/complete.json",
+        "manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00"
+      },
+      "clearing_saving_m2": 8655.487813478316,
+      "clearing_saving_fraction": 0.44789615342930555,
+      "within_paired_case_burned_area_reduction_fraction": 0.9971608444709427
+    }
+  ],
+  "generalization": "paired_case_differences_only; other_global_hull_scenarios_unobserved",
+  "projected_physical_protocol_sha256": "5d4ba4e91063075a83b6dc2f22140103e7ceb59d967e55cd6a28368c148d1d79",
+  "physical_runner_binding_sha256": "a4bfaca6e3d3496da786d9d9e5b0848ece4906853bfa5bec8346916430d6d278",
+  "common_non_solver_physical_sources_sha256": "90887836fe4cbcc923e530290e2dbbcfca2bdebc2073cc8844384bebb1792c7d",
+  "clock_compatibility_certificate_sha256": "a113f3937e68112df0c95e0edd5250086053360a0a6c28feaa9cee45153c66a5",
+  "verified_against_native_strict_reader": "scripts/summarize_heritage_joint_pareto.py",
+  "reader_sha256": "618d39866b509441c97c943e37e92dfe010ffd8722dd7cd2b4d2b0e3a19aa3a7",
+  "source_and_input_sha256_checked": true,
+  "raw_budget_or_native_values_modified": false,
+  "seal": "3a9bbd537862650217a75821d95b996304b070b02760f58f50c2342c1817c7aa"
+}

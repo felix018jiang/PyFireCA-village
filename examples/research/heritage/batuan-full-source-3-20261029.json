@@ -1,0 +1,2676 @@
+{
+  "schema_version": "heritage-random-sources-1",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "seed": 2026102403,
+  "rng": "numpy-PCG64;SHA256-keyed-per-draw-and-building",
+  "draws_per_stratum": 3,
+  "sampling": "frozen_preferred_priority_then_global_fallback;not_uniform_village_risk",
+  "source_condition": "one_fire_in_retained_eligible_village_buildings",
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "strata": {
+    "all_retained_sources": [
+      "B0001",
+      "B0002",
+      "B0003",
+      "B0004",
+      "B0005",
+      "B0006",
+      "B0007",
+      "B0008",
+      "B0009",
+      "B0010",
+      "B0011",
+      "B0012",
+      "B0013",
+      "B0014",
+      "B0015",
+      "B0016",
+      "B0017",
+      "B0018",
+      "B0019",
+      "B0020",
+      "B0021",
+      "B0022",
+      "B0023",
+      "B0024",
+      "B0025",
+      "B0026",
+      "B0027",
+      "B0028",
+      "B0029",
+      "B0030",
+      "B0031",
+      "B0032",
+      "B0033",
+      "B0034",
+      "B0035",
+      "B0036",
+      "B0037",
+      "B0038",
+      "B0039",
+      "B0040",
+      "B0041",
+      "B0042",
+      "B0043",
+      "B0044",
+      "B0045",
+      "B0046",
+      "B0047",
+      "B0048",
+      "B0049",
+      "B0050",
+      "B0051",
+      "B0052",
+      "B0053",
+      "B0054",
+      "B0055",
+      "B0056",
+      "B0057",
+      "B0058",
+      "B0059",
+      "B0060",
+      "B0061",
+      "B0062",
+      "B0063",
+      "B0064",
+      "B0065",
+      "B0066",
+      "B0067",
+      "B0068",
+      "B0069",
+      "B0070",
+      "B0071",
+      "B0072",
+      "B0074",
+      "B0075",
+      "B0076",
+      "B0077",
+      "B0078",
+      "B0079",
+      "B0080",
+      "B0081",
+      "B0082",
+      "B0083",
+      "B0084",
+      "B0085",
+      "B0087",
+      "B0088",
+      "B0089",
+      "B0090",
+      "B0091",
+      "B0092",
+      "B0093",
+      "B0094",
+      "B0095",
+      "B0096",
+      "B0097",
+      "B0098",
+      "B0099",
+      "B0100",
+      "B0101",
+      "B0102",
+      "B0103",
+      "B0104",
+      "B0105",
+      "B0106",
+      "B0107",
+      "B0108",
+      "B0109",
+      "B0110",
+      "B0111",
+      "B0112",
+      "B0113",
+      "B0114",
+      "B0115",
+      "B0116",
+      "B0117",
+      "B0118",
+      "B0119",
+      "B0121",
+      "B0122",
+      "B0123",
+      "B0124",
+      "B0125",
+      "B0126",
+      "B0127",
+      "B0128",
+      "B0129",
+      "B0130",
+      "B0131",
+      "B0132",
+      "B0133",
+      "B0134",
+      "B0135",
+      "B0136",
+      "B0137",
+      "B0138",
+      "B0139",
+      "B0140",
+      "B0141",
+      "B0142",
+      "B0143",
+      "B0144",
+      "B0145",
+      "B0146",
+      "B0147",
+      "B0148",
+      "B0150",
+      "B0151",
+      "B0152",
+      "B0153",
+      "B0154",
+      "B0155",
+      "B0156",
+      "B0157",
+      "B0158",
+      "B0159",
+      "B0160",
+      "B0161",
+      "B0162",
+      "B0163",
+      "B0164",
+      "B0165",
+      "B0166",
+      "B0167",
+      "B0168",
+      "B0169",
+      "B0170",
+      "B0171",
+      "B0172",
+      "B0173",
+      "B0174",
+      "B0175",
+      "B0176",
+      "B0177",
+      "B0178",
+      "B0179",
+      "B0180",
+      "B0181",
+      "B0182",
+      "B0183",
+      "B0184",
+      "B0185",
+      "B0186",
+      "B0187",
+      "B0188",
+      "B0189",
+      "B0190",
+      "B0191",
+      "B0192",
+      "B0193",
+      "B0194",
+      "B0195",
+      "B0196",
+      "B0197",
+      "B0198",
+      "B0199",
+      "B0200",
+      "B0201",
+      "B0202",
+      "B0203",
+      "B0204",
+      "B0205",
+      "B0206",
+      "B0207",
+      "B0208",
+      "B0209",
+      "B0210",
+      "B0211",
+      "B0212",
+      "B0213",
+      "B0214",
+      "B0215",
+      "B0216",
+      "B0217",
+      "B0218",
+      "B0219",
+      "B0220",
+      "B0221",
+      "B0222",
+      "B0223",
+      "B0224",
+      "B0225",
+      "B0226",
+      "B0227",
+      "B0228",
+      "B0229",
+      "B0230",
+      "B0231",
+      "B0232",
+      "B0233",
+      "B0234",
+      "B0235",
+      "B0236",
+      "B0237",
+      "B0238",
+      "B0239",
+      "B0240",
+      "B0241",
+      "B0242",
+      "B0243",
+      "B0244",
+      "B0245",
+      "B0246",
+      "B0247",
+      "B0248",
+      "B0249",
+      "B0250",
+      "B0251",
+      "B0252",
+      "B0253",
+      "B0254",
+      "B0255",
+      "B0256",
+      "B0257",
+      "B0258",
+      "B0259",
+      "B0260",
+      "B0261",
+      "B0262",
+      "B0263",
+      "B0264",
+      "B0265",
+      "B0266",
+      "B0267",
+      "B0268",
+      "B0269",
+      "B0270",
+      "B0271",
+      "B0272",
+      "B0273",
+      "B0274",
+      "B0275",
+      "B0276",
+      "B0277",
+      "B0278",
+      "B0279",
+      "B0280",
+      "B0281",
+      "B0282",
+      "B0283",
+      "B0284",
+      "B0285",
+      "B0286",
+      "B0287",
+      "B0288",
+      "B0289",
+      "B0290",
+      "B0291",
+      "B0292",
+      "B0293",
+      "B0294",
+      "B0295",
+      "B0296",
+      "B0297",
+      "B0298",
+      "B0299",
+      "B0300",
+      "B0301",
+      "B0302",
+      "B0303",
+      "B0304",
+      "B0305",
+      "B0306",
+      "B0307",
+      "B0308",
+      "B0309",
+      "B0310",
+      "B0311",
+      "B0312",
+      "B0313",
+      "B0314",
+      "B0315",
+      "B0316",
+      "B0317",
+      "B0318",
+      "B0319",
+      "B0320",
+      "B0321",
+      "B0322",
+      "B0323",
+      "B0324",
+      "B0325",
+      "B0326",
+      "B0327",
+      "B0328",
+      "B0329",
+      "B0330",
+      "B0331",
+      "B0332",
+      "B0333"
+    ]
+  },
+  "members": {
+    "B0001": {
+      "stratum": "background",
+      "unambiguous_area_m2": 173.65974829844092,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 130.40961720081225
+    },
+    "B0002": {
+      "stratum": "background",
+      "unambiguous_area_m2": 94.24727959529042,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 133.87734101273034
+    },
+    "B0003": {
+      "stratum": "background",
+      "unambiguous_area_m2": 166.43101412014983,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 131.89450392328507
+    },
+    "B0004": {
+      "stratum": "background",
+      "unambiguous_area_m2": 175.45836572725406,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 117.00339433641842
+    },
+    "B0005": {
+      "stratum": "background",
+      "unambiguous_area_m2": 165.22485825711834,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 117.52312742678563
+    },
+    "B0006": {
+      "stratum": "background",
+      "unambiguous_area_m2": 129.27853903948719,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 128.12364987919634
+    },
+    "B0007": {
+      "stratum": "background",
+      "unambiguous_area_m2": 41.260667505084065,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 118.34901800709982
+    },
+    "B0008": {
+      "stratum": "background",
+      "unambiguous_area_m2": 342.0863268039097,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 100.3377346626594
+    },
+    "B0009": {
+      "stratum": "background",
+      "unambiguous_area_m2": 172.0694486609518,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 97.95346805850059
+    },
+    "B0010": {
+      "stratum": "background",
+      "unambiguous_area_m2": 109.33154301766957,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 101.86515849003132
+    },
+    "B0011": {
+      "stratum": "background",
+      "unambiguous_area_m2": 79.56150019195542,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 115.07908057011976
+    },
+    "B0012": {
+      "stratum": "background",
+      "unambiguous_area_m2": 115.88170405763117,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 104.10176526109429
+    },
+    "B0013": {
+      "stratum": "background",
+      "unambiguous_area_m2": 132.75738861560757,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 113.73871336330681
+    },
+    "B0014": {
+      "stratum": "background",
+      "unambiguous_area_m2": 174.7841358992946,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 118.76469050925722
+    },
+    "B0015": {
+      "stratum": "background",
+      "unambiguous_area_m2": 326.511643797448,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 84.69784227611378
+    },
+    "B0016": {
+      "stratum": "background",
+      "unambiguous_area_m2": 234.09291010169278,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 76.95898447049511
+    },
+    "B0017": {
+      "stratum": "background",
+      "unambiguous_area_m2": 163.5059300211338,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 86.66249101129551
+    },
+    "B0018": {
+      "stratum": "background",
+      "unambiguous_area_m2": 221.5241632525923,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 68.39457761894855
+    },
+    "B0019": {
+      "stratum": "background",
+      "unambiguous_area_m2": 304.0065644621945,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 67.52010695733718
+    },
+    "B0020": {
+      "stratum": "background",
+      "unambiguous_area_m2": 499.18886359226326,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 56.59415384035651
+    },
+    "B0021": {
+      "stratum": "background",
+      "unambiguous_area_m2": 177.1053507895695,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 76.47920204166174
+    },
+    "B0022": {
+      "stratum": "background",
+      "unambiguous_area_m2": 68.679223865893,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 63.15057183470666
+    },
+    "B0023": {
+      "stratum": "background",
+      "unambiguous_area_m2": 99.21107891430044,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 52.97671676327675
+    },
+    "B0024": {
+      "stratum": "background",
+      "unambiguous_area_m2": 324.4946441251108,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 50.51040247203444
+    },
+    "B0025": {
+      "stratum": "background",
+      "unambiguous_area_m2": 202.56776862353232,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 41.28071008238653
+    },
+    "B0026": {
+      "stratum": "background",
+      "unambiguous_area_m2": 245.08849207824323,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 28.09029524963015
+    },
+    "B0027": {
+      "stratum": "background",
+      "unambiguous_area_m2": 200.82345613654823,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 40.90768713174783
+    },
+    "B0028": {
+      "stratum": "background",
+      "unambiguous_area_m2": 156.06587546935862,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 29.104492543061273
+    },
+    "B0029": {
+      "stratum": "background",
+      "unambiguous_area_m2": 292.2075887297279,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 29.97213267340436
+    },
+    "B0030": {
+      "stratum": "background",
+      "unambiguous_area_m2": 361.7114753939122,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 17.09227943676167
+    },
+    "B0031": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 388.1428512702262,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 5.036063503757587
+    },
+    "B0032": {
+      "stratum": "background",
+      "unambiguous_area_m2": 112.72387680604801,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 31.29101826217572
+    },
+    "B0033": {
+      "stratum": "background",
+      "unambiguous_area_m2": 94.16434410442925,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 78.38858691649511
+    },
+    "B0034": {
+      "stratum": "background",
+      "unambiguous_area_m2": 91.04293041153994,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 72.43697362200449
+    },
+    "B0035": {
+      "stratum": "background",
+      "unambiguous_area_m2": 65.12717769768706,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 75.00349461508274
+    },
+    "B0036": {
+      "stratum": "background",
+      "unambiguous_area_m2": 130.43004788079148,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 63.29347215090557
+    },
+    "B0037": {
+      "stratum": "background",
+      "unambiguous_area_m2": 131.53599029452525,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 61.98203078472981
+    },
+    "B0038": {
+      "stratum": "background",
+      "unambiguous_area_m2": 216.90775768313438,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 54.19970399941098
+    },
+    "B0039": {
+      "stratum": "background",
+      "unambiguous_area_m2": 95.78058425902007,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 45.1695601618142
+    },
+    "B0040": {
+      "stratum": "background",
+      "unambiguous_area_m2": 148.40932713313413,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 85.54489121030632
+    },
+    "B0041": {
+      "stratum": "background",
+      "unambiguous_area_m2": 166.61445462863838,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 63.681462104027545
+    },
+    "B0042": {
+      "stratum": "background",
+      "unambiguous_area_m2": 116.37024475556485,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 96.93006067394143
+    },
+    "B0043": {
+      "stratum": "background",
+      "unambiguous_area_m2": 129.88979228039148,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 43.811267930729
+    },
+    "B0044": {
+      "stratum": "background",
+      "unambiguous_area_m2": 146.1523573637278,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 77.325575662945
+    },
+    "B0045": {
+      "stratum": "background",
+      "unambiguous_area_m2": 156.28590532947663,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 86.6126222606274
+    },
+    "B0046": {
+      "stratum": "background",
+      "unambiguous_area_m2": 102.34551006842814,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 67.57405564893423
+    },
+    "B0047": {
+      "stratum": "background",
+      "unambiguous_area_m2": 58.344152739025816,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 52.28052750627397
+    },
+    "B0048": {
+      "stratum": "background",
+      "unambiguous_area_m2": 121.37733401579233,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 49.352239931238714
+    },
+    "B0049": {
+      "stratum": "background",
+      "unambiguous_area_m2": 338.4483815662915,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 68.49786922169355
+    },
+    "B0050": {
+      "stratum": "background",
+      "unambiguous_area_m2": 238.97452160506407,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 81.5529708924445
+    },
+    "B0051": {
+      "stratum": "background",
+      "unambiguous_area_m2": 191.63577632627803,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 47.98188313022459
+    },
+    "B0052": {
+      "stratum": "background",
+      "unambiguous_area_m2": 172.7613633064471,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 68.27039193843645
+    },
+    "B0053": {
+      "stratum": "background",
+      "unambiguous_area_m2": 129.6839843392984,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 53.351403711219284
+    },
+    "B0054": {
+      "stratum": "background",
+      "unambiguous_area_m2": 143.78373794253775,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 47.73597796121263
+    },
+    "B0055": {
+      "stratum": "background",
+      "unambiguous_area_m2": 112.76366874078155,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 40.6268601767838
+    },
+    "B0056": {
+      "stratum": "background",
+      "unambiguous_area_m2": 210.05012782225134,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 36.7715960365764
+    },
+    "B0057": {
+      "stratum": "background",
+      "unambiguous_area_m2": 242.45316323927406,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 37.73155715572236
+    },
+    "B0058": {
+      "stratum": "background",
+      "unambiguous_area_m2": 35.04862629813086,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 40.74567504228104
+    },
+    "B0059": {
+      "stratum": "background",
+      "unambiguous_area_m2": 97.64439022518825,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 33.24641381892636
+    },
+    "B0060": {
+      "stratum": "background",
+      "unambiguous_area_m2": 127.25379762088268,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 23.96040717573075
+    },
+    "B0061": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 197.84601345792404,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 4.309053091414644
+    },
+    "B0062": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 127.26243973494162,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 11.130339450081111
+    },
+    "B0063": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 54.13681624317701,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 6.872831890824957
+    },
+    "B0064": {
+      "stratum": "background",
+      "unambiguous_area_m2": 107.11710143486937,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 29.939704076398723
+    },
+    "B0065": {
+      "stratum": "background",
+      "unambiguous_area_m2": 110.20245379406877,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 32.05665530217862
+    },
+    "B0066": {
+      "stratum": "background",
+      "unambiguous_area_m2": 146.73553175520144,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 25.82931612903639
+    },
+    "B0067": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 176.41133973125253,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 12.585204821048597
+    },
+    "B0068": {
+      "stratum": "background",
+      "unambiguous_area_m2": 110.35880627028723,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 16.962739346236535
+    },
+    "B0069": {
+      "stratum": "background",
+      "unambiguous_area_m2": 222.743326047832,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 17.65301552028619
+    },
+    "B0070": {
+      "stratum": "background",
+      "unambiguous_area_m2": 196.90869426596768,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 35.845407040896454
+    },
+    "B0071": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 213.17081613681844,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 9.387264199358075
+    },
+    "B0072": {
+      "stratum": "background",
+      "unambiguous_area_m2": 79.38057648756347,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 31.29810499949883
+    },
+    "B0074": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 113.79916134136973,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 9.737900500118096
+    },
+    "B0075": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 82.60819032431837,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 5.801588023429711
+    },
+    "B0076": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 32.825139147476975,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 0.7822847407576603
+    },
+    "B0077": {
+      "stratum": "near-B0073",
+      "unambiguous_area_m2": 72.17113150270191,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 11.517281031771835
+    },
+    "B0078": {
+      "stratum": "background",
+      "unambiguous_area_m2": 69.46477054540776,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 17.528220900494983
+    },
+    "B0079": {
+      "stratum": "background",
+      "unambiguous_area_m2": 96.49826870939381,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 19.704935953654417
+    },
+    "B0080": {
+      "stratum": "background",
+      "unambiguous_area_m2": 81.85316453579424,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 25.15815808407716
+    },
+    "B0081": {
+      "stratum": "background",
+      "unambiguous_area_m2": 92.17552367037044,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 30.614856002409493
+    },
+    "B0082": {
+      "stratum": "background",
+      "unambiguous_area_m2": 97.16958931942786,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 38.18023536428246
+    },
+    "B0083": {
+      "stratum": "background",
+      "unambiguous_area_m2": 125.88252741188647,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 28.97455706444484
+    },
+    "B0084": {
+      "stratum": "background",
+      "unambiguous_area_m2": 62.507071392040224,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 52.75756721292541
+    },
+    "B0085": {
+      "stratum": "background",
+      "unambiguous_area_m2": 49.5349081763157,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 43.009884982353036
+    },
+    "B0087": {
+      "stratum": "background",
+      "unambiguous_area_m2": 348.5021727355182,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 92.8857975556919
+    },
+    "B0088": {
+      "stratum": "background",
+      "unambiguous_area_m2": 113.39927404385826,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 98.68856143557421
+    },
+    "B0089": {
+      "stratum": "background",
+      "unambiguous_area_m2": 269.42704772828176,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 96.96614168478254
+    },
+    "B0090": {
+      "stratum": "background",
+      "unambiguous_area_m2": 189.0361970568498,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 125.5954863124141
+    },
+    "B0091": {
+      "stratum": "background",
+      "unambiguous_area_m2": 366.7947901592914,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 115.43106399314595
+    },
+    "B0092": {
+      "stratum": "background",
+      "unambiguous_area_m2": 183.14519889052815,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 110.95938585044632
+    },
+    "B0093": {
+      "stratum": "background",
+      "unambiguous_area_m2": 349.9610451335205,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 143.97921979517537
+    },
+    "B0094": {
+      "stratum": "background",
+      "unambiguous_area_m2": 608.4531930704097,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 140.63124692659542
+    },
+    "B0095": {
+      "stratum": "background",
+      "unambiguous_area_m2": 140.60116563186875,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 122.0527867910033
+    },
+    "B0096": {
+      "stratum": "background",
+      "unambiguous_area_m2": 292.4361164337006,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 131.7110033346463
+    },
+    "B0097": {
+      "stratum": "background",
+      "unambiguous_area_m2": 180.6757359847748,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 170.7210869146568
+    },
+    "B0098": {
+      "stratum": "background",
+      "unambiguous_area_m2": 255.80766470390392,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 164.9456654067588
+    },
+    "B0099": {
+      "stratum": "background",
+      "unambiguous_area_m2": 89.61492681267381,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 115.59670358592312
+    },
+    "B0100": {
+      "stratum": "background",
+      "unambiguous_area_m2": 147.1793633306292,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 107.118866405863
+    },
+    "B0101": {
+      "stratum": "background",
+      "unambiguous_area_m2": 103.52383009086893,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 96.72861089728653
+    },
+    "B0102": {
+      "stratum": "background",
+      "unambiguous_area_m2": 78.64121360074898,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 105.5252246962469
+    },
+    "B0103": {
+      "stratum": "background",
+      "unambiguous_area_m2": 87.53234413914889,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 151.24968425341618
+    },
+    "B0104": {
+      "stratum": "background",
+      "unambiguous_area_m2": 148.52443265882516,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 150.5639667728086
+    },
+    "B0105": {
+      "stratum": "background",
+      "unambiguous_area_m2": 101.61607387442851,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 144.55312081358136
+    },
+    "B0106": {
+      "stratum": "background",
+      "unambiguous_area_m2": 517.6781247617911,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 79.14439142133274
+    },
+    "B0107": {
+      "stratum": "background",
+      "unambiguous_area_m2": 281.7521875891086,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 46.72562451896978
+    },
+    "B0108": {
+      "stratum": "background",
+      "unambiguous_area_m2": 145.55057737484844,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 38.83507685677362
+    },
+    "B0109": {
+      "stratum": "background",
+      "unambiguous_area_m2": 416.2352245908858,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 27.237337773369834
+    },
+    "B0110": {
+      "stratum": "background",
+      "unambiguous_area_m2": 90.00891123517219,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 50.76086187462379
+    },
+    "B0111": {
+      "stratum": "background",
+      "unambiguous_area_m2": 102.83995112401593,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 60.398821866422566
+    },
+    "B0112": {
+      "stratum": "background",
+      "unambiguous_area_m2": 127.50591212926125,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 67.76039058224718
+    },
+    "B0113": {
+      "stratum": "background",
+      "unambiguous_area_m2": 46.18961343545268,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 59.885814403644666
+    },
+    "B0114": {
+      "stratum": "background",
+      "unambiguous_area_m2": 213.91152166941527,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 63.74162018277603
+    },
+    "B0115": {
+      "stratum": "background",
+      "unambiguous_area_m2": 96.92682453975115,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 76.84728271266059
+    },
+    "B0116": {
+      "stratum": "background",
+      "unambiguous_area_m2": 72.15845941908593,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 86.2338585286024
+    },
+    "B0117": {
+      "stratum": "background",
+      "unambiguous_area_m2": 377.4144721882885,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 94.7106736343951
+    },
+    "B0118": {
+      "stratum": "background",
+      "unambiguous_area_m2": 129.44559637785093,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 89.60964618762398
+    },
+    "B0119": {
+      "stratum": "background",
+      "unambiguous_area_m2": 177.85656731508365,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 68.69100512858238
+    },
+    "B0121": {
+      "stratum": "background",
+      "unambiguous_area_m2": 167.38487887180898,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 93.33721587642088
+    },
+    "B0122": {
+      "stratum": "background",
+      "unambiguous_area_m2": 105.27691338989965,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 82.07261028460658
+    },
+    "B0123": {
+      "stratum": "background",
+      "unambiguous_area_m2": 171.31523391724352,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 86.17075432219809
+    },
+    "B0124": {
+      "stratum": "background",
+      "unambiguous_area_m2": 149.32916170929713,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 115.38829268789159
+    },
+    "B0125": {
+      "stratum": "background",
+      "unambiguous_area_m2": 74.26061221641366,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 117.53282573733398
+    },
+    "B0126": {
+      "stratum": "background",
+      "unambiguous_area_m2": 75.04220128535181,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 103.89966549861113
+    },
+    "B0127": {
+      "stratum": "background",
+      "unambiguous_area_m2": 81.95730859931592,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 110.90876991699717
+    },
+    "B0128": {
+      "stratum": "background",
+      "unambiguous_area_m2": 181.58026385640682,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 110.24908950138517
+    },
+    "B0129": {
+      "stratum": "background",
+      "unambiguous_area_m2": 98.45450078307996,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 109.72145795778687
+    },
+    "B0130": {
+      "stratum": "background",
+      "unambiguous_area_m2": 221.87224573356522,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 121.36337977384116
+    },
+    "B0131": {
+      "stratum": "background",
+      "unambiguous_area_m2": 135.82321195903515,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 107.61036783778752
+    },
+    "B0132": {
+      "stratum": "background",
+      "unambiguous_area_m2": 121.88390860102919,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 113.78665531161334
+    },
+    "B0133": {
+      "stratum": "background",
+      "unambiguous_area_m2": 200.58997510371393,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 128.35192506267146
+    },
+    "B0134": {
+      "stratum": "background",
+      "unambiguous_area_m2": 220.3545165741633,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 149.83300043334017
+    },
+    "B0135": {
+      "stratum": "background",
+      "unambiguous_area_m2": 140.4585095424085,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 152.23206561628757
+    },
+    "B0136": {
+      "stratum": "background",
+      "unambiguous_area_m2": 199.91000908903675,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 145.25265983821413
+    },
+    "B0137": {
+      "stratum": "background",
+      "unambiguous_area_m2": 131.57342434996045,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 123.36324178935112
+    },
+    "B0138": {
+      "stratum": "background",
+      "unambiguous_area_m2": 149.90276835453693,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 136.07470230982514
+    },
+    "B0139": {
+      "stratum": "background",
+      "unambiguous_area_m2": 172.87872971291594,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 146.96523587791322
+    },
+    "B0140": {
+      "stratum": "background",
+      "unambiguous_area_m2": 129.5335262959693,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 134.75345076164933
+    },
+    "B0141": {
+      "stratum": "background",
+      "unambiguous_area_m2": 134.71110758130064,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 167.57174712293633
+    },
+    "B0142": {
+      "stratum": "background",
+      "unambiguous_area_m2": 169.82151282428904,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 191.48949085834377
+    },
+    "B0143": {
+      "stratum": "background",
+      "unambiguous_area_m2": 202.28989014832058,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 168.36107531708254
+    },
+    "B0144": {
+      "stratum": "background",
+      "unambiguous_area_m2": 164.72176768884918,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 169.71449979142136
+    },
+    "B0145": {
+      "stratum": "background",
+      "unambiguous_area_m2": 232.71836942394077,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 170.29756246511784
+    },
+    "B0146": {
+      "stratum": "background",
+      "unambiguous_area_m2": 153.2473411516528,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 175.63095953941763
+    },
+    "B0147": {
+      "stratum": "background",
+      "unambiguous_area_m2": 217.84411279424324,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 160.31956523823027
+    },
+    "B0148": {
+      "stratum": "background",
+      "unambiguous_area_m2": 89.41553127529372,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 191.88810631912997
+    },
+    "B0150": {
+      "stratum": "background",
+      "unambiguous_area_m2": 149.8475110632675,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 204.48956505058888
+    },
+    "B0151": {
+      "stratum": "background",
+      "unambiguous_area_m2": 322.92540409531966,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 188.50404254504664
+    },
+    "B0152": {
+      "stratum": "background",
+      "unambiguous_area_m2": 368.6262904551868,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 225.03671842603754
+    },
+    "B0153": {
+      "stratum": "background",
+      "unambiguous_area_m2": 224.60745660081582,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 214.70828845091773
+    },
+    "B0154": {
+      "stratum": "background",
+      "unambiguous_area_m2": 187.21097647870596,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 239.4464718663533
+    },
+    "B0155": {
+      "stratum": "background",
+      "unambiguous_area_m2": 195.86075970192738,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 245.53336709279935
+    },
+    "B0156": {
+      "stratum": "background",
+      "unambiguous_area_m2": 383.73070243211026,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 214.63559016270503
+    },
+    "B0157": {
+      "stratum": "background",
+      "unambiguous_area_m2": 73.43632987038832,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 265.36888266705887
+    },
+    "B0158": {
+      "stratum": "background",
+      "unambiguous_area_m2": 86.9868891581362,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 245.81470526064012
+    },
+    "B0159": {
+      "stratum": "background",
+      "unambiguous_area_m2": 131.91146592300484,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 260.8815222616016
+    },
+    "B0160": {
+      "stratum": "background",
+      "unambiguous_area_m2": 172.88135990140592,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 278.0013832505199
+    },
+    "B0161": {
+      "stratum": "background",
+      "unambiguous_area_m2": 169.65152131674088,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 261.2073733747852
+    },
+    "B0162": {
+      "stratum": "background",
+      "unambiguous_area_m2": 112.64591325387269,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 211.7228061176722
+    },
+    "B0163": {
+      "stratum": "background",
+      "unambiguous_area_m2": 320.28784163336275,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 235.46801256689696
+    },
+    "B0164": {
+      "stratum": "background",
+      "unambiguous_area_m2": 188.1805952871703,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 220.8228199576635
+    },
+    "B0165": {
+      "stratum": "background",
+      "unambiguous_area_m2": 94.68526790761413,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 189.5366298285304
+    },
+    "B0166": {
+      "stratum": "background",
+      "unambiguous_area_m2": 133.10334788925087,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 229.8303706893894
+    },
+    "B0167": {
+      "stratum": "background",
+      "unambiguous_area_m2": 141.54514992554977,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 285.22418239926066
+    },
+    "B0168": {
+      "stratum": "background",
+      "unambiguous_area_m2": 138.83457838475047,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 278.081166780595
+    },
+    "B0169": {
+      "stratum": "background",
+      "unambiguous_area_m2": 132.64881863647165,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 264.0370864497918
+    },
+    "B0170": {
+      "stratum": "background",
+      "unambiguous_area_m2": 154.86226044069744,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 195.0180229399247
+    },
+    "B0171": {
+      "stratum": "background",
+      "unambiguous_area_m2": 87.5452075692684,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 150.2748195547299
+    },
+    "B0172": {
+      "stratum": "background",
+      "unambiguous_area_m2": 81.8504921705563,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 143.79884063945582
+    },
+    "B0173": {
+      "stratum": "background",
+      "unambiguous_area_m2": 271.58442304814855,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 126.82774186012
+    },
+    "B0174": {
+      "stratum": "background",
+      "unambiguous_area_m2": 154.6302680677269,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 116.79746671344161
+    },
+    "B0175": {
+      "stratum": "background",
+      "unambiguous_area_m2": 175.60122396760235,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 138.64389396830805
+    },
+    "B0176": {
+      "stratum": "background",
+      "unambiguous_area_m2": 118.05909975267717,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 147.26277934836588
+    },
+    "B0177": {
+      "stratum": "background",
+      "unambiguous_area_m2": 112.53437586312637,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 263.19002287371075
+    },
+    "B0178": {
+      "stratum": "background",
+      "unambiguous_area_m2": 149.1750008132639,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 250.59609797640996
+    },
+    "B0179": {
+      "stratum": "background",
+      "unambiguous_area_m2": 94.62453500758646,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 272.28309164806484
+    },
+    "B0180": {
+      "stratum": "background",
+      "unambiguous_area_m2": 107.31871598421996,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 249.2721678191715
+    },
+    "B0181": {
+      "stratum": "background",
+      "unambiguous_area_m2": 136.58817372737843,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 240.71385756905443
+    },
+    "B0182": {
+      "stratum": "background",
+      "unambiguous_area_m2": 145.0877489433799,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 251.61082246502136
+    },
+    "B0183": {
+      "stratum": "background",
+      "unambiguous_area_m2": 80.40598154633143,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 251.79608331103833
+    },
+    "B0184": {
+      "stratum": "background",
+      "unambiguous_area_m2": 302.15989894122475,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 258.9618133665691
+    },
+    "B0185": {
+      "stratum": "background",
+      "unambiguous_area_m2": 107.30513194012218,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 271.5649266215624
+    },
+    "B0186": {
+      "stratum": "background",
+      "unambiguous_area_m2": 88.0297010338239,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 265.72668080398637
+    },
+    "B0187": {
+      "stratum": "background",
+      "unambiguous_area_m2": 161.9355127070242,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 265.9243576919088
+    },
+    "B0188": {
+      "stratum": "background",
+      "unambiguous_area_m2": 191.07045086395075,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 285.0977172549878
+    },
+    "B0189": {
+      "stratum": "background",
+      "unambiguous_area_m2": 152.9923538953824,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 314.64992805072194
+    },
+    "B0190": {
+      "stratum": "background",
+      "unambiguous_area_m2": 169.65152131808483,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 309.6499014638338
+    },
+    "B0191": {
+      "stratum": "background",
+      "unambiguous_area_m2": 107.94460524743906,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 347.5348193755984
+    },
+    "B0192": {
+      "stratum": "background",
+      "unambiguous_area_m2": 143.4728296507714,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 340.6187122890381
+    },
+    "B0193": {
+      "stratum": "background",
+      "unambiguous_area_m2": 212.4893804069848,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 332.8084937637616
+    },
+    "B0194": {
+      "stratum": "background",
+      "unambiguous_area_m2": 197.9295278613943,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 345.74959874642786
+    },
+    "B0195": {
+      "stratum": "background",
+      "unambiguous_area_m2": 115.31365675841948,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 357.803143624739
+    },
+    "B0196": {
+      "stratum": "background",
+      "unambiguous_area_m2": 155.0322519434098,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 370.1261243222763
+    },
+    "B0197": {
+      "stratum": "background",
+      "unambiguous_area_m2": 213.16934642713375,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 385.7717730102399
+    },
+    "B0198": {
+      "stratum": "background",
+      "unambiguous_area_m2": 149.29926010789,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 397.5539988131604
+    },
+    "B0199": {
+      "stratum": "background",
+      "unambiguous_area_m2": 230.80307431613488,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 401.38776484786615
+    },
+    "B0200": {
+      "stratum": "background",
+      "unambiguous_area_m2": 103.54990003808562,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 407.08122420586204
+    },
+    "B0201": {
+      "stratum": "background",
+      "unambiguous_area_m2": 278.7332573695934,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 420.94210365911255
+    },
+    "B0202": {
+      "stratum": "background",
+      "unambiguous_area_m2": 233.90830995400262,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 332.9518001950227
+    },
+    "B0203": {
+      "stratum": "background",
+      "unambiguous_area_m2": 308.53458034544127,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 428.74374233085047
+    },
+    "B0204": {
+      "stratum": "background",
+      "unambiguous_area_m2": 172.11639813050675,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 444.5672260344285
+    },
+    "B0205": {
+      "stratum": "background",
+      "unambiguous_area_m2": 100.3799833041971,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 459.36079341828474
+    },
+    "B0206": {
+      "stratum": "background",
+      "unambiguous_area_m2": 386.3814803795166,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 465.49723859894914
+    },
+    "B0207": {
+      "stratum": "background",
+      "unambiguous_area_m2": 156.56217548555608,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 456.4476763403611
+    },
+    "B0208": {
+      "stratum": "background",
+      "unambiguous_area_m2": 164.6367719357831,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 487.7518407666784
+    },
+    "B0209": {
+      "stratum": "background",
+      "unambiguous_area_m2": 250.56747737632108,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 399.95220325316467
+    },
+    "B0210": {
+      "stratum": "background",
+      "unambiguous_area_m2": 220.56397686526347,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 415.3052232586177
+    },
+    "B0211": {
+      "stratum": "background",
+      "unambiguous_area_m2": 269.8644302618719,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 435.62798429072024
+    },
+    "B0212": {
+      "stratum": "background",
+      "unambiguous_area_m2": 380.3559909316447,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 421.61362908603894
+    },
+    "B0213": {
+      "stratum": "background",
+      "unambiguous_area_m2": 178.49107953955897,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 448.52907138778664
+    },
+    "B0214": {
+      "stratum": "background",
+      "unambiguous_area_m2": 812.9516426176093,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 456.8143561674757
+    },
+    "B0215": {
+      "stratum": "background",
+      "unambiguous_area_m2": 345.1998477888476,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 488.8352397983453
+    },
+    "B0216": {
+      "stratum": "background",
+      "unambiguous_area_m2": 319.9829985781163,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 503.0687110931618
+    },
+    "B0217": {
+      "stratum": "background",
+      "unambiguous_area_m2": 147.8926087611785,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 533.8975086742655
+    },
+    "B0218": {
+      "stratum": "background",
+      "unambiguous_area_m2": 214.98221839627024,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 521.4295116382397
+    },
+    "B0219": {
+      "stratum": "background",
+      "unambiguous_area_m2": 174.9237825763223,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 420.9707952169628
+    },
+    "B0220": {
+      "stratum": "background",
+      "unambiguous_area_m2": 97.83263536610288,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 412.5780379866631
+    },
+    "B0221": {
+      "stratum": "background",
+      "unambiguous_area_m2": 146.28429945823513,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 434.51357822260996
+    },
+    "B0222": {
+      "stratum": "background",
+      "unambiguous_area_m2": 177.05276174316975,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 443.37679888710824
+    },
+    "B0223": {
+      "stratum": "background",
+      "unambiguous_area_m2": 219.544027834854,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 454.221287139169
+    },
+    "B0224": {
+      "stratum": "background",
+      "unambiguous_area_m2": 321.69948905691257,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 464.9090919106533
+    },
+    "B0225": {
+      "stratum": "background",
+      "unambiguous_area_m2": 361.3214128047386,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 476.8618640771952
+    },
+    "B0226": {
+      "stratum": "background",
+      "unambiguous_area_m2": 358.7670698845424,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 501.0878252523544
+    },
+    "B0227": {
+      "stratum": "background",
+      "unambiguous_area_m2": 307.36880873732986,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 511.3113786755866
+    },
+    "B0228": {
+      "stratum": "background",
+      "unambiguous_area_m2": 136.50317797338835,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 546.6719793669712
+    },
+    "B0229": {
+      "stratum": "background",
+      "unambiguous_area_m2": 237.64812304705666,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 528.2344258259187
+    },
+    "B0230": {
+      "stratum": "background",
+      "unambiguous_area_m2": 256.53172925136397,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 512.3260699020333
+    },
+    "B0231": {
+      "stratum": "background",
+      "unambiguous_area_m2": 113.22522062738113,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 494.7077278010387
+    },
+    "B0232": {
+      "stratum": "background",
+      "unambiguous_area_m2": 476.16249962638517,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 482.83099951992904
+    },
+    "B0233": {
+      "stratum": "background",
+      "unambiguous_area_m2": 119.76463106311238,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 468.45252738074424
+    },
+    "B0234": {
+      "stratum": "background",
+      "unambiguous_area_m2": 301.74708138173577,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 457.92409629873924
+    },
+    "B0235": {
+      "stratum": "background",
+      "unambiguous_area_m2": 169.01032895452042,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 441.5342865722488
+    },
+    "B0236": {
+      "stratum": "background",
+      "unambiguous_area_m2": 310.26159429359495,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 447.62507641277426
+    },
+    "B0237": {
+      "stratum": "background",
+      "unambiguous_area_m2": 216.1017039982142,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 486.3188446945714
+    },
+    "B0238": {
+      "stratum": "background",
+      "unambiguous_area_m2": 320.8795961983893,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 475.09100245547467
+    },
+    "B0239": {
+      "stratum": "background",
+      "unambiguous_area_m2": 349.6627604842155,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 465.43527925715756
+    },
+    "B0240": {
+      "stratum": "background",
+      "unambiguous_area_m2": 155.8248085888196,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 502.2150353318352
+    },
+    "B0241": {
+      "stratum": "background",
+      "unambiguous_area_m2": 329.3592951741937,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 509.89172320344767
+    },
+    "B0242": {
+      "stratum": "background",
+      "unambiguous_area_m2": 112.2548330812667,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 503.5980126952875
+    },
+    "B0243": {
+      "stratum": "background",
+      "unambiguous_area_m2": 282.88010378822156,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 522.927650808845
+    },
+    "B0244": {
+      "stratum": "background",
+      "unambiguous_area_m2": 201.23089352114914,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 536.0070096043688
+    },
+    "B0245": {
+      "stratum": "background",
+      "unambiguous_area_m2": 130.04481171729617,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 495.6096932365855
+    },
+    "B0246": {
+      "stratum": "background",
+      "unambiguous_area_m2": 343.03878725551215,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 443.29972016578114
+    },
+    "B0247": {
+      "stratum": "background",
+      "unambiguous_area_m2": 111.16997735143661,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 427.05012302486386
+    },
+    "B0248": {
+      "stratum": "background",
+      "unambiguous_area_m2": 202.62830325922903,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 489.7966872250161
+    },
+    "B0249": {
+      "stratum": "background",
+      "unambiguous_area_m2": 367.8885469043969,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 519.9292318382971
+    },
+    "B0250": {
+      "stratum": "background",
+      "unambiguous_area_m2": 329.5121830293919,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 513.2505096207362
+    },
+    "B0251": {
+      "stratum": "background",
+      "unambiguous_area_m2": 365.3855202658103,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 506.56055260718693
+    },
+    "B0252": {
+      "stratum": "background",
+      "unambiguous_area_m2": 146.44141778686125,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 522.2828106176995
+    },
+    "B0253": {
+      "stratum": "background",
+      "unambiguous_area_m2": 196.5345747989199,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 152.05380276106663
+    },
+    "B0254": {
+      "stratum": "background",
+      "unambiguous_area_m2": 273.20953252295385,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 166.34575530277743
+    },
+    "B0255": {
+      "stratum": "background",
+      "unambiguous_area_m2": 117.43535193350175,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 174.05678373380061
+    },
+    "B0256": {
+      "stratum": "background",
+      "unambiguous_area_m2": 179.6321595022818,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 161.68797492861742
+    },
+    "B0257": {
+      "stratum": "background",
+      "unambiguous_area_m2": 217.79916231246204,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 170.9898577425778
+    },
+    "B0258": {
+      "stratum": "background",
+      "unambiguous_area_m2": 153.62528991513398,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 187.94429403017998
+    },
+    "B0259": {
+      "stratum": "background",
+      "unambiguous_area_m2": 208.585960532284,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 173.77797807336677
+    },
+    "B0260": {
+      "stratum": "background",
+      "unambiguous_area_m2": 88.94549689858478,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 194.99325075454533
+    },
+    "B0261": {
+      "stratum": "background",
+      "unambiguous_area_m2": 142.700719317508,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 200.72162352780057
+    },
+    "B0262": {
+      "stratum": "background",
+      "unambiguous_area_m2": 115.13038616823067,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 192.21414348407646
+    },
+    "B0263": {
+      "stratum": "background",
+      "unambiguous_area_m2": 108.48025556235548,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 201.8660297601532
+    },
+    "B0264": {
+      "stratum": "background",
+      "unambiguous_area_m2": 126.07539279595734,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 212.13149406056388
+    },
+    "B0265": {
+      "stratum": "background",
+      "unambiguous_area_m2": 185.1645741474007,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 220.36914852314834
+    },
+    "B0266": {
+      "stratum": "background",
+      "unambiguous_area_m2": 164.8966007978683,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 197.60232575776166
+    },
+    "B0267": {
+      "stratum": "background",
+      "unambiguous_area_m2": 140.7765550994734,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 179.8645017207766
+    },
+    "B0268": {
+      "stratum": "background",
+      "unambiguous_area_m2": 250.69606952338287,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 218.8416585273218
+    },
+    "B0269": {
+      "stratum": "background",
+      "unambiguous_area_m2": 123.818189845724,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 207.39448083090002
+    },
+    "B0270": {
+      "stratum": "background",
+      "unambiguous_area_m2": 182.21775015800637,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 224.7338185802659
+    },
+    "B0271": {
+      "stratum": "background",
+      "unambiguous_area_m2": 254.4287273591416,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 235.8466449163929
+    },
+    "B0272": {
+      "stratum": "background",
+      "unambiguous_area_m2": 126.06485411929143,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 240.47312995268183
+    },
+    "B0273": {
+      "stratum": "background",
+      "unambiguous_area_m2": 564.5118698482901,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 238.83908911810164
+    },
+    "B0274": {
+      "stratum": "background",
+      "unambiguous_area_m2": 210.44892489873814,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 244.14024791341197
+    },
+    "B0275": {
+      "stratum": "background",
+      "unambiguous_area_m2": 224.37263585965434,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 248.37601060658832
+    },
+    "B0276": {
+      "stratum": "background",
+      "unambiguous_area_m2": 154.61553666136987,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 255.9018869462888
+    },
+    "B0277": {
+      "stratum": "background",
+      "unambiguous_area_m2": 308.7850501966518,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 258.0159636915908
+    },
+    "B0278": {
+      "stratum": "background",
+      "unambiguous_area_m2": 313.1259527332335,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 260.48011118169313
+    },
+    "B0279": {
+      "stratum": "background",
+      "unambiguous_area_m2": 369.84424293610016,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 273.69199650389714
+    },
+    "B0280": {
+      "stratum": "background",
+      "unambiguous_area_m2": 141.38454763527,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 276.8617837627255
+    },
+    "B0281": {
+      "stratum": "background",
+      "unambiguous_area_m2": 177.2479567409885,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 267.175324141199
+    },
+    "B0282": {
+      "stratum": "background",
+      "unambiguous_area_m2": 233.98188349683699,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 269.70116422439366
+    },
+    "B0283": {
+      "stratum": "background",
+      "unambiguous_area_m2": 603.3039104524337,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 270.889667651102
+    },
+    "B0284": {
+      "stratum": "background",
+      "unambiguous_area_m2": 190.77562184831612,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 282.3915999707164
+    },
+    "B0285": {
+      "stratum": "background",
+      "unambiguous_area_m2": 234.20928738809351,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 307.23602216480487
+    },
+    "B0286": {
+      "stratum": "background",
+      "unambiguous_area_m2": 447.7061888126264,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 311.7366484161961
+    },
+    "B0287": {
+      "stratum": "background",
+      "unambiguous_area_m2": 189.39017796990885,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 312.0087282882522
+    },
+    "B0288": {
+      "stratum": "background",
+      "unambiguous_area_m2": 573.9356160384293,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 240.9236711500149
+    },
+    "B0289": {
+      "stratum": "background",
+      "unambiguous_area_m2": 520.8731155584628,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 262.1691648390826
+    },
+    "B0290": {
+      "stratum": "background",
+      "unambiguous_area_m2": 213.77399020315443,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 304.1761555986069
+    },
+    "B0291": {
+      "stratum": "background",
+      "unambiguous_area_m2": 169.7168749178728,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 218.93751124729934
+    },
+    "B0292": {
+      "stratum": "background",
+      "unambiguous_area_m2": 180.2462483863281,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 242.35802252170737
+    },
+    "B0293": {
+      "stratum": "background",
+      "unambiguous_area_m2": 336.2472289183489,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 268.45453796453626
+    },
+    "B0294": {
+      "stratum": "background",
+      "unambiguous_area_m2": 571.7034157950676,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 304.0467359568078
+    },
+    "B0295": {
+      "stratum": "background",
+      "unambiguous_area_m2": 231.4373390713981,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 283.50876721469615
+    },
+    "B0296": {
+      "stratum": "background",
+      "unambiguous_area_m2": 341.8916809540999,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 271.5796401093045
+    },
+    "B0297": {
+      "stratum": "background",
+      "unambiguous_area_m2": 216.96051112085445,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 274.2801162970404
+    },
+    "B0298": {
+      "stratum": "background",
+      "unambiguous_area_m2": 312.6254108199779,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 267.61537468393783
+    },
+    "B0299": {
+      "stratum": "background",
+      "unambiguous_area_m2": 448.8838161066857,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 263.4985985077805
+    },
+    "B0300": {
+      "stratum": "background",
+      "unambiguous_area_m2": 1408.650061828042,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 239.13036072656575
+    },
+    "B0301": {
+      "stratum": "background",
+      "unambiguous_area_m2": 167.29234813434323,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 215.92426693201773
+    },
+    "B0302": {
+      "stratum": "background",
+      "unambiguous_area_m2": 138.61365988188945,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 215.8063290150408
+    },
+    "B0303": {
+      "stratum": "background",
+      "unambiguous_area_m2": 326.2372257123071,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 273.08239291584806
+    },
+    "B0304": {
+      "stratum": "background",
+      "unambiguous_area_m2": 203.10607235103774,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 260.38119680821944
+    },
+    "B0305": {
+      "stratum": "background",
+      "unambiguous_area_m2": 142.28508615386016,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 325.66794207602834
+    },
+    "B0306": {
+      "stratum": "background",
+      "unambiguous_area_m2": 206.91604301210793,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 404.9079234898249
+    },
+    "B0307": {
+      "stratum": "background",
+      "unambiguous_area_m2": 225.1346299947889,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 381.3382204000072
+    },
+    "B0308": {
+      "stratum": "background",
+      "unambiguous_area_m2": 394.8515049091735,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 414.10881347049354
+    },
+    "B0309": {
+      "stratum": "background",
+      "unambiguous_area_m2": 220.63193739216436,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 540.1655121489612
+    },
+    "B0310": {
+      "stratum": "background",
+      "unambiguous_area_m2": 138.05948233026874,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 338.3846529072677
+    },
+    "B0311": {
+      "stratum": "background",
+      "unambiguous_area_m2": 195.76321980625136,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 356.2628060039977
+    },
+    "B0312": {
+      "stratum": "background",
+      "unambiguous_area_m2": 200.12736801627744,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 399.5588288444341
+    },
+    "B0313": {
+      "stratum": "background",
+      "unambiguous_area_m2": 205.32278255276503,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 443.72933803932295
+    },
+    "B0314": {
+      "stratum": "background",
+      "unambiguous_area_m2": 213.84326239505555,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 485.30827908378956
+    },
+    "B0315": {
+      "stratum": "background",
+      "unambiguous_area_m2": 1455.408792666234,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 726.9316866521522
+    },
+    "B0316": {
+      "stratum": "background",
+      "unambiguous_area_m2": 268.9146565060097,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 494.51828438145236
+    },
+    "B0317": {
+      "stratum": "background",
+      "unambiguous_area_m2": 221.39393152696312,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 446.2069816244526
+    },
+    "B0318": {
+      "stratum": "background",
+      "unambiguous_area_m2": 170.13250808089234,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 428.89911002659755
+    },
+    "B0319": {
+      "stratum": "background",
+      "unambiguous_area_m2": 235.17909810534454,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 406.3851276411113
+    },
+    "B0320": {
+      "stratum": "background",
+      "unambiguous_area_m2": 364.233195231274,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 504.2549642363396
+    },
+    "B0321": {
+      "stratum": "background",
+      "unambiguous_area_m2": 106.1250009696004,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 493.95519741346743
+    },
+    "B0322": {
+      "stratum": "background",
+      "unambiguous_area_m2": 128.43064738898323,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 466.2110148411434
+    },
+    "B0323": {
+      "stratum": "background",
+      "unambiguous_area_m2": 167.7079812979044,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 451.38074372181904
+    },
+    "B0324": {
+      "stratum": "background",
+      "unambiguous_area_m2": 291.78789723824906,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 674.0917017233543
+    },
+    "B0325": {
+      "stratum": "background",
+      "unambiguous_area_m2": 242.66049503581803,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 653.9719480808676
+    },
+    "B0326": {
+      "stratum": "background",
+      "unambiguous_area_m2": 211.1793841642288,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 652.6445004582039
+    },
+    "B0327": {
+      "stratum": "background",
+      "unambiguous_area_m2": 7686.909416219886,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 668.8262704313079
+    },
+    "B0328": {
+      "stratum": "background",
+      "unambiguous_area_m2": 195.90176419282682,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 522.1177791446983
+    },
+    "B0329": {
+      "stratum": "background",
+      "unambiguous_area_m2": 171.3794075704276,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 584.947699678199
+    },
+    "B0330": {
+      "stratum": "background",
+      "unambiguous_area_m2": 142.0209859164551,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 566.0507493560931
+    },
+    "B0331": {
+      "stratum": "background",
+      "unambiguous_area_m2": 208.3014868905044,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 576.9423026028857
+    },
+    "B0332": {
+      "stratum": "background",
+      "unambiguous_area_m2": 340.1264717774299,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 541.2695026951268
+    },
+    "B0333": {
+      "stratum": "background",
+      "unambiguous_area_m2": 382.5903265964464,
+      "nearest_core_id": "B0073",
+      "distance_to_nearest_core_m": 421.20048433443526
+    }
+  },
+  "excluded_sources": [
+    {
+      "building_id": "B0086",
+      "reason": "unambiguous_roof_smaller_than_prescribed_fire",
+      "unambiguous_area_m2": 0.0009532929937218289
+    },
+    {
+      "building_id": "B0149",
+      "reason": "no_unambiguous_roof"
+    }
+  ],
+  "anchor_policy": "uniform_in_frozen_unambiguous_roof;disk_intersection_exact_area",
+  "demolished_source_policy": "first_retained_in_frozen_priority;never_no_fire_success",
+  "weight_policy": "design_constraints_only;no_weighted_population_risk",
+  "draws": [
+    {
+      "draw_id": "near-B0120-002",
+      "stratum": "all_retained_sources",
+      "priority_ids": [
+        "B0062",
+        "B0061",
+        "B0063",
+        "B0144",
+        "B0056",
+        "B0332",
+        "B0094",
+        "B0033",
+        "B0147",
+        "B0101",
+        "B0085",
+        "B0182",
+        "B0008",
+        "B0112",
+        "B0256",
+        "B0166",
+        "B0212",
+        "B0108",
+        "B0173",
+        "B0225",
+        "B0011",
+        "B0078",
+        "B0239",
+        "B0124",
+        "B0050",
+        "B0012",
+        "B0235",
+        "B0320",
+        "B0091",
+        "B0106",
+        "B0116",
+        "B0214",
+        "B0200",
+        "B0284",
+        "B0013",
+        "B0281",
+        "B0087",
+        "B0024",
+        "B0017",
+        "B0014",
+        "B0133",
+        "B0315",
+        "B0076",
+        "B0096",
+        "B0268",
+        "B0140",
+        "B0138",
+        "B0006",
+        "B0191",
+        "B0048",
+        "B0042",
+        "B0031",
+        "B0305",
+        "B0312",
+        "B0258",
+        "B0297",
+        "B0288",
+        "B0195",
+        "B0018",
+        "B0009",
+        "B0034",
+        "B0027",
+        "B0243",
+        "B0154",
+        "B0045",
+        "B0174",
+        "B0075",
+        "B0196",
+        "B0189",
+        "B0035",
+        "B0015",
+        "B0007",
+        "B0136",
+        "B0240",
+        "B0049",
+        "B0117",
+        "B0188",
+        "B0233",
+        "B0186",
+        "B0292",
+        "B0244",
+        "B0157",
+        "B0245",
+        "B0026",
+        "B0151",
+        "B0333",
+        "B0093",
+        "B0234",
+        "B0253",
+        "B0287",
+        "B0068",
+        "B0331",
+        "B0310",
+        "B0228",
+        "B0205",
+        "B0137",
+        "B0254",
+        "B0238",
+        "B0016",
+        "B0300",
+        "B0044",
+        "B0202",
+        "B0187",
+        "B0266",
+        "B0190",
+        "B0167",
+        "B0163",
+        "B0004",
+        "B0107",
+        "B0293",
+        "B0175",
+        "B0051",
+        "B0127",
+        "B0198",
+        "B0226",
+        "B0069",
+        "B0037",
+        "B0298",
+        "B0282",
+        "B0121",
+        "B0316",
+        "B0304",
+        "B0054",
+        "B0301",
+        "B0040",
+        "B0274",
+        "B0053",
+        "B0277",
+        "B0276",
+        "B0209",
+        "B0269",
+        "B0279",
+        "B0046",
+        "B0201",
+        "B0178",
+        "B0241",
+        "B0267",
+        "B0156",
+        "B0230",
+        "B0079",
+        "B0218",
+        "B0022",
+        "B0171",
+        "B0231",
+        "B0142",
+        "B0118",
+        "B0074",
+        "B0289",
+        "B0264",
+        "B0130",
+        "B0306",
+        "B0307",
+        "B0184",
+        "B0255",
+        "B0039",
+        "B0260",
+        "B0319",
+        "B0321",
+        "B0197",
+        "B0170",
+        "B0242",
+        "B0162",
+        "B0199",
+        "B0126",
+        "B0318",
+        "B0060",
+        "B0100",
+        "B0180",
+        "B0172",
+        "B0030",
+        "B0143",
+        "B0002",
+        "B0020",
+        "B0252",
+        "B0103",
+        "B0229",
+        "B0082",
+        "B0213",
+        "B0128",
+        "B0280",
+        "B0261",
+        "B0273",
+        "B0160",
+        "B0221",
+        "B0081",
+        "B0309",
+        "B0135",
+        "B0131",
+        "B0064",
+        "B0038",
+        "B0113",
+        "B0001",
+        "B0275",
+        "B0159",
+        "B0152",
+        "B0029",
+        "B0109",
+        "B0110",
+        "B0314",
+        "B0278",
+        "B0265",
+        "B0077",
+        "B0023",
+        "B0072",
+        "B0169",
+        "B0104",
+        "B0095",
+        "B0208",
+        "B0028",
+        "B0328",
+        "B0141",
+        "B0125",
+        "B0290",
+        "B0041",
+        "B0065",
+        "B0249",
+        "B0155",
+        "B0088",
+        "B0330",
+        "B0179",
+        "B0150",
+        "B0089",
+        "B0052",
+        "B0251",
+        "B0070",
+        "B0246",
+        "B0036",
+        "B0181",
+        "B0247",
+        "B0148",
+        "B0204",
+        "B0105",
+        "B0193",
+        "B0168",
+        "B0119",
+        "B0327",
+        "B0271",
+        "B0025",
+        "B0248",
+        "B0090",
+        "B0206",
+        "B0232",
+        "B0114",
+        "B0325",
+        "B0210",
+        "B0092",
+        "B0194",
+        "B0329",
+        "B0134",
+        "B0257",
+        "B0296",
+        "B0217",
+        "B0263",
+        "B0326",
+        "B0183",
+        "B0153",
+        "B0311",
+        "B0262",
+        "B0215",
+        "B0139",
+        "B0177",
+        "B0203",
+        "B0129",
+        "B0299",
+        "B0323",
+        "B0115",
+        "B0216",
+        "B0227",
+        "B0099",
+        "B0272",
+        "B0285",
+        "B0080",
+        "B0019",
+        "B0224",
+        "B0192",
+        "B0097",
+        "B0067",
+        "B0322",
+        "B0164",
+        "B0219",
+        "B0176",
+        "B0259",
+        "B0084",
+        "B0021",
+        "B0058",
+        "B0303",
+        "B0313",
+        "B0295",
+        "B0286",
+        "B0236",
+        "B0146",
+        "B0032",
+        "B0317",
+        "B0324",
+        "B0066",
+        "B0211",
+        "B0294",
+        "B0185",
+        "B0270",
+        "B0220",
+        "B0071",
+        "B0083",
+        "B0250",
+        "B0237",
+        "B0098",
+        "B0047",
+        "B0102",
+        "B0308",
+        "B0207",
+        "B0059",
+        "B0161",
+        "B0123",
+        "B0111",
+        "B0145",
+        "B0158",
+        "B0283",
+        "B0043",
+        "B0055",
+        "B0005",
+        "B0122",
+        "B0010",
+        "B0165",
+        "B0003",
+        "B0057",
+        "B0223",
+        "B0291",
+        "B0302",
+        "B0132",
+        "B0222"
+      ],
+      "baseline_source_id": "B0062",
+      "preferred_stratum": "near-B0120"
+    }
+  ],
+  "parent_protocol_sha256": "fdfe1c5f4b6a67711aea01a7c22f1bc2435aecef368d79f3b11da9b5086c1fe3",
+  "fallback_seed": 2026102903,
+  "protocol_sha256": "e7b350b0ca7834fd3e34306e2f3188b7ca75735837faf139e6271c575df9e0a0"
+}

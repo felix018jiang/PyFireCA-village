@@ -1,0 +1,24 @@
+{
+  "CA_started": 0,
+  "common_geometry_cases_passed": 8,
+  "config_sha256": "c00683643822e098d034e66a17a4ecb5ee69970bccd1cd2122bec2610f8c7873",
+  "experiment_sha256": "d83dd7cc3107664a92f517f002fab403da2cfcc567e9f1fd4cc3b3e4dc5db13b",
+  "independent_source_support_sha256": "12e90b770a9b7bce6b2bbc0ef567f76b6512dbda21659c5da5456a351b1832d7",
+  "matched_actual_source_families": 2,
+  "native_problem_sha256": "b89bdb0f682785c443524b68fca47a893dbb0b96f79832150b53b27977527c83",
+  "native_source_realizations_verified": 16,
+  "new_independent_draws": 0,
+  "peak_integrated_edges_bound": 25417878,
+  "peak_nodes": 124589,
+  "physical_ref_count": 87,
+  "planned": 16,
+  "preflight_sha256": "fc1ac2701d7a6375e5937ce8191332457e79fc6ae4acb05bd3fae271b9df7635",
+  "priority": [
+    "minimum-thermal-energy-clearance",
+    "direct-thin-D9-with-no-grass"
+  ],
+  "schema_version": "post-disclosure-paired-preflight-1",
+  "source_file_count": 118,
+  "source_priority_families": 4,
+  "whole_fire_losses_required_for_both": true
+}

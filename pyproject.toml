@@ -35,15 +35,16 @@ classifiers = [
 ]
 dependencies = [
   "numpy>=1.26",
+  "Pillow>=10",
   "PyYAML>=6.0",
 ]
 
 [project.urls]
-Homepage = "https://github.com/hujinghaoabcd/PyFireCA"
-Repository = "https://github.com/hujinghaoabcd/PyFireCA"
-Issues = "https://github.com/hujinghaoabcd/PyFireCA/issues"
-Documentation = "https://github.com/hujinghaoabcd/PyFireCA/blob/main/docs/RUNNING_SIMULATOR.md"
-Changelog = "https://github.com/hujinghaoabcd/PyFireCA/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/felix018jiang/PyFireCA-village"
+Repository = "https://github.com/felix018jiang/PyFireCA-village"
+Issues = "https://github.com/felix018jiang/PyFireCA-village/issues"
+Documentation = "https://github.com/felix018jiang/PyFireCA-village/blob/main/docs/HERITAGE_STUDY_CODE.md"
+Changelog = "https://github.com/felix018jiang/PyFireCA-village/blob/main/CHANGELOG.md"
 
 [project.scripts]
 pyfireca = "pyfireca.cli:main"
@@ -56,7 +57,6 @@ planning = [
   "shapely>=2",
 ]
 village = [
-  "Pillow>=10",
   "PyProj>=3.6",
   "Shapely>=2",
 ]
@@ -68,6 +68,8 @@ dev = [
   "pytest-cov>=5",
   "ruff>=0.6",
   "pre-commit>=3.8",
+  "scipy>=1.10",
+  "numba>=0.60",
 ]
 
 [tool.hatch.build.targets.wheel]

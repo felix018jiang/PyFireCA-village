@@ -1,0 +1,65 @@
+{
+  "C_difference_from_geometric_m2": -6050.0,
+  "C_m2": 45520.09010053902,
+  "action_sha256": "43666be99e180403cc1845d62e35f6ed0d1fceb706685c4b346fa0f867493284",
+  "aggregate_losses": {
+    "all_ordinary_inventory": 331,
+    "all_represented_retained_ordinary_source_labels": {
+      "fraction_meeting_both_caps": 0.056074766355140186,
+      "meet_both_loss_caps": 18,
+      "roofs": 321,
+      "worst_area_upper_m2": 27140.18,
+      "worst_original_owner_upper": 157
+    },
+    "eligible_original_geometry_25m2_sources": 329,
+    "physically_surviving_fraction": 0.9758308157099698,
+    "physically_surviving_ordinary_owner_count": 323,
+    "possible_roof_components": 30,
+    "retained_25m2_eligible_ordinary_sources": {
+      "fraction_meeting_both_caps": 0.05642633228840126,
+      "meet_both_loss_caps": 18,
+      "roofs": 319,
+      "worst_area_upper_m2": 27140.18,
+      "worst_original_owner_upper": 157
+    },
+    "retained_eligible_fraction": 0.9696048632218845,
+    "two_caps_area_m2_and_owner_count": [
+      420.73,
+      4
+    ],
+    "unrepresented_original_owner_count_included_in_upper": 0
+  },
+  "all_burnable_ground_receivers": 78386,
+  "all_retained_noncore_roof_parent_emitters": 6179,
+  "coarse_baseline_file_sha256": "63b18ee92f242eeec83dc7670214fa2acd1da91369412b96e8da06ed48c48c6d",
+  "contact_ground_count": 0,
+  "dose_ground_count": 1730,
+  "eligible_whole_ground_actions": 1762,
+  "fixed_roofs_minimum_core_addon_proof": {
+    "core_contact_additional_whole_cells": 0,
+    "integer_preceding_ground_tier_infeasible": true,
+    "integer_proof_counts": {
+      "branch_nodes": 1,
+      "integer_weighted_exclusions": 1
+    },
+    "optimal_optional_core_whole_cells": 32
+  },
+  "geometric_fixed_roof_ground_separation_C_m2": 51570.09010053902,
+  "ground_construction_m2": 44050.0,
+  "independently_recomputed_receivers_with_nonzero_dose": 1959,
+  "mandatory_ground_from_contact_or_dose": 1730,
+  "max_core_energy_fraction": 0.977075238606896,
+  "max_retained_ground_energy_fraction": 0.9986919490980725,
+  "method_sha256": "3c6271e05e8979a099a918b69d59ed9a9f69823dbff8b2df60296cb12515f38b",
+  "new_CA_checks": 0,
+  "old_thermal_ground_cells_recovered": 0,
+  "original_owner_AND_roof_m2": 1470.090100543325,
+  "physics_case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+  "receipt_sha256": "2f3bd84de47d0c6ad96c786773d17c0bbfe7fe28f29d929a608fcb0516ea6b3b",
+  "roof_actions": 10,
+  "schema_version": "universal-roof-to-ground-single-roof-fire-clearance-1",
+  "scope": "Single exterior ordinary roof direct initialization, zero wind, no brands or outside feedback. Every retained ground receptor has no contact and subthreshold all-roof energy before the first ground ignition. Separate core dose and contact inequalities exclude ignition through a core. N includes all original coowners on reachable roof components and all unrepresented owners. A includes outward refinement allowance. Fractions count roofs with deterministic sufficient bounds.",
+  "source_orders_read_or_used_for_design": false,
+  "thermal_audit_sha256": "d332661266e36f8e3198b7585b1b46f450b25ef5bac77e7098734528425142fb",
+  "village": "batuan"
+}

@@ -1,0 +1,410 @@
+{
+  "canonical_clearing_m2": [
+    2543.456175290825,
+    10669.276972304711
+  ],
+  "effect_scope": "same actual source and footprint gives controlled action contrast on common mesh; a changed retained source measures the full action-plus-source policy effect",
+  "finite_domain_archive_sha256": null,
+  "native_experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+  "new_CA_checks": 0,
+  "per_scenario_comparisons": [
+    {
+      "burned_area_m2": [
+        113.12751824668793,
+        113.12751824668793
+      ],
+      "burned_nonroof_area_m2": [
+        0.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 1
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        113.12751824668793,
+        113.12751824668793
+      ],
+      "delta_area_first_minus_second_m2": 0.0,
+      "delta_count_conservative_bounds": [
+        0,
+        0
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        0
+      ],
+      "draw_index": 1,
+      "manifest_sha256s": [
+        "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d",
+        "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 1.0,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        113.12751824668791,
+        113.12751824668791
+      ],
+      "burned_nonroof_area_m2": [
+        0.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 1
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        113.12751824668791,
+        113.12751824668791
+      ],
+      "delta_area_first_minus_second_m2": 0.0,
+      "delta_count_conservative_bounds": [
+        0,
+        0
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        0
+      ],
+      "draw_index": 1,
+      "manifest_sha256s": [
+        "9ca4732e21103271b9d145871a36c028a4846072d8590c3a963b4a34f0e4ec54",
+        "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 0.5,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        266.48854379824064,
+        241.48854379824064
+      ],
+      "burned_nonroof_area_m2": [
+        25.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 1
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        241.48854379824064,
+        241.48854379824064
+      ],
+      "delta_area_first_minus_second_m2": 25.0,
+      "delta_count_conservative_bounds": [
+        0,
+        0
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        0
+      ],
+      "draw_index": 2,
+      "manifest_sha256s": [
+        "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357",
+        "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 1.0,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        266.48854379824064,
+        241.48854379824064
+      ],
+      "burned_nonroof_area_m2": [
+        25.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 1
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        241.48854379824064,
+        241.48854379824064
+      ],
+      "delta_area_first_minus_second_m2": 25.0,
+      "delta_count_conservative_bounds": [
+        0,
+        0
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        0
+      ],
+      "draw_index": 2,
+      "manifest_sha256s": [
+        "5c5e940195c5bca6ffeac9a542cb92fa2a343245cfd73f270a6dc34613407093",
+        "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 0.5,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        180.5416716716964,
+        180.21842301902592
+      ],
+      "burned_nonroof_area_m2": [
+        0.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 5
+        },
+        {
+          "lower": 1,
+          "upper": 3
+        }
+      ],
+      "burned_roof_area_m2": [
+        180.5416716716964,
+        180.21842301902592
+      ],
+      "delta_area_first_minus_second_m2": 0.3232486526704861,
+      "delta_count_conservative_bounds": [
+        -2,
+        4
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        2
+      ],
+      "draw_index": 3,
+      "manifest_sha256s": [
+        "c88a1a3e854c6d19594f8d2a58cb921cfdfa0d8c8506c8bd0dba05aa6be9ba1a",
+        "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 1.0,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        180.5416716716964,
+        180.21842301902592
+      ],
+      "burned_nonroof_area_m2": [
+        0.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 1,
+          "upper": 5
+        },
+        {
+          "lower": 1,
+          "upper": 3
+        }
+      ],
+      "burned_roof_area_m2": [
+        180.5416716716964,
+        180.21842301902592
+      ],
+      "delta_area_first_minus_second_m2": 0.3232486526704861,
+      "delta_count_conservative_bounds": [
+        -2,
+        4
+      ],
+      "delta_count_endpoint_differences": [
+        0,
+        2
+      ],
+      "draw_index": 3,
+      "manifest_sha256s": [
+        "4306201237af015448447c6c4b095a3d21a2a17858ddce847053892cdba22c23",
+        "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 0.5,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        1742.466642257279,
+        111.17746509794179
+      ],
+      "burned_nonroof_area_m2": [
+        150.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 9,
+          "upper": 11
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        1592.4666422572789,
+        111.17746509794179
+      ],
+      "delta_area_first_minus_second_m2": 1631.2891771593372,
+      "delta_count_conservative_bounds": [
+        8,
+        10
+      ],
+      "delta_count_endpoint_differences": [
+        8,
+        10
+      ],
+      "draw_index": 4,
+      "manifest_sha256s": [
+        "5822fd67a6a3709b8a503c4dc08aac679d96555883813e9a7c644b322a13eb59",
+        "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 1.0,
+      "status": "strict"
+    },
+    {
+      "burned_area_m2": [
+        1742.466642257279,
+        111.17746509794178
+      ],
+      "burned_nonroof_area_m2": [
+        150.0,
+        0.0
+      ],
+      "burned_original_owner_bounds": [
+        {
+          "lower": 9,
+          "upper": 11
+        },
+        {
+          "lower": 1,
+          "upper": 1
+        }
+      ],
+      "burned_roof_area_m2": [
+        1592.4666422572793,
+        111.17746509794178
+      ],
+      "delta_area_first_minus_second_m2": 1631.2891771593372,
+      "delta_count_conservative_bounds": [
+        8,
+        10
+      ],
+      "delta_count_endpoint_differences": [
+        8,
+        10
+      ],
+      "draw_index": 4,
+      "manifest_sha256s": [
+        "42a89611656e8d8a5f549cfde3fe6f417c10268df98ef1a89c5e518879883ef1",
+        "b034e310e531f2608c48ae20157dfe29d82b195e0a850b12c689395ae05bb0e7"
+      ],
+      "matched_actual_source_and_footprint": true,
+      "raw_invalid_reasons": [
+        [],
+        []
+      ],
+      "raw_statuses": [
+        "passed",
+        "passed"
+      ],
+      "scale_m": 0.5,
+      "status": "strict"
+    }
+  ],
+  "plans_in_delta_order": [
+    "roof-seed-protected-union-ring-b0-w2.5",
+    "roof-seed-protected-union-ring-b0-w15.01"
+  ],
+  "schema_version": "protective-within-run-damage-comparison-1",
+  "strict_archive_sha256": "5782c2bdf84f9ddd8906db7bd538e016404df0d3c2b45fa5988fb7992fd90082"
+}

@@ -1,0 +1,143 @@
+--- a/src/pyfireca/village/solver_v3.py
++++ b/src/pyfireca/village/solver_v3.py
+@@ -8,8 +8,10 @@
+ 
+ from __future__ import annotations
+ 
++import logging
+ from collections.abc import Callable
+ from dataclasses import dataclass
++from fractions import Fraction
+ from math import isfinite
+ from typing import Protocol
+ 
+@@ -408,6 +410,80 @@
+     )
+ 
+ 
++def _exact_burn_interval_energy(age, dt, peak, growth, steady, decay, fuel, heat):
++    """Integrate only the overlapping stage pieces, exactly for the binary inputs."""
++    age, dt, peak, growth, steady, decay, fuel, heat = (
++        Fraction(float(x)) for x in (age, dt, peak, growth, steady, decay, fuel, heat)
++    )
++    end = age + dt
++    steady_end = growth + steady
++    decay_end = steady_end + decay
++    area = Fraction(0)
++    right = min(end, growth)
++    if age < right:
++        area += (right - age) * (age**2 + age * right + right**2) / (3 * growth**2)
++    left, right = max(age, growth), min(end, steady_end)
++    if left < right:
++        area += right - left
++    left, right = max(age, steady_end), min(end, decay_end)
++    if left < right:
++        area += (right - left) * (2 * decay_end - left - right) / (2 * decay)
++    if not 0 <= area <= dt:
++        raise RuntimeError("exact burn integral violates its stage envelope")
++    return float(min(peak * area, fuel * heat))
++
++
++def _recover_contact_rejected_interval(state, parameters, contact, dt, released, mass_loss, hrr):
++    """Recover only reproducible curve cancellation at the unchanged contact guard."""
++    contact_peak = contact.physics.peak_hrr_W
++    bad = hrr > contact_peak * (1 + 1e-8) + 1e-9
++    peak = parameters.peak_hrr_W[bad]
++    if not np.any(bad) or not np.array_equal(peak, contact_peak[bad]):
++        return False
++    burning = state.state[bad] == int(VillageCellState.BURNING)
++    age = state.burn_age_s[bad]
++    fuel = state.fuel_remaining_kg[bad]
++    heat = parameters.heat_of_combustion_J_kg_dry[bad]
++    growth = parameters.growth_time_s[bad]
++    steady = parameters.steady_time_s[bad]
++    decay = parameters.decay_time_s[bad]
++    old = burn_interval_energy_and_hrr(burning, age, fuel, peak, growth, steady, decay, heat, dt)
++    if not burning.all() or not all(
++        np.array_equal(a, b[bad]) for a, b in zip(old, (released, mass_loss, hrr), strict=True)
++    ):
++        return False
++    energies = np.array(
++        [
++            _exact_burn_interval_energy(a, dt, p, g, s, d, f, h)
++            for a, p, g, s, d, f, h in zip(
++                age, peak, growth, steady, decay, fuel, heat, strict=True
++            )
++        ]
++    )
++    corrected_hrr = energies / dt
++    if np.any(~np.isfinite(energies)) or np.any(corrected_hrr > peak * (1 + 1e-8) + 1e-9):
++        return False
++    logging.getLogger(__name__).warning(
++        "burn_interval_peak_recovery time_s=%r dt_s=%r count=%d "
++        "first_age_s=%r first_growth_s=%r first_steady_s=%r first_decay_s=%r "
++        "first_peak_W=%r first_old_mean_W=%r first_recomputed_mean_W=%r",
++        float(state.time_s),
++        float(dt),
++        len(peak),
++        float(age[0]),
++        float(growth[0]),
++        float(steady[0]),
++        float(decay[0]),
++        float(peak[0]),
++        float(old[2][0]),
++        float(corrected_hrr[0]),
++    )
++    released[bad] = energies
++    mass_loss[bad] = energies / heat
++    hrr[bad] = corrected_hrr
++    return True
++
++
+ def _run_resolved_v3_simulation(
+     request: V3SimulationRequest,
+     *,
+@@ -569,21 +645,33 @@
+             local_fraction = firebrands.divert(mass_loss)
+             released *= local_fraction
+             mean_hrr *= local_fraction
+-        radiative_power = mean_hrr * parameters.radiative_fraction
+-        received_power = exposure.target_power_W(radiative_power.reshape(-1)).reshape(
+-            request.grid.shape
+-        )
+-        incident_step = received_power * dt_s
+-        absorbed_step = np.zeros(request.grid.shape, dtype=np.float64)
+-        absorbed_step[susceptible] = (
+-            incident_step[susceptible] * parameters.absorptivity[susceptible]
+-        )
+-
+-        contact_transfer = (
+-            contact.transfer(mean_hrr, state.surface_temperature_K, susceptible)
+-            if contact
+-            else None
+-        )
++        for retry in (False, True):
++            radiative_power = mean_hrr * parameters.radiative_fraction
++            received_power = exposure.target_power_W(radiative_power.reshape(-1)).reshape(
++                request.grid.shape
++            )
++            incident_step = received_power * dt_s
++            absorbed_step = np.zeros(request.grid.shape, dtype=np.float64)
++            absorbed_step[susceptible] = (
++                incident_step[susceptible] * parameters.absorptivity[susceptible]
++            )
++            try:
++                contact_transfer = (
++                    contact.transfer(mean_hrr, state.surface_temperature_K, susceptible)
++                    if contact
++                    else None
++                )
++                break
++            except ValueError as error:
++                if (
++                    retry
++                    or firebrands is not None
++                    or str(error) != "flame contact HRR cannot exceed the configured peak"
++                    or not _recover_contact_rejected_interval(
++                        state, parameters, contact, dt_s, released, mass_loss, mean_hrr
++                    )
++                ):
++                    raise
+         convective_power = (
+             contact_transfer.target_power_W if contact_transfer else np.zeros(request.grid.shape)
+         )

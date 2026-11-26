@@ -1,0 +1,12 @@
+{
+  "schema_version": "heritage-exact-expansion-resume-1",
+  "complete": true,
+  "first_result_sha256": "389d3dc0bd206a99ec0c39c781f32d5f5aaf3ee4d400ceb0466ba671360d4a1a",
+  "resumed_result_sha256": "3d6ebc0512231e38d102089861f7e622abd2023d76a041b4f6454b8889c4f0cd",
+  "first_new_CA_checks": 48,
+  "resumed_new_CA_checks": 0,
+  "cache_hits": 48,
+  "same_trace_layers_and_best_plan": true,
+  "total_raw_checks": 48,
+  "total_budget_preserved": true
+}

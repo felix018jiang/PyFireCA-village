@@ -1,0 +1,103 @@
+{
+  "basis": "Count an original roof label only when every original positive physical patch was cleared or burned. Shared patches retain the original annotation membership. Partial clearance followed by burnout of the remainder is included.",
+  "bound_logic": "Every additional entire footprint lost after construction belongs to at least one original roof label intersecting burned material. The matched-case upper bound on that count can thus be added to the pre-fire full removals.",
+  "cohorts": [
+    {
+      "cases": 8,
+      "cohort": "design",
+      "plan": "economic",
+      "village": "batuan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 4,
+        "total_whole_lost": 6,
+        "whole_cleared": 2
+      }
+    },
+    {
+      "cases": 8,
+      "cohort": "independent",
+      "plan": "economic",
+      "village": "batuan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 24,
+        "total_whole_lost": 26,
+        "whole_cleared": 2
+      }
+    },
+    {
+      "cases": 16,
+      "cohort": "combined_design",
+      "plan": "joint",
+      "village": "batuan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 4,
+        "total_whole_lost": 45,
+        "whole_cleared": 41
+      }
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "plan": "joint",
+      "village": "pingyan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 3,
+        "total_whole_lost": 24,
+        "whole_cleared": 21
+      }
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "plan": "roof-seed-protected-union-ring-b0-w2.5",
+      "village": "pingyan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 9,
+        "total_whole_lost": 14,
+        "whole_cleared": 5
+      }
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "plan": "local-band-with-observed-clearance-subset",
+      "village": "pingyan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 2,
+        "total_whole_lost": 11,
+        "whole_cleared": 9
+      }
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "plan": "roof-seed-protected-union-ring-b0-w15.01",
+      "village": "pingyan",
+      "worst_affected_by_clearance_and_fire": {
+        "additional_whole_lost_after_fire": 3,
+        "total_whole_lost": 18,
+        "whole_cleared": 15
+      }
+    }
+  ],
+  "matched_reduction_in_worst_entire_modeled_roof_footprint_loss_at_least": 104,
+  "method_sha256": "97c59013e90e07516b2255e329ef0ffc00b4a7294e8d5c54b834118237ea2167",
+  "new_CA_runs": 0,
+  "new_matched_worst_entire_roofs_lost_including_construction_upper": 28,
+  "new_physically_whole_roofs_removed_by_construction": 25,
+  "old_matched_cases": 2,
+  "old_measured_worst_entire_original_roofs_lost_including_construction": 132,
+  "original_measured_new_analytical": true,
+  "paired_file_sha256": "113cf3ba13bba069e480392ba4ef10da0bd414267e105fc00ce44664b18eadcc",
+  "real_building_collapse_measured": false,
+  "receipt_sha256": "82dc7e5655daf0215b0b32010d0a8b381728df7cab0612c9c293dcf17dd090ae",
+  "retention_file_sha256": "bfb417544fc659d49dc8cd935a8a23ac925946002f6919c3582e6733c3f0875f",
+  "schema_version": "original-roof-footprint-whole-loss-by-construction-or-fire-1",
+  "source_receipts_sha256": {
+    "heritage-batuan-direct-D9-G0-complete8-audit-20261111.json": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+    "heritage-batuan-independent-D9-G0-native-strict-20261111.json": "0a6325712f2543993797e23ea286355e6d5dd75e2f6895f94c5b366d7c352450",
+    "heritage-joint-loss-batuan-complete-native-audit-20261111.json": "f49721bfe6c5ff7df48ee309b5d2acf10fe2acb892d1f3c8f1cd5bd51b8f9c71",
+    "heritage-joint-loss-pingyan-complete-native-audit-20261111.json": "823c0802bd20c8914ea7a8bd257fcc7c65448e75f00cf85db45099f9a2fbf3ae",
+    "heritage-pingyan-three-policies-complete8-table-20261111.json": "a64abcc4f7386ff7fed7221417f047b46136f00654e2eae54519d513b59a7e8b"
+  }
+}

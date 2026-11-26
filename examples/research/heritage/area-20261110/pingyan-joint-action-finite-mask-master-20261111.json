@@ -1,0 +1,158 @@
+{
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "cap_selection_rule": "geometric_actual_clearance_of_historical_initial_plan",
+  "clock_compatibility_receipt_path": "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json",
+  "clock_compatibility_receipt_sha256": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+  "clock_receipt_binding": "configuration_provenance;verify_frozen_producer_solver_SHA_before_prepare",
+  "core_overlap_policy": "heritage_priority",
+  "fixed_source_ids": [],
+  "generator_sha256": "f75b55711bcdba90a6ddff8053b09fe3cd18a4d3691866d513f921d96283bf44",
+  "horizon_s": 172800.0,
+  "initial_cap_is_verified_upper_bound_for_new_problem": false,
+  "max_dt_s": 1.0,
+  "max_matrix_nonzeros": 5000000,
+  "max_mip_time_s": 2400.0,
+  "max_new_checks": 128,
+  "max_nodes": 500000,
+  "max_radiation_edges": 60000000,
+  "max_wall_time_s": 172800.0,
+  "minimum_free_disk_GB": 10.0,
+  "mip_call_time_limit_s": 120.0,
+  "new_independent_fire_draws": 0,
+  "parent_full_config_sha256": "03259f1880e4f48a748fe23771f398d8df89c1e13d3c6fe91c35065ffc37f2f7",
+  "place_name": "\u5e73\u5ca9\u6751",
+  "prefetch_baseline_witnesses": true,
+  "prior_fixed_problem_seed_receipt": {
+    "problem_sha256": "d567aca8e58c146efbb8b9a96b3067a13d3c0057ae01b39bb45008f7a83e3df6",
+    "source_search_sha256": "0147107b8e16a804715d124e7d389d9755885b17e906517555ede724c73e312b",
+    "validity": "proposal_only;all_seeds_must_be_reverified_in_new_source_mesh",
+    "verified_feasible_rows": [
+      {
+        "cleared_area_m2": 974.4542322625402,
+        "demolished_ids": [
+          "B0034",
+          "B0119",
+          "B0165",
+          "B0168",
+          "B0188"
+        ],
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": [],
+        "worst_case_loss_metrics": {
+          "active_nonroof_area_m2": 550.0,
+          "active_roof_area_m2": 4020.9485786840673,
+          "clearing_plus_ignited_annotation_count_lower": 50,
+          "clearing_plus_ignited_annotation_count_upper": 50,
+          "clearing_plus_ignited_roof_area_m2": 9729.403901526428,
+          "consumed_fuel_kg": 80844.89497068402,
+          "ignited_nonroof_area_m2": 4025.0,
+          "ignited_roof_area_m2": 8754.949670593862,
+          "nonroof_fire_depleted_kg": 4875.845222804632,
+          "roof_fire_depleted_kg": 75969.0497478794
+        }
+      },
+      {
+        "cleared_area_m2": 985.6078364045122,
+        "demolished_ids": [
+          "B0119",
+          "B0165",
+          "B0167",
+          "B0177",
+          "B0190"
+        ],
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": [],
+        "worst_case_loss_metrics": {
+          "active_nonroof_area_m2": 575.0,
+          "active_roof_area_m2": 4976.234936308192,
+          "clearing_plus_ignited_annotation_count_lower": 57,
+          "clearing_plus_ignited_annotation_count_upper": 58,
+          "clearing_plus_ignited_roof_area_m2": 11275.814987945385,
+          "consumed_fuel_kg": 94451.14584106268,
+          "ignited_nonroof_area_m2": 4025.0,
+          "ignited_roof_area_m2": 10290.207150515924,
+          "nonroof_fire_depleted_kg": 4950.749000779171,
+          "roof_fire_depleted_kg": 89500.3968402835
+        }
+      }
+    ]
+  },
+  "quadrature_spacing_m": 0.5,
+  "reference_horizon_s": 3600.0,
+  "reference_phase_master_experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/experiment.json",
+  "reference_phase_master_experiment_sha256": "97a031d448a4cc4534712b906a6fb19b9c061561f26de35e7fc0ce7c54543ddb",
+  "refinement_ids": [
+    "B0034",
+    "B0035",
+    "B0036",
+    "B0119",
+    "B0120",
+    "B0164",
+    "B0165",
+    "B0166",
+    "B0167",
+    "B0168",
+    "B0177",
+    "B0188",
+    "B0190"
+  ],
+  "required_solver_source_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "schema_version": "heritage-joint-action-master-config-1",
+  "scope": "minimum_joint_construction_C_for_core_protection_in_fixed_finite_mask;all_inventory_ordinary_roofs_and_all_eligible_whole5m_ground;same1531_cap_and_original13_refinement;seeds_are_proposals_not_upper_bounds",
+  "seed_action_plans": [
+    {
+      "action_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ]
+    },
+    {
+      "action_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0190",
+        "B0191"
+      ]
+    }
+  ],
+  "source_area_limit_m2": 1531.6288649185644,
+  "source_area_tolerance_m2": 1e-06,
+  "source_fires": [
+    {
+      "draw_id": "design-near-B0035-001",
+      "fire_id": "near-B0035",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0035-20261029.json"
+    },
+    {
+      "draw_id": "design-near-B0036-001",
+      "fire_id": "near-B0036",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0036-20261029.json"
+    },
+    {
+      "draw_id": "design-near-B0166-001",
+      "fire_id": "near-B0166",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-B0166-20261029.json"
+    },
+    {
+      "draw_id": "background-001",
+      "fire_id": "background",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-design-background-20261029.json"
+    }
+  ],
+  "source_policy": "area_bounded_retained_sources",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/pingyan-study-20261029.json",
+  "terminal_validation_scope": "finite_mask_conditioned",
+  "village_id": "pingyan"
+}

@@ -1,0 +1,12 @@
+{
+  "page_id": "page_efc598a9edf48191ab8eca406efa8f7b",
+  "artifact_ref": "artifact_external_ded781df-f844-48a9-927e-6aba1a68d7b7",
+  "slides": 14,
+  "latest_edit": "Added whole-village fire-analysis comparison maps on slides 13 and 14",
+  "new_CA_runs": 0,
+  "latest_edit_callback": "add_macro_slides.mjs",
+  "demo_url": "http://127.0.0.1:8851/",
+  "demo_model": "previous 5 m interactive V3 single-state simulator",
+  "demo_log": "runs/presentation-demo-20261104/server.log",
+  "macro_maps": "macro-map-evidence.json"
+}

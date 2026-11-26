@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-11T20:55:37.586528+08:00",
+  "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111",
+  "pid": 10860,
+  "started_without_refund": 18,
+  "budget_sha256_before_queue": "489f3824df8ba5a9eca10833447790ce80b6d6ae947370692c9263415f876fe9",
+  "completed_strict_narrow_cases": 8,
+  "why": "prioritize joint full fire, targeted clearance reduction and independent confirmations on battery",
+  "resume": "SIGCONT only after matching this worker identity"
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": "heritage-exact-cost-1",
+  "search_result_sha256": "ecfcaba18d71939ed1f54b0899ed95e37ed6f58704a5006d7b1fdcc10d70cf6f",
+  "candidate_count": 331,
+  "combination_counts": {
+    "0": 1,
+    "1": 331,
+    "2": 54615,
+    "3": 5989445
+  },
+  "zero_to_two_combinations": 54947,
+  "three_building_combinations_with_smaller_nominal_area": 1250271,
+  "comparison_initial_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "initial_nominal_area_m2": 451.24045614570235,
+  "base_nodes": 109856,
+  "whole_village_node_lower_bounds": [
+    {
+      "scale_m": 1.0,
+      "minimum_nodes": 183344,
+      "max_nodes": 200000,
+      "node_limit_definitely_exceeded": false,
+      "all_candidate_and_core_roofs_refined": true
+    },
+    {
+      "scale_m": 0.5,
+      "minimum_nodes": 414344,
+      "max_nodes": 200000,
+      "node_limit_definitely_exceeded": true,
+      "all_candidate_and_core_roofs_refined": true
+    }
+  ],
+  "exposure_radius_m": 15,
+  "measured_small_instance_timings": {
+    "1.0": {
+      "checks": 14,
+      "minimum_s": 23.54138670791872,
+      "median_s": 27.667068853974342,
+      "maximum_s": 31.283950082957745
+    },
+    "0.5": {
+      "checks": 7,
+      "minimum_s": 82.14691341598518,
+      "median_s": 98.94758641719818,
+      "maximum_s": 114.80097854090855
+    }
+  },
+  "zero_to_two_illustrative_cost": {
+    "one_fast_first_scale_rejection_per_plan_serial_days": 14.971395549074188,
+    "full_suite_at_small_instance_medians_serial_days": 241.56581469392765
+  },
+  "all_potentially_better_plans_illustrative_cost": {
+    "one_fast_first_scale_rejection_per_plan_serial_days": 355.63242680713256,
+    "full_suite_at_small_instance_medians_serial_days": 5738.184969573933
+  },
+  "timing_is_forecast_or_rigorous_bound": false,
+  "timing_interpretation": "serial_sensitivity_calculation_using_small_instance_costs;full_village_mesh_is_larger;not_a_runtime_guarantee",
+  "maximum_uncached_checks_for_all_zero_to_three_plans": 36266352,
+  "whole_village_search_started": false,
+  "three_house_upper_bound_for_new_full_village_mesh_verified": false,
+  "full_village_source_rule_issue": "removing_all_three_bridge_source_buildings_exhausts_that_stratum;freeze_its_treatment_before_full_village_certification;never_count_no_fire_as_success",
+  "conclusion": "small_exact_search_is_certifiable;full_village_certification_requires_resource_plan_and_stronger_valid_bounds_or_large_compute_budget"
+}

@@ -1,0 +1,99 @@
+{
+  "schema_version": "six-candidate-conditional-construction-minimum-1",
+  "village": "pingyan",
+  "cohort": "Four original design families on both supported grids, full strict endpoints.",
+  "policy_comparison": "Each action selects its retained sources from four frozen orderings.",
+  "threshold_basis": "In-sample loss cap measured for the registered wide comparator.",
+  "constraints": {
+    "required_no_heritage_ignition": true,
+    "maximum_original_owner_N_upper": 3,
+    "maximum_burned_out_covered_area_m2": 241.48854379824064
+  },
+  "declared_roof_enclosure_widths_m": [
+    0.01,
+    2.5,
+    5,
+    10,
+    15.01
+  ],
+  "scope": "Five registered local enclosures plus one registered reduced action.",
+  "observations": [
+    {
+      "policy": "roof-seed-protected-union-ring-b0-w0.01",
+      "C_m2": 1124.7908313480193,
+      "strict_closed_full_checks": null,
+      "core_safe_across_full_set": false,
+      "max_A_m2": null,
+      "worst_original_N": null,
+      "constraint_verdict": "first_heritage_ignition_counterexample"
+    },
+    {
+      "policy": "roof-seed-protected-union-ring-b0-w2.5",
+      "C_m2": 2543.456175290825,
+      "strict_closed_full_checks": 8,
+      "core_safe_across_full_set": true,
+      "max_A_m2": 1742.466642257279,
+      "worst_original_N": {
+        "lower": 9,
+        "upper": 11
+      },
+      "constraint_verdict": "exceeds_loss_cap"
+    },
+    {
+      "policy": "local-band-with-observed-clearance-subset",
+      "C_m2": 3585.565937285018,
+      "strict_closed_full_checks": 8,
+      "core_safe_across_full_set": true,
+      "max_A_m2": 241.48854379824064,
+      "worst_original_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "constraint_verdict": "meets"
+    },
+    {
+      "policy": "roof-seed-protected-union-ring-b0-w5",
+      "C_m2": 4043.526326304126,
+      "strict_closed_full_checks": null,
+      "core_safe_across_full_set": null,
+      "max_A_m2": null,
+      "worst_original_N": null,
+      "constraint_verdict": "loss_and_safety_unknown_price_already_higher"
+    },
+    {
+      "policy": "roof-seed-protected-union-ring-b0-w10",
+      "C_m2": 7597.945200260738,
+      "strict_closed_full_checks": null,
+      "core_safe_across_full_set": null,
+      "max_A_m2": null,
+      "worst_original_N": null,
+      "constraint_verdict": "loss_and_safety_unknown_price_already_higher"
+    },
+    {
+      "policy": "roof-seed-protected-union-ring-b0-w15.01",
+      "C_m2": 10669.276972304711,
+      "strict_closed_full_checks": 8,
+      "core_safe_across_full_set": true,
+      "max_A_m2": 241.48854379824064,
+      "worst_original_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "constraint_verdict": "meets"
+    }
+  ],
+  "finite_unique_minimum": "local-band-with-observed-clearance-subset",
+  "minimum_C_m2": 3585.565937285018,
+  "cheaper_options_excluded": 2,
+  "unmeasured_more_expensive_options": 2,
+  "signed_input_file_hashes": {
+    "runs/research/heritage-protected-union-pingyan-20261111/experiment.json": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+    "docs/results/heritage-pingyan-w2.5-and-w15.01-native-strict-20261111.json": "5782c2bdf84f9ddd8906db7bd538e016404df0d3c2b45fa5988fb7992fd90082",
+    "docs/results/heritage-pingyan-w0.01-first-ignition-prefix-20261111.json": "c4c6e42269ec1844ef8404e042890ee731b8a7f8f66c094ddd74c1a4b9710c64",
+    "docs/results/heritage-pingyan-observed-clearance-subset-registration-20261111.json": "d510c786f4259fbc3ce7983b599f35f9a9236ccbcac315d77e968a4ce980d248",
+    "docs/results/heritage-pingyan-three-policies-seven-plus-one-strict-20261111.json": "58e9eb5fc9db03aec8f80c36a335d139c09d8f39335d7b45de0cc793ba52645d"
+  },
+  "extra_CA": 0,
+  "method_sha256": "5184def8f92836a7c423613b7c8707d1e02e50a1a902015af4a3f6135c93fdab",
+  "receipt_sha256": "2235b4cb3b0793519a0c6cccafbfacef214594b85c5e87fb1c82c3e5e3994cd7"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "real-simulation-burn-integral-error-recovery-observation-1",
+  "village": "pingyan",
+  "observation_program": "supplementary fixed three-arm independent validation",
+  "completed_terminal_cases_at_observation": 0,
+  "corrected_steps_observed": 3,
+  "reported_corrected_nodes_across_steps": 4,
+  "dt_min_s": 1.0186340659856796e-10,
+  "dt_max_s": 1.0550138540565968e-10,
+  "maximum_logged_first_node_relative_peak_excess_before_recovery": 6.975446428580945e-05,
+  "all_logged_first_nodes_pass_unchanged_peak_guard_after_repair": true,
+  "numeric_log_prefix_sha256": "21c204dc2bf415a3929b1346fc8f0e1c56beebd9bdc334439854726bc7158f29",
+  "native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+  "solver_sha256": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3",
+  "original_distinct_failed_run_exact_state_known": false,
+  "native_fire_outcomes_inferred_from_intermediate_diagnostics": false
+}

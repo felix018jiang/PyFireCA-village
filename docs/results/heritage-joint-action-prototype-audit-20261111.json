@@ -1,0 +1,91 @@
+{
+  "schema_version": "heritage-joint-action-resource-audit-1",
+  "new_village_CA_checks": 0,
+  "new_large_radiation_graphs": 0,
+  "new_large_roof_meshes": 0,
+  "rows": [
+    {
+      "village": "batuan",
+      "roof_action_count": 331,
+      "eligible_whole_5m_ground_action_count": 78386,
+      "all_action_count": 78717,
+      "ground_action_footprint_area_m2": 25.0,
+      "roof_cost_shared_AND_variables": 148,
+      "maximum_additional_remaining_owner_AND_variables": 1,
+      "shared_AND_logic_nonzeros": 1042,
+      "example_64_sparse_nogoods_max64_actions_plus_cap_nonzeros": 162785,
+      "example_old_64_dense_nogood_nonzeros": 5037888,
+      "CSC_array_bytes_approx": 2268888,
+      "minimum_ground_ambient_CFL_s": 6.568230404081252,
+      "declared_max_dt_s": 1.0,
+      "case_manifest_sha256": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+      "parent_array_sha256": {
+        "domain_mask": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+        "known_mask": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+        "burnable_mask": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+        "building_index": "c3b0af6bb0d33eee1184f67ea383b8dd08156eecc6cd323a0d542c23a39e1945",
+        "covered_area_m2": "4fe9c4480044c43781569689a9c1e1d26750ac233100fe7779116d475ce9b706"
+      },
+      "original_owner_layout_reference": "runs/research/heritage-followup-batuan-20261103/evaluations/59b15289d1798e8fa7dab5a7d0ddcf9481b77b364316f368d97bd7c6a0825bbc/layout.npz",
+      "original_owner_layout_sha256": "5c1cac29c54b7663561cb4de293d2cade09b9682b0be62a8f502decb6967029e",
+      "eligible_ground_ids_sha256": "11cc043c3a26c039fb670fc726e375c20c7f19269ca4f7773c948fab30c9a85c"
+    },
+    {
+      "village": "pingyan",
+      "roof_action_count": 947,
+      "eligible_whole_5m_ground_action_count": 212887,
+      "all_action_count": 213834,
+      "ground_action_footprint_area_m2": 25.0,
+      "roof_cost_shared_AND_variables": 556,
+      "maximum_additional_remaining_owner_AND_variables": 2,
+      "shared_AND_logic_nonzeros": 3922,
+      "example_64_sparse_nogoods_max64_actions_plus_cap_nonzeros": 436307,
+      "example_old_64_dense_nogood_nonzeros": 13685376,
+      "CSC_array_bytes_approx": 6093252,
+      "minimum_ground_ambient_CFL_s": 6.568230404081252,
+      "declared_max_dt_s": 1.0,
+      "case_manifest_sha256": "7b032002033eaf5e8c0ee2f5d27ce4c3c86405598f176cbf00de2ef4dc499e7d",
+      "parent_array_sha256": {
+        "domain_mask": "c16a94e34679272a9e8b5a8559a480b1c05d9e5893dcae49c561937a410af890",
+        "known_mask": "c16a94e34679272a9e8b5a8559a480b1c05d9e5893dcae49c561937a410af890",
+        "burnable_mask": "7f844156ab481532c18d573f8d81104c0126ebf676fc2586e6ebfab4d78606ae",
+        "building_index": "0ea0ac32346b769be22ec8b3c3442eb1f1da259c6988cd2e2880a6928f43711c",
+        "covered_area_m2": "65471735e685976153d9dffbd53f5a707536c2e07dc5ba3866460d75ac70a56a"
+      },
+      "original_owner_layout_reference": "runs/research/heritage-followup-pingyan-20261103/evaluations/3e39eabe2b65495efaf0c495c4d4c12c1eae483c47c0f3d507d67a48fd8b25bb/layout.npz",
+      "original_owner_layout_sha256": "762f373c361a468e1f1dfe925996d3008b41161183e013d5d1b36e289bd31756",
+      "eligible_ground_ids_sha256": "916311fb1bf52a3fde918c4fd8ed1af0355b8da2dac292c7363f448d040ceef9"
+    }
+  ],
+  "source_projection_scope": "roof_C<=joint_C<=same_total_cap;cap_not_verified_UB_until_joint_CA_passes",
+  "physical_cut_schema": "heritage-joint-physical-node-removal-cut-1",
+  "sparse_matrix_nonzero_cap": 5000000,
+  "no_global_pareto_or_real_safety_claim": true,
+  "prototype_module_sha256": "ff700fb0ee094f8e867837ceb6b5b12f45dc802cd5e7593291a3f86d7eb9728b",
+  "test_module_sha256": "af4c189809a012a75156fcbd42357146cf365966db93cad44119209a6a877fb9",
+  "tests_command": "PYTHONPATH=src /opt/anaconda3/bin/python -m pytest tests/planning/test_joint_action_prototype.py tests/planning/test_roof_joint.py tests/planning/test_physical_group_cuts.py tests/planning/test_area_master.py -q",
+  "test_result": "76 passed in 91.04 s;Ruff passed",
+  "joint_prototype_test_count": 19,
+  "complete_native_CA_powerset_cases": [
+    {
+      "roof_support_m": 1.0,
+      "contact_enabled": false,
+      "action_count": 3,
+      "evaluated_subsets": 8
+    },
+    {
+      "roof_support_m": 0.5,
+      "contact_enabled": false,
+      "action_count": 3,
+      "evaluated_subsets": 8
+    },
+    {
+      "roof_support_m": 1.0,
+      "contact_enabled": true,
+      "action_count": 3,
+      "evaluated_subsets": 8
+    }
+  ],
+  "excluded_plan_invariant": "native core outcomes/time and every retained-node state array bitwise identical",
+  "prototype_connected_to_running_producer": false
+}

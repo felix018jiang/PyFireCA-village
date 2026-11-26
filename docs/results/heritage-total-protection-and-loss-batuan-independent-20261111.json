@@ -1,0 +1,58 @@
+{
+  "schema_version": "independent-joint-protection-and-loss-integer-proof-1",
+  "village": "batuan",
+  "joint_candidate_sha256": "9652052624353a5d2a252c47327df716ab870d12c7c321871f6038fca1d324f5",
+  "mandatory_receipt_sha256": "dbc414d04eb2c8d80f84848d38823e43704c2b04c17411f6fbdbfc42b4170b20",
+  "thermal_and_escape_calculation_rebuilt_from_original_unintervened_fuel": true,
+  "both_criteria_include_all_original_positive_potential_edges": true,
+  "registered_equation_and_cost_table_scope": "Threshold coefficients recomputed in binary64 with independent vectorized distance/heat accounting. Cheaper ground covers are excluded using exact integer inequalities on a downward-rounded relaxation.",
+  "thresholds": [
+    {
+      "core_ceiling": 0.99,
+      "actual_total_C_m2": 11236.448481374588,
+      "original_owner_union_C_m2": 11236.448481377087,
+      "mandatory_C_m2": 10436.448481374588,
+      "optional_roof_count": 0,
+      "optional_relevant_ground_cells": 52,
+      "minimum_additional_whole_ground_cells_if_proven": 32,
+      "preceding_projected_cost_tier_m2": 11211.448481374588,
+      "no_strictly_cheaper_plan_under_fixed_inequalities_proved": true,
+      "integer_relaxation_certificate_leaf_counts": {
+        "branch_nodes": 1,
+        "integer_weighted_exclusions": 1
+      },
+      "max_external_to_core_dry_fraction": 0.977075238606896,
+      "max_group_to_surviving_exterior_dry_fraction": 0.9060590846593972,
+      "all_direct_25m2_source_and_fuel_budgets_preserved": 8,
+      "retained_core_contact_pairs": 0,
+      "retained_cross_compartment_contact_pairs": 0
+    },
+    {
+      "core_ceiling": 1.0,
+      "actual_total_C_m2": 11236.448481374588,
+      "original_owner_union_C_m2": 11236.448481377087,
+      "mandatory_C_m2": 10436.448481374588,
+      "optional_roof_count": 0,
+      "optional_relevant_ground_cells": 52,
+      "minimum_additional_whole_ground_cells_if_proven": 32,
+      "preceding_projected_cost_tier_m2": 11211.448481374588,
+      "no_strictly_cheaper_plan_under_fixed_inequalities_proved": true,
+      "integer_relaxation_certificate_leaf_counts": {
+        "branch_nodes": 1,
+        "integer_weighted_exclusions": 1
+      },
+      "max_external_to_core_dry_fraction": 0.977075238606896,
+      "max_group_to_surviving_exterior_dry_fraction": 0.9060590846593972,
+      "all_direct_25m2_source_and_fuel_budgets_preserved": 8,
+      "retained_core_contact_pairs": 0,
+      "retained_cross_compartment_contact_pairs": 0
+    }
+  ],
+  "registered_family_worst_A_upper_m2": 420.73,
+  "registered_family_worst_N_owner_upper": 4,
+  "bounds_apply_to_fixed_families_not_arbitrary_settlement_loss": true,
+  "native_fire_runs": 0,
+  "solver_optimal_flag_used_for_lower_proof": false,
+  "independent_audit_source_sha256": "b41a799076011cdff195fcd875618f73d3ca7bd44d1d09801d2754ceaf272978",
+  "receipt_sha256": "ab84cb1bff0ca90c6698e2dc5abee3ce0101e65fd5910c7560334c170c0dc6a5"
+}

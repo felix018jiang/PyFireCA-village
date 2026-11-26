@@ -1,0 +1,10 @@
+{
+  "schema_version": "registered-stage-count-native-equivalence-1",
+  "geometry_fixtures": 32,
+  "intact_and_individual_mask_comparisons_to_native_edge_bounds": 224,
+  "retained_shared_roof_mask_instances": 128,
+  "metric": "exact raw point candidates; conservative integrated support count, native original integrated-mask membership preserved",
+  "native_counter_sha256": "c673c725a2e3b287fffb841519034e59561f00b2a050cc9f458168574940ed75",
+  "stage_counter_sha256": "5e9610212a46e6807d183c0a54cc1903d1a28521696a5af98976d4c922429677",
+  "new_CA_runs": 0
+}

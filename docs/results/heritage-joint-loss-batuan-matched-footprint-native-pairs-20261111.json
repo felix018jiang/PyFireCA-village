@@ -1,0 +1,130 @@
+{
+  "sampled_family_count": 8,
+  "same_source_and_geometry_family_count": 2,
+  "registered_scales": 2,
+  "primary_source_draws_added": 0,
+  "cost_loss_pairs": [
+    {
+      "case_sha256": "3f0e12a20fcfc6a277a91524fe32606e8c5c8ddbf9bc5b88cfa5310f19be8861",
+      "support_scale_m": 0.5,
+      "joint": {
+        "C_m2": 11236.448481374598,
+        "A_m2": 203.4690846870775,
+        "N": {
+          "lower": 1,
+          "upper": 2
+        },
+        "nonroof_A_m2": 0.0,
+        "manifest_sha256": "330b371bd1eee5acb9d475f0b49fdf8ea98a9e6b6dcf62c7848d97b6221c347a"
+      },
+      "economic": {
+        "C_m2": 1089.0173624410986,
+        "A_m2": 6464.5396418130995,
+        "N": {
+          "lower": 24,
+          "upper": 24
+        },
+        "nonroof_A_m2": 325.0,
+        "manifest_sha256": "daf09985aa891e74e82575ea443c4adb2a4cfe6f7d945f2d404f547434c30247"
+      }
+    },
+    {
+      "case_sha256": "1017a53a1bb55f5b2cddc48db46841666ff229a76e5174880ea57dfe39958287",
+      "support_scale_m": 1.0,
+      "joint": {
+        "C_m2": 11236.44848137508,
+        "A_m2": 203.4690846870775,
+        "N": {
+          "lower": 1,
+          "upper": 2
+        },
+        "nonroof_A_m2": 0.0,
+        "manifest_sha256": "aa44e84601d86f405d2b1ec0143e54d7f5b07d9aba140168eedbe2d19172a5ef"
+      },
+      "economic": {
+        "C_m2": 1089.0173624410688,
+        "A_m2": 6464.539641813099,
+        "N": {
+          "lower": 24,
+          "upper": 24
+        },
+        "nonroof_A_m2": 325.0,
+        "manifest_sha256": "0740102672f264e8e0ce002eaef09c0203a78e44deb5ffba836d8e32b90dccaa"
+      }
+    },
+    {
+      "case_sha256": "5212f115625307ff94dfb68e09a64177a80e17aaff4b9b07bda735eaa41d55d5",
+      "support_scale_m": 0.5,
+      "joint": {
+        "C_m2": 11236.44848137466,
+        "A_m2": 200.9299598678724,
+        "N": {
+          "lower": 1,
+          "upper": 2
+        },
+        "nonroof_A_m2": 0.0,
+        "manifest_sha256": "8ae099ab8e4ed8057b20e905f7d62946b85a3cc53db89ac3086782e715c391bd"
+      },
+      "economic": {
+        "C_m2": 1089.0173624410986,
+        "A_m2": 1221.934595993852,
+        "N": {
+          "lower": 5,
+          "upper": 5
+        },
+        "nonroof_A_m2": 325.0,
+        "manifest_sha256": "d3cf2b481b4232183273ce4b8ce0e5c768a6df1cbe17811dc3d0fb1c42431aeb"
+      }
+    },
+    {
+      "case_sha256": "dd98f08c8ab7d79245ac6cbeb1d53a337afeaefd511723a2250eb2c229c3cc2b",
+      "support_scale_m": 1.0,
+      "joint": {
+        "C_m2": 11236.44848137495,
+        "A_m2": 200.9299598678724,
+        "N": {
+          "lower": 1,
+          "upper": 2
+        },
+        "nonroof_A_m2": 0.0,
+        "manifest_sha256": "7fa6da4912705d38a025e449df2e4c78969cf5263568542234fdfe8c20880dc4"
+      },
+      "economic": {
+        "C_m2": 1089.0173624410688,
+        "A_m2": 1221.9345959938523,
+        "N": {
+          "lower": 5,
+          "upper": 5
+        },
+        "nonroof_A_m2": 325.0,
+        "manifest_sha256": "3db38d2f10299929d7e0907401df8813df6fe78cc158c70e1591a102f150ca9f"
+      }
+    }
+  ],
+  "paired_fields": [
+    "source_id",
+    "source_footprint_sha256",
+    "source_budget",
+    "scale_m",
+    "common_layout_sha256",
+    "frozen_integrated_node_mask_sha256",
+    "fire_id"
+  ],
+  "verified_run_problem_sha256": {
+    "joint": "a2d588e07a77af6e6a2859e602836d764fd48a22e5bcb68097cfbd6535997075",
+    "economic": "7bc47258b0ef8484ed1fd3e84c13ce4255b48bc98d7f79beea4096cbf33a2515"
+  },
+  "scope": "all comparable registered families; previously disclosed, adaptive design",
+  "worst_among_four": {
+    "joint": {
+      "A_m2": 203.4690846870775,
+      "N_upper": 2
+    },
+    "economic": {
+      "A_m2": 6464.5396418130995,
+      "N_upper": 24
+    }
+  },
+  "method_sha256": "45fa31dd31227b6c6574dd892cae67467264c4e8ebca05291fb6c7a64e0960f3",
+  "receipt_sha256": "10ec2ee3fc4e4de64f7c203172c4237a5906f3cef6306847adb831a709d118d1"
+}

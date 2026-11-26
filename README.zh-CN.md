@@ -3,10 +3,10 @@
 **面向林火蔓延模拟的模块化、经过验证、GIS 就绪的 Python 元胞自动机框架。**
 
 [![Python](https://img.shields.io/badge/Python-3.11%2B-blue)](#安装)
-[![CI](https://github.com/hujinghaoabcd/PyFireCA/actions/workflows/ci.yml/badge.svg)](https://github.com/hujinghaoabcd/PyFireCA/actions/workflows/ci.yml)
+[![CI](https://github.com/felix018jiang/PyFireCA-village/actions/workflows/ci.yml/badge.svg)](https://github.com/felix018jiang/PyFireCA-village/actions/workflows/ci.yml)
 [![Status](https://img.shields.io/badge/status-alpha-orange)](#项目状态)
 
-[English](README.md) · [运行模拟器](docs/RUNNING_SIMULATOR.md) · [总体设计](docs/DESIGN.md) · [验证方案](docs/VALIDATION.md) · [当前状态](docs/STATUS.md) · [交接文档](docs/HANDOFF.md)
+[侗寨防火线论文与复核](README.md) · [运行模拟器](docs/RUNNING_SIMULATOR.md) · [总体设计](docs/DESIGN.md) · [验证方案](docs/VALIDATION.md) · [当前状态](docs/STATUS.md) · [交接文档](docs/HANDOFF.md)
 
 ## 为什么做 PyFireCA？
 
@@ -56,8 +56,8 @@ YAML 配置 + 对齐 GeoTIFF + 点火事件
 运行文件型 GIS 模拟器：
 
 ```bash
-git clone https://github.com/hujinghaoabcd/PyFireCA.git
-cd PyFireCA
+git clone https://github.com/felix018jiang/PyFireCA-village.git
+cd PyFireCA-village
 python -m pip install -e ".[gis]"
 ```
 

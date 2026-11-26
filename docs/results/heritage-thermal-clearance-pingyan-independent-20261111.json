@@ -1,0 +1,32 @@
+{
+  "village": "pingyan",
+  "source_certificate_file_sha256": "d91e51ac3c1659171b2567c3c0a8c026b9ef6a24f59ba867e80975cf3914952d",
+  "C_m2": 3929.4875441747736,
+  "raw_owner_union_cost_m2": 3929.4875441687477,
+  "ground_count": 60,
+  "roof_action_count": 13,
+  "protected_parent_receptors_recomputed": 115,
+  "all_receptors_below_99_percent_dry_capacity": true,
+  "greatest_recomputed_dose_fraction": 0.9615949849383583,
+  "native_contact_left_unblocked": 0,
+  "total_local_roof_subsets": 16384,
+  "all_local_ground_actions": 160,
+  "lower_discrete_cost_tier_m2": 3929.4875029328814,
+  "cost_gap_to_next_lower_tier_m2": 4.12418921769131e-05,
+  "unresolved_cheaper_roof_subsets": 0,
+  "near_equal_float_cost_tiers": 0,
+  "cheaper_discrete_solutions_excluded": true,
+  "certificate_counts": {
+    "roof_subsets_excluded_by_native_contact": 12288,
+    "legal_cheaper_roof_subsets": 4096,
+    "branch_nodes": 21532,
+    "integer_single_row_exclusions": 6458,
+    "integer_weighted_exclusions": 6356
+  },
+  "native_CA_runs": 0,
+  "dose_bound_arithmetic": "Per-group ratios computed independently in binary64, down-adjusted by 1e-10 and floored in 1e-8 units. Feasibility cuts are integer for that relaxed table. No rational survey polygon claim.",
+  "objective_scope": "Sufficient cumulative-energy inequalities only, under physical owner AND and whole grass cells.",
+  "schema_version": "independent-thermal-dose-and-discrete-cost-verification-1",
+  "audit_source_sha256": "d98cda783d2c5c51df4a42f0747d85dc6839463249d403cbfb27f94c2d811e0a",
+  "receipt_sha256": "89db6cb0cababcb814cd80eaf133c25d166f34974b79b0f62ee002b0672e9768"
+}

@@ -1,0 +1,60 @@
+{
+  "CA_runs": 0,
+  "C_m2": 45445.09010053902,
+  "action_sha256": "0a05968751a478b8295fb582402ee6fee30d683fbc652df010cfb3ed5f54cc21",
+  "all_roof_simultaneous_C_m2": 45520.09010053902,
+  "claim_scope": "A single direct ignition on any retained ordinary roof. Before any ground ignition, with heritage cores protected, only roof components touching that ordinary label can burn. All components of the same owner enter one combined dose. The maximum ranges over owners. Bounds apply to the whole finite modeled domain.",
+  "core_protection_additional_ground_proof": {
+    "core_contact_additional_whole_cells": 0,
+    "integer_preceding_ground_tier_infeasible": true,
+    "integer_proof_counts": {
+      "branch_nodes": 1,
+      "integer_weighted_exclusions": 1
+    },
+    "optimal_optional_core_whole_cells": 32
+  },
+  "distinct_possible_emitting_component_unions": 30,
+  "ground_cells": 1759,
+  "ground_cost_m2": 43975.0,
+  "mandatory_ground_from_contact_or_any_component_dose": 1727,
+  "max_core_absorbed_energy_fraction": 0.977075238606896,
+  "max_ground_component_absorbed_energy_fraction": 0.9986919490980725,
+  "method_sha256": "8afb63c25fd0f078ed2b55ec27949d45bd69b1c5b4ae68bf5be76353402ec358",
+  "multiple_component_owners_counted_across_all_pieces": 0,
+  "prior_all_roof_bound_sha256": "6a2812cd22e804d71ee48a05933e6df7c649ddfb86153d304fa8c00fb527ad1e",
+  "receipt_sha256": "07477bcdee2c7a3e8c6c093282951bad52c3ffb3359d5452981fae3a8b215ee5",
+  "retained_roof_owners_in_component_dose": 321,
+  "saved_vs_all_roof_simultaneous_m2": 75.0,
+  "saved_vs_geometric_m2": 6125.0,
+  "schema_version": "single-ordinary-roof-component-thermal-ground-cut-1",
+  "source_cohort_ground_receiver_doses_independently_recomputed": 1996,
+  "source_orders_consumed_for_design": 0,
+  "unchanged_roof_only_loss_envelopes": {
+    "all_ordinary_inventory": 331,
+    "all_represented_retained_ordinary_source_labels": {
+      "fraction_meeting_both_caps": 0.056074766355140186,
+      "meet_both_loss_caps": 18,
+      "roofs": 321,
+      "worst_area_upper_m2": 27140.18,
+      "worst_original_owner_upper": 157
+    },
+    "eligible_original_geometry_25m2_sources": 329,
+    "physically_surviving_fraction": 0.9758308157099698,
+    "physically_surviving_ordinary_owner_count": 323,
+    "possible_roof_components": 30,
+    "retained_25m2_eligible_ordinary_sources": {
+      "fraction_meeting_both_caps": 0.05642633228840126,
+      "meet_both_loss_caps": 18,
+      "roofs": 319,
+      "worst_area_upper_m2": 27140.18,
+      "worst_original_owner_upper": 157
+    },
+    "retained_eligible_fraction": 0.9696048632218845,
+    "two_caps_area_m2_and_owner_count": [
+      420.73,
+      4
+    ],
+    "unrepresented_original_owner_count_included_in_upper": 0
+  },
+  "village": "batuan"
+}

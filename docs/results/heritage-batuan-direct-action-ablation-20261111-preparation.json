@@ -1,0 +1,325 @@
+{
+  "additional_frozen_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-action-ablation-20261111-catalog.json": "dfb45500dbe7edff74fd91f0e7ff82ab5ce120d5bf37854afaae8b5957da0c6a",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-action-ablation-20261111-design.json": "c8ba95f21b7a6ab9cc128aee781c750f346931b0239b2bb0ab7bff2f14cb1b1e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.D3-G0-experiment.json": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.D9-G12-experiment.json": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.clock-receipt.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.finite-source-certificate.json": "bec37f574add7e3606f97365d8bc69eeb170bb489aadd4f6f2c8072ed252ec7a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.preparer.py": "de2e88126ee8b0571d04311cef8800052053fbe118f1dc647096b04dcbfa2609",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.seed-config.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.thin-catalog.json": "5e1af3d2d05fb5f4e0f7ab6d376b453ef65cec647ee4adcbeb4cfd2dda708951",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.thin-config.json": "db6b0b12e7a41ef3b1c63f99738153ecc1ede024846877ec0a98eee77571d554",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.union-helper.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.validation-helper.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-longcap-20261111.json",
+  "config_sha256": "108f4a6ad4cb89f261f68ae031dc609d90b77164e95116c4f8543442d3f984a9",
+  "cost_receipts": [
+    {
+      "C_construction_action_area_m2": 743.8419687401408,
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_covered_fuel_area_m2": 443.8419728948336,
+      "cleared_roof_geometry_union_area_m2": 443.8419687401408,
+      "cleared_roof_node_count": 42,
+      "cleared_vegetation_covered_fuel_area_m2": 300.0,
+      "cleared_vegetation_ground_footprint_area_m2": 300.0,
+      "cleared_vegetation_parent_cell_count": 12,
+      "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+      "covered_area_is_not_added_to_construction_footprint": true,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "ground_evidence": "exact_frozen_thin12_parent_cells;direct_whole_object_ablation",
+      "physical_union_recomputed_area_m2": 743.8419687401408,
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "planned_roof_ID_count": 3,
+      "protected_original_roof_node_cleared_count": 0
+    },
+    {
+      "C_construction_action_area_m2": 1089.0173624408872,
+      "actual_cleared_base_node_mask_sha256": "de1e60ffe1b9114c254aecc459fe7e144d9bdd429c80a7b7743bcc74ad3d54d4",
+      "cleared_physical_cell_ids": [],
+      "cleared_roof_covered_fuel_area_m2": 1089.0173673138215,
+      "cleared_roof_geometry_union_area_m2": 1089.0173624408872,
+      "cleared_roof_node_count": 112,
+      "cleared_vegetation_covered_fuel_area_m2": 0.0,
+      "cleared_vegetation_ground_footprint_area_m2": 0.0,
+      "cleared_vegetation_parent_cell_count": 0,
+      "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+      "covered_area_is_not_added_to_construction_footprint": true,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+      "physical_union_recomputed_area_m2": 1089.0173624408872,
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "planned_roof_ID_count": 9,
+      "protected_original_roof_node_cleared_count": 0
+    }
+  ],
+  "elapsed_s": 13.493268250022084,
+  "external_existing_arms": [
+    {
+      "existing_outcomes_must_be_verified_natively_before_composition": true,
+      "experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json",
+      "experiment_sha256": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+      "factorial_arm": "D3-G0",
+      "included_in_new_evaluation_plans": false,
+      "native_terminal_values_or_statuses_transferred": false,
+      "plan": {
+        "cleared_physical_cell_ids": [],
+        "demolished_ids": [
+          "B0061",
+          "B0071",
+          "B0076"
+        ],
+        "plan_id": "roof-seed"
+      },
+      "problem_sha256": "c0eae3aba1b079bb4e6d86ffac7428ebf4215e8167975eadc0d9afd2130223a4",
+      "run_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111"
+    },
+    {
+      "existing_outcomes_must_be_verified_natively_before_composition": true,
+      "experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/experiment.json",
+      "experiment_sha256": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+      "factorial_arm": "D9-G12",
+      "included_in_new_evaluation_plans": false,
+      "native_terminal_values_or_statuses_transferred": false,
+      "plan": {
+        "cleared_physical_cell_ids": [
+          50118,
+          50465,
+          50812,
+          50813,
+          51160,
+          51508,
+          51856,
+          52203,
+          52550,
+          52551,
+          52898,
+          53593
+        ],
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "ground_evidence": "frozen_b0_hull_narrow_width_sweep;not_fire_safety_certified",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01"
+      },
+      "problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+      "run_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111"
+    }
+  ],
+  "graph_builds": 0,
+  "new_CA_checks": 0,
+  "planned_new_CA_checks": 16,
+  "producer_frozen": false,
+  "required_solver_source_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "schema_version": "heritage-direct-action-ablation-preparation-1",
+  "source_and_parent_guard": {
+    "actual_reference_input_count": 72,
+    "all_reference_fire_footprints_and_refined_ids_identical": true,
+    "graph_builds": 0,
+    "make_oracle_passed": true,
+    "manager_path": "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py",
+    "manager_sha256": "10647b74bd85588f943951782756f71ebb84e242ede482ae86a9eccbafc9f64c",
+    "new_CA_checks": 0,
+    "plan_source_grass_checks": [
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 12,
+        "fire_id": "B0075-known",
+        "plan_id": "direct-seed-D3-with-thin-G12",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 12,
+        "fire_id": "B0071-known",
+        "plan_id": "direct-seed-D3-with-thin-G12",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 12,
+        "fire_id": "B0062-known",
+        "plan_id": "direct-seed-D3-with-thin-G12",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 12,
+        "fire_id": "B0061-known",
+        "plan_id": "direct-seed-D3-with-thin-G12",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 0,
+        "fire_id": "B0075-known",
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 0,
+        "fire_id": "B0071-known",
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 0,
+        "fire_id": "B0062-known",
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 0,
+        "fire_id": "B0061-known",
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      }
+    ],
+    "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+    "scenario_engine_instantiated": false,
+    "validate_config_passed": true,
+    "validation_problem_sha256_not_execution_cache_identity": "07e80dca0125bcaf8fb3b446f5aa45eabf260636782b08eff7d39d427c494882"
+  }
+}

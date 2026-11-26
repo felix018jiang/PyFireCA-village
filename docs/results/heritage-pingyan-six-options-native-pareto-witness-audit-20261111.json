@@ -1,0 +1,122 @@
+{
+  "schema_version": "finite-design-enclosure-pareto-witness-1",
+  "village": "pingyan",
+  "scope": "Five enclosures and one reduced action, four original design orderings, two scales.",
+  "criterion": "Strict heritage protection, construction C, worst burned area A, and worst upper original-owner count N.",
+  "handling": "A and N lower bounds on the maxima may come from different valid witnesses. Missing scenarios remain unobserved.",
+  "costs_m2": {
+    "roof-seed-protected-union-ring-b0-w0.01": 1124.7908313480193,
+    "roof-seed-protected-union-ring-b0-w2.5": 2543.456175290825,
+    "local-band-with-observed-clearance-subset": 3585.565937285018,
+    "roof-seed-protected-union-ring-b0-w5": 4043.526326304126,
+    "roof-seed-protected-union-ring-b0-w10": 7597.945200260738,
+    "roof-seed-protected-union-ring-b0-w15.01": 10669.276972304711
+  },
+  "lean_benchmark": {
+    "C_m2": 3585.565937285018,
+    "A_m2": 241.48854379824064,
+    "N_upper": 3
+  },
+  "prior_rejected_by_heritage_prefix": "roof-seed-protected-union-ring-b0-w0.01",
+  "prior_dominated_by_reduced": "roof-seed-protected-union-ring-b0-w15.01",
+  "unique_least_C_heritage_safe": "roof-seed-protected-union-ring-b0-w2.5",
+  "definitely_nondominated": [
+    "roof-seed-protected-union-ring-b0-w2.5",
+    "local-band-with-observed-clearance-subset"
+  ],
+  "complete_six_candidate_frontier": true,
+  "unresolved_candidates": [],
+  "intermediate_policy_decisions": [
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w5",
+      "C_m2": 4043.526326304126,
+      "strict_safe_closed_witnesses": 2,
+      "lower_bound_on_maximum_A_m2": 241.48854379824064,
+      "lower_bound_on_maximum_original_N_upper": 3,
+      "decision": "cannot_be_nondominated_even_if_other_cases_are_safe"
+    },
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w10",
+      "C_m2": 7597.945200260738,
+      "strict_safe_closed_witnesses": 2,
+      "lower_bound_on_maximum_A_m2": 241.48854379824064,
+      "lower_bound_on_maximum_original_N_upper": 3,
+      "decision": "cannot_be_nondominated_even_if_other_cases_are_safe"
+    }
+  ],
+  "verified_witnesses": [
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w5",
+      "manifest_sha256": "192c3b306cd81b08be45239b021161036dfd5c509950ea7f1e95a303414a9fc9",
+      "native_artifacts_verified": 8,
+      "status": "passed",
+      "strict_safe_and_closed": true,
+      "strict_core_failure_observed": false,
+      "source_geometry_area_mass_energy_verified": true,
+      "N_original": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_m2": 241.48854379824064,
+      "recomputed_A_fsum_m2": 241.48854379824064
+    },
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w10",
+      "manifest_sha256": "a5d6540b5fd25706617a37bcb1b379b4fce36d173e1eecc5c0280f8e4150231b",
+      "native_artifacts_verified": 8,
+      "status": "passed",
+      "strict_safe_and_closed": true,
+      "strict_core_failure_observed": false,
+      "source_geometry_area_mass_energy_verified": true,
+      "N_original": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_m2": 241.48854379824064,
+      "recomputed_A_fsum_m2": 241.48854379824064
+    },
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w5",
+      "manifest_sha256": "c9903c4c83b750bc7c9c149299ab50c62695779e6059c9c1a4c834ae1029f401",
+      "native_artifacts_verified": 8,
+      "status": "passed",
+      "strict_safe_and_closed": true,
+      "strict_core_failure_observed": false,
+      "source_geometry_area_mass_energy_verified": true,
+      "N_original": {
+        "lower": 1,
+        "upper": 3
+      },
+      "A_m2": 180.21842301902592,
+      "recomputed_A_fsum_m2": 180.21842301902592
+    },
+    {
+      "plan": "roof-seed-protected-union-ring-b0-w10",
+      "manifest_sha256": "7fd0ae76a4a9281fdffcac93f04fa4fa0607bf1c5a87a34eb17e62650143884b",
+      "native_artifacts_verified": 8,
+      "status": "passed",
+      "strict_safe_and_closed": true,
+      "strict_core_failure_observed": false,
+      "source_geometry_area_mass_energy_verified": true,
+      "N_original": {
+        "lower": 1,
+        "upper": 3
+      },
+      "A_m2": 180.21842301902592,
+      "recomputed_A_fsum_m2": 180.21842301902592
+    }
+  ],
+  "native_budget_slots_used": 4,
+  "native_active_at_audit": null,
+  "original_plus_shard_started_slots": 22,
+  "original_frozen_slot_limit": 40,
+  "native_full_runs_invented": 0,
+  "CA_checks_by_auditor": 0,
+  "registration_sha256": "3f6b25c6b235e5aaa7a178c0033665da84038fcbbfeae0d5efe5a27ee40b0fbd",
+  "native_problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+  "budget_file_sha256": "eb9ffc3f090179ba2ce01dee7c72258f31d4bc02c0dc40f64082b3622fdc893b",
+  "prior_six_set_certificate_sha256": "45e0b422dda12f6ffad40e0f796cb50f30ae7dcedba93737ddf3f4845fd50adc",
+  "full_native_comparison_sha256": "a64abcc4f7386ff7fed7221417f047b46136f00654e2eae54519d513b59a7e8b",
+  "method_sha256": "be15862f6fd32840f7e9aa8c2dd39f22966c6b7f39ac738b9f0fb96d6e94aff1",
+  "receipt_sha256": "69041712f9d413dd9d0688f6f01e7b146e2127e9bd3a5dad50653451b6c8b2a5"
+}

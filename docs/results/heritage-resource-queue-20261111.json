@@ -1,0 +1,49 @@
+{
+  "schema_version": "heritage-resource-queue-index-1",
+  "active_overall_optimization_continues": true,
+  "paused_workers": [
+    {
+      "run": "heritage-balanced-optimized-pingyan-20261111",
+      "pid": 83905,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-pingyan-20261111/resource-scheduling/1794388090728260000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-retained-area-pingyan-20261110",
+      "pid": 57397,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/resource-scheduling/1794388090819220000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-narrow-hull-batuan-20261111",
+      "pid": 87801,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-narrow-hull-batuan-20261111/resource-scheduling/1794388090861422000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-joint-longcap-pingyan-20261111",
+      "pid": 87858,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-pingyan-20261111/resource-scheduling/1794389866994156000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-joint-action-batuan-20261111",
+      "pid": 72586,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-batuan-20261111/resource-scheduling/1794390067921908000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-thin-hull-batuan-20261111",
+      "pid": 51082,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/resource-scheduling/1794393456101367000/pause-receipt.json"
+    },
+    {
+      "run": "heritage-direct-action-ablation-batuan-20261111",
+      "pid": 59739,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-action-ablation-batuan-20261111/resource-scheduling/1794393456103133000/pause-receipt.json"
+    }
+  ],
+  "max_target_simultaneous_large_CA": 4,
+  "resume_with_SIGCONT_in_same_process": true,
+  "resumed_workers": [
+    {
+      "pid": 7896,
+      "receipt": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-clockfix-batuan-20261111/resource-scheduling/1794389268448466000/resume-receipt.json"
+    }
+  ]
+}

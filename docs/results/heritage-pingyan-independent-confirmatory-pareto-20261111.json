@@ -1,0 +1,745 @@
+{
+  "schema": "heritage-fixed-three-arm-independent-final-pareto-1",
+  "reconciliation_sha256": "62340f79678d19b0882f05d2f624000d2bcce3132de0557555f557ca5326bb9d",
+  "preregistered_candidate_sha256": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+  "design_data_in_objectives": false,
+  "independent_draw_families": 4,
+  "roof_scales_per_family": 2,
+  "declared_candidates": 3,
+  "completed_native": 20,
+  "not_run_due_to_strict_core_failure": 4,
+  "charged_native": 20,
+  "geometry_matches_required_for_direct_paired_contrasts": true,
+  "candidate_comparison_basis": "Same predeclared retained-source policy; per-plan worst losses. Actual patches can differ between arms.",
+  "selected_preference_weights": null,
+  "global_minimum_claim": false,
+  "stronger_real_site_conclusion": false,
+  "area_scope": "full model domain; per-case roof and nonroof components in the companion three-arm aggregate",
+  "analyses": {
+    "strict": {
+      "native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+      "analysis_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+      "complete_feasible": [
+        {
+          "plan_id": "fixed-core-and-first-escape-compartment",
+          "C_area_m2": 8465.532897386736,
+          "worst_burned_building_owner_bounds": {
+            "lower": 113,
+            "upper": 113
+          },
+          "worst_burned_total_m2": 1227785.760829013,
+          "upper_count_dominated_by": [],
+          "robustly_dominated_by": [],
+          "possibly_dominated_by": []
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "C_area_m2": 10669.276972304711,
+          "worst_burned_building_owner_bounds": {
+            "lower": 112,
+            "upper": 112
+          },
+          "worst_burned_total_m2": 28755.748802793052,
+          "upper_count_dominated_by": [],
+          "robustly_dominated_by": [],
+          "possibly_dominated_by": []
+        }
+      ],
+      "failed": [
+        "roof-seed-protected-union-ring-b0-w2.5"
+      ],
+      "unresolved": [],
+      "nondominated_on_cost_upper_count_area": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "robust_non_dominated": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "possible_dominance_free": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "objectives": [
+        "C_geometric_construction_m2",
+        "N_burned_out_original_owner_upper",
+        "A_physical_burned_out_m2"
+      ],
+      "frontier_scope": "only_fully_evaluated_feasible_declared_plans"
+    },
+    "finite_domain_closed": {
+      "native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+      "analysis_problem_sha256": "0b721e63df5809e17d317769e2b810ed6cc5eb2636821f5d37a9cb5260a74acc",
+      "complete_feasible": [
+        {
+          "plan_id": "fixed-core-and-first-escape-compartment",
+          "C_area_m2": 8465.532897386736,
+          "worst_burned_building_owner_bounds": {
+            "lower": 113,
+            "upper": 113
+          },
+          "worst_burned_total_m2": 1227785.760829013,
+          "upper_count_dominated_by": [],
+          "robustly_dominated_by": [],
+          "possibly_dominated_by": []
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "C_area_m2": 10669.276972304711,
+          "worst_burned_building_owner_bounds": {
+            "lower": 112,
+            "upper": 112
+          },
+          "worst_burned_total_m2": 28755.748802793052,
+          "upper_count_dominated_by": [],
+          "robustly_dominated_by": [],
+          "possibly_dominated_by": []
+        }
+      ],
+      "failed": [
+        "roof-seed-protected-union-ring-b0-w2.5"
+      ],
+      "unresolved": [],
+      "nondominated_on_cost_upper_count_area": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "robust_non_dominated": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "possible_dominance_free": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "objectives": [
+        "C_geometric_construction_m2",
+        "N_burned_out_original_owner_upper",
+        "A_physical_burned_out_m2"
+      ],
+      "frontier_scope": "only_fully_evaluated_feasible_declared_plans"
+    }
+  },
+  "strict_full_and_matched_source_frontiers": {
+    "original_question": "4 frozen new families x 2 roof refinements = 8 proposed native observations per arm. Each arm requires eight strict passes for either frontier. An original verified strict core failure stops unissued members of its own arm.",
+    "exact_minimization_axes": [
+      "C_m2",
+      "max_A_total_burned_m2",
+      "max_N_original_owner_upper"
+    ],
+    "dominance_comparison_tolerance": 0,
+    "full_policy": "Per-plan worst losses across all four retained-source-policy families. Actual physical patches can differ by plan in the same family.",
+    "same_source_policy": "Use only families whose actual retained source, footprint, heat/fuel/area budget, common geometry and frozen integration membership coincide for every fully qualified candidate, at both scales.",
+    "scope_of_area": "Full model-domain covered fuel. Maxima of roof and nonroof can occur in different observations; the exact maximum-total cases list their own matched components.",
+    "all_strict_original_families": {
+      "eligible": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "observed_mesh_cases": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "results": {
+        "fixed-core-and-first-escape-compartment": {
+          "number_of_mesh_observations": 8,
+          "families": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "max_total_burned_A_m2": 1227785.760829013,
+          "observed_protected_ignitions_across_eligible_cases": 0,
+          "maximum_observed_protected_surface_temperature_K": 373.15,
+          "worst_burned_original_building_owner_bounds": {
+            "lower": 113,
+            "upper": 113
+          },
+          "max_roof_burned_m2": 30285.760829013132,
+          "max_nonroof_burned_m2": 1197500.0,
+          "native_cases_attaining_exact_max_total": [
+            {
+              "family": 1,
+              "roof_grid_m": 1.0,
+              "A_total_m2": 1227785.760829013,
+              "A_roof_m2": 30285.760829013132,
+              "A_nonroof_m2": 1197500.0,
+              "N_original_owner_bounds": {
+                "lower": 113,
+                "upper": 113
+              }
+            },
+            {
+              "family": 1,
+              "roof_grid_m": 0.5,
+              "A_total_m2": 1227785.760829013,
+              "A_roof_m2": 30285.760829013132,
+              "A_nonroof_m2": 1197500.0,
+              "N_original_owner_bounds": {
+                "lower": 113,
+                "upper": 113
+              }
+            }
+          ],
+          "cases": [
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 314.2983979939233,
+              "family": 1,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 113,
+                "upper": 113
+              },
+              "A_total_m2": 1227785.760829013,
+              "A_roof_m2": 30285.760829013132,
+              "A_nonroof_m2": 1197500.0,
+              "native_manifest_sha256": "236abb6ff45bdd6252c00cbe97c0054ea60fd62dd7346d5da5449bacf828bdb5"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 314.7937036125216,
+              "family": 1,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 113,
+                "upper": 113
+              },
+              "A_total_m2": 1227785.760829013,
+              "A_roof_m2": 30285.760829013132,
+              "A_nonroof_m2": 1197500.0,
+              "native_manifest_sha256": "e3eac66694328cf276d1a55e1c6b746c6ffaf5070cc36fcbc604f1fd044e7af3"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 373.0592704655211,
+              "family": 2,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 29155.74880279305,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 9125.0,
+              "native_manifest_sha256": "44e2a20cfe4271dec37624fad16fb3f74a1d1d49712b7b7363634de642536229"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 373.15,
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 29155.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 9125.0,
+              "native_manifest_sha256": "45b40dfbe6046ea34827302104a0fb473ebd8bbd5434727f2f9b6f496a67f3ae"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.3498703244598,
+              "family": 3,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 3
+              },
+              "A_total_m2": 316.12811537783193,
+              "A_roof_m2": 316.12811537783193,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "fcc4bee2c01edd9bb16dc16fa90e3d7534ea47b39a671626f062740c44581eee"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.34952623917656,
+              "family": 3,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 3
+              },
+              "A_total_m2": 316.12811537783193,
+              "A_roof_m2": 316.12811537783193,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "6f57b83c6eba65e1b1e8165ef4855ad351bd1d1af3528da589fc7cf61fad7d49"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "d8ad4ccf24b17ff5eb9319be25a7a549371aeedaa8a7f078429936d922da8982"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "f563fa82a500e9c570e32a7d86379baff223ba0d33f41f49611eec36a6dda224"
+            }
+          ],
+          "C_m2": 8465.532897386736,
+          "objective_vector_C_maxA_maxNupper": [
+            8465.532897386736,
+            1227785.760829013,
+            113
+          ],
+          "strictly_dominated_by": []
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "number_of_mesh_observations": 8,
+          "families": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "max_total_burned_A_m2": 28755.748802793052,
+          "observed_protected_ignitions_across_eligible_cases": 0,
+          "maximum_observed_protected_surface_temperature_K": 446.19930129216885,
+          "worst_burned_original_building_owner_bounds": {
+            "lower": 112,
+            "upper": 112
+          },
+          "max_roof_burned_m2": 20030.748802793052,
+          "max_nonroof_burned_m2": 8725.0,
+          "native_cases_attaining_exact_max_total": [
+            {
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "A_total_m2": 28755.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              }
+            }
+          ],
+          "cases": [
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 326.1252904858268,
+              "family": 1,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 1
+              },
+              "A_total_m2": 113.12751824668791,
+              "A_roof_m2": 113.12751824668791,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "b08aee4b822b957d247914c76bea33175f4bfa182a5c641bd75d785f5e1a6e49"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 321.43261285787304,
+              "family": 1,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 1
+              },
+              "A_total_m2": 113.12751824668791,
+              "A_roof_m2": 113.12751824668791,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "5eb35d7b761e7d8c3fb39af7499aa1e2b36b3b7bbf272641c2452577d4fe7eae"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 2,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 28755.74880279305,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "native_manifest_sha256": "8892ab2f492566e7f6acc194e5f30f33aec8b9a9be824751680f0bc4aa9a2ea2"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 28755.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "native_manifest_sha256": "89fd2e61b03905e64a19636d8229774cdc203c5eb42dd52f6d791dddcc0011e9"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 446.19930129216885,
+              "family": 3,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 3
+              },
+              "A_total_m2": 180.21842301902592,
+              "A_roof_m2": 180.21842301902592,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "4ba94a616a549dbd1c62c2a04432a7dcfa5704276d8710e15a9713f55593f1d0"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 424.4939047288712,
+              "family": 3,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 1,
+                "upper": 3
+              },
+              "A_total_m2": 180.21842301902595,
+              "A_roof_m2": 180.21842301902595,
+              "A_nonroof_m2": 0.0,
+              "native_manifest_sha256": "f95c90229e07f166a4c5a53e4f199bb50e6757834f7c759065b7d6da7f658e38"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "1fcf6e9c6dee2fed53364125eb83d5e4c4e8950a3ca6377e88e6dc4708f7a7c4"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "617817324787980fa3e34baaedfb3d79530be75f0e35632820a50747e08fdf43"
+            }
+          ],
+          "C_m2": 10669.276972304711,
+          "objective_vector_C_maxA_maxNupper": [
+            10669.276972304711,
+            28755.748802793052,
+            112
+          ],
+          "strictly_dominated_by": []
+        }
+      },
+      "exact_non_dominated_plan_ids": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "comparison_possible": true
+    },
+    "common_actual_physical_source_families": {
+      "eligible": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "observed_mesh_cases": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "results": {
+        "fixed-core-and-first-escape-compartment": {
+          "number_of_mesh_observations": 4,
+          "families": [
+            2,
+            4
+          ],
+          "max_total_burned_A_m2": 29155.748802793052,
+          "observed_protected_ignitions_across_eligible_cases": 0,
+          "maximum_observed_protected_surface_temperature_K": 373.15,
+          "worst_burned_original_building_owner_bounds": {
+            "lower": 112,
+            "upper": 112
+          },
+          "max_roof_burned_m2": 20030.748802793052,
+          "max_nonroof_burned_m2": 9125.0,
+          "native_cases_attaining_exact_max_total": [
+            {
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "A_total_m2": 29155.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 9125.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              }
+            }
+          ],
+          "cases": [
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 373.0592704655211,
+              "family": 2,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 29155.74880279305,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 9125.0,
+              "native_manifest_sha256": "44e2a20cfe4271dec37624fad16fb3f74a1d1d49712b7b7363634de642536229"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 373.15,
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 29155.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 9125.0,
+              "native_manifest_sha256": "45b40dfbe6046ea34827302104a0fb473ebd8bbd5434727f2f9b6f496a67f3ae"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "d8ad4ccf24b17ff5eb9319be25a7a549371aeedaa8a7f078429936d922da8982"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "f563fa82a500e9c570e32a7d86379baff223ba0d33f41f49611eec36a6dda224"
+            }
+          ],
+          "C_m2": 8465.532897386736,
+          "objective_vector_C_maxA_maxNupper": [
+            8465.532897386736,
+            29155.748802793052,
+            112
+          ],
+          "strictly_dominated_by": []
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "number_of_mesh_observations": 4,
+          "families": [
+            2,
+            4
+          ],
+          "max_total_burned_A_m2": 28755.748802793052,
+          "observed_protected_ignitions_across_eligible_cases": 0,
+          "maximum_observed_protected_surface_temperature_K": 300.0,
+          "worst_burned_original_building_owner_bounds": {
+            "lower": 112,
+            "upper": 112
+          },
+          "max_roof_burned_m2": 20030.748802793052,
+          "max_nonroof_burned_m2": 8725.0,
+          "native_cases_attaining_exact_max_total": [
+            {
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "A_total_m2": 28755.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              }
+            }
+          ],
+          "cases": [
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 2,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 28755.74880279305,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "native_manifest_sha256": "8892ab2f492566e7f6acc194e5f30f33aec8b9a9be824751680f0bc4aa9a2ea2"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 2,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 112,
+                "upper": 112
+              },
+              "A_total_m2": 28755.748802793052,
+              "A_roof_m2": 20030.748802793052,
+              "A_nonroof_m2": 8725.0,
+              "native_manifest_sha256": "89fd2e61b03905e64a19636d8229774cdc203c5eb42dd52f6d791dddcc0011e9"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 1.0,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "1fcf6e9c6dee2fed53364125eb83d5e4c4e8950a3ca6377e88e6dc4708f7a7c4"
+            },
+            {
+              "protected_ignitions": 0,
+              "peak_protected_surface_K": 300.0,
+              "family": 4,
+              "roof_grid_m": 0.5,
+              "N_original_owner_bounds": {
+                "lower": 2,
+                "upper": 2
+              },
+              "A_total_m2": 5100.447376270313,
+              "A_roof_m2": 700.4473762703128,
+              "A_nonroof_m2": 4400.0,
+              "native_manifest_sha256": "617817324787980fa3e34baaedfb3d79530be75f0e35632820a50747e08fdf43"
+            }
+          ],
+          "C_m2": 10669.276972304711,
+          "objective_vector_C_maxA_maxNupper": [
+            10669.276972304711,
+            28755.748802793052,
+            112
+          ],
+          "strictly_dominated_by": []
+        }
+      },
+      "exact_non_dominated_plan_ids": [
+        "fixed-core-and-first-escape-compartment",
+        "roof-seed-protected-union-ring-b0-w15.01"
+      ],
+      "comparison_possible": true,
+      "original_preverified_all_three_common_mesh_ordinals": [
+        3,
+        4,
+        7,
+        8
+      ],
+      "common_set_basis": "fully eligible plans' verified native supports"
+    },
+    "archived_native_skip_causes": {
+      "roof-seed-protected-union-ring-b0-w2.5": [
+        {
+          "family": 2,
+          "roof_grid_m": 0.5,
+          "reason": "verified_native_protection_counterexample",
+          "witness_native_manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d"
+        },
+        {
+          "family": 3,
+          "roof_grid_m": 0.5,
+          "reason": "verified_native_protection_counterexample",
+          "witness_native_manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d"
+        },
+        {
+          "family": 4,
+          "roof_grid_m": 1,
+          "reason": "verified_native_protection_counterexample",
+          "witness_native_manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d"
+        },
+        {
+          "family": 4,
+          "roof_grid_m": 0.5,
+          "reason": "verified_native_protection_counterexample",
+          "witness_native_manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d"
+        }
+      ]
+    },
+    "protective_action_maps": {
+      "fixed-core-and-first-escape-compartment": {
+        "workspace_path": "output/heritage-firebreak-actions-20261111/pingyan-combined-clearance.geojson",
+        "sha256": "b594655b809227aa7c9b62d467d3fe89ae5ef279768c71ae512edcbf71def895",
+        "canonical_C_m2": 8465.532897386734,
+        "roof_actions": 34,
+        "ground_actions": 100,
+        "scope": "protective clearance only; outcomes in the final receipt supersede design-set outcomes in map metadata"
+      },
+      "roof-seed-protected-union-ring-b0-w2.5": {
+        "workspace_path": "output/heritage-firebreak-actions-20261111/pingyan-local-2.5m.geojson",
+        "sha256": "308ea3811ab89c9e9be4623c29836f820861d8a07bbb34b7675b31d1e3b6e19b",
+        "canonical_C_m2": 2543.456175290825,
+        "roof_actions": 10,
+        "ground_actions": 29,
+        "scope": "protective clearance only; outcomes in the final receipt supersede design-set outcomes in map metadata"
+      },
+      "roof-seed-protected-union-ring-b0-w15.01": {
+        "workspace_path": "output/heritage-firebreak-actions-20261111/pingyan-local-15.01m.geojson",
+        "sha256": "07ae9e08a92bd856dfc2e0a83e0fe8b4ffd2eb3f99b703cf764f651eccafb7c8",
+        "canonical_C_m2": 10669.276972304711,
+        "roof_actions": 23,
+        "ground_actions": 243,
+        "scope": "protective clearance only; outcomes in the final receipt supersede design-set outcomes in map metadata"
+      }
+    },
+    "aggregation_method_sha256": "ef447af96626d380d5a105f240926f15d5a4d5d447af1bca4da43b09195085e2",
+    "direct_ignition_coordinates_or_building_identifiers_disclosed": false,
+    "additional_CA_starts": 0
+  }
+}

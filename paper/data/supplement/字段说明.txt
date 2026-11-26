@@ -1,0 +1,18 @@
+﻿两座侗寨木构遗产与聚落的防火线设计
+补充数据与字段说明
+
+01_cases.csv 含独立留出验证的 5,562 场模拟。五套标准布局和精简布局各 927 场。每行的 case_id 唯一。
+02_paired.csv 含 927 组精简布局与多点宽围护的同源、同风况对照。wide_case_id 和 compact_case_id 分别关联第一张表的两场模拟。
+03_heritage.csv 含 2,331 行构筑物结局。以 village、fire_id、wind_id 关联第二张表后，每组平岩火情对应三座遗产，岜团对应两座。heritage_id 使用正文图 1 的研究标注。
+04_standard_strata.csv 为五套标准布局的 20 个分层汇总单元。05_compact_strata.csv 为精简布局重点配对的四个单元。
+06_heritage_strata.csv 为五处遗产分近、远源的十个汇总单元。07_village_weighted.csv 为标准布局按合格屋面抽样框加权的村级汇总。08_layout_contrasts.csv 为五套标准布局两两比较的 40 个分层汇总单元，reduction 的方向为 reference 减 comparison。
+
+village 取 pingyan（平岩）和 batuan（岜团）。stratum 的 near、far 分别为距指定遗产不超过和超过 50 m 的合格屋面。fire_id 为村内样本编号。每村每个入选屋面均使用相同的九种风况。wind_id 的 calm 表示静风，N、E、S、W 为按网格北定义的风的来向，数字为 m/s。
+plan_id 的 baseline、heritage-narrow、heritage-wide、multipoint-narrow、multipoint-wide、compact 依次表示无清理、遗产窄、遗产宽、多点窄、多点宽和精简布局。第一张表中两村各自冻结的精简几何统一记作 compact，case_id 保留原归档标识。
+
+at_60min 为起火后一小时检查点，final 为认证熄灭终点。heritage_count 或 core_ignited_count 为截至当时曾引燃的指定遗产座数，大于零计为一场引燃。all_roof_burned_m2 含普通屋面和指定遗产屋面的烧尽面积。ground_burned_m2 为实际可燃地表烧尽面积。active_m2 为活动燃烧面积，extinction_observed_s 为归档的熄灭观测时刻。original_boundary_reached 表示是否触及原模型域边界。source_area_m2 和 source_energy_J 分别为初始斑块面积与可释放能量，sha256 字段用于对应原始输入、结果或证书。
+
+wide 和 compact 前缀分别代表多点宽围护和精简布局。roof_cleared_m2 为实际清除的普通屋面并集 C_R，ground_cleared_footprint_m2 为整格清理地表 C_G，construction_m2 为二者合计。ordinary_burned_m2 为保留普通屋面中的烧尽面积 B_R，ordinary_cleared_or_burned_m2 为 C_R + B_R。ordinary_burned_owner_labels 为有烧尽斑块归属的普通屋面标签数。compact_minus_wide 为同一场火情中精简布局减多点宽围护的差值。
+
+first_ignition_s 为该指定遗产斑块首次引燃的秒数，空值表示该场至熄灭仍未引燃。peak_rise_K 为模型可评价热状态期间的最大表面温升。absorbed_radiation_J 为对应遗产累计吸收辐射能。
+面积单位为 m²，温升为 K，能量为 J，时间为 s。正文表格按全精度统计后舍入。持平容差为 10⁻⁵ m²。配对标准误按起火屋面聚类并做有限总体修正，近源普查层为零。near 和 far 具有不同抽样率，四层简单合并的场次占比描述受检样本及九种等权风况。

@@ -1,0 +1,75 @@
+{
+  "schema_version": "v3-sample-clock-error-path-extension-audit-1",
+  "scope": "live_source_only;immutable_old_snapshots_preserved",
+  "old_native_problem_sha256": "c0eae3aba1b079bb4e6d86ffac7428ebf4215e8167975eadc0d9afd2130223a4",
+  "old_solver_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/source-snapshot/src/pyfireca/village/solver_v3.py",
+  "new_solver_path": "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/solver_v3.py",
+  "old_solver_sha256": "ae359e6504e0ccb6475a5f8cfa75890f90f06362ce5d7e017ca08d270861dbc3",
+  "new_solver_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "old_file_matches_frozen_experiment": true,
+  "remove_exact_added_error_branch_restores_entire_old_file_byte_for_byte": true,
+  "exact_added_utf8": "            # Adding tolerance can round up to a still-future due time. Only\n            # extend this former error path; every old successful path is exact.\n            if state.time_s < due:\n                return\n",
+  "unified_diff": "--- /Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/source-snapshot/src/pyfireca/village/solver_v3.py\n+++ /Users/tone/Documents/github/PyFireCA/src/pyfireca/village/solver_v3.py\n@@ -483,6 +483,10 @@\n         if state.time_s + tolerance < due:\n             return\n         if abs(state.time_s - due) > tolerance:\n+            # Adding tolerance can round up to a still-future due time. Only\n+            # extend this former error path; every old successful path is exact.\n+            if state.time_s < due:\n+                return\n             raise RuntimeError(\"v3 solver stepped past an exact sample time\")\n         snapshot = V3Snapshot(\n             time_s=due,\n",
+  "counterexample": {
+    "due_s": 43140.0,
+    "state_time_s": 43139.9999999999,
+    "due_minus_state_s": 1.0186340659856796e-10,
+    "tolerance_s": 1e-10,
+    "state_plus_tolerance_s": 43140.0,
+    "state_float_hex": "0x1.5107ffffffff2p+15",
+    "due_float_hex": "0x1.5108000000000p+15",
+    "gap_exceeds_tolerance": true,
+    "old_addition_rounds_to_due": true,
+    "old_real_one_cell_CA_result": "RuntimeError(v3 solver stepped past an exact sample time)",
+    "new_real_one_cell_CA_samples_s": [
+      0.0,
+      43140.0,
+      43141.0
+    ],
+    "new_real_one_cell_CA_step_count": 3,
+    "new_source_ignition_time_s": 43139.9999999999
+  },
+  "compatibility_proof": {
+    "required_common_inputs": [
+      "identical native request and resolved operators",
+      "identical helper code, platform and deterministic callbacks"
+    ],
+    "old_successful_paths": "Every call either returns at the unchanged first guard, returns for disabled sampling, or executes unchanged capture when abs(state.time_s-due)<=tolerance. None enters the old error branch. The additional if is therefore never evaluated on any old successful execution. Induction over native steps preserves every state array, floating operation, sample, event and clock bit.",
+    "new_defined_path": "Only when the old first guard did not return and the old abs comparison would raise, a still-future due time now returns to the unchanged timestep selection; the existing next_sample-state.time_s bound advances normally to the sample.",
+    "true_overshoot": "state.time_s>due and abs(state.time_s-due)>tolerance still raises the original RuntimeError.",
+    "unchanged_thresholds": [
+      "sampling tolerance 1e-10",
+      "dt positivity threshold",
+      "all thermal and fuel arithmetic",
+      "ignition/core/closure/domain acceptance",
+      "events and sample schedule"
+    ],
+    "new_source_and_problem_registration_required": true,
+    "old_failed_trajectory_has_no_completed_result_to_transfer": true,
+    "no_equivalence_for_other_solver_changes": true
+  },
+  "regression_validation": {
+    "command": "PYTHONPATH=src /opt/anaconda3/bin/python -m pytest tests/village/test_solver_v3_sampling_clock.py tests/village/test_solver_v3.py tests/village/test_extinction_v3.py tests/planning/test_roof_extinction.py tests/planning/test_terminal_verification.py -q",
+    "passed": 68,
+    "elapsed_s": 12.98,
+    "new_tests": 8,
+    "bitwise_old_success_cases": [
+      "fractional exact sampling",
+      "multi-material propagation",
+      "delayed direct source",
+      "near sample legitimately inside old tolerance",
+      "sampling disabled",
+      "early stop predicate"
+    ],
+    "comparisons": "all nested result/state/snapshot/energy fields; numpy dtype/shape/raw bytes; float64 packed bits",
+    "ruff": "passed",
+    "additional_physics_command": "PYTHONPATH=src /opt/anaconda3/bin/python -m pytest tests/village/test_physics_v3.py tests/village/test_flame_contact_v3.py tests/village/test_firebrands_v3.py -q",
+    "additional_physics_passed": 55,
+    "additional_physics_elapsed_s": 7.42,
+    "total_passed": 123,
+    "test_file_sha256": "938ef63b0bfbced9fea75d17828913dae009a175cc3cd82e1880e2de5a10f5fb"
+  },
+  "new_village_CA_checks": 0,
+  "old_snapshot_writes": 0,
+  "audit_sha256": "202c8d2ce4b04ed968f4e64a922b6748e2b6cc6d8c1a2302d20006a70a48521e"
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "heritage-clockfix-recovery-registration-1",
+  "parent_run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111",
+  "parent_experiment_sha256": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+  "parent_budget_sha256": "032e34a80375fdb90a11396580519a94dc67c361e40e6b56f96a358cdd627941",
+  "parent_budget": {
+    "elapsed_s": 10520.295153084036,
+    "started_checks": 11,
+    "active": null
+  },
+  "parent_config_sha256": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+  "prior_completed_manifest_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/057e8f0bb56a1449da4f90996fef7598384953eb6b386540e48af28d225b6f1d/complete.json": "dda4a90bc60d719d2b5ebd32c88892992b798947bbc407b40f79a4c725a1bcec",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/39ea85932dd20dcddadf343823a43ca71837271eecd0282e1b77722d23694eac/complete.json": "22b038c77994a584c784e6f940201dffa38e098f8ad33129a4ec8452f7b5295b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/43fed3bc4a1e8fc862c8bfc31e1e8f5ff3e0b5cb6eef1892b767f2458e43a879/complete.json": "5571cc1212fc43c66da15900ddc6a31df3b4b470a4c2e604b6645fb11e998ab9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/470ad36ae32d5700ff067a2aa62a188ba36779b481f62cc619063050a5dd3dc2/complete.json": "90251411fb2cba6022f9920cebd05fd90412e78b95e300238c5b24e478370b6f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/710201a2e305af0689d24493d780c585d65bdde33e41eaf06e36b07767b6e96f/complete.json": "79b93327bc01233b4f34717f66b4f0b853fd13fb8bd7a74a5b02d1e58d89b8c7",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/80da2bcd444aa196fcc879cebc38b63ad2f8f56089365668b58bac462474a707/complete.json": "20fc4d277e27c9a76b9a9b3ff18820799ba896d411d934e5cf01571ab2ab74a3",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/9cf0544468efe6099b08a648d1c0b4f8e4e6d49373ee0dd3ad64a3ca0b950e70/complete.json": "d51268319dc2331e37932b0a266d83af8fc2b3cc1dffed0690dda20ba768a2b4",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/a8023869f38b24d27d434067033f19486f4cec00e67c03acdc19060024266024/complete.json": "756db3e291a813b957a2300f407985d2a59541cea6ab39b54c97fa5e40ee0d73",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/fce8385bed8cd0251ffe31b4dcb05f50741218711f7c65fd517c0880ff656aff/complete.json": "18fda214b2439ea987ee19207d6e816466eba6ab78963130cb3e3cc51191ea10"
+  },
+  "prior_unique_completed_cases": 9,
+  "prior_started_queries": 11,
+  "uncompleted_case_selection": [
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0075-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0071-known-h1"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0071-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0062-known-h1"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0062-known-h0.5"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0061-known-h1"
+    },
+    {
+      "plan_id": "roof-seed",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-early-vegetation-connection",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-core-geometric-gap",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "batuan-same-area-geometric-control",
+      "scenario_id": "B0061-known-h0.5"
+    },
+    {
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "scenario_id": "B0061-known-h0.5"
+    }
+  ],
+  "new_allowed_query_slots": 31,
+  "combined_allowed_query_slots": 42,
+  "combined_wall_limit_s": 172800.0,
+  "new_wall_limit_s": 162279.70484691596,
+  "clock_compatibility_audit_path": "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json",
+  "clock_compatibility_audit_sha256": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+  "old_native_records_copied_or_relabelled": false,
+  "case_composition_requires_separate_compatibility_validation": true,
+  "new_CA_checks_at_registration": 0
+}

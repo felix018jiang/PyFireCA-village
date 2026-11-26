@@ -1,0 +1,68 @@
+{
+  "schema_version": "heritage-random-sources-1",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "seed": 2026102403,
+  "rng": "numpy-PCG64;SHA256-keyed-per-draw-and-building",
+  "ignition_area_m2": 25.0,
+  "near_distance_m": 15.0,
+  "excluded_sources": [
+    {
+      "building_id": "B0086",
+      "reason": "unambiguous_roof_smaller_than_prescribed_fire",
+      "unambiguous_area_m2": 0.0009532929937218289
+    },
+    {
+      "building_id": "B0149",
+      "reason": "no_unambiguous_roof"
+    }
+  ],
+  "anchor_policy": "uniform_in_frozen_unambiguous_roof;disk_intersection_exact_area",
+  "demolished_source_policy": "first_retained_in_frozen_priority;never_no_fire_success",
+  "draws_per_stratum": 1,
+  "sampling": "fixed_historical_roof_polygon_replay;not_new_independent_sampling",
+  "source_condition": "one_prescribed_source_retained_in_every_comparison_arm",
+  "strata": {
+    "near-B0073": [],
+    "near-B0120": [
+      "B0061",
+      "B0062",
+      "B0063"
+    ],
+    "background": []
+  },
+  "members": {
+    "B0061": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 197.84601345792404,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 4.309053091414644
+    },
+    "B0062": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 127.26243973494162,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 11.130339450081111
+    },
+    "B0063": {
+      "stratum": "near-B0120",
+      "unambiguous_area_m2": 54.13681624317701,
+      "nearest_core_id": "B0120",
+      "distance_to_nearest_core_m": 6.872831890824957
+    }
+  },
+  "weight_policy": "unweighted_paired_pressure_comparison;not_population_risk",
+  "draws": [
+    {
+      "draw_id": "near-B0120-002",
+      "stratum": "near-B0120",
+      "priority_ids": [
+        "B0062"
+      ],
+      "baseline_source_id": "B0062"
+    }
+  ],
+  "parent_protocol_sha256": "4b8a2bcc4c9408486134c3b499051feef5a70c68f541a64df71e61e408c5a5f1",
+  "parent_source_file_sha256": "5a32be5c86870511db53427763758d7f7e40e38a06dce19d42991c11f059fce6",
+  "followup_source_role": "known_bridge_threat_replay",
+  "protocol_sha256": "47730752d351e45b5de4290a34c497b2f5dac5666f02a259edcbee04aa48c016"
+}

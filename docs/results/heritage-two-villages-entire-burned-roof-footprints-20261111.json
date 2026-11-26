@@ -1,0 +1,165 @@
+{
+  "additional_native_fires": 0,
+  "cohorts": [
+    {
+      "cases": 8,
+      "cohort": "design",
+      "manifest_sha256": [
+        "00b5b0dc9d5600931e97386d44fa7d4ec3cfa49a181cca9f5d4e60c03f8c0e71",
+        "1d2dc9b8cab3850e8620de3b533986dd439b3fd66bd86edc42f93d0656726e66",
+        "50c774cfc74f56f2493c114442d26f3417f99a70d1731ed254d45afa936bd5c0",
+        "64c536faf504521fb8bc702209b7384126af7b34496c398077ce07779fd4d675",
+        "6c359d2f04b3e86da2ebf75326ecded6f09337444ad116ec1461cd7e74054028",
+        "82a89b4a7d2d46ccd4d1d74489efe3891d075cc955ff6b777efc36b985d733d3",
+        "a2c0a4b2ad4bb6152cdafd89ce846d3747ce0246c2115e706cd8d02545d30760",
+        "e3a26b1739c3a9e313c0a0654059a544c3edd68579181acce9c83b28321b3b3b"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 2,
+      "plan": "economic",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "batuan",
+      "worst_entire_original_roof_footprints": 2,
+      "worst_partially_burned_original_roof_footprints": 3
+    },
+    {
+      "cases": 8,
+      "cohort": "independent",
+      "manifest_sha256": [
+        "00d2a654c5ece49bfab770b73f1c33ca04b4ed2c2bb25432d7d7b750a3c6f7ed",
+        "3e3b09886340c9fd45a2e175c854bd532adf5213a43ae77b2a18b3d34e9566a5",
+        "400b55df60435f7e529b1d982c95b92d44ff6f95bbf77c5870a75667b58a6f46",
+        "6a37f4fe077684a22989ac3f487e1055f233adce536aa2a90633a8863123a3d8",
+        "7726ea155a734f182e06c4c123779016e2cfdffdfc64ac4e7a8de51616bb8eb7",
+        "b6b35fbeba1dc840db2ed7cb44c92b56268fe820f5f8f38bd546902b6a8c3b24",
+        "c3467c261eab27a71436d3653f45c2f3bb9e6aa1ec22ddff5f4a5091b1f91be7",
+        "d91c21565abd992ad0cc0fb7fe7471176be14e4a88e2f10d96a540d29400b1d6"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 13,
+      "plan": "economic",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "batuan",
+      "worst_entire_original_roof_footprints": 24,
+      "worst_partially_burned_original_roof_footprints": 3
+    },
+    {
+      "cases": 16,
+      "cohort": "combined_design",
+      "manifest_sha256": [
+        "2f7a9a23df20347c67c104915c372456533def8c2b0d2b8c461882e67fc97225",
+        "330b371bd1eee5acb9d475f0b49fdf8ea98a9e6b6dcf62c7848d97b6221c347a",
+        "3dadd424d526c4802bbdab01cf20ee946798006ef26c4f4b5906c5d1e421c746",
+        "43f10edbd815205d809d88bf2287e366ee051ee01800a1272039214e3e9f5de1",
+        "4a9a32d00a76cb964f62332fad16103f832e4f69f25608de343e17b216f0c83e",
+        "4ee42bfa0150d69538d12469bc7c8f910dbb1f9731a2d24b68680bf32ec8237d",
+        "79af3ea0a3255e6282a705d5ab34fb9d4ff0ba1c45b586fd086fabfbed37b33b",
+        "7fa6da4912705d38a025e449df2e4c78969cf5263568542234fdfe8c20880dc4",
+        "82b90059e1b91be5007120b2add5f7b82e1fe642cceb327618b6e80215775a7c",
+        "8ae099ab8e4ed8057b20e905f7d62946b85a3cc53db89ac3086782e715c391bd",
+        "aa44e84601d86f405d2b1ec0143e54d7f5b07d9aba140168eedbe2d19172a5ef",
+        "cb8c232a879c02dace862566fce309f2074e270a610318e102b482dbe2d8fbdc",
+        "ce39d61217900bb79cbecf6e64218299d3d122721488c47bde00e16f009a0904",
+        "cf65b29afdd3b7b12e1ba513d6cece84dcacbae9a84f2670b4c6c9e6e49ca621",
+        "dd4a3fc7cc01966b25b29220bfe1660d45df1ba661a5d0841dcca79c59c9cda2",
+        "e685fc080b10f0d781edb5cc7f7dda0547a23f70331dd4001286ae1b557bdb3c"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 1,
+      "plan": "joint",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "batuan",
+      "worst_entire_original_roof_footprints": 1,
+      "worst_partially_burned_original_roof_footprints": 3
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "manifest_sha256": [
+        "2efd70cf8af1d5411bad15f97ef9fc6c087f79b3e59deeab1fc4cb5e4160ed0f",
+        "3e74b72e9da709514044692e2ea27874d4eded2a2fa31d4fc12735cffa95b1e7",
+        "6930718a85824cf1c35f0a3186c9b44019d86ed78cedafef8317db645e098217",
+        "70f039d6ebaeee01efe5c63f60ff102cd5d9df06161537dc54dc1fe4139e6068",
+        "8428e61ddb51767ced23d262611b3b4abf644aeb1e2c93676d389cc01903367e",
+        "a8941f9bc329210a9ca42fd9ae6ec4ddbde371b85b74570ac5661c4d17ce4755",
+        "d9e57ea3e0b1063d5b63e3c9c710cd828ceb889ae2df7fa04539702238485250",
+        "efa09eb1c7df95ce72b345b069a3dcf9430ac128a3e846696dc1e5af56355701"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 1,
+      "plan": "joint",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "pingyan",
+      "worst_entire_original_roof_footprints": 1,
+      "worst_partially_burned_original_roof_footprints": 2
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "manifest_sha256": [
+        "42a89611656e8d8a5f549cfde3fe6f417c10268df98ef1a89c5e518879883ef1",
+        "4306201237af015448447c6c4b095a3d21a2a17858ddce847053892cdba22c23",
+        "5822fd67a6a3709b8a503c4dc08aac679d96555883813e9a7c644b322a13eb59",
+        "5c5e940195c5bca6ffeac9a542cb92fa2a343245cfd73f270a6dc34613407093",
+        "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357",
+        "9ca4732e21103271b9d145871a36c028a4846072d8590c3a963b4a34f0e4ec54",
+        "c88a1a3e854c6d19594f8d2a58cb921cfdfa0d8c8506c8bd0dba05aa6be9ba1a",
+        "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 6,
+      "plan": "roof-seed-protected-union-ring-b0-w2.5",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "pingyan",
+      "worst_entire_original_roof_footprints": 8,
+      "worst_partially_burned_original_roof_footprints": 4
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "manifest_sha256": [
+        "02277700d3b3c7cbcdfdd30eda735490713ada4c81e33e31c5b4af2d1ffd62ef",
+        "087173f133ac871d7475b3859c469cc6bd7da3f516adf6f6ecc238e70676eed4",
+        "1edf0e08c102c5fbf35f392ad55b01ba3c7cd664378d83e0b0935b36c9a16d23",
+        "312f77fbafbf3e9cbbbe658a6486a1ed61415e2035d6bd5fdd8fc1500cb414b1",
+        "3905a786c3774f1dcf80d7a542e3dd2daeb006a1f784a23f2af3c63d9f454084",
+        "90f1043698099fd2bdf693c4e4900b78c3b42cc93bea51378be15d785dbd2345",
+        "91f6ba44c33416d563d17b8b652700355eba982f0246ee64f03fe41a8e194512",
+        "d99e79f76c2c605f940a3c26119ea26d5fd7a47a2cb410f23ff9e254532f177b"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 1,
+      "plan": "local-band-with-observed-clearance-subset",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "pingyan",
+      "worst_entire_original_roof_footprints": 1,
+      "worst_partially_burned_original_roof_footprints": 2
+    },
+    {
+      "cases": 8,
+      "cohort": "design",
+      "manifest_sha256": [
+        "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+        "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8",
+        "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc",
+        "b034e310e531f2608c48ae20157dfe29d82b195e0a850b12c689395ae05bb0e7",
+        "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2",
+        "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6",
+        "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0",
+        "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297"
+      ],
+      "maximum_whole_burned_with_overlapping_annotations": 1,
+      "plan": "roof-seed-protected-union-ring-b0-w15.01",
+      "unrepresented_original_roof_annotations": 0,
+      "village": "pingyan",
+      "worst_entire_original_roof_footprints": 1,
+      "worst_partially_burned_original_roof_footprints": 2
+    }
+  ],
+  "definition": "An original annotated roof has positive modeled area and every one of its positive-area original physical patches, including shared patches, burned out. Cleared patches count as unburned. Each roof label is counted once.",
+  "interpretation": "This measures roof-fuel exhaustion over the entire modeled footprint. Building collapse and structural destruction require separate evidence.",
+  "method_sha256": "c09d9c485a0f5e30b156d9ddccfe48974872f8c7d5b602c69e58c1dce9151b04",
+  "receipt_sha256": "3713453d8340e0f3e0c67b96f7bc5c665ab99a18192cee13c902a0169d6b01ed",
+  "schema_version": "entire-original-modeled-roof-footprints-1",
+  "source_receipts_sha256": {
+    "heritage-batuan-direct-D9-G0-complete8-audit-20261111.json": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+    "heritage-batuan-independent-D9-G0-native-strict-20261111.json": "0a6325712f2543993797e23ea286355e6d5dd75e2f6895f94c5b366d7c352450",
+    "heritage-joint-loss-batuan-complete-native-audit-20261111.json": "f49721bfe6c5ff7df48ee309b5d2acf10fe2acb892d1f3c8f1cd5bd51b8f9c71",
+    "heritage-joint-loss-pingyan-complete-native-audit-20261111.json": "823c0802bd20c8914ea7a8bd257fcc7c65448e75f00cf85db45099f9a2fbf3ae",
+    "heritage-pingyan-three-policies-complete8-table-20261111.json": "a64abcc4f7386ff7fed7221417f047b46136f00654e2eae54519d513b59a7e8b"
+  }
+}

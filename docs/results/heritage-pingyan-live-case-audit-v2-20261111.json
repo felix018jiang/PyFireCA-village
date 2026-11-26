@@ -1,0 +1,1863 @@
+{
+  "schema_version": "heritage-pingyan-incremental-native-case-audit-1",
+  "last_observed_utc": "2026-11-11T10:44:02.349520+00:00",
+  "runs": {
+    "Punion": {
+      "run_root": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111",
+      "problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+      "rows": [
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0035-h1",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 324.8516952744732
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000229401348,
+            "initial_dry_fuel_mass_kg": 450.0000041292244,
+            "available_energy_J": 4390200040.284712
+          },
+          "actual_stop_time_s": 2196.36,
+          "closure_certificate_sha256": "affa4d97abd26629e8257d5df8e9794df01390780f2d0562f2744c9192e7b535",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305926,
+          "raw_C_minus_canonical_m2": 1.2150849215686321e-09,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 1
+          },
+          "A_burned_out_m2": 113.12751824668793,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/7680d884e419cd86e1fc7df0503953178f960ee09fb5839a2dc22ea3f974e0ee/complete.json",
+          "manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0035-h0.5",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 316.93847798521733
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000229395702,
+            "initial_dry_fuel_mass_kg": 450.0000041291227,
+            "available_energy_J": 4390200040.283721
+          },
+          "actual_stop_time_s": 3154.7200000000003,
+          "closure_certificate_sha256": "e7700a14e0863caa5474c8afb7577c48485ac5040b668ff92ca36f018e99cdb3",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305532,
+          "raw_C_minus_canonical_m2": 8.203642209991813e-10,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 1
+          },
+          "A_burned_out_m2": 113.12751824668791,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/d7a453093fc05a3052de0c9135122cc98c114f09b2b8cf0bed2421cf88b21b5b/complete.json",
+          "manifest_sha256": "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0036-h1",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0037",
+          "source_budget": {
+            "covered_area_m2": 24.999999909014765,
+            "initial_dry_fuel_mass_kg": 449.9999983622656,
+            "available_energy_J": 4390199984.0222645
+          },
+          "actual_stop_time_s": 1615.3600000000001,
+          "closure_certificate_sha256": "3cf7b167d70ccdc7d16436a87733935d653d59b148de263fb45deafcf69f9768",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305855,
+          "raw_C_minus_canonical_m2": 1.1441443348303437e-09,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 1
+          },
+          "A_burned_out_m2": 241.48854379824064,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/fc21655733e5fab72e7af99d5c1e801abf9d6e853fcf3a05f1e395f074845bb2/complete.json",
+          "manifest_sha256": "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0036-h0.5",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0037",
+          "source_budget": {
+            "covered_area_m2": 24.99999990902003,
+            "initial_dry_fuel_mass_kg": 449.99999836236054,
+            "available_energy_J": 4390199984.02319
+          },
+          "actual_stop_time_s": 1693.3600000000001,
+          "closure_certificate_sha256": "0d06e29e54ba66c357ad969b56cd2e815c635c8ebae6fca8091a149ce82d73ed",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305683,
+          "raw_C_minus_canonical_m2": 9.713403414934874e-10,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 1
+          },
+          "A_burned_out_m2": 241.48854379824064,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/b24904c89bb1ec5860093f271bf32ce96aebcae60dfdc4758338a3a849fc9d53/complete.json",
+          "manifest_sha256": "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0166-h1",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 482.4118317107092
+            }
+          ],
+          "source_id": "B0191",
+          "source_budget": {
+            "covered_area_m2": 24.999999806480428,
+            "initial_dry_fuel_mass_kg": 449.9999965166477,
+            "available_energy_J": 4390199966.016414
+          },
+          "actual_stop_time_s": 1761.3600000000001,
+          "closure_certificate_sha256": "4c90dbcc26218dab519c4d28441bc6f2496bcf85b855d09e29cdac069359c09a",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305659,
+          "raw_C_minus_canonical_m2": 9.476934792473912e-10,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 3
+          },
+          "A_burned_out_m2": 180.21842301902592,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/605bf3fe2eeb3cdab575a55cb068879d1ba33ab7a1eba5f4bf6698f7f580a341/complete.json",
+          "manifest_sha256": "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "near-B0166-h0.5",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 482.2774511724169
+            }
+          ],
+          "source_id": "B0191",
+          "source_budget": {
+            "covered_area_m2": 24.99999980639372,
+            "initial_dry_fuel_mass_kg": 449.999996515087,
+            "available_energy_J": 4390199966.001188
+          },
+          "actual_stop_time_s": 1893.7200000000003,
+          "closure_certificate_sha256": "ce021d513819360d442da3985673e2bba8950be1042c4b556ee0a1920862e53e",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305623,
+          "raw_C_minus_canonical_m2": 9.113136911764741e-10,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 3
+          },
+          "A_burned_out_m2": 180.21842301902592,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/7248c3b82f1616c3bc09852fa89394dc6333b749fd7d3f03cf6759b00a6d750a/complete.json",
+          "manifest_sha256": "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "scenario_id": "background-h1",
+          "strict_terminal_status": "passed",
+          "strict_complete": true,
+          "conditional_terminal_status": "not_separately_assessed",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0201",
+          "source_budget": {
+            "covered_area_m2": 24.999999606317154,
+            "initial_dry_fuel_mass_kg": 449.99999291370875,
+            "available_energy_J": 4390199930.866142
+          },
+          "actual_stop_time_s": 1401.3600000000001,
+          "closure_certificate_sha256": "516f44543f8d3849e577e1b4e12521270001b2b7465fcdd431895db6b7d5b444",
+          "C_canonical_m2": 10669.276972304711,
+          "C_raw_scenario_m2": 10669.276972305855,
+          "raw_C_minus_canonical_m2": 1.1441443348303437e-09,
+          "N_burned_out_original_owner": {
+            "lower": 1,
+            "upper": 1
+          },
+          "A_burned_out_m2": 111.17746509794179,
+          "A_active_m2": 0.0,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/221ef2c0bca08a89c2f1672986d52ba09fef79b07b62eaaed4819b42c069431a/complete.json",
+          "manifest_sha256": "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": true
+        }
+      ],
+      "scenario_ids": [
+        "near-B0035-h1",
+        "near-B0035-h0.5",
+        "near-B0036-h1",
+        "near-B0036-h0.5",
+        "near-B0166-h1",
+        "near-B0166-h0.5",
+        "background-h1",
+        "background-h0.5"
+      ],
+      "budget": {
+        "elapsed_s": 3724.6492730830214,
+        "started_checks": 8,
+        "active": {
+          "pid": 47635
+        }
+      },
+      "plan_completion": [
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "strict_passed_scenarios": [
+            "background-h1",
+            "near-B0035-h0.5",
+            "near-B0035-h1",
+            "near-B0036-h0.5",
+            "near-B0036-h1",
+            "near-B0166-h0.5",
+            "near-B0166-h1"
+          ],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        }
+      ]
+    },
+    "Pjoint": {
+      "run_root": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111",
+      "problem_sha256": "2db31e65c123e715eca59083997b006dee0c1ec2a6d98e6bf2222a1005bd2e49",
+      "native_problem_sha256": "830d07d121bce3432b7a749352c6bf94461d437e307f7757eedcd987725ab8b5",
+      "rows": [
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "G187492"
+          ],
+          "demolished_ids": [],
+          "cleared_physical_cell_ids": [
+            187492
+          ],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": 452.0,
+              "maximum_valid_surface_temperature_K": 519.8861483998244
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0119",
+          "source_budget": {
+            "covered_area_m2": 25.00000017619131,
+            "initial_dry_fuel_mass_kg": 450.00000317144367,
+            "available_energy_J": 4390200030.940604
+          },
+          "actual_stop_time_s": 452.0,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 25.0,
+          "C_raw_scenario_m2": 25.0,
+          "raw_C_minus_canonical_m2": 0.0,
+          "N_burned_out_original_owner": {
+            "lower": 0,
+            "upper": 0
+          },
+          "A_burned_out_m2": 0.0,
+          "A_active_m2": 53.39207834302385,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/1bf5cd23659e9181d99ee01789b29fc3d1446d5459a6238a66e7aff40b86cbb8/complete.json",
+          "manifest_sha256": "122130cb170706f8b09f9d34afe442379fed804d8ff7faebdf1864d8b619f73d",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:G187492"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [],
+          "demolished_ids": [],
+          "cleared_physical_cell_ids": [],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": 452.0,
+              "maximum_valid_surface_temperature_K": 519.8861483998244
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0119",
+          "source_budget": {
+            "covered_area_m2": 25.00000017619131,
+            "initial_dry_fuel_mass_kg": 450.00000317144367,
+            "available_energy_J": 4390200030.940604
+          },
+          "actual_stop_time_s": 452.0,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 0.0,
+          "C_raw_scenario_m2": 0.0,
+          "raw_C_minus_canonical_m2": 0.0,
+          "N_burned_out_original_owner": {
+            "lower": 0,
+            "upper": 0
+          },
+          "A_burned_out_m2": 0.0,
+          "A_active_m2": 53.39207834302385,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/6b7f355ea80d59ea25ab32d1c77cd2bcf0cf7503270d20380f2976e8deb3d8a9/complete.json",
+          "manifest_sha256": "5a7e24359a87bf9dc5cded3c012f8a59a7c6d72042abd4d2776d8e447ee5fbe4",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "G187491"
+          ],
+          "demolished_ids": [],
+          "cleared_physical_cell_ids": [
+            187491
+          ],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": 452.0,
+              "maximum_valid_surface_temperature_K": 519.8861483998244
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0119",
+          "source_budget": {
+            "covered_area_m2": 25.00000017619131,
+            "initial_dry_fuel_mass_kg": 450.00000317144367,
+            "available_energy_J": 4390200030.940604
+          },
+          "actual_stop_time_s": 452.0,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 25.0,
+          "C_raw_scenario_m2": 25.0,
+          "raw_C_minus_canonical_m2": 0.0,
+          "N_burned_out_original_owner": {
+            "lower": 0,
+            "upper": 0
+          },
+          "A_burned_out_m2": 0.0,
+          "A_active_m2": 53.39207834302385,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/9cd8950b6d2cbcddf26e0bf4460fac609d1cb5576e37d15f75e0ac5c768f6e85/complete.json",
+          "manifest_sha256": "6ee1ce02662e5ecdfe07169b09ae6f7875681e219ec371fbf0a99006fff479c9",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:G187491"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "cleared_physical_cell_ids": [],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 439.89818025913644
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": 19559.36,
+              "maximum_valid_surface_temperature_K": 519.8709217729704
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 499.76103225571063
+            }
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000229401348,
+            "initial_dry_fuel_mass_kg": 450.0000041292244,
+            "available_energy_J": 4390200040.284712
+          },
+          "actual_stop_time_s": 19559.36,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 985.6078364045122,
+          "C_raw_scenario_m2": 985.6078364045118,
+          "raw_C_minus_canonical_m2": -4.547473508864641e-13,
+          "N_burned_out_original_owner": {
+            "lower": 143,
+            "upper": 146
+          },
+          "A_burned_out_m2": 95139.03234210462,
+          "A_active_m2": 4551.236454588803,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/a098c311f09f3fe0d83bbbd71ab5410842f5cb1a056c183b6faec673071d607c/complete.json",
+          "manifest_sha256": "879e26272bd2e949dbf4b6797201900e779aa1d563b20fed86be55a5ea071603",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:B0119,B0165,B0167,B0177,B0190"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190",
+            "B0192"
+          ],
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190",
+            "B0192"
+          ],
+          "cleared_physical_cell_ids": [],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 439.85730795233695
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": 19559.359999999946,
+              "maximum_valid_surface_temperature_K": 519.9208376167487
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 473.93034297834845
+            }
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000229401348,
+            "initial_dry_fuel_mass_kg": 450.0000041292244,
+            "available_energy_J": 4390200040.284712
+          },
+          "actual_stop_time_s": 19559.359999999946,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 1124.7908313480193,
+          "C_raw_scenario_m2": 1124.7908313480186,
+          "raw_C_minus_canonical_m2": -6.821210263296962e-13,
+          "N_burned_out_original_owner": {
+            "lower": 142,
+            "upper": 146
+          },
+          "A_burned_out_m2": 94999.84934683991,
+          "A_active_m2": 4551.236454588803,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/a5f7123544bfc46cfa1972608be65be32d8b7db80b0247795297a9d93567ee72/complete.json",
+          "manifest_sha256": "6eab404630326bf94758d7b3bec009c666f1f422ebe6de8fe3d7997536e48c71",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:B0119,B0165,B0167,B0177,B0190,B0192"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "G188089"
+          ],
+          "demolished_ids": [],
+          "cleared_physical_cell_ids": [
+            188089
+          ],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": 452.0,
+              "maximum_valid_surface_temperature_K": 519.8861483998244
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 300.0
+            }
+          ],
+          "source_id": "B0119",
+          "source_budget": {
+            "covered_area_m2": 25.00000017619131,
+            "initial_dry_fuel_mass_kg": 450.00000317144367,
+            "available_energy_J": 4390200030.940604
+          },
+          "actual_stop_time_s": 452.0,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 25.0,
+          "C_raw_scenario_m2": 25.0,
+          "raw_C_minus_canonical_m2": 0.0,
+          "N_burned_out_original_owner": {
+            "lower": 0,
+            "upper": 0
+          },
+          "A_burned_out_m2": 0.0,
+          "A_active_m2": 53.39207834302385,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/b0101dc1f1d60d28c68624d4ae1aca1613836d8c2e15132b10c035a2e65d1352/complete.json",
+          "manifest_sha256": "03dc887ed1dd7069517ed1025134a7e1b84d82041864da5684aec296e7688d96",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:G188089"
+        },
+        {
+          "scenario_id": "near-B0035-h1",
+          "action_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0168",
+            "B0177",
+            "B0190",
+            "B0191"
+          ],
+          "demolished_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0168",
+            "B0177",
+            "B0190",
+            "B0191"
+          ],
+          "cleared_physical_cell_ids": [],
+          "protection_query_status": "failed",
+          "strict_terminal_status": "unknown",
+          "strict_complete": false,
+          "conditional_terminal_status": "unknown",
+          "conditional_complete": false,
+          "native_invalid_reasons": [],
+          "core_outcomes": [
+            {
+              "building_id": "B0035",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 439.8501550406604
+            },
+            {
+              "building_id": "B0036",
+              "first_ignition_s": 19559.359999999993,
+              "maximum_valid_surface_temperature_K": 519.8959062213293
+            },
+            {
+              "building_id": "B0166",
+              "first_ignition_s": null,
+              "maximum_valid_surface_temperature_K": 351.1182491807348
+            }
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000229401348,
+            "initial_dry_fuel_mass_kg": 450.0000041292244,
+            "available_energy_J": 4390200040.284712
+          },
+          "actual_stop_time_s": 19559.359999999993,
+          "closure_certificate_sha256": null,
+          "C_canonical_m2": 1531.6288649185644,
+          "C_raw_scenario_m2": 1531.6288649193452,
+          "raw_C_minus_canonical_m2": 7.808012014720589e-10,
+          "N_burned_out_original_owner": {
+            "lower": 141,
+            "upper": 145
+          },
+          "A_burned_out_m2": 94771.84703956408,
+          "A_active_m2": 4551.187640441607,
+          "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/bf0739b872c097d3055a9e6a03da5f8fbcc13ddb3496756e67a3337f0c6f1ab1/complete.json",
+          "manifest_sha256": "3dda732613adc0b9040b993e954f34eb7ad21ac34bd7071c1a4336256de6bcf1",
+          "artifact_hashes_verified": true,
+          "source_and_input_hashes_verified": true,
+          "real_state_and_peak_checked": true,
+          "loss_complete": false,
+          "plan_id": "actions:B0034,B0119,B0165,B0167,B0168,B0177,B0190,B0191"
+        }
+      ],
+      "scenario_ids": [
+        "near-B0035-h1",
+        "near-B0036-h1",
+        "near-B0166-h1",
+        "background-h1",
+        "near-B0035-h0.5",
+        "near-B0036-h0.5",
+        "near-B0166-h0.5",
+        "background-h0.5"
+      ],
+      "budget": {
+        "elapsed_s": 3779.1268739590305,
+        "mip_elapsed_s": 6.366412541945465,
+        "started_checks": 8,
+        "active": {
+          "pid": 49320
+        }
+      },
+      "plan_completion": [
+        {
+          "plan_id": "actions:G187492",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:G187491",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:B0119,B0165,B0167,B0177,B0190",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:B0119,B0165,B0167,B0177,B0190,B0192",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:G188089",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        },
+        {
+          "plan_id": "actions:B0034,B0119,B0165,B0167,B0168,B0177,B0190,B0191",
+          "strict_passed_scenarios": [],
+          "strict_full_eight_feasible": false,
+          "conditional_passed_scenarios": [],
+          "conditional_full_eight_feasible": false,
+          "declared_scenario_count": 8
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0035-h1",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 324.8516952744732
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000229401348,
+        "initial_dry_fuel_mass_kg": 450.0000041292244,
+        "available_energy_J": 4390200040.284712
+      },
+      "actual_stop_time_s": 2196.36,
+      "closure_certificate_sha256": "affa4d97abd26629e8257d5df8e9794df01390780f2d0562f2744c9192e7b535",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305926,
+      "raw_C_minus_canonical_m2": 1.2150849215686321e-09,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_burned_out_m2": 113.12751824668793,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/7680d884e419cd86e1fc7df0503953178f960ee09fb5839a2dc22ea3f974e0ee/complete.json",
+      "manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0035-h0.5",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 316.93847798521733
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000229395702,
+        "initial_dry_fuel_mass_kg": 450.0000041291227,
+        "available_energy_J": 4390200040.283721
+      },
+      "actual_stop_time_s": 3154.7200000000003,
+      "closure_certificate_sha256": "e7700a14e0863caa5474c8afb7577c48485ac5040b668ff92ca36f018e99cdb3",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305532,
+      "raw_C_minus_canonical_m2": 8.203642209991813e-10,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_burned_out_m2": 113.12751824668791,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/d7a453093fc05a3052de0c9135122cc98c114f09b2b8cf0bed2421cf88b21b5b/complete.json",
+      "manifest_sha256": "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0036-h1",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0037",
+      "source_budget": {
+        "covered_area_m2": 24.999999909014765,
+        "initial_dry_fuel_mass_kg": 449.9999983622656,
+        "available_energy_J": 4390199984.0222645
+      },
+      "actual_stop_time_s": 1615.3600000000001,
+      "closure_certificate_sha256": "3cf7b167d70ccdc7d16436a87733935d653d59b148de263fb45deafcf69f9768",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305855,
+      "raw_C_minus_canonical_m2": 1.1441443348303437e-09,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_burned_out_m2": 241.48854379824064,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/fc21655733e5fab72e7af99d5c1e801abf9d6e853fcf3a05f1e395f074845bb2/complete.json",
+      "manifest_sha256": "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Punion",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 1405.403407124977,
+        "started_checks": 4,
+        "active": {
+          "pid": 47635
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190",
+        "B0192"
+      ],
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190",
+        "B0192"
+      ],
+      "cleared_physical_cell_ids": [],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 439.85730795233695
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": 19559.359999999946,
+          "maximum_valid_surface_temperature_K": 519.9208376167487
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 473.93034297834845
+        }
+      ],
+      "source_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000229401348,
+        "initial_dry_fuel_mass_kg": 450.0000041292244,
+        "available_energy_J": 4390200040.284712
+      },
+      "actual_stop_time_s": 19559.359999999946,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 1124.7908313480193,
+      "C_raw_scenario_m2": 1124.7908313480186,
+      "raw_C_minus_canonical_m2": -6.821210263296962e-13,
+      "N_burned_out_original_owner": {
+        "lower": 142,
+        "upper": 146
+      },
+      "A_burned_out_m2": 94999.84934683991,
+      "A_active_m2": 4551.236454588803,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/a5f7123544bfc46cfa1972608be65be32d8b7db80b0247795297a9d93567ee72/complete.json",
+      "manifest_sha256": "6eab404630326bf94758d7b3bec009c666f1f422ebe6de8fe3d7997536e48c71",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:B0119,B0165,B0167,B0177,B0190,B0192"
+    },
+    {
+      "observed_utc": "2026-11-11T10:06:01.432439+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 995.7552212920273,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 2,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:15:29.047067+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "cleared_physical_cell_ids": [],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 439.89818025913644
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": 19559.36,
+          "maximum_valid_surface_temperature_K": 519.8709217729704
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 499.76103225571063
+        }
+      ],
+      "source_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000229401348,
+        "initial_dry_fuel_mass_kg": 450.0000041292244,
+        "available_energy_J": 4390200040.284712
+      },
+      "actual_stop_time_s": 19559.36,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 985.6078364045122,
+      "C_raw_scenario_m2": 985.6078364045118,
+      "raw_C_minus_canonical_m2": -4.547473508864641e-13,
+      "N_burned_out_original_owner": {
+        "lower": 143,
+        "upper": 146
+      },
+      "A_burned_out_m2": 95139.03234210462,
+      "A_active_m2": 4551.236454588803,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/a098c311f09f3fe0d83bbbd71ab5410842f5cb1a056c183b6faec673071d607c/complete.json",
+      "manifest_sha256": "879e26272bd2e949dbf4b6797201900e779aa1d563b20fed86be55a5ea071603",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:B0119,B0165,B0167,B0177,B0190"
+    },
+    {
+      "observed_utc": "2026-11-11T10:15:29.047067+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 1997.409695499984,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 3,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:24:33.410914+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0036-h0.5",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0037",
+      "source_budget": {
+        "covered_area_m2": 24.99999990902003,
+        "initial_dry_fuel_mass_kg": 449.99999836236054,
+        "available_energy_J": 4390199984.02319
+      },
+      "actual_stop_time_s": 1693.3600000000001,
+      "closure_certificate_sha256": "0d06e29e54ba66c357ad969b56cd2e815c635c8ebae6fca8091a149ce82d73ed",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305683,
+      "raw_C_minus_canonical_m2": 9.713403414934874e-10,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_burned_out_m2": 241.48854379824064,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/b24904c89bb1ec5860093f271bf32ce96aebcae60dfdc4758338a3a849fc9d53/complete.json",
+      "manifest_sha256": "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:24:33.410914+00:00",
+      "run": "Punion",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 2917.988131291,
+        "started_checks": 6,
+        "active": {
+          "pid": 47635
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:28:11.728812+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0166-h1",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 482.4118317107092
+        }
+      ],
+      "source_id": "B0191",
+      "source_budget": {
+        "covered_area_m2": 24.999999806480428,
+        "initial_dry_fuel_mass_kg": 449.9999965166477,
+        "available_energy_J": 4390199966.016414
+      },
+      "actual_stop_time_s": 1761.3600000000001,
+      "closure_certificate_sha256": "4c90dbcc26218dab519c4d28441bc6f2496bcf85b855d09e29cdac069359c09a",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305659,
+      "raw_C_minus_canonical_m2": 9.476934792473912e-10,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 3
+      },
+      "A_burned_out_m2": 180.21842301902592,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/605bf3fe2eeb3cdab575a55cb068879d1ba33ab7a1eba5f4bf6698f7f580a341/complete.json",
+      "manifest_sha256": "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:31:12.524772+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0190",
+        "B0191"
+      ],
+      "demolished_ids": [
+        "B0034",
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0168",
+        "B0177",
+        "B0190",
+        "B0191"
+      ],
+      "cleared_physical_cell_ids": [],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 439.8501550406604
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": 19559.359999999993,
+          "maximum_valid_surface_temperature_K": 519.8959062213293
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 351.1182491807348
+        }
+      ],
+      "source_id": "B0120",
+      "source_budget": {
+        "covered_area_m2": 25.000000229401348,
+        "initial_dry_fuel_mass_kg": 450.0000041292244,
+        "available_energy_J": 4390200040.284712
+      },
+      "actual_stop_time_s": 19559.359999999993,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 1531.6288649185644,
+      "C_raw_scenario_m2": 1531.6288649193452,
+      "raw_C_minus_canonical_m2": 7.808012014720589e-10,
+      "N_burned_out_original_owner": {
+        "lower": 141,
+        "upper": 145
+      },
+      "A_burned_out_m2": 94771.84703956408,
+      "A_active_m2": 4551.187640441607,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/bf0739b872c097d3055a9e6a03da5f8fbcc13ddb3496756e67a3337f0c6f1ab1/complete.json",
+      "manifest_sha256": "3dda732613adc0b9040b993e954f34eb7ad21ac34bd7071c1a4336256de6bcf1",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:B0034,B0119,B0165,B0167,B0168,B0177,B0190,B0191"
+    },
+    {
+      "observed_utc": "2026-11-11T10:31:12.524772+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3047.59713275003,
+        "mip_elapsed_s": 1.6076477919705212,
+        "started_checks": 4,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:34:07.036830+00:00",
+      "run": "Punion",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3499.595834625012,
+        "started_checks": 7,
+        "active": {
+          "pid": 47635
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:34:07.036830+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [],
+      "demolished_ids": [],
+      "cleared_physical_cell_ids": [],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": 452.0,
+          "maximum_valid_surface_temperature_K": 519.8861483998244
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0119",
+      "source_budget": {
+        "covered_area_m2": 25.00000017619131,
+        "initial_dry_fuel_mass_kg": 450.00000317144367,
+        "available_energy_J": 4390200030.940604
+      },
+      "actual_stop_time_s": 452.0,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 0.0,
+      "C_raw_scenario_m2": 0.0,
+      "raw_C_minus_canonical_m2": 0.0,
+      "N_burned_out_original_owner": {
+        "lower": 0,
+        "upper": 0
+      },
+      "A_burned_out_m2": 0.0,
+      "A_active_m2": 53.39207834302385,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/6b7f355ea80d59ea25ab32d1c77cd2bcf0cf7503270d20380f2976e8deb3d8a9/complete.json",
+      "manifest_sha256": "5a7e24359a87bf9dc5cded3c012f8a59a7c6d72042abd4d2776d8e447ee5fbe4",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:"
+    },
+    {
+      "observed_utc": "2026-11-11T10:34:07.036830+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3172.347557375033,
+        "mip_elapsed_s": 2.738637916976586,
+        "started_checks": 5,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:35:21.429156+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "near-B0166-h0.5",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 482.2774511724169
+        }
+      ],
+      "source_id": "B0191",
+      "source_budget": {
+        "covered_area_m2": 24.99999980639372,
+        "initial_dry_fuel_mass_kg": 449.999996515087,
+        "available_energy_J": 4390199966.001188
+      },
+      "actual_stop_time_s": 1893.7200000000003,
+      "closure_certificate_sha256": "ce021d513819360d442da3985673e2bba8950be1042c4b556ee0a1920862e53e",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305623,
+      "raw_C_minus_canonical_m2": 9.113136911764741e-10,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 3
+      },
+      "A_burned_out_m2": 180.21842301902592,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/7248c3b82f1616c3bc09852fa89394dc6333b749fd7d3f03cf6759b00a6d750a/complete.json",
+      "manifest_sha256": "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:37:44.450647+00:00",
+      "run": "Punion",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3724.6492730830214,
+        "started_checks": 8,
+        "active": {
+          "pid": 47635
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:37:44.450647+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "G188089"
+      ],
+      "demolished_ids": [],
+      "cleared_physical_cell_ids": [
+        188089
+      ],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": 452.0,
+          "maximum_valid_surface_temperature_K": 519.8861483998244
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0119",
+      "source_budget": {
+        "covered_area_m2": 25.00000017619131,
+        "initial_dry_fuel_mass_kg": 450.00000317144367,
+        "available_energy_J": 4390200030.940604
+      },
+      "actual_stop_time_s": 452.0,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 25.0,
+      "C_raw_scenario_m2": 25.0,
+      "raw_C_minus_canonical_m2": 0.0,
+      "N_burned_out_original_owner": {
+        "lower": 0,
+        "upper": 0
+      },
+      "A_burned_out_m2": 0.0,
+      "A_active_m2": 53.39207834302385,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/b0101dc1f1d60d28c68624d4ae1aca1613836d8c2e15132b10c035a2e65d1352/complete.json",
+      "manifest_sha256": "03dc887ed1dd7069517ed1025134a7e1b84d82041864da5684aec296e7688d96",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:G188089"
+    },
+    {
+      "observed_utc": "2026-11-11T10:37:44.450647+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3407.2994974590256,
+        "mip_elapsed_s": 4.024867250001989,
+        "started_checks": 6,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:39:07.331392+00:00",
+      "run": "Punion",
+      "type": "native_case_audited",
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "scenario_id": "background-h1",
+      "strict_terminal_status": "passed",
+      "strict_complete": true,
+      "conditional_terminal_status": "not_separately_assessed",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0201",
+      "source_budget": {
+        "covered_area_m2": 24.999999606317154,
+        "initial_dry_fuel_mass_kg": 449.99999291370875,
+        "available_energy_J": 4390199930.866142
+      },
+      "actual_stop_time_s": 1401.3600000000001,
+      "closure_certificate_sha256": "516f44543f8d3849e577e1b4e12521270001b2b7465fcdd431895db6b7d5b444",
+      "C_canonical_m2": 10669.276972304711,
+      "C_raw_scenario_m2": 10669.276972305855,
+      "raw_C_minus_canonical_m2": 1.1441443348303437e-09,
+      "N_burned_out_original_owner": {
+        "lower": 1,
+        "upper": 1
+      },
+      "A_burned_out_m2": 111.17746509794179,
+      "A_active_m2": 0.0,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/evaluations/221ef2c0bca08a89c2f1672986d52ba09fef79b07b62eaaed4819b42c069431a/complete.json",
+      "manifest_sha256": "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": true
+    },
+    {
+      "observed_utc": "2026-11-11T10:39:07.331392+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3609.5638645419967,
+        "mip_elapsed_s": 5.109373916988261,
+        "started_checks": 7,
+        "active": {
+          "pid": 49320
+        }
+      }
+    },
+    {
+      "observed_utc": "2026-11-11T10:41:33.242177+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "G187492"
+      ],
+      "demolished_ids": [],
+      "cleared_physical_cell_ids": [
+        187492
+      ],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": 452.0,
+          "maximum_valid_surface_temperature_K": 519.8861483998244
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0119",
+      "source_budget": {
+        "covered_area_m2": 25.00000017619131,
+        "initial_dry_fuel_mass_kg": 450.00000317144367,
+        "available_energy_J": 4390200030.940604
+      },
+      "actual_stop_time_s": 452.0,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 25.0,
+      "C_raw_scenario_m2": 25.0,
+      "raw_C_minus_canonical_m2": 0.0,
+      "N_burned_out_original_owner": {
+        "lower": 0,
+        "upper": 0
+      },
+      "A_burned_out_m2": 0.0,
+      "A_active_m2": 53.39207834302385,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/1bf5cd23659e9181d99ee01789b29fc3d1446d5459a6238a66e7aff40b86cbb8/complete.json",
+      "manifest_sha256": "122130cb170706f8b09f9d34afe442379fed804d8ff7faebdf1864d8b619f73d",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:G187492"
+    },
+    {
+      "observed_utc": "2026-11-11T10:44:02.349520+00:00",
+      "run": "Pjoint",
+      "type": "native_case_audited",
+      "scenario_id": "near-B0035-h1",
+      "action_ids": [
+        "G187491"
+      ],
+      "demolished_ids": [],
+      "cleared_physical_cell_ids": [
+        187491
+      ],
+      "protection_query_status": "failed",
+      "strict_terminal_status": "unknown",
+      "strict_complete": false,
+      "conditional_terminal_status": "unknown",
+      "conditional_complete": false,
+      "native_invalid_reasons": [],
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "first_ignition_s": 452.0,
+          "maximum_valid_surface_temperature_K": 519.8861483998244
+        },
+        {
+          "building_id": "B0036",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        },
+        {
+          "building_id": "B0166",
+          "first_ignition_s": null,
+          "maximum_valid_surface_temperature_K": 300.0
+        }
+      ],
+      "source_id": "B0119",
+      "source_budget": {
+        "covered_area_m2": 25.00000017619131,
+        "initial_dry_fuel_mass_kg": 450.00000317144367,
+        "available_energy_J": 4390200030.940604
+      },
+      "actual_stop_time_s": 452.0,
+      "closure_certificate_sha256": null,
+      "C_canonical_m2": 25.0,
+      "C_raw_scenario_m2": 25.0,
+      "raw_C_minus_canonical_m2": 0.0,
+      "N_burned_out_original_owner": {
+        "lower": 0,
+        "upper": 0
+      },
+      "A_burned_out_m2": 0.0,
+      "A_active_m2": 53.39207834302385,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-pingyan-20261111/evaluations/9cd8950b6d2cbcddf26e0bf4460fac609d1cb5576e37d15f75e0ac5c768f6e85/complete.json",
+      "manifest_sha256": "6ee1ce02662e5ecdfe07169b09ae6f7875681e219ec371fbf0a99006fff479c9",
+      "artifact_hashes_verified": true,
+      "source_and_input_hashes_verified": true,
+      "real_state_and_peak_checked": true,
+      "loss_complete": false,
+      "plan_id": "actions:G187491"
+    },
+    {
+      "observed_utc": "2026-11-11T10:44:02.349520+00:00",
+      "run": "Pjoint",
+      "type": "budget_checkpoint",
+      "budget": {
+        "elapsed_s": 3779.1268739590305,
+        "mip_elapsed_s": 6.366412541945465,
+        "started_checks": 8,
+        "active": {
+          "pid": 49320
+        }
+      }
+    }
+  ],
+  "raw_native_flags_preserved": true,
+  "C_basis": "original_base_roof_geometry_union+25m2_per_whole_ground_parent;raw_scenario_roundoff_retained",
+  "N_basis": "physical_original_owner_burned_out_attribution_lower_upper",
+  "A_basis": "all_physical_burned_out_covered_area;final_only_when_complete",
+  "strict_and_conditional_pools_separate": true,
+  "budgets_monotone_verified": true,
+  "new_CA_checks": 0,
+  "original_data_modified": false,
+  "audit_script_sha256": "8fe67447eec1e2a762a11510b91f9fe6b66e17548e304490a1308e7d41b92574",
+  "native_master_auditor_sha256": "bee095485dedf776aced965260946a5b456d0ede0664b4de8d69db9027423aab"
+}

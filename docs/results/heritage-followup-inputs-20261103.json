@@ -1,0 +1,64 @@
+[
+  {
+    "village": "batuan",
+    "config_path": "examples/research/heritage/followup-20261103/batuan-fixed-comparison.json",
+    "config_sha256": "d356a921191355d0d3cd9d43db9a7a86eb5f5d5d432a8eaec6f1e31cf62e1eec",
+    "new_CA_planned": 12,
+    "new_independent_fire_draws": 0,
+    "source_audit": [
+      {
+        "fire_id": "drum-B0077-known-hot",
+        "protocol_path": "runs/research/heritage-triple-validation-20261024-c/source-protocol.json",
+        "draw_id": "near-B0073-003",
+        "source_id": "B0077",
+        "footprint_sha256": "8f496c0e0100911578e3e4f97f2ee9b298d465fec747c75823a1c2e078c7e4a6",
+        "role": "known_high_temperature_selected_plan_source_replayed_in_all_arms",
+        "parent_source_file_sha256": "fb814200b4dbe1855365c75b3b2f77ac69c977cb93fdb7a24ac30eaf9d3b7e4a",
+        "polygon_verified": true,
+        "ignition_area_m2": 25.000000000001364
+      },
+      {
+        "fire_id": "bridge-B0062-known",
+        "protocol_path": "examples/research/heritage/batuan-position-known-B0062-source-20261024.json",
+        "draw_id": "near-B0120-002",
+        "source_id": "B0062",
+        "footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+        "role": "known_bridge_threat_replay",
+        "parent_source_file_sha256": "5a32be5c86870511db53427763758d7f7e40e38a06dce19d42991c11f059fce6",
+        "polygon_verified": true,
+        "ignition_area_m2": 25.000000000023164
+      }
+    ]
+  },
+  {
+    "village": "pingyan",
+    "config_path": "examples/research/heritage/followup-20261103/pingyan-fixed-comparison.json",
+    "config_sha256": "ab7e1f3ea5bf7ec58593e88e665bfd6c5af26f688717a22de863970714166ade",
+    "new_CA_planned": 12,
+    "new_independent_fire_draws": 0,
+    "source_audit": [
+      {
+        "fire_id": "drum-B0164-late-ignition",
+        "protocol_path": "examples/research/heritage/pingyan-heldout-20261029-source-3.json",
+        "draw_id": "near-B0166-001",
+        "source_id": "B0164",
+        "footprint_sha256": "5b799696a15ce36c43a5300d1a76470385a18c1e67c3add440e90c5caf947727",
+        "role": "previous_1169s_baseline_ignition_replay",
+        "parent_source_file_sha256": "b9c76d9d50b24db7cb3f74d568d262e56de80b3a45e14d7e3f7e6a5f9c429ef7",
+        "polygon_verified": true,
+        "ignition_area_m2": 25.00000000000067
+      },
+      {
+        "fire_id": "bridge-B0120-coverage",
+        "protocol_path": "examples/research/heritage/pingyan-heldout-20261029-source-2.json",
+        "draw_id": "near-B0035-001",
+        "source_id": "B0120",
+        "footprint_sha256": "3c324902d520acb8ee1c30d5e1f620010e0a6362d8621c688363a737b96507a8",
+        "role": "previous_nonigniting_bridge_source_duration_coverage",
+        "parent_source_file_sha256": "66757f95844dcce04563acf745cf699d7a61f03aff212719b5b04d6ef3df4eab",
+        "polygon_verified": true,
+        "ignition_area_m2": 25.000000000007038
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "villages": [
+    "batuan",
+    "pingyan"
+  ],
+  "decision_rule": "minimum actual clearing area subject to strict physical polygon separation from every protected roof of every burnable non-core patch by more than the frozen model support radius",
+  "initial_fire_condition": "any direct ignition exclusively outside the protected atoms; no external heat or firebrands",
+  "scope": "minimum for this sufficient geometric condition; separate full-fire N/A",
+  "radii_rule": "use original model support in both villages",
+  "radius_selected_from_results": false,
+  "method_sha256": "b3f6bb48ae2f51c2bd9ce50426cc69765c47cb765198f945b83d7f145f944ae1"
+}

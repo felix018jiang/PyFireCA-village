@@ -1,0 +1,138 @@
+{
+  "schema_version": "finite-catalogue-loss-capped-area-minimum-1",
+  "scope": "nineteen registered physical actions, four declared design cases at two support scales per case",
+  "loss_caps_selected": "observed complete target loss values; no policy preference or prospectively fixed threshold",
+  "argument": "Each admitted scenario provides a lower bound on the eventual maximum over all scenarios. A single larger loss rules out that candidate at the target caps. More expensive candidates cannot dominate the target in clearance. Other equal-cost candidates, if present, require their own check. No extrapolation beyond this catalogue.",
+  "results": [
+    {
+      "temporal_mode": "strict",
+      "sealed_input_sha256": "24b37152951739877e64bc5b240ad1e5948e623b1b0fa5d213a7aab27302fbd3",
+      "sealed_input_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-expanded-case-composition-strict-20261111.json",
+      "target_cost": 1089.0173624408872,
+      "target_max_N_upper": 5,
+      "target_max_A_m2": 324.09411544264276,
+      "feasible_target_checks": 8,
+      "unique_actions": 19,
+      "higher_cost_actions": 12,
+      "other_equal_cost_actions": 0,
+      "lower_cost_actions": [
+        {
+          "action": "action-c206fa12704a63ee0d72",
+          "cost": 443.8419687401409,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        },
+        {
+          "action": "action-091c07664979d8853b57",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        },
+        {
+          "action": "action-919efa00421e342ffa45",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        },
+        {
+          "action": "action-aba400f0df50f4c670bc",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        },
+        {
+          "action": "action-6715b710798e40d5b5d2",
+          "cost": 330.67115260521825,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        },
+        {
+          "action": "action-7df76a49a0ca00f713cd",
+          "cost": 743.8419687401408,
+          "admissible_closed_cases": 0,
+          "worst_area_lower_bound_m2": null,
+          "worst_Nupper_lower_bound": null,
+          "excluded": false
+        }
+      ],
+      "unique_least_C_within_both_loss_caps_in_this_catalogue": false,
+      "pareto_membership_proved_in_this_catalogue": false
+    },
+    {
+      "temporal_mode": "finite_domain_closed",
+      "sealed_input_sha256": "fff6c8f6336cef4e6d0863c045af90025a6b587f21652a271534103131862864",
+      "sealed_input_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-expanded-case-composition-finite_domain_closed-20261111.json",
+      "target_cost": 1089.0173624408872,
+      "target_max_N_upper": 5,
+      "target_max_A_m2": 324.09411544264276,
+      "feasible_target_checks": 8,
+      "unique_actions": 19,
+      "higher_cost_actions": 12,
+      "other_equal_cost_actions": 0,
+      "lower_cost_actions": [
+        {
+          "action": "action-c206fa12704a63ee0d72",
+          "cost": 443.8419687401409,
+          "admissible_closed_cases": 2,
+          "worst_area_lower_bound_m2": 345013.64556547854,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        },
+        {
+          "action": "action-091c07664979d8853b57",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 2,
+          "worst_area_lower_bound_m2": 344363.64556547854,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        },
+        {
+          "action": "action-919efa00421e342ffa45",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 2,
+          "worst_area_lower_bound_m2": 344938.64556547854,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        },
+        {
+          "action": "action-aba400f0df50f4c670bc",
+          "cost": 543.8419687401408,
+          "admissible_closed_cases": 2,
+          "worst_area_lower_bound_m2": 344838.64556547854,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        },
+        {
+          "action": "action-6715b710798e40d5b5d2",
+          "cost": 330.67115260521825,
+          "admissible_closed_cases": 2,
+          "worst_area_lower_bound_m2": 344576.81638386135,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        },
+        {
+          "action": "action-7df76a49a0ca00f713cd",
+          "cost": 743.8419687401408,
+          "admissible_closed_cases": 1,
+          "worst_area_lower_bound_m2": 344763.64556547854,
+          "worst_Nupper_lower_bound": 164,
+          "excluded": true
+        }
+      ],
+      "unique_least_C_within_both_loss_caps_in_this_catalogue": true,
+      "pareto_membership_proved_in_this_catalogue": true
+    }
+  ],
+  "new_CA_checks": 0,
+  "receipt_sha256": "f97d608c4ba345542e935a78e137b9bb3505d780b1681e549b5d7c6bfcf6af9e"
+}

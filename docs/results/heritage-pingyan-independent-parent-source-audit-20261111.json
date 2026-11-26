@@ -1,0 +1,560 @@
+{
+  "all_checks_passed": true,
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-balanced-geometry-20261111-catalog.json": "67193d9bd5e4507cfd53bafcab5cb06d2da3ebcd2e05e236d4f118015932bc03",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-balanced-geometry-20261111-design.json": "26c6ff47b04aff29b63c7760383b42aaa2e8c3641e5b0cf2c044e9cb3e1f85e0",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-balanced-geometry-20261111-grid.json": "2cbef1fc35ca84b396c5a0485817a5e0fd76ebcc16fe66de639d9766b49eddbb",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-balanced-geometry-20261111.geojson": "064f9b94575b77f03e62c1808db3df01236958554c0673dd5f9a463e3f5c6b24",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.finite-source-certificate.json": "43984c944141c99e327f1e6f2ad0fbcc9449fc7a95aff6a78b1be087e4e74e34",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json": "3ec4a4e0f01cdb4df3b7c889dda8fdc3d22bbbaa56d1dc115c6fc12abccb2ade",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.json": "619e1ea81f848993b106d14dc6fdd425d855fb89152ef26fbca0a95c4262366f",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-receipt.json": "5f306a1e08e856e4a17c7efeca84832279388e5319141972809d4de159e36b63",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-search.json": "b54ba8fdbdf9f008749fd007ef9c923a5a3fb3023485f56317953ac971e792f1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.vegetation-proposals.json": "a78a67c62cf476254ea8eca0f513fa7a5b33e6746eb5553f06033bb5cc26e739",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json": "f5afcf928696cba69fd2cd9b037794188fa1d472d6179d28df332c4d59ec017c",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-retained-area-master.json": "e8d5d53aa08800c6eb7fe33e9dcd5297182b8c04c7997327bd0c3ab58f869a59",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/experiment.json": "97a031d448a4cc4534712b906a6fb19b9c061561f26de35e7fc0ce7c54543ddb",
+    "/Users/tone/Documents/github/PyFireCA/scripts/optimize_heritage_balanced_geometry.py": "d25d9423d3dd0934d49e442e2ebd838256e65dd5c3349fe98c1278d22ca27d56",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_joint_area_campaign.py": "5b9128f7f56055327f0b75e6cd5cd3afc3d528bfcac65b1c08e01ab42d356c81",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_village_joint_geometry.py": "921f5bd4aa2167f284526f8baa9a90948d6dd3d74756c109d48d90f715a9b9a5"
+  },
+  "new_CA_checks": 0,
+  "plan_parent_cost_matrix": [
+    {
+      "D_count": 5,
+      "G_count": 0,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 0.0,
+      "plan_id": "roof-seed",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 985.6078364045123,
+      "total_construction_C_m2": 985.6078364045123,
+      "whole_parent_construction_C_m2": 0
+    },
+    {
+      "D_count": 5,
+      "G_count": 4,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 100.0,
+      "plan_id": "pingyan-early-vegetation-connection",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 985.6078364045123,
+      "total_construction_C_m2": 1085.6078364045125,
+      "whole_parent_construction_C_m2": 100
+    },
+    {
+      "D_count": 5,
+      "G_count": 1,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 25.0,
+      "plan_id": "pingyan-core-geometric-gap",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 985.6078364045123,
+      "total_construction_C_m2": 1010.6078364045123,
+      "whole_parent_construction_C_m2": 25
+    },
+    {
+      "D_count": 5,
+      "G_count": 4,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 100.0,
+      "plan_id": "pingyan-same-area-geometric-control",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 985.6078364045123,
+      "total_construction_C_m2": 1085.6078364045125,
+      "whole_parent_construction_C_m2": 100
+    },
+    {
+      "D_count": 4,
+      "G_count": 4,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 100.0,
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 719.1350091229932,
+      "total_construction_C_m2": 819.1350091229932,
+      "whole_parent_construction_C_m2": 100
+    },
+    {
+      "D_count": 41,
+      "G_count": 427,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 10675.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 8649.764785783027,
+      "total_construction_C_m2": 19324.764785783027,
+      "whole_parent_construction_C_m2": 10675
+    },
+    {
+      "D_count": 44,
+      "G_count": 572,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "ground_covered_fuel_area_m2": 14300.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "raw_parent_and_vector_roof_checks_passed": true,
+      "roof_geometry_union_C_m2": 9614.018518951932,
+      "total_construction_C_m2": 23914.018518951932,
+      "whole_parent_construction_C_m2": 14300
+    }
+  ],
+  "protection_or_fire_loss_effect_proven": false,
+  "radiation_or_contact_graphs_built": 0,
+  "schema_version": "heritage-joint-independent-parent-source-audit-1",
+  "source_covered_budget_absolute_tolerance_m2": 1e-06,
+  "source_footprint_geometry_absolute_tolerance_m2": 1e-08,
+  "source_matrix": [
+    {
+      "G_count": 0,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "roof-seed",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 0,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "roof-seed",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 0,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "roof-seed",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 0,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "roof-seed",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "pingyan-early-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "pingyan-early-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "pingyan-early-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "pingyan-early-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 1,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "pingyan-core-geometric-gap",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 1,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "pingyan-core-geometric-gap",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 1,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "pingyan-core-geometric-gap",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 1,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "pingyan-core-geometric-gap",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "pingyan-same-area-geometric-control",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "pingyan-same-area-geometric-control",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "pingyan-same-area-geometric-control",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "pingyan-same-area-geometric-control",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0167",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199955.975155,
+        "covered_area_m2": 24.999999749300457,
+        "initial_dry_fuel_mass_kg": 449.9999954874082
+      },
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "1af605e3f5b2a1af42278b4131261bb431bd47e9cdd23d184810bdbda59aa345",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 4,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "replace-largest-roof-by-vegetation-connection",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 427,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 427,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 427,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 427,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 572,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0035",
+      "first_retained_source_id": "B0120",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390200040.31885,
+        "covered_area_m2": 25.000000229595745,
+        "initial_dry_fuel_mass_kg": 450.00000413272346
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "source_footprint_geometry_area_m2": 25.000000000031267,
+      "source_footprint_sha256": "70980b0af3274b4eb82986f4d488b544affb951470037809a7afdaf53768fae8",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 572,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0036",
+      "first_retained_source_id": "B0037",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199984.02523,
+        "covered_area_m2": 24.999999909031654,
+        "initial_dry_fuel_mass_kg": 449.9999983625697
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "56dfee2e3f709ee992d0df8df86269876786031e281f35ec0030c64e4687b011",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 572,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "near-B0166",
+      "first_retained_source_id": "B0191",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199966.026957,
+        "covered_area_m2": 24.999999806540455,
+        "initial_dry_fuel_mass_kg": 449.99999651772816
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "source_footprint_geometry_area_m2": 25.0000000003222,
+      "source_footprint_sha256": "a1953b83f36476efea5a86c08728955f70cd738b1209e80508b2d40034c3df86",
+      "source_in_prepared_prefix": true
+    },
+    {
+      "G_count": 572,
+      "all_G_parent_checks_passed": true,
+      "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-balanced-optimized-longcap-comparison-20261111.json",
+      "fire_id": "background",
+      "first_retained_source_id": "B0201",
+      "independently_integrated_source_budget": {
+        "available_energy_J": 4390199930.874336,
+        "covered_area_m2": 24.99999960636381,
+        "initial_dry_fuel_mass_kg": 449.99999291454867
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "source_footprint_geometry_area_m2": 25.00000000000067,
+      "source_footprint_sha256": "6ecb8a88f39736e4a7d09674cf58e418f520f9578fb7e1bc6cc1587dd449885f",
+      "source_in_prepared_prefix": true
+    }
+  ],
+  "uses_comparison_oracle_or_native_solver": false
+}

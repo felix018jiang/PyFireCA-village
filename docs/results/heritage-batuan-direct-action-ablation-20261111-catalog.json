@@ -1,0 +1,200 @@
+{
+  "external_existing_arms": [
+    {
+      "existing_outcomes_must_be_verified_natively_before_composition": true,
+      "experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json",
+      "experiment_sha256": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+      "factorial_arm": "D3-G0",
+      "geometry_cost_receipt": {
+        "C_construction_action_area_m2": 443.8419687401408,
+        "actual_cleared_base_node_mask_sha256": "53e8b09582127244079cd53db22acce2d36b04ee4d23d546a66fb4f6f676956b",
+        "cleared_physical_cell_ids": [],
+        "cleared_roof_covered_fuel_area_m2": 443.8419728948336,
+        "cleared_roof_geometry_union_area_m2": 443.8419687401408,
+        "cleared_roof_node_count": 42,
+        "cleared_vegetation_covered_fuel_area_m2": 0.0,
+        "cleared_vegetation_ground_footprint_area_m2": 0.0,
+        "cleared_vegetation_parent_cell_count": 0,
+        "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+        "covered_area_is_not_added_to_construction_footprint": true,
+        "demolished_ids": [
+          "B0061",
+          "B0071",
+          "B0076"
+        ],
+        "physical_union_recomputed_area_m2": 443.8419687401409,
+        "plan_id": "roof-seed",
+        "planned_roof_ID_count": 3,
+        "protected_original_roof_node_cleared_count": 0
+      },
+      "included_in_new_evaluation_plans": false,
+      "native_terminal_values_or_statuses_transferred": false,
+      "plan": {
+        "cleared_physical_cell_ids": [],
+        "demolished_ids": [
+          "B0061",
+          "B0071",
+          "B0076"
+        ],
+        "plan_id": "roof-seed"
+      },
+      "problem_sha256": "c0eae3aba1b079bb4e6d86ffac7428ebf4215e8167975eadc0d9afd2130223a4",
+      "run_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111"
+    },
+    {
+      "existing_outcomes_must_be_verified_natively_before_composition": true,
+      "experiment_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/experiment.json",
+      "experiment_sha256": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+      "factorial_arm": "D9-G12",
+      "geometry_cost_receipt": {
+        "C_construction_action_area_m2": 1389.0173624408872,
+        "actual_cleared_base_node_mask_sha256": "fb1783cb19655adafef1ece90d6178ae1553c79261487dc2636f55e759650c69",
+        "cleared_physical_cell_ids": [
+          50118,
+          50465,
+          50812,
+          50813,
+          51160,
+          51508,
+          51856,
+          52203,
+          52550,
+          52551,
+          52898,
+          53593
+        ],
+        "cleared_roof_covered_fuel_area_m2": 1089.0173673138215,
+        "cleared_roof_geometry_union_area_m2": 1089.0173624408872,
+        "cleared_roof_node_count": 112,
+        "cleared_vegetation_covered_fuel_area_m2": 300.0,
+        "cleared_vegetation_ground_footprint_area_m2": 300.0,
+        "cleared_vegetation_parent_cell_count": 12,
+        "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+        "covered_area_is_not_added_to_construction_footprint": true,
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "ground_evidence": "frozen_b0_hull_narrow_width_sweep;not_fire_safety_certified",
+        "physical_union_recomputed_area_m2": 1389.0173624408872,
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+        "planned_roof_ID_count": 9,
+        "protected_original_roof_node_cleared_count": 0
+      },
+      "included_in_new_evaluation_plans": false,
+      "native_terminal_values_or_statuses_transferred": false,
+      "plan": {
+        "cleared_physical_cell_ids": [
+          50118,
+          50465,
+          50812,
+          50813,
+          51160,
+          51508,
+          51856,
+          52203,
+          52550,
+          52551,
+          52898,
+          53593
+        ],
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "ground_evidence": "frozen_b0_hull_narrow_width_sweep;not_fire_safety_certified",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w0.01"
+      },
+      "problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+      "run_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111"
+    }
+  ],
+  "finite_source_certificate_sha256": "f3ee8bc89a9b6f70e06cf8291b4662d46f6b2ea76eb8b7b982753b89efab53d5",
+  "global_optimality_proven": false,
+  "new_CA_checks": 0,
+  "plans": [
+    {
+      "C_construction_action_area_m2": 743.8419687401408,
+      "actual_cleared_base_node_mask_sha256": "7c62a2817d9bde8e3837f396542d0d17667316212ab5a753c8bdfb60f14ac236",
+      "cleared_physical_cell_ids": [
+        50118,
+        50465,
+        50812,
+        50813,
+        51160,
+        51508,
+        51856,
+        52203,
+        52550,
+        52551,
+        52898,
+        53593
+      ],
+      "cleared_roof_covered_fuel_area_m2": 443.8419728948336,
+      "cleared_roof_geometry_union_area_m2": 443.8419687401408,
+      "cleared_roof_node_count": 42,
+      "cleared_vegetation_covered_fuel_area_m2": 300.0,
+      "cleared_vegetation_ground_footprint_area_m2": 300.0,
+      "cleared_vegetation_parent_cell_count": 12,
+      "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+      "covered_area_is_not_added_to_construction_footprint": true,
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "ground_evidence": "exact_frozen_thin12_parent_cells;direct_whole_object_ablation",
+      "physical_union_recomputed_area_m2": 743.8419687401408,
+      "plan_id": "direct-seed-D3-with-thin-G12",
+      "planned_roof_ID_count": 3,
+      "protected_original_roof_node_cleared_count": 0
+    },
+    {
+      "C_construction_action_area_m2": 1089.0173624408872,
+      "actual_cleared_base_node_mask_sha256": "de1e60ffe1b9114c254aecc459fe7e144d9bdd429c80a7b7743bcc74ad3d54d4",
+      "cleared_physical_cell_ids": [],
+      "cleared_roof_covered_fuel_area_m2": 1089.0173673138215,
+      "cleared_roof_geometry_union_area_m2": 1089.0173624408872,
+      "cleared_roof_node_count": 112,
+      "cleared_vegetation_covered_fuel_area_m2": 0.0,
+      "cleared_vegetation_ground_footprint_area_m2": 0.0,
+      "cleared_vegetation_parent_cell_count": 0,
+      "cost_basis": "all_original_roof_owners_removed_AND;whole25m2_ground_footprints;unique_union",
+      "covered_area_is_not_added_to_construction_footprint": true,
+      "demolished_ids": [
+        "B0060",
+        "B0061",
+        "B0064",
+        "B0065",
+        "B0068",
+        "B0071",
+        "B0074",
+        "B0076",
+        "B0077"
+      ],
+      "ground_evidence": "no_vegetation_action;direct_whole_object_ablation",
+      "physical_union_recomputed_area_m2": 1089.0173624408872,
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "planned_roof_ID_count": 9,
+      "protected_original_roof_node_cleared_count": 0
+    }
+  ],
+  "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+  "schema_version": "heritage-direct-action-ablation-catalog-1",
+  "source_coverage_scope": "exact_two_declared_plans;old_roof_area_bound_not_extended",
+  "village_id": "batuan"
+}

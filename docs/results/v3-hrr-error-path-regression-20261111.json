@@ -1,0 +1,26 @@
+{
+  "schema_version": "native-v3-burn-error-path-regression-1",
+  "old_solver_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "new_solver_sha256": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3",
+  "guarded_run_old_error": "flame contact HRR cannot exceed the configured peak",
+  "synthetic_state_time_s": 0.8333386666450667,
+  "synthetic_dt_s": 1.0099998615231698e-10,
+  "synthetic_accepted_mean_W": 600.0,
+  "synthetic_final_absolute_energy_residual_J": 1.7053025658242404e-13,
+  "bare_direct_invalid_HRR_rejected": true,
+  "independent_decimal_stage_boundary_and_fuel_cases": 432,
+  "bitwise_old_successful_result_fingerprints": {
+    "contact_and_radiation": "307c84aecd42dc93d7870fa7cc997a0db57be5d8ea60b7ebbfcc5e4f7e352ba6",
+    "contact_only": "8b08789333763fdbc6690b9f841dd44c2f89fb14e1aa099fde689ffb4de76332",
+    "radiation_only": "8f45371f9f2e5e0f4525be5be2a76c668d10b725a59c912e6c771da9a473cf2d",
+    "single_source": "9a53eed35573b3ac0e780f55dc5f262baf4c29a6b5996194d5bcd321566667d5",
+    "finite_fuel_end": "0deb92dac538653d59d300d45803bbdce349f6761b0147f1ad96d4c1256696b5",
+    "firebrands_with_contact": "20460155658ddc62c4fd1167bbebbb0fbc410b4427833c145141b7bfe16569a3"
+  },
+  "original_failure_had_numeric_state_logged": false,
+  "new_computed_fallback_logs_aggregate_state_when_exercised": true,
+  "old_successful_unchanged_scope": "same inputs and runtime; original converged native outputs pass through the same radiation, contact, state and ledger arithmetic in the same order",
+  "firebrand_cases_after_a_native_contact_peak_error_still_raise": true,
+  "new_CA_checks_in_village_campaign": 0,
+  "auditor_sha256": "c0fe9faa6eeff40671cd014be7156508196651f35b1c617dc6e42d3c2b0aa685"
+}

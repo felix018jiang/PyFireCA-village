@@ -1,0 +1,10 @@
+[
+  {
+    "config": "pingyan-protected-union-priority-longcap-comparison-20261111.json",
+    "run_root": "../../../../runs/research/heritage-protected-union-pingyan-20261111"
+  },
+  {
+    "config": "pingyan-observed-clearance-subset-20261111.json",
+    "run_root": "../../../../runs/research/heritage-pingyan-observed-clearance-subset-20261111"
+  }
+]

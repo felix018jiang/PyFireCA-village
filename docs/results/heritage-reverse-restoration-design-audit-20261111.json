@@ -1,0 +1,4288 @@
+{
+  "schema_version": "heritage-reverse-restoration-design-audit-1",
+  "positive_area_village_restoration_certified": false,
+  "large_village_CA_runs": 0,
+  "large_village_graphs_constructed": 0,
+  "native_original_results_relabelled": false,
+  "sufficient_condition_design": {
+    "scope": "same finite model, source, common physical indices and numerical backend",
+    "required_premises": [
+      "same N and geometry; old cleared R indices are INERT, never deleted",
+      "R stock/masks only; kept parameters and permissions exact",
+      "unchanged first-retained source, 0-time footprint and event list",
+      "no firebrands, external feedback or opaque renormalized radiation",
+      "no possible old-ever-ignited I radiation/contact incoming edge to R",
+      "I radiation target/weight bytes exact; whole new graph admissible",
+      "all-active-subset sparse guard; no sparse/dense equivalence assumed",
+      "contact padding and I rows exact; source allocations preserved",
+      "R: positive ignition slack, nonpositive no-source flux, fixed water",
+      "R cooling limit including global contact h is at least unchanged maxdt",
+      "kept float update map/minimum timestep terms confirmed unchanged",
+      "new stock/derived endpoint validity and closure checked independently"
+    ],
+    "inductive_conclusion_if_all_premises_are_verified": "same old-kept heat/burn/clock trajectory; R remains cold and unignited; same core safety and physical burned-out N/A",
+    "not_invariant": [
+      "R state/validity/initial or residual fuel/water/retained area",
+      "masked aggregate budget last bits and native metadata fingerprints"
+    ],
+    "native_restored_execution_claimed": false,
+    "village_status": "incomplete proof: screen only; use CA ablation until guarded"
+  },
+  "anchor_screen": {
+    "schema_version": "heritage-reverse-restoration-spatial-screen-1",
+    "native_problem_sha256": "f64c07fd7fe8bd29bebe7dae4726a1dd9660692f3c0ea0f819940f74db185d5f",
+    "anchor_plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+    "original_action_count": 97,
+    "original_roof_action_count": 19,
+    "original_grass_action_count": 78,
+    "source_policy_guard": [
+      {
+        "fire_id": "B0075-known",
+        "actual_source_id": "B0075",
+        "restoration_changes_first_retained_source_ids": []
+      },
+      {
+        "fire_id": "B0071-known",
+        "actual_source_id": "B0067",
+        "restoration_changes_first_retained_source_ids": [
+          "B0071"
+        ]
+      },
+      {
+        "fire_id": "B0062-known",
+        "actual_source_id": "B0062",
+        "restoration_changes_first_retained_source_ids": []
+      },
+      {
+        "fire_id": "B0061-known",
+        "actual_source_id": "B0063",
+        "restoration_changes_first_retained_source_ids": [
+          "B0061"
+        ]
+      }
+    ],
+    "source_switch_blocked_roof_ids": [
+      "B0061",
+      "B0071"
+    ],
+    "spatial_and_source_screen_candidate_action_ids": [
+      "B0069",
+      "G51852",
+      "G52202",
+      "G52203",
+      "G52218",
+      "G52219",
+      "G52550",
+      "G52551",
+      "G52565",
+      "G52566",
+      "G52898",
+      "G53242",
+      "G53243",
+      "G53256",
+      "G53590",
+      "G53591",
+      "G53592",
+      "G53593",
+      "G53601",
+      "G53604",
+      "G53937",
+      "G53938",
+      "G53939",
+      "G53940",
+      "G53947",
+      "G53948",
+      "G54285",
+      "G54286",
+      "G54287",
+      "G54292",
+      "G54293",
+      "G54296",
+      "G54632",
+      "G54633",
+      "G54634",
+      "G54635",
+      "G54637",
+      "G54638",
+      "G54639",
+      "G54640",
+      "G54641",
+      "G54642",
+      "G54980",
+      "G54981",
+      "G54982",
+      "G54983",
+      "G54984",
+      "G54985",
+      "G54986",
+      "G54987",
+      "G54988",
+      "G55328",
+      "G55329",
+      "G55330",
+      "G55331",
+      "G55332",
+      "G55333",
+      "G55676",
+      "G55677",
+      "G55678"
+    ],
+    "spatial_screen_candidate_grass_footprint_m2": 1475,
+    "zero_physical_effect_action_ids": [],
+    "per_scenario": [
+      {
+        "scenario_id": "B0075-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/aa2e42763c777bac60fa3cda2754a2a689941c08ed26b1f0a04e44ab3c485412/complete.json",
+        "manifest_sha256": "3c7eea1a0c0e8463a9daa8366f41c262bb467e232106dcd9cd218bee9c314b76",
+        "actual_source_id": "B0075",
+        "original_ignited_node_count": 140,
+        "warm_unignited_positive_area_node_count": 136,
+        "radiation_edge_count": 2793272,
+        "all_ignited_outdegree_conservative_upper": 80447,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 30,
+            "restored_covered_fuel_area_m2": 361.84003200039706,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 613,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 239,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 59,
+            "restored_covered_fuel_area_m2": 236.16085190296778,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 289,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 188,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 69,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0075-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/ac14de6cd9846d8a743438fd6e1645975a98b6c4d85b5e6dc0c8310761a13b77/complete.json",
+        "manifest_sha256": "04fdc05411153626ef4fb181d1082dd9d6c6bcbe4c4ac5b7226dd2193c6c427f",
+        "actual_source_id": "B0075",
+        "original_ignited_node_count": 452,
+        "warm_unignited_positive_area_node_count": 480,
+        "radiation_edge_count": 9825670,
+        "all_ignited_outdegree_conservative_upper": 830324,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 32,
+            "restored_covered_fuel_area_m2": 361.84003200039706,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 2007,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 874,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 120,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 1003,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 608,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 195,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0071-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/1735cc46a195f3e125bf5b673df40767c54426ab535549b93604710233da7211/complete.json",
+        "manifest_sha256": "b4b47da529cbfd795e7db999653e199d3f61a1dc254431f80fb29766d0f8a962",
+        "actual_source_id": "B0067",
+        "original_ignited_node_count": 246,
+        "warm_unignited_positive_area_node_count": 121,
+        "radiation_edge_count": 2614166,
+        "all_ignited_outdegree_conservative_upper": 98892,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 239,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 300,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 182,
+            "restored_covered_fuel_area_m2": 117.32700906629786,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 69,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0071-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/7226c9b10ae70a7cf4cc8d731e2f6f3353a9965a3e0e8893315562639f1e92cd/complete.json",
+        "manifest_sha256": "b26fe435a73ab2d443218681826784a83e49f1889255da7bd661683046f98774",
+        "actual_source_id": "B0067",
+        "original_ignited_node_count": 829,
+        "warm_unignited_positive_area_node_count": 360,
+        "radiation_edge_count": 7674316,
+        "all_ignited_outdegree_conservative_upper": 1075886,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 874,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 1026,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 598,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 196,
+            "restored_covered_fuel_area_m2": 32.82513931312821,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0062-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/2ce3c51b342d93bbee833c47939b5c4b25ca7a7da329d0ece6112773858e5360/complete.json",
+        "manifest_sha256": "161cc034aac832672fa18c9fec62a64400f037e42577db485775556be8b3cf31",
+        "actual_source_id": "B0062",
+        "original_ignited_node_count": 313,
+        "warm_unignited_positive_area_node_count": 93,
+        "radiation_edge_count": 2686122,
+        "all_ignited_outdegree_conservative_upper": 201831,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 256,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 280,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 53,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0062-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/d5138f1f887b870aa3db3209edb9cbcb1e6f74276f718cc47ba971c89fa23e58/complete.json",
+        "manifest_sha256": "66fd43d9327ed1f83d256dc8953021b4a1f0dc61f8b484f3fbe2c538279601b8",
+        "actual_source_id": "B0062",
+        "original_ignited_node_count": 989,
+        "warm_unignited_positive_area_node_count": 311,
+        "radiation_edge_count": 8365630,
+        "all_ignited_outdegree_conservative_upper": 2018991,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 906,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 985,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 50,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 164,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0061-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/3f2399cdcbe9b659ad697b9883ec98b6c1896a2de16ba084f04948092a91b338/complete.json",
+        "manifest_sha256": "5e7bce564dbcadb1151a6b5fa767987710927fd2aa64bbb8434b357ff5d55d27",
+        "actual_source_id": "B0063",
+        "original_ignited_node_count": 301,
+        "warm_unignited_positive_area_node_count": 93,
+        "radiation_edge_count": 2676040,
+        "all_ignited_outdegree_conservative_upper": 190870,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 263,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 280,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 53,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0061-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/evaluations/99a252b954120af4ddee419a8fd38432869cb796f6f229f55c2861fbffb3f716/complete.json",
+        "manifest_sha256": "1e244ffcd88a3a070e859b10a91c869a2b49da975e1dd3e3e7f9033f3d52e1ce",
+        "actual_source_id": "B0063",
+        "original_ignited_node_count": 965,
+        "warm_unignited_positive_area_node_count": 311,
+        "radiation_edge_count": 8261304,
+        "all_ignited_outdegree_conservative_upper": 1944513,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0030": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 361.8400320003971,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0031": {
+            "restored_positive_physical_node_count": 51,
+            "restored_covered_fuel_area_m2": 401.6889360045261,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0055": {
+            "restored_positive_physical_node_count": 26,
+            "restored_covered_fuel_area_m2": 152.48086364031042,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0056": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 248.6816365606076,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0058": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 41.128979328060296,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0059": {
+            "restored_positive_physical_node_count": 20,
+            "restored_covered_fuel_area_m2": 105.93658065148782,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0060": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 128.67869788617526,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 918,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 16,
+            "restored_covered_fuel_area_m2": 108.17776843030279,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0069": {
+            "restored_positive_physical_node_count": 27,
+            "restored_covered_fuel_area_m2": 236.1608519029678,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 985,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 50,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 164,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0078": {
+            "restored_positive_physical_node_count": 8,
+            "restored_covered_fuel_area_m2": 69.46476990127137,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0079": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 96.50066822844039,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0080": {
+            "restored_positive_physical_node_count": 11,
+            "restored_covered_fuel_area_m2": 81.85556469020865,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G48740": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50462": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50463": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50464": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50809": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50810": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50811": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51158": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51159": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51504": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51505": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51506": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51852": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52202": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52218": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52219": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52565": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52566": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53242": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53243": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53256": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53590": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53591": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53592": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53601": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53604": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53937": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53938": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53939": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53940": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53947": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53948": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54285": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54286": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54287": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54292": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54293": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54296": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54632": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54633": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54634": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54635": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54637": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54638": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54639": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54640": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54641": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54642": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54980": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54981": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54982": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54983": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54984": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54985": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54986": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54987": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G54988": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55328": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55329": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55330": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55331": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55332": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55333": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55676": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55677": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G55678": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      }
+    ],
+    "candidate_status": "screening_only;not_restoration_certificate;not_native_restored_run",
+    "positive_area_restoration_certified": false,
+    "restored_native_CA_runs": 0,
+    "large_radiation_or_contact_graphs_constructed": 0,
+    "roof_construction_saving_computed": false,
+    "remaining_proof_obligations": [
+      "native restored baseline material/mask/support and original-owner-AND witness",
+      "same source/direct event set and immutable mesh/integration membership",
+      "exact retained ignited-source radiation span bytes; transparent no renormalization",
+      "restored full operator passes source-weight-budget and graph resource admissibility",
+      "all active subsets use unchanged sparse path; dense-path alternatives separately proved",
+      "contact padded width and original burning-row bytes remain exactly unchanged",
+      "restored zero-source ambient update and water storage are exact fixed points",
+      "restored cold CFL including global contact h is at least original maxdt",
+      "pointwise masked thermal-map identity on retained susceptible nodes",
+      "new aggregate budget/domain/core acceptance independently validated or bounded",
+      "new analysis lineage; never relabel the old certificate as a restored native result"
+    ],
+    "analysis_source_sha256": "c5fa98a476c45a6e9a31ea10ddc18204db9ffaea1cd3097ea5fcd5fdaed734bb",
+    "audit_sha256": "687e34048684d620c0ab03916d8163716c49525fcce888b9ad9ee72afdb93d04"
+  },
+  "small_controls": {
+    "schema_version": "reverse-restoration-small-native-controls-1",
+    "native_CA_runs": 4,
+    "native_model_source_sha256": {
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/extinction_v3.py": "b8f824c5ea109a8132f29a4c884e520f1bd3995b03725997619f92aea64270a6",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/roof_thermal.py": "bc40bffce107d63221b4bdfefa538ac2b0f65d5565a78ec6cfafdc685fb51ed5",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/engines/roof_heritage.py": "fd655b5c329f350f3b3dc3040abaed67a8a0047cc3f1415acecea85cab25e248",
+      "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/engines/roof_joint.py": "62587a33149dfc0473a3dbdc2ede78711ed3b9167ee1cf7764e780cb91384e8c"
+    },
+    "synthetic_input_sources_sha256": {
+      "/Users/tone/Documents/github/PyFireCA/tests/planning/test_roof_joint.py": "c177e749990e61c321ba517fec33bc1e1bbbde72e31b0d89b36f51a8bdb316da",
+      "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/synthetic_case.py": "5a4bc09c95484d11590b5aaaf7c1a4db9dd58945d8eec9c7638e0c2e925fc323",
+      "/Users/tone/Documents/github/PyFireCA/examples/village/vegetation_v3/profiles.synthetic.yml": "ab44393f578c76762d95d8d606e8c5cca701d76d9928142f518edbbec27b48d7"
+    },
+    "no_propagation_coefficient_was_fitted_or_changed_between_plans": true,
+    "controlled_physical_change": "restore one prescribed far 25m2 nonroof cell; common layout and model unchanged",
+    "controls": [
+      {
+        "roof_scale_m": 1.0,
+        "source_area_m2": 25.0,
+        "restored_whole_ground_cell": 12,
+        "construction_area_reduction_m2": 25,
+        "old_native_status": "passed",
+        "new_native_status": "passed",
+        "old_native_invalid": [],
+        "new_native_invalid": [],
+        "old_closed": true,
+        "new_closed": true,
+        "old_stop_s": 815.36,
+        "new_stop_s": 815.36,
+        "old_step_count": 816,
+        "new_step_count": 816,
+        "every_kept_native_step_state_clock_and_radiation_path_bitwise_equal": true,
+        "trace_sha256_old": "b1559ff91f2e998e43b9cf3d37446d49bdc4269d829290d3388a1e012e89fd85",
+        "trace_sha256_new": "b1559ff91f2e998e43b9cf3d37446d49bdc4269d829290d3388a1e012e89fd85",
+        "original_ignited_source_radiation_spans_exact": true,
+        "contact_padding_width_old": 4,
+        "contact_padding_width_new": 4,
+        "contact_original_ignited_rows_bytes_exact": true,
+        "old_radiation_edges": 5638,
+        "new_radiation_edges": 5638,
+        "original_all_ignited_outdegree": 1594,
+        "strict_always_sparse_proved": false,
+        "restored_cold_CFL_s": 10.342068765597858,
+        "max_dt_s": 1.0,
+        "cold_CFL_guard": true,
+        "cold_temperature_exact_stationary": true,
+        "ambient_zero_source_flux_nonpositive": true,
+        "restored_ignition_threshold_strictly_above_ambient": true,
+        "cold_water_storage_exact_stationary": true,
+        "old_and_new_fresh_native_validity_checked": true,
+        "old_native_certificate_relabelled": false,
+        "final_global_energy_budget_equal_in_this_control": false,
+        "global_energy_budget_rounding_differences": [
+          {
+            "field": "susceptible_incident_J",
+            "old": 55076943.231171444,
+            "new": 55076943.23117145,
+            "new_minus_old": 7.450580596923828e-09
+          },
+          {
+            "field": "susceptible_unabsorbed_J",
+            "old": 5507694.323117151,
+            "new": 5507694.323117144,
+            "new_minus_old": -6.51925802230835e-09
+          }
+        ],
+        "strict_village_certificate_generated_by_this_control": false
+      },
+      {
+        "roof_scale_m": 0.5,
+        "source_area_m2": 25.0,
+        "restored_whole_ground_cell": 12,
+        "construction_area_reduction_m2": 25,
+        "old_native_status": "passed",
+        "new_native_status": "passed",
+        "old_native_invalid": [],
+        "new_native_invalid": [],
+        "old_closed": true,
+        "new_closed": true,
+        "old_stop_s": 815.36,
+        "new_stop_s": 815.36,
+        "old_step_count": 816,
+        "new_step_count": 816,
+        "every_kept_native_step_state_clock_and_radiation_path_bitwise_equal": true,
+        "trace_sha256_old": "f71e99a15f89c8189d154c5463632c62b0f42ce5af5d49327929e56b38c90cb4",
+        "trace_sha256_new": "f71e99a15f89c8189d154c5463632c62b0f42ce5af5d49327929e56b38c90cb4",
+        "original_ignited_source_radiation_spans_exact": true,
+        "contact_padding_width_old": 4,
+        "contact_padding_width_new": 4,
+        "contact_original_ignited_rows_bytes_exact": true,
+        "old_radiation_edges": 87538,
+        "new_radiation_edges": 87538,
+        "original_all_ignited_outdegree": 23869,
+        "strict_always_sparse_proved": false,
+        "restored_cold_CFL_s": 10.342068765597858,
+        "max_dt_s": 1.0,
+        "cold_CFL_guard": true,
+        "cold_temperature_exact_stationary": true,
+        "ambient_zero_source_flux_nonpositive": true,
+        "restored_ignition_threshold_strictly_above_ambient": true,
+        "cold_water_storage_exact_stationary": true,
+        "old_and_new_fresh_native_validity_checked": true,
+        "old_native_certificate_relabelled": false,
+        "final_global_energy_budget_equal_in_this_control": false,
+        "global_energy_budget_rounding_differences": [
+          {
+            "field": "susceptible_unabsorbed_J",
+            "old": 5507694.323117148,
+            "new": 5507694.323117152,
+            "new_minus_old": 3.725290298461914e-09
+          }
+        ],
+        "strict_village_certificate_generated_by_this_control": false
+      }
+    ],
+    "masked_reduction_zero_insertion_counterexample": {
+      "numpy_version": "2.1.3",
+      "old_positive_and_zero_values": [
+        1e+16,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "extra_zero_entries": 127,
+      "old_sum": 1e+16,
+      "new_sum": 1.0000000000000004e+16,
+      "applies_to": "susceptible/inert boolean-indexed reductions; not unchanged full-N state vectors",
+      "bits_differ": true
+    },
+    "primary_numerical_source": "https://raw.githubusercontent.com/numpy/numpy/v2.1.3/numpy/_core/src/umath/loops_arithm_fp.dispatch.c.src",
+    "scope": "mechanism controls only;not a village restoration certificate"
+  },
+  "analysis_source_sha256": "c5fa98a476c45a6e9a31ea10ddc18204db9ffaea1cd3097ea5fcd5fdaed734bb",
+  "audit_sha256": "f293ad0adf96bc70c787c7868e4c186ec8692b3f95a9d385edbf4f3032aa3a2c"
+}

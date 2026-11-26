@@ -1,0 +1,246 @@
+{
+  "schema_version": "native-joint-protection-loss-endpoint-1",
+  "village": "pingyan",
+  "independent_theory_file_sha256": "6e8bdd337e5c7063ae201875b24e0331452045570ed9b25f8076cb1fa70c1ac4",
+  "source_config_sha256": "baba5f2b4a4e23ae95060c074a228b58b965c804996b8c00e7f67cbf62940640",
+  "native_problem_sha256": "f72d28f23891e2c6daa697f817454c563195c02f15e7fc48d5c76ac2f9e78ad5",
+  "native_snapshot_digest": "cd5e842b9a5e675b93fe7800ee3d46a6027e6ca727f67676ab973b95e58bc914",
+  "verified_manifests": 8,
+  "verified_native_artifact_hashes": 64,
+  "origin_footprints_retained": 4,
+  "cleared_area_m2": 8465.532897386736,
+  "roof_union_m2": 5965.532897386735,
+  "whole_ground_footprint_m2": 2500.0,
+  "structural_max_registered_A_m2": 316.13,
+  "structural_max_registered_N": 3,
+  "native_observed_maxima": {
+    "strict": {
+      "closed_core_safe_count": 8,
+      "fully_closed_feasible": true,
+      "worst_A_m2": 316.12811537783193,
+      "worst_N_original_owner_bounds": [
+        1,
+        3
+      ]
+    },
+    "finite_domain_closed": {
+      "closed_core_safe_count": 8,
+      "fully_closed_feasible": true,
+      "worst_A_m2": 316.12811537783193,
+      "worst_N_original_owner_bounds": [
+        1,
+        3
+      ]
+    }
+  },
+  "per_case_observations": [
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "support_m": 1.0,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.999999314107747,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1629.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 132.9160133560976,
+      "n_original_owner_bounds": [
+        1,
+        2
+      ],
+      "registered_N_upper": 2,
+      "registered_A_upper_m2": 132.92,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "3e74b72e9da709514044692e2ea27874d4eded2a2fa31d4fc12735cffa95b1e7"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "support_m": 0.5,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.999999314044864,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1745.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 132.9160133560976,
+      "n_original_owner_bounds": [
+        1,
+        2
+      ],
+      "registered_N_upper": 2,
+      "registered_A_upper_m2": 132.92,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "6930718a85824cf1c35f0a3186c9b44019d86ed78cedafef8317db645e098217"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "support_m": 1.0,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.999999909014765,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1615.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 241.48854379824064,
+      "n_original_owner_bounds": [
+        1,
+        1
+      ],
+      "registered_N_upper": 1,
+      "registered_A_upper_m2": 241.49,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "8428e61ddb51767ced23d262611b3b4abf644aeb1e2c93676d389cc01903367e"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "support_m": 0.5,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.99999990902003,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1693.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 241.48854379824064,
+      "n_original_owner_bounds": [
+        1,
+        1
+      ],
+      "registered_N_upper": 1,
+      "registered_A_upper_m2": 241.49,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "2efd70cf8af1d5411bad15f97ef9fc6c087f79b3e59deeab1fc4cb5e4160ed0f"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "support_m": 1.0,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.99999971273508,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1675.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 316.12811537783193,
+      "n_original_owner_bounds": [
+        1,
+        3
+      ],
+      "registered_N_upper": 3,
+      "registered_A_upper_m2": 316.13,
+      "core_max_K": 300.3498720432906,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "70f039d6ebaeee01efe5c63f60ff102cd5d9df06161537dc54dc1fe4139e6068"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "support_m": 0.5,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.99999971272362,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1750.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 316.12811537783193,
+      "n_original_owner_bounds": [
+        1,
+        3
+      ],
+      "registered_N_upper": 3,
+      "registered_A_upper_m2": 316.13,
+      "core_max_K": 300.3496533969489,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "d9e57ea3e0b1063d5b63e3c9c710cd828ceb889ae2df7fa04539702238485250"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "support_m": 1.0,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.999999606317154,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1401.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 111.17746509794178,
+      "n_original_owner_bounds": [
+        1,
+        1
+      ],
+      "registered_N_upper": 1,
+      "registered_A_upper_m2": 111.18,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "efa09eb1c7df95ce72b345b069a3dcf9430ac128a3e846696dc1e5af56355701"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "support_m": 0.5,
+      "strict_status": "passed",
+      "finite_status": "passed",
+      "native_validity_reasons": [],
+      "registry_direct_area_m2": 24.999999606387668,
+      "full_closed_and_core_safe": true,
+      "finite_closed_and_core_safe": true,
+      "model_stop_time_s": 1468.3600000000001,
+      "active_area_m2": 0.0,
+      "whole_domain_A_m2": 111.17746509794178,
+      "n_original_owner_bounds": [
+        1,
+        1
+      ],
+      "registered_N_upper": 1,
+      "registered_A_upper_m2": 111.18,
+      "core_max_K": 300.0,
+      "model_protected_roofs_ignited": 0,
+      "ignited_nodes_outside_nominated_group": 0,
+      "within_declared_area_and_owner_envelopes": true,
+      "manifest_sha256": "a8941f9bc329210a9ca42fd9ae6ec4ddbde371b85b74570ac5661c4d17ce4755"
+    }
+  ],
+  "all_saved_ignitions_confined_to_group": true,
+  "all_observations_within_structural_bound": true,
+  "counts_by_original_native_status": {
+    "passed": 8
+  },
+  "new_CA_checks": 0,
+  "method_sha256": "1dfd0c227b4af81367e0e94521dc17625783c2f9b6c463d4eeea712ca07ed2cf",
+  "receipt_sha256": "cf35c6ee54f2a8ad4cd8eedb23665e3a559b7cd767faf5ba9f7adfc69c226a10"
+}

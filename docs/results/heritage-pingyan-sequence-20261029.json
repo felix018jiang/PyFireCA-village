@@ -1,0 +1,20 @@
+{
+  "stage": "complete",
+  "updated_at": "2026-10-30T10:22:32+0800",
+  "sequence_pid": 80914,
+  "best_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "document_review_completed_at": "2026-10-30T10:42:20+08:00",
+  "previous_stage": "complete_pending_document_review",
+  "delivery_receipt": "docs/results/heritage-full-villages-delivery-20261030.json",
+  "monitor": {
+    "automation_id": "automation-3",
+    "status": "deleted"
+  },
+  "new_CA_checks_during_document_review": 0
+}

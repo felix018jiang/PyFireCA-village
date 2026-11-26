@@ -1,0 +1,69 @@
+{
+  "schema_version": "heritage-full-villages-delivery-1",
+  "completed_at": "2026-10-30T10:42:20+08:00",
+  "status": "complete",
+  "automation": {
+    "id": "automation-3",
+    "delete_status": "deleted"
+  },
+  "new_CA_checks_during_delivery": 0,
+  "total_new_CA_checks_this_milestone": 116,
+  "previously_passed_related_tests": 39,
+  "document_sha256": {
+    "docs/HERITAGE_FULL_SEARCH_AND_PINGYAN_20261029.md": "b4c6ef5ef5ccdd227fa1575ca236f52dcd2a09e60907b4505cede488753ad26a",
+    "docs/HERITAGE_FULL_SEARCH_SUPERVISION_20261029.md": "633107226826479328ac768291b5b903a86ea3081f153b8e2909082b8f263b94",
+    "docs/STATUS.md": "e7cf2856b71788b14b0355acbc2665bbda66d633dea8151c66ccb3630f9562f8",
+    "docs/HERITAGE_FIREBREAK_DEVELOPMENT_PLAN.md": "a3e222adb4e73a6353e6f410c6880850f3feeca46b9ad6b0b51ec6d66f1f93e2",
+    "docs/HERITAGE_REUSABLE_STRATEGY_METHOD.md": "474bd35d268b1d1fb43929549f26f3768b37c71bdd75a82388a9c32b227ebb33",
+    "docs/HERITAGE_SECOND_VILLAGE_DATA.md": "38344341e75b512c414fc14d1512fb47f5d79585f4f48bbddda2ebeabb6e1730",
+    "docs/HERITAGE_RESEARCH_EVIDENCE_CHAIN_20261024.md": "154764d99dff7ff4dd04af12d6ff0b9a83d93b28cb063da9eaf0c36a13a224d5",
+    "docs/HERITAGE_FIREBREAK_RESEARCH_DESIGN.md": "b53dabd9f3357024742c14d17a8e42fb0c6158a1ab1701ea5413a1af17db5635"
+  },
+  "machine_summary_sha256": "b03a35d17b0d006348e03151c18a75df01b3927f55abd953401788a4cb710dee",
+  "presentation_receipt_sha256": "efe39ed35fc180dd14726506b0e14bedf3a125c9854513d76c109456708a3ee5",
+  "sequence_sha256": "ea586f450164555e2daa9f93e3745a07879dd2ffc86b54a77937619cc617f3ad",
+  "frozen_physical_evidence_unchanged": true,
+  "map_visually_reviewed": true,
+  "output_area_max_error_m2": 2.4336941351066343e-09,
+  "pingyan": {
+    "candidate_count": 947,
+    "best_ids": [
+      "B0119",
+      "B0165",
+      "B0167",
+      "B0177",
+      "B0190"
+    ],
+    "nominal_area_m2": 995.4810719970926,
+    "count_lower_bound": 2,
+    "count_upper_bound": 5,
+    "minimum_count_proven": false,
+    "unresolved_two_building_pairs": 17,
+    "other_unresolved": "three/four building combinations and cheaper five building combinations",
+    "new_draws": 4,
+    "heldout_CA_checks": 16,
+    "all_heldout_rows_reached_1200s": true,
+    "frozen_plan_passed_checks": 8,
+    "baseline_failed_checks": 1,
+    "frozen_plan_failed_checks": 0,
+    "same_source_exact_polygon_pairs": 4,
+    "core_rows_exported": 48
+  },
+  "batuan": {
+    "candidate_count": 331,
+    "best_ids": [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    "count_lower_bound": 3,
+    "count_upper_bound": 3,
+    "minimum_count_proven": true,
+    "same_count_area_interval_m2": [
+      177.81410165772067,
+      451.24045614570235
+    ]
+  },
+  "economic_cost_status": "missing",
+  "no_additional_search_or_external_experiment_started": true
+}

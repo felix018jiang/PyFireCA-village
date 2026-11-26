@@ -86,6 +86,7 @@ class RoofHeritageEvaluationEngine:
             np.ones(parent.grid.shape),
             transport,
             ground_elevation_m=parent.ground_elevation_m,
+            max_edge_count=max_radiation_edges,
         )
         if any(
             not np.array_equal(getattr(graph, k), getattr(parent.exposure_edges, k))
@@ -143,14 +144,25 @@ class RoofHeritageEvaluationEngine:
         snapshot_sink=None,
         stop_at_first_core_ignition=False,
         progress_callback=None,
+        stop_at_extinction=False,
     ):
         """Return evaluation, physical-to-node layout and native thermal result."""
+        if not isinstance(stop_at_extinction, bool):
+            raise TypeError("stop_at_extinction must be an explicit boolean")
         layout, contact, ledger = self.prepare(scenario, plan)
+        self.last_contact = contact
         request = layout.node_request
         core_nodes = np.unique(np.concatenate(list(self.core_nodes.values())))
-        max_temperature = np.full(request.grid.width, request.scenario.ambient_temperature_K)
+        max_temperature = np.full(
+            request.grid.width, request.scenario.ambient_temperature_K, dtype=float
+        )
+        closure_certificate = None
+        closure_refusal = None
+        if stop_at_extinction:
+            from pyfireca.village.extinction_v3 import certify_extinction_v3
 
         def observe(state):
+            nonlocal closure_certificate, closure_refusal
             # Burning temperatures are undefined in V3; retain only meaningful
             # susceptible surface temperatures, not a fictitious flame value.
             valid = state.temperature_valid_mask.ravel()
@@ -159,10 +171,25 @@ class RoofHeritageEvaluationEngine:
                 np.where(valid, state.surface_temperature_K.ravel(), 0),
                 out=max_temperature,
             )
-            return bool(
+            core_failure = bool(
                 stop_at_first_core_ignition
                 and np.isfinite(state.ignition_time_s.ravel()[core_nodes]).any()
             )
+            if core_failure:
+                return True
+            if stop_at_extinction:
+                attempt = certify_extinction_v3(
+                    request,
+                    state,
+                    contact=contact,
+                    post_apply_events_boundary=True,
+                    maximum_valid_surface_temperature_K=max_temperature,
+                )
+                closure_refusal = attempt["rejection_reasons"]
+                if attempt["closed"]:
+                    closure_certificate = attempt["certificate"]
+                    return True
+            return False
 
         result = _run_resolved_v3_simulation(
             request,
@@ -172,8 +199,12 @@ class RoofHeritageEvaluationEngine:
             stop_when=observe,
             progress_callback=progress_callback,
         )
-        diagnostics = check_final(request, result)
         state = result.final_state
+        if stop_at_extinction:
+            # At a requested horizon the loop has already applied final events,
+            # but need not have called its observer at that last boundary.
+            observe(state)
+        diagnostics = check_final(request, result)
         ignition_times = state.ignition_time_s.ravel()
         ignited = np.isfinite(ignition_times)
         times = {}
@@ -184,6 +215,7 @@ class RoofHeritageEvaluationEngine:
             if len(finite):
                 times[identifier] = float(finite.min())
         complete = bool(state.time_s >= scenario.horizon_s - 1e-8)
+        goal_closed = complete or closure_certificate is not None
         grid = layout.physical_request.grid
         rows, cols = np.divmod(layout.cell_id[ignited], grid.width)
         boundary = bool(
@@ -196,7 +228,7 @@ class RoofHeritageEvaluationEngine:
         target_ids = set(self.core_nodes)
         failed = sorted(target_ids.intersection(times))
         status = (
-            "invalid" if invalid else "failed" if failed else "passed" if complete else "unknown"
+            "invalid" if invalid else "failed" if failed else "passed" if goal_closed else "unknown"
         )
         retained_annotations = sorted(
             i
@@ -245,6 +277,17 @@ class RoofHeritageEvaluationEngine:
                 "any roof-patch ignition within this horizon; not building loss or annual risk"
             ),
         }
+        source_conditions = {
+            "scenario": asdict(scenario),
+            "transport": asdict(self.transport),
+            "parent": self.case_sha256,
+            "layout": self.layout_sha256,
+            "source_policy": self.source_policy,
+            "radiation_method": self.radiation_method,
+            "code": self.code_version,
+        }
+        if stop_at_extinction:
+            source_conditions["stop_at_extinction"] = True
         diagnostics.update(
             simulated_until_s=float(state.time_s),
             reached_requested_horizon=complete,
@@ -254,17 +297,7 @@ class RoofHeritageEvaluationEngine:
             physical_request_sha256=request_fingerprint(request),
             inventory_sha256=self.inventory_sha256,
             layout_sha256=self.layout_sha256,
-            source_conditions_sha256=content_hash(
-                {
-                    "scenario": asdict(scenario),
-                    "transport": asdict(self.transport),
-                    "parent": self.case_sha256,
-                    "layout": self.layout_sha256,
-                    "source_policy": self.source_policy,
-                    "radiation_method": self.radiation_method,
-                    "code": self.code_version,
-                }
-            ),
+            source_conditions_sha256=content_hash(source_conditions),
             source_policy=self.source_policy,
             ordinary_overlap_identity_unresolved=bool(layout.ambiguous_ids),
             stop_at_first_core_ignition=stop_at_first_core_ignition,
@@ -276,6 +309,15 @@ class RoofHeritageEvaluationEngine:
             roof_resolution_protocol=getattr(layout, "resolution_protocol", None),
             maximum_valid_surface_temperature_by_node_K=max_temperature.tolist(),
         )
+        if stop_at_extinction:
+            diagnostics.update(
+                stop_at_extinction=True,
+                protection_horizon_closed=bool(goal_closed and not invalid),
+                effective_goal_closed=bool(goal_closed and not invalid),
+                extinction_closed=closure_certificate is not None,
+                temporal_closure_certificate=closure_certificate,
+                temporal_closure_rejection_reasons=closure_refusal,
+            )
         if not diagnostics["parent_case_unchanged"]:
             raise AssertionError("roof evaluation mutated parent case")
         signature = content_hash(

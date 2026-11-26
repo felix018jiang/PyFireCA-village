@@ -1,0 +1,31 @@
+{
+  "schema_version": "heritage-exact-search-config-1",
+  "study_path": "batuan-provisional-all-ordinary-study.json",
+  "candidate_ids": ["B0061", "B0063", "B0067", "B0071", "B0074", "B0076", "B0077", "B0149"],
+  "initial_ids": ["B0061", "B0071", "B0076"],
+  "refinement_ids": ["B0061", "B0071", "B0076"],
+  "maximum_demolitions": 3,
+  "horizon_s": 1200.0,
+  "roof_scales_m": [1.0, 0.5],
+  "quadrature_spacing_m": 0.5,
+  "max_nodes": 200000,
+  "max_radiation_edges": 20000000,
+  "minimum_free_disk_GB": 2.0,
+  "max_new_checks": 48,
+  "max_total_checks": 48,
+  "max_wall_time_s": 2700,
+  "use_dominance_pruning": true,
+  "prioritize_failures": true,
+  "scope": "budgeted_expanded_design_search;not_independent_confirmation_or_whole_village_optimality",
+  "fires": [
+    {"fire_id": "B0075-known", "protocol_path": "../../../runs/research/heritage-triple-validation-20261024-c/source-protocol.json", "draw_id": "near-B0073-002"},
+    {"fire_id": "B0071-known", "protocol_path": "batuan-restore71-known-source-20261024.json", "draw_id": "near-B0073-003"},
+    {"fire_id": "B0062-known", "protocol_path": "../../../runs/research/heritage-triple-validation-20261024-c/source-protocol.json", "draw_id": "near-B0120-002"},
+    {"fire_id": "B0061-known", "protocol_path": "batuan-position-known-B0061-source-20261024.json", "draw_id": "near-B0120-002"}
+  ],
+  "selection_rules": {
+    "ordinary_neighbours": "retain_previous_three_and_frozen_position_control_candidates_B0063_B0067_B0077;add_B0074_near_gulou",
+    "overlap_guard": "B0149_has_no_unambiguous_source_roof;do_not_assume_its_thermal_effect_is_zero",
+    "refinement": "fixed_three_roofs_plus_cores_plus_all_possible_sources_with_at_most_three_removals;full_background_retained_at_parent_resolution"
+  }
+}

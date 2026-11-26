@@ -1,0 +1,142 @@
+{
+  "village": "batuan",
+  "C_m2": 11236.448481374588,
+  "native_problem_sha256": "a2d588e07a77af6e6a2859e602836d764fd48a22e5bcb68097cfbd6535997075",
+  "experiment_sha256": "4a917298428da717210b07e8e83c442efb44c3f521b047553d0a06a340d0b658",
+  "bound_certificate_sha256": "9652052624353a5d2a252c47327df716ab870d12c7c321871f6038fca1d324f5",
+  "cost_optimality_certificate_sha256": "f870b4a4d7838f26aa9c7177e9a922446b5e7953bcf31b2400806577eea96bb5",
+  "checked_native_cases": [
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 308.71,
+      "certified_N_upper": 3,
+      "measured_A_m2": 308.7045707470597,
+      "measured_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 2126.7200000000003,
+      "manifest_sha256": "3dadd424d526c4802bbdab01cf20ee946798006ef26c4f4b5906c5d1e421c746"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 1,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 308.71,
+      "certified_N_upper": 3,
+      "measured_A_m2": 308.7045707470596,
+      "measured_N": {
+        "lower": 1,
+        "upper": 3
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 2251.7200000000003,
+      "manifest_sha256": "dd4a3fc7cc01966b25b29220bfe1660d45df1ba661a5d0841dcca79c59c9cda2"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 420.73,
+      "certified_N_upper": 3,
+      "measured_A_m2": 270.4524967067812,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 2049.7200000000003,
+      "manifest_sha256": "cb8c232a879c02dace862566fce309f2074e270a610318e102b482dbe2d8fbdc"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 2,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 420.73,
+      "certified_N_upper": 3,
+      "measured_A_m2": 270.4524967067812,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 2203.7200000000003,
+      "manifest_sha256": "cf65b29afdd3b7b12e1ba513d6cece84dcacbae9a84f2670b4c6c9e6e49ca621"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 164.73,
+      "certified_N_upper": 1,
+      "measured_A_m2": 164.72176795660872,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 1724.3600000000001,
+      "manifest_sha256": "ce39d61217900bb79cbecf6e64218299d3d122721488c47bde00e16f009a0904"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 3,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 164.73,
+      "certified_N_upper": 1,
+      "measured_A_m2": 164.72176795660874,
+      "measured_N": {
+        "lower": 1,
+        "upper": 1
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 1862.3600000000001,
+      "manifest_sha256": "4a9a32d00a76cb964f62332fad16103f832e4f69f25608de343e17b216f0c83e"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "roof_scale_m": 1.0,
+      "certified_A_upper_m2": 420.73,
+      "certified_N_upper": 3,
+      "measured_A_m2": 150.2724893284725,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 1794.7200000000003,
+      "manifest_sha256": "79af3ea0a3255e6282a705d5ab34fb9d4ff0ba1c45b586fd086fabfbed37b33b"
+    },
+    {
+      "campaign": "design",
+      "ordinal": 4,
+      "roof_scale_m": 0.5,
+      "certified_A_upper_m2": 420.73,
+      "certified_N_upper": 3,
+      "measured_A_m2": 150.27248932847252,
+      "measured_N": {
+        "lower": 1,
+        "upper": 2
+      },
+      "measured_nonroof_A_m2": 0.0,
+      "stop_time_s": 1993.3600000000001,
+      "manifest_sha256": "e685fc080b10f0d781edb5cc7f7dda0547a23f70331dd4001286ae1b557bdb3c"
+    }
+  ],
+  "registered_families": 4,
+  "total_registered_families_in_native_run": 8,
+  "cohort": "design",
+  "strict_heritage_no_ignition_all": true,
+  "all_cases_within_their_specific_loss_upper_bounds": true,
+  "worst_measured_A_m2": 308.7045707470597,
+  "worst_measured_N": {
+    "lower": 1,
+    "upper": 3
+  },
+  "method_sha256": "d018e175b3364d831606654bb19264cf776d3397a1cb73e5537c6f65b1f9a346",
+  "receipt_sha256": "29f6d0a69df175b5e0e79b6e1112d6d20a6c8f8cac059e36c4e1a4714d4c3db5"
+}

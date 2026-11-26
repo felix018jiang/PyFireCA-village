@@ -1,0 +1,48 @@
+{
+  "actual_cases": 8,
+  "all_cases_physically_extinct": true,
+  "canonical_C_m2": 443.8419687401409,
+  "conditional_core_ignitions_by_scale": {
+    "0.5": 3,
+    "1.0": 0
+  },
+  "conditional_feasible": false,
+  "conditional_finite_domain": {
+    "failed": 3,
+    "passed": 5
+  },
+  "global_minimum_proved": false,
+  "max_burnout_area_m2": 345869.326866622,
+  "native_strict": {
+    "unknown": 8
+  },
+  "new_CA_checks": 0,
+  "original_native_manifests_sha256": [
+    "1a56b4ec6a5fa862216087c0c0fcfcb72360ef265062562b09e536ef16aa228a",
+    "20fc4d277e27c9a76b9a9b3ff18820799ba896d411d934e5cf01571ab2ab74a3",
+    "80d252095a9caaa6a4f3591604c1aa5dff2e47b7ba111d8fb572e836ae88a8c3",
+    "8e3c2254f504a4a4c8899cc10c20ea75e4ef2dc7e13e7b2070a7c01566deaa12",
+    "90251411fb2cba6022f9920cebd05fd90412e78b95e300238c5b24e478370b6f",
+    "ba3df3d440889c88d7590c823d38ac3bba9af9da556881e134fcca7db7eb010a",
+    "c12acfaad1da2b39ef7642d7845520c030ff96a3d435ad46fea0a0d46a51a441",
+    "d581c5d1170e67969a665d5a1e4e7d854a1d821d3ada4304ca617547adfe967f"
+  ],
+  "physical_contract": "two source-snapshot protocols merged only via frozen exact clock-successful-path equivalence, same runtime, expected scenarios, physical partitions and original native state audits",
+  "schema_version": "economic-roof-cut-full-eight-conditionally-refuted-1",
+  "source_families": 4,
+  "strict_archive_and_finite_archive_external_sources": {
+    "finite_domain_closed": {
+      "file": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-D3-complete8-composition-finite_domain_closed-20261111.json",
+      "sha256": "b1894ea5c58d71986a83f291495e1e5d53003aeccb08e5104d39810d34d4a90a"
+    },
+    "strict": {
+      "file": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-D3-complete8-composition-strict-20261111.json",
+      "sha256": "e0a32206cabda56d688f87acf4d4bc5e2370f5a0da5644f1a6505d8ed305c989"
+    }
+  },
+  "support_scales": 2,
+  "worst_original_owner_burnout_bounds": {
+    "lower": 162,
+    "upper": 165
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "source_tiff_sha256": "4c8cb7790c224c957e28db1c9f4d1e9ba5df868b8daadd7f47478bdfff56ee3c",
+  "crs": "EPSG:32649",
+  "panels": [
+    {
+      "title": "A  全村干预位置",
+      "world_bounds_m": [
+        346490.65065629664,
+        2869089.8312267857,
+        347661.80999881495,
+        2870459.837142165
+      ],
+      "pixel_rect": [
+        45,
+        285,
+        748,
+        875
+      ]
+    },
+    {
+      "title": "鼓楼 B0073",
+      "world_bounds_m": [
+        347231.5570342884,
+        2869729.129229813,
+        347305.7233020535,
+        2869815.8878986556
+      ],
+      "pixel_rect": [
+        825,
+        285,
+        748,
+        875
+      ]
+    },
+    {
+      "title": "风雨桥 B0120",
+      "world_bounds_m": [
+        347263.60704764747,
+        2869657.3929864066,
+        347359.6634757633,
+        2869769.7584604723
+      ],
+      "pixel_rect": [
+        1605,
+        285,
+        748,
+        875
+      ]
+    }
+  ],
+  "width_px": 2400,
+  "height_px": 1430,
+  "font_path": "/System/Library/Fonts/STHeiti Medium.ttc",
+  "shows_geographic_roof_outlines": true
+}

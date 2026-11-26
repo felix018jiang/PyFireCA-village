@@ -1,0 +1,87 @@
+{
+  "schema_version": "heritage-fixed-comparison-1",
+  "place_name": "岜团村",
+  "study_path": "../batuan-provisional-all-ordinary-study.json",
+  "source_fires": [
+    {
+      "fire_id": "drum-B0077-known-hot",
+      "protocol_path": "batuan-B0077-source.json",
+      "draw_id": "near-B0073-003"
+    },
+    {
+      "fire_id": "bridge-B0062-known",
+      "protocol_path": "batuan-B0062-source.json",
+      "draw_id": "near-B0120-002"
+    }
+  ],
+  "plans": [
+    {
+      "plan_id": "baseline",
+      "demolished_ids": []
+    },
+    {
+      "plan_id": "selected",
+      "demolished_ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ]
+    },
+    {
+      "plan_id": "area-matched-position",
+      "demolished_ids": [
+        "B0063",
+        "B0067",
+        "B0071"
+      ]
+    }
+  ],
+  "horizon_s": 3600.0,
+  "checkpoints_s": [
+    1200.0,
+    2400.0,
+    3600.0
+  ],
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "max_nodes": 200000,
+  "max_radiation_edges": 20000000,
+  "minimum_free_disk_GB": 5.0,
+  "max_total_checks": 12,
+  "max_wall_time_s": 14400.0,
+  "core_overlap_policy": "reject",
+  "source_audit": [
+    {
+      "fire_id": "drum-B0077-known-hot",
+      "protocol_path": "runs/research/heritage-triple-validation-20261024-c/source-protocol.json",
+      "draw_id": "near-B0073-003",
+      "source_id": "B0077",
+      "footprint_sha256": "8f496c0e0100911578e3e4f97f2ee9b298d465fec747c75823a1c2e078c7e4a6",
+      "role": "known_high_temperature_selected_plan_source_replayed_in_all_arms",
+      "parent_source_file_sha256": "fb814200b4dbe1855365c75b3b2f77ac69c977cb93fdb7a24ac30eaf9d3b7e4a",
+      "polygon_verified": true,
+      "ignition_area_m2": 25.000000000001364
+    },
+    {
+      "fire_id": "bridge-B0062-known",
+      "protocol_path": "examples/research/heritage/batuan-position-known-B0062-source-20261024.json",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0062",
+      "footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "role": "known_bridge_threat_replay",
+      "parent_source_file_sha256": "5a32be5c86870511db53427763758d7f7e40e38a06dce19d42991c11f059fce6",
+      "polygon_verified": true,
+      "ignition_area_m2": 25.000000000023164
+    }
+  ],
+  "position_selection_file": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-followup-position-selection-20261103.json",
+  "position_selection_sha256": "75bae2633125018186871b8a691ccfc1de0c6b8054f98c08da14c885ef7b25d7",
+  "scope": "paired_duration_and_position_study;no_reoptimization;not_independent_risk_estimation",
+  "layout_policy": "same_intervention_union_plus_cores_plus_fixed_source_in_every_arm",
+  "historical_comparison": "polygons_and_materials_preserved;common_refinement_changed;use_this_batch_1200s_checkpoint",
+  "parent_design_config_sha256": "6c127fbc701f8f8667080a057232751857132bfcfe8cbb0b5d72a866abaa454c",
+  "no_adaptive_source_or_plan_reselection": true
+}

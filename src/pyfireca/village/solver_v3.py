@@ -483,6 +483,10 @@ def _run_resolved_v3_simulation(
         if state.time_s + tolerance < due:
             return
         if abs(state.time_s - due) > tolerance:
+            # Adding tolerance can round up to a still-future due time. Only
+            # extend this former error path; every old successful path is exact.
+            if state.time_s < due:
+                return
             raise RuntimeError("v3 solver stepped past an exact sample time")
         snapshot = V3Snapshot(
             time_s=due,

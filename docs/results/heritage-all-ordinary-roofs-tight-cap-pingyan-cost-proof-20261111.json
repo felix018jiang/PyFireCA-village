@@ -1,0 +1,33 @@
+{
+  "village": "pingyan",
+  "scope": "Fixed whole-roof groups and registered containment screening.",
+  "components": 84,
+  "largest_component_roof_groups": 11,
+  "C_lower_m2": 283800.16197458125,
+  "C_feasible_upper_m2": 283800.16197458137,
+  "interval_width_m2": 4.037552627303432e-14,
+  "lower_bound_exact_rational": [
+    "2617594478011209229566175",
+    "9223372036854775808"
+  ],
+  "feasible_cost_exact_rational": [
+    "5235188956022418459877147",
+    "18446744073709551616"
+  ],
+  "rounded_minimum_C_m2": 283800.16,
+  "bounds_round_to_same_hundredth_m2": true,
+  "exact_equal_for_stored_atom_costs": false,
+  "branch_counts": {
+    "single_group_components": 47,
+    "rational_LP_nodes": 49,
+    "dual_pruned_nodes": 43
+  },
+  "arithmetic": "Nonnegative floating dual multipliers are converted to exact rationals. Residuals are maximized over binary branch bounds. Shared ground costs link groups into the same component.",
+  "new_native_fire_runs": 0,
+  "per_village_branch_time_limit_s": 90.0,
+  "applied_to_physical_certificate_sha256": "a8d66b7e53dae22679115098cd6fb8db703d763ddacb6f6694ce9460ff9c0342",
+  "registered_action_inputs_sha256": "0b7d891450e233a54a13f1313d64c45a212b237029a71100463e68109ed054c4",
+  "physical_auditor_sha256": "0280d02e4935f305c5765e7c7b1e72b82a19c42b0cabedf44fa725302c473305",
+  "method_sha256": "10b8ca9dce50bba3f20a22b96d0ca99dec1809a627da5b106d287cfb50432158",
+  "receipt_sha256": "193ffc910d78a3a2c8daeabd5da86f942f4dcc70641dabe61be3996cd36d45e4"
+}

@@ -1,0 +1,574 @@
+{
+  "schema_version": "heritage-resume-independent-audit-1",
+  "audited_at_utc": "2026-11-11T02:50:04.298288+00:00",
+  "status": "immutable_checkpoint_evidence_passed;resumed_area_search_in_progress;terminal_frontier_not_yet_established",
+  "scope": {
+    "new_CA_checks": 0,
+    "historical_artifacts_modified": false,
+    "field_calibration_available": false,
+    "claim": "frozen_model_optimization_only",
+    "new_independent_fire_draws": 0,
+    "retained_source_interpretation": "four_historical_priority_families;not_every_possible_ignition_location",
+    "source_caps_modified": false
+  },
+  "checkpoint": {
+    "path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-paused-checkpoint-20261110.json",
+    "sha256": "7fe846cd8a017815b4cc5cb96f861a10eb5b3b0329495765cf401461c1ad91fb",
+    "native_manifests_validated": 36,
+    "native_artifact_files_hashed": 253,
+    "snapshot_source_entries_hashed": 448,
+    "input_reference_entries_hashed": 173,
+    "all_native_and_frozen_hashes_passed": true
+  },
+  "runs": [
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110",
+      "problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+      "checkpoint_completed_native_count": 28,
+      "checkpoint_manifest_hashes": {
+        "checked_files": 28,
+        "all_matched": true,
+        "errors": []
+      },
+      "snapshot_source_hashes": {
+        "checked_files": 165,
+        "all_matched": true,
+        "errors": []
+      },
+      "physical_reference_hashes": {
+        "checked_files": 56,
+        "all_matched": true,
+        "errors": []
+      },
+      "frozen_problem_metadata_hash_matches": true,
+      "native_artifacts": {
+        "checked_files": 196,
+        "all_matched_and_partitioned": true,
+        "errors": []
+      },
+      "protected_core_ids_in_all_records": [
+        "B0073",
+        "B0120"
+      ],
+      "declared_scenarios": [
+        "B0061-known-h0.5",
+        "B0061-known-h1",
+        "B0062-known-h0.5",
+        "B0062-known-h1",
+        "B0071-known-h0.5",
+        "B0071-known-h1",
+        "B0075-known-h0.5",
+        "B0075-known-h1"
+      ],
+      "source_policy": "area_bounded_retained_sources",
+      "source_area_limit_m2": 443.8419687401409,
+      "source_area_tolerance_m2": 1e-06,
+      "new_independent_source_draws": 0,
+      "source_budget_checks": {
+        "same_family_actualsource_groups": 6,
+        "all_positive_25m2": true,
+        "max_same_source_cross_scale_area_spread_m2": 5.512390544026857e-11
+      },
+      "frozen_metadata_matches_checkpoint": true,
+      "native_reader_validation": {
+        "native_cache_validator_passed": 28,
+        "exact_snapshot_source_paths_match": true,
+        "snapshot_module": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/source-snapshot/scripts/run_heritage_area_master.py",
+        "new_CA_checks": 0
+      },
+      "paused_budget": {
+        "elapsed_s": 4948.649813833006,
+        "mip_elapsed_s": 0.21552512503694743,
+        "started_checks": 29,
+        "active": null
+      },
+      "current_budget_at_report": {
+        "elapsed_s": 5310.621833082987,
+        "mip_elapsed_s": 0.48510383418761194,
+        "started_checks": 38,
+        "active": {
+          "pid": 78700
+        }
+      },
+      "cumulative_budget_monotone": true,
+      "interrupted_slots_remain_charged": 1,
+      "schedule_receipts": [
+        {
+          "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-batuan-20261110/schedules/1794365028819430000/receipt.json",
+          "sha256": "85440b9e3eee75869326b4239afa616a35b85a25e66ae40760a76f616c7a6bfc",
+          "checks": {
+            "original_problem_matches": true,
+            "original_experiment_matches": true,
+            "physical_execution_sources_match": true,
+            "paused_cached_manifest_aggregate_matches": true,
+            "spent_budget_inherited_exactly": true,
+            "spent_budget_not_reset": true,
+            "scheduler_snapshot_matches": true,
+            "previous_search_matches_pause_and_receipt": true
+          },
+          "all_passed": true,
+          "cumulative_limits": {
+            "max_new_checks": 128,
+            "max_wall_time_s": 28800.0,
+            "max_mip_time_s": 2400.0
+          }
+        }
+      ],
+      "mutable_metadata_note": "search/budget SHA may change only as audited resumed execution;paused bytes retained in schedule receipt;immutable evidence unchanged",
+      "native_count_at_report": 36,
+      "independent_source_and_core_identity_checks": {
+        "native_count": 28,
+        "first_retained_actual_source_and_record_match": true,
+        "each_record_has_complete_protected_core_set": true,
+        "protected_core_excluded_from_actions": true,
+        "errors": []
+      }
+    },
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110",
+      "problem_sha256": "b69b9fd308435bb33031a4bb7f956890fe9f78ada3682bbbadc7d6fb4d5bec2c",
+      "checkpoint_completed_native_count": 7,
+      "checkpoint_manifest_hashes": {
+        "checked_files": 7,
+        "all_matched": true,
+        "errors": []
+      },
+      "snapshot_source_hashes": {
+        "checked_files": 165,
+        "all_matched": true,
+        "errors": []
+      },
+      "physical_reference_hashes": {
+        "checked_files": 56,
+        "all_matched": true,
+        "errors": []
+      },
+      "frozen_problem_metadata_hash_matches": true,
+      "native_artifacts": {
+        "checked_files": 49,
+        "all_matched_and_partitioned": true,
+        "errors": []
+      },
+      "protected_core_ids_in_all_records": [
+        "B0035",
+        "B0036",
+        "B0166"
+      ],
+      "declared_scenarios": [
+        "background-h0.5",
+        "background-h1",
+        "near-B0035-h0.5",
+        "near-B0035-h1",
+        "near-B0036-h0.5",
+        "near-B0036-h1",
+        "near-B0166-h0.5",
+        "near-B0166-h1"
+      ],
+      "source_policy": "area_bounded_retained_sources",
+      "source_area_limit_m2": 1531.6288649185644,
+      "source_area_tolerance_m2": 1e-06,
+      "new_independent_source_draws": 0,
+      "source_budget_checks": {
+        "same_family_actualsource_groups": 4,
+        "all_positive_25m2": true,
+        "max_same_source_cross_scale_area_spread_m2": 2.8678925900749164e-10
+      },
+      "frozen_metadata_matches_checkpoint": true,
+      "native_reader_validation": {
+        "native_cache_validator_passed": 7,
+        "exact_snapshot_source_paths_match": true,
+        "snapshot_module": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/source-snapshot/scripts/run_heritage_area_master.py",
+        "new_CA_checks": 0
+      },
+      "paused_budget": {
+        "elapsed_s": 3442.3009229580057,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 8,
+        "active": null
+      },
+      "current_budget_at_report": {
+        "elapsed_s": 3442.304481207975,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 9,
+        "active": {
+          "pid": 78701
+        }
+      },
+      "cumulative_budget_monotone": true,
+      "interrupted_slots_remain_charged": 1,
+      "schedule_receipts": [
+        {
+          "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/schedules/1794365036033078000/receipt.json",
+          "sha256": "da3ab2fd1ba4ee25e011c4bf54a9104e4116a32cead5a2efb76f4230b126c09f",
+          "checks": {
+            "original_problem_matches": true,
+            "original_experiment_matches": true,
+            "physical_execution_sources_match": true,
+            "paused_cached_manifest_aggregate_matches": true,
+            "spent_budget_inherited_exactly": true,
+            "spent_budget_not_reset": true,
+            "scheduler_snapshot_matches": true
+          },
+          "all_passed": true,
+          "cumulative_limits": {
+            "max_new_checks": 128,
+            "max_wall_time_s": 28800.0,
+            "max_mip_time_s": 2400.0
+          }
+        }
+      ],
+      "mutable_metadata_note": "search/budget SHA may change only as audited resumed execution;paused bytes retained in schedule receipt;immutable evidence unchanged",
+      "native_count_at_report": 7,
+      "independent_source_and_core_identity_checks": {
+        "native_count": 7,
+        "first_retained_actual_source_and_record_match": true,
+        "each_record_has_complete_protected_core_set": true,
+        "protected_core_excluded_from_actions": true,
+        "errors": []
+      }
+    },
+    {
+      "run_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-terminal-batuan-20261110",
+      "problem_sha256": "bfb8380310847553eb24a324f910c1fbf7a347af47ecc0def8ba81e0cbb164ba",
+      "checkpoint_completed_native_count": 1,
+      "checkpoint_manifest_hashes": {
+        "checked_files": 1,
+        "all_matched": true,
+        "errors": []
+      },
+      "snapshot_source_hashes": {
+        "checked_files": 118,
+        "all_matched": true,
+        "errors": []
+      },
+      "physical_reference_hashes": {
+        "checked_files": 61,
+        "all_matched": true,
+        "errors": []
+      },
+      "frozen_problem_metadata_hash_matches": true,
+      "native_artifacts": {
+        "checked_files": 8,
+        "all_matched_and_partitioned": true,
+        "errors": []
+      },
+      "protected_core_ids_in_all_records": [
+        "B0073",
+        "B0120"
+      ],
+      "declared_scenarios": [
+        "B0061-known-h0.5",
+        "B0061-known-h1",
+        "B0062-known-h0.5",
+        "B0062-known-h1",
+        "B0071-known-h0.5",
+        "B0071-known-h1",
+        "B0075-known-h0.5",
+        "B0075-known-h1"
+      ],
+      "source_policy": "retained_sources",
+      "source_area_limit_m2": 443.8419687401409,
+      "source_area_tolerance_m2": 1e-06,
+      "new_independent_source_draws": 0,
+      "source_budget_checks": {
+        "same_family_actualsource_groups": 1,
+        "all_positive_25m2": true,
+        "max_same_source_cross_scale_area_spread_m2": 0.0
+      },
+      "frozen_metadata_matches_checkpoint": true,
+      "native_reader_validation": {
+        "native_cache_validator_passed": 1,
+        "exact_snapshot_source_paths_match": true,
+        "snapshot_module": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-terminal-batuan-20261110/source-snapshot/scripts/run_heritage_joint_comparison.py",
+        "new_CA_checks": 0
+      },
+      "paused_budget": {
+        "elapsed_s": 533.3987848749966,
+        "started_checks": 2,
+        "active": null
+      },
+      "current_budget_at_report": {
+        "elapsed_s": 533.3987848749966,
+        "started_checks": 2,
+        "active": null
+      },
+      "cumulative_budget_monotone": true,
+      "interrupted_slots_remain_charged": 1,
+      "schedule_receipts": [],
+      "mutable_metadata_note": "no resumed metadata change observed",
+      "native_count_at_report": 1,
+      "terminal": {
+        "terminal_status": "unknown",
+        "terminal_complete": false,
+        "terminal_observation": "time_cap_reached_without_extinction_closure",
+        "core_safety_through_closure": "unknown",
+        "core_ignition_observed": false,
+        "protection_feasible": false,
+        "fire_loss_complete": false,
+        "actual_stop_time_s": 21599.99999999991,
+        "closure_rejection_reasons": [
+          "active_burning_nodes_remain"
+        ],
+        "metrics": {
+          "C_construction_action_area_m2": 443.84196874015754,
+          "A_ignited_physical_covered_area_m2": 142736.38718787738,
+          "ignited_roof_covered_area_m2": 23361.387187877393,
+          "ignited_nonroof_covered_area_m2": 119375.0,
+          "burned_out_physical_covered_area_m2": 135275.4343994038,
+          "clearing_plus_ignited_physical_covered_area_m2": 143180.22916077226,
+          "N_ignited_annotation_attribution_count": {
+            "lower": 140,
+            "upper": 143
+          },
+          "N_burned_out_annotation_attribution_count": {
+            "lower": 138,
+            "upper": 141
+          },
+          "administrative_clearing_plus_ignited_annotation_count": {
+            "lower": 143,
+            "upper": 143
+          },
+          "fire_depleted_pyrolysable_fuel_kg": 884847.958884969,
+          "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 889641.4521922333,
+          "real_destroyed_building_count": null,
+          "structural_damage_area_m2": null
+        },
+        "active_physical_covered_area_m2": 7460.952788473564,
+        "active_node_count": 306,
+        "unrepresented_original_ids": []
+      },
+      "independent_source_and_core_identity_checks": {
+        "native_count": 1,
+        "first_retained_actual_source_and_record_match": true,
+        "each_record_has_complete_protected_core_set": true,
+        "protected_core_excluded_from_actions": true,
+        "errors": []
+      }
+    }
+  ],
+  "full_domain_loss_recount": [
+    {
+      "village": "batuan",
+      "passed": true,
+      "native_manifest_count": 32,
+      "new_CA_checks": 0,
+      "native_physical_area_ledger_reproduced": true,
+      "unrepresented_original_ids_union": [],
+      "original_inventory_counts": [
+        333
+      ],
+      "immutable_owner_reconstruction_all": true,
+      "comparison_protocol": {
+        "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+        "physical_protocol_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+        "protected_core_ids": [
+          "B0073",
+          "B0120"
+        ],
+        "scenario_ids": [
+          "B0061-known-h0.5",
+          "B0061-known-h1",
+          "B0062-known-h0.5",
+          "B0062-known-h1",
+          "B0071-known-h0.5",
+          "B0071-known-h1",
+          "B0075-known-h0.5",
+          "B0075-known-h1"
+        ],
+        "horizon_s": 3600.0,
+        "roof_scales_m": [
+          0.5,
+          1.0
+        ],
+        "quadrature_spacing_m": 0.5,
+        "max_dt_s": 1.0,
+        "source_policy": "area_bounded_retained_sources"
+      },
+      "global_pareto_frontier_complete": false,
+      "temporal_mode": "phase_horizon"
+    },
+    {
+      "village": "pingyan",
+      "passed": true,
+      "native_manifest_count": 7,
+      "new_CA_checks": 0,
+      "native_physical_area_ledger_reproduced": true,
+      "unrepresented_original_ids_union": [],
+      "original_inventory_counts": [
+        950
+      ],
+      "immutable_owner_reconstruction_all": true,
+      "comparison_protocol": {
+        "inventory_sha256": "288b06716cce53135b6fcc4c2288b80a54b07abfd077893794db892d99003747",
+        "physical_protocol_sha256": "b69b9fd308435bb33031a4bb7f956890fe9f78ada3682bbbadc7d6fb4d5bec2c",
+        "protected_core_ids": [
+          "B0035",
+          "B0036",
+          "B0166"
+        ],
+        "scenario_ids": [
+          "background-h0.5",
+          "background-h1",
+          "near-B0035-h0.5",
+          "near-B0035-h1",
+          "near-B0036-h0.5",
+          "near-B0036-h1",
+          "near-B0166-h0.5",
+          "near-B0166-h1"
+        ],
+        "horizon_s": 3600.0,
+        "roof_scales_m": [
+          0.5,
+          1.0
+        ],
+        "quadrature_spacing_m": 0.5,
+        "max_dt_s": 1.0,
+        "source_policy": "area_bounded_retained_sources"
+      },
+      "global_pareto_frontier_complete": false,
+      "temporal_mode": "phase_horizon"
+    }
+  ],
+  "economic_and_physical_identity_audit": {
+    "construction_area_definition": "removed_roof_geometry_union + disjoint_whole_5m_ground_action_footprints;one_selected_grass_cell_costs25m2_even_if_fuel_coverage_is10m2",
+    "fire_loss_area_definition": "unique_original_physical_covered_node_area;roof+nonroof_disjoint;clearing_plus_fire_is_union",
+    "sample_construction_C_m2": 443.84196874015754,
+    "sample_covered_clearance_m2": 443.8419728948336,
+    "sample_construction_minus_covered_m2": -4.154676048528927e-06,
+    "difference_interpretation": "separate_geometry_and_parameter_area_bases;never_mix_as_one_objective",
+    "sample_shared_retained_roof_area_m2": 7.398487404961229,
+    "sample_fully_cleared_original_ids": [],
+    "sample_partially_cleared_original_ids": [
+      "B0061",
+      "B0071",
+      "B0076"
+    ],
+    "sample_remaining_original_owner_count": 333,
+    "sample_original_inventory_count": 333,
+    "N_definition": "burned-out original-owner attribution lower/upper on actual remaining roof patches;planned label deletion alone cannot improve N;conservative frontier uses upper;not_real_destroyed_buildings"
+  },
+  "heritage_constraint": {
+    "batuan_core_ids": [
+      "B0073",
+      "B0120"
+    ],
+    "pingyan_core_ids": [
+      "B0035",
+      "B0036",
+      "B0166"
+    ],
+    "core_sets_complete": true,
+    "criterion": "all_declared_core_components_remain_unignited_through_valid_observation_or_extinction_closure",
+    "hard_constraint_is_not_zero_heat_exposure": true,
+    "identity_status": "annotation_only;not_field_verified",
+    "terminal_sample_core_peak_K": {
+      "B0073": 480.2346510474708,
+      "B0120": 388.93205353048364
+    }
+  },
+  "pareto_acceptance": {
+    "objectives": [
+      "C_construction_geometry_union_m2",
+      "N_original_owner_burned_out_upper",
+      "A_all_domain_burned_out_covered_m2"
+    ],
+    "affected_counts_and_areas": "report_separately",
+    "phase_horizon_and_terminalclosed_must_not_be_mixed": true,
+    "protected_core_set_bound_to_protocol": true,
+    "terminal_feasible_fully_observed_declared_plans_at_checkpoint": 0,
+    "only_terminal_native": "unknown_at21600s;active_fire_remains;core_unignited_is_not_terminal_success",
+    "global_pareto_frontier_complete": false,
+    "roof_area_anchor_does_not_prove_joint_global_optimum": true
+  },
+  "pingyan_least_additional_experiment_route": {
+    "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-retained-area-master.json",
+    "config_sha256": "e8d5d53aa08800c6eb7fe33e9dcd5297182b8c04c7997327bd0c3ab58f869a59",
+    "unchanged_source_area_cap_m2": 1531.6288649185644,
+    "unchanged_source_area_tolerance_m2": 1e-06,
+    "checkpoint_baseline_complete": 7,
+    "checkpoint_baseline_missing": [
+      "background-h0.5"
+    ],
+    "checkpoint_seed_native_evaluations": 0,
+    "first_seed_new_checks_if_all_pass": 8,
+    "seeds_in_frozen_order": [
+      {
+        "demolished_ids": [
+          "B0034",
+          "B0119",
+          "B0165",
+          "B0168",
+          "B0188"
+        ],
+        "historical_fixed_only_proposal_area_m2": 974.4542322625402,
+        "actual_sources_under_frozen_priorities": {
+          "near-B0035": "B0120",
+          "near-B0036": "B0037",
+          "near-B0166": "B0177",
+          "background": "B0201"
+        },
+        "new_retained_feasibility": "not_established_at_paused_checkpoint"
+      },
+      {
+        "demolished_ids": [
+          "B0119",
+          "B0165",
+          "B0167",
+          "B0177",
+          "B0190"
+        ],
+        "historical_fixed_only_proposal_area_m2": 985.6078364045122,
+        "actual_sources_under_frozen_priorities": {
+          "near-B0035": "B0120",
+          "near-B0036": "B0037",
+          "near-B0166": "B0191",
+          "background": "B0201"
+        },
+        "new_retained_feasibility": "not_established_at_paused_checkpoint"
+      },
+      {
+        "demolished_ids": [
+          "B0034",
+          "B0119",
+          "B0165",
+          "B0167",
+          "B0168",
+          "B0177",
+          "B0190",
+          "B0191"
+        ],
+        "historical_fixed_only_proposal_area_m2": null,
+        "actual_sources_under_frozen_priorities": {
+          "near-B0035": "B0120",
+          "near-B0036": "B0037",
+          "near-B0166": "B0188",
+          "background": "B0201"
+        },
+        "new_retained_feasibility": "not_established_at_paused_checkpoint"
+      }
+    ],
+    "recommended_order_without_changing_physics": [
+      "finish_or_reuse_eighth_baseline_if_original_prefetch_controller_requires_it",
+      "try_first974.454232m2_seed_before_other_seeds",
+      "coarse_first_exact_same8_scenarios;new_source_nearB0035_and_nearB0166_are_high_information",
+      "stop_candidate_on_first_conclusive_core_failure;unknown_is_not_a_failure_cut_or_success",
+      "each_candidate_still_requires_all4families_times2supports_for_feasibility;baseline_passed_checks_cannot_be_reused_for_changed_intervention",
+      "only_after_a_new_retained_seed_has8of8_valid3600s_passes_freeze_factory_seed_receipt_and_joint_config",
+      "factory_joint_reference_must_preserve_master_mesh_full_candidate_ids_sourcecap_and_prefix;grass_cost_separate",
+      "terminal_joint_candidates_require_audited_extinction_closure_before_finalCNAPareto_admission"
+    ],
+    "do_not_transfer_old_fixed_two_source_feasibility": true,
+    "do_not_claim_global_best_if_seed_only_passes": true
+  },
+  "evidence_methods": {
+    "native_cache_validation": "fresh_process_import_each_run/source-snapshot/src+scripts;exact_frozen_source_paths_hash_set;original_read_complete_for_all_paused_manifests;terminal_reader_binds_loaded_state_and_curves",
+    "physical_loss_recount": "current_recount_heritage_area_archives.recount_master;actual_npz_event_clocks_and_loss_basis;immutable_component_original_owners;all/roof/nonroof_native_area_match;0CA",
+    "checkpoint_hashes": "sha256_of_every_paused_manifest_and_its253artifact_files;every_snapshot_and_reference_entry",
+    "audit_helper_sha256": {
+      "/tmp/heritage_resume_audit_20261111.py": "4f088dae6f2cec475621997746e9cb05ca1f53af78c6563b60abd6b06f9750c8",
+      "/tmp/heritage_resume_deepcheck_20261111.py": "8309934fe7bfc21a612319cc43a4f7333d95c61973a81dad0dfa7031909cd19b",
+      "/tmp/heritage_resume_recount_20261111.py": "7c9418f5b231422a60d58dbb7ef13c014488aa0c734882b3fc70ad0896f88f73"
+    },
+    "live_run_metadata_may_advance_after_report": true
+  }
+}

@@ -1,0 +1,1394 @@
+{
+  "schema_version": "heritage-joint-terminal-pareto-postprocessing-1",
+  "run_root": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111",
+  "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/confirmation-longcap-config.json",
+  "experiment_sha256": "f0c378de72f7b337cad187c27da86f16770aed5513f1c55507153e31e61f67b0",
+  "comparison_problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+  "temporal_mode": "strict",
+  "native_comparison_problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+  "analysis_problem": null,
+  "analysis_problem_sha256": null,
+  "finite_domain_checks": [],
+  "reference_joint_3600_problem_sha256": "c16707518b4f25e7c285d66ebf0c2c81e79b5c7fa0802dbb6b36dd5a96ddb5cf",
+  "reference_master_3600_problem_sha256": null,
+  "analysis_source_sha256": {
+    "scripts/summarize_heritage_joint_pareto.py": "618d39866b509441c97c943e37e92dfe010ffd8722dd7cd2b4d2b0e3a19aa3a7",
+    "src/pyfireca/planning/pareto.py": "f3a2321037a32cb2f589c82ab560a1e861635577cb1c6ad0643ee6a8d6726351",
+    "src/pyfireca/planning/terminal_verification.py": "e08194e4c459e972e367b0bd6d1329615119cb7c17bbc11c08e66e884e4b1f87",
+    "src/pyfireca/planning/boundary_scope.py": "d5d306533cab8bcee34e6645d28f736fcdbfda7bf6c6395d77c4509b3aa0f332",
+    "src/pyfireca/village/extinction_v3.py": "b8f824c5ea109a8132f29a4c884e520f1bd3995b03725997619f92aea64270a6"
+  },
+  "native_snapshot_source_sha256": {
+    "scripts/preflight_heritage_exact_expansion.py": "c673c725a2e3b287fffb841519034e59561f00b2a050cc9f458168574940ed75",
+    "scripts/run_heritage_area_study.py": "275ab1c1db2724a143cf0d9dc8ba5662496069f02d180162d4b1934c0f3d31d1",
+    "scripts/run_heritage_fixed_comparison.py": "12032723c86a0c12edd5a0d91088c5d546a1fc88729ed137560550752a171d76",
+    "scripts/run_heritage_joint_comparison.py": "10647b74bd85588f943951782756f71ebb84e242ede482ae86a9eccbafc9f64c",
+    "scripts/run_heritage_roof_study.py": "06382d1a9f3b33aabdf7da7384eb3c89b725467752be0384bf4596965706630e",
+    "src/pyfireca/__init__.py": "e62f55207cfa9683eb1a1e5517b93e7f348ce6f337f297f3bfa901ad17e318f9",
+    "src/pyfireca/arrival.py": "611dbfb5f0d0b8f8a9544c5ab0adfa9d5ac7e20d729d046a4d6023c067bebb4f",
+    "src/pyfireca/behavior/__init__.py": "da011c7eb7b68247d6cad9ff4af7c9db999cb09c3e233ac255d11473ac5e6c43",
+    "src/pyfireca/behavior/_directions.py": "ebad8faa3bc2c6c18b31bfb74ab55db845d87ff54df792402805be61d26dd564",
+    "src/pyfireca/behavior/_fbp_constants.py": "62a529849f5f235fd614ff3c7f8a5e9c73051d4980ce0a3f43685a63d633ce5e",
+    "src/pyfireca/behavior/_rothermel_base.py": "9c6d1f9bceb13c8a5e95cb0462dc0d0d6e94fd00067908a6686693914edf40a9",
+    "src/pyfireca/behavior/_rothermel_dynamic.py": "be2b201882d9f8c4a147150e39874ee09aafd15318bbe8d4449250a900a71428",
+    "src/pyfireca/behavior/_rothermel_effects.py": "c81f017aa4df3dde171f858dec36969f0cea1d6c42f71b4c040a2b595d27ad8d",
+    "src/pyfireca/behavior/_rothermel_equations.py": "32f6d418d1e546fb6d9a03926a35a6546f7bfaf8dfc60adc33fe9347f6b7adae",
+    "src/pyfireca/behavior/_rothermel_vectors.py": "f98de53f7d46688605e2ae41f8c9184d192d7de9e458b44e05682f710bc7306f",
+    "src/pyfireca/behavior/_surface_ellipse.py": "e43f14090b0ead2512df0029d32ef13dd7d3b41da23a58592126315524838c04",
+    "src/pyfireca/behavior/_units.py": "af51bd63cc93e1f6d9410459bf316fdab964a0559f70012993c5fcd9e68e7eb7",
+    "src/pyfireca/behavior/base.py": "b370e09e7a8334f08278eacd2b20d131a0ee771032155038956630cbc2762af1",
+    "src/pyfireca/behavior/crown.py": "ac2b795195b479b5ef0a085cc014b0fb2696b7b7abbdb9f0033b80b1ed25faa0",
+    "src/pyfireca/behavior/fbp.py": "aaaf79744b13c0bdcdd226a269c4e77df282d2f1acd506660c6a81da8d77d0cf",
+    "src/pyfireca/behavior/fbp_directional.py": "a675d9f080138962e14007dc5e29a843ac6cfeadf5839460e0aa3a672ef46689",
+    "src/pyfireca/behavior/fbp_landscape.py": "13dc12e14de01a096329801744b3b90ce1cc08a0723c3704833bb90397c9d3ef",
+    "src/pyfireca/behavior/fbp_layers.py": "fe4bd82c10e8d94bdd6ca852d618e99e604ad1de19e9913cfc74c580fe68cd13",
+    "src/pyfireca/behavior/fbp_spatial.py": "dc4330cfa2d269472a18461f75889b85cf300266612e96faa65781944a476679",
+    "src/pyfireca/behavior/fuel_catalog.py": "e469d344e76cd9b23f23212c1ae24bfb294e76eeb9b4f2e4277cc1a7cbfc3741",
+    "src/pyfireca/behavior/rothermel.py": "d1bac197e3e37945a20ce1ce5ba684c11ecdbe381abfa6aed183f9ee6ea1c3f8",
+    "src/pyfireca/behavior/rothermel_directional.py": "e5a71fd0fe636863c8d61c0c9799b46d3653049813c997d52685fccf572b0045",
+    "src/pyfireca/behavior/rothermel_landscape.py": "f4c07e4cd6dce23a4d44f8d04ae05372813fc2f43e86d79a68785851fdd54ef7",
+    "src/pyfireca/behavior/rothermel_layers.py": "da695a581b0719038eea73685b32f6417f070bfb8c40b586b793a4b5f305a4ae",
+    "src/pyfireca/behavior/rothermel_model.py": "ca7e87efeb9003d459f6ba56b4b1908fe3136fde0a73f6f9c13cab28e369b705",
+    "src/pyfireca/behavior/rothermel_spatial.py": "652101b6cb6e989297fc57aecff363af61acdb789da0aebc8dce7f1ace09301f",
+    "src/pyfireca/config.py": "0aec57cc09f8d738f41a47043ce96a143a137b7efae2dc06933663a82fcab213",
+    "src/pyfireca/data.py": "a8ec44e2a0a20562d2c7f2cf60c4594c666a25b15afea841272798c8bacdc28e",
+    "src/pyfireca/edge_coupling.py": "f47b170d09fb55a3a902b808e0e9d01b5b02ca13362a003d54ba047c921dd176",
+    "src/pyfireca/fbp_config.py": "ab52246d16a475f469f3c2548f415a76b73f734be6d90d5e021e6d1a1658d4d1",
+    "src/pyfireca/fbp_simulator.py": "1dc72b4ab4cb9c005ee829b798332f1875eb1e942572922ba16337c22e210735",
+    "src/pyfireca/fbp_workflow.py": "803ed4dc6da850180a8efc8e05f4a333ccffc1db78ae6558404dfd979fdb6c04",
+    "src/pyfireca/gis.py": "f7fd0eee0980c208c311732fae17528031c0a415551fa64a04d65f82eebb7215",
+    "src/pyfireca/grid.py": "9621e549a29228596063f86d64e97177d0e0b00a8736887c9e59b91c913e2129",
+    "src/pyfireca/ignition.py": "1b3b7cb05c811f41c2c60867e64a47dc851666de1b7f76166e7557ef6c893ef2",
+    "src/pyfireca/neighborhood.py": "4e687d22fa2b4d81292fa018fa6ca259622114b837eb92e3b1ef7b980a895aa6",
+    "src/pyfireca/outputs.py": "6c6e2c70f7596f5eeb393b6378a7d05228ac27b7ff853e7a0673cb6362ca37d8",
+    "src/pyfireca/planning/__init__.py": "859727e27a9776cef45f4586b0aadfb627ed128fe30bc0e5c020f639a4ded4bd",
+    "src/pyfireca/planning/area_candidates.py": "ad407b82931bb556478260654b98c858060a5a63441cf3e0bdf212e599c01172",
+    "src/pyfireca/planning/building_search.py": "9fc2d012d90a587b1ce453b0897d291c3a49b4ba2ee8ffa1c5e4bdb582ef68de",
+    "src/pyfireca/planning/contracts.py": "83a0f8389356d1eb85ef5217ad0806d812cab19f7abf9bf4391f74bb1321d770",
+    "src/pyfireca/planning/engines/__init__.py": "1f95829368fc293179bc196cc53f9edd4d132b37ef2cb56cc5901a17e229d807",
+    "src/pyfireca/planning/engines/heritage.py": "1a111bcdfc114a7f20aa9739f124297c215df179cca1586bf6c265751ccd051a",
+    "src/pyfireca/planning/engines/roof_heritage.py": "fd655b5c329f350f3b3dc3040abaed67a8a0047cc3f1415acecea85cab25e248",
+    "src/pyfireca/planning/engines/roof_joint.py": "62587a33149dfc0473a3dbdc2ede78711ed3b9167ee1cf7764e780cb91384e8c",
+    "src/pyfireca/planning/engines/roof_search.py": "d2ad638f3a9492e029687b83e93433befa8355cfb2dee80091cad098e610bf83",
+    "src/pyfireca/planning/engines/village.py": "8711b5ad9fa4f36458166729b38722176c3a7130ca9f6554a7f2eb4e7a21e572",
+    "src/pyfireca/planning/evaluation.py": "4d6a6b5b314326960b1e8d4714c50356c91180d1150be441442395d474bb07b3",
+    "src/pyfireca/planning/fire_loss.py": "4e92719bfa333acef3746125a3cbc75b17567747243ff2af6ce56c01ca5c6ce6",
+    "src/pyfireca/planning/heritage.py": "48dd14155afd8985fc8a92e8bc6197f75cc317c64cb9be6aa1cbde34851259d3",
+    "src/pyfireca/planning/interventions/__init__.py": "4343dba8ee7d040cfe11fa61bb36bf476793c5a57cadddfc842f0b086ae2c303",
+    "src/pyfireca/planning/interventions/buildings.py": "06776eff2b12ca9fc5ffb15829dc9338894d3cf3ecbc6611c0ed9457636cdd0d",
+    "src/pyfireca/planning/interventions/clearing.py": "2b68075588b0b31d0bb6c92fe3901ab70dad0cc336f3f723b4a99d2e0ade17fc",
+    "src/pyfireca/planning/observations.py": "d6298208c9b71fc323f29f3c77ae18b1e241d0a498a4ca193fd904500ae248f8",
+    "src/pyfireca/planning/random_sources.py": "815d3cf12965cd2863a7bbacbf38824d6cbf8574a365841a1556b9c4f720bbfc",
+    "src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "src/pyfireca/planning/roof_thermal.py": "bc40bffce107d63221b4bdfefa538ac2b0f65d5565a78ec6cfafdc685fb51ed5",
+    "src/pyfireca/planning/source_area_coverage.py": "e819abf2c3ca6e0cd0d21424abf60aa0298e150dc087ae323a9a9df44330ffad",
+    "src/pyfireca/planning/spatial.py": "ee820e04a6e9765a3a5e5254d02f259ff67a2d8d4c014e05bf3c580b0a01887d",
+    "src/pyfireca/planning/strategy_io.py": "088ff823c6036962e254b3769998e908394004c1db1ae11c4e84c195688bc768",
+    "src/pyfireca/planning/study_io.py": "74f1547a05134fdb1b748cf4ea16f240de84b164845c82b141b06bd46e9ce7c8",
+    "src/pyfireca/planning/terminal_verification.py": "e08194e4c459e972e367b0bd6d1329615119cb7c17bbc11c08e66e884e4b1f87",
+    "src/pyfireca/propagation.py": "ef3c40412bd95b37aa1142470e49deeb6ae3b63463b0e9db97d96c4890551452",
+    "src/pyfireca/rules.py": "96f9334db90a5196f7b61bb447469d87087b5795a51a6495f489781184313d20",
+    "src/pyfireca/run_config.py": "a1391c10636886102f54a1e2d56ff6b4ea2218f68b349313de781ea7a60431ad",
+    "src/pyfireca/simulation.py": "9b6db5017fc9182bc8f2d71dc1289abbbd82a0887cae809b201fa80de6fa9828",
+    "src/pyfireca/simulator.py": "24cb9756eb4c38892ee91b101b509e45c0df462d665d8f18971c2b41bb003794",
+    "src/pyfireca/state.py": "3475b88769f942bd96d03bf3f34884d88073370b5dd1e3894bd4fd678494d11b",
+    "src/pyfireca/village/__init__.py": "ef6af626ed857d35f985d16b604a2c16b0922bef835eff442bb2708273befea0",
+    "src/pyfireca/village/annotations.py": "7a77888beaf6da4ed754c62583805e59bd68197efed0ccf9603714da65580c27",
+    "src/pyfireca/village/assembly_presets.py": "335d0ef3c98413580f16ac29054a630ed24cb0a9233955970990710382441c87",
+    "src/pyfireca/village/combustion.py": "3c5bd480233c7737d6998e594322045f4e9576392c36c1528e92ecb400a60eb8",
+    "src/pyfireca/village/config.py": "8d23d7d943c1071d028d4fa53cc59ef71a751102c695a5f421421464640170b6",
+    "src/pyfireca/village/core_validation_v3.py": "d4160246b9440621a3bed6debc982db1c9bffc41edd1c45db90382c1ce0c1022",
+    "src/pyfireca/village/domain.py": "8b9b192ca1e18217275d4c23c31b0d4b151e0bed2c704514884ac97d281a9b7d",
+    "src/pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+    "src/pyfireca/village/extinction_v3.py": "b8f824c5ea109a8132f29a4c884e520f1bd3995b03725997619f92aea64270a6",
+    "src/pyfireca/village/firebrands_v3.py": "cc4be404abf8cd3106d64c8869f66484a40a7dc0220aa03cd280be144b172c59",
+    "src/pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+    "src/pyfireca/village/gaoyou_v3.py": "11b4499a2b7c6933979470354ea17c11a51f92eaec21acd43f197e81a9509f1e",
+    "src/pyfireca/village/ignition.py": "ef9fb19d7df5940c97a30ca4680c2227414f4407ec08a8c1e2dfc9aa3453b448",
+    "src/pyfireca/village/inspection_v3.py": "0f21b0cba8ff4753f44db6e125f19de18b7e7bd534ebfaf33ff8317862ce1977",
+    "src/pyfireca/village/material_cards.py": "e635a1283d8ec9de5effe5ebbdfec2a8f8b0b755c7a4eeb6fb523aa42a11f6f0",
+    "src/pyfireca/village/material_resolution.py": "690cd3d21b2c5ad158d5c188b7abe71c99b0eca9d968f4c04d8dd15a42598386",
+    "src/pyfireca/village/materials.py": "a6d495f46c5c126668d6829ca8aabf460ce68feb047232ae1a87d975c0e070bf",
+    "src/pyfireca/village/moisture.py": "023e459d3b0259667b4228551385e1b1a46882793a9422a0152436a47f87c668",
+    "src/pyfireca/village/outputs.py": "b40f353c969e2aba765c663ec409844017a1bdbe9bc1a9a3130a7b55a21ffc08",
+    "src/pyfireca/village/outputs_v3.py": "19909314a4eb8ddf95c0defdb64169896fd4c7719838676f4461d67813dfa4f6",
+    "src/pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084",
+    "src/pyfireca/village/physics_v3.py": "e34eeb53f1f18443d0b4e4d04970715dbea6e996d6719ab947b2cf4dde6a1536",
+    "src/pyfireca/village/preflight_v3.py": "b0ca571a573dfe42d6d6b5415f7db3706debbb42c67ec0f7f8d89de7140385dd",
+    "src/pyfireca/village/prepare.py": "a9717da24eae8c994ee0ce045f2142b90411d0f10e7a94e29143cf23c9fa2ea7",
+    "src/pyfireca/village/prepared_workflow_v2.py": "72e5d58fad724533756365c4eca4ca42f379826b9791a9198ff642d2192e43ae",
+    "src/pyfireca/village/resolution_workflow_v3.py": "a2eddd0aefcb1feded668c2be31b4d744f1b48cc45459bf5b9d768c40ccbae72",
+    "src/pyfireca/village/resource_sensitivity_v3.py": "4a6d90fad9ec2e35bd42f2e99b98d5c223796522afa0d61089405f4f9d7bc7c4",
+    "src/pyfireca/village/rgb_hypothesis_v3.py": "273a74229774b29ca4e73fd90a9280073fb38c59e6560b65e199670e82d40029",
+    "src/pyfireca/village/solver.py": "ead70d55ac8432ea6ed0c03b56986e4708ec5c46bda43487bf0e87675db25212",
+    "src/pyfireca/village/solver_v2.py": "5e9cf1752aa8eae950738ece9167901f3456d04621e80c80e1e7fdec566158b1",
+    "src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+    "src/pyfireca/village/state.py": "435d849cd32636af3dcd52e2ca257f1b5837f300c77903382347171f6aeb01d4",
+    "src/pyfireca/village/survey.py": "e4a1d1601d3c95043a35f95d96d4a7d35669a7fa83c85e28734b1b3ee50079e1",
+    "src/pyfireca/village/survey_adapter.py": "850396d9f99827693cb51e2e673a4a1f82c8aa03a1600efaf85d1204cb3fdd1e",
+    "src/pyfireca/village/survey_mapping_v3.py": "f8a2445b9e01b8334d59969d4c6f75f9239b009cffc90aaf7dee8f47a31d9d30",
+    "src/pyfireca/village/transport_v2.py": "6a58373eefce1f3f8bd5970192c51433adc251bb3aababc01e8091c0f76af86a",
+    "src/pyfireca/village/transport_v3.py": "227203d8b97463bbd1a1beffb8fd55de8cc10afe89fba9d37e5e5e295cc8c3e6",
+    "src/pyfireca/village/unknown_review_v3.py": "95d664827fe9ec5dc478acdeb5bfc7fd7054b3bcdc194e63a38259469d2afb75",
+    "src/pyfireca/village/vegetation_config.py": "b395f290e81a965b29215738adbc60a02326b3f963f60ac676ef3a206572dbd5",
+    "src/pyfireca/village/vegetation_materials.py": "f2dbe1bfa003cbdc17ad64c3369a85f8ea03bd5bce5ced58ac737f9d9972eb02",
+    "src/pyfireca/village/vegetation_prepare.py": "3c1ca3c2e7102ceac8919facbe7783c8123ca8e7d9f303aea7c05f1c6f081942",
+    "src/pyfireca/village/wind_v3.py": "fbc01d4df3a6a9c20709c66999471ab736802f185dd05ec77fcee518da5bf0e1",
+    "src/pyfireca/village/workflow_v2.py": "fe79fb592555c29f84c2be0b521eb6320f834142d58ca0bc6c3821861c789800",
+    "src/pyfireca/village/workflow_v3.py": "eb667482db9d9b355ed2a27ed503b534ad366dd02f6a253ad3f760bc3b096257",
+    "src/pyfireca/workflow.py": "bdd1fbe238ccda4e4ca638e5a698e9b6607fead71da3956a77939a0f73bd4b3a"
+  },
+  "physical_references_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-1.json": "92ada8e2c600c7d379504d8be0db40dcba440418bee3637861dc74391ddad035",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-2.json": "f6b04f439ab59b674eab1964d3d2b7099dfc4515b4d411746c22df7dc20908a7",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-3.json": "fc673eb59118c1531e24f75d3f14a31cde1f99d5a5fd16df6b8f14de3e3c589d",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/source-4.json": "ab8745773b24ee20f3486b99880a7fb419410fff77f0807b0360dd384641271a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json": "666e657efbc926f63f8ca764a0ee27b469584ef7c921269fec3bb8d044a82fe9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/specific_heat_J_kg_K.npy": "56ffcba1660bfd3eda4bb6ea48622e2d5369734891f5c797f70e934071f1c287",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/water_mass_kg.npy": "926928350053d7c03de8c85b0fb68bdee1e7a318492e0383812e5e5acd77a51f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_index.npy": "2dbe67e1b31e134110ed5ef76f94fcadc0460baac72ad493ac8e90ef8e8c99fb",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_height_m.npy": "a2474c1eecb79af172c74f2646f68e4c81176b515b7822d1c6f24658097f77f4",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/building_index.npy": "c3b0af6bb0d33eee1184f67ea383b8dd08156eecc6cd323a0d542c23a39e1945",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/absorptivity.npy": "a965d5de9026756d0b82164255a14e886a3638f550c2e12f2a964acfa32eaf68",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_m2.npy": "b01499a9794be7564363c09e290bc8ce58b808b00bd234e505a92d39bc166722",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/radiative_fraction.npy": "fbfadfe07f42310041ddbc02b4504c71e73b4c06183bfb7bc28d03d26c9e7bd9",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/moisture_content_dry_basis.npy": "875383dfa3ffa8b4eee314b568c3f15d8ef63cc9eec2fd6ecf8e21efb640ee47",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrr_W.npy": "6fc058e2edc744a6c1246a7ba56ac732526a0e05ef733c9e7fb778c1ba20115a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/effective_heated_dry_mass_kg.npy": "a118c27e608ace2fd338d065ba9b2d986a0b6968c1144f5f61c01b1101a9ebfa",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_water_mass_kg.npy": "cd07ff52aed032e3dd8285e859246deb38767ec8119c1b3da8de59095a240272",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/backing_conductance_W_m2_K.npy": "93c4a33bcb67df4cc612f57ec2bcd22dd000f3488c8be792cd93f4d93d723e0c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/heat_of_combustion_J_kg_dry.npy": "e9f5857b3f94e238a5c9018947289e23fd8e4b6b82d811bb27090f683ed583e0",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_target.npy": "b10b592c93afbdcc4245230e7306283191e3d6a03842f92fb15ce5e265c10c8b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/growth_time_s.npy": "6f2a2656e9420d372fc020ea1385682ff33cfc9ed16ae165f571d0525216b871",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/known_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_fuel_mass_kg.npy": "0a86c97a93c2fd64af686f0d72d88011d871d74fce1c9830bf5f3cb696eb2647",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/initial_dry_fuel_mass_kg.npy": "d1fd8dc965769f548a02b58a592576ab5ef543a634a3625074d5ee4fd05c2771",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ignition_temperature_K.npy": "b2f15b941dc425dc05e6014557c52356eefed6c2eb5251e70e8f9b39df75609f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/dead_dry_fuel_mass_kg.npy": "34dc58a95bce19dca50542c5e046ac076b57c271e35e4282d7332129a9142b3c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_m2.npy": "d27349bbe341397538aee9588d62cceb91e6b55de2c21ebd44782f543fb6892e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/domain_mask.npy": "eb70e3887679173fb81b060d7acee6276d1d2bc11b52f715476af8591ebe4567",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/burnable_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_height_m.npy": "14d2ab6ea56f3639ee0c0facfe007f8e7bd95df3bffc02ddc75b0347bee24727",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/receiver_area_ratio.npy": "7fca5e9c476333a6705a9869c7b4ef06cc593cb812f21bfe035c85ed4e854a35",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_dry_fuel_mass_kg.npy": "076af847fabc8a73fefbe5c0bf8d899c71d2fbae3715b376fd0cb3dfca607f89",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/piloted_ignition_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_weight.npy": "d4974916bbf732fd4ac66364be50fbfca08b5ce41edfd6cb19cb399786cd5b6b",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/peak_hrrpua_W_m2_active.npy": "5bfa85607111c35b6246f015e7a00fdf52a32c7f7770eabcd1ad979f2ab1fb98",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ground_elevation_m.npy": "4d1aada1fe875622f11357eef904e0d83c8d05001b1be05927ff44647cbfe266",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/coverage_fraction.npy": "1870138abd72db98133945fe038c0aa4fb9156ba7965d642408bfb757aee0a11",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/target_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/manifest.json": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/live_water_mass_kg.npy": "3c2735b7fef6c3d5bbee4e0b58b926def923316c754ba011ae22270f3592143f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/decay_time_s.npy": "d2b5ba4fd49c0c3e7c9fdae6b3816d8a406e6180641dd432bdcf8af9906ac068",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/configured_curve_energy_J.npy": "cc1f6577e6e395e053c5b041d219c8522259583e4dcba2442dfa45559fb7f55f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/source_mask.npy": "71bc1168e519ea5b186949196d67a54887d1f4d2eac1609e8349c8050d36241c",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/pyrolysable_dry_mass_fraction.npy": "f1289d8b3d0ae0208ca9da0ac3640e696961f7872bf80f0128bb0e87d812061e",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/covered_area_m2.npy": "4fe9c4480044c43781569689a9c1e1d26750ac233100fe7779116d475ce9b706",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/edge_source.npy": "9e118ff4558d3d41bb407a758cedf2a6a877b40174db45198e89e4b6689c4fc5",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/available_energy_J.npy": "e9e211da24c1144bb4431f2893adc31140db39bb319813968bfafd2883be2a71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/emissivity.npy": "99338a5bb3872eeaa2eaf535c737a3b2bcfb226c5f66c4b1b2f30d2c44c61a7a",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/active_surface_area_ratio.npy": "0eb53a684cc7733820cdb3974b59a45a075027ee314ff8468da9182b93c81146",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/steady_time_s.npy": "67d18ee7e0576ae36bf87c5b5d375b076c0fc328aa78a1fc3e1d77de6072ff4d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/ambient_heat_transfer_coefficient_W_m2_K.npy": "062115fc2415d0d65d25d639e4949c8dd09c10aa2a52e9b8e5f8b2a52a1f7596",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/landcover_index.npy": "8a10b1544f4716a472c150731bd4886eb8b006e40d058ebd9635406c34e34318",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/material_evidence_index.npy": "20f3bc88f3f312584b075070327f009f68bd879890651a76c2aa16da44652e71",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/buildings.json": "fd501803d5120068af631dd37f5a8f8f243625dee3ff8f5de95e3072ed5a584d",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/inputs/annotations.labelme.json": "f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/spatial/image_ref.json": "7103bc6be37185c57aee64723bfa643094fe44667b412b3c0e7f312c7395f9b9",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-D9-G0-complete8-audit-20261111.json": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-action-ablation-20261111-catalog.json": "dfb45500dbe7edff74fd91f0e7ff82ab5ce120d5bf37854afaae8b5957da0c6a",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json": "d3d2decc36c2dbf811b30dbb96ede852196158f9d8289fe43bfd0930b166bd49",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-direct-action-ablation-priority-longcap-20261111.json": "9ccb45e975237c875adcb4e3039c87d4e5dc0f2c2ffd97f17c242d0603c3e9bb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/execution-amendment.json": "a2182f80f63aaa838881b9dab73f27ea3c7d7bbb8f440e6f644d1a2e4aaf82c4",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/final-candidates.json": "aab068008faee5940570f6f1b32b1da5891f5da9ef629f0bdcf7175a3b8754b7",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/binding-receipt.json": "90093fbf64734468923f507e7db9d93e8a04d15f148ce34e1351addc94c09e9a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-D9-G0-final-confirmation-20261111/original-binding/confirmation-config.json": "b3df568d9dbdefbf862dcf9ebaaf7a73320ac5460541dfa964f710348063a2eb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/confirmation-20261110/batuan-registration.json": "b6e33fd320d3025dcf07a068580e1b49e733e5576b19b134d00095d7480c1b2f",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-action-ablation-batuan-20261111/experiment.json": "ef29c1afa17c405de9a52d6fb143c026a4bdafa8ea789c7c5f7453ae431120d4",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_batuan_final_confirmation.py": "31b885394ae65bb973a6011d766f053ae92a81e532455653464ace4cd1ff58e9",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_independent_confirmation.py": "cb7d2baabef64901ddce8baf4ed0a25a32f01b41f2e3383eeec040750ef9c21b",
+    "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py": "10647b74bd85588f943951782756f71ebb84e242ede482ae86a9eccbafc9f64c",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/heritage.py": "48dd14155afd8985fc8a92e8bc6197f75cc317c64cb9be6aa1cbde34851259d3",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/random_sources.py": "815d3cf12965cd2863a7bbacbf38824d6cbf8574a365841a1556b9c4f720bbfc",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/retained_sources.py": "e1a525b9a58498cfd82fd79b89ace0babc31bba48b53225fd58c51409c81256c",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "/Users/tone/Documents/github/PyFireCA/src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4"
+  },
+  "native_saved_state_and_peak_certificates_verified": true,
+  "native_checks": [
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-1-near-B0073-001-h1",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 1548.3600000000001,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624419651,
+        "A_ignited_physical_covered_area_m2": 86.01736157157961,
+        "ignited_roof_covered_area_m2": 86.01736157157961,
+        "ignited_nonroof_covered_area_m2": 0.0,
+        "burned_out_physical_covered_area_m2": 86.01736157157961,
+        "clearing_plus_ignited_physical_covered_area_m2": 1175.0347288854014,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 3
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 3
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 10,
+          "upper": 10
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 12690.375071962331,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/8e388a8564f6af81b7cd89982cc829d92530b1354f00bdb2dfd7fea232a1e60d/complete.json",
+      "manifest_sha256": "d91c21565abd992ad0cc0fb7fe7471176be14e4a88e2f10d96a540d29400b1d6",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-1-near-B0073-001-h0.5",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 1930.7200000000003,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624419617,
+        "A_ignited_physical_covered_area_m2": 86.01736157157963,
+        "ignited_roof_covered_area_m2": 86.01736157157963,
+        "ignited_nonroof_covered_area_m2": 0.0,
+        "burned_out_physical_covered_area_m2": 86.01736157157963,
+        "clearing_plus_ignited_physical_covered_area_m2": 1175.0347288854011,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 3
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 1,
+          "upper": 3
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 10,
+          "upper": 10
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 12690.375071962333,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/348e35c44eb2dbee40e99f06a30e8296120418e77fd1a26f6d1c828d6aec7e5d/complete.json",
+      "manifest_sha256": "00d2a654c5ece49bfab770b73f1c33ca04b4ed2c2bb25432d7d7b750a3c6f7ed",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-2-near-B0120-001-h1",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 1912.7200000000003,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624418878,
+        "A_ignited_physical_covered_area_m2": 188.24038476455536,
+        "ignited_roof_covered_area_m2": 188.24038476455536,
+        "ignited_nonroof_covered_area_m2": 0.0,
+        "burned_out_physical_covered_area_m2": 188.24038476455536,
+        "clearing_plus_ignited_physical_covered_area_m2": 1277.257752078377,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 5
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 5
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 11,
+          "upper": 11
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571973,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 13794.383722446468,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/31a5d5726ac35e4c7a5af27269b46926cc4cf54440f25298fd5c8963767fdfb1/complete.json",
+      "manifest_sha256": "3e3b09886340c9fd45a2e175c854bd532adf5213a43ae77b2a18b3d34e9566a5",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-2-near-B0120-001-h0.5",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 1980.7200000000003,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624419199,
+        "A_ignited_physical_covered_area_m2": 188.24038476455536,
+        "ignited_roof_covered_area_m2": 188.24038476455536,
+        "ignited_nonroof_covered_area_m2": 0.0,
+        "burned_out_physical_covered_area_m2": 188.24038476455536,
+        "clearing_plus_ignited_physical_covered_area_m2": 1277.257752078377,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 5
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 2,
+          "upper": 5
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 11,
+          "upper": 11
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571976,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 13794.383722446471,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c282e9a92fc17cf0face8aecbd56cc7746ccde8c66d1cdbe41ddcd316752c9f6/complete.json",
+      "manifest_sha256": "400b55df60435f7e529b1d982c95b92d44ff6f95bbf77c5870a75667b58a6f46",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-3-background-001-h1",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 5356.0,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624418878,
+        "A_ignited_physical_covered_area_m2": 6464.539641813099,
+        "ignited_roof_covered_area_m2": 6139.539641813099,
+        "ignited_nonroof_covered_area_m2": 325.0,
+        "burned_out_physical_covered_area_m2": 6464.539641813099,
+        "clearing_plus_ignited_physical_covered_area_m2": 7553.557009126919,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 24,
+          "upper": 24
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 24,
+          "upper": 24
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 33,
+          "upper": 33
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 79746.91569857074,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/19816d772bafc748721095a785ec11ebdc09b8db6814acd79261ba789df4b23e/complete.json",
+      "manifest_sha256": "b6b35fbeba1dc840db2ed7cb44c92b56268fe820f5f8f38bd546902b6a8c3b24",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-3-background-001-h0.5",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 5422.0,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624419199,
+        "A_ignited_physical_covered_area_m2": 6464.5396418130995,
+        "ignited_roof_covered_area_m2": 6139.539641813099,
+        "ignited_nonroof_covered_area_m2": 325.0,
+        "burned_out_physical_covered_area_m2": 6464.5396418130995,
+        "clearing_plus_ignited_physical_covered_area_m2": 7553.557009126919,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 24,
+          "upper": 24
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 24,
+          "upper": 24
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 33,
+          "upper": 33
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 79746.91569857074,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/962f7d87b117d08bd5c0b53345943e91a8cc7f659037709f14922d437bb6bc0c/complete.json",
+      "manifest_sha256": "6a37f4fe077684a22989ac3f487e1055f233adce536aa2a90633a8863123a3d8",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-4-background-002-h1",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 2778.3599999999997,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624418878,
+        "A_ignited_physical_covered_area_m2": 1221.9345959938523,
+        "ignited_roof_covered_area_m2": 896.9345959938522,
+        "ignited_nonroof_covered_area_m2": 325.0,
+        "burned_out_physical_covered_area_m2": 1221.9345959938523,
+        "clearing_plus_ignited_physical_covered_area_m2": 2310.9519633076734,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 5,
+          "upper": 5
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 5,
+          "upper": 5
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 21633.531203722876,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c8fa626c723dbe2c1b9ba70685ec799327815d61913c56da6a39f538589db2ac/complete.json",
+      "manifest_sha256": "7726ea155a734f182e06c4c123779016e2cfdffdfc64ac4e7a8de51616bb8eb7",
+      "certificate_observation_bound": true
+    },
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "scenario_id": "independent-4-background-002-h0.5",
+      "status": "passed",
+      "terminal_complete": true,
+      "actual_stop_time_s": 2864.36,
+      "core_ignition_observed": false,
+      "terminal_observation": "strict_extinction_closed",
+      "closure_rejection_reasons": [],
+      "invalid_reasons": [],
+      "metrics": {
+        "C_construction_action_area_m2": 1089.0173624419199,
+        "A_ignited_physical_covered_area_m2": 1221.934595993852,
+        "ignited_roof_covered_area_m2": 896.9345959938522,
+        "ignited_nonroof_covered_area_m2": 325.0,
+        "burned_out_physical_covered_area_m2": 1221.934595993852,
+        "clearing_plus_ignited_physical_covered_area_m2": 2310.9519633076734,
+        "N_ignited_annotation_attribution_count": {
+          "lower": 5,
+          "upper": 5
+        },
+        "N_burned_out_annotation_attribution_count": {
+          "lower": 5,
+          "upper": 5
+        },
+        "administrative_clearing_plus_ignited_annotation_count": {
+          "lower": 14,
+          "upper": 14
+        },
+        "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+        "clearing_plus_fire_depleted_pyrolysable_fuel_kg": 21633.531203722876,
+        "real_destroyed_building_count": null,
+        "structural_damage_area_m2": null
+      },
+      "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/62670d9d888a17877f5dc9e3dbe384f437c95b64b3ea29ed9eea56b7e529e520/complete.json",
+      "manifest_sha256": "c3467c261eab27a71436d3653f45c2f3bb9e6aa1ec22ddff5f4a5091b1f91be7",
+      "certificate_observation_bound": true
+    }
+  ],
+  "canonical_construction_area_ledger": [
+    {
+      "plan_id": "direct-thin-D9-with-no-grass",
+      "canonical_C_m2": 1089.0173624408872,
+      "roof_geometry_union_m2": 1089.0173624408872,
+      "whole_ground_footprints_m2": 0.0,
+      "ground_cell_footprint_m2": 25.0,
+      "roof_source_area_cap_m2": null,
+      "source_cap_applies_to_roof_only": true,
+      "reference_cap_is_an_admissibility_constraint": true,
+      "finite_declared_source_certificate_sha256": null,
+      "raw_scenario_C": [
+        {
+          "scenario_id": "independent-1-near-B0073-001-h1",
+          "raw_C_m2": 1089.0173624419651,
+          "raw_minus_canonical_m2": 1.0779785952763632e-09
+        },
+        {
+          "scenario_id": "independent-1-near-B0073-001-h0.5",
+          "raw_C_m2": 1089.0173624419617,
+          "raw_minus_canonical_m2": 1.0745679901447147e-09
+        },
+        {
+          "scenario_id": "independent-2-near-B0120-001-h1",
+          "raw_C_m2": 1089.0173624418878,
+          "raw_minus_canonical_m2": 1.0006715456256643e-09
+        },
+        {
+          "scenario_id": "independent-2-near-B0120-001-h0.5",
+          "raw_C_m2": 1089.0173624419199,
+          "raw_minus_canonical_m2": 1.03273123386316e-09
+        },
+        {
+          "scenario_id": "independent-3-background-001-h1",
+          "raw_C_m2": 1089.0173624418878,
+          "raw_minus_canonical_m2": 1.0006715456256643e-09
+        },
+        {
+          "scenario_id": "independent-3-background-001-h0.5",
+          "raw_C_m2": 1089.0173624419199,
+          "raw_minus_canonical_m2": 1.03273123386316e-09
+        },
+        {
+          "scenario_id": "independent-4-background-002-h1",
+          "raw_C_m2": 1089.0173624418878,
+          "raw_minus_canonical_m2": 1.0006715456256643e-09
+        },
+        {
+          "scenario_id": "independent-4-background-002-h0.5",
+          "raw_C_m2": 1089.0173624419199,
+          "raw_minus_canonical_m2": 1.03273123386316e-09
+        }
+      ]
+    }
+  ],
+  "reference_source_area_coverage": null,
+  "source_and_area_anchor_scope": {
+    "retained_source_cap_applies_to_roof_geometry_only": true,
+    "grass_action_cost_is_complete_25m2_parent_footprints": true,
+    "old_3600_area_optimality_transferred_to_terminal_or_joint": false,
+    "horizon_extension_can_change_final_clipped_timestep": true,
+    "finite_archive_is_not_globally_complete_pareto_frontier": true
+  },
+  "archive": {
+    "schema_version": "heritage-evaluated-pareto-1",
+    "temporal_mode": "terminalclosed",
+    "outcome_scope": "native_strict_domain_acceptance",
+    "native_strict_statuses_preserved": true,
+    "comparison_protocol": {
+      "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+      "physical_protocol_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+      "physical_protocol_binding_scope": "full_declared_frozen_problem;no_cross_problem_equivalence",
+      "scenario_ids": [
+        "independent-1-near-B0073-001-h0.5",
+        "independent-1-near-B0073-001-h1",
+        "independent-2-near-B0120-001-h0.5",
+        "independent-2-near-B0120-001-h1",
+        "independent-3-background-001-h0.5",
+        "independent-3-background-001-h1",
+        "independent-4-background-002-h0.5",
+        "independent-4-background-002-h1"
+      ],
+      "horizon_s": 172800.0,
+      "reference_horizon_s": 3600.0,
+      "roof_scales_m": [
+        0.5,
+        1.0
+      ],
+      "quadrature_spacing_m": 0.5,
+      "max_dt_s": 1.0,
+      "source_policy": "retained_sources",
+      "protected_core_ids": [
+        "B0073",
+        "B0120"
+      ]
+    },
+    "problem_sha256s": [
+      "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6"
+    ],
+    "explicit_equivalence_group": null,
+    "objective_names": [
+      "C_geometric_construction_m2",
+      "N_burned_out_original_owner_upper",
+      "A_physical_burned_out_m2"
+    ],
+    "loss_aggregation": "componentwise_maximum_over_every_declared_scenario",
+    "audited_C_numeric_binding_tolerance": {
+      "absolute_m2": 1e-06,
+      "relative": 1e-10
+    },
+    "objective_dominance_tolerance": 0,
+    "N_scope": "physical_original_owner_attribution_bounds;unrepresented_owners_unknown_in_upper;not_real_structural_destruction",
+    "unrepresented_original_ids": [],
+    "all_original_inventory_owners_physically_represented": true,
+    "non_dominated_archive": [
+      {
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "cleared_physical_cell_ids": [],
+        "cleared_area_m2": 1089.0173624408872,
+        "construction_area_basis": "geometric_action_union_m2",
+        "status": "passed",
+        "unresolved_or_failure_reasons": [],
+        "scenario_observations": {
+          "independent-1-near-B0073-001-h0.5": {
+            "A_burned_out_m2": 86.01736157157963,
+            "A_affected_m2": 86.01736157157963,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-1-near-B0073-001-h1": {
+            "A_burned_out_m2": 86.01736157157961,
+            "A_affected_m2": 86.01736157157961,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h0.5": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571976,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h1": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571973,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h0.5": {
+            "A_burned_out_m2": 6464.5396418130995,
+            "A_affected_m2": 6464.5396418130995,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h1": {
+            "A_burned_out_m2": 6464.539641813099,
+            "A_affected_m2": 6464.539641813099,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h0.5": {
+            "A_burned_out_m2": 1221.934595993852,
+            "A_affected_m2": 1221.934595993852,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h1": {
+            "A_burned_out_m2": 1221.9345959938523,
+            "A_affected_m2": 1221.9345959938523,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          }
+        },
+        "objective_values": [
+          1089.0173624408872,
+          24,
+          6464.5396418130995
+        ],
+        "worst_case": {
+          "A_burned_out_m2": 6464.5396418130995,
+          "A_affected_m2": 6464.5396418130995,
+          "A_active_m2": 0.0,
+          "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+          "N_burned_out": {
+            "lower": 24,
+            "upper": 24
+          },
+          "N_affected": {
+            "lower": 24,
+            "upper": 24
+          }
+        },
+        "provenance_references": [
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/8e388a8564f6af81b7cd89982cc829d92530b1354f00bdb2dfd7fea232a1e60d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/348e35c44eb2dbee40e99f06a30e8296120418e77fd1a26f6d1c828d6aec7e5d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/31a5d5726ac35e4c7a5af27269b46926cc4cf54440f25298fd5c8963767fdfb1/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c282e9a92fc17cf0face8aecbd56cc7746ccde8c66d1cdbe41ddcd316752c9f6/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/19816d772bafc748721095a785ec11ebdc09b8db6814acd79261ba789df4b23e/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/962f7d87b117d08bd5c0b53345943e91a8cc7f659037709f14922d437bb6bc0c/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c8fa626c723dbe2c1b9ba70685ec799327815d61913c56da6a39f538589db2ac/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/62670d9d888a17877f5dc9e3dbe384f437c95b64b3ea29ed9eea56b7e529e520/complete.json"
+        ],
+        "upper_bound_dominated_by": [],
+        "robustly_dominated_by": [],
+        "possibly_dominated_by": [],
+        "unresolved_potential_dominator_ids": []
+      }
+    ],
+    "robust_non_dominated_archive": [
+      {
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "cleared_physical_cell_ids": [],
+        "cleared_area_m2": 1089.0173624408872,
+        "construction_area_basis": "geometric_action_union_m2",
+        "status": "passed",
+        "unresolved_or_failure_reasons": [],
+        "scenario_observations": {
+          "independent-1-near-B0073-001-h0.5": {
+            "A_burned_out_m2": 86.01736157157963,
+            "A_affected_m2": 86.01736157157963,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-1-near-B0073-001-h1": {
+            "A_burned_out_m2": 86.01736157157961,
+            "A_affected_m2": 86.01736157157961,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h0.5": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571976,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h1": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571973,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h0.5": {
+            "A_burned_out_m2": 6464.5396418130995,
+            "A_affected_m2": 6464.5396418130995,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h1": {
+            "A_burned_out_m2": 6464.539641813099,
+            "A_affected_m2": 6464.539641813099,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h0.5": {
+            "A_burned_out_m2": 1221.934595993852,
+            "A_affected_m2": 1221.934595993852,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h1": {
+            "A_burned_out_m2": 1221.9345959938523,
+            "A_affected_m2": 1221.9345959938523,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          }
+        },
+        "objective_values": [
+          1089.0173624408872,
+          24,
+          6464.5396418130995
+        ],
+        "worst_case": {
+          "A_burned_out_m2": 6464.5396418130995,
+          "A_affected_m2": 6464.5396418130995,
+          "A_active_m2": 0.0,
+          "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+          "N_burned_out": {
+            "lower": 24,
+            "upper": 24
+          },
+          "N_affected": {
+            "lower": 24,
+            "upper": 24
+          }
+        },
+        "provenance_references": [
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/8e388a8564f6af81b7cd89982cc829d92530b1354f00bdb2dfd7fea232a1e60d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/348e35c44eb2dbee40e99f06a30e8296120418e77fd1a26f6d1c828d6aec7e5d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/31a5d5726ac35e4c7a5af27269b46926cc4cf54440f25298fd5c8963767fdfb1/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c282e9a92fc17cf0face8aecbd56cc7746ccde8c66d1cdbe41ddcd316752c9f6/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/19816d772bafc748721095a785ec11ebdc09b8db6814acd79261ba789df4b23e/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/962f7d87b117d08bd5c0b53345943e91a8cc7f659037709f14922d437bb6bc0c/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c8fa626c723dbe2c1b9ba70685ec799327815d61913c56da6a39f538589db2ac/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/62670d9d888a17877f5dc9e3dbe384f437c95b64b3ea29ed9eea56b7e529e520/complete.json"
+        ],
+        "upper_bound_dominated_by": [],
+        "robustly_dominated_by": [],
+        "possibly_dominated_by": [],
+        "unresolved_potential_dominator_ids": []
+      }
+    ],
+    "possible_dominance_free_archive": [
+      {
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "cleared_physical_cell_ids": [],
+        "cleared_area_m2": 1089.0173624408872,
+        "construction_area_basis": "geometric_action_union_m2",
+        "status": "passed",
+        "unresolved_or_failure_reasons": [],
+        "scenario_observations": {
+          "independent-1-near-B0073-001-h0.5": {
+            "A_burned_out_m2": 86.01736157157963,
+            "A_affected_m2": 86.01736157157963,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-1-near-B0073-001-h1": {
+            "A_burned_out_m2": 86.01736157157961,
+            "A_affected_m2": 86.01736157157961,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h0.5": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571976,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h1": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571973,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h0.5": {
+            "A_burned_out_m2": 6464.5396418130995,
+            "A_affected_m2": 6464.5396418130995,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h1": {
+            "A_burned_out_m2": 6464.539641813099,
+            "A_affected_m2": 6464.539641813099,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h0.5": {
+            "A_burned_out_m2": 1221.934595993852,
+            "A_affected_m2": 1221.934595993852,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h1": {
+            "A_burned_out_m2": 1221.9345959938523,
+            "A_affected_m2": 1221.9345959938523,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          }
+        },
+        "objective_values": [
+          1089.0173624408872,
+          24,
+          6464.5396418130995
+        ],
+        "worst_case": {
+          "A_burned_out_m2": 6464.5396418130995,
+          "A_affected_m2": 6464.5396418130995,
+          "A_active_m2": 0.0,
+          "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+          "N_burned_out": {
+            "lower": 24,
+            "upper": 24
+          },
+          "N_affected": {
+            "lower": 24,
+            "upper": 24
+          }
+        },
+        "provenance_references": [
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/8e388a8564f6af81b7cd89982cc829d92530b1354f00bdb2dfd7fea232a1e60d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/348e35c44eb2dbee40e99f06a30e8296120418e77fd1a26f6d1c828d6aec7e5d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/31a5d5726ac35e4c7a5af27269b46926cc4cf54440f25298fd5c8963767fdfb1/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c282e9a92fc17cf0face8aecbd56cc7746ccde8c66d1cdbe41ddcd316752c9f6/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/19816d772bafc748721095a785ec11ebdc09b8db6814acd79261ba789df4b23e/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/962f7d87b117d08bd5c0b53345943e91a8cc7f659037709f14922d437bb6bc0c/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c8fa626c723dbe2c1b9ba70685ec799327815d61913c56da6a39f538589db2ac/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/62670d9d888a17877f5dc9e3dbe384f437c95b64b3ea29ed9eea56b7e529e520/complete.json"
+        ],
+        "upper_bound_dominated_by": [],
+        "robustly_dominated_by": [],
+        "possibly_dominated_by": [],
+        "unresolved_potential_dominator_ids": []
+      }
+    ],
+    "fully_evaluated_feasible_plans": [
+      {
+        "plan_id": "direct-thin-D9-with-no-grass",
+        "problem_sha256": "f3e7b39b0bdf806a1a6aae9e4ab9a990f53d3fa61db8c19c930105ef521148c6",
+        "demolished_ids": [
+          "B0060",
+          "B0061",
+          "B0064",
+          "B0065",
+          "B0068",
+          "B0071",
+          "B0074",
+          "B0076",
+          "B0077"
+        ],
+        "cleared_physical_cell_ids": [],
+        "cleared_area_m2": 1089.0173624408872,
+        "construction_area_basis": "geometric_action_union_m2",
+        "status": "passed",
+        "unresolved_or_failure_reasons": [],
+        "scenario_observations": {
+          "independent-1-near-B0073-001-h0.5": {
+            "A_burned_out_m2": 86.01736157157963,
+            "A_affected_m2": 86.01736157157963,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-1-near-B0073-001-h1": {
+            "A_burned_out_m2": 86.01736157157961,
+            "A_affected_m2": 86.01736157157961,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 1,
+              "upper": 3
+            },
+            "N_affected": {
+              "lower": 1,
+              "upper": 3
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 928.9875049730599,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h0.5": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571976,
+            "affected_equals_burned_out": true
+          },
+          "independent-2-near-B0120-001-h1": {
+            "A_burned_out_m2": 188.24038476455536,
+            "A_affected_m2": 188.24038476455536,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 2,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 2,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 2032.9961554571973,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h0.5": {
+            "A_burned_out_m2": 6464.5396418130995,
+            "A_affected_m2": 6464.5396418130995,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-3-background-001-h1": {
+            "A_burned_out_m2": 6464.539641813099,
+            "A_affected_m2": 6464.539641813099,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 24,
+              "upper": 24
+            },
+            "N_affected": {
+              "lower": 24,
+              "upper": 24
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h0.5": {
+            "A_burned_out_m2": 1221.934595993852,
+            "A_affected_m2": 1221.934595993852,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          },
+          "independent-4-background-002-h1": {
+            "A_burned_out_m2": 1221.9345959938523,
+            "A_affected_m2": 1221.9345959938523,
+            "A_active_m2": 0.0,
+            "N_burned_out": {
+              "lower": 5,
+              "upper": 5
+            },
+            "N_affected": {
+              "lower": 5,
+              "upper": 5
+            },
+            "unrepresented_original_ids": [],
+            "fire_depleted_pyrolysable_fuel_kg": 9872.143636733603,
+            "affected_equals_burned_out": true
+          }
+        },
+        "objective_values": [
+          1089.0173624408872,
+          24,
+          6464.5396418130995
+        ],
+        "worst_case": {
+          "A_burned_out_m2": 6464.5396418130995,
+          "A_affected_m2": 6464.5396418130995,
+          "A_active_m2": 0.0,
+          "fire_depleted_pyrolysable_fuel_kg": 67985.52813158146,
+          "N_burned_out": {
+            "lower": 24,
+            "upper": 24
+          },
+          "N_affected": {
+            "lower": 24,
+            "upper": 24
+          }
+        },
+        "provenance_references": [
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/8e388a8564f6af81b7cd89982cc829d92530b1354f00bdb2dfd7fea232a1e60d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/348e35c44eb2dbee40e99f06a30e8296120418e77fd1a26f6d1c828d6aec7e5d/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/31a5d5726ac35e4c7a5af27269b46926cc4cf54440f25298fd5c8963767fdfb1/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c282e9a92fc17cf0face8aecbd56cc7746ccde8c66d1cdbe41ddcd316752c9f6/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/19816d772bafc748721095a785ec11ebdc09b8db6814acd79261ba789df4b23e/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/962f7d87b117d08bd5c0b53345943e91a8cc7f659037709f14922d437bb6bc0c/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/c8fa626c723dbe2c1b9ba70685ec799327815d61913c56da6a39f538589db2ac/complete.json",
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-batuan-independent-D9-G0-20261111/evaluations/62670d9d888a17877f5dc9e3dbe384f437c95b64b3ea29ed9eea56b7e529e520/complete.json"
+        ],
+        "upper_bound_dominated_by": [],
+        "robustly_dominated_by": [],
+        "possibly_dominated_by": [],
+        "unresolved_potential_dominator_ids": []
+      }
+    ],
+    "unresolved_plans": [],
+    "failed_plans": [],
+    "declared_plan_count": 1,
+    "complete_feasible_plan_count": 1,
+    "area_anchor_certificate_references": [],
+    "area_anchor_certificates_reverified_by_this_module": false,
+    "area_anchor_certificate_interpretation": "references_only;no_optimality_transferred_across_temporal_or_source_protocol",
+    "frontier_scope": "only_fully_evaluated_feasible_declared_plans",
+    "global_pareto_frontier_complete": false,
+    "global_minimum_area_proven_by_this_module": false,
+    "new_CA_checks": 0
+  },
+  "new_CA_checks": 0,
+  "original_run_writes": 0,
+  "started_utc": "2026-11-11T11:19:51.005782+00:00",
+  "finished_utc": "2026-11-11T11:20:02.255065+00:00"
+}

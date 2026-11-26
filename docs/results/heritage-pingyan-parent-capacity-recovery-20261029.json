@@ -1,0 +1,15 @@
+{
+  "schema_version": "heritage-zero-result-resource-recovery-1",
+  "stopped_root": "runs/research/pingyan-full-bounded-parent-capacity-stop-20261029",
+  "preserved_completed_CA_checks": 0,
+  "failure": "parent graph verification inherited 5,000,000-edge default; required 5,988,602",
+  "declared_edge_capacity_unchanged": 60000000,
+  "change": "parent verification uses the same declared max_radiation_edges as the roof engine",
+  "physics_parameters_changed": false,
+  "plan_source_and_config_changed": false,
+  "source_snapshot_preserved": true,
+  "new_root": "runs/research/pingyan-full-bounded-20261029",
+  "old_problem_sha256": "848a3b379ea275a5569e18d8211aee4d6a79659f912e8ff8edae3753ceefb095",
+  "new_problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "all_physical_problem_fields_equal_except_producer_hash": true
+}

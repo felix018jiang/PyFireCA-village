@@ -1,0 +1,35 @@
+{
+  "schema_version": "zero-heat-combined-design-and-original-baseline-independent-audit-1",
+  "sealed_design_file_sha256": "391bea7f08de1e9e6cc461c896d7490e38bf431df97d8ed2df50f90bf3568bfd",
+  "action_gis_sha256": "104110c479168eac0d7051d435a0f2ea9671b7d9a12105e0dde491d0ed3bf6e2",
+  "projected_GIS_maximum_symmetric_difference_m2": 3.6552766119490356e-07,
+  "separately_rebuilt_clearance_union_m2": 9865.173036422662,
+  "heritage_to_exterior_support_edges": 0,
+  "heritage_to_exterior_polygon_contacts": 0,
+  "design_source_families": 4,
+  "design_worst_A_upper_m2": 241.49,
+  "design_worst_original_owner_upper": 3,
+  "baseline_clearance_m2": 5600.070776859304,
+  "baseline_versus_final_fixed_source_footprints_and_budgets_verified": 4,
+  "baseline_closed_by_local_energy_families": 0,
+  "baseline_closed_by_geometric_fallback_families": 4,
+  "baseline_worst_A_upper_m2": 5593106.57,
+  "baseline_worst_original_owner_upper": 937,
+  "baseline_native_inventory_snapshot": [
+    {
+      "native_config_file_sha256": "d61b4e7288d9949656da4bec22aa87baa4f258f79bde93f95d9f9920c05c9f9f",
+      "exp_sha256": "93dfeb53ffa176e4d305b1176d43946da00ae1b97da50602162341d13ef641e3",
+      "currently_saved_manifest_count": 0
+    },
+    {
+      "native_config_file_sha256": "132a1e9f87c932b6f09b7619105d39553a65dcbcafb2400a987022fa8382530a",
+      "exp_sha256": "9fe4f3e4c393918317d977b44a7f974fdb6cc43d2aaa646f092838e3b3667aae",
+      "currently_saved_manifest_count": 0
+    }
+  ],
+  "baseline_native_manifest_checks_at_audit": 0,
+  "physical_control_scope": "The analytic zero-core baseline and combined construction share four initial ordinary sources. A coarse upper bound for the baseline does not establish greater actual loss.",
+  "CA_evaluations": 0,
+  "method_sha256": "49fa0c25c20dbbb46260d1872c52f440636a9129a52b6066944309e1ff8b6bd6",
+  "receipt_sha256": "3ef9636b961b3ec54991ce0ecfbd4ff53298d8e76178ba6367a5af6c34a2e0e7"
+}

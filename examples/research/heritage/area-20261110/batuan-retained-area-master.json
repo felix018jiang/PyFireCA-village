@@ -1,0 +1,104 @@
+{
+  "schema_version": "heritage-area-master-config-1",
+  "village_id": "batuan",
+  "place_name": "岜团村",
+  "study_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-provisional-all-ordinary-study.json",
+  "source_policy": "area_bounded_retained_sources",
+  "fixed_source_ids": [],
+  "source_fires": [
+    {
+      "fire_id": "B0075-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-1-20261029.json",
+      "draw_id": "near-B0073-002"
+    },
+    {
+      "fire_id": "B0071-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-2-20261029.json",
+      "draw_id": "near-B0073-003"
+    },
+    {
+      "fire_id": "B0062-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-3-20261029.json",
+      "draw_id": "near-B0120-002"
+    },
+    {
+      "fire_id": "B0061-known",
+      "protocol_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/batuan-full-source-4-20261029.json",
+      "draw_id": "near-B0120-002"
+    }
+  ],
+  "source_area_limit_m2": 443.8419687401409,
+  "source_area_tolerance_m2": 1e-06,
+  "refinement_ids": [
+    "B0061",
+    "B0062",
+    "B0063",
+    "B0067",
+    "B0071",
+    "B0073",
+    "B0076",
+    "B0077",
+    "B0120"
+  ],
+  "seed_plans": [
+    [
+      "B0061",
+      "B0071",
+      "B0076"
+    ]
+  ],
+  "prefetch_baseline_witnesses": true,
+  "enable_physical_group_cuts": true,
+  "roof_scales_m": [
+    1.0,
+    0.5
+  ],
+  "quadrature_spacing_m": 0.5,
+  "horizon_s": 3600.0,
+  "max_dt_s": 1.0,
+  "max_new_checks": 64,
+  "max_wall_time_s": 14400.0,
+  "max_mip_time_s": 1200.0,
+  "mip_call_time_limit_s": 60.0,
+  "area_gap_absolute_tolerance_m2": 1e-06,
+  "area_gap_relative_tolerance": 1e-08,
+  "max_nodes": 200000,
+  "max_radiation_edges": 60000000,
+  "minimum_free_disk_GB": 10.0,
+  "core_overlap_policy": "reject",
+  "new_independent_fire_draws": 0,
+  "initial_cap_is_verified_upper_bound_for_new_problem": false,
+  "cap_selection_rule": "geometric_actual_clearance_of_historical_initial_plan",
+  "prior_fixed_problem_seed_receipt": {
+    "problem_sha256": "ed65b77d167a370ab1a850b8e3ba0056afa1b669ca5642e71e08b174003c76a9",
+    "source_search_sha256": "b8089769b663e78fa0a4ac37a5dd806c5ca2196743df3ceb1ffbbbf7e3f2242b",
+    "verified_feasible_rows": [
+      {
+        "demolished_ids": [
+          "B0061",
+          "B0071",
+          "B0076"
+        ],
+        "cleared_area_m2": 443.8419687401409,
+        "worst_case_loss_metrics": {
+          "ignited_roof_area_m2": 6937.925886982923,
+          "ignited_nonroof_area_m2": 1300.0,
+          "consumed_fuel_kg": 58287.29354725336,
+          "roof_fire_depleted_kg": 55281.68046019521,
+          "nonroof_fire_depleted_kg": 3005.6130870581487,
+          "active_roof_area_m2": 3237.6273743769852,
+          "active_nonroof_area_m2": 125.0,
+          "clearing_plus_ignited_roof_area_m2": 7381.767859877756,
+          "clearing_plus_ignited_annotation_count_lower": 48,
+          "clearing_plus_ignited_annotation_count_upper": 48
+        },
+        "loss_metrics_complete": true,
+        "unavailable_loss_metrics": []
+      }
+    ],
+    "validity": "proposal_only;all_seeds_must_be_reverified_in_new_source_mesh"
+  },
+  "parent_full_config_sha256": "6c127fbc701f8f8667080a057232751857132bfcfe8cbb0b5d72a866abaa454c",
+  "generator_sha256": "f75b55711bcdba90a6ddff8053b09fe3cd18a4d3691866d513f921d96283bf44",
+  "scope": "all_inventory_ordinary_actions;four_historical_global_retained_source_priorities;60min_dual_model_support;area_cap_domain_not_assumed_feasible;no_new_independent_draws;not_joint_global_loss_or_field_safety"
+}

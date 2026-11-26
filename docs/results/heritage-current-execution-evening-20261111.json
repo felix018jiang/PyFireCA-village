@@ -1,0 +1,313 @@
+{
+  "schema_version": "evening-heritage-checkpoint-1",
+  "timestamp": "2026-11-11T20:47:03.158510+08:00",
+  "rows": [
+    {
+      "run": "heritage-area-master-batuan-20261110",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 48,
+      "elapsed_s_at_last_checkpoint": 2666.873441707983,
+      "durable_native_results": 48,
+      "preflight": true
+    },
+    {
+      "run": "heritage-area-master-pingyan-20261110",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 48,
+      "elapsed_s_at_last_checkpoint": 6454.625668124994,
+      "durable_native_results": 48,
+      "preflight": true
+    },
+    {
+      "run": "heritage-area-numerics-20261110-v2",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 6,
+      "elapsed_s_at_last_checkpoint": 2922.8758353329613,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-balanced-optimized-batuan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 16,
+      "elapsed_s_at_last_checkpoint": 3230.590268000029,
+      "durable_native_results": 16,
+      "preflight": true
+    },
+    {
+      "run": "heritage-balanced-optimized-pingyan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 83905
+      },
+      "started": 2,
+      "elapsed_s_at_last_checkpoint": 1519.7021085830056,
+      "durable_native_results": 1,
+      "preflight": true
+    },
+    {
+      "run": "heritage-batuan-independent-D9-G0-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 8,
+      "elapsed_s_at_last_checkpoint": 1385.7370542919962,
+      "durable_native_results": 8,
+      "preflight": true
+    },
+    {
+      "run": "heritage-batuan-thermal-vs-D9-revealed-sources-20261111",
+      "state": "queued_process",
+      "budget_active": {
+        "pid": 64661
+      },
+      "started": 2,
+      "elapsed_s_at_last_checkpoint": 1837.7336110000033,
+      "durable_native_results": 1,
+      "preflight": true
+    },
+    {
+      "run": "heritage-compartment-source-reference-batuan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 0,
+      "elapsed_s_at_last_checkpoint": 0.0,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-compartment-source-reference-pingyan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 0,
+      "elapsed_s_at_last_checkpoint": 0.0,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-core-separation-paired-batuan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 0,
+      "elapsed_s_at_last_checkpoint": 0.0,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-core-separation-paired-pingyan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 0,
+      "elapsed_s_at_last_checkpoint": 0.0,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-direct-action-ablation-batuan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 59739
+      },
+      "started": 11,
+      "elapsed_s_at_last_checkpoint": 2430.7662794580683,
+      "durable_native_results": 9,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-action-batuan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 72586
+      },
+      "started": 11,
+      "elapsed_s_at_last_checkpoint": 4534.889485332998,
+      "durable_native_results": 10,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-action-pingyan-20261111",
+      "state": "queued_process",
+      "budget_active": {
+        "pid": 11271
+      },
+      "started": 15,
+      "elapsed_s_at_last_checkpoint": 5576.355357618886,
+      "durable_native_results": 13,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-longcap-batuan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 11,
+      "elapsed_s_at_last_checkpoint": 10520.295153084036,
+      "durable_native_results": 9,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-longcap-clockfix-batuan-20261111",
+      "state": "queued_process",
+      "budget_active": {
+        "pid": 11272
+      },
+      "started": 9,
+      "elapsed_s_at_last_checkpoint": 13862.925540421216,
+      "durable_native_results": 7,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-longcap-pingyan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 87858
+      },
+      "started": 3,
+      "elapsed_s_at_last_checkpoint": 4086.0119241250213,
+      "durable_native_results": 2,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-loss-matched-reference-batuan-20261111",
+      "state": "live_worker",
+      "budget_active": {
+        "pid": 10191
+      },
+      "started": 4,
+      "elapsed_s_at_last_checkpoint": 760.3576491670101,
+      "durable_native_results": 3,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-loss-native-batuan-20261111",
+      "state": "live_worker",
+      "budget_active": {
+        "pid": 1309
+      },
+      "started": 8,
+      "elapsed_s_at_last_checkpoint": 1875.0869968330371,
+      "durable_native_results": 7,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-loss-native-pingyan-20261111",
+      "state": "live_worker",
+      "budget_active": {
+        "pid": 10451
+      },
+      "started": 3,
+      "elapsed_s_at_last_checkpoint": 1515.590767167043,
+      "durable_native_results": 2,
+      "preflight": true
+    },
+    {
+      "run": "heritage-joint-terminal-batuan-20261110",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 2,
+      "elapsed_s_at_last_checkpoint": 533.3987848749966,
+      "durable_native_results": 1,
+      "preflight": true
+    },
+    {
+      "run": "heritage-narrow-hull-batuan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 87801
+      },
+      "started": 8,
+      "elapsed_s_at_last_checkpoint": 2204.4210182499955,
+      "durable_native_results": 7,
+      "preflight": true
+    },
+    {
+      "run": "heritage-pingyan-independent-three-stage-supplement-20261111",
+      "state": "preflight_or_uninitialized",
+      "budget_active": null,
+      "preflight": false
+    },
+    {
+      "run": "heritage-pingyan-observed-clearance-subset-20261111",
+      "state": "live_worker",
+      "budget_active": {
+        "pid": 30235
+      },
+      "started": 1,
+      "elapsed_s_at_last_checkpoint": 19.385266374971252,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-protected-union-pingyan-20261111",
+      "state": "live_worker",
+      "budget_active": {
+        "pid": 10860
+      },
+      "started": 17,
+      "elapsed_s_at_last_checkpoint": 10628.901292387629,
+      "durable_native_results": 15,
+      "preflight": true
+    },
+    {
+      "run": "heritage-retained-area-batuan-20261110",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 128,
+      "elapsed_s_at_last_checkpoint": 12494.185128332989,
+      "durable_native_results": 127,
+      "preflight": true
+    },
+    {
+      "run": "heritage-retained-area-pingyan-20261110",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 57397
+      },
+      "started": 66,
+      "elapsed_s_at_last_checkpoint": 20518.94603501336,
+      "durable_native_results": 63,
+      "preflight": true
+    },
+    {
+      "run": "heritage-thermal-and-geometric-pareto-batuan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 4,
+      "elapsed_s_at_last_checkpoint": 3196.6554293340305,
+      "durable_native_results": 3,
+      "preflight": true
+    },
+    {
+      "run": "heritage-thermal-and-geometric-pareto-hrr-recovery-pingyan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 0,
+      "elapsed_s_at_last_checkpoint": 0.0,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-thermal-and-geometric-pareto-pingyan-20261111",
+      "state": "no_worker",
+      "budget_active": null,
+      "started": 1,
+      "elapsed_s_at_last_checkpoint": 2401.72317904199,
+      "durable_native_results": 0,
+      "preflight": true
+    },
+    {
+      "run": "heritage-thin-hull-batuan-20261111",
+      "state": "orphan_record_from_previous_session",
+      "budget_active": {
+        "pid": 51082
+      },
+      "started": 20,
+      "elapsed_s_at_last_checkpoint": 5165.426099875011,
+      "durable_native_results": 18,
+      "preflight": true
+    }
+  ],
+  "queued_or_absent_workers_must_be_verified_again_before_resuming": true
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": "heritage-cumulative-thermal-invariant-independent-review-1",
+  "linked_frozen_files": {
+    "src/pyfireca/village/solver_v3.py": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+    "src/pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084",
+    "src/pyfireca/village/physics_v3.py": "e34eeb53f1f18443d0b4e4d04970715dbea6e996d6719ab947b2cf4dde6a1536",
+    "src/pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+    "src/pyfireca/planning/roof_thermal.py": "bc40bffce107d63221b4bdfefa538ac2b0f65d5565a78ec6cfafdc685fb51ed5",
+    "src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "src/pyfireca/planning/interventions/clearing.py": "2b68075588b0b31d0bb6c92fe3901ab70dad0cc336f3f723b4a99d2e0ade17fc"
+  },
+  "assumptions": [
+    "Initial ambient and direct events exclusively on retained external fuel. No firebrands, positive external heat forcing, or incoming contact.",
+    "All protected nodes remain unignited in the induction hypothesis. External emission can include every retained external fuel patch."
+  ],
+  "J_per_m2_input_upper": "alpha_t * receiver_area_t / covered_area_t * sum_s[(m_pyro_s * H_s) * radiative_fraction_s * sup K(s,t)]",
+  "J_per_m2_ignition_threshold": "effective_heated_dry_mass_t / covered_area_t * cp_t * (Tign_t - Tamb)",
+  "kernel_units": "inverse square metre; clamp shifted horizontal distance at zero after subtracting maximal wind displacement if applicable; restrict inclusion by the native unshifted horizontal support radius",
+  "direct_power_or_area_normalisation": "Native target_power_W accumulates positive edge powers without a renormalisation step. The solver divides received power by covered_area, while the kernel weight contains receiver_area.",
+  "energy_induction": "For every update T>=Tamb, thermal losses are nonnegative, water consumes energy, and any temperature increase times dry heat capacity is at most the incoming absorbed radiation energy. Negative updates can only lower temperature to at least ambient. Summing per-step upper bounds controls the running maximum even if cooling is followed by reheating.",
+  "partition_argument": "Extensive weights (including receiver area, covered area, heated dry mass and pyrolysable fuel mass) split and conserve at each parent. Material intensities are inherited. A supremum over physical supports bounds every positive weighted quadrature pair, and child source energies sum back to the parent.",
+  "scope": "A strict threshold with margin gives a sufficient condition in the ideal frozen equations; floating-point summation/repeated time-step error and geometry slack require separate enclosures for an absolute native IEEE certificate. Worst whole-village losses still need independent terminal simulations.",
+  "native_formula_stress_check": {
+    "seed": 2026111101,
+    "thermal_tracks": 1024,
+    "steps_per_track": 480,
+    "evaporation_updates": 12838,
+    "cooling_updates": 310624,
+    "max_one_step_excess_K_vs_dry_absorbed_bound": 5.684341886080802e-14,
+    "temperature_below_ambient_count": 0,
+    "positive_errors_tolerance_K": 1e-09,
+    "purpose": "numerical exercise of generic thermal equations, not real-site source simulations or a universal roundoff proof"
+  },
+  "full_village_CA_checks": 0,
+  "audit_sha256": "4759317abe66c5f3122bb7000eb47bd7967d92608ba33bd5d05b8a49ab1e0083"
+}

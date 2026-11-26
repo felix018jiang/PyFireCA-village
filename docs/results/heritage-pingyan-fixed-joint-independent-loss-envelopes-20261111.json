@@ -1,0 +1,48 @@
+{
+  "village": "pingyan",
+  "frozen_action_file_sha256": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+  "confirmation_binding_sha256": "ec74631b0a6e14de1ec3ab0734d697f29906b4d341a5d7d35c961e5bfa3428b9",
+  "joint_design_sha256": "a011fa5086d6df3dbf69537a6987f1c42d41e43eb64d2407daf2cfb53a1bed91",
+  "basis": "universal exterior-to-core protection, fixed action, first-escape energy envelope or full connected component, no native outcomes",
+  "C_m2": 8465.532897386734,
+  "families": [
+    {
+      "confirmation_ordinal": 1,
+      "source_footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+      "physical_direct_area_m2": 25.000000564938713,
+      "bound_method": "complete_geometric_component",
+      "A_upper_m2": 5590216.1,
+      "N_owner_upper": 926
+    },
+    {
+      "confirmation_ordinal": 2,
+      "source_footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+      "physical_direct_area_m2": 24.999999935207956,
+      "bound_method": "complete_geometric_component",
+      "A_upper_m2": 5590216.1,
+      "N_owner_upper": 926
+    },
+    {
+      "confirmation_ordinal": 3,
+      "source_footprint_sha256": "0fba081bb28f882ffb6e15697c81006c3b93e21b67ae70c267ea3cc60bfc764b",
+      "physical_direct_area_m2": 24.999999863723932,
+      "bound_method": "closed_cumulative_energy_envelope",
+      "A_upper_m2": 316.13,
+      "N_owner_upper": 3
+    },
+    {
+      "confirmation_ordinal": 4,
+      "source_footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+      "physical_direct_area_m2": 24.99999991650228,
+      "bound_method": "complete_geometric_component",
+      "A_upper_m2": 5590216.1,
+      "N_owner_upper": 926
+    }
+  ],
+  "native_CA_runs": 0,
+  "new_plans_selected": 0,
+  "worst_certified_A_upper_m2": 5590216.1,
+  "worst_certified_N_owner_upper": 926,
+  "method_sha256": "1daa13f5970260b08bfeff8c4bb1ba4847d0a3a4b20ef98db0ba056d621ccf12",
+  "receipt_sha256": "cadf4d3365183f942ec62446c844775a7c7a8eddf8ba0bd56cde6b3324c5209a"
+}

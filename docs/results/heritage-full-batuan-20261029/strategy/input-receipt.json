@@ -1,0 +1,30 @@
+{
+  "materials": {
+    "all_physical_parameter_fields_match": true,
+    "physical_parameter_field_count": 33,
+    "library_id": "batuan-demo-synthetic-profiles",
+    "evidence": "synthetic_integration_fixture_not_field_calibration",
+    "production_ready": false,
+    "case_material_evidence_raster_present": true,
+    "roof_profile_id": "synthetic_building",
+    "material_profiles": {
+      "0": "inert_bare_or_road",
+      "1": "synthetic_grass",
+      "4": "synthetic_tree_equivalent",
+      "5": "synthetic_building",
+      "6": "synthetic_tree_equivalent",
+      "7": "synthetic_grass",
+      "8": "inert_bare_or_road"
+    }
+  },
+  "input_file_sha256": {
+    "imagery_tiff": "4c8cb7790c224c957e28db1c9f4d1e9ba5df868b8daadd7f47478bdfff56ee3c"
+  },
+  "frozen_experiment": {
+    "scales_m": [
+      1.0,
+      0.5
+    ],
+    "horizon_s": 1200.0
+  }
+}

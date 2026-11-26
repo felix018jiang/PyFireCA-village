@@ -1,0 +1,8 @@
+{
+  "new_CA_checks": 0,
+  "physical_results_and_snapshot_unchanged": true,
+  "raw_result_sha256": "70d128a31f0f34de1b212cde61af4fab48566f90761df38df0158833df838417",
+  "objective_policy_source": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-full-bounded-20261029/search-result.json",
+  "objective_policy": "lexicographic_count_then_sum_nominal_footprint_area_m2",
+  "export_metadata_completed_from_frozen_parent": true
+}

@@ -1,0 +1,13 @@
+{
+  "all_final_state_fields_equal": true,
+  "saved_contact_used": true,
+  "village": "pingyan",
+  "native_witness": {
+    "folder": "evaluations/e998abb847c4575b628111302c759538090c014eddfafe62b94c0b88bf4357fc/native",
+    "scenario_id": "drum-B0164-late-ignition-h1",
+    "demolished_ids": [],
+    "complete_manifest_sha256": "5896dbcf363025ff29fb219cd674106ab1add812cfc40773fcf533c99db1f6fa"
+  },
+  "additional_CA": 1,
+  "elapsed_s": 235.95130349998362
+}

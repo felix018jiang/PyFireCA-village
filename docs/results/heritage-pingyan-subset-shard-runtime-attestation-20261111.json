@@ -1,0 +1,57 @@
+{
+  "attestation_basis": "Native PID and loaded conda executable observed directly for each original campaign; immutable cases, same runtime environment and same source snapshots. No changes to production budgets.",
+  "attested_by": "independent_archive_reader_observing_three_running_or_suspended_original_workers",
+  "evidence_references": [
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/experiment.json",
+      "sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/preflight.json",
+      "sha256": "983cd1fa5968bef9e2559d259b2bd0a6db3cba6f3c1037b9d7bbac449e0e48db"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111/experiment.json",
+      "sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111/preflight.json",
+      "sha256": "983cd1fa5968bef9e2559d259b2bd0a6db3cba6f3c1037b9d7bbac449e0e48db"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-last-scale-shard-20261111/experiment.json",
+      "sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-last-scale-shard-20261111/preflight.json",
+      "sha256": "983cd1fa5968bef9e2559d259b2bd0a6db3cba6f3c1037b9d7bbac449e0e48db"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-observed-subset-shard-catalogs-20261111.json",
+      "sha256": "db8e2f5a8755273c5b30b7f1de2fe62ba242c90f54a396765d5923592c52e520"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-subset-shard-runtime-observations-20261111.json",
+      "sha256": "1f112ed43d9c278b75acd7dcf274b1a27348336a9cffd96da4b9bdacbcc6d5ec"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-last-scale-shard-20261111/parallel-execution-registration.json",
+      "sha256": "5a2d6c6f4288d99eb98b3bf7573be630649314d3a7e90ece0abbbd1a3c2ba06c"
+    }
+  ],
+  "native_problem_sha256s": [
+    "7bb17badc17000448c088511d69e34ec6494cd971e7519c4dd8c62262d4c0577",
+    "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65"
+  ],
+  "receipt_sha256": "2f67e066de647cf284b860ebdf10aed31d3cc8d154932c50a3de1b40dbb11920",
+  "runtime": {
+    "geos_version": "3.13.1",
+    "machine": "arm64",
+    "numpy_version": "2.1.3",
+    "python_executable": "/opt/anaconda3/bin/python3.13",
+    "python_version": "3.13.5",
+    "scipy_version": "1.15.3",
+    "shapely_version": "2.1.2"
+  },
+  "schema_version": "heritage-native-runtime-attestation-1"
+}
