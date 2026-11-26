@@ -1,0 +1,52 @@
+{
+  "schema_version": "two-zero-core-placements-casewise-and-worst-case-pareto-1",
+  "source_paired_file_sha256": "a3aea562f3bf4b44180d019beb9f39c114052c971bf1172d23678886857bf54f",
+  "old_construction_m2": 9865.173036443528,
+  "new_construction_m2": 9765.173036443528,
+  "finite_comparison_within_these_two_placements_only": true,
+  "ranked_by_C_worst_A_worst_Nupper": {
+    "old_nondominated": false,
+    "new_nondominated": true,
+    "old_worst_A_and_Nupper": [
+      241.48854379824064,
+      3
+    ],
+    "new_worst_A_and_Nupper": [
+      241.48854379824064,
+      3
+    ]
+  },
+  "ranked_by_C_and_separate_A_Nupper_for_every_tested_source_and_scale": {
+    "old_nondominated": true,
+    "new_nondominated": true
+  },
+  "all_additional_burned_material_was_restored_eligible_ground": true,
+  "all_burned_original_building_count_bounds_unchanged": true,
+  "by_local_mesh_scale": [
+    {
+      "local_roof_mesh_m": 1.0,
+      "distinct_original_design_families": 4,
+      "equal_area_families": 3,
+      "minimum_plan_increased_area_families": 1,
+      "minimum_plan_decreased_area_families": 0,
+      "largest_area_increase_m2": 25.000000000000014,
+      "all_counts_lower_and_upper_unchanged": true,
+      "uniform_descriptive_mean_burned_m2_original": 171.4338516639933,
+      "uniform_descriptive_mean_burned_m2_minimum": 177.6838516639933
+    },
+    {
+      "local_roof_mesh_m": 0.5,
+      "distinct_original_design_families": 4,
+      "equal_area_families": 4,
+      "minimum_plan_increased_area_families": 0,
+      "minimum_plan_decreased_area_families": 0,
+      "largest_area_increase_m2": 0.0,
+      "all_counts_lower_and_upper_unchanged": true,
+      "uniform_descriptive_mean_burned_m2_original": 171.4338516639933,
+      "uniform_descriptive_mean_burned_m2_minimum": 171.4338516639933
+    }
+  ],
+  "interpretation_of_means": "Each of the four prespecified design sources gets equal weight within a mesh. This is a descriptive finite-design average and makes no assumption about village ignition frequency.",
+  "method_sha256": "5d51371a024f015a1f312f2590c58aae7afa768720702735666f3a451b2bc47c",
+  "receipt_sha256": "0426502ec00860d712d5762f3cf2f0ef3c68b620bb24cdfbbce3627dd2ec035c"
+}

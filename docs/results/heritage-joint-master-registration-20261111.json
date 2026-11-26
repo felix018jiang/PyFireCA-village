@@ -1,0 +1,56 @@
+{
+  "schema_version": "heritage-joint-master-registration-audit-1",
+  "config_sha256": "629900997495fdb3f4fd0f46ad367975044c460800241bf2095b0e5e75e0a0c7",
+  "joint_universe_sha256": "62325b9ed3a3018869a403ed976beebbd4f3fc98c8fe935586adba8138c27c8f",
+  "roof_actions": 331,
+  "ground_actions": 78386,
+  "total_actions": 78717,
+  "grass_scope": "all_eligible_parent_cells",
+  "scenario_order": [
+    "B0075-known-h1",
+    "B0071-known-h1",
+    "B0062-known-h1",
+    "B0061-known-h1",
+    "B0075-known-h0.5",
+    "B0071-known-h0.5",
+    "B0062-known-h0.5",
+    "B0061-known-h0.5"
+  ],
+  "source_prefixes": {
+    "B0075-known": [
+      "B0075",
+      "B0074",
+      "B0076",
+      "B0067",
+      "B0031"
+    ],
+    "B0071-known": [
+      "B0071",
+      "B0067",
+      "B0076",
+      "B0074"
+    ],
+    "B0062-known": [
+      "B0062",
+      "B0061",
+      "B0063",
+      "B0144"
+    ],
+    "B0061-known": [
+      "B0061",
+      "B0063",
+      "B0062",
+      "B0124"
+    ]
+  },
+  "source_projection_same_total_cap": true,
+  "phase_preparation_reference_matched_without_time_or_optimality_transfer": true,
+  "canonical_seed_C_m2": [
+    443.8419687401409
+  ],
+  "referenced_input_file_count": 57,
+  "rad_graphs_built": 0,
+  "contact_graphs_built": 0,
+  "new_CA_checks": 0,
+  "wall_s": 8.576666958979331
+}

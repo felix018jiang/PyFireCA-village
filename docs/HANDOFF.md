@@ -2,6 +2,8 @@
 
 **研究交接（2026-11-21）**　平岩与岜团的恢复版实验、论文图表及复核命令见[论文代码与复核说明](HERITAGE_STUDY_CODE.md)。
 
+> **2026-11-03 当前研究工作：**用户明确以侗族传统村落应用为主，保持元胞自动机传播形态模拟与最佳防火线位置优化。[两村60分钟位置比较已完成](HERITAGE_DURATION_POSITION_RESULTS_20261103.md)：24份完整有效评价＋2次原生复现，审计通过，两村缓存恢复均0次新CA；无后台求解待完成。岜团既有三栋与平岩既有五栋均保持核心保护，岜团对照失效，平岩对照同样通过且鼓楼源累计引燃屋面面积较少。源码/输入冻结在`runs/research/heritage-followup-{batuan,pingyan}-20261103`，配置在`examples/research/heritage/followup-20261103/`；后处理与验收入口见结果文档。下一阶段按统一60分钟情景比较位置、提取有效布局共同特征并补独立观测；本轮没有启动新一轮组合最优性搜索。旧20分钟最优性证书保持原范围；下方2026-08-13开发状态为历史说明。
+
 > Updated: 2026-08-13
 >
 > This is the current handoff entrypoint. Read this before continuing development.

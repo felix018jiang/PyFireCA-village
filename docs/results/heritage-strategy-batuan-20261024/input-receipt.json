@@ -1,0 +1,106 @@
+{
+  "schema_version": "heritage-strategy-input-receipt-1",
+  "village_id": "batuan",
+  "manifest_sha256": "c72abf2ade37aebcb4e5b18b9e5b23ce3a15619be758957d1325f1d82334b34d",
+  "input_file_sha256": {
+    "imagery_tiff": "4c8cb7790c224c957e28db1c9f4d1e9ba5df868b8daadd7f47478bdfff56ee3c",
+    "image_reference": "7103bc6be37185c57aee64723bfa643094fe44667b412b3c0e7f312c7395f9b9",
+    "annotations": "f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+    "footprints": "fd501803d5120068af631dd37f5a8f8f243625dee3ff8f5de95e3072ed5a584d",
+    "materials": "a0a64d045bc15dc24ee8eb55dbfd094d9f64a720bcb8bb608d8d4e4a69196ef9",
+    "heritage": "570bdd43dde4ea392e9fc1b1498688c5cac55f460c506491eacbba29bfd4796a",
+    "profile_library": "1af81e7c6395ac8b5b3eaca286aeeab52317c479bf020862cc0261ac209d93cf"
+  },
+  "case_request_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "physical_problem_sha256": "913365a1db3594f541fa390e9896b1b13622fd698d39de48233ccc9dcdc3e642",
+  "building_count": 333,
+  "eligible_building_count": 331,
+  "search_candidate_count": 8,
+  "heritage_targets": [
+    {
+      "building_id": "B0073",
+      "role": "gulou",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    },
+    {
+      "building_id": "B0120",
+      "role": "fengyuqiao",
+      "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+      "identity_status": "annotation_only"
+    }
+  ],
+  "imagery": {
+    "crs": "EPSG:32649",
+    "width": 3228,
+    "height": 2903,
+    "pixel_size_m": [
+      0.5359903378898148,
+      0.5359903378898148
+    ],
+    "bounds_m": [
+      346501.5332565878,
+      2868913.6175348633,
+      348231.7100672961,
+      2870469.5974857574
+    ]
+  },
+  "materials": {
+    "all_physical_parameter_fields_match": true,
+    "physical_parameter_field_count": 33,
+    "library_id": "batuan-demo-synthetic-profiles",
+    "evidence": "synthetic_integration_fixture_not_field_calibration",
+    "production_ready": false,
+    "case_material_evidence_raster_present": true,
+    "roof_profile_id": "synthetic_building",
+    "material_profiles": {
+      "0": "inert_bare_or_road",
+      "1": "synthetic_grass",
+      "4": "synthetic_tree_equivalent",
+      "5": "synthetic_building",
+      "6": "synthetic_tree_equivalent",
+      "7": "synthetic_grass",
+      "8": "inert_bare_or_road"
+    }
+  },
+  "frozen_experiment": {
+    "horizon_s": 1200.0,
+    "scales_m": [
+      1.0,
+      0.5
+    ],
+    "quadrature_spacing_m": 0.5,
+    "source_policy": "sampled_retained_sources",
+    "overlap_policy": "retain_shared_roof"
+  },
+  "prepared_case_is_required": true,
+  "economic_cost_status": "missing",
+  "pending_data": [
+    {
+      "id": "economic_costs",
+      "status": "pending",
+      "needed": "逐栋拆除、补偿/搬迁、废料处理与可回收抵扣的同口径费用、币种、价格日期及来源；未提供，不按零处理。"
+    },
+    {
+      "id": "households_and_eligibility",
+      "status": "pending",
+      "needed": "产权/住户、普通建筑文化价值、共享屋面归属、社区意愿及真实可拆资格；当前非核心331对象暂可拆。"
+    },
+    {
+      "id": "field_materials",
+      "status": "pending",
+      "needed": "建筑材料、燃料负荷、构造高度、初始水分与背景地表分类核查；本轮保持原合成参数。"
+    },
+    {
+      "id": "heritage_activity_spaces",
+      "status": "pending",
+      "needed": "遗产身份现场确认及非遗活动空间、通行/集会空间保护边界。"
+    },
+    {
+      "id": "second_village",
+      "status": "pending",
+      "needed": "第二村落统一遗产清单、材料/资格/费用资料和同协议准备与验证；现有高友数据仅作接入盘点。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": "strict-dose-optimality-via-closed-relaxation-1",
+  "village": "pingyan",
+  "audited_closed_threshold": 1.0,
+  "strict_threshold_met_by_this_incumbent": true,
+  "original_closed_threshold": 0.99,
+  "original_independent_receipt_sha256": "5c3d66f0c76d4cccc326ec3ba292c29b8e1ecf146b3ba18b93ea33e00d329253",
+  "registered_geometry_receipt_sha256": "12eccc61485fdd87eda1885dbb6911bfa00d983ed15569fe683ee05f4c9d61a1",
+  "registered_energy_receipt_sha256": "d91e51ac3c1659171b2567c3c0a8c026b9ef6a24f59ba867e80975cf3914952d",
+  "margin_experiment_sha256": "0d6e13f986b3422e6f6d69c8a860dc3353dedc45cda121366e8b434fc03451e4",
+  "independent_integer_auditor_sha256": "d98cda783d2c5c51df4a42f0747d85dc6839463249d403cbfb27f94c2d811e0a",
+  "derived_auditor_input_seal": "f68e1cf68fe48720007086470aa42b7957db92b537cdddf7d3f1237ad967ea4d",
+  "registered_plans_changed": false,
+  "observations_used_for_equality": 0,
+  "closed_relaxation_verification": {
+    "village": "pingyan",
+    "source_certificate_file_sha256": "cffce34640291be16d909dd9c5c51531dc4681e90ec844ba36014272e37df7b1",
+    "C_m2": 3929.4875441747736,
+    "raw_owner_union_cost_m2": 3929.4875441687477,
+    "ground_count": 60,
+    "roof_action_count": 13,
+    "protected_parent_receptors_recomputed": 115,
+    "greatest_recomputed_dose_fraction": 0.9615949849383583,
+    "native_contact_left_unblocked": 0,
+    "total_local_roof_subsets": 16384,
+    "all_local_ground_actions": 160,
+    "lower_discrete_cost_tier_m2": 3929.4875029328814,
+    "cost_gap_to_next_lower_tier_m2": 4.12418921769131e-05,
+    "unresolved_cheaper_roof_subsets": 0,
+    "near_equal_float_cost_tiers": 0,
+    "cheaper_discrete_solutions_excluded": true,
+    "certificate_counts": {
+      "roof_subsets_excluded_by_native_contact": 12288,
+      "legal_cheaper_roof_subsets": 4096,
+      "branch_nodes": 34640,
+      "integer_single_row_exclusions": 8782,
+      "integer_weighted_exclusions": 10586
+    },
+    "native_CA_runs": 0,
+    "dose_bound_arithmetic": "Per-group ratios computed independently in binary64, down-adjusted by 1e-10 and floored in 1e-8 units. Feasibility cuts are integer for that relaxed table. No rational survey polygon claim.",
+    "objective_scope": "Sufficient cumulative-energy inequalities only, under physical owner AND and whole grass cells."
+  },
+  "old_and_new_same_roof_actions": true,
+  "exchanged_ground_cells_each_way": [
+    3,
+    3
+  ],
+  "equal_total_cost_proves_equal_village_fire_loss": false,
+  "strict_threshold_minimum_proved_for_registered_equation_and_geometry_tables": true,
+  "wrapper_source_sha256": "e7170e4474e4aaededfabbb467a5525880ed5f3de59cbeb20b1fe40929d247ad",
+  "receipt_sha256": "8560b40d413ec61dcdb988856b7717fc700defcd22c0bf7e700c8d4d149146dd"
+}

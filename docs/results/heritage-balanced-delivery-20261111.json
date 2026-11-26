@@ -1,0 +1,182 @@
+{
+  "schema_version": "heritage-balanced-final-delivery-1",
+  "created_at_utc": "2026-11-11T08:28:54.680297+00:00",
+  "new_CA_checks": 0,
+  "results_document_path": "/Users/tone/Documents/github/PyFireCA/docs/HERITAGE_BALANCED_RESULTS_20261111.md",
+  "results_document_sha256": "bd8ce30d076f2b74a229a390432b44f62104b6d82e729e4e81e2f1426d364780",
+  "source_audit_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-balanced-outcomes-audit-20261111.json",
+  "source_audit_sha256": "aec6c6a9c4adce03a1b7bb48b31e28a2d44a55255739c022e5936628d1f173ec",
+  "renderer_path": "/Users/tone/Documents/github/PyFireCA/scripts/render_heritage_area_strategy.py",
+  "renderer_sha256": "6599f6a92034e8d25bfa5e99a41312858931a065ec7b25a1f8d9fb9d03ca9482",
+  "assets": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.png",
+      "sha256": "8924e410b7f28cf131097d42557075cdf8ef578bcc9041df981a294a0e4baf7f",
+      "bytes": 570192
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.pdf",
+      "sha256": "de6376221884f4059d0fe08e38297864949fefe3181b5fbc60f87eb0290f71bd",
+      "bytes": 151087
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.geojson",
+      "sha256": "e5c947e86a64cee3ff92cfe07bcdb32d96482c9f77594bfd8c74fe987e23f572",
+      "bytes": 164050
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.json",
+      "sha256": "e9553ea1c7297279343969906ab7c82ec2ff25548327d78de2bb2f08a7bf4073",
+      "bytes": 37115
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.roof-ids.csv",
+      "sha256": "18ac22d88a82bc3e2b4cd6b58eedcf1db67ff7364bf3a907b76d0636fc47fe25",
+      "bytes": 1701
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b0-w15.01.grass-ids.csv",
+      "sha256": "34bf67b7fd27c08692a320b089052cebb9f29ad1145fedc1c3024b10063c0a4d",
+      "bytes": 7078
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.png",
+      "sha256": "b2df5b2dc2343c5293928d14c9f36776164eb01bef7338c0b51d5d4738ebd523",
+      "bytes": 565739
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.pdf",
+      "sha256": "5236b8ae24eff54f84a14845e48137a683be34f744efe5eb3570b42eb65d8ca1",
+      "bytes": 155899
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.geojson",
+      "sha256": "de55cc7c01a6540bc109133aa95de6dbe7a33283176e2fabf8408500e602bf6f",
+      "bytes": 239124
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.json",
+      "sha256": "f1983b86a818aebfbbe65fb648c80dfe3563eefc860efe475b3ee57870f80db6",
+      "bytes": 66480
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.roof-ids.csv",
+      "sha256": "18361b993c05b4ebf320c8c5c0a2a7a3b979e822800c2279060a6a06bd8baf37",
+      "bytes": 2485
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "path": "/Users/tone/Documents/github/PyFireCA/output/pdf/heritage-balanced-20261111/roof-seed-core-source-hull-ring-b10-w20.grass-ids.csv",
+      "sha256": "413e35f3e51fbafb8c8198f318160a21c3390cfbccd0e5f947a309e88110fea7",
+      "bytes": 13103
+    }
+  ],
+  "cost_and_ID_list_checks": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "roof_ID_count": 19,
+      "grass_ID_count": 78,
+      "map_C_m2": 4775.717374859696,
+      "audited_canonical_C_m2": 4775.717374856546,
+      "map_minus_audited_C_m2": 3.1504896469414234e-09,
+      "all_ID_lists_and_area_sums_match": true,
+      "GeoJSON_layer_feature_counts": {
+        "physical_roof_clearance": 1,
+        "retained_shared_roof": 1,
+        "whole_parent_vegetation_clearance": 78,
+        "protected_heritage": 2,
+        "planned_roof_annotation_action": 19,
+        "actual_ignition_source_roof": 4,
+        "actual_prescribed_ignition_footprint": 4
+      },
+      "GeoJSON_crs": "EPSG:4326",
+      "area_calculation_crs": "EPSG:32649",
+      "vegetation_by_original_landcover_index": {
+        "4": {
+          "cell_count": 58,
+          "construction_footprint_m2": 1450.0,
+          "covered_fuel_m2": 1450.0
+        },
+        "1": {
+          "cell_count": 20,
+          "construction_footprint_m2": 500.0,
+          "covered_fuel_m2": 500.0
+        }
+      }
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "roof_ID_count": 30,
+      "grass_ID_count": 146,
+      "map_C_m2": 9083.108570333468,
+      "audited_canonical_C_m2": 9083.108570330925,
+      "map_minus_audited_C_m2": 2.5429471861571074e-09,
+      "all_ID_lists_and_area_sums_match": true,
+      "GeoJSON_layer_feature_counts": {
+        "physical_roof_clearance": 1,
+        "retained_shared_roof": 1,
+        "whole_parent_vegetation_clearance": 146,
+        "protected_heritage": 2,
+        "planned_roof_annotation_action": 30,
+        "actual_ignition_source_roof": 4,
+        "actual_prescribed_ignition_footprint": 4
+      },
+      "GeoJSON_crs": "EPSG:4326",
+      "area_calculation_crs": "EPSG:32649",
+      "vegetation_by_original_landcover_index": {
+        "4": {
+          "cell_count": 108,
+          "construction_footprint_m2": 2700.0,
+          "covered_fuel_m2": 2700.0
+        },
+        "1": {
+          "cell_count": 38,
+          "construction_footprint_m2": 950.0,
+          "covered_fuel_m2": 950.0
+        }
+      }
+    }
+  ],
+  "PDF_visual_QA": [
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+      "PDF_page_count": 1,
+      "latest_PDF_raster_matches_visually_inspected_raster": true,
+      "visually_inspected_raster_sha256": "793939039c6610be94208f8f9213917df742c9ad7d2ceddf0f927e9073c26db4",
+      "Chinese_titles_legends_and_core_source_labels_legible": true,
+      "no_clipped_or_overlapping_labels_observed": true,
+      "GeoJSON_all_geometries_valid_longitude_latitude": true
+    },
+    {
+      "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+      "PDF_page_count": 1,
+      "latest_PDF_raster_matches_visually_inspected_raster": true,
+      "visually_inspected_raster_sha256": "95d391220227a08d9a7f5cac85ca52dbd8774c3e393a957e9316acc5d9abf9b7",
+      "Chinese_titles_legends_and_core_source_labels_legible": true,
+      "no_clipped_or_overlapping_labels_observed": true,
+      "GeoJSON_all_geometries_valid_longitude_latitude": true
+    }
+  ],
+  "old_generator_files_unchanged": {
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/optimize_heritage_balanced_geometry.py": "d25d9423d3dd0934d49e442e2ebd838256e65dd5c3349fe98c1278d22ca27d56"
+  },
+  "historical_native_results_modified": false,
+  "all_document_file_links_verified": true,
+  "all_asset_sha256_verified_after_final_render": true,
+  "cost_area_comparison_absolute_tolerance_m2": 1e-06,
+  "PDF_QA_temporary_rasters_not_part_of_delivery": true,
+  "PDF_QA_intermediate_rasters_removed": true
+}

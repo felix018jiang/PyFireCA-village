@@ -1,0 +1,54 @@
+{
+  "demolished_count": 3,
+  "nominal_footprint_area_m2": 451.24045614570235,
+  "removed_footprint_union_m2": 451.2404561457023,
+  "cleared_roof_union_area_m2": 443.84196874193674,
+  "retained_shared_roof_area_m2": 7.398487403734617,
+  "cleared_allocation_rule": "sorted_building_id_nonoverlapping_partition_not_ownership",
+  "objective_policy": "lexicographic_count_then_nominal_footprint_area",
+  "declared_economic_cost": null,
+  "cost_unit": null,
+  "economic_cost_status": "missing",
+  "cost_evidence": null,
+  "household_count": null,
+  "implementation_feasibility_verified": false,
+  "search_candidate_ids": [
+    "B0061",
+    "B0063",
+    "B0067",
+    "B0071",
+    "B0074",
+    "B0076",
+    "B0077",
+    "B0149"
+  ],
+  "optimality_proven_within_declared_search_problem": true,
+  "whole_village_optimality_claimed": false,
+  "pending_data": [
+    {
+      "id": "economic_costs",
+      "status": "pending",
+      "needed": "逐栋拆除、补偿/搬迁、废料处理与可回收抵扣的同口径费用、币种、价格日期及来源；未提供，不按零处理。"
+    },
+    {
+      "id": "households_and_eligibility",
+      "status": "pending",
+      "needed": "产权/住户、普通建筑文化价值、共享屋面归属、社区意愿及真实可拆资格；当前非核心331对象暂可拆。"
+    },
+    {
+      "id": "field_materials",
+      "status": "pending",
+      "needed": "建筑材料、燃料负荷、构造高度、初始水分与背景地表分类核查；本轮保持原合成参数。"
+    },
+    {
+      "id": "heritage_activity_spaces",
+      "status": "pending",
+      "needed": "遗产身份现场确认及非遗活动空间、通行/集会空间保护边界。"
+    },
+    {
+      "id": "second_village",
+      "status": "pending",
+      "needed": "第二村落统一遗产清单、材料/资格/费用资料和同协议准备与验证；现有高友数据仅作接入盘点。"
+    }
+  ]
+}

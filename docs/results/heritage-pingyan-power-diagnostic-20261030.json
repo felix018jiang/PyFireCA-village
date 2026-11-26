@@ -1,0 +1,28 @@
+{
+  "schema_version": "heritage-local-execution-power-diagnostic-1",
+  "recorded_at": "2026-10-29T17:53:38.457502+00:00",
+  "batch": "pingyan-heldout-20261029",
+  "confirmation_pid": 16641,
+  "sequence_pid": 80914,
+  "confirmation_completed_at_progress_check": 1,
+  "process_sample": {
+    "elapsed_wall": "03:07:11",
+    "accumulated_cpu": "00:09:08.23",
+    "state": "running",
+    "cpu_percent_when_sampled": 100
+  },
+  "observed_system_log_window_local": "2026-10-30 00:21 to 01:02 Asia/Shanghai",
+  "observed_events": [
+    "Entering Sleep: Maintenance Sleep",
+    "DarkWake from Deep Idle",
+    "Sleep Service Back to Sleep"
+  ],
+  "prevent_idle_system_sleep_assertion_present": false,
+  "interpretation": "local machine repeatedly sleeps between short maintenance wakes; elapsed wall time is not continuous CA computation",
+  "simulation_error_observed": false,
+  "production_restarted": false,
+  "physical_parameters_changed": false,
+  "power_settings_changed": false,
+  "required_action": "keep computer awake and app running to finish local confirmation; existing processes and results retained",
+  "notification": "notify once about observed sleep; later unchanged sleep is quiet"
+}

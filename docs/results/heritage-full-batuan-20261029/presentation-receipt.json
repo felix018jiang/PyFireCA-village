@@ -1,0 +1,8 @@
+{
+  "physical_results_unchanged": true,
+  "CA_checks_for_this_export": 0,
+  "design_result_sha256": "f62ca9ff900a963f520abe1306ae6a1bb849f2e5e7f300a83b3e13914ea00800",
+  "presentation_source_sha256": "3794275b2c4e8fb65d895087d666bb281d894a470fda59b5ebd93d8b70aaf0b9",
+  "optimality_proven": false,
+  "minimum_count_proven": true
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": "zero-core-only-coarse-loss-prefix-1",
+  "completed_saved_observations": 1,
+  "started_slots": 1,
+  "valid_exceedance_found": true,
+  "observables_for_first_valid_witness": {
+    "monotone_prefix_without_native_physical_invalid_reasons": true,
+    "full_natural_extinction": false,
+    "qualifies": true,
+    "observed_burned_area_lower_bound_m2": 244.16941445475922,
+    "observed_unique_original_buildings_lower_bound": 3,
+    "observed_original_owner_upper_at_prefix": 3,
+    "native_steps_at_saved_state": 1550,
+    "source_scenario_scale_m": 1.0,
+    "native_observation_manifest_sha256": "fbdb3d04b309d427d304ea31ca65db9bcf6d146b9ac8d2620fa2782807cfcf5d",
+    "source_budget_and_footprint_verified": true
+  },
+  "all_observed_native_manifests_digest": "6b48233bb8eba28c143e4c01e86dddbad25f01341f264324d6b8fc69871c11cd",
+  "no_real_world_claim": true,
+  "baseline_construction_m2": 5600.070776859304,
+  "comparison_constructed_m2": 9865.173036443528,
+  "comparison_certified_A_cap_m2": 241.49,
+  "comparison_certified_N_cap": 3,
+  "full_target_ensemble_completed": false,
+  "stopping_rule_receipt_sha256": "853f4937e0bdfd1aa2138e4d99909724cfd117a86a2684eab8498aa48df326f6",
+  "source_configuration_sha256": "1b512b1023464b0a42c53be45e7a5baa545bcb53a9c8c7657220cd9913cd970f",
+  "method_sha256": "ee020dd3ea98e0002242ee1dba335080ef37583bbdd939dfac91b6a08a7dcdd5",
+  "receipt_sha256": "851c77052c82fee5c7206a7c0a05cc7b8b567490f8a9fd7cb3095c20967aea47"
+}

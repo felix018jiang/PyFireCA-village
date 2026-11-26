@@ -1,0 +1,11 @@
+{
+  "villages": [
+    "batuan",
+    "pingyan"
+  ],
+  "method_sha256": "14c61f38fe6148a0c6c210f5ef81099682a10514ce0fbf1467474aa2d144b6f2",
+  "implementation": "all exterior fuel may burn, no exterior contact, sum upper bounds for radiation into each protected parent patch, maximum dry heat energy ratio of 0.99, ground point and roof polygon supports, actual whole mixed action cost",
+  "solver": "SciPy HiGHS MILP, maximum 120s per village, zero relative gap requested, independently recompute feasibility of integral incumbent",
+  "scope": "sufficient condition on model equations, no assumption of certified native floating-point rounding or minimal cost for general unignited protection",
+  "same_design_for_both_villages": true
+}

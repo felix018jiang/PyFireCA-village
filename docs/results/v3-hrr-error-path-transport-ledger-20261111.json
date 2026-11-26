@@ -1,0 +1,27 @@
+{
+  "schema_version": "native-burn-exception-retry-transport-validation-1",
+  "old_solver_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "new_solver_sha256": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3",
+  "identical_old_module_AST_after_successful_path_projection": true,
+  "successful_AST_sha256": "5dfdecbd0d563cc14977872c0cf783f2f9d6122583cad20839c5a2a21de4f971",
+  "unchanged_radiative_contact_and_burn_physical_sources_sha256": {
+    "pyfireca/village/exposure.py": "1e058ddd398651b1830c6b99f3c45621e935742232e7a64bbcc0c58b18dfb6fc",
+    "pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+    "pyfireca/village/physics_v2.py": "36419a021ea690816e99e4aad2e34bcfb2a4e2c39274fbbe2ef641135dba8084"
+  },
+  "full_retry_output_equals_independent_decimal_primitive_before_single_radiative_contact_pass": true,
+  "decimal_reference_corrections": 1,
+  "every_field_including_snapshot_radiative_contact_energy_state_bytes_sha256": "74977ba11205f3e2f971cd904f0c4fed6037c440f774246654635a88dcd638d4",
+  "existing_village_regressions_passed": 100,
+  "suite_filter": [
+    "physics_v2",
+    "physics_v3",
+    "flame_contact_v3",
+    "firebrands_v3",
+    "solver_v3",
+    "solver_v3_sampling_clock"
+  ],
+  "pytest_log_sha256": "65bcb63c24898c8cd70efb7cc2e3e9153bb25f8b7bf83497ac02728e99ffae23",
+  "package_resource_context": "identical frozen Python sources with original viewer static assets included in a temporary QA package",
+  "other_validated_native_results_not_rebound_to_new_native_problem": true
+}

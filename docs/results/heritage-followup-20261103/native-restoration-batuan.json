@@ -1,0 +1,13 @@
+{
+  "all_final_state_fields_equal": true,
+  "saved_contact_used": true,
+  "village": "batuan",
+  "native_witness": {
+    "folder": "evaluations/a9bf9ac279add0acc2038a1a6a04bfaa2948aff31ebe05960d644aa69f4acb46/native",
+    "scenario_id": "drum-B0077-known-hot-h1",
+    "demolished_ids": [],
+    "complete_manifest_sha256": "82fd18c43543161259b7de0a142de166742ad3c9c43884a40ffc7e914475b90c"
+  },
+  "additional_CA": 1,
+  "elapsed_s": 61.95935804100009
+}

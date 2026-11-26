@@ -1,0 +1,3099 @@
+{
+  "schema_version": "heritage-count-extension-audit-1",
+  "audit_passed": true,
+  "problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "problem_identical_to_parent": true,
+  "all_parent_evaluation_bytes_preserved": true,
+  "all947_candidates_preserved": true,
+  "read_only_audit_CA_checks": 0,
+  "native_restoration": {
+    "passed": true,
+    "native_zip_sha256": "241659f3c29c100cb2be026ccba57736e0361c63303582793dc90a884e08d2ff",
+    "all_state_arrays_and_ignition_causes_equal": true,
+    "new_validation_CA_checks": 1
+  },
+  "parent_CA_checks": 48,
+  "new_search_CA_checks": 29,
+  "new_checks_by_stage": {
+    "2": 29,
+    "3": 0,
+    "4": 0
+  },
+  "budget_respected": true,
+  "best_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "best_objective": [
+    5,
+    995.4810719970926
+  ],
+  "minimum_count_proven": false,
+  "optimality_proven": false,
+  "bounds": {
+    "minimum_count_lower": 3,
+    "feasible_count_upper": 5,
+    "incumbent_nominal_area_m2": 995.4810719970926,
+    "same_count_area_lower_bound_m2": 405.5657134441465
+  },
+  "classified_original_pair_frontier": [
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0191"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0191"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0168"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0165"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0160"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0163"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0168"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0160"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0167"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0163"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0163"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0167"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0167"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0164"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0164"
+      ],
+      "status": "failed"
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0164"
+      ],
+      "status": "failed"
+    }
+  ],
+  "independently_replayed_closed_layers": [],
+  "layers": [
+    {
+      "demolished_count": 3,
+      "total_combinations": 141098265,
+      "all_combinations_failed_or_proved_failed": false,
+      "stop_reason": "cumulative_branch_bound_call_limit",
+      "first_unfinished_plan": null,
+      "area_pruned_prefixes": 0,
+      "area_pruned_combinations": 0,
+      "failure_cut_pruned_combinations": 87766336
+    },
+    {
+      "demolished_count": 4,
+      "total_combinations": 33299190540,
+      "all_combinations_failed_or_proved_failed": false,
+      "stop_reason": "cumulative_branch_bound_call_limit",
+      "first_unfinished_plan": null,
+      "area_pruned_prefixes": 0,
+      "area_pruned_combinations": 0,
+      "failure_cut_pruned_combinations": 12478803002
+    }
+  ],
+  "baseline_and_best": [
+    {
+      "demolished_ids": [],
+      "fire_id": "background",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "0.5": "B0201",
+        "1.0": "B0201"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [],
+      "fire_id": "near-B0035",
+      "both_scales_present": true,
+      "joint_protected": false,
+      "source_ids_by_scale": {
+        "1.0": "B0119",
+        "0.5": "B0119"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "failed",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 452.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": true,
+              "first_ignition_s": 452.0,
+              "ignited_component_count": 1,
+              "maximum_valid_surface_temperature_K": 519.8861483998244,
+              "absorbed_radiation_J": 78940852.06473283,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 453.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": true,
+              "first_ignition_s": 453.0,
+              "ignited_component_count": 1,
+              "maximum_valid_surface_temperature_K": 519.9149612307774,
+              "absorbed_radiation_J": 76844147.75655924,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "censored",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 452.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 453.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "censored",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 452.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 453.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [],
+      "fire_id": "near-B0036",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "1.0": "B0037",
+        "0.5": "B0037"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [],
+      "fire_id": "near-B0166",
+      "both_scales_present": true,
+      "joint_protected": false,
+      "source_ids_by_scale": {
+        "1.0": "B0165",
+        "0.5": "B0165"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "censored",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 617.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 686.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "censored",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 617.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 686.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "failed",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 617.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": true,
+              "first_ignition_s": 617.0,
+              "ignited_component_count": 1,
+              "maximum_valid_surface_temperature_K": 519.7319944936806,
+              "absorbed_radiation_J": 110066032.62202083,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 686.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": true,
+              "first_ignition_s": 686.0,
+              "ignited_component_count": 1,
+              "maximum_valid_surface_temperature_K": 519.7581738364368,
+              "absorbed_radiation_J": 115197023.8489866,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "fire_id": "background",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "1.0": "B0201",
+        "0.5": "B0201"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "fire_id": "near-B0035",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "0.5": "B0120",
+        "1.0": "B0120"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 312.76593696002544,
+              "absorbed_radiation_J": 247163.01970137414,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 319.0394353491231,
+              "absorbed_radiation_J": 942186.0351376103,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "fire_id": "near-B0036",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "0.5": "B0037",
+        "1.0": "B0037"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "fire_id": "near-B0166",
+      "both_scales_present": true,
+      "joint_protected": true,
+      "source_ids_by_scale": {
+        "1.0": "B0191",
+        "0.5": "B0191"
+      },
+      "cores": [
+        {
+          "building_id": "B0035",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 494,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0035",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1809,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0036",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 826,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0036",
+              "role": "fengyuqiao",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 3094,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 300.0,
+              "absorbed_radiation_J": 0.0,
+              "received_convection_J": 0.0
+            }
+          ]
+        },
+        {
+          "building_id": "B0166",
+          "classification": "protected",
+          "observations": [
+            {
+              "scale_m": 1.0,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 480,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 506.00859115216684,
+              "absorbed_radiation_J": 26948676.951239347,
+              "received_convection_J": 0.0
+            },
+            {
+              "scale_m": 0.5,
+              "observed_until_s": 1200.0,
+              "building_id": "B0166",
+              "role": "gulou",
+              "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+              "identity_status": "annotation_only",
+              "component_count": 1799,
+              "independent_temperature_states": true,
+              "shared_temperature_components": 0,
+              "ignited": false,
+              "first_ignition_s": null,
+              "ignited_component_count": 0,
+              "maximum_valid_surface_temperature_K": 454.12451290081697,
+              "absorbed_radiation_J": 17348175.67478829,
+              "received_convection_J": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "all_new_checks": [
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0191"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 331.4156238873046,
+      "cleared_area_m2": 325.8100032228749,
+      "shared_retained_area_m2": 5.605620664409058
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0167"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 417.7469856273135,
+      "cleared_area_m2": 417.67002877497436,
+      "shared_retained_area_m2": 0.07695685384483385
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0167"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 379.67730217439635,
+      "cleared_area_m2": 379.60034532401687,
+      "shared_retained_area_m2": 0.07695685378606103
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0163"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 402.235773140728,
+      "cleared_area_m2": 388.12879734645713,
+      "shared_retained_area_m2": 14.106975795156846
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0191"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 331.4156238873046,
+      "cleared_area_m2": 325.81000322281017,
+      "shared_retained_area_m2": 5.60562066439695
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0163"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 392.78753818558135,
+      "cleared_area_m2": 378.68056239061656,
+      "shared_retained_area_m2": 14.106975795156846
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0167"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 417.7469856273135,
+      "cleared_area_m2": 417.6700287746954,
+      "shared_retained_area_m2": 0.07695685378606101
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0191"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 340.86385884245124,
+      "cleared_area_m2": 335.25823817864455,
+      "shared_retained_area_m2": 5.605620664409058
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0191"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 331.4156238873046,
+      "cleared_area_m2": 325.81000322266345,
+      "shared_retained_area_m2": 5.605620664181032
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0163"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 392.78753818558135,
+      "cleared_area_m2": 378.6805623906875,
+      "shared_retained_area_m2": 14.106975795156846
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0160"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 353.51523845156055,
+      "cleared_area_m2": 351.47023936790794,
+      "shared_retained_area_m2": 2.0449990829004583
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0160"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 353.51523845156055,
+      "cleared_area_m2": 351.47023936760246,
+      "shared_retained_area_m2": 2.0449990829004583
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0168"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 349.16356159742224,
+      "cleared_area_m2": 340.4694809418145,
+      "shared_retained_area_m2": 8.69408065507777
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0168"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 349.16356159742224,
+      "cleared_area_m2": 340.4694809420284,
+      "shared_retained_area_m2": 8.69408065507777
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0165"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 350.69289293690235,
+      "cleared_area_m2": 350.6928929356776,
+      "shared_retained_area_m2": 0
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0164"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 429.25563348525884,
+      "cleared_area_m2": 408.71075072763387,
+      "shared_retained_area_m2": 20.544882758580723
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0167"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 427.19522058246014,
+      "cleared_area_m2": 427.118263730536,
+      "shared_retained_area_m2": 0.07695685378606103
+    },
+    {
+      "demolished_ids": [
+        "B0120",
+        "B0163"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 354.71785473266425,
+      "cleared_area_m2": 340.610878939938,
+      "shared_retained_area_m2": 14.106975795156846
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0168"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 349.16356159742224,
+      "cleared_area_m2": 340.4694809415577,
+      "shared_retained_area_m2": 8.694080655229754
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0164"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0165",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 617.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 617.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7319944936806,
+          "absorbed_radiation_J": 110066032.62202083,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 467.325316938176,
+      "cleared_area_m2": 446.78043417831236,
+      "shared_retained_area_m2": 20.544882758580723
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0168"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 358.6117965525689,
+      "cleared_area_m2": 349.917715897798,
+      "shared_retained_area_m2": 8.69408065507777
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0164"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 467.325316938176,
+      "cleared_area_m2": 446.7804341783833,
+      "shared_retained_area_m2": 20.544882758580723
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0160"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 362.9634734067072,
+      "cleared_area_m2": 360.9184743237485,
+      "shared_retained_area_m2": 2.0449990829004583
+    },
+    {
+      "demolished_ids": [
+        "B0121",
+        "B0164"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0119",
+      "source_replaced": false,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 452.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 452.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8861483998244,
+          "absorbed_radiation_J": 78940852.06473283,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 476.77355189332263,
+      "cleared_area_m2": 456.228669134153,
+      "shared_retained_area_m2": 20.544882758580723
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0167"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 417.7469856273135,
+      "cleared_area_m2": 417.67002877476637,
+      "shared_retained_area_m2": 0.07695685378606103
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0163"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 392.78753818558135,
+      "cleared_area_m2": 378.6805623903111,
+      "shared_retained_area_m2": 14.106975795156846
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0160"
+      ],
+      "scenario_id": "near-B0035-h1",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 319.0394353491231,
+          "absorbed_radiation_J": 942186.0351376103,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 353.51523845156055,
+      "cleared_area_m2": 351.4702393679789,
+      "shared_retained_area_m2": 2.0449990829004583
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0165"
+      ],
+      "scenario_id": "near-B0166-h1",
+      "source_id": "B0177",
+      "source_replaced": true,
+      "scale_m": 1.0,
+      "status": "failed",
+      "observed_until_s": 908.0,
+      "reached_horizon": false,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 494,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 826,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 480,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 908.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.8306442292909,
+          "absorbed_radiation_J": 76598363.41444118,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 341.2446579817557,
+      "cleared_area_m2": 341.24465797983703,
+      "shared_retained_area_m2": 0
+    },
+    {
+      "demolished_ids": [
+        "B0119",
+        "B0164"
+      ],
+      "scenario_id": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "source_replaced": true,
+      "scale_m": 0.5,
+      "status": "passed",
+      "observed_until_s": 1200.0,
+      "reached_horizon": true,
+      "core_outcomes": [
+        {
+          "building_id": "B0035",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1809,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 312.76593696002544,
+          "absorbed_radiation_J": 247163.01970137414,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0036",
+          "role": "fengyuqiao",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 3094,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0166",
+          "role": "gulou",
+          "identity_evidence": "user_pingyan_annotation_sha256:d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+          "identity_status": "annotation_only",
+          "component_count": 1799,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "nominal_area_m2": 467.325316938176,
+      "cleared_area_m2": 446.78043417800694,
+      "shared_retained_area_m2": 20.544882758580723
+    }
+  ],
+  "scope": "original_design_families;heldout_not_used_for_selection;early_stopped_other_cores_censored",
+  "source_result_sha256": "70d128a31f0f34de1b212cde61af4fab48566f90761df38df0158833df838417"
+}

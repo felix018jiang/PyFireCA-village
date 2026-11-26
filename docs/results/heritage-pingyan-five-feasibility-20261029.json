@@ -1,0 +1,124 @@
+{
+  "schema_version": "heritage-pingyan-seed-feasibility-1",
+  "checked_at": "2026-10-29T09:31:18.353661+00:00",
+  "demolished_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "count_upper_bound": 5,
+  "nominal_area_m2": 995.4810719970926,
+  "all_8_design_checks_passed": true,
+  "all_3_cores_unignited_through_1200s_at_both_scales": true,
+  "minimum_count_proven": false,
+  "independent_confirmation_completed": false,
+  "new_CA_for_this_readonly_check": 0,
+  "checks": [
+    {
+      "scenario": "near-B0036-h1",
+      "source_id": "B0037",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364044408,
+      "shared_retained_area_m2": 9.873235594735712,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "1290610ab531317618e5c26bed30461178e0496c5cbe4381aba63d55b67d4aa6"
+    },
+    {
+      "scenario": "near-B0166-h0.5",
+      "source_id": "B0191",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364046211,
+      "shared_retained_area_m2": 9.873235594516876,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 454.12451290081697
+      },
+      "evaluation_sha256": "b866a70d9b5464477b6e81d88859c04e6b2f600a7723b1bfd21cf45678516ebb"
+    },
+    {
+      "scenario": "background-h0.5",
+      "source_id": "B0201",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364046011,
+      "shared_retained_area_m2": 9.873235594520446,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "ac0178c68262040c4b4114ddd625a2fbde99a3ec8ce6ce497bf2757c2341f359"
+    },
+    {
+      "scenario": "near-B0166-h1",
+      "source_id": "B0191",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364043877,
+      "shared_retained_area_m2": 9.873235594723605,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 506.00859115216684
+      },
+      "evaluation_sha256": "682da1ddf5e9e1c0e3efe16d8f763452e8eff1264f2162e636948883b5af845f"
+    },
+    {
+      "scenario": "near-B0036-h0.5",
+      "source_id": "B0037",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364046011,
+      "shared_retained_area_m2": 9.873235594520446,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "a10b508a4bddfa32dc588de98a01ef11c31fae61eb970f9080e65f1f49452b23"
+    },
+    {
+      "scenario": "near-B0035-h0.5",
+      "source_id": "B0120",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364044492,
+      "shared_retained_area_m2": 9.873235594520446,
+      "core_peak_temperature_K": {
+        "B0035": 312.76593696002544,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "4344da43c4f76a9624578f3e8dae06ca5e6ae775b2f0c2d5c8397bff03ee093a"
+    },
+    {
+      "scenario": "background-h1",
+      "source_id": "B0201",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364044408,
+      "shared_retained_area_m2": 9.873235594735712,
+      "core_peak_temperature_K": {
+        "B0035": 300.0,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "8a18bfd2c104c767d61065da04c70f8f3b8b1166993f082d120444df9406e9f9"
+    },
+    {
+      "scenario": "near-B0035-h1",
+      "source_id": "B0120",
+      "nominal_area_m2": 995.4810719970926,
+      "cleared_area_m2": 985.6078364045118,
+      "shared_retained_area_m2": 9.873235594735712,
+      "core_peak_temperature_K": {
+        "B0035": 319.0394353491231,
+        "B0036": 300.0,
+        "B0166": 300.0
+      },
+      "evaluation_sha256": "f64d04eae05cd4e0ae665eaa4f89be97013d461e6ea715a6249d554013ec19ff"
+    }
+  ]
+}

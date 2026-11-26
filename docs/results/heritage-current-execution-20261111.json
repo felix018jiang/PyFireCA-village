@@ -1,0 +1,104 @@
+{
+  "schema_version": "heritage-current-execution-index-1",
+  "observed_at": "2026-11-11T08:41:16.158174+00:00",
+  "historical_pause_unchanged": true,
+  "old_longcap_error_not_a_physical_failure": true,
+  "clock_recovery_registration": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-clockfix-recovery-registration-20261111.json",
+  "runs": {
+    "heritage-joint-action-batuan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-batuan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 1551.6944496250362,
+        "mip_elapsed_s": 0.0,
+        "started_checks": 8,
+        "active": {
+          "pid": 72586
+        }
+      },
+      "native_manifests_observed": 7,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-action-batuan-20261111/resume-20261111.log"
+    },
+    "heritage-joint-longcap-batuan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 10520.295153084036,
+        "started_checks": 11,
+        "active": null
+      },
+      "native_manifests_observed": 9,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/resume-20261111.log"
+    },
+    "heritage-joint-longcap-clockfix-batuan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-clockfix-batuan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 7.542024832218885e-06,
+        "started_checks": 0,
+        "active": {
+          "pid": 7896
+        }
+      },
+      "native_manifests_observed": 0,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-clockfix-batuan-20261111/resume-20261111.log"
+    },
+    "heritage-retained-area-pingyan-20261110": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110",
+      "budget_snapshot": {
+        "elapsed_s": 18703.225354596332,
+        "mip_elapsed_s": 1.9675255839829333,
+        "started_checks": 60,
+        "active": {
+          "pid": 57397
+        },
+        "clock_reconciliations": [
+          "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/recoveries/1794384201092813000/receipt.json"
+        ],
+        "elapsed_clock_includes_conservative_crash_gap_upper_bound": true
+      },
+      "native_manifests_observed": 57,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/resume-20261111.log"
+    },
+    "heritage-balanced-optimized-pingyan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-pingyan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 19.7378418330336,
+        "started_checks": 1,
+        "active": {
+          "pid": 83905
+        }
+      },
+      "native_manifests_observed": 0,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-pingyan-20261111/resume-20261111.log"
+    },
+    "heritage-narrow-hull-batuan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-narrow-hull-batuan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 636.8112930830102,
+        "started_checks": 6,
+        "active": {
+          "pid": 87801
+        }
+      },
+      "native_manifests_observed": 5,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-narrow-hull-batuan-20261111/resume-20261111.log"
+    },
+    "heritage-joint-longcap-pingyan-20261111": {
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-pingyan-20261111",
+      "budget_snapshot": {
+        "elapsed_s": 31.530975708039477,
+        "started_checks": 1,
+        "active": {
+          "pid": 87858
+        }
+      },
+      "native_manifests_observed": 0,
+      "prepared": true,
+      "log": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-pingyan-20261111/resume-20261111.log"
+    }
+  }
+}

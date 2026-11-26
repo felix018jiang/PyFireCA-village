@@ -1,0 +1,193 @@
+{
+  "scope": "synthetic isolated 4m x 4m roof; fixed aligned 2m x 2m corner ignition; source_contact removes radiation, source_both restores original kernel; not site calibration or protective design",
+  "dt_s": 0.5,
+  "horizon_s": 3600,
+  "rows": [
+    {
+      "h_m": 1.0,
+      "mode": "source_contact",
+      "nodes": 16,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.79999999999998,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 156.5,
+      "last_source_ignition_s": 522.5,
+      "last_source_burnout_s": 1337.8600000000001,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 8.0,
+        "480": 15.0,
+        "960": 16.0,
+        "1920": 16.0,
+        "3600": 16.0
+      },
+      "elapsed_s": 0.9437371249659918,
+      "energy_closure_errors_J": {
+        "fuel_release": 8.58306884765625e-06,
+        "release_split": 1.0013580322265625e-05,
+        "radiation_split": 4.5299530029296875e-06,
+        "contact_split": 9.5367431640625e-07,
+        "susceptible_radiation_split": 1.6007106751203537e-10
+      }
+    },
+    {
+      "h_m": 1.0,
+      "mode": "source_both",
+      "nodes": 16,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.79999999999998,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 151.0,
+      "last_source_ignition_s": 477.0,
+      "last_source_burnout_s": 1292.3600000000001,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 8.0,
+        "480": 16.0,
+        "960": 16.0,
+        "1920": 16.0,
+        "3600": 16.0
+      },
+      "elapsed_s": 0.9502445420366712,
+      "energy_closure_errors_J": {
+        "fuel_release": 5.7220458984375e-06,
+        "release_split": 1.6689300537109375e-06,
+        "radiation_split": 1.9073486328125e-06,
+        "contact_split": 1.9073486328125e-06,
+        "susceptible_radiation_split": 1.4260876923799515e-08
+      }
+    },
+    {
+      "h_m": 0.5,
+      "mode": "source_contact",
+      "nodes": 64,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.79999999999998,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 156.5,
+      "last_source_ignition_s": 1008.0,
+      "last_source_burnout_s": 1823.3600000000001,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 6.0,
+        "480": 10.75,
+        "960": 15.75,
+        "1920": 16.0,
+        "3600": 16.0
+      },
+      "elapsed_s": 1.0295490000280552,
+      "energy_closure_errors_J": {
+        "fuel_release": 9.5367431640625e-06,
+        "release_split": 1.2636184692382812e-05,
+        "radiation_split": 4.5299530029296875e-06,
+        "contact_split": 8.58306884765625e-06,
+        "susceptible_radiation_split": 2.7212081477046013e-09
+      }
+    },
+    {
+      "h_m": 0.5,
+      "mode": "source_both",
+      "nodes": 64,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.79999999999998,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 151.0,
+      "last_source_ignition_s": 865.0,
+      "last_source_burnout_s": 1680.3600000000001,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 6.0,
+        "480": 10.75,
+        "960": 16.0,
+        "1920": 16.0,
+        "3600": 16.0
+      },
+      "elapsed_s": 1.0393767090281472,
+      "energy_closure_errors_J": {
+        "fuel_release": 6.198883056640625e-06,
+        "release_split": 1.049041748046875e-05,
+        "radiation_split": 1.1920928955078125e-06,
+        "contact_split": 5.9604644775390625e-06,
+        "susceptible_radiation_split": 3.702007234096527e-08
+      }
+    },
+    {
+      "h_m": 0.25,
+      "mode": "source_contact",
+      "nodes": 256,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.80000000000004,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 156.5,
+      "last_source_ignition_s": 1959.7200000000003,
+      "last_source_burnout_s": 2775.0800000000004,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 5.0,
+        "480": 7.1875,
+        "960": 11.1875,
+        "1920": 15.9375,
+        "3600": 16.0
+      },
+      "elapsed_s": 1.4331631250097416,
+      "energy_closure_errors_J": {
+        "fuel_release": 1.1444091796875e-05,
+        "release_split": 2.1457672119140625e-06,
+        "radiation_split": 6.198883056640625e-06,
+        "contact_split": 7.3909759521484375e-06,
+        "susceptible_radiation_split": 2.2846506908535957e-09
+      }
+    },
+    {
+      "h_m": 0.25,
+      "mode": "source_both",
+      "nodes": 256,
+      "initial_ignited_area_m2": 4.0,
+      "source_area_m2": 16.0,
+      "initial_source_fuel_kg": 172.80000000000004,
+      "initial_source_energy_J": 2809727999.9999995,
+      "source_ignited_area_m2": 16.0,
+      "first_secondary_ignition_s": 150.5,
+      "last_source_ignition_s": 1743.8600000000001,
+      "last_source_burnout_s": 2559.2200000000003,
+      "area_by_time": {
+        "0": 4.0,
+        "120": 4.0,
+        "240": 5.0,
+        "480": 7.1875,
+        "960": 12.375,
+        "1920": 16.0,
+        "3600": 16.0
+      },
+      "elapsed_s": 1.8135185829596594,
+      "energy_closure_errors_J": {
+        "fuel_release": 1.71661376953125e-05,
+        "release_split": 1.9073486328125e-06,
+        "radiation_split": 4.76837158203125e-06,
+        "contact_split": 1.9073486328125e-05,
+        "susceptible_radiation_split": 5.611218512058258e-08
+      }
+    }
+  ],
+  "source_files_sha256": {
+    "src/pyfireca/planning/roof_ignition.py": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+    "src/pyfireca/planning/roof_diagnostics.py": "c3a8588931328e5c6d49cd00daaaa7ecacb9c576345ddbdf3816c7bffc977b65",
+    "src/pyfireca/village/flame_contact_v3.py": "204f4407ca19c5e422ad0e2310e87c3bc084f397efadd8844433098b72b6ea97",
+    "src/pyfireca/village/solver_v3.py": "ae359e6504e0ccb6475a5f8cfa75890f90f06362ce5d7e017ca08d270861dbc3"
+  }
+}

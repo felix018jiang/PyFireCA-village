@@ -1,0 +1,402 @@
+{
+  "schema_version": "heritage-gulou-path-audit-1",
+  "new_thermal_runs": 0,
+  "target_id": "B0073",
+  "neighbours": [
+    {
+      "building_id": "B0076",
+      "distance_to_gulou_m": 0.7822847407576603,
+      "footprint_area_m2": 32.88073952966961,
+      "overlaps": [
+        {
+          "other_id": "B0075",
+          "area_m2": 0.055600381821089895
+        }
+      ]
+    },
+    {
+      "building_id": "B0031",
+      "distance_to_gulou_m": 5.036063503757587,
+      "footprint_area_m2": 728.53843354429,
+      "overlaps": [
+        {
+          "other_id": "B0029",
+          "area_m2": 5.480558221351345
+        },
+        {
+          "other_id": "B0030",
+          "area_m2": 0.2328011263896929
+        },
+        {
+          "other_id": "B0069",
+          "area_m2": 16.369910082212726
+        },
+        {
+          "other_id": "B0149",
+          "area_m2": 321.3689389273993
+        }
+      ]
+    },
+    {
+      "building_id": "B0075",
+      "distance_to_gulou_m": 5.801588023429711,
+      "footprint_area_m2": 86.01736126268037,
+      "overlaps": [
+        {
+          "other_id": "B0076",
+          "area_m2": 0.055600381821089895
+        },
+        {
+          "other_id": "B0077",
+          "area_m2": 3.3535705576188235
+        }
+      ]
+    },
+    {
+      "building_id": "B0071",
+      "distance_to_gulou_m": 9.387264199358075,
+      "footprint_area_m2": 216.69866222715098,
+      "overlaps": [
+        {
+          "other_id": "B0074",
+          "area_m2": 3.5278460917929912
+        }
+      ]
+    },
+    {
+      "building_id": "B0074",
+      "distance_to_gulou_m": 9.737900500118096,
+      "footprint_area_m2": 117.32700743387616,
+      "overlaps": [
+        {
+          "other_id": "B0071",
+          "area_m2": 3.5278460917929877
+        }
+      ]
+    },
+    {
+      "building_id": "B0077",
+      "distance_to_gulou_m": 11.517281031771835,
+      "footprint_area_m2": 75.52470206091448,
+      "overlaps": [
+        {
+          "other_id": "B0075",
+          "area_m2": 3.353570557618825
+        }
+      ]
+    },
+    {
+      "building_id": "B0067",
+      "distance_to_gulou_m": 12.585204821048597,
+      "footprint_area_m2": 176.41133973125253,
+      "overlaps": []
+    },
+    {
+      "building_id": "B0149",
+      "distance_to_gulou_m": 15.413684837791017,
+      "footprint_area_m2": 321.3689389273993,
+      "overlaps": [
+        {
+          "other_id": "B0031",
+          "area_m2": 321.3689389273993
+        },
+        {
+          "other_id": "B0069",
+          "area_m2": 2.9523850098861364
+        }
+      ]
+    },
+    {
+      "building_id": "B0068",
+      "distance_to_gulou_m": 16.962739346236535,
+      "footprint_area_m2": 111.15485496357226,
+      "overlaps": [
+        {
+          "other_id": "B0066",
+          "area_m2": 0.7960486931558465
+        }
+      ]
+    },
+    {
+      "building_id": "B0030",
+      "distance_to_gulou_m": 17.09227943676167,
+      "footprint_area_m2": 363.93255391084404,
+      "overlaps": [
+        {
+          "other_id": "B0028",
+          "area_m2": 0.6465458201664561
+        },
+        {
+          "other_id": "B0029",
+          "area_m2": 1.4459726454934883
+        },
+        {
+          "other_id": "B0031",
+          "area_m2": 0.23280112638969286
+        }
+      ]
+    },
+    {
+      "building_id": "B0078",
+      "distance_to_gulou_m": 17.528220900494983,
+      "footprint_area_m2": 69.46477054540776,
+      "overlaps": []
+    },
+    {
+      "building_id": "B0069",
+      "distance_to_gulou_m": 17.65301552028619,
+      "footprint_area_m2": 243.6316911903978,
+      "overlaps": [
+        {
+          "other_id": "B0031",
+          "area_m2": 16.369910082212726
+        },
+        {
+          "other_id": "B0070",
+          "area_m2": 1.5117673355556143
+        },
+        {
+          "other_id": "B0072",
+          "area_m2": 3.0066877271806685
+        },
+        {
+          "other_id": "B0149",
+          "area_m2": 2.952385009886136
+        }
+      ]
+    },
+    {
+      "building_id": "B0079",
+      "distance_to_gulou_m": 19.704935953654417,
+      "footprint_area_m2": 97.63223000221032,
+      "overlaps": [
+        {
+          "other_id": "B0080",
+          "area_m2": 0.0024000056628704146
+        },
+        {
+          "other_id": "B0083",
+          "area_m2": 1.1315612867469929
+        }
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-a/near-B0073-001-h1p0/remove-B0061",
+      "source_ids": [
+        "B0075"
+      ],
+      "first_gulou_ignition_s": 725.0,
+      "critical_node": 50541,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 495354.8199457997,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0075"
+          ],
+          "energy_J": 392916.8022692057,
+          "fraction": 0.7932027436660403
+        },
+        {
+          "owners": [
+            "B0076"
+          ],
+          "energy_J": 84130.86150396374,
+          "fraction": 0.1698395939968225
+        },
+        {
+          "owners": [
+            "B0077"
+          ],
+          "energy_J": 15548.071142450559,
+          "fraction": 0.03138774574587118
+        },
+        {
+          "owners": [
+            "B0075",
+            "B0077"
+          ],
+          "energy_J": 2684.4076947934636,
+          "fraction": 0.005419161350014084
+        },
+        {
+          "owners": [
+            "B0075",
+            "B0076"
+          ],
+          "energy_J": 74.67733538628504,
+          "fraction": 0.00015075524125203024
+        }
+      ],
+      "building_first_ignitions": {
+        "B0073": 725.0,
+        "B0075": 0.0,
+        "B0076": 455.0,
+        "B0077": 137.0,
+        "B0078": 697.0,
+        "B0079": 915.0,
+        "B0080": 933.0,
+        "B0081": 1126.3600000000001,
+        "B0083": 1182.0
+      },
+      "final_gulou_incident_reconstruction_error_J": 8.344650268554688e-07,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths",
+      "cohort": "a",
+      "draw_id": "near-B0073-001",
+      "scale_m": 1.0
+    },
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-a/near-B0073-001-h0p5/remove-B0061",
+      "source_ids": [
+        "B0075"
+      ],
+      "first_gulou_ignition_s": 811.0,
+      "critical_node": 50880,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 17402.15997550103,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0075"
+          ],
+          "energy_J": 13629.224478465536,
+          "fraction": 0.7831915404554908
+        },
+        {
+          "owners": [
+            "B0076"
+          ],
+          "energy_J": 3019.582217500707,
+          "fraction": 0.17351766802234386
+        },
+        {
+          "owners": [
+            "B0077"
+          ],
+          "energy_J": 645.1327157138311,
+          "fraction": 0.03707199086906779
+        },
+        {
+          "owners": [
+            "B0075",
+            "B0077"
+          ],
+          "energy_J": 105.89279226065143,
+          "fraction": 0.006085037283287166
+        },
+        {
+          "owners": [
+            "B0075",
+            "B0076"
+          ],
+          "energy_J": 2.327771560302127,
+          "fraction": 0.00013376336981036792
+        }
+      ],
+      "building_first_ignitions": {
+        "B0073": 811.0,
+        "B0075": 0.0,
+        "B0076": 495.0,
+        "B0077": 140.0,
+        "B0078": 761.0,
+        "B0079": 979.36,
+        "B0080": 997.36,
+        "B0081": 1190.3600000000001
+      },
+      "final_gulou_incident_reconstruction_error_J": 7.152557373046875e-07,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths",
+      "cohort": "a",
+      "draw_id": "near-B0073-001",
+      "scale_m": 0.5
+    },
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-b/near-B0073-003-h1p0/remove-B0061",
+      "source_ids": [
+        "B0071"
+      ],
+      "first_gulou_ignition_s": 1098.0,
+      "critical_node": 49875,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 728508.1340916489,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0071"
+          ],
+          "energy_J": 375919.1713693601,
+          "fraction": 0.5160123185694838
+        },
+        {
+          "owners": [
+            "B0031"
+          ],
+          "energy_J": 352588.96272228874,
+          "fraction": 0.48398768143051624
+        }
+      ],
+      "building_first_ignitions": {
+        "B0029": 1165.3600000000001,
+        "B0030": 1006.36,
+        "B0031": 556.0,
+        "B0057": 1194.3600000000001,
+        "B0068": 1187.3600000000001,
+        "B0069": 510.0,
+        "B0070": 953.36,
+        "B0071": 0.0,
+        "B0072": 858.0,
+        "B0073": 1098.0,
+        "B0074": 766.0,
+        "B0149": 607.0
+      },
+      "final_gulou_incident_reconstruction_error_J": 0.0,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths",
+      "cohort": "b",
+      "draw_id": "near-B0073-003",
+      "scale_m": 1.0
+    },
+    {
+      "case": "runs/research/heritage-B0061-validation-20261024-b/near-B0073-003-h0p5/remove-B0061",
+      "source_ids": [
+        "B0071"
+      ],
+      "first_gulou_ignition_s": 1111.3600000000001,
+      "critical_node": 50527,
+      "external_contact_source_identities": [],
+      "critical_incident_radiation_J": 557.0230921647939,
+      "critical_radiation_contributors": [
+        {
+          "owners": [
+            "B0071"
+          ],
+          "energy_J": 319.92605650066133,
+          "fraction": 0.5743497190705552
+        },
+        {
+          "owners": [
+            "B0031"
+          ],
+          "energy_J": 237.09703566413256,
+          "fraction": 0.42565028092944485
+        }
+      ],
+      "building_first_ignitions": {
+        "B0030": 1085.3600000000001,
+        "B0031": 633.0,
+        "B0069": 571.0,
+        "B0070": 1023.36,
+        "B0071": 0.0,
+        "B0072": 930.0,
+        "B0073": 1111.3600000000001,
+        "B0074": 850.0,
+        "B0149": 682.0
+      },
+      "final_gulou_incident_reconstruction_error_J": 1.2665987014770508e-07,
+      "interpretation": "incident_energy_at_first_ignition_not_unique_causal_paths",
+      "cohort": "b",
+      "draw_id": "near-B0073-003",
+      "scale_m": 0.5
+    }
+  ]
+}

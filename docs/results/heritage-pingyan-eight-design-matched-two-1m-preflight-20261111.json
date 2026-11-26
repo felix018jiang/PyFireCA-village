@@ -1,0 +1,63 @@
+{
+  "scope": "Two separate, newly registered 1 m slots for known physical fires. The prior trial retains its own 24-slot ledger.",
+  "preflight_passed": true,
+  "geometry_rows": [
+    {
+      "original_manifest_sha256": "236abb6ff45bdd6252c00cbe97c0054ea60fd62dd7346d5da5449bacf828bdb5",
+      "exact_old_mesh_and_integration_mask": true,
+      "common_layout_sha256": "6eb1377cd5941d41de70e4dd2a791528b05815a0c5d0d6fe4c0b9b8c7d2c00ef",
+      "integrated_node_mask_sha256": "4e13f4b8f3d420c6cb986f9ceb71778646b8e20169532775d44534f77057a579",
+      "identical_source_material_sha256": "d25b8725fcbd6578a4c9dbc82d2352380ecbedfa1735108de2228005df6a3dc6",
+      "original_compact_budget_fingerprint": "d25b8725fcbd6578a4c9dbc82d2352380ecbedfa1735108de2228005df6a3dc6",
+      "source_footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+      "actual_size_covered_and_fuel_match": true,
+      "nodes": 298122,
+      "peak_stage_edge_bound": 8140391,
+      "actual_stage_upper_bounds": {
+        "after_roofs_before_grass": {
+          "raw_point_edges": 7942816,
+          "integrated_edges_upper_bound": 8140391
+        },
+        "after_roofs_and_grass": {
+          "raw_point_edges": 7917118,
+          "integrated_edges_upper_bound": 8095717
+        }
+      }
+    },
+    {
+      "original_manifest_sha256": "d8ad4ccf24b17ff5eb9319be25a7a549371aeedaa8a7f078429936d922da8982",
+      "exact_old_mesh_and_integration_mask": true,
+      "common_layout_sha256": "093722889ee0ddaa978519cf05ad9bd4a3bd2456b8b0a1a2ebf13e36a7ca2ba2",
+      "integrated_node_mask_sha256": "c6b040775a155b255337ba748bb86ab63210560e05ad3a5348bb1743e5357a2b",
+      "identical_source_material_sha256": "58ce7d3a7d559a32c33c3db32cba540deb3cc65938250c9bc9419d44255015ff",
+      "original_compact_budget_fingerprint": "58ce7d3a7d559a32c33c3db32cba540deb3cc65938250c9bc9419d44255015ff",
+      "source_footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+      "actual_size_covered_and_fuel_match": true,
+      "nodes": 298112,
+      "peak_stage_edge_bound": 8153473,
+      "actual_stage_upper_bounds": {
+        "after_roofs_before_grass": {
+          "raw_point_edges": 7954284,
+          "integrated_edges_upper_bound": 8153473
+        },
+        "after_roofs_and_grass": {
+          "raw_point_edges": 7927438,
+          "integrated_edges_upper_bound": 8106823
+        }
+      }
+    }
+  ],
+  "source_registration_sha256": "113cf3ba13bba069e480392ba4ef10da0bd414267e105fc00ce44664b18eadcc",
+  "new_action_sha256": "ede4ce000bd8aa947c63ebed59244b6e4111a23235c3f3a4ecf4e0e744a6989b",
+  "local_batch_experiment_sha256": "ac06436b36baf036b204836d409f369da067dbcdf38e8a4104c91eb5c654cc40",
+  "frozen_physics_experiment_sha256": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+  "driver_sha256": "eda4d720cf04f0b1aaa56f5b3225c13996ad4d5fc06f965f90462532ea0aa0af",
+  "max_nodes": 500000,
+  "maximum_edges_per_actual_stage": 60000000,
+  "preflight_peak_RSS_bytes": 924663808,
+  "elapsed_memory_scope": "Peak of the one preflight process. Solver peak remains unmeasured.",
+  "free_disk_GB_at_preflight": 56.833097728,
+  "new_fire_trajectories": 0,
+  "new_draws": 0,
+  "receipt_sha256": "816e5c3accf852e91fff63e16504ed8ad0cec57255108a0268109030a14fd39f"
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "two-village-compartment-capacity-vs-observed-1",
+  "villages": {
+    "batuan": {
+      "inputs": [
+        {
+          "file": "docs/results/heritage-compartment-loss-envelopes-batuan-v2-20261111.json",
+          "sha256": "63b18ee92f242eeec83dc7670214fa2acd1da91369412b96e8da06ed48c48c6d"
+        },
+        {
+          "file": "docs/results/heritage-batuan-direct-D9-G0-complete8-audit-20261111.json",
+          "sha256": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b"
+        },
+        {
+          "file": "docs/results/heritage-batuan-independent-D9-G0-native-strict-20261111.json",
+          "sha256": "0a6325712f2543993797e23ea286355e6d5dd75e2f6895f94c5b366d7c352450"
+        }
+      ],
+      "rows": [
+        {
+          "plan": "no-clearance",
+          "C_m2": 0.0,
+          "source_independent_core_certificate": false,
+          "N_upper_any_single_roof": 331,
+          "A_upper_any_single_roof_m2": 1984671.7,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 276,
+          "original_certified_witness_retention_fraction": 1.0
+        },
+        {
+          "plan": "historical-design-frontier",
+          "C_m2": 1089.0173624408872,
+          "source_independent_core_certificate": false,
+          "N_upper_any_single_roof": 329,
+          "A_upper_any_single_roof_m2": 1983582.68,
+          "native_closed_campaigns_observed": [
+            {
+              "phase": "design",
+              "completed_cases": 8,
+              "N": {
+                "lower": 2,
+                "upper": 5
+              },
+              "A_m2": 324.09411544264276
+            },
+            {
+              "phase": "independent",
+              "completed_cases": 8,
+              "N": {
+                "lower": 24,
+                "upper": 24
+              },
+              "A_m2": 6464.5396418130995
+            }
+          ],
+          "retained_certified_nonempty_25m2_source_roofs": 269,
+          "original_certified_witness_retention_fraction": 0.9746376811594203
+        },
+        {
+          "plan": "thermal-certificate",
+          "C_m2": 2270.090100539021,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 321,
+          "A_upper_any_single_roof_m2": 1981609.32,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 271,
+          "original_certified_witness_retention_fraction": 0.9818840579710145
+        },
+        {
+          "plan": "thermal-plus-perimeter",
+          "C_m2": 35570.09010053902,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 321,
+          "A_upper_any_single_roof_m2": 517559.32,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 271,
+          "original_certified_witness_retention_fraction": 0.9818840579710145
+        },
+        {
+          "plan": "thermal-plus-building-ground-separation",
+          "C_m2": 51570.09010053902,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 157,
+          "A_upper_any_single_roof_m2": 27140.28,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 271,
+          "original_certified_witness_retention_fraction": 0.9818840579710145
+        },
+        {
+          "plan": "thermal-plus-roof-cluster-perimeters",
+          "C_m2": 48395.09010053902,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 157,
+          "A_upper_any_single_roof_m2": 34740.28,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 271,
+          "original_certified_witness_retention_fraction": 0.9818840579710145
+        },
+        {
+          "plan": "thermal-plus-perimeter-and-150m-compartments",
+          "C_m2": 185022.60046891344,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 54,
+          "A_upper_any_single_roof_m2": 15091.43,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 171,
+          "original_certified_witness_retention_fraction": 0.6195652173913043
+        }
+      ]
+    },
+    "pingyan": {
+      "inputs": [
+        {
+          "file": "docs/results/heritage-compartment-loss-envelopes-pingyan-v2-20261111.json",
+          "sha256": "d62bd8758b97689d00b0f9c662fe30647c47e3e9c046c4443d4698a4d90031d6"
+        },
+        {
+          "file": "docs/results/heritage-pingyan-local-union-strict-complete8-20261111.json",
+          "sha256": "cce9eafd984f336cfcc648c5e4d40cba53aead163fa6aec605215aaf3fb977c8"
+        }
+      ],
+      "rows": [
+        {
+          "plan": "no-clearance",
+          "C_m2": 0.0,
+          "source_independent_core_certificate": false,
+          "N_upper_any_single_roof": 950,
+          "A_upper_any_single_roof_m2": 5600259.38,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 895,
+          "original_certified_witness_retention_fraction": 1.0
+        },
+        {
+          "plan": "historical-design-frontier",
+          "C_m2": 10669.276972304711,
+          "source_independent_core_certificate": false,
+          "N_upper_any_single_roof": 926,
+          "A_upper_any_single_roof_m2": 5587391.4,
+          "native_closed_campaigns_observed": [
+            {
+              "phase": "design",
+              "completed_cases": 8,
+              "N": {
+                "lower": 1,
+                "upper": 3
+              },
+              "A_m2": 241.48854379824064
+            }
+          ],
+          "retained_certified_nonempty_25m2_source_roofs": 873,
+          "original_certified_witness_retention_fraction": 0.9754189944134078
+        },
+        {
+          "plan": "thermal-certificate",
+          "C_m2": 3929.487544174773,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 937,
+          "A_upper_any_single_roof_m2": 5594752.2,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 883,
+          "original_certified_witness_retention_fraction": 0.9865921787709497
+        },
+        {
+          "plan": "thermal-plus-perimeter",
+          "C_m2": 72979.48754417477,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 934,
+          "A_upper_any_single_roof_m2": 1635889.56,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 883,
+          "original_certified_witness_retention_fraction": 0.9865921787709497
+        },
+        {
+          "plan": "thermal-plus-building-ground-separation",
+          "C_m2": 154904.48754417477,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 366,
+          "A_upper_any_single_roof_m2": 144326.23,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 883,
+          "original_certified_witness_retention_fraction": 0.9865921787709497
+        },
+        {
+          "plan": "thermal-plus-roof-cluster-perimeters",
+          "C_m2": 102304.48754417477,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 551,
+          "A_upper_any_single_roof_m2": 325590.46,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 883,
+          "original_certified_witness_retention_fraction": 0.9865921787709497
+        },
+        {
+          "plan": "thermal-plus-perimeter-and-150m-compartments",
+          "C_m2": 565554.7275729917,
+          "source_independent_core_certificate": true,
+          "N_upper_any_single_roof": 54,
+          "A_upper_any_single_roof_m2": 15658.98,
+          "native_closed_campaigns_observed": [],
+          "retained_certified_nonempty_25m2_source_roofs": 481,
+          "original_certified_witness_retention_fraction": 0.5374301675977654
+        }
+      ]
+    }
+  },
+  "source_scope": "One retained ordinary roof directly ignited. All surviving pieces of that owner contribute together. Positive area/owner loss without external feedback; blocked contacts and cumulative energy prove core protection for the modeled protective actions.",
+  "stock_check": "The witness cohort consists of ordinary roofs each containing an entirely exclusive 6 m square on known modeled roof area. That square admits a 25 m2 ignition disk. Counts give a lower bound on retained possible sources. Graph bounds include the wider population of all remaining represented ordinary roofs; they are not conditioned on passing this square test. No source positions or exposure rankings are released.",
+  "reading": "Upper limits for the complete model domain and every single retained roof source are structural capacities. The finite historical campaigns are scenario-specific losses. Empty campaign list means this analysis imports no completed matched native campaign. These capacity comparisons do not rank unobserved realized fire losses.",
+  "audit_sha256": "c445430c210508896afe3d71bef3e0d18003827e6968c8a306f29d8be677c906"
+}

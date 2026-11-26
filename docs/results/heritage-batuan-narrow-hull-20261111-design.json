@@ -1,0 +1,43 @@
+{
+  "actual_sources": {
+    "B0061-known": "B0063",
+    "B0062-known": "B0062",
+    "B0071-known": "B0067",
+    "B0075-known": "B0075"
+  },
+  "all_five_widths_will_be_evaluated_without_outcome_selection": true,
+  "cross_partition_distances_and_pairs_are_diagnostic_only": true,
+  "external_w15_01_is_not_rescheduled": true,
+  "geometric_capacity_proxy_is_not_fire_safety_or_loss_prediction": true,
+  "hull_rule": "same_convex_hull_of_full_core_and_actual_source_roofs",
+  "inner_offset_m": 0,
+  "input_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.comparison-catalog.json": "2f47df739defd81a2b83aeedefb5df832af72efa1ac70f54217429f42a05e6a9",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.json": "0ce1536620768579526125c691311e3e21f5682e82118e8f2cfc27b03d8708e1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_narrow_hull_catalog.py": "7eaa313008baa1fb0aa5a43a06e21e6b9e78b9dd4e4b03af99bb5a50f11ff0d2",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "isolation_is_required": false,
+  "native_CA_outcomes_read_for_selection": [],
+  "new_CA_checks": 0,
+  "original_seed_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "registered_before_parameter_calculation": true,
+  "schema_version": "heritage-narrow-hull-band-design-1",
+  "village_id": "batuan",
+  "widths_m": [
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5
+  ]
+}

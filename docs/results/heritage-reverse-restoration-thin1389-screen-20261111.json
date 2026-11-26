@@ -1,0 +1,1054 @@
+{
+  "schema_version": "heritage-reverse-restoration-design-audit-1",
+  "positive_area_village_restoration_certified": false,
+  "large_village_CA_runs": 0,
+  "large_village_graphs_constructed": 0,
+  "native_original_results_relabelled": false,
+  "sufficient_condition_design": {
+    "scope": "same finite model, source, common physical indices and numerical backend",
+    "required_premises": [
+      "same N and geometry; old cleared R indices are INERT, never deleted",
+      "R stock/masks only; kept parameters and permissions exact",
+      "unchanged first-retained source, 0-time footprint and event list",
+      "no firebrands, external feedback or opaque renormalized radiation",
+      "no possible old-ever-ignited I radiation/contact incoming edge to R",
+      "I radiation target/weight bytes exact; whole new graph admissible",
+      "all-active-subset sparse guard; no sparse/dense equivalence assumed",
+      "contact padding and I rows exact; source allocations preserved",
+      "R: positive ignition slack, nonpositive no-source flux, fixed water",
+      "R cooling limit including global contact h is at least unchanged maxdt",
+      "kept float update map/minimum timestep terms confirmed unchanged",
+      "new stock/derived endpoint validity and closure checked independently"
+    ],
+    "inductive_conclusion_if_all_premises_are_verified": "same old-kept heat/burn/clock trajectory; R remains cold and unignited; same core safety and physical burned-out N/A",
+    "not_invariant": [
+      "R state/validity/initial or residual fuel/water/retained area",
+      "masked aggregate budget last bits and native metadata fingerprints"
+    ],
+    "native_restored_execution_claimed": false,
+    "village_status": "incomplete proof: screen only; use CA ablation until guarded"
+  },
+  "anchor_screen": {
+    "schema_version": "heritage-reverse-restoration-spatial-screen-1",
+    "native_problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+    "anchor_plan_id": "roof-seed-core-source-hull-ring-b0-w0.01",
+    "original_action_count": 21,
+    "original_roof_action_count": 9,
+    "original_grass_action_count": 12,
+    "source_policy_guard": [
+      {
+        "fire_id": "B0075-known",
+        "actual_source_id": "B0075",
+        "restoration_changes_first_retained_source_ids": []
+      },
+      {
+        "fire_id": "B0071-known",
+        "actual_source_id": "B0067",
+        "restoration_changes_first_retained_source_ids": [
+          "B0071"
+        ]
+      },
+      {
+        "fire_id": "B0062-known",
+        "actual_source_id": "B0062",
+        "restoration_changes_first_retained_source_ids": []
+      },
+      {
+        "fire_id": "B0061-known",
+        "actual_source_id": "B0063",
+        "restoration_changes_first_retained_source_ids": [
+          "B0061"
+        ]
+      }
+    ],
+    "source_switch_blocked_roof_ids": [
+      "B0061",
+      "B0071"
+    ],
+    "spatial_and_source_screen_candidate_action_ids": [
+      "G52203",
+      "G52550",
+      "G52551",
+      "G52898",
+      "G53593"
+    ],
+    "spatial_screen_candidate_grass_footprint_m2": 125,
+    "zero_physical_effect_action_ids": [],
+    "per_scenario": [
+      {
+        "scenario_id": "B0075-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/49380b1bdde1ef584b50ee5368844ee1616a7fc2880d4cb61b2c0226087266b2/complete.json",
+        "manifest_sha256": "476bf70cb26e67fc6185d7927d508ce26260bc52e9e9b8521378132492358b73",
+        "actual_source_id": "B0075",
+        "original_ignited_node_count": 140,
+        "warm_unignited_positive_area_node_count": 245,
+        "radiation_edge_count": 3240956,
+        "all_ignited_outdegree_conservative_upper": 80447,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 239,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 289,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 188,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 69,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0075-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/a8d7ccd01c75a1c4a95ffa905da9402cd5ac5e9c1485879adfc3257dd9c78f17/complete.json",
+        "manifest_sha256": "56e49d806d2b47b1d45260c0bce06759ffc00e45a0ec0622fece0516ca1a19b2",
+        "actual_source_id": "B0075",
+        "original_ignited_node_count": 452,
+        "warm_unignited_positive_area_node_count": 788,
+        "radiation_edge_count": 14194640,
+        "all_ignited_outdegree_conservative_upper": 830324,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 874,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 1003,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 608,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 195,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0071-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/f06c3aed2800bff1d317e1fa81c205c25f51c1b8a4a460061edc2d804b6956d3/complete.json",
+        "manifest_sha256": "421943c6bbc7c0cbbdb67e6249eba22f5bcc20d182398a9e24f9937f8645a559",
+        "actual_source_id": "B0067",
+        "original_ignited_node_count": 246,
+        "warm_unignited_positive_area_node_count": 124,
+        "radiation_edge_count": 2639780,
+        "all_ignited_outdegree_conservative_upper": 98892,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 239,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 300,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 182,
+            "restored_covered_fuel_area_m2": 117.32700906629786,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 69,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0071-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/ba0e01f4f8b727180704cb2810ca68f54ab6746290e72d631da7ea7775f268ea/complete.json",
+        "manifest_sha256": "c9d98fe905994216a46a54404153131e5e1206736519c629d3b373c576a400c7",
+        "actual_source_id": "B0067",
+        "original_ignited_node_count": 829,
+        "warm_unignited_positive_area_node_count": 363,
+        "radiation_edge_count": 7720146,
+        "all_ignited_outdegree_conservative_upper": 1075886,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 874,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 1026,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 598,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 196,
+            "restored_covered_fuel_area_m2": 32.82513931312821,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0062-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/19c68576e36bd4cad2ae6795797ab7f130ce955edd6e0f713b8cc56a8418a73b/complete.json",
+        "manifest_sha256": "2537c666a436165a33e751ec489e7582ad2d3d0724f1aee470e6dbb29dccc05d",
+        "actual_source_id": "B0062",
+        "original_ignited_node_count": 313,
+        "warm_unignited_positive_area_node_count": 117,
+        "radiation_edge_count": 2711736,
+        "all_ignited_outdegree_conservative_upper": 201831,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 256,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 280,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 53,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0062-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/5d7d05f0ab343162be0ff6057d28e590842206c226db0b9f20fcbf827a06c007/complete.json",
+        "manifest_sha256": "5b68e9a6a7cdfe81eae60358890df0abdd9db30514001c8d9de9b3b391917d9d",
+        "actual_source_id": "B0062",
+        "original_ignited_node_count": 989,
+        "warm_unignited_positive_area_node_count": 335,
+        "radiation_edge_count": 8411460,
+        "all_ignited_outdegree_conservative_upper": 2018991,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 906,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 985,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 50,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 164,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0061-known-h1",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/0090aded998076945166ab729b9fe7c494833805ee5e79526ee1fc9a776229ec/complete.json",
+        "manifest_sha256": "41f4cab108af25fb730df58ad932f340949fcb5e109e890b4ffdb4b0c5277112",
+        "actual_source_id": "B0063",
+        "original_ignited_node_count": 301,
+        "warm_unignited_positive_area_node_count": 117,
+        "radiation_edge_count": 2701654,
+        "all_ignited_outdegree_conservative_upper": 190870,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 263,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 280,
+            "restored_covered_fuel_area_m2": 216.6986645756131,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 28,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 53,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 99,
+            "restored_covered_fuel_area_m2": 72.1711317463354,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      },
+      {
+        "scenario_id": "B0061-known-h0.5",
+        "manifest": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/8f72a528f549fd876457834581cf113e970754d613da9aa264ac6a9e99dc46b4/complete.json",
+        "manifest_sha256": "61a20d0a8216dd257f0603a07b0fd21a25d06f4fcbff599184060ce6bd27aadd",
+        "actual_source_id": "B0063",
+        "original_ignited_node_count": 965,
+        "warm_unignited_positive_area_node_count": 335,
+        "radiation_edge_count": 8307134,
+        "all_ignited_outdegree_conservative_upper": 1944513,
+        "strict_always_sparse_bound_verified": true,
+        "parent_box_bound_includes_all_node_geometries_and_quadrature": true,
+        "action_screen": {
+          "B0060": {
+            "restored_positive_physical_node_count": 10,
+            "restored_covered_fuel_area_m2": 127.2537971754818,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0061": {
+            "restored_positive_physical_node_count": 918,
+            "restored_covered_fuel_area_m2": 197.8460151989147,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0064": {
+            "restored_positive_physical_node_count": 14,
+            "restored_covered_fuel_area_m2": 107.86219691128359,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0065": {
+            "restored_positive_physical_node_count": 13,
+            "restored_covered_fuel_area_m2": 110.9475492969152,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0068": {
+            "restored_positive_physical_node_count": 12,
+            "restored_covered_fuel_area_m2": 110.35880585589072,
+            "outside_all_ignited_parent_box_15m_zones": false
+          },
+          "B0071": {
+            "restored_positive_physical_node_count": 985,
+            "restored_covered_fuel_area_m2": 216.69866457561312,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0074": {
+            "restored_positive_physical_node_count": 50,
+            "restored_covered_fuel_area_m2": 117.32700906629785,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0076": {
+            "restored_positive_physical_node_count": 164,
+            "restored_covered_fuel_area_m2": 32.82513931312822,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "B0077": {
+            "restored_positive_physical_node_count": 341,
+            "restored_covered_fuel_area_m2": 72.17113174633542,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50118": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50465": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50812": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G50813": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51160": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51508": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G51856": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52203": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52550": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52551": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G52898": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          },
+          "G53593": {
+            "restored_positive_physical_node_count": 1,
+            "restored_covered_fuel_area_m2": 25.0,
+            "outside_all_ignited_parent_box_15m_zones": true
+          }
+        }
+      }
+    ],
+    "candidate_status": "screening_only;not_restoration_certificate;not_native_restored_run",
+    "positive_area_restoration_certified": false,
+    "restored_native_CA_runs": 0,
+    "large_radiation_or_contact_graphs_constructed": 0,
+    "roof_construction_saving_computed": false,
+    "remaining_proof_obligations": [
+      "native restored baseline material/mask/support and original-owner-AND witness",
+      "same source/direct event set and immutable mesh/integration membership",
+      "exact retained ignited-source radiation span bytes; transparent no renormalization",
+      "restored full operator passes source-weight-budget and graph resource admissibility",
+      "all active subsets use unchanged sparse path; dense-path alternatives separately proved",
+      "contact padded width and original burning-row bytes remain exactly unchanged",
+      "restored zero-source ambient update and water storage are exact fixed points",
+      "restored cold CFL including global contact h is at least original maxdt",
+      "pointwise masked thermal-map identity on retained susceptible nodes",
+      "new aggregate budget/domain/core acceptance independently validated or bounded",
+      "new analysis lineage; never relabel the old certificate as a restored native result"
+    ],
+    "analysis_source_sha256": "c5fa98a476c45a6e9a31ea10ddc18204db9ffaea1cd3097ea5fcd5fdaed734bb",
+    "audit_sha256": "9d8ccf95e874a29b9ecef343300b2b005ab2a6da25dd1003b70168fa0aa228b2"
+  },
+  "analysis_source_sha256": "c5fa98a476c45a6e9a31ea10ddc18204db9ffaea1cd3097ea5fcd5fdaed734bb",
+  "audit_sha256": "c9e2fb9f5a786020861147e4bdbfe4368284b9b2da25d8dfebf4215eb8f2d1bc"
+}

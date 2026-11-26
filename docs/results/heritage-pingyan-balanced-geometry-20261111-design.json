@@ -1,0 +1,65 @@
+{
+  "capacity_proxy_is_not_observed_or_predicted_fire_loss": true,
+  "construction_ground_cost_m2_per_cell": 25,
+  "control_inner_offset_m": 10,
+  "control_ring_width_m": 20,
+  "first_retained_sources": {
+    "background": "B0201",
+    "near-B0035": "B0120",
+    "near-B0036": "B0037",
+    "near-B0166": "B0191"
+  },
+  "hull_anchors": "full_core_and_actual_source_roof_geometries",
+  "inner_offsets_m": [
+    0.0,
+    2.5,
+    5.0,
+    7.5,
+    10.0,
+    12.5,
+    15.0,
+    17.5,
+    20.0,
+    22.5,
+    25.0,
+    27.5,
+    30.0,
+    32.5,
+    35.0,
+    37.5,
+    40.0
+  ],
+  "new_CA_checks": 0,
+  "original_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.json": "619e1ea81f848993b106d14dc6fdd425d855fb89152ef26fbca0a95c4262366f",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-receipt.json": "5f306a1e08e856e4a17c7efeca84832279388e5319141972809d4de159e36b63",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.seed-search.json": "b54ba8fdbdf9f008749fd007ef9c923a5a3fb3023485f56317953ac971e792f1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-joint-longcap-comparison-20261111.factory.vegetation-proposals.json": "a78a67c62cf476254ea8eca0f513fa7a5b33e6746eb5553f06033bb5cc26e739",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-retained-area-master.json": "e8d5d53aa08800c6eb7fe33e9dcd5297182b8c04c7997327bd0c3ab58f869a59",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-retained-area-pingyan-20261110/experiment.json": "97a031d448a4cc4534712b906a6fb19b9c061561f26de35e7fc0ce7c54543ddb",
+    "/Users/tone/Documents/github/PyFireCA/scripts/optimize_heritage_balanced_geometry.py": "d25d9423d3dd0934d49e442e2ebd838256e65dd5c3349fe98c1278d22ca27d56",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_joint_area_campaign.py": "5b9128f7f56055327f0b75e6cd5cd3afc3d528bfcac65b1c08e01ab42d356c81",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_village_joint_geometry.py": "921f5bd4aa2167f284526f8baa9a90948d6dd3d74756c109d48d90f715a9b9a5"
+  },
+  "original_seed_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "outcome_files_read_for_ring_selection": [],
+  "parameter_combinations": 51,
+  "registered_before_parameter_calculation": true,
+  "ring_widths_m": [
+    15.01,
+    17.5,
+    20.0
+  ],
+  "schema_version": "heritage-village-balanced-grid-design-1",
+  "selection": "minimum_C_among_geometry_certified_grid_actions;fixed_b10w20_control",
+  "village_id": "pingyan"
+}

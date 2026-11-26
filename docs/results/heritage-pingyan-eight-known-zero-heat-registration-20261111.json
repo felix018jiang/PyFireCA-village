@@ -1,0 +1,19 @@
+{
+  "village": "pingyan",
+  "scope": "All eight ordering families are known at design time. Zero new independent validations.",
+  "baseline": "Frozen zero-external-heat construction, including all originally marked roof and whole ground actions.",
+  "sources": "Realize each frozen ordering once under that baseline; keep the actual identity, whole original physical footprint, 25m2, fuel mass, and energy through the final plan. No redraw or source substitution after baseline.",
+  "initial_compartments": "Collect all physical parts bearing any of the eight actual ordinary roof labels. Partition those parts into connected components under the radius-plus-tolerance polygon support graph. For each family include precisely the components intersecting the fixed original footprint.",
+  "threshold": "Use the smallest common published ceilings covering the construction-independent initial compartments\u2019 full outward-rounded area and original owner-count upper bounds. Also test the preexisting 241.49 m2 and 3 benchmark, without requiring it.",
+  "construction": "All external direct contacts and full-lifetime dry-energy escape inequalities, whole ordinary roof owners under the physical AND, whole ground cells, minimum action union within fixed baseline and compartments.",
+  "expenses": "Only a deterministic geometric/energy evaluation and GIS. No native fire simulation.",
+  "inputs_sha256": {
+    "docs/results/heritage-ground-centre-core-separation-20261111.json": "53693dc430a9bc9e23bb00b99cd67653b6a02409537c5c655aec875ae31c7b1e",
+    "docs/results/heritage-pingyan-zero-heat-and-design-loss-20261111.json": "391bea7f08de1e9e6cc461c896d7490e38bf431df97d8ed2df50f90bf3568bfd",
+    "docs/results/heritage-pingyan-expanded-zero-heat-and-design-loss-20261111.json": "31f2f0fe92696de808393df4ad5df445a41d06fd5b8b87fa14e95c5749de6e0d",
+    "runs/research/heritage-thermal-and-geometric-pareto-pingyan-20261111/experiment.json": "9fe4f3e4c393918317d977b44a7f974fdb6cc43d2aaa646f092838e3b3667aae",
+    "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+    "docs/results/heritage-pingyan-independent-three-arm-protection-and-loss-20261111.json": "eebc3ce45014627c57b6072101ffebf5d24d44b394b5134a245c9ce5f33c3b4e"
+  },
+  "receipt_sha256": "ec7591a152c210350adc413cf43ff26c06a94a98ad21f584071af2a30debccb9"
+}

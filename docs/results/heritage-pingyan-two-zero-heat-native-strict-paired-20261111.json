@@ -1,0 +1,42 @@
+{
+  "schema_version": "pingyan-paired-two-zero-heat-native-full-ensemble-1",
+  "original_cost_m2": 9865.173036443528,
+  "enumerated_minimum_cost_m2": 9765.173036443528,
+  "number_original_registered_design_sources": 4,
+  "total_matched_source_budget_mesh_and_integration_tuples": 8,
+  "paired_strict_naturally_closed_checks": 8,
+  "physical_burned_area_and_original_owner_count_same_pairs": 7,
+  "identical_burnout_node_masks": 7,
+  "identical_ignited_node_masks": 7,
+  "per_case_area_change_min_max_m2": [
+    0.0,
+    25.000000000000014
+  ],
+  "observed_original_worst_Nupper_and_A": {
+    "observations": 8,
+    "worst_A_m2": 241.48854379824064,
+    "worst_N_bounds": [
+      1,
+      3
+    ]
+  },
+  "observed_minimum_worst_Nupper_and_A": {
+    "observations": 8,
+    "worst_A_m2": 241.48854379824064,
+    "worst_N_bounds": [
+      1,
+      3
+    ]
+  },
+  "minimum_treatment_dominates_original_over_two_tested_actions_using_C_A_Nupper": true,
+  "protected_zero_heat_proven_and_measured_on_both": true,
+  "zero_heat_only_baseline_worst_burned_area_lower_bound_m2": 244.16941445475922,
+  "endpoint_file_sha256": [
+    "b317d7fbc2cf11144309f9fe255a94234e30fbd96882d88084ff05b7a5289a4b",
+    "0ec8fa93d3e7373e6ec720783841effd87c34e44e2a4a185662ab24fd617bbad"
+  ],
+  "method_sha256": "0623348bfb0a523af2c4947ed2ff301a3a0ed64d7c581f6215cce39900717390",
+  "new_CA_checks": 0,
+  "global_unrestricted_CA_optimality_proven": false,
+  "receipt_sha256": "c4c75907fb1d443cdfd7f6d8ec9732c38f98758dbfab14d60d9bb95773db4b45"
+}

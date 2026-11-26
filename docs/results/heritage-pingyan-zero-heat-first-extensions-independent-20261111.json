@@ -1,0 +1,17 @@
+{
+  "binary_action_choices": 8192,
+  "distinct_exact_tied_placements": 3,
+  "distinct_integer_ground_and_original_roof_union_costs": 56,
+  "exact_binary_geometry_area_sum": [
+    "22516955979845368121171",
+    "2305843009213693952"
+  ],
+  "feasible_four_family_combinations": 3072,
+  "method_sha256": "6f238ac560ebd8c457afe628aa2433e78e43ec7a20ccb64257ab4b905212f55e",
+  "minimum_C_m2": 9765.173036443528,
+  "new_CA_runs": 0,
+  "next_larger_C_m2": 9790.173036443528,
+  "proof": "Every admissible initial addition and simultaneous combination was checked on a rebuilt transfer graph. Roof construction uses exact rational sums of the original binary64 polygon areas on the metric inventory.",
+  "receipt_sha256": "97150094f0669ba936cf32901c738774f20d269a2322149aa2178641464f342b",
+  "source_receipt_sha256": "fc44fd9a1fac8ffb78707453fa78281448d8b4b5a21271557742e366fa41d9d4"
+}

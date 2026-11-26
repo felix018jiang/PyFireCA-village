@@ -1,0 +1,26 @@
+{
+  "schema_version": "heritage-triple-resource-recovery-1",
+  "observed_utc": "2026-10-24T05:23:09.571939+00:00",
+  "cohort": "d",
+  "failed_before_simulation": {
+    "draw_id": "near-B0073-001",
+    "scale_m": 0.5,
+    "source_id": "B0031",
+    "error": "ValueError: roof radiation edge limit exceeded"
+  },
+  "completed_runs_preserved": 21,
+  "pending_partial_case_directory": false,
+  "original_max_radiation_edges": 14000000,
+  "effective_max_radiation_edges": 20000000,
+  "physical_parameters_and_frozen_configurations_unchanged": true,
+  "test_physical_request_metrics_and_all_final_state_arrays_equal": true,
+  "random_source_tests_passed": 7,
+  "new_pid": 59675,
+  "resumed": true,
+  "resumed_difficult_case_completion_pending": false,
+  "resumed_difficult_baseline_completed": true,
+  "resumed_difficult_baseline_valid": true,
+  "resumed_difficult_baseline_radiation_edges": 15194398,
+  "resumed_difficult_baseline_resource_receipt_present": true,
+  "resumed_difficult_scale_all_three_arms_completed_valid": true
+}

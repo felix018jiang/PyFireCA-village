@@ -1,0 +1,75 @@
+{
+  "schema_version": "heritage-B0063-ablation-preflight-1",
+  "new_unique_B0063_polygons": 6,
+  "no_geometry_matches_declared_old_experiments": true,
+  "both_targeted_arms_share_sources_and_polygons": true,
+  "B0063_full_inventory_unambiguous_area_m2": 54.13681624317701,
+  "B0063_anchors": [
+    {
+      "cohort": "e",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0063",
+      "anchor_m": [
+        347315.3387558752,
+        2869733.737170024
+      ],
+      "geometry_sha256": "6a448621d0fc7e2b375fc799511cabbab201cb333634408a81bcc39f139c0b86"
+    },
+    {
+      "cohort": "e",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0063",
+      "anchor_m": [
+        347319.69628082577,
+        2869732.8681076304
+      ],
+      "geometry_sha256": "7b4190fcb83c44f22ef417d161c06624e8f9f77c532290bb2bec02eebd6bca87"
+    },
+    {
+      "cohort": "e",
+      "draw_id": "near-B0120-003",
+      "source_id": "B0063",
+      "anchor_m": [
+        347323.13780481333,
+        2869733.4041377897
+      ],
+      "geometry_sha256": "9ef1b8ccef9f5845278b8cbc1933c4f95c9c735d14323ce4b8b26f321c492831"
+    },
+    {
+      "cohort": "f",
+      "draw_id": "near-B0120-001",
+      "source_id": "B0063",
+      "anchor_m": [
+        347322.07279651775,
+        2869731.878205619
+      ],
+      "geometry_sha256": "41a7b146bb9940e0163c95fa6d991583be7796ceb64d9d89fa6a2fd398044ce3"
+    },
+    {
+      "cohort": "f",
+      "draw_id": "near-B0120-002",
+      "source_id": "B0063",
+      "anchor_m": [
+        347319.4953042756,
+        2869730.5648882356
+      ],
+      "geometry_sha256": "f9146e10e0e2db5ddc13f08c3b19b0af4d3c23c20c935a78335331103e493f70"
+    },
+    {
+      "cohort": "f",
+      "draw_id": "near-B0120-003",
+      "source_id": "B0063",
+      "anchor_m": [
+        347316.9227971865,
+        2869731.5252131815
+      ],
+      "geometry_sha256": "61bd74d9fcbffe96c93515cf8ee86bb443719a6bd74a04c120b8687d0eb62318"
+    }
+  ],
+  "initial_new_runs": 30,
+  "same_source_ablation_witnesses": {
+    "restore-B0061": "c/near-B0120-002/B0062",
+    "restore-B0076": "c/near-B0073-002/B0075",
+    "restore-B0071": "d/near-B0073-003/B0077"
+  }
+}

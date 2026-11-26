@@ -1,0 +1,162 @@
+{
+  "schema_version": "heritage-paired-terminal-burned-patches-1",
+  "input_composition": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-expanded-case-composition-strict-20261111.json",
+  "input_composition_file_sha256": "24b37152951739877e64bc5b240ad1e5948e623b1b0fa5d213a7aab27302fbd3",
+  "input_composition_seal": "7cea08686d3fa0c37538598f246f127154eb7c274d2ff9a0de49f5b4964a1258",
+  "analysis_source_sha256": "778cfeeb8cb0da770cdecbf8ba02a2b694b2b4dde9e89595c21b82326bcee1b2",
+  "temporal_mode": "strict",
+  "scenario_count": 8,
+  "plans": [
+    {
+      "action": "action-b6eba28f9b58c0a72e08",
+      "C_m2": 1089.0173624408872,
+      "N_original_roof_owner_bounds": {
+        "lower": 2,
+        "upper": 5
+      },
+      "A_burned_out_m2": 324.09411544264276,
+      "closed_cases": 8,
+      "native_manifest_sha256s": [
+        "00b5b0dc9d5600931e97386d44fa7d4ec3cfa49a181cca9f5d4e60c03f8c0e71",
+        "1d2dc9b8cab3850e8620de3b533986dd439b3fd66bd86edc42f93d0656726e66",
+        "50c774cfc74f56f2493c114442d26f3417f99a70d1731ed254d45afa936bd5c0",
+        "64c536faf504521fb8bc702209b7384126af7b34496c398077ce07779fd4d675",
+        "6c359d2f04b3e86da2ebf75326ecded6f09337444ad116ec1461cd7e74054028",
+        "82a89b4a7d2d46ccd4d1d74489efe3891d075cc955ff6b777efc36b985d733d3",
+        "a2c0a4b2ad4bb6152cdafd89ce846d3747ce0246c2115e706cd8d02545d30760",
+        "e3a26b1739c3a9e313c0a0654059a544c3edd68579181acce9c83b28321b3b3b"
+      ]
+    },
+    {
+      "action": "action-d7de8d9900201f3d1c0d",
+      "C_m2": 1389.0173624408872,
+      "N_original_roof_owner_bounds": {
+        "lower": 2,
+        "upper": 5
+      },
+      "A_burned_out_m2": 324.09411544264276,
+      "closed_cases": 8,
+      "native_manifest_sha256s": [
+        "2537c666a436165a33e751ec489e7582ad2d3d0724f1aee470e6dbb29dccc05d",
+        "41f4cab108af25fb730df58ad932f340949fcb5e109e890b4ffdb4b0c5277112",
+        "421943c6bbc7c0cbbdb67e6249eba22f5bcc20d182398a9e24f9937f8645a559",
+        "476bf70cb26e67fc6185d7927d508ce26260bc52e9e9b8521378132492358b73",
+        "56e49d806d2b47b1d45260c0bce06759ffc00e45a0ec0622fece0516ca1a19b2",
+        "5b68e9a6a7cdfe81eae60358890df0abdd9db30514001c8d9de9b3b391917d9d",
+        "61a20d0a8216dd257f0603a07b0fd21a25d06f4fcbff599184060ce6bd27aadd",
+        "c9d98fe905994216a46a54404153131e5e1206736519c629d3b373c576a400c7"
+      ]
+    },
+    {
+      "action": "action-0ff78096f8e45df425d2",
+      "C_m2": 4775.717374856546,
+      "N_original_roof_owner_bounds": {
+        "lower": 2,
+        "upper": 5
+      },
+      "A_burned_out_m2": 324.09411544264276,
+      "closed_cases": 8,
+      "native_manifest_sha256s": [
+        "04fdc05411153626ef4fb181d1082dd9d6c6bcbe4c4ac5b7226dd2193c6c427f",
+        "161cc034aac832672fa18c9fec62a64400f037e42577db485775556be8b3cf31",
+        "1e244ffcd88a3a070e859b10a91c869a2b49da975e1dd3e3e7f9033f3d52e1ce",
+        "3c7eea1a0c0e8463a9daa8366f41c262bb467e232106dcd9cd218bee9c314b76",
+        "5e7bce564dbcadb1151a6b5fa767987710927fd2aa64bbb8434b357ff5d55d27",
+        "66fd43d9327ed1f83d256dc8953021b4a1f0dc61f8b484f3fbe2c538279601b8",
+        "b26fe435a73ab2d443218681826784a83e49f1889255da7bd661683046f98774",
+        "b4b47da529cbfd795e7db999653e199d3f61a1dc254431f80fb29766d0f8a962"
+      ]
+    },
+    {
+      "action": "action-17003b7f8f4fd52543b2",
+      "C_m2": 9083.108570330925,
+      "N_original_roof_owner_bounds": {
+        "lower": 5,
+        "upper": 7
+      },
+      "A_burned_out_m2": 662.7274796617467,
+      "closed_cases": 8,
+      "native_manifest_sha256s": [
+        "02c077bf90212bfeb37c57b7be1aa8c0703efa5565c51f5ab674cbb4d208ace9",
+        "02ee93b3c173eae7108ddd53bbe060b0a37af1a618196e30cba26eb391ca5335",
+        "11c36515565d4fdc093536fe1bf5f10f47cf06b85a494fade170cbf302651bd3",
+        "375502106950369c904151a0229d9e8cc05945ed2b41bbd0dcbf1f8058fbd84d",
+        "87c9baf98063e4f9cd363d3ed50c98260050af4239c73f63bd32c080291d0e74",
+        "906f335860ff982a1d8934948c0e5d2bf2e152f5ddb0db4333c388c9f8bef91a",
+        "9fdd819d766d4bb47151f17d7587bdd860c5b43b0f11dadbfb3bca2abf96b615",
+        "f1844963ab4bb88732af7294e9099ed5810ca792dc16d9458481577e98065b80"
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "left": "action-b6eba28f9b58c0a72e08",
+      "right": "action-d7de8d9900201f3d1c0d",
+      "left_C_m2": 1089.0173624408872,
+      "right_C_m2": 1389.0173624408872,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 8,
+      "exactly_equal_per_original_owner_loss_profiles": 8,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": true
+    },
+    {
+      "left": "action-b6eba28f9b58c0a72e08",
+      "right": "action-0ff78096f8e45df425d2",
+      "left_C_m2": 1089.0173624408872,
+      "right_C_m2": 4775.717374856546,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 8,
+      "exactly_equal_per_original_owner_loss_profiles": 8,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": true
+    },
+    {
+      "left": "action-b6eba28f9b58c0a72e08",
+      "right": "action-17003b7f8f4fd52543b2",
+      "left_C_m2": 1089.0173624408872,
+      "right_C_m2": 9083.108570330925,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 4,
+      "exactly_equal_per_original_owner_loss_profiles": 4,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": false
+    },
+    {
+      "left": "action-d7de8d9900201f3d1c0d",
+      "right": "action-0ff78096f8e45df425d2",
+      "left_C_m2": 1389.0173624408872,
+      "right_C_m2": 4775.717374856546,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 8,
+      "exactly_equal_per_original_owner_loss_profiles": 8,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": true
+    },
+    {
+      "left": "action-d7de8d9900201f3d1c0d",
+      "right": "action-17003b7f8f4fd52543b2",
+      "left_C_m2": 1389.0173624408872,
+      "right_C_m2": 9083.108570330925,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 4,
+      "exactly_equal_per_original_owner_loss_profiles": 4,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": false
+    },
+    {
+      "left": "action-0ff78096f8e45df425d2",
+      "right": "action-17003b7f8f4fd52543b2",
+      "left_C_m2": 4775.717374856546,
+      "right_C_m2": 9083.108570330925,
+      "same_source_observations": 8,
+      "exactly_equal_burned_patch_masks": 4,
+      "exactly_equal_per_original_owner_loss_profiles": 4,
+      "left_burned_mask_subset_of_right": 8,
+      "strictly_cheaper_with_identical_paired_model_loss": false
+    }
+  ],
+  "new_CA_checks": 0,
+  "interpretation": "Equal masks on the same original mesh imply identical represented burned patches and identical ownership outcomes under every common patch-to-owner assignment. Unrepresented roof owners retain their original unknown scope. Only declared, fully closed scenarios enter the comparison.",
+  "audit_sha256": "9489aed4e518bb0ed121ad200693b903e8c2c1baf19f4921f955be992610ba22"
+}

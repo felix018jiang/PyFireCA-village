@@ -1,0 +1,252 @@
+{
+  "physical_problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "checked_at": "2026-10-30T11:57:42+08:00",
+  "parent_frontier_sha256": "41c74f0a68c469197e9cbd4e120c56c36c0981a6aa247973045abf5f27fda7ae",
+  "all17_pairs_failed": true,
+  "checks_validated": 77,
+  "new_CA_checks_in_this_audit": 0,
+  "new_search_CA_checks": 29,
+  "pair_failure_witnesses": [
+    {
+      "ids": [
+        "B0119",
+        "B0160"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0163"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0164"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0165"
+      ],
+      "source_id": "B0177",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          908.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0167"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0168"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0119",
+        "B0191"
+      ],
+      "source_id": "B0165",
+      "scenario_id": "near-B0166-h1",
+      "failed_core": [
+        [
+          "B0166",
+          617.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0120",
+        "B0163"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0120",
+        "B0164"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0120",
+        "B0167"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0160"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0163"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0164"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0165"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0167"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0168"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    },
+    {
+      "ids": [
+        "B0121",
+        "B0191"
+      ],
+      "source_id": "B0119",
+      "scenario_id": "near-B0035-h1",
+      "failed_core": [
+        [
+          "B0035",
+          452.0
+        ]
+      ]
+    }
+  ],
+  "minimum_count_lower_bound": 3,
+  "feasible_count_upper_bound": 5,
+  "scope": "original_design_problem;native_audit_and_publication_pending"
+}

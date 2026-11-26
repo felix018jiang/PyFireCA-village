@@ -1,0 +1,51 @@
+{
+  "report_date": "2026-10-30",
+  "status": "complete",
+  "page_count": 15,
+  "contents": [
+    "研究目的与问题定义",
+    "数据与冻结协议",
+    "CA物理评价器",
+    "数量分层分支定界",
+    "严格条件反例剪枝",
+    "两村地图与拆除清单",
+    "逐核心保护与新落点确认",
+    "回加与替代位置",
+    "最优性界限与未决范围",
+    "跨村规律与后续研究"
+  ],
+  "checks": {
+    "critical_numbers_match_machine_results": true,
+    "source_hashes_unchanged": true,
+    "all_source_links_resolved": true,
+    "all_15_section_headings_present_in_PDF": true,
+    "chinese_text_searchable": true,
+    "no_empty_pages": true,
+    "all_pages_visually_reviewed": true,
+    "two_full_strategy_maps_reviewed": true
+  },
+  "new_CA_checks": 0,
+  "production_code_or_frozen_configuration_changed": false,
+  "artifacts": {
+    "docs/HERITAGE_EXPERIMENT_REPORT_20261030.md": {
+      "bytes": 32420,
+      "sha256": "078a398eefa513592fcc7a5d8c99516d02a4c22e582e287deb54b82570c09e04"
+    },
+    "docs/reports/20261030/传统村落防火线实验报告_20261030.docx": {
+      "bytes": 4864048,
+      "sha256": "b023c1822c55774383094685aee3ff67b837ae5c10c5aaa2ade1d7bcc8057810"
+    },
+    "docs/reports/20261030/传统村落防火线实验报告_20261030.pdf": {
+      "bytes": 2009842,
+      "sha256": "f2304f50596f5ac2563fdabde8718975f2921c9ca3bc0fb522a1dc70718bcbbc"
+    },
+    "docs/reports/20261030/report-evidence.json": {
+      "bytes": 2594,
+      "sha256": "12ea4fc416708f347bf02f3ede7eafbaa0a793dc1a86fbe900f1812721ec388f"
+    }
+  },
+  "render_runtime": "Codex bundled Python and LibreOffice headless 26.1020.11618",
+  "CJK_font": "Noto Sans CJK SC",
+  "font_source": "https://github.com/notofonts/noto-cjk",
+  "note": "PDF and DOCX contain the same rendered report; historical experiment records remain unchanged."
+}

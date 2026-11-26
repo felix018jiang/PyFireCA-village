@@ -1,0 +1,15 @@
+{
+  "new_tests_passed": 10,
+  "planning_tests_passed": 296,
+  "full_suite_rerun": false,
+  "prior_input_files_unchanged": 848,
+  "raw_annotation_sha256": "f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+  "restored_cases": [
+    "gulou-A25p0-s0p5-t0p5-source_both",
+    "bridge-A25p0-s0p5-t0p5-source_both"
+  ],
+  "restoration_checks": "all final_state fields and complete scalar result dictionary; exact equality",
+  "candidate_ids": [],
+  "fixed_source_ids": [],
+  "optimization": false
+}

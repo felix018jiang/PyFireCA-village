@@ -1,0 +1,222 @@
+{
+  "schema_version": "heritage-native-strict-paired-plan-comparison-1",
+  "method_sha256": "9b1b9f5d4cd7109004ae94d9b2d8666f590515ac90fb8c94a41d4ff74a0b6396",
+  "strict_reader_sha256": "618d39866b509441c97c943e37e92dfe010ffd8722dd7cd2b4d2b0e3a19aa3a7",
+  "native_problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+  "native_experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+  "native_source_manifest_sha256": "cd5e842b9a5e675b93fe7800ee3d46a6027e6ca727f67676ab973b95e58bc914",
+  "native_input_manifest_sha256": "2776e5e159958cbab34953850c2d4668baf265dc434d67459d31ccf4596801ba",
+  "paired_and_verified_fields": [
+    "source_id",
+    "source_budget",
+    "source_footprint_sha256",
+    "common_layout_sha256",
+    "frozen_integrated_node_mask_sha256"
+  ],
+  "matched_complete_count": 8,
+  "matched": [
+    {
+      "registered_case_ordinal": 1,
+      "case_identity_sha256": "22efb633258948760870fb16e70136106008ea731e34b44f384004722501cbf4",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 111.17746509794178,
+        "manifest_sha256": "b034e310e531f2608c48ae20157dfe29d82b195e0a850b12c689395ae05bb0e7"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 9,
+          "upper": 11
+        },
+        "A_burned_m2": 1742.466642257279,
+        "manifest_sha256": "42a89611656e8d8a5f549cfde3fe6f417c10268df98ef1a89c5e518879883ef1"
+      },
+      "candidate_minus_reference_A_m2": 1631.2891771593372,
+      "paired_N_interval_equal": false
+    },
+    {
+      "registered_case_ordinal": 2,
+      "case_identity_sha256": "53587b7ca748a011220a96fd5f7f2e4903cb6b42658a2c26e924a08bf23f4c7c",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 111.17746509794179,
+        "manifest_sha256": "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 9,
+          "upper": 11
+        },
+        "A_burned_m2": 1742.466642257279,
+        "manifest_sha256": "5822fd67a6a3709b8a503c4dc08aac679d96555883813e9a7c644b322a13eb59"
+      },
+      "candidate_minus_reference_A_m2": 1631.2891771593372,
+      "paired_N_interval_equal": false
+    },
+    {
+      "registered_case_ordinal": 3,
+      "case_identity_sha256": "ad2452d08b06d69da9ffff53ec167460644cf202bcf38586430581d4b6795055",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 113.12751824668791,
+        "manifest_sha256": "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 113.12751824668791,
+        "manifest_sha256": "9ca4732e21103271b9d145871a36c028a4846072d8590c3a963b4a34f0e4ec54"
+      },
+      "candidate_minus_reference_A_m2": 0.0,
+      "paired_N_interval_equal": true
+    },
+    {
+      "registered_case_ordinal": 4,
+      "case_identity_sha256": "7c94586533493328b548f42b04ad53040510cd774879b19000d8d40cf504258c",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 113.12751824668793,
+        "manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 113.12751824668793,
+        "manifest_sha256": "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d"
+      },
+      "candidate_minus_reference_A_m2": 0.0,
+      "paired_N_interval_equal": true
+    },
+    {
+      "registered_case_ordinal": 5,
+      "case_identity_sha256": "64a9ac4cf77bb8ad90d37ce390c2577ffa3174f8abac2a097a7f88b521ea0909",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 241.48854379824064,
+        "manifest_sha256": "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 266.48854379824064,
+        "manifest_sha256": "5c5e940195c5bca6ffeac9a542cb92fa2a343245cfd73f270a6dc34613407093"
+      },
+      "candidate_minus_reference_A_m2": 25.0,
+      "paired_N_interval_equal": true
+    },
+    {
+      "registered_case_ordinal": 6,
+      "case_identity_sha256": "70d11e1ebb06d1b8102acf346e5a2fc40b79d2744881360f81f33356ed55284f",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 241.48854379824064,
+        "manifest_sha256": "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 1
+        },
+        "A_burned_m2": 266.48854379824064,
+        "manifest_sha256": "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357"
+      },
+      "candidate_minus_reference_A_m2": 25.0,
+      "paired_N_interval_equal": true
+    },
+    {
+      "registered_case_ordinal": 7,
+      "case_identity_sha256": "9a7ff5fed0c8767ae5f640016822454bf97e027c5f40a0cf4e094cbf888540f8",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 3
+        },
+        "A_burned_m2": 180.21842301902592,
+        "manifest_sha256": "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 5
+        },
+        "A_burned_m2": 180.5416716716964,
+        "manifest_sha256": "4306201237af015448447c6c4b095a3d21a2a17858ddce847053892cdba22c23"
+      },
+      "candidate_minus_reference_A_m2": 0.3232486526704861,
+      "paired_N_interval_equal": false
+    },
+    {
+      "registered_case_ordinal": 8,
+      "case_identity_sha256": "8f05a6061014ecac60bd0cfec66fbdca240131986f7320571cbf17d64cc2d1f4",
+      "reference": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 3
+        },
+        "A_burned_m2": 180.21842301902592,
+        "manifest_sha256": "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2"
+      },
+      "candidate": {
+        "N_burned_owner_bounds": {
+          "lower": 1,
+          "upper": 5
+        },
+        "A_burned_m2": 180.5416716716964,
+        "manifest_sha256": "c88a1a3e854c6d19594f8d2a58cb921cfdfa0d8c8506c8bd0dba05aa6be9ba1a"
+      },
+      "candidate_minus_reference_A_m2": 0.3232486526704861,
+      "paired_N_interval_equal": false
+    }
+  ],
+  "plans": {
+    "roof-seed-protected-union-ring-b0-w15.01": {
+      "C_m2": 10669.276972304711,
+      "worst_N_burned_owner_bounds": {
+        "lower": 1,
+        "upper": 3
+      },
+      "worst_A_burned_m2": 241.48854379824064
+    },
+    "roof-seed-protected-union-ring-b0-w2.5": {
+      "C_m2": 2543.456175290825,
+      "worst_N_burned_owner_bounds": {
+        "lower": 9,
+        "upper": 11
+      },
+      "worst_A_burned_m2": 1742.466642257279
+    }
+  },
+  "reference_plan": "roof-seed-protected-union-ring-b0-w15.01",
+  "candidate_plan": "roof-seed-protected-union-ring-b0-w2.5",
+  "C_saving_m2": 8125.8207970138865,
+  "C_saving_fraction": 0.7616093216163454,
+  "paired_N_equal_and_A_equal_within_1e_minus8_m2": false,
+  "candidate_dominates_reference_on_C_Nupper_A": false,
+  "candidate_robustly_dominates_under_N_interval_uncertainty": false,
+  "global_frontier_certified": false,
+  "receipt_sha256": "848c2e4e380179a7834e143d3461719429e42957068d4bdad084ec17cc22c68a"
+}

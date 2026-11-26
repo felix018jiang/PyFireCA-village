@@ -1,0 +1,19 @@
+{
+  "method_sha256": "5805a5a24a87649934e723573b7b4edfa2a7fd7c2a23b416721142b3a9ad0260",
+  "aim": "minimize total actual clearance under the external-to-heritage and registered-compartment-to-exterior energy constraints",
+  "villages_and_families": {
+    "batuan": [
+      "four design families",
+      "four previously disclosed families"
+    ],
+    "pingyan": [
+      "four design families"
+    ]
+  },
+  "core_energy_ceiling_comparisons": [
+    0.99,
+    1.0
+  ],
+  "outward_ignition_guard_from_existing_mandatory_receipts": true,
+  "loss_bounds_use_verified_fixed_compartments_and_original_action_obligations": true
+}

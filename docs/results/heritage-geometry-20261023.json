@@ -1,0 +1,870 @@
+{
+  "schema_version": "heritage-geometry-summary-1",
+  "geometry_refresh": {
+    "schema_version": "building-geometry-refresh-1",
+    "parent_case_sha256": "260a1f844b72ad3fe3c70b9fdc7576fd2641a8cb924daa99a5758a2bb378f0cb",
+    "refreshed_request_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+    "changed_cells": 23,
+    "changed_roof_cells": 22,
+    "exposed_ground_cells": 1,
+    "old_building_area_m2": 77033.75174129097,
+    "new_building_area_m2": 77034.58134425519,
+    "removed_buildings": [],
+    "all_declared_buildings_retained": true,
+    "ground_policy": "registered_pre_roof_RGB_hypothesis_not_measured_or_cleared_ground",
+    "ignition_policy": "inherited_technical_event_not_a_frozen_study_source",
+    "thermal_simulations_performed": 0
+  },
+  "updated_annotation_matches_refreshed_case": true,
+  "meshes": [
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 12,
+        "width": 12,
+        "cell_size_m": 5,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096579574,
+      "target_area_absolute_error_m2": 6.744471647834871e-11,
+      "shared_temperature_cells": 3,
+      "target_area_without_own_fuel_id_m2": 0.03755867334573824,
+      "different_building_cell_face_count": 7,
+      "positive_gap_cell_face_count": 7,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0031",
+          "cell_face_count": 2,
+          "vector_gap_m": 5.036063503757587
+        },
+        {
+          "other_id": "B0075",
+          "cell_face_count": 1,
+          "vector_gap_m": 5.801588023429711
+        },
+        {
+          "other_id": "B0076",
+          "cell_face_count": 4,
+          "vector_gap_m": 0.7822847407576603
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1787.1097392664524,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 24,
+        "width": 24,
+        "cell_size_m": 2.5,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.6813009659279,
+      "target_area_absolute_error_m2": 1.9960566532972734e-10,
+      "shared_temperature_cells": 2,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 5,
+      "positive_gap_cell_face_count": 5,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0076",
+          "cell_face_count": 5,
+          "vector_gap_m": 0.7822847407576603
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1787.1097367863968,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 60,
+        "width": 60,
+        "cell_size_m": 1,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096580745,
+      "target_area_absolute_error_m2": 7.915446076367516e-11,
+      "shared_temperature_cells": 1,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 6,
+      "positive_gap_cell_face_count": 6,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0076",
+          "cell_face_count": 6,
+          "vector_gap_m": 0.7822847407576603
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1787.1097379113035,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 120,
+        "width": 120,
+        "cell_size_m": 0.5,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096550223,
+      "target_area_absolute_error_m2": 2.2606627680943348e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 3,
+      "positive_gap_cell_face_count": 3,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0076",
+          "cell_face_count": 3,
+          "vector_gap_m": 0.7822847407576603
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1787.1097383152355,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 240,
+        "width": 240,
+        "cell_size_m": 0.25,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096554376,
+      "target_area_absolute_error_m2": 1.8454215933161322e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1787.109738259063,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 17,
+        "width": 19,
+        "cell_size_m": 5,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348303606,
+      "target_area_absolute_error_m2": 7.361222742474638e-10,
+      "shared_temperature_cells": 1,
+      "target_area_without_own_fuel_id_m2": 0.6270047574270378,
+      "different_building_cell_face_count": 3,
+      "positive_gap_cell_face_count": 3,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0061",
+          "cell_face_count": 3,
+          "vector_gap_m": 4.309053091414644
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1100.2605819987366,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 34,
+        "width": 38,
+        "cell_size_m": 2.5,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348307927,
+      "target_area_absolute_error_m2": 3.0399860406760126e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 1,
+      "positive_gap_cell_face_count": 1,
+      "cell_face_pairs": [
+        {
+          "other_id": "B0061",
+          "cell_face_count": 1,
+          "vector_gap_m": 4.309053091414644
+        }
+      ],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1100.2605800359447,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": false,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 85,
+        "width": 95,
+        "cell_size_m": 1,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348308989,
+      "target_area_absolute_error_m2": 1.978150976356119e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1100.260580375747,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 170,
+        "width": 190,
+        "cell_size_m": 0.5,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348310133,
+      "target_area_absolute_error_m2": 8.344613888766617e-11,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1100.260580181448,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 340,
+        "width": 380,
+        "cell_size_m": 0.25,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348309741,
+      "target_area_absolute_error_m2": 1.226680979016237e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1100.2605803411834,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "phase_checks": [
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 240,
+        "width": 240,
+        "cell_size_m": 0.25,
+        "x_min_m": 347230.125,
+        "y_max_m": 2869795.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096590107,
+      "target_area_absolute_error_m2": 1.7277557162742596e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1784.55565746078,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 240,
+        "width": 240,
+        "cell_size_m": 0.25,
+        "x_min_m": 347230.0,
+        "y_max_m": 2869795.125,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.68130096551,
+      "target_area_absolute_error_m2": 2.1830715013493318e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1794.1565179651943,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "target_id": "B0073",
+      "grid": {
+        "height": 240,
+        "width": 240,
+        "cell_size_m": 0.25,
+        "x_min_m": 347230.125,
+        "y_max_m": 2869795.125,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 130.6813009657283,
+      "target_observed_area_m2": 130.6813009658912,
+      "target_area_absolute_error_m2": 1.6291323845507577e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 18,
+      "local_building_union_area_m2": 1791.6024370085893,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 85,
+        "width": 95,
+        "cell_size_m": 1,
+        "x_min_m": 347260.5,
+        "y_max_m": 2869745.0,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348306637,
+      "target_area_absolute_error_m2": 4.3303316488163546e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 7,
+      "local_building_union_area_m2": 1108.600999842247,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.5,
+        0.0
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 85,
+        "width": 95,
+        "cell_size_m": 1,
+        "x_min_m": 347260.0,
+        "y_max_m": 2869745.5,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.6069348313531,
+      "target_area_absolute_error_m2": 2.5636381906224415e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 8,
+      "local_building_union_area_m2": 1115.9992611980997,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "target_id": "B0120",
+      "grid": {
+        "height": 85,
+        "width": 95,
+        "cell_size_m": 1,
+        "x_min_m": 347260.5,
+        "y_max_m": 2869745.5,
+        "coordinate_mode": "projected",
+        "crs": "EPSG:32649"
+      },
+      "target_vector_area_m2": 661.6069348310967,
+      "target_observed_area_m2": 661.60693483093,
+      "target_area_absolute_error_m2": 1.6677859093761072e-10,
+      "shared_temperature_cells": 0,
+      "target_area_without_own_fuel_id_m2": 0.0,
+      "different_building_cell_face_count": 0,
+      "positive_gap_cell_face_count": 0,
+      "cell_face_pairs": [],
+      "true_outline_overlaps": [],
+      "local_represented_object_count": 9,
+      "local_building_union_area_m2": 1124.3400047315845,
+      "scope": "geometry_only_all_intersecting_buildings_no_thermal_or_safety_claim",
+      "independent_target_geometry": true,
+      "phase_cell_fractions": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "recommended_geometry_spacing_m": {
+    "B0073": 0.25,
+    "B0120": 1
+  },
+  "uniform_fine_thermal_case_constructed": false,
+  "thermal_simulations_performed": 0,
+  "scope": "geometry_independence_not_ignition_time_convergence_or_heritage_safety",
+  "independent_checks": {
+    "unchanged_parameter_cells_verified": 108241,
+    "changed_cells": 23,
+    "terrain_unchanged": true,
+    "all_333_identities_retained": true,
+    "building_dry_mass_kg": 1386622.4641965933,
+    "building_covered_area_m2": 77034.58134425519,
+    "building_mass_equals_18_kg_m2_times_area": true,
+    "radiation_graph_round_trip_verified": true,
+    "frozen_annotation_and_source_snapshot_verified": true,
+    "latest_annotation_matches_case": true
+  },
+  "artifact_directory": "runs/research/heritage-geometry-20261023-r2",
+  "coarse_audit": {
+    "annotation_count": 333,
+    "ordinary_annotation_count": 331,
+    "raster_owner_count": 331,
+    "targets": [
+      {
+        "building_id": "B0073",
+        "role": "gulou",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "vector_area_m2": 130.6813009657283,
+        "shared_temperature_cells": 3,
+        "nearest_objects": [
+          {
+            "building_id": "B0076",
+            "gap_m": 0.7822847407576603,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0031",
+            "gap_m": 5.036063503757587,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0075",
+            "gap_m": 5.801588023429711,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0071",
+            "gap_m": 9.387264199358075,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0074",
+            "gap_m": 9.737900500118096,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0077",
+            "gap_m": 11.517281031771835,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0067",
+            "gap_m": 12.585204821048597,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0149",
+            "gap_m": 15.413684837791017,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0068",
+            "gap_m": 16.962739346236535,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0030",
+            "gap_m": 17.09227943676167,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0078",
+            "gap_m": 17.528220900494983,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0069",
+            "gap_m": 17.65301552028619,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0079",
+            "gap_m": 19.704935953654417,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0080",
+            "gap_m": 25.15815808407716,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0066",
+            "gap_m": 25.82931612903639,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0026",
+            "gap_m": 28.09029524963015,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0083",
+            "gap_m": 28.97455706444484,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0028",
+            "gap_m": 29.104492543061273,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0029",
+            "gap_m": 29.97213267340436,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0081",
+            "gap_m": 30.614856002409493,
+            "candidate_status": "not_declared"
+          }
+        ]
+      },
+      {
+        "building_id": "B0120",
+        "role": "fengyuqiao",
+        "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+        "identity_status": "annotation_only",
+        "vector_area_m2": 661.6069348310967,
+        "shared_temperature_cells": 1,
+        "nearest_objects": [
+          {
+            "building_id": "B0061",
+            "gap_m": 4.309053091414644,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0063",
+            "gap_m": 6.872831890824957,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0062",
+            "gap_m": 11.130339450081111,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0060",
+            "gap_m": 23.96040717573075,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0109",
+            "gap_m": 27.237337773369834,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0066",
+            "gap_m": 29.06555061034671,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0064",
+            "gap_m": 29.939704076398723,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0065",
+            "gap_m": 32.05665530217862,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0059",
+            "gap_m": 33.24641381892636,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0067",
+            "gap_m": 37.12383903525861,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0108",
+            "gap_m": 38.83507685677362,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0055",
+            "gap_m": 40.6268601767838,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0058",
+            "gap_m": 40.74567504228104,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0068",
+            "gap_m": 41.444872953911236,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0056",
+            "gap_m": 42.68393963695922,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0107",
+            "gap_m": 46.72562451896978,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0054",
+            "gap_m": 47.73597796121263,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0110",
+            "gap_m": 50.76086187462379,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0074",
+            "gap_m": 53.051154065645086,
+            "candidate_status": "not_declared"
+          },
+          {
+            "building_id": "B0057",
+            "gap_m": 57.64406046618167,
+            "candidate_status": "not_declared"
+          }
+        ]
+      }
+    ],
+    "missing_data": [
+      {
+        "field": "demolition_eligibility",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_implementation_feasibility_claim"
+      },
+      {
+        "field": "household_identity_and_occupancy",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "household_impact_unknown_not_zero"
+      },
+      {
+        "field": "floors_and_gross_floor_area",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "use_footprint_area_only"
+      },
+      {
+        "field": "structural_independence_and_eaves",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_structural_feasibility_claim"
+      },
+      {
+        "field": "cultural_activity_and_access_spaces",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "blocks_cultural_space_feasibility_claim"
+      },
+      {
+        "field": "post_demolition_ground_and_debris",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "requires_explicit_physical_assumption"
+      },
+      {
+        "field": "measured_timber_and_moisture",
+        "status": "not_supplied_to_this_inventory",
+        "impact": "equivalent_fuel_assumption_requires_validation"
+      },
+      {
+        "field": "fixed_source_ids",
+        "status": "not_frozen",
+        "impact": "required_before_internal_fire_evaluation"
+      }
+    ]
+  },
+  "mesh_comparison_image": "docs/results/heritage-geometry-20261023.png",
+  "validation": {
+    "full_suite_passed": 1206,
+    "existing_dependency_warnings": 9,
+    "focused_tests_passed": 62,
+    "ruff": "passed",
+    "figure_visually_checked": true
+  },
+  "roof_only_transport_estimates": [
+    {
+      "target_id": "B0073",
+      "spacing_m": 0.25,
+      "cell_count": 57600,
+      "source_cell_count": 29965,
+      "target_cell_count": 29965,
+      "offset_count": 11288,
+      "candidate_edge_upper_bound": 162263492,
+      "final_edge_bytes_upper_bound": 2596215872,
+      "construction_peak_bytes_estimate": 10384863488,
+      "replay_frame_count": 0,
+      "replay_resident_bytes_estimate": 0,
+      "construction_plus_replay_bytes_estimate": 10384863488,
+      "final_edge_bytes_MB": 2596.215872,
+      "construction_peak_bytes_MB": 10384.863488,
+      "replay_resident_bytes_MB": 0.0,
+      "construction_plus_replay_bytes_MB": 10384.863488,
+      "scope": "roof-only mask in geometry audit window; no graph constructed, ground omitted"
+    },
+    {
+      "target_id": "B0120",
+      "spacing_m": 1,
+      "cell_count": 8075,
+      "source_cell_count": 1289,
+      "target_cell_count": 1289,
+      "offset_count": 708,
+      "candidate_edge_upper_bound": 396850,
+      "final_edge_bytes_upper_bound": 6349600,
+      "construction_peak_bytes_estimate": 25398400,
+      "replay_frame_count": 0,
+      "replay_resident_bytes_estimate": 0,
+      "construction_plus_replay_bytes_estimate": 25398400,
+      "final_edge_bytes_MB": 6.3496,
+      "construction_peak_bytes_MB": 25.3984,
+      "replay_resident_bytes_MB": 0.0,
+      "construction_plus_replay_bytes_MB": 25.3984,
+      "scope": "roof-only mask in geometry audit window; no graph constructed, ground omitted"
+    }
+  ]
+}

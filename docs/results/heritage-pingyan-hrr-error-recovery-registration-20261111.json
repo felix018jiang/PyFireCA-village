@@ -1,0 +1,28 @@
+{
+  "schema_version": "native-error-path-campaign-budget-recovery-1",
+  "failed_run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thermal-and-geometric-pareto-pingyan-20261111",
+  "original_problem_sha256": "922a2c6079371a7dce7f5138aae7ccfc428ac21f7ad1a05ed04036e4d949f53f",
+  "original_config_sha256": "132a1e9f87c932b6f09b7619105d39553a65dcbcafb2400a987022fa8382530a",
+  "original_budget_sha256": "187d83b7f64565940013ccb881b167fa132fcfb0fc3f9d3a8afd9b6ac0a6d5a7",
+  "original_budget": {
+    "elapsed_s": 2401.72317904199,
+    "started_checks": 1,
+    "active": null
+  },
+  "original_error_log_sha256": "400f1e9e00fb0e4ce1559d869fbad6bc0ae1b3bdfd07f36716a757459e58cdbc",
+  "old_completed_native_cases": 0,
+  "new_config": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/pingyan-thermal-and-geometric-pareto-hrr-recovery-20261111.json",
+  "new_config_sha256": "d61b4e7288d9949656da4bec22aa87baa4f258f79bde93f95d9f9920c05c9f9f",
+  "new_slots_remaining": 31,
+  "new_wall_s_remaining": 170398.276820958,
+  "total_slot_budget_including_failure": 32,
+  "total_wall_budget_including_failure": 172800.0,
+  "full_expected_cases_unchanged": 32,
+  "original_slot_refunded": false,
+  "old_solver_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+  "new_solver_sha256": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3",
+  "patch_sha256": "f0faab8e8b7eb6a353cef0aa6e6b99a5fdc946efc4389421c450d262e260a7a9",
+  "effect_on_legal_scientific_inputs": "none",
+  "old_run_artifacts_changed": false,
+  "prepared_while_regression_validation_in_progress": true
+}

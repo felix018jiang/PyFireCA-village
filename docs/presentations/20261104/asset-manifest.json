@@ -1,0 +1,182 @@
+{
+  "source": "archived followup data + explicit formula schematics",
+  "new_CA_runs": 0,
+  "assets": {
+    "batuan_B0073.png": {
+      "sha256": "ba12d6f816b4bb65f69904dc32c9f8f7f858a0b533e188279c6440d5afd07d4b",
+      "bytes": 167890
+    },
+    "batuan_B0073.svg": {
+      "sha256": "e913ab90c8ddab50a809bf73d2019c613a99bd53828af91f619b7492da43fa0c",
+      "bytes": 96530
+    },
+    "batuan_B0120.png": {
+      "sha256": "b197107152a23ccb7357e02cb45a5b6b5c67dd0afb99d385b2dceb18d0f2966d",
+      "bytes": 86833
+    },
+    "batuan_B0120.svg": {
+      "sha256": "fd030cee56725c253276e6a48006265f3b05631e035d93f6230e3498b9caef14",
+      "bytes": 96115
+    },
+    "batuan_bridge_morph.png": {
+      "sha256": "f4d4faa475b414620dbd575e1df345ebe10e11875c18737bf3753d563ff7cf6e",
+      "bytes": 166069
+    },
+    "batuan_bridge_morph.svg": {
+      "sha256": "2c36960eff80f04d1503353c74c22782dd1a5233ef329b5ff5cd18348735454b",
+      "bytes": 197437
+    },
+    "batuan_curve.png": {
+      "sha256": "8c348477113cd1fbb003e49641ba881930ff83e18e37af0d389807c50d67bd66",
+      "bytes": 65617
+    },
+    "batuan_curve.svg": {
+      "sha256": "ed17f68f6777eb175545df4349a2fe8963a54049da19e7f4db420dc098b47ac1",
+      "bytes": 42725
+    },
+    "batuan_overview.png": {
+      "sha256": "10ba5b2a74480841e67894201ee51b8737e1319e3548dcb18f206e73737826fa",
+      "bytes": 160999
+    },
+    "batuan_overview.svg": {
+      "sha256": "e485c2d1852a1597ac5028a2c4acd09978cbf61f2f9dfa43fd29683a29c6f2f6",
+      "bytes": 93928
+    },
+    "eq_bound.png": {
+      "sha256": "f11eb6e769ca98aed9ada7df59bdd309e1738d533eb9936c06fda7993dc22202",
+      "bytes": 36961
+    },
+    "eq_bound.svg": {
+      "sha256": "8ffd961a71ec2cc5eb0994be207f688c8cbec08d98a399e4eb43836afd496537",
+      "bytes": 11074
+    },
+    "eq_contact.png": {
+      "sha256": "e72715d3eb39accd65810f7c4f52965d6476e53bab5d25a191d303c308501c0c",
+      "bytes": 36708
+    },
+    "eq_contact.svg": {
+      "sha256": "b2bd7c3acbf75ed6857734a65a7cc51d06c0140fddcd22f35cf3d24c36b0c29e",
+      "bytes": 9806
+    },
+    "eq_cut.png": {
+      "sha256": "61af8010272c45c3422e0a57cf8696ba93f4ce5c2d1ddae28fa33795dbb67e09",
+      "bytes": 26631
+    },
+    "eq_cut.svg": {
+      "sha256": "bfb767b12badb18dc5776cbbcdcf44514d9fb18d4742bbdeb0a3a7d640da2c59",
+      "bytes": 7474
+    },
+    "eq_dryheat.png": {
+      "sha256": "8d3741e90aee4e887ec1c27394d2733c9b1f3d0007e7dd85c631d21bd4c7d6ad",
+      "bytes": 38157
+    },
+    "eq_dryheat.svg": {
+      "sha256": "4463c11b1295751a4679121a6fa2d00b4c3930cd6629df7d3c131b858bee8430",
+      "bytes": 12306
+    },
+    "eq_energy.png": {
+      "sha256": "5397d6760d558bd0a587ad690334715f2559df0a747dd3f579b0e3fdfbab40a0",
+      "bytes": 35544
+    },
+    "eq_energy.svg": {
+      "sha256": "51af85786c6c7eb66c9d748bf5a0a3cfbcbb3f45f67be30bca8a3dddac25e378",
+      "bytes": 11358
+    },
+    "eq_heat.png": {
+      "sha256": "ba59efce1c235cbb99ceaaa4c72a4f4b3624390324499fecef2ad3fa352f21ce",
+      "bytes": 24184
+    },
+    "eq_heat.svg": {
+      "sha256": "5aae72763dcc5a333f1b36e866c09aa9ad3288b4045880a07e3a9dce853b3ca4",
+      "bytes": 10603
+    },
+    "eq_hrr.png": {
+      "sha256": "980e9bf7bd04de8aca850df0d61c38e4d4275492de73dae38faacb0932ae09bc",
+      "bytes": 39231
+    },
+    "eq_hrr.svg": {
+      "sha256": "b6223ce8b2647091ae26ad743ff8b80d79ee55bc6fe4ccde8fe1af7acf119d39",
+      "bytes": 13968
+    },
+    "eq_ign.png": {
+      "sha256": "ed5f6a41124e48b274e64bbd437bca91234f86e067876479312e22c69f1d75aa",
+      "bytes": 30609
+    },
+    "eq_ign.svg": {
+      "sha256": "fdb3871c57732ec0cac8ec1dc6d89e73e9e8e88680ac867815b8f4b901f5c2a2",
+      "bytes": 10439
+    },
+    "eq_objective.png": {
+      "sha256": "f5f8f8d48d315c9b1e0a84cd453391b3366b73a5b43ba273457cb7c2dc881f27",
+      "bytes": 42816
+    },
+    "eq_objective.svg": {
+      "sha256": "aecc83e3406033b6c4be83fc92c9211536336f5c8e47b1f7b2c1f2147bb00f47",
+      "bytes": 10872
+    },
+    "eq_rad.png": {
+      "sha256": "10c384ef16c40f35b0f6147b4bc220c2f713d2ba0c2076032752d6980e445fbb",
+      "bytes": 36893
+    },
+    "eq_rad.svg": {
+      "sha256": "c9ca4653805a2407e91b87a72f3442a94187919deee97af5de88461b2cdeac63",
+      "bytes": 12321
+    },
+    "hrr_curve.png": {
+      "sha256": "6551f3bb25910274caeeb46e65dfd4df611af9c9e738c92d77c647865cf6f544",
+      "bytes": 59752
+    },
+    "hrr_curve.svg": {
+      "sha256": "817547b3752172788901187bf67f3832fdea21e390daf24adb65a5ba7741498e",
+      "bytes": 54639
+    },
+    "pingyan_B0035.png": {
+      "sha256": "9a1cc1b053bc696be884c57dbff989c5008d1ac875c27c0c975462da09e2b0c5",
+      "bytes": 45823
+    },
+    "pingyan_B0035.svg": {
+      "sha256": "90a16f168bb5ed18d388341f68904374c109e62e79103296210fe6bf0a1865b8",
+      "bytes": 275898
+    },
+    "pingyan_B0036.png": {
+      "sha256": "80b5af179a522b3db1f37b866196be46b386615ca45e8acf375d016c2de74141",
+      "bytes": 30615
+    },
+    "pingyan_B0036.svg": {
+      "sha256": "0c9eb552086a18f31972a4a9a31720c44e595fba34c479176f8df8c00e987771",
+      "bytes": 277214
+    },
+    "pingyan_B0166.png": {
+      "sha256": "8fb2c1be9fae854ff223268a48b917c1341d02a09620d95fb6814922d02303de",
+      "bytes": 190287
+    },
+    "pingyan_B0166.svg": {
+      "sha256": "fd476f84c193cd6151b79bc367e5b7df6302f23571cf6059de5e194650e51811",
+      "bytes": 274035
+    },
+    "pingyan_curve.png": {
+      "sha256": "2ee701000dc44c5a2299de35daa44f4f940d58bce127a308e2c161d1169f83d9",
+      "bytes": 68564
+    },
+    "pingyan_curve.svg": {
+      "sha256": "45e968ce08f7c91253f518ea80da803223fdcc1c7a757131c11b4e9049ee359f",
+      "bytes": 44156
+    },
+    "pingyan_drum_morph.png": {
+      "sha256": "377f31a367570be799774ad8d7c26ec74e39fc41cebef3525f42715e731b308e",
+      "bytes": 315125
+    },
+    "pingyan_drum_morph.svg": {
+      "sha256": "67d8330324ceadaf7b9133b2014d8679ae3c39c32521b164aaeb86a70a2903cd",
+      "bytes": 500963
+    },
+    "pingyan_overview.png": {
+      "sha256": "7e9b9cfba6340294f8a6bc77798a9c8cade942dc1f845eb5682c0a2d916163ee",
+      "bytes": 284055
+    },
+    "pingyan_overview.svg": {
+      "sha256": "49a7fe948ba5514614dbb061e64bb39735e37cf6a4855fbcbe7437c8f75ab287",
+      "bytes": 265738
+    }
+  }
+}

@@ -1,0 +1,587 @@
+{
+  "schema_version": "registered-multiarm-realized-footprint-capacity-1",
+  "all_eight_common_layouts_with_physical_sources_passed": false,
+  "rows": [
+    {
+      "draw_ordinal": 1,
+      "scale_m": 1.0,
+      "nodes": 298122,
+      "raw_point_edges": 11200296,
+      "integrated_edges_upper_bound": 11862326,
+      "preflight_passed": true,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+          "native_budget": {
+            "covered_area_m2": 25.000000564955148,
+            "initial_dry_fuel_mass_kg": 450.00001016919265,
+            "available_energy_J": 4390200099.210644
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255757612,
+            "initial_dry_fuel_mass_kg": 450.0000046036371,
+            "available_energy_J": 4390200044.913083
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255757612,
+            "initial_dry_fuel_mass_kg": 450.0000046036371,
+            "available_energy_J": 4390200044.913083
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 7413036,
+            "integrated_edges_upper_bound": 7532814
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 7397122,
+            "integrated_edges_upper_bound": 7506288
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 9669024,
+            "integrated_edges_upper_bound": 10103945
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 9660368,
+            "integrated_edges_upper_bound": 10091949
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 8215590,
+            "integrated_edges_upper_bound": 8462474
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 8186394,
+            "integrated_edges_upper_bound": 8410444
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 1,
+      "scale_m": 0.5,
+      "nodes": 326861,
+      "raw_point_edges": 69093770,
+      "integrated_edges_upper_bound": 73159095,
+      "preflight_passed": false,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+          "native_budget": {
+            "covered_area_m2": 25.000000564909563,
+            "initial_dry_fuel_mass_kg": 450.000010168372,
+            "available_energy_J": 4390200099.202639
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255784464,
+            "initial_dry_fuel_mass_kg": 450.00000460412025,
+            "available_energy_J": 4390200044.917796
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255784464,
+            "initial_dry_fuel_mass_kg": 450.00000460412025,
+            "available_energy_J": 4390200044.917796
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 20944380,
+            "integrated_edges_upper_bound": 21634599
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 20893404,
+            "integrated_edges_upper_bound": 21547343
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 49138036,
+            "integrated_edges_upper_bound": 51708627
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 49108630,
+            "integrated_edges_upper_bound": 51667959
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 30534610,
+            "integrated_edges_upper_bound": 31968651
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 30444654,
+            "integrated_edges_upper_bound": 31802873
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 2,
+      "scale_m": 1.0,
+      "nodes": 298198,
+      "raw_point_edges": 11217510,
+      "integrated_edges_upper_bound": 11880225,
+      "preflight_passed": true,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935110097,
+            "initial_dry_fuel_mass_kg": 449.9999988319819,
+            "available_energy_J": 4390199988.6048155
+          },
+          "footprint_missing_m2": 2.7184475624600444e-10,
+          "footprint_extra_m2": 1.040346708249245e-11
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935110097,
+            "initial_dry_fuel_mass_kg": 449.9999988319819,
+            "available_energy_J": 4390199988.6048155
+          },
+          "footprint_missing_m2": 2.7184475624600444e-10,
+          "footprint_extra_m2": 1.040346708249245e-11
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935110097,
+            "initial_dry_fuel_mass_kg": 449.9999988319819,
+            "available_energy_J": 4390199988.6048155
+          },
+          "footprint_missing_m2": 2.7184475624600444e-10,
+          "footprint_extra_m2": 1.040346708249245e-11
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 7454974,
+            "integrated_edges_upper_bound": 7577495
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 7439060,
+            "integrated_edges_upper_bound": 7550969
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 9704884,
+            "integrated_edges_upper_bound": 10142170
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 9696342,
+            "integrated_edges_upper_bound": 10130288
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 8251572,
+            "integrated_edges_upper_bound": 8500921
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 8222676,
+            "integrated_edges_upper_bound": 8449447
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 2,
+      "scale_m": 0.5,
+      "nodes": 327221,
+      "raw_point_edges": 69515910,
+      "integrated_edges_upper_bound": 73589190,
+      "preflight_passed": false,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935081977,
+            "initial_dry_fuel_mass_kg": 449.9999988314755,
+            "available_energy_J": 4390199988.599875
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935081977,
+            "initial_dry_fuel_mass_kg": 449.9999988314755,
+            "available_energy_J": 4390199988.599875
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "e3763aa786d34216d1b38faf477f8dbe6e6b5d9a77270aedd6e46e35fa4093e3",
+          "native_budget": {
+            "covered_area_m2": 24.999999935081977,
+            "initial_dry_fuel_mass_kg": 449.9999988314755,
+            "available_energy_J": 4390199988.599875
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 21529926,
+            "integrated_edges_upper_bound": 22234308
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 21478950,
+            "integrated_edges_upper_bound": 22147052
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 49688362,
+            "integrated_edges_upper_bound": 52272360
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 49659154,
+            "integrated_edges_upper_bound": 52231890
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 31085342,
+            "integrated_edges_upper_bound": 32533062
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 30995922,
+            "integrated_edges_upper_bound": 32368230
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 3,
+      "scale_m": 1.0,
+      "nodes": 298450,
+      "raw_point_edges": 11463772,
+      "integrated_edges_upper_bound": 12144066,
+      "preflight_passed": true,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "0fba081bb28f882ffb6e15697c81006c3b93e21b67ae70c267ea3cc60bfc764b",
+          "native_budget": {
+            "covered_area_m2": 24.99999986368122,
+            "initial_dry_fuel_mass_kg": 449.9999975462619,
+            "available_energy_J": 4390199976.061331
+          },
+          "footprint_missing_m2": 3.385875946477525e-11,
+          "footprint_extra_m2": 7.024640404410497e-12
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "727e63eca087ed40e4939c2a7547c21dcd0a8ba2e59e8efab52676a3cdbfa971",
+          "native_budget": {
+            "covered_area_m2": 25.000000014743172,
+            "initial_dry_fuel_mass_kg": 450.0000002653772,
+            "available_energy_J": 4390200002.58902
+          },
+          "footprint_missing_m2": 3.572181121052915e-11,
+          "footprint_extra_m2": 2.71265106731311e-12
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "8131401b20e28f05bcdcb9914cba1dad6248a746ce4003e44748aec3ec941e31",
+          "native_budget": {
+            "covered_area_m2": 25.000000205216477,
+            "initial_dry_fuel_mass_kg": 450.0000036938966,
+            "available_energy_J": 4390200036.037655
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 7473902,
+            "integrated_edges_upper_bound": 7594254
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 7457988,
+            "integrated_edges_upper_bound": 7567728
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 9832654,
+            "integrated_edges_upper_bound": 10274997
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 9824112,
+            "integrated_edges_upper_bound": 10263115
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 8261608,
+            "integrated_edges_upper_bound": 8508676
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 8232712,
+            "integrated_edges_upper_bound": 8457202
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 3,
+      "scale_m": 0.5,
+      "nodes": 327768,
+      "raw_point_edges": 71373106,
+      "integrated_edges_upper_bound": 75511009,
+      "preflight_passed": false,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "0fba081bb28f882ffb6e15697c81006c3b93e21b67ae70c267ea3cc60bfc764b",
+          "native_budget": {
+            "covered_area_m2": 24.99999986365578,
+            "initial_dry_fuel_mass_kg": 449.9999975458041,
+            "available_energy_J": 4390199976.056865
+          },
+          "footprint_missing_m2": 6.206143465890129e-11,
+          "footprint_extra_m2": 1.0083931993999477e-11
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "727e63eca087ed40e4939c2a7547c21dcd0a8ba2e59e8efab52676a3cdbfa971",
+          "native_budget": {
+            "covered_area_m2": 25.000000014753503,
+            "initial_dry_fuel_mass_kg": 450.000000265563,
+            "available_energy_J": 4390200002.590834
+          },
+          "footprint_missing_m2": 4.9297652697749376e-11,
+          "footprint_extra_m2": 2.01664889485937e-11
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "8131401b20e28f05bcdcb9914cba1dad6248a746ce4003e44748aec3ec941e31",
+          "native_budget": {
+            "covered_area_m2": 25.000000205267757,
+            "initial_dry_fuel_mass_kg": 450.0000036948197,
+            "available_energy_J": 4390200036.046661
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 21770826,
+            "integrated_edges_upper_bound": 22471185
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 21719850,
+            "integrated_edges_upper_bound": 22383929
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 50697588,
+            "integrated_edges_upper_bound": 53302011
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 50668380,
+            "integrated_edges_upper_bound": 53261541
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 31261378,
+            "integrated_edges_upper_bound": 32704613
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 31171958,
+            "integrated_edges_upper_bound": 32539781
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 4,
+      "scale_m": 1.0,
+      "nodes": 298112,
+      "raw_point_edges": 11167240,
+      "integrated_edges_upper_bound": 11825463,
+      "preflight_passed": true,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916190152,
+            "initial_dry_fuel_mass_kg": 449.9999984914227,
+            "available_energy_J": 4390199985.28232
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916190152,
+            "initial_dry_fuel_mass_kg": 449.9999984914227,
+            "available_energy_J": 4390199985.28232
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916190152,
+            "initial_dry_fuel_mass_kg": 449.9999984914227,
+            "available_energy_J": 4390199985.28232
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 7413964,
+            "integrated_edges_upper_bound": 7532453
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 7398050,
+            "integrated_edges_upper_bound": 7505927
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 9663874,
+            "integrated_edges_upper_bound": 10097128
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 9655332,
+            "integrated_edges_upper_bound": 10085246
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 8210562,
+            "integrated_edges_upper_bound": 8455879
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 8181666,
+            "integrated_edges_upper_bound": 8404405
+          }
+        }
+      }
+    },
+    {
+      "draw_ordinal": 4,
+      "scale_m": 0.5,
+      "nodes": 326930,
+      "raw_point_edges": 69010646,
+      "integrated_edges_upper_bound": 73065304,
+      "preflight_passed": false,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916316025,
+            "initial_dry_fuel_mass_kg": 449.9999984936884,
+            "available_energy_J": 4390199985.304425
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916316025,
+            "initial_dry_fuel_mass_kg": 449.9999984936884,
+            "available_energy_J": 4390199985.304425
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "6fe2eafe8f4719fab3c9dc087942df08de4e228daf05881df44f5f79da60b8fc",
+          "native_budget": {
+            "covered_area_m2": 24.999999916316025,
+            "initial_dry_fuel_mass_kg": 449.9999984936884,
+            "available_energy_J": 4390199985.304425
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      },
+      "actual_graph_stage_bound_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 21087346,
+            "integrated_edges_upper_bound": 21774662
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 21036370,
+            "integrated_edges_upper_bound": 21687406
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 49245782,
+            "integrated_edges_upper_bound": 51812714
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 49216574,
+            "integrated_edges_upper_bound": 51772244
+          }
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "after_roofs_before_grass": {
+            "raw_point_edges": 30642762,
+            "integrated_edges_upper_bound": 32073416
+          },
+          "after_roofs_and_grass": {
+            "raw_point_edges": 30553342,
+            "integrated_edges_upper_bound": 31908584
+          }
+        }
+      }
+    }
+  ],
+  "new_CA_checks": 0,
+  "source_redraws": 0,
+  "registered_capacity_limits_changed": false,
+  "supplemental_diagnostics_for_all_eight_common_layouts": true,
+  "if_capacity_exceeded": "all unobserved confirmatory outcomes remain unknown"
+}

@@ -1,0 +1,169 @@
+{
+  "accepted_complete8_point": [
+    1089.0173624408872,
+    5,
+    324.09411544264276
+  ],
+  "accepted_complete8_receipt_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-direct-D9-G0-complete8-audit-20261111.json",
+  "accepted_complete8_receipt_sha256": "988e71cc3677b2aaa015d3e27f13fcfc0378d3f31e3e79712d97fcac05c2fb5b",
+  "candidate_complete8": false,
+  "candidate_configured_total_scenarios": 8,
+  "candidate_experiment_sha256": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f",
+  "candidate_final_worst_C_Nupper_A_componentwise_lower_bound": [
+    1464.0173624408872,
+    5,
+    324.09411544264276
+  ],
+  "candidate_plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+  "candidate_problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+  "conditional_on_same_frozen_model_source_protocol_and_current_actual_source_semantics": true,
+  "native_closed_witnesses": [
+    {
+      "A_burned_out_m2": 188.24038476455533,
+      "A_ignited_m2": 188.24038476455533,
+      "A_nonroof_burned_out_m2": 0.0,
+      "C_construction_action_area_m2": 1464.0173624408872,
+      "C_native_geometry_area_m2": 1464.0173624411107,
+      "N_A_are_partial_observations_when_not_complete": false,
+      "N_burned_out_bounds": {
+        "lower": 2,
+        "upper": 5
+      },
+      "N_ignited_bounds": {
+        "lower": 2,
+        "upper": 5
+      },
+      "active_burning_area_m2": 0.0,
+      "actual_source_id": "B0062",
+      "actual_stop_time_s": 1647.3600000000001,
+      "artifact_hashes_verified": 8,
+      "closure_certificate_sha256": "d55a7845454170f6993f7cec00688643511ac6c5385747281e913bc0a6004aee",
+      "common_layout_sha256": "ef52f2b1f58fd9c33e4573163b0f52bd8a48c8d3a0360ef2bc7531f42510aaee",
+      "core": {
+        "B0073": {
+          "first_ignition_s": null,
+          "ignited": false,
+          "peak_K": 300.0
+        },
+        "B0120": {
+          "first_ignition_s": null,
+          "ignited": false,
+          "peak_K": 382.0338366691215
+        }
+      },
+      "fire_id": "B0062-known",
+      "folder": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/3226b3e280bd151c422618d12396ba57cd59da4c6b9f4c0babca1ab599f03f45",
+      "frozen_integrated_node_mask_sha256": "a689a06e6461226fcf928a2f012884ccbfbb84dd215734af200957aefe3d6ebe",
+      "manifest_sha256": "59b5e72358c22ba9c33a0d1814b2e22d947cd7873ca25b757e0346e58b97000c",
+      "native_artifacts_modified": false,
+      "objective": "N_burned_out_bounds",
+      "original_owner_reconstruction": {
+        "component_contract": "cellN:owner+owner:part[/localK];known_inventory_ids;matching_parent_cell",
+        "geometry_policy": "unrecognized_component_schema_only;failure_is_not_guessed",
+        "methods_node_count": {
+          "geometry": 0,
+          "immutable_component_id": 112055,
+          "nonroof": 0,
+          "supplied": 0
+        },
+        "owner_drops_bound_to_declared_demolitions": true,
+        "retained_owner_subset_verified": true
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+      "raw_invalid_reasons": [],
+      "raw_reached_horizon": false,
+      "raw_source_ignition_area_m2": 25.000000081018353,
+      "raw_status": "passed",
+      "raw_terminal_observation": "strict_extinction_closed",
+      "scale_m": 1.0,
+      "scenario_id": "B0062-known-h1",
+      "source_budget": {
+        "available_energy_J": 4390200014.22747,
+        "covered_area_m2": 25.000000081018353,
+        "initial_dry_fuel_mass_kg": 450.0000014583302
+      },
+      "source_footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8",
+      "strict_passed": true,
+      "terminal_complete": true,
+      "whole_fire_loss_complete": true
+    },
+    {
+      "A_burned_out_m2": 324.09411544264276,
+      "A_ignited_m2": 324.09411544264276,
+      "A_nonroof_burned_out_m2": 0.0,
+      "C_construction_action_area_m2": 1464.0173624408872,
+      "C_native_geometry_area_m2": 1464.0173624411104,
+      "N_A_are_partial_observations_when_not_complete": false,
+      "N_burned_out_bounds": {
+        "lower": 2,
+        "upper": 4
+      },
+      "N_ignited_bounds": {
+        "lower": 2,
+        "upper": 4
+      },
+      "active_burning_area_m2": 0.0,
+      "actual_source_id": "B0067",
+      "actual_stop_time_s": 2315.7200000000003,
+      "artifact_hashes_verified": 8,
+      "closure_certificate_sha256": "53ee7f3ea17b7ba747806c80b9284f1286da70bd7db0ffff4b5cf224a40f6b1c",
+      "common_layout_sha256": "7d7dcce6176715e8633e10ee96ed8d997ee1b99774371e8827384dda07860264",
+      "core": {
+        "B0073": {
+          "first_ignition_s": null,
+          "ignited": false,
+          "peak_K": 327.7626600458949
+        },
+        "B0120": {
+          "first_ignition_s": null,
+          "ignited": false,
+          "peak_K": 300.0
+        }
+      },
+      "fire_id": "B0071-known",
+      "folder": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/evaluations/336ada594c19237d0f0d64d6d47554a67ce80165e02b97b2a790069049295069",
+      "frozen_integrated_node_mask_sha256": "cf7ce436acc14d6848a440250f008b9246b77eaefc4ecbf2cb0482219bdbbf3a",
+      "manifest_sha256": "685e4b70338c2b090694cce2ce10374f47f9484f9f7307d086c53e0e1fafa341",
+      "native_artifacts_modified": false,
+      "objective": "A_burned_out_m2",
+      "original_owner_reconstruction": {
+        "component_contract": "cellN:owner+owner:part[/localK];known_inventory_ids;matching_parent_cell",
+        "geometry_policy": "unrecognized_component_schema_only;failure_is_not_guessed",
+        "methods_node_count": {
+          "geometry": 0,
+          "immutable_component_id": 117871,
+          "nonroof": 0,
+          "supplied": 0
+        },
+        "owner_drops_bound_to_declared_demolitions": true,
+        "retained_owner_subset_verified": true
+      },
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w0.5",
+      "problem_sha256": "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+      "raw_invalid_reasons": [],
+      "raw_reached_horizon": false,
+      "raw_source_ignition_area_m2": 25.000000430961478,
+      "raw_status": "passed",
+      "raw_terminal_observation": "strict_extinction_closed",
+      "scale_m": 0.5,
+      "scenario_id": "B0071-known-h0.5",
+      "source_budget": {
+        "available_energy_J": 4390200075.680282,
+        "covered_area_m2": 25.000000430961478,
+        "initial_dry_fuel_mass_kg": 450.0000077573065
+      },
+      "source_footprint_sha256": "62939fa6131f13f0a9f97acf7f348706f1b8fcc0ff5176a467817e78db92f3b0",
+      "strict_passed": true,
+      "terminal_complete": true,
+      "whole_fire_loss_complete": true
+    }
+  ],
+  "native_flags_or_scheduler_modified": false,
+  "new_CA_checks": 0,
+  "no_global_optimality_claim": true,
+  "proof": "final_max_over_all8_each_objective>=max_over_observed_strictly_closed_cases;C_fixed_by_declared_whole_object_action;complete8_accepted_point_dominates_this_lower_bound",
+  "remaining_cases_not_promoted_to_complete_or_safe": true,
+  "schema_version": "heritage-partial-worst-objective-dominance-bound-1",
+  "strictly_closed_native_cases": 5
+}

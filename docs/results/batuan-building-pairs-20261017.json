@@ -1,0 +1,2236 @@
+{
+  "schema": "batuan-pair-mechanism-summary-1",
+  "evidence": "observed geometry; synthetic fixed equivalent wood; no field calibration",
+  "profiles": [
+    {
+      "directory": "runs/research/batuan-building-pairs-20261017-r2",
+      "protocol_sha256": "624b1b92a28bfc20698760bd9285771d8852cff4aa9bcbbd08f2e4c7789d5c72",
+      "report_sha256": "d396e302c961e147bf0907ac293f3c44c6e43379fbbe7b96af9d7d2e97f1a65c",
+      "profile": "single_cell",
+      "selected_pairs": [
+        {
+          "pair_id": "B0163-B0180",
+          "building_ids": [
+            "B0163",
+            "B0180"
+          ],
+          "owner_ids": [
+            162,
+            179
+          ],
+          "polygon_gap_m": 3.4984837162798588,
+          "raster_min_center_distance_m": 5.0,
+          "gap_bin": "2-5m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347417.7263975131,
+              2869979.455055124
+            ],
+            [
+              347403.5842618887,
+              2869965.312919501
+            ]
+          ],
+          "selection_distance": 0.0015162837201412316
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "building_ids": [
+            "B0078",
+            "B0081"
+          ],
+          "owner_ids": [
+            77,
+            80
+          ],
+          "polygon_gap_m": 7.52805298767747,
+          "raster_min_center_distance_m": 11.180339887498949,
+          "gap_bin": "5-10m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347225.0441966591,
+              2869766.108713109
+            ],
+            [
+              347232.1641032115,
+              2869747.4189584106
+            ]
+          ],
+          "selection_distance": 0.02805298767747022
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "building_ids": [
+            "B0329",
+            "B0330"
+          ],
+          "owner_ids": [
+            328,
+            329
+          ],
+          "polygon_gap_m": 7.851894836520671,
+          "raster_min_center_distance_m": 10.0,
+          "gap_bin": "5-10m",
+          "fuel_class": "vegetated_gap",
+          "probe_ground_cells": 1,
+          "probe_vegetation_cells": 1,
+          "gap_ground_resolved": true,
+          "band_points_m": [
+            [
+              347595.94172722235,
+              2870242.191359812
+            ],
+            [
+              347615.8516366742,
+              2870240.2951779594
+            ]
+          ],
+          "selection_distance": 0.3518948365206711
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "building_ids": [
+            "B0128",
+            "B0131"
+          ],
+          "owner_ids": [
+            127,
+            130
+          ],
+          "polygon_gap_m": 15.012077438302926,
+          "raster_min_center_distance_m": 14.142135623730951,
+          "gap_bin": "10-20m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347416.802525749,
+              2869809.602323741
+            ],
+            [
+              347403.3171384688,
+              2869794.8326138626
+            ]
+          ],
+          "selection_distance": 0.012077438302926069
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "building_ids": [
+            "B0289",
+            "B0290"
+          ],
+          "owner_ids": [
+            288,
+            289
+          ],
+          "polygon_gap_m": 14.923661379208141,
+          "raster_min_center_distance_m": 11.180339887498949,
+          "gap_bin": "10-20m",
+          "fuel_class": "vegetated_gap",
+          "probe_ground_cells": 1,
+          "probe_vegetation_cells": 1,
+          "gap_ground_resolved": true,
+          "band_points_m": [
+            [
+              346965.4537939915,
+              2869839.973133831
+            ],
+            [
+              346959.7934446201,
+              2869820.7908387384
+            ]
+          ],
+          "selection_distance": 0.0763386207918586
+        }
+      ],
+      "records": [
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 341.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 342.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 341.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 342.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 341.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 342.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 341.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 342.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        }
+      ]
+    },
+    {
+      "directory": "runs/research/batuan-building-pairs-20261017-r3",
+      "protocol_sha256": "f6eb86b151a8d4b83928d3ec5e481e0ba8645ebaba0b4af30c6ca84908cd0116",
+      "report_sha256": "a3f377cd763e19425bcbd3ee36868a878e777bf223c70d39927d498840197da7",
+      "profile": "source_roof_cells",
+      "selected_pairs": [
+        {
+          "pair_id": "B0163-B0180",
+          "building_ids": [
+            "B0163",
+            "B0180"
+          ],
+          "owner_ids": [
+            162,
+            179
+          ],
+          "polygon_gap_m": 3.4984837162798588,
+          "raster_min_center_distance_m": 5.0,
+          "gap_bin": "2-5m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347417.7263975131,
+              2869979.455055124
+            ],
+            [
+              347403.5842618887,
+              2869965.312919501
+            ]
+          ],
+          "selection_distance": 0.0015162837201412316
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "building_ids": [
+            "B0078",
+            "B0081"
+          ],
+          "owner_ids": [
+            77,
+            80
+          ],
+          "polygon_gap_m": 7.52805298767747,
+          "raster_min_center_distance_m": 11.180339887498949,
+          "gap_bin": "5-10m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347225.0441966591,
+              2869766.108713109
+            ],
+            [
+              347232.1641032115,
+              2869747.4189584106
+            ]
+          ],
+          "selection_distance": 0.02805298767747022
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "building_ids": [
+            "B0329",
+            "B0330"
+          ],
+          "owner_ids": [
+            328,
+            329
+          ],
+          "polygon_gap_m": 7.851894836520671,
+          "raster_min_center_distance_m": 10.0,
+          "gap_bin": "5-10m",
+          "fuel_class": "vegetated_gap",
+          "probe_ground_cells": 1,
+          "probe_vegetation_cells": 1,
+          "gap_ground_resolved": true,
+          "band_points_m": [
+            [
+              347595.94172722235,
+              2870242.191359812
+            ],
+            [
+              347615.8516366742,
+              2870240.2951779594
+            ]
+          ],
+          "selection_distance": 0.3518948365206711
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "building_ids": [
+            "B0128",
+            "B0131"
+          ],
+          "owner_ids": [
+            127,
+            130
+          ],
+          "polygon_gap_m": 15.012077438302926,
+          "raster_min_center_distance_m": 14.142135623730951,
+          "gap_bin": "10-20m",
+          "fuel_class": "no_mapped_gap_fuel",
+          "probe_ground_cells": 0,
+          "probe_vegetation_cells": 0,
+          "gap_ground_resolved": false,
+          "band_points_m": [
+            [
+              347416.802525749,
+              2869809.602323741
+            ],
+            [
+              347403.3171384688,
+              2869794.8326138626
+            ]
+          ],
+          "selection_distance": 0.012077438302926069
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "building_ids": [
+            "B0289",
+            "B0290"
+          ],
+          "owner_ids": [
+            288,
+            289
+          ],
+          "polygon_gap_m": 14.923661379208141,
+          "raster_min_center_distance_m": 11.180339887498949,
+          "gap_bin": "10-20m",
+          "fuel_class": "vegetated_gap",
+          "probe_ground_cells": 1,
+          "probe_vegetation_cells": 1,
+          "gap_ground_resolved": true,
+          "band_points_m": [
+            [
+              346965.4537939915,
+              2869839.973133831
+            ],
+            [
+              346959.7934446201,
+              2869820.7908387384
+            ]
+          ],
+          "selection_distance": 0.0763386207918586
+        }
+      ],
+      "records": [
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 162,
+          "receiver_owner": 179,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 252.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 173.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 173.5,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 173.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 173.5,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 173.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 173.5,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 16.185745470683614,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": 173.0,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0163-B0180",
+          "source_owner": 179,
+          "receiver_owner": 162,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": 173.5,
+          "ignited_receiver_cells": 1,
+          "cleared_area_m2": 21.02789538179577,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 77,
+          "receiver_owner": 80,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0078-B0081",
+          "source_owner": 80,
+          "receiver_owner": 77,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 328,
+          "receiver_owner": 329,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.41144353422261,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0329-B0330",
+          "source_owner": 329,
+          "receiver_owner": 328,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 108.38050936821683,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 127,
+          "receiver_owner": 130,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0128-B0131",
+          "source_owner": 130,
+          "receiver_owner": 127,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 288,
+          "receiver_owner": 289,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "pair_only",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "pair_only",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "mapped_ground",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "mapped_ground",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 0.0,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_5m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_5m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 49.818950891367784,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_10m",
+          "dt_s": 1.0,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        },
+        {
+          "pair_id": "B0289-B0290",
+          "source_owner": 289,
+          "receiver_owner": 288,
+          "method": "clear_10m",
+          "dt_s": 0.5,
+          "first_receiver_ignition_s": null,
+          "ignited_receiver_cells": 0,
+          "cleared_area_m2": 74.62325842869771,
+          "actual_horizon_s": 5400.0,
+          "guard_ignited": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,537 @@
+{
+  "schema_version": "heritage-roof-milestone-1",
+  "date": "2026-10-23",
+  "scope": "independent roof thermal states, diagnostic Batuan ignitions and synthetic single-plan demolition; no optimization",
+  "runs": [
+    {
+      "evaluation": "runs/research/heritage-roof-batuan-20261023/technical-bridge-neighbor/baseline/evaluation.json",
+      "case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+      "evaluation_sha256": "398fa29be7eec2d1430a8ad610fa812a3484bc14cb1dbf7930ac7a541bc6c7c9",
+      "scenario": "technical-bridge-neighbor",
+      "plan": "baseline",
+      "status": "passed",
+      "source_ids": [
+        "B0061"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 12,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 45,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 311.7013956134459,
+          "absorbed_radiation_J": 6584789.097150164,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 5.602836608886719e-06,
+      "energy_tolerance_J": 0.27386596057885665,
+      "radiation_edges": 2214378,
+      "contact_edges": 299106,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-batuan-20261023/technical-gulou-neighbor/baseline/evaluation.json",
+      "case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+      "evaluation_sha256": "149f6fdd71e742afebdc3f9cd996516c044a82a2049fcf7acc3a1504e6ff9398",
+      "scenario": "technical-gulou-neighbor",
+      "plan": "baseline",
+      "status": "passed",
+      "source_ids": [
+        "B0076"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 12,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.36608525798476,
+          "absorbed_radiation_J": 188311.3816848409,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 45,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 2.7474015951156616e-08,
+      "energy_tolerance_J": 0.004175646586032081,
+      "radiation_edges": 2214378,
+      "contact_edges": 299106,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-batuan-source-area-20261023/technical-bridge-neighbor-source-area-control/baseline/evaluation.json",
+      "case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+      "evaluation_sha256": "74d2332dca711ef4cfe4c0918a4acf9adcf3604e9f27a991370144d681614f0b",
+      "scenario": "technical-bridge-neighbor-source-area-control",
+      "plan": "baseline",
+      "status": "failed",
+      "source_ids": [
+        "B0061"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 12,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 45,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 331.0,
+          "ignited_component_count": 24,
+          "maximum_valid_surface_temperature_K": 519.9614802399336,
+          "absorbed_radiation_J": 439677232.33765435,
+          "received_convection_J": 172071698.35886744
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 0.000213623046875,
+      "energy_tolerance_J": 140.2095828024453,
+      "radiation_edges": 2214378,
+      "contact_edges": 299106,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-batuan-source-area-20261023/technical-gulou-neighbor-source-area-control/baseline/evaluation.json",
+      "case_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+      "evaluation_sha256": "25cbdbe4282c3f392b883c3e611bab5358ad800331188c388fbd8f30a214919d",
+      "scenario": "technical-gulou-neighbor-source-area-control",
+      "plan": "baseline",
+      "status": "passed",
+      "source_ids": [
+        "B0076"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "B0073",
+          "role": "gulou",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 12,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 487.8944830352314,
+          "absorbed_radiation_J": 184059096.09272105,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "B0120",
+          "role": "fengyuqiao",
+          "identity_evidence": "updated_labelme_sha256:f42477759f932cadd946f95be16ce29f0e99a432924b525c7db84d4823cfed31",
+          "identity_status": "annotation_only",
+          "component_count": 45,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 5.435943603515625e-05,
+      "energy_tolerance_J": 5.852935122943072,
+      "radiation_edges": 2214378,
+      "contact_edges": 299106,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/cross-gap/cross-gap/baseline/evaluation.json",
+      "case_sha256": "78b90df6eca7f770069f2c0725a8ad7e12f02b2e6a8f7ea25c0dcc15d30ad573",
+      "evaluation_sha256": "a613736334618759d4aa3b7b7e3f87d62e91619cea04b0664bc467998d40be72",
+      "scenario": "cross-gap",
+      "plan": "baseline",
+      "status": "failed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 178.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.56255217062034,
+          "absorbed_radiation_J": 947721.8837580138,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 198.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.9102756874832,
+          "absorbed_radiation_J": 979766.6157880616,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 8.106231689453125e-06,
+      "energy_tolerance_J": 2.809737999999992,
+      "radiation_edges": 12,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/cross-gap/cross-gap/remove-M/evaluation.json",
+      "case_sha256": "78b90df6eca7f770069f2c0725a8ad7e12f02b2e6a8f7ea25c0dcc15d30ad573",
+      "evaluation_sha256": "fd0ea49b5de7f29fb01bc43feec97d09cb3cb450f21fa82abc82cfd0aaf5ed56",
+      "scenario": "cross-gap",
+      "plan": "remove-M",
+      "status": "failed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 211.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.9594065526069,
+          "absorbed_radiation_J": 1044277.8596471368,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 247.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.78055918019345,
+          "absorbed_radiation_J": 1108953.553272905,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 1,
+      "demolished_area_m2": 4.0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 5.245208740234375e-06,
+      "energy_tolerance_J": 2.1073059999999946,
+      "radiation_edges": 6,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/baseline/evaluation.json",
+      "case_sha256": "03f62ab46e3c7914851ffeb5269cb4b37cc964f342de9b751ce0ab46fd234abe",
+      "evaluation_sha256": "d53bb1844a71245183285b796db9487ab69b57e0295625a91939e307d3524398",
+      "scenario": "shared-cell",
+      "plan": "baseline",
+      "status": "failed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 405.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.7842886114676,
+          "absorbed_radiation_J": 83842.7295577581,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 477.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 349.78842880799766,
+          "absorbed_radiation_J": 83034.60640196232,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 3.2782554626464844e-07,
+      "energy_tolerance_J": 0.16752028835185337,
+      "radiation_edges": 12,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/shared-cell/shared-cell/remove-M/evaluation.json",
+      "case_sha256": "03f62ab46e3c7914851ffeb5269cb4b37cc964f342de9b751ce0ab46fd234abe",
+      "evaluation_sha256": "63933dc1eeeed35c2db038b21423f25587af134e31edbc84b8e3ed908653f27d",
+      "scenario": "shared-cell",
+      "plan": "remove-M",
+      "status": "passed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 346.1755743580616,
+          "absorbed_radiation_J": 134622.06170016972,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 330.17088996932847,
+          "absorbed_radiation_J": 86435.19397751395,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 1,
+      "demolished_area_m2": 0.24000000000000077,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 5.774199962615967e-08,
+      "energy_tolerance_J": 0.04215591905796527,
+      "radiation_edges": 6,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/transmission-chain/transmission-chain/baseline/evaluation.json",
+      "case_sha256": "0590616587718449a41d604937d8953dcd0500ef316d680c34844eba67dd1d0c",
+      "evaluation_sha256": "eabc4ce3ca53f0de37b012bd7b31bf7c55743e1ca9f1cc03da3c54a5f83abfac",
+      "scenario": "transmission-chain",
+      "plan": "baseline",
+      "status": "failed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 786.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 519.7886503302329,
+          "absorbed_radiation_J": 8198207.537186204,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": true,
+          "first_ignition_s": 916.0,
+          "ignited_component_count": 1,
+          "maximum_valid_surface_temperature_K": 518.5845717490204,
+          "absorbed_radiation_J": 7893779.487861518,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 0,
+      "demolished_area_m2": 0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 1.3828277587890625e-05,
+      "energy_tolerance_J": 2.050334220799988,
+      "radiation_edges": 8,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    },
+    {
+      "evaluation": "runs/research/heritage-roof-controls-20261023/transmission-chain/transmission-chain/remove-M/evaluation.json",
+      "case_sha256": "0590616587718449a41d604937d8953dcd0500ef316d680c34844eba67dd1d0c",
+      "evaluation_sha256": "c5d1ea9346eec7afa895db19ffb1b742258b50a5843cadf83a674ecf0a14f6ff",
+      "scenario": "transmission-chain",
+      "plan": "remove-M",
+      "status": "passed",
+      "source_ids": [
+        "S"
+      ],
+      "core_outcomes": [
+        {
+          "building_id": "G",
+          "role": "gulou",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        },
+        {
+          "building_id": "F",
+          "role": "fengyuqiao",
+          "identity_evidence": "synthetic_role_not_real_building",
+          "identity_status": "synthetic",
+          "component_count": 1,
+          "independent_temperature_states": true,
+          "shared_temperature_components": 0,
+          "ignited": false,
+          "first_ignition_s": null,
+          "ignited_component_count": 0,
+          "maximum_valid_surface_temperature_K": 300.0,
+          "absorbed_radiation_J": 0.0,
+          "received_convection_J": 0.0
+        }
+      ],
+      "demolished_count": 1,
+      "demolished_area_m2": 4.0,
+      "reached_requested_horizon": true,
+      "source_verified": true,
+      "max_energy_closure_error_J": 2.2649765014648438e-06,
+      "energy_tolerance_J": 0.7024419999999976,
+      "radiation_edges": 2,
+      "contact_edges": 0,
+      "parent_case_unchanged": true
+    }
+  ],
+  "tests": {
+    "full_suite_passed": 1226,
+    "existing_warnings": 9,
+    "elapsed_s": 149.93,
+    "new_roof_tests": 20
+  },
+  "real_fixed_sources_pending": true,
+  "real_candidate_eligibility_pending": true,
+  "recovery_audit": "heritage-roof-recovery-20261023.json",
+  "figure": "heritage-roof-thermal-20261023.png"
+}

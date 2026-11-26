@@ -1,0 +1,39 @@
+{
+  "new_runner_unit_tests": {
+    "passed": 5,
+    "includes_real_small_CA": true
+  },
+  "targeted_planning_regression": {
+    "passed": 66
+  },
+  "full_suite_sandbox": {
+    "passed": 1312,
+    "failed": 5,
+    "failure_cause": "PermissionError binding localhost HTTP ports"
+  },
+  "localhost_tests_repeated_with_port_permission": {
+    "passed": 5,
+    "failed": 0
+  },
+  "total_full_suite_cases_passed_across_runs": 1317,
+  "new_files_ruff_check": "passed_after_final_reporter_source_extension",
+  "repository_ruff_check": {
+    "errors": 39,
+    "scope": "existing_unmodified_files"
+  },
+  "repository_format_check": {
+    "would_reformat": 13,
+    "already_formatted": 539
+  },
+  "pre_commit_all_files": {
+    "completed": false,
+    "reason": "cache path outside writable roots; hooks would also autoformat existing unrelated files"
+  },
+  "simulation_physics_changed": false,
+  "postprocessing_self_checks": {
+    "nan_clocks": "passed",
+    "shared_physical_patch_count_once": "passed",
+    "exact_event_sum": "passed",
+    "demolition_union_internal_overlap": "passed"
+  }
+}

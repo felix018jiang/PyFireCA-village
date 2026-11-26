@@ -1,0 +1,16 @@
+{
+  "schema_version": "heritage-strategy-package-check-1",
+  "validated_on_local_date": "2026-10-25",
+  "test_count": 26,
+  "all_checks_passed": true,
+  "all_artifact_and_exporter_source_sha256_match": true,
+  "geographic_building_count": 333,
+  "geojson_roundtrip_max_Hausdorff_error_m": 2.1347218217435583e-09,
+  "csv_clearance_sum_matches_plan_union": true,
+  "all_16_core_rows_match_native_and_reach_1200s": true,
+  "unknown_costs_remain_blank_or_null": true,
+  "protected_ids_not_demolished": true,
+  "case_request_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+  "new_physical_CA_checks": 0,
+  "whole_village_search_started": false
+}

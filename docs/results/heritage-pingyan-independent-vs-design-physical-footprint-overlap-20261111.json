@@ -1,0 +1,42 @@
+{
+  "schema": "heritage-design-held-physical-support-overlap-1",
+  "registered_held_candidate_sha256": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+  "full_native_physical_experiment_hashes": {
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-loss-native-pingyan-20261111/experiment.json": "100370700a1eaa9e0d7b5f63624419a3b66c74a3987a55253eddddd9acf16d23",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111/experiment.json": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7"
+  },
+  "comparison_basis": "For the same demolition and ground clearance, compare held actual 25 m2 polygons against all four design polygons using original projected geometry. Mesh pairs count once.",
+  "equality_tolerance_m2": 1e-06,
+  "overlap_tolerance_m2": 1e-06,
+  "plans": [
+    {
+      "plan_id": "fixed-core-and-first-escape-compartment",
+      "design_families": 4,
+      "held_families": 4,
+      "held_footprints_geometrically_identical_to_any_design_footprint": 0,
+      "held_footprints_with_positive_area_overlap_with_any_design_footprint": 0,
+      "held_families_using_an_owner_building_also_present_in_design": 1
+    },
+    {
+      "plan_id": "roof-seed-protected-union-ring-b0-w2.5",
+      "design_families": 4,
+      "held_families": 4,
+      "held_footprints_geometrically_identical_to_any_design_footprint": 0,
+      "held_footprints_with_positive_area_overlap_with_any_design_footprint": 1,
+      "held_families_using_an_owner_building_also_present_in_design": 1
+    },
+    {
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "design_families": 4,
+      "held_families": 4,
+      "held_footprints_geometrically_identical_to_any_design_footprint": 0,
+      "held_footprints_with_positive_area_overlap_with_any_design_footprint": 1,
+      "held_families_using_an_owner_building_also_present_in_design": 2
+    }
+  ],
+  "geometry_coordinates_or_source_identifiers_disclosed": false,
+  "CA_simulations": 0,
+  "source_reselections": 0,
+  "statistical_independence_test": false
+}

@@ -1,0 +1,37 @@
+{
+  "actual_closed_and_matched": 7,
+  "eight_case_dominance_determined": false,
+  "native_checks_added": 0,
+  "original_pair_manifest_digests": [
+    [
+      "3905a786c3774f1dcf80d7a542e3dd2daeb006a1f784a23f2af3c63d9f454084",
+      "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6"
+    ],
+    [
+      "02277700d3b3c7cbcdfdd30eda735490713ada4c81e33e31c5b4af2d1ffd62ef",
+      "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0"
+    ],
+    [
+      "087173f133ac871d7475b3859c469cc6bd7da3f516adf6f6ecc238e70676eed4",
+      "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00"
+    ],
+    [
+      "91f6ba44c33416d563d17b8b652700355eba982f0246ee64f03fe41a8e194512",
+      "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8"
+    ],
+    [
+      "312f77fbafbf3e9cbbbe658a6486a1ed61415e2035d6bd5fdd8fc1500cb414b1",
+      "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc"
+    ],
+    [
+      "90f1043698099fd2bdf693c4e4900b78c3b42cc93bea51378be15d785dbd2345",
+      "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297"
+    ],
+    [
+      "d99e79f76c2c605f940a3c26119ea26d5fd7a47a2cb410f23ff9e254532f177b",
+      "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2"
+    ]
+  ],
+  "same_actual_fire_and_burnout_pattern_N_A": 7,
+  "scope": "checkpoint of only the completed seven frozen physical-source scenarios; remaining fine mesh scenario pending in separate original production"
+}

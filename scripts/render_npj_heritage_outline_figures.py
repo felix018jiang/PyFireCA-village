@@ -612,8 +612,18 @@ def reference_replays(dest):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=DEST)
-    dest = parser.parse_args().output
+    parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--numbered-english", action="store_true",
+        help="Render the 15 English figures in the numbered, in-text manuscript edition.",
+    )
+    args = parser.parse_args()
+    if args.numbered_english:
+        from heritage_numbered_figures import render
+
+        render(args.output or ROOT / "output/heritage-english-illustrations/figures")
+        return
+    dest = args.output or DEST
     dest.mkdir(parents=True, exist_ok=True)
     plt.rcParams.update(
         {

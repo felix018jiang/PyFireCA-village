@@ -1,0 +1,48 @@
+Use case: infographic-diagram.
+Create ONE publication-quality algorithm mechanism figure for a computer vision / computational simulation research paper, in the refined visual language of a CVPR method overview figure. Wide landscape approximately 2.2:1, high resolution, white background, crisp flat vector-like geometry and exceptionally legible English typography. This is a scientific mechanism diagram, not a poster or slide. No conference logos, no fake paper acceptance, no watermark. Use ample whitespace, thin charcoal arrows, aligned modules, muted blue/green/purple panels, cyan intervention bands, orange/red burning cells, gray house footprints. Diagrams must show understandable spatial operations, not generic decorative icons or neural-network blocks.
+
+Scientific subject: CURRENT IMPLEMENTED prototype, a fixed finite-candidate exhaustive search driven by cellular automaton fire simulations. It is NOT a genetic algorithm, not reinforcement learning, not a trained neural network. Two candidate domains share the same optimizer. Economic costs and clearance area do not enter the objective. Each simulation resets the unmodified base case.
+
+Layout: four main left-to-right panels occupying top 70%, then a clean bottom strip for independent validation. Small headline centered at top: "CA-driven Firebreak Candidate Search".
+
+Panel (a), heading "Spatial scene".
+Show three compact aligned input layers: an illustrative realistic overhead satellite village thumbnail, gray outlined annotated roof polygons, and a light contour/elevation grid. Mark thumbnail "Schematic". Merge into a tilted 2D cell map with green vegetation, gray buildings, light gray roads. Exact labels: "Satellite + building footprints + DEM", "5 m CA grid". Represent fuel assignment as existing preprocessing, not a learned network. A purple dashed 20 m buffer around house clusters separates pale-purple near-building proxy from green exterior. Short label "20 m building-buffer proxy". No claim of surveyed village boundary.
+
+Panel (b), heading "Feasible candidate bank".
+Two small top-down maps in stacked rows, labeled "Exterior proxy" and "Near-building proxy". Show several thin cyan diagonal/horizontal proposed band centerlines in their appropriate allowed zones, with small gray buildings preserved. Under both maps show exact concise settings:
+"24 candidates: 12 per zone"
+"L = 150 m; w = 5 or 10 m"
+"angle = -30, 0, or 30 deg"
+"Buildings and ignition cells protected"
+Small arrows from candidate bank to next panel labeled "Enumerate every candidate".
+Avoid implying these are two unrelated algorithms. Avoid drawing all vegetation cleared.
+
+Panel (c), heading "Intervene and simulate".
+Show upper inset: a 5 by 5 cell grid with a diagonal cyan outlined strip crossing a partially vegetated cell; enlarge one partial cell, shade cleared fraction cyan and remaining fuel green. The cyan strip is fuel removal, never a solid wall.
+Exact short text: "Fractional fuel removal"
+Equation with clear math typography: "f_i = area(cell_i intersect band) / area(cell_i)"
+Next equation: "m_i' = (1 - f_i) m_i"
+Then label "Fuel, water and energy scaled together".
+Below, two separate tiny scenario rows labeled "Ignition 1" and "Ignition 2". Each row has three cell-grid snapshots with vegetation green, roofs gray, and orange fire growing from a different starting cell through t0, t1, t2. Both show same cyan band. One curved orange radiation arrow visibly crosses the cyan cleared band to intact fuel; short adjacent label "Radiation can cross the band". Small grid neighbor arrow depicts face contact. Bottom text: "Radiation + near-field contact" and "Reset base case for each trial".
+No upward wind arrows, flying embers or opaque barrier. No implication that all fires extinguish.
+
+Panel (d), heading "Effectiveness-first selection".
+Use a crisp ordered list of five priorities, exactly:
+"1  Worst-case ignited homes"
+"2  Mean ignited homes"
+"3  Mean ignited structure area"
+"4  Mean ignited bridges"
+"5  Longer ignition-free time"
+Small downward preference arrows for 1-4, upward for 5. Label above list "Lexicographic ranking". Highlight a selected cyan band on each of two tiny output maps below the list, label "Best exterior candidate" and "Best near-building candidate". A small footnote inside panel: "Costs excluded; ties retained". Explicit "Best in the fixed candidate set".
+
+Bottom strip, pale lavender, titled "Independent checks after selection".
+Connect three boxes with arrows only left-to-right:
+"Held-out ignition / 60 min" -> "Full grid / 312 x 347, 60 min" -> "Extended horizon / 90 min".
+Under the first row of bottom strip note "Search: 2 ignition scenarios, 81 x 81 crop, 60 min". Label the last validation "Held-out crop". Connect selected outputs downward into validation, with no feedback arrow into ranking or candidate generation. Explain in a single small line "Freeze selected plans before validation". No validation-based re-selection.
+
+Small bottom legend: green square "Fuel", gray square "Buildings", cyan outlined strip "Clearance", orange square "Fire".
+Final subtle scope line: "Current prototype: calm wind, no spotting; candidate-set optimum under specified scenarios."
+All labels must be accurately spelled and organized, not overcrowded. Prefer clean beautiful scientific map miniatures with irregular house polygons and plausible village textures over stock icons. Keep diagrams faithful to a finite exhaustive search. Do not add data, percentages, experimental result claims, optimizer learning loops or invented model names.
+
+Targeted final edit (built-in imagegen; referenced initial generated image):
+Edit this scientific algorithm figure with only the following targeted changes, preserving the entire current layout, all panel diagrams, all other text and equations, crisp line art, colors, and landscape aspect ratio. Remove the north arrow N and 0/100/200 m scale bar at the bottom-right of panel (a); these miniatures are not actual georeferenced results. In their freed space write the short clear label 'All maps are schematic'. Keep the existing '5 m CA grid' label. Keep all other content unchanged, including the five lexicographic objectives, candidate settings, fractional clearing, radiation crossing, held-out validation and scope footer. Use high resolution suitable for a paper, ideally 3720 x 1692 or higher if available. Do not introduce new results or data.

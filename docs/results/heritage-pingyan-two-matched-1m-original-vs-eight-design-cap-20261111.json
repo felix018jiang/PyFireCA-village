@@ -1,0 +1,34 @@
+{
+  "schema_version": "paired-physical-coarse-native-vs-deterministic-limit-1",
+  "village": "pingyan",
+  "known_ordering_families_screened": 4,
+  "exact_physical_matches": 2,
+  "excluded_replaced_source_cases": 2,
+  "old_construction_C_m2": 8465.532897386736,
+  "new_construction_C_m2": 12853.90118112162,
+  "old_1m_aggregate_max_burned_m2": 1227785.760829013,
+  "old_1m_aggregate_worst_original_N_interval": [
+    113,
+    113
+  ],
+  "new_matched_analytic_A_upper_m2": 148.04,
+  "new_matched_analytic_original_N_upper": 3,
+  "guaranteed_difference_in_pair_worst_A_m2_at_least": 1227637.7208290128,
+  "guaranteed_difference_in_pair_worst_N_upper_metric_at_least": 110,
+  "guaranteed_difference_in_pair_worst_attributable_original_owner_count_at_least": 110,
+  "common_source_criteria": "Same retained roof and footprint, 25 m2, dry fuel mass and available energy verified against original and native material.",
+  "comparison_scope": "Worst over the same two families. Old outcomes are strict 1 m extinction endpoints. New limits cover both admissible meshes.",
+  "interpretation": "Matching applies to the initial physical material. The new capacity uses the eight disclosed design inputs.",
+  "prospective_new_validation_families": 0,
+  "new_CA_runs": 0,
+  "verified_native_manifests": 2,
+  "verified_native_artifact_hashes": 16,
+  "input_files_sha256": {
+    "docs/results/heritage-pingyan-eight-known-zero-heat-and-design-loss-20261111.json": "ede4ce000bd8aa947c63ebed59244b6e4111a23235c3f3a4ecf4e0e744a6989b",
+    "docs/results/heritage-pingyan-independent-three-arm-protection-and-loss-20261111.json": "d365efa86da0ec12a3288ccda8ec8149bb1ee084f8a1846b1e6f73762db6056e",
+    "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3"
+  },
+  "matched_manifest_commitment": "21466128848cb1852d5c2efbecb9bdcd2aa66f4b2a337deb9690d3674aa9aceb",
+  "method_sha256": "9f8016e4d9d448c34b9478d313ff13aaaad7c61f714cd7ed6e62bda3b5740faf",
+  "receipt_sha256": "0c86d5ba0792b32b83cf0b418aa600b326b165087eafd0f39740f0f985bd0b0c"
+}

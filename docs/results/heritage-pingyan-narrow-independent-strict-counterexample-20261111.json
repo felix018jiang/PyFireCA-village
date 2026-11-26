@@ -1,0 +1,43 @@
+{
+  "schema": "heritage-registered-plan-native-strict-counterexample-1",
+  "native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+  "candidate_C_m2": 2543.456175290825,
+  "preregistered_candidates_sha256": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+  "registered_plan": "roof-seed-protected-union-ring-b0-w2.5",
+  "original_families": 4,
+  "original_mesh_observations": 8,
+  "verified_failure_ordinal": 13,
+  "independent_family": 3,
+  "roof_scale_m": 1.0,
+  "native_end_time_s": 23534.999999999985,
+  "strict_extinction_complete": true,
+  "native_invalid_reasons": [],
+  "protected_total": 3,
+  "protected_ignited": 1,
+  "peak_K": 519.9999067789929,
+  "N_burned_owner_bounds": {
+    "lower": 204,
+    "upper": 209
+  },
+  "A_burned_out_m2": 112107.13954747883,
+  "A_burned_out_nonroof_m2": 70000.0,
+  "native_manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d",
+  "frozen_native_counterexample_witness_sha256": "12de3753ee594d8fe965feb0fe1900c7b25b6ec70e1d5912f0bc5d5bcd028525",
+  "conditional_status": "failed",
+  "native_stop_rule": true,
+  "actually_reserved_before_stop": [
+    9,
+    10,
+    11,
+    13
+  ],
+  "unissued_at_verified_failure": [
+    12,
+    14,
+    15,
+    16
+  ],
+  "full_eight_case_loss_summary_available": false,
+  "strict_all_four_families_two_scales_feasible": false,
+  "additional_CA_checks": 0
+}

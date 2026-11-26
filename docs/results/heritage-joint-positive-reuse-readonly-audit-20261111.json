@@ -1,0 +1,97 @@
+{
+  "schema_version": "heritage-positive-case-reuse-review-1",
+  "master_problem_sha256": "13abdf6990f230f52ab90262ab3b2141c0cb2e0cb6451d4b91044a91277736ab",
+  "master_native_problem_sha256": "788c864006b3ffaa49aba1a3dc27551db63846b43154a9b3961051720e53c87b",
+  "donor_problem_sha256": "c0eae3aba1b079bb4e6d86ffac7428ebf4215e8167975eadc0d9afd2130223a4",
+  "seed_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "declared_master_scenario_ids": [
+    "B0075-known-h1",
+    "B0071-known-h1",
+    "B0062-known-h1",
+    "B0061-known-h1",
+    "B0075-known-h0.5",
+    "B0071-known-h0.5",
+    "B0062-known-h0.5",
+    "B0061-known-h0.5"
+  ],
+  "available_exact_D_G_donor_cases": [
+    {
+      "scenario_id": "B0075-known-h0.5",
+      "raw_native_status": "unknown",
+      "raw_native_invalid_reasons": [
+        "fire_reached_physical_domain_edge"
+      ],
+      "ignited_core_ids": [],
+      "actual_stop_time_s": 43429.0,
+      "closure_certificate_present": true,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/80da2bcd444aa196fcc879cebc38b63ad2f8f56089365668b58bac462474a707/complete.json",
+      "manifest_sha256": "20fc4d277e27c9a76b9a9b3ff18820799ba896d411d934e5cf01571ab2ab74a3"
+    },
+    {
+      "scenario_id": "B0075-known-h1",
+      "raw_native_status": "unknown",
+      "raw_native_invalid_reasons": [
+        "fire_reached_physical_domain_edge"
+      ],
+      "ignited_core_ids": [],
+      "actual_stop_time_s": 43139.99999999999,
+      "closure_certificate_present": true,
+      "manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/evaluations/470ad36ae32d5700ff067a2aa62a188ba36779b481f62cc619063050a5dd3dc2/complete.json",
+      "manifest_sha256": "90251411fb2cba6022f9920cebd05fd90412e78b95e300238c5b24e478370b6f"
+    }
+  ],
+  "missing_seed_scenarios": [
+    "B0061-known-h0.5",
+    "B0061-known-h1",
+    "B0062-known-h0.5",
+    "B0062-known-h1",
+    "B0071-known-h0.5",
+    "B0071-known-h1"
+  ],
+  "donor_complete_eight_scenario_upper_bound": false,
+  "source_review_before_clock_fix": {
+    "master_manifest_files": 173,
+    "shared_manifest_files": 117,
+    "shared_frozen_file_differences": [],
+    "live_173_and_snapshot_173_pre_fix_differences": []
+  },
+  "frozen_snapshot_differences_now": {
+    "master": [],
+    "donor": []
+  },
+  "intentional_live_solver_clock_fix": {
+    "audit_path": "/Users/tone/Documents/github/PyFireCA/docs/results/v3-sampling-clock-error-path-audit-20261111.json",
+    "old_sha256": "ae359e6504e0ccb6475a5f8cfa75890f90f06362ce5d7e017ca08d270861dbc3",
+    "new_sha256": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+    "immutable_snapshots_unchanged": true
+  },
+  "first_attempt_fresh_master_common_layout_sha_and_frozen_mask_equal_to_donor": true,
+  "initial_owner_array_comparison_auditor_assumption_corrected": {
+    "incorrect_assumption": "fully_cleared_nodes_should_have_empty_owner_labels",
+    "actual_frozen_rule": "fully_cleared_nodes_keep_original_owner_labels;only_partial_shared_nodes_drop_removed_labels",
+    "not_evidence_of_a_physical_model_mismatch": true
+  },
+  "stop_flag_noninterference_proof": "ignition_time_s is initialized NaN and only assigned finite ignition times;it is never reset. A completed donor with all protected core times still NaN never triggers the core-first branch;all other observe arithmetic is the same.",
+  "current_import_approved": false,
+  "remaining_release_gates": [
+    "exact target request_fingerprint equality including ordered radiation edges;not computed in this review",
+    "full contact/prepared physics inputs must be byte-equal or covered by an explicit deterministic construction proof with matching runtime",
+    "new typed criterion bridge must preserve donor nativeP/evaluationID/artifacts and target problem binding",
+    "closure/state/peak/source/core audit plus target totalC cap and full action-universe eligibility",
+    "all eight target scenarios before a plan can supply an upper bound"
+  ],
+  "excluded_shortcuts": [
+    "similar C/N/A is insufficient",
+    "no relabeling old manifests or evaluation IDs",
+    "edge-invalid donor cannot become strict pass",
+    "C4775 balanced plan is outside the current C443 joint cap"
+  ],
+  "new_CA_checks": 0,
+  "new_radiation_or_contact_graphs_built": 0,
+  "current_driver_or_snapshot_modified": false,
+  "clock_continuation_design_path": "/Users/tone/Documents/github/PyFireCA/docs/HERITAGE_CLOCK_FIX_CONTINUATION_DESIGN_20261111.md"
+}

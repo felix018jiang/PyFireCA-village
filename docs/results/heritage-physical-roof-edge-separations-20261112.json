@@ -1,0 +1,250 @@
+{
+  "definitions": "EPSG:32649 horizontal minimum polygon-to-polygon distance in metres. For each core roof take the closest still-present ordinary roof material outside the union of protected roof polygons; list sorted values without target identifiers. Ordinary-to-ordinary statistics are for original ordinary labels not selected for removal, and their nearest *distinct* other retained ordinary label; shared or touching footprints count as zero. These are mapped roofs, not walls, facade setbacks, distances to grass, or lengths along terrain.",
+  "geometry_check": "Compare original roof union minus physical retained coverage to each certified GIS clearance layer; overlapping roof material remains where any owner is retained.",
+  "model_scope": "Descriptive geometry only; no transfer threshold, field survey or new fire.",
+  "construction_index_sha256": "b50b19123dac8b8a6b4606cab70e32a841e93ba8616223f88ffb979182c40cc8",
+  "method_sha256": "4ee3661d2c8c561bcc6a859a9d145024a423de0a7b91d980d9dd1e72b4587ce0",
+  "villages": [
+    {
+      "village": "pingyan",
+      "protected_roofs": 3,
+      "original_ordinary_roof_annotations": 947,
+      "structures_file": "runs/research/pingyan-physical-core-priority-20261029/spatial/buildings.json",
+      "structures_sha256": "14396072f528c43c22008dded80497a26e9c92858e3d0d97992c1038b1727e69",
+      "study_sha256": "08714ec3e35b9403f8102c2a7139b49f8473fffb6631651cdd918daf9871a7e4",
+      "measurements": [
+        {
+          "option": "baseline",
+          "construction_m2": 0,
+          "ordinary_annotation_actions": 0,
+          "retained_ordinary_labels_not_selected": 947,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            0.0,
+            1.1080980980692718e-10,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 0.0,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 653
+        },
+        {
+          "option": "roof-seed-protected-union-ring-b0-w2.5",
+          "construction_m2": 2543.456175290825,
+          "ordinary_annotation_actions": 10,
+          "retained_ordinary_labels_not_selected": 937,
+          "physical_clearing_map_symmetric_difference_m2": 6.857183662128263e-07,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            5.852711577015442,
+            12.667907430910706,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 5.852711577015442,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 644
+        },
+        {
+          "option": "local-band-with-observed-clearance-subset",
+          "construction_m2": 3585.565937285018,
+          "ordinary_annotation_actions": 15,
+          "retained_ordinary_labels_not_selected": 932,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            5.852711577015442,
+            12.667907430910706,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 5.852711577015442,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 640
+        },
+        {
+          "option": "fixed-core-and-first-escape-compartment",
+          "construction_m2": 8465.532897386734,
+          "ordinary_annotation_actions": 34,
+          "retained_ordinary_labels_not_selected": 913,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            14.738685302006546,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 14.738685302006546,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 622
+        },
+        {
+          "option": "roof-seed-protected-union-ring-b0-w15.01",
+          "construction_m2": 10669.276972304711,
+          "ordinary_annotation_actions": 23,
+          "retained_ordinary_labels_not_selected": 924,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            5.852711577015442,
+            12.667907430910706,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 5.852711577015442,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 632
+        },
+        {
+          "option": "pingyan-zero-heat-core-only",
+          "construction_m2": 5600.070776859304,
+          "ordinary_annotation_actions": 14,
+          "retained_ordinary_labels_not_selected": 933,
+          "physical_clearing_map_symmetric_difference_m2": 1.8149259110624143e-07,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            17.2173662956652,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 17.2173662956652,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 639
+        },
+        {
+          "option": "pingyan-zero-heat-four-tie-1",
+          "construction_m2": 9765.173036443528,
+          "ordinary_annotation_actions": 33,
+          "retained_ordinary_labels_not_selected": 914,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            17.2173662956652,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 17.2173662956652,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 622
+        },
+        {
+          "option": "pingyan-zero-heat-four-tie-2",
+          "construction_m2": 9765.173036443528,
+          "ordinary_annotation_actions": 33,
+          "retained_ordinary_labels_not_selected": 914,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            17.2173662956652,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 17.2173662956652,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 622
+        },
+        {
+          "option": "pingyan-zero-heat-four-tie-3",
+          "construction_m2": 9765.173036443528,
+          "ordinary_annotation_actions": 33,
+          "retained_ordinary_labels_not_selected": 914,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            17.2173662956652,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 17.2173662956652,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 622
+        },
+        {
+          "option": "pingyan-zero-heat-eight-known",
+          "construction_m2": 12853.90118112162,
+          "ordinary_annotation_actions": 44,
+          "retained_ordinary_labels_not_selected": 903,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            17.2173662956652,
+            19.681568586850435,
+            39.738245411380305
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 17.2173662956652,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 609
+        }
+      ]
+    },
+    {
+      "village": "batuan",
+      "protected_roofs": 2,
+      "original_ordinary_roof_annotations": 331,
+      "structures_file": "runs/research/heritage-geometry-20261023-r2/spatial/buildings.json",
+      "structures_sha256": "fd501803d5120068af631dd37f5a8f8f243625dee3ff8f5de95e3072ed5a584d",
+      "study_sha256": "666e657efbc926f63f8ca764a0ee27b469584ef7c921269fec3bb8d044a82fe9",
+      "measurements": [
+        {
+          "option": "baseline",
+          "construction_m2": 0,
+          "ordinary_annotation_actions": 0,
+          "retained_ordinary_labels_not_selected": 331,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            0.7822847407576603,
+            4.309053091417476
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 0.7822847407576603,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 191
+        },
+        {
+          "option": "direct-thin-D9-with-no-grass",
+          "construction_m2": 1089.0173624408872,
+          "ordinary_annotation_actions": 9,
+          "retained_ordinary_labels_not_selected": 322,
+          "physical_clearing_map_symmetric_difference_m2": 0.0,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            5.036063503757587,
+            6.872831890824957
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 5.036063503757587,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 180
+        },
+        {
+          "option": "batuan-joint-core-and-loss",
+          "construction_m2": 11236.448481374588,
+          "ordinary_annotation_actions": 56,
+          "retained_ordinary_labels_not_selected": 275,
+          "physical_clearing_map_symmetric_difference_m2": 1.075766543962947e-06,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            15.413684837791017,
+            23.96040717573075
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 15.413684837791017,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 146
+        },
+        {
+          "option": "batuan-joint-zero-heat-and-loss",
+          "construction_m2": 11736.448481377087,
+          "ordinary_annotation_actions": 56,
+          "retained_ordinary_labels_not_selected": 275,
+          "physical_clearing_map_symmetric_difference_m2": 1.075766543962947e-06,
+          "protected_to_external_ordinary_roof_net_gap_sorted_m": [
+            15.413684837791017,
+            23.96040717573075
+          ],
+          "minimum_protected_to_external_ordinary_roof_net_gap_m": 15.413684837791017,
+          "minimum_other_ordinary_neighbour_distance_m": 0.0,
+          "median_other_ordinary_neighbour_distance_m": 0.0,
+          "ordinary_annotations_touching_or_overlapping_another": 146
+        }
+      ]
+    }
+  ],
+  "content_sha256": "ba282abf1066dba9982366295223668568e761403c8c7fef48b0ff71257452af"
+}

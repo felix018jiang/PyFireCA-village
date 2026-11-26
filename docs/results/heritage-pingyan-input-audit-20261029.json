@@ -1,0 +1,140 @@
+{
+  "schema_version": "heritage-pingyan-input-audit-1",
+  "user_authorized_core_priority": true,
+  "building_count": 950,
+  "core_ids": [
+    "B0035",
+    "B0036",
+    "B0166"
+  ],
+  "candidate_count": 947,
+  "original_annotations_sha256": "d06b238b432cc5d942190a7cb47f05fbdd316690ae3f4deee4bc6c24095a6ae0",
+  "original_annotations_unchanged": true,
+  "core_overlap_corrections": [
+    {
+      "building_id": "B0119",
+      "original_area_m2": 151.3712846497845,
+      "corrected_area_m2": 151.19720149434437,
+      "retained_heritage_overlap_m2": 0.17408315516545367,
+      "rule": "user_authorized_heritage_priority_geometry_assumption_2026-10-29"
+    },
+    {
+      "building_id": "B0165",
+      "original_area_m2": 206.55330462386024,
+      "corrected_area_m2": 190.0474564876469,
+      "retained_heritage_overlap_m2": 16.505848136313276,
+      "rule": "user_authorized_heritage_priority_geometry_assumption_2026-10-29"
+    }
+  ],
+  "all_33_parent_parameter_arrays_identical_before_after_core_ownership_fix": true,
+  "per_field_identical": {
+    "coverage_fraction": true,
+    "covered_area_m2": true,
+    "initial_dry_fuel_mass_kg": true,
+    "live_dry_fuel_mass_kg": true,
+    "dead_dry_fuel_mass_kg": true,
+    "pyrolysable_dry_fuel_mass_kg": true,
+    "live_water_mass_kg": true,
+    "dead_water_mass_kg": true,
+    "water_mass_kg": true,
+    "moisture_content_dry_basis": true,
+    "heat_of_combustion_J_kg_dry": true,
+    "ignition_temperature_K": true,
+    "peak_hrrpua_W_m2_active": true,
+    "peak_hrr_W": true,
+    "radiative_fraction": true,
+    "absorptivity": true,
+    "growth_time_s": true,
+    "steady_time_s": true,
+    "decay_time_s": true,
+    "effective_heated_dry_mass_kg": true,
+    "specific_heat_J_kg_K": true,
+    "emissivity": true,
+    "ambient_heat_transfer_coefficient_W_m2_K": true,
+    "backing_conductance_W_m2_K": true,
+    "receiver_area_ratio": true,
+    "receiver_area_m2": true,
+    "active_surface_area_ratio": true,
+    "active_surface_area_m2": true,
+    "pyrolysable_dry_mass_fraction": true,
+    "source_height_m": true,
+    "receiver_height_m": true,
+    "available_energy_J": true,
+    "configured_curve_energy_J": true
+  },
+  "numerical_cell_clip_ownership_policy": "heritage_priority;positive_atoms_retained;no_area_threshold_or_artificial_gap",
+  "frozen_preflight": {
+    "rows": [
+      {
+        "fire_id": "near-B0035",
+        "scale_m": 1.0,
+        "nodes": 293564,
+        "raw_point_edges": 8465604,
+        "integrated_edges_upper_bound": 8726304,
+        "passed": true
+      },
+      {
+        "fire_id": "near-B0035",
+        "scale_m": 0.5,
+        "nodes": 309183,
+        "raw_point_edges": 33074060,
+        "integrated_edges_upper_bound": 34505088,
+        "passed": true
+      },
+      {
+        "fire_id": "near-B0036",
+        "scale_m": 1.0,
+        "nodes": 296450,
+        "raw_point_edges": 9893422,
+        "integrated_edges_upper_bound": 10354381,
+        "passed": true
+      },
+      {
+        "fire_id": "near-B0036",
+        "scale_m": 0.5,
+        "nodes": 320705,
+        "raw_point_edges": 53673706,
+        "integrated_edges_upper_bound": 56432811,
+        "passed": true
+      },
+      {
+        "fire_id": "near-B0166",
+        "scale_m": 1.0,
+        "nodes": 292081,
+        "raw_point_edges": 8236304,
+        "integrated_edges_upper_bound": 8478610,
+        "passed": true
+      },
+      {
+        "fire_id": "near-B0166",
+        "scale_m": 0.5,
+        "nodes": 303470,
+        "raw_point_edges": 29947962,
+        "integrated_edges_upper_bound": 31378328,
+        "passed": true
+      },
+      {
+        "fire_id": "background",
+        "scale_m": 1.0,
+        "nodes": 293583,
+        "raw_point_edges": 8410240,
+        "integrated_edges_upper_bound": 8673771,
+        "passed": true
+      },
+      {
+        "fire_id": "background",
+        "scale_m": 0.5,
+        "nodes": 309205,
+        "raw_point_edges": 32108316,
+        "integrated_edges_upper_bound": 33524284,
+        "passed": true
+      }
+    ],
+    "all_passed": true,
+    "candidate_count": 947,
+    "new_CA_checks": 0
+  },
+  "source_parent_profile_sha256": "1af81e7c6395ac8b5b3eaca286aeeab52317c479bf020862cc0261ac209d93cf",
+  "new_profile_sha256": "1af81e7c6395ac8b5b3eaca286aeeab52317c479bf020862cc0261ac209d93cf",
+  "new_CA_checks": 0
+}

@@ -1,0 +1,695 @@
+{
+  "schema_version": "heritage-exact-expansion-preflight-1",
+  "complete": true,
+  "config_sha256": "be1cb39189a440ff69f49a6b0ae270dd900787c7db9550b26de9bd9c4d728bae",
+  "new_CA_checks": 0,
+  "whole_village_search_started": false,
+  "node_limit": 200000,
+  "radiation_edge_limit": 20000000,
+  "all_capacity_bounds_passed": true,
+  "summaries": [
+    {
+      "scope": "expanded8",
+      "candidate_count": 8,
+      "source_coverage": [
+        {
+          "fire_id": "B0075-known",
+          "possible_sources": [
+            "B0075"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 93,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0071-known",
+          "possible_sources": [
+            "B0071",
+            "B0067",
+            "B0076",
+            "B0074"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 93,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0062-known",
+          "possible_sources": [
+            "B0062"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 93,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0061-known",
+          "possible_sources": [
+            "B0061",
+            "B0063",
+            "B0062"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 93,
+          "empty_source_is_unknown": true
+        }
+      ],
+      "strict_dominance_candidates": [],
+      "candidates_with_positive_exclusive_thermal_area": 8,
+      "B0149_exclusive_thermal_area_m2": 8.524899495630962e-12,
+      "base_nodes": 109856
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "candidate_count": 331,
+      "source_coverage": [
+        {
+          "fire_id": "B0075-known",
+          "possible_sources": [
+            "B0075",
+            "B0074",
+            "B0076",
+            "B0067"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 0,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0071-known",
+          "possible_sources": [
+            "B0071",
+            "B0067",
+            "B0076",
+            "B0074"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 0,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0062-known",
+          "possible_sources": [
+            "B0062",
+            "B0061",
+            "B0063"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 0,
+          "empty_source_is_unknown": true
+        },
+        {
+          "fire_id": "B0061-known",
+          "possible_sources": [
+            "B0061",
+            "B0063",
+            "B0062"
+          ],
+          "prefix_bound": 4,
+          "expanded_plans_checked": 0,
+          "empty_source_is_unknown": true
+        }
+      ],
+      "strict_dominance_candidates": [],
+      "candidates_with_positive_exclusive_thermal_area": 331,
+      "B0149_exclusive_thermal_area_m2": 8.524899495630962e-12,
+      "base_nodes": 109856
+    }
+  ],
+  "layouts": [
+    {
+      "scope": "expanded8",
+      "fire_id": "B0075-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0071",
+        "B0073",
+        "B0075",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "9b1e920791e667d0966004337c8b1c6869dd5a0ecffc0249847767288013b4f1",
+      "nodes": 111379,
+      "raw_point_edges": 2753132,
+      "integrated_edges_upper_bound": 2817129,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0075-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0071",
+        "B0073",
+        "B0075",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "70f35a90fed79ad23574e4a5492899b50ec7e4f3611996d9ff024472114f4c16",
+      "nodes": 115662,
+      "raw_point_edges": 9041548,
+      "integrated_edges_upper_bound": 9390792,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0071-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "0517ec85a2ea66594f463ae24972ef8a481a5043827be86d3d2e1d7cbbcf5567",
+      "nodes": 111661,
+      "raw_point_edges": 2859382,
+      "integrated_edges_upper_bound": 2933063,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0071-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "1e4dcb3ccb532387b58bd26b9fdd9cb8ebe3ed17ff89b9e59648735d708abb87",
+      "nodes": 116647,
+      "raw_point_edges": 10252342,
+      "integrated_edges_upper_bound": 10651220,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0062-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "02d750d35acac5b23a4d030ca18398fe61cc6d7c10ee9cbd1fee7d289d52b652",
+      "nodes": 111440,
+      "raw_point_edges": 2787522,
+      "integrated_edges_upper_bound": 2856116,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0062-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "94355826bd80d1c7e7199e5d91331f787bd036cedb93bba6ef0d711977b04c82",
+      "nodes": 115866,
+      "raw_point_edges": 9400762,
+      "integrated_edges_upper_bound": 9775181,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0061-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "7598197eff45d2fd8353c2ddab2cdf413d636d62c15bb69d0286e3a359feac74",
+      "nodes": 111540,
+      "raw_point_edges": 2860232,
+      "integrated_edges_upper_bound": 2935378,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "expanded8",
+      "fire_id": "B0061-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "95b80affd69e3791bc9f6e328055fac5862f9b294abecd6bcd24b7abbbbb5e48",
+      "nodes": 116176,
+      "raw_point_edges": 10164384,
+      "integrated_edges_upper_bound": 10579280,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0075-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0075",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "ea7079692de5dde379c30d0371f866157427872f14de5a8d0cb2fef58b8357bf",
+      "nodes": 111768,
+      "raw_point_edges": 2908538,
+      "integrated_edges_upper_bound": 2987651,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0075-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0075",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "cbcf7ffd09d5b58585bd909b679c1556db33a3a17bc6fdd5c6a6abe939ecd87c",
+      "nodes": 117041,
+      "raw_point_edges": 10776384,
+      "integrated_edges_upper_bound": 11207404,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0071-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "0517ec85a2ea66594f463ae24972ef8a481a5043827be86d3d2e1d7cbbcf5567",
+      "nodes": 111661,
+      "raw_point_edges": 2859382,
+      "integrated_edges_upper_bound": 2933063,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0071-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0067",
+        "B0071",
+        "B0073",
+        "B0074",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "1e4dcb3ccb532387b58bd26b9fdd9cb8ebe3ed17ff89b9e59648735d708abb87",
+      "nodes": 116647,
+      "raw_point_edges": 10252342,
+      "integrated_edges_upper_bound": 10651220,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0062-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "f4f5e59f9977c198676657beee32d718df0702d19ebfcf5effed3512117c942b",
+      "nodes": 111545,
+      "raw_point_edges": 2865888,
+      "integrated_edges_upper_bound": 2941520,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0062-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "918cd34f78295868ebc7284d7a3fc8c4a0c017d92f12c4b7b2c23ddc4c84094b",
+      "nodes": 116188,
+      "raw_point_edges": 10208834,
+      "integrated_edges_upper_bound": 10625738,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0061-known",
+      "scale_m": 1.0,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "7598197eff45d2fd8353c2ddab2cdf413d636d62c15bb69d0286e3a359feac74",
+      "nodes": 111540,
+      "raw_point_edges": 2860232,
+      "integrated_edges_upper_bound": 2935378,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    },
+    {
+      "scope": "all331_eligibility_geometry_only",
+      "fire_id": "B0061-known",
+      "scale_m": 0.5,
+      "refined_ids": [
+        "B0061",
+        "B0062",
+        "B0063",
+        "B0071",
+        "B0073",
+        "B0076",
+        "B0120"
+      ],
+      "geometry_key": "95b80affd69e3791bc9f6e328055fac5862f9b294abecd6bcd24b7abbbbb5e48",
+      "nodes": 116176,
+      "raw_point_edges": 10164384,
+      "integrated_edges_upper_bound": 10579280,
+      "capacity_passed": true,
+      "conservation_max_abs_error": {
+        "coverage_fraction": 2.220446049250313e-16,
+        "covered_area_m2": 7.105427357601002e-15,
+        "initial_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "live_dry_fuel_mass_kg": 0.0,
+        "dead_dry_fuel_mass_kg": 1.1368683772161603e-13,
+        "pyrolysable_dry_fuel_mass_kg": 5.684341886080802e-14,
+        "live_water_mass_kg": 0.0,
+        "dead_water_mass_kg": 1.4210854715202004e-14,
+        "water_mass_kg": 1.4210854715202004e-14,
+        "peak_hrr_W": 1.862645149230957e-09,
+        "effective_heated_dry_mass_kg": 1.4210854715202004e-14,
+        "receiver_area_m2": 7.105427357601002e-15,
+        "active_surface_area_m2": 7.105427357601002e-15,
+        "available_energy_J": 9.5367431640625e-07,
+        "configured_curve_energy_J": 9.5367431640625e-07
+      }
+    }
+  ]
+}

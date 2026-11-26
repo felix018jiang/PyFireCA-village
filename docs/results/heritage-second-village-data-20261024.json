@@ -1,0 +1,76 @@
+{
+  "schema_version": "heritage-second-village-data-audit-1",
+  "audit_date": "2026-10-24",
+  "village_id": "gaoyou",
+  "is_only_input_inventory_not_transfer_validation": true,
+  "files": {
+    "imagery_tiff": {
+      "path": "/Users/tone/Desktop/label_satellite/高友村.tif",
+      "exists": true,
+      "sha256": "9ebc8f67dcee4bd6ce1d0383b775b51c84816d6b3f1ef4805fbb5f08af493439",
+      "crs": "EPSG:3857",
+      "width": 2040,
+      "height": 1293,
+      "pixel_size": [
+        0.5971642834779396,
+        0.5971642834853782
+      ],
+      "matches_previous_preparation_hash": true
+    },
+    "annotations": {
+      "path": "/Users/tone/Desktop/label_satellite/高友村.json",
+      "exists": true,
+      "sha256": "2e8e02fc2053c3d4809fe82077a891f62cacb50077cd35095204f476cca8001b",
+      "shape_labels": {
+        "building": 341
+      },
+      "matches_previous_preparation_hash": true
+    },
+    "prepared_footprints": {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/gaoyou-vegetation-v3/v01-spatial-utm49n-final/buildings.json",
+      "exists": true,
+      "sha256": "06e40a15916ea3ca7b5fba3e670ce8dda49d37380f8e59154a53d38cd1f4e0aa",
+      "building_count": 341
+    },
+    "prepared_image_reference": {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/gaoyou-vegetation-v3/v01-spatial-utm49n-final/image_ref.json",
+      "exists": true,
+      "sha256": "3ba9eb1b2b21534eb23d3d733735034ac0d9622640abb09a388e54195c981aa2"
+    },
+    "prepared_elevation": {
+      "path": "/Users/tone/Documents/github/PyFireCA/data/local/elevation/gaoyou-v01-aligned-elevation-fabdem-2m.tif",
+      "exists": true,
+      "sha256": "040e78fd596ade933ac590beece78986d94a7ce1986586b95d710513232bada9",
+      "crs": "EPSG:32649",
+      "width": 552,
+      "height": 352,
+      "pixel_size": [
+        2.0,
+        2.0
+      ]
+    }
+  },
+  "prepared_grid": {
+    "height": 352,
+    "width": 552,
+    "cell_size_m": 2.0,
+    "x_min_m": 370944.0,
+    "y_max_m": 2874950.0,
+    "coordinate_mode": "projected",
+    "crs": "EPSG:32649"
+  },
+  "confirmed_heritage_ids": null,
+  "economic_costs": null,
+  "pending": [
+    "registered_local_metric_RGB_TIFF_and_annotation_reference",
+    "heritage_core_ids_and_protected_activity_spaces",
+    "building_identity_and_shared_roof_semantics",
+    "village_material_binding_and_field_evidence",
+    "demolition_eligibility_and_households",
+    "comparable_economic_costs_with_currency_date_scope_and_evidence",
+    "current_protocol_design_and_independent_confirmation_sources",
+    "new_village_physical_case_candidate_budget_and_CA_validation"
+  ],
+  "new_physical_CA_checks": 0,
+  "cross_village_validation_completed": false
+}

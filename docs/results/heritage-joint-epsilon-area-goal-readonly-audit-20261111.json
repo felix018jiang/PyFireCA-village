@@ -1,0 +1,34 @@
+{
+  "schema_version": "joint-epsilon-area-goal-readonly-audit-1",
+  "decision": "数学上成立；不在今晚15分钟内改生产或声称已实现。需独立goal-aware轨迹证书、validator、MIP及停止回调联调；当前P正例监控优先。",
+  "goal": {
+    "core": "全部声明核心全程未点火",
+    "temporal": "严格熄灭闭合；cap未闭合仍unknown",
+    "epsilon_A": "每个声明情景闭合physical burned-out covered area <= epsilon_A；等于worst-case A约束",
+    "objective": "在同一完整登记D/G行动域和同一冻结模型内min C；N先离线统计"
+  },
+  "early_failure_proof": "当前静态干预V3点火时间不复位，BURNING仅转BURNED_OUT，无运行中清理/灭火；故在任意可接受的未来闭合终态，A_burnout=A_ever_ignited。某完整post-events边界的保守累计点火面积下界>epsilon_A+显式tol即可否决该目标，即使当前尚燃烧。此论证不假定所有数值运行一定成功终止；burn-curve耗尽异常或未闭合仍不能充通过。",
+  "cut_proof": "已有失败动作A的同一前缀轨迹不变证明适用：D保留A，且不完全清空任何受guard的remaining-owner AND屋面组/G单例，则保留全部已点火节点及同一面积，累计点火越界仍成立。guard继续覆盖所有已受火节点、全部潜在radiation/contact receivers、warm-unlit节点、cold全局CFL/source变化与固定contact-h/稀疏分支合同；不能退化为火灾单调性假设。",
+  "mandatory_guards": [
+    "固定physical partition/geometry/原owner-AND成本、readonly frozen integration mask、同kernel/q/dt/source priority和完整点火预算",
+    "无动态灭火/清除、无future external ignition/firebrands；strict仅接受原生invalid=[]，finite-mask须另typed准则，不清标志",
+    "面积按post-action正covered物理节点唯一并集；共享label不重复；prefix比较用可证明向下的binary-float面积和，success用向上界或明确容差，边界不确定则unknown",
+    "core失败与loss越界分开记录；不得伪造raw record的core_ignition/protection_status/nativeP",
+    "正例必须全场景真实closure且coreSafe和A上界达标；prefix损失不能作完整N/A"
+  ],
+  "new_interfaces": [
+    "独立epsilon-goal schema/hash：epsilon/tol/metric/scope/scenarios与closure政策全部入goal_hash",
+    "把现joint证书的core-specific门槛改为独立failure witness：kind=core_ignition或ignited_area_exceeded，保存prefix实际状态/面积bound；新schema和capability seal，禁止导入旧core cut充loss cut",
+    "新validator/MIP只接同goal_hash的有效failure witnesses，仍用相同AND逃逸约束；未知不排除，已验证同goal正例和dual bound相接才闭合",
+    "独立stop observer在真实post-events边界检查累计点火A；不改物理步长、不伪造跑到cap。现engine仅core/extinction stop，不能只改check.status。"
+  ],
+  "pareto_boundary": "对多个epsilon解minC，可得到同固定模型和声明域中带LB/UB的C-A点；每一阈值未闭合须保留gap。有限epsilon网格不等于完整连续前沿，面积离散跃点和同C最小A还需处理；N维未优化不得宣称完整C/N/A全局Pareto。",
+  "code_coupling": {
+    "certificate": "joint_action_prototype.py:253 当前强制actual_core_failures；436 validator强制physical_core_failure_observed；MIP直连旧schema",
+    "oracle": "engines/joint_search.py当前仅core-first/extinction callbacks；需新loss observer及独立goal结果",
+    "raw_record": "engine终态record可诚实保留unknown prefix，新goal receipt另判failed_A，不改旧record"
+  },
+  "production_modified": false,
+  "new_CA_checks": 0,
+  "prototype_implemented": false
+}

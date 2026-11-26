@@ -1,0 +1,369 @@
+{
+  "local_time": "2026-11-12T00:26:53.846553+08:00",
+  "runs": [
+    {
+      "run": "heritage-joint-loss-native-batuan-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/batuan-joint-loss-native-20261111.json",
+      "experiment_sha256": "4a917298428da717210b07e8e83c442efb44c3f521b047553d0a06a340d0b658",
+      "config_sha256": "c1a29a7d9c74e120e2f42528ab3755a35c0a36cd692e2b36a1ef5f8b038ffd95",
+      "native_problem_sha256": "a2d588e07a77af6e6a2859e602836d764fd48a22e5bcb68097cfbd6535997075",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 16,
+      "recorded_manifests": 16,
+      "terminal_manifests": 16,
+      "unknown_manifests": 0,
+      "strict_passed": 16,
+      "native_budget_sha256": "940d2a927b73a6179875bcf2505c673506b22d5c9cd45dd8c433d6402976dc4a"
+    },
+    {
+      "run": "heritage-joint-loss-matched-reference-batuan-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/batuan-joint-loss-matched-reference-20261111.json",
+      "experiment_sha256": "c9aa8d85cea83b1bc729cc61825d3d546c5276d29875aceae5151894134ca1e1",
+      "config_sha256": "a845b81e92873db271fe34836de76d024c5bb68facf7dbd9d3efc5def80a1e74",
+      "native_problem_sha256": "7bc47258b0ef8484ed1fd3e84c13ce4255b48bc98d7f79beea4096cbf33a2515",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 4,
+      "recorded_manifests": 4,
+      "terminal_manifests": 4,
+      "unknown_manifests": 0,
+      "strict_passed": 4,
+      "native_budget_sha256": "780ba5cb0a49b945bddc3e980b1c8b3b1fadcae86f621767800d21598523535f"
+    },
+    {
+      "run": "heritage-joint-loss-native-pingyan-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-joint-loss-native-20261111.json",
+      "experiment_sha256": "100370700a1eaa9e0d7b5f63624419a3b66c74a3987a55253eddddd9acf16d23",
+      "config_sha256": "baba5f2b4a4e23ae95060c074a228b58b965c804996b8c00e7f67cbf62940640",
+      "native_problem_sha256": "f72d28f23891e2c6daa697f817454c563195c02f15e7fc48d5c76ac2f9e78ad5",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 8,
+      "recorded_manifests": 8,
+      "terminal_manifests": 8,
+      "unknown_manifests": 0,
+      "strict_passed": 8,
+      "native_budget_sha256": "9bb4494c027be71da9c7e87135f0d86e3ef43112fb4c04ed73e3e5ae30c2c685"
+    },
+    {
+      "run": "heritage-pingyan-observed-clearance-subset-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-observed-clearance-subset-20261111.json",
+      "experiment_sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+      "config_sha256": "45cfca8c6bce7f1c6e9da258eeac5023362bad7c7e6ceb48b9610c92e7594297",
+      "native_problem_sha256": "7bb17badc17000448c088511d69e34ec6494cd971e7519c4dd8c62262d4c0577",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 7,
+      "recorded_manifests": 7,
+      "terminal_manifests": 7,
+      "unknown_manifests": 0,
+      "strict_passed": 7,
+      "native_budget_sha256": "79a3d6e20b868544a3debf70c612c801bf76e3f23f74d6f618946440025379d6"
+    },
+    {
+      "run": "heritage-pingyan-observed-clearance-last-scale-shard-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-observed-clearance-subset-20261111.json",
+      "experiment_sha256": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+      "config_sha256": "45cfca8c6bce7f1c6e9da258eeac5023362bad7c7e6ceb48b9610c92e7594297",
+      "native_problem_sha256": "7bb17badc17000448c088511d69e34ec6494cd971e7519c4dd8c62262d4c0577",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 1,
+      "recorded_manifests": 1,
+      "terminal_manifests": 1,
+      "unknown_manifests": 0,
+      "strict_passed": 1,
+      "native_budget_sha256": "9afd3e87d1727af35d72a6933b0b497be7626f9c82358e583a82ccd17a449109"
+    },
+    {
+      "run": "heritage-pingyan-independent-three-stage-supplement-20261111",
+      "registered_config": "examples/research/heritage/confirmation-20261110/pingyan-three-fixed-plans-20261111/supplemental-stage-capacity-config.json",
+      "experiment_sha256": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+      "config_sha256": "f4bc77750fcbbe416f2c7e46e99c26f18dcfab0dee7192435c1dd010f85c2fad",
+      "native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 20,
+      "recorded_manifests": 20,
+      "terminal_manifests": 20,
+      "unknown_manifests": 0,
+      "strict_passed": 19,
+      "native_budget_sha256": "06449554ab103d4bbfb0dee76a43d95de7cda48d81e0338cda0a1523d92b7877",
+      "registered_family_allocation": {
+        "registered_slots": 24,
+        "reserved_ordinals": [
+          1,
+          3,
+          5,
+          6,
+          4,
+          7,
+          2,
+          8
+        ],
+        "published_ordinals": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "observations": {
+          "5": {
+            "status": "passed",
+            "manifest_sha256": "fcc4bee2c01edd9bb16dc16fa90e3d7534ea47b39a671626f062740c44581eee"
+          },
+          "3": {
+            "status": "passed",
+            "manifest_sha256": "44e2a20cfe4271dec37624fad16fb3f74a1d1d49712b7b7363634de642536229"
+          },
+          "6": {
+            "status": "passed",
+            "manifest_sha256": "6f57b83c6eba65e1b1e8165ef4855ad351bd1d1af3528da589fc7cf61fad7d49"
+          },
+          "1": {
+            "status": "passed",
+            "manifest_sha256": "236abb6ff45bdd6252c00cbe97c0054ea60fd62dd7346d5da5449bacf828bdb5"
+          },
+          "7": {
+            "status": "passed",
+            "manifest_sha256": "d8ad4ccf24b17ff5eb9319be25a7a549371aeedaa8a7f078429936d922da8982"
+          },
+          "4": {
+            "status": "passed",
+            "manifest_sha256": "45b40dfbe6046ea34827302104a0fb473ebd8bbd5434727f2f9b6f496a67f3ae"
+          },
+          "8": {
+            "status": "passed",
+            "manifest_sha256": "f563fa82a500e9c570e32a7d86379baff223ba0d33f41f49611eec36a6dda224"
+          },
+          "2": {
+            "status": "passed",
+            "manifest_sha256": "e3eac66694328cf276d1a55e1c6b746c6ffaf5070cc36fcbc604f1fd044e7af3"
+          }
+        },
+        "registration_sha256": "c7974fbb84be67423b48af7fdf96473d9dc1fb6a908041787f6abc605ed69eeb",
+        "ledger_updated_unix_s": 1794413201.880863
+      },
+      "registered_overlapping_allocation": {
+        "registration_sha256": "cb309496c9fb6c80bf0e353f65b00e0b4ef4fbcc45ffadc8ec297d2bbba82639",
+        "ledger_sha256": "caf58d3b6bc22ddc3182e69a9b5d81ce69eafea8328db47134b77dfc7359631f",
+        "earlier_slots_charged": 8,
+        "corridor_ordinals": [
+          9,
+          11,
+          10,
+          13
+        ],
+        "corridor_terminal_verified_ordinals": [
+          9,
+          11,
+          13
+        ],
+        "strict_failure_ordinals": [
+          13
+        ],
+        "ledger_updated_unix_s": 1794411210.857909
+      },
+      "registered_adaptive_allocation": {
+        "registration_sha256": "07e213e9037b10c399864538ab6550100da214098ceac9d9ca32f00947d24ed7",
+        "ledger_sha256": "4b0d31757e1a53c9620fc65ee590b667948e93a0b3f6ffc157782a514d421a94",
+        "original_charged_or_reserved": 20,
+        "observed": {
+          "11": {
+            "status": "passed",
+            "manifest_sha256": "7585234fc4fd71756e054a2b84573007b16cc7156456658640c51fc1cc6e1ec4"
+          },
+          "9": {
+            "status": "passed",
+            "manifest_sha256": "29bdf0c68542d67249dfec3ff00efe8c7f7f53cf663863fd1a30cda456e69265"
+          },
+          "13": {
+            "status": "failed",
+            "manifest_sha256": "4f9216a07730c95288e8d7b687c5fa134eb73f9baabf8bdbc59eaeab96fd820d"
+          },
+          "17": {
+            "status": "passed",
+            "manifest_sha256": "b08aee4b822b957d247914c76bea33175f4bfa182a5c641bd75d785f5e1a6e49"
+          },
+          "10": {
+            "status": "passed",
+            "manifest_sha256": "85701fed48348fa91cf875463bf03e467c90f50c8095800a9c2a3f84ce9ecddd"
+          },
+          "21": {
+            "status": "passed",
+            "manifest_sha256": "4ba94a616a549dbd1c62c2a04432a7dcfa5704276d8710e15a9713f55593f1d0"
+          },
+          "23": {
+            "status": "passed",
+            "manifest_sha256": "1fcf6e9c6dee2fed53364125eb83d5e4c4e8950a3ca6377e88e6dc4708f7a7c4"
+          },
+          "19": {
+            "status": "passed",
+            "manifest_sha256": "8892ab2f492566e7f6acc194e5f30f33aec8b9a9be824751680f0bc4aa9a2ea2"
+          },
+          "18": {
+            "status": "passed",
+            "manifest_sha256": "5eb35d7b761e7d8c3fb39af7499aa1e2b36b3b7bbf272641c2452577d4fe7eae"
+          },
+          "22": {
+            "status": "passed",
+            "manifest_sha256": "f95c90229e07f166a4c5a53e4f199bb50e6757834f7c759065b7d6da7f658e38"
+          },
+          "24": {
+            "status": "passed",
+            "manifest_sha256": "617817324787980fa3e34baaedfb3d79530be75f0e35632820a50747e08fdf43"
+          },
+          "20": {
+            "status": "passed",
+            "manifest_sha256": "89fd2e61b03905e64a19636d8229774cdc203c5eb42dd52f6d791dddcc0011e9"
+          }
+        },
+        "strict_failure_ordinals": [
+          13
+        ],
+        "settled_arms": [
+          2,
+          3
+        ],
+        "ledger_updated_unix_s": 1794414283.919104
+      }
+    },
+    {
+      "run": "heritage-pingyan-pareto-design-witnesses-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-protected-union-priority-longcap-comparison-20261111.json",
+      "experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+      "config_sha256": "39682da83d179d045bb1f8a3532c1b8d2b7d8b574e1936e96b0bedc331dd5afc",
+      "native_problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 4,
+      "recorded_manifests": 4,
+      "terminal_manifests": 4,
+      "unknown_manifests": 0,
+      "strict_passed": 4,
+      "native_budget_sha256": "eb9ffc3f090179ba2ce01dee7c72258f31d4bc02c0dc40f64082b3622fdc893b"
+    },
+    {
+      "run": "heritage-protected-union-pingyan-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-protected-union-priority-longcap-comparison-20261111.json",
+      "experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+      "config_sha256": "39682da83d179d045bb1f8a3532c1b8d2b7d8b574e1936e96b0bedc331dd5afc",
+      "native_problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+      "state": "paused_process",
+      "pid": 10860,
+      "slots_charged": 18,
+      "recorded_manifests": 16,
+      "terminal_manifests": 16,
+      "unknown_manifests": 0,
+      "strict_passed": 16,
+      "native_budget_sha256": "489f3824df8ba5a9eca10833447790ce80b6d6ae947370692c9263415f876fe9"
+    },
+    {
+      "run": "heritage-pingyan-zero-core-heat-and-design-loss-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-zero-core-heat-and-design-loss-native-20261111.json",
+      "experiment_sha256": "dd04afe8680bb7633a7ca0cf559e245c19d19e0b63a93841ee4dd13959b3394b",
+      "config_sha256": "598a2c4a300b7cbc6afb39189bb20f11f801c50c25a55496af90b64017b12d6a",
+      "native_problem_sha256": "e1ef7efe52c5850af0541f4fda056be69e2ba061e3b2938caf72525c1e205457",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 8,
+      "recorded_manifests": 8,
+      "terminal_manifests": 8,
+      "unknown_manifests": 0,
+      "strict_passed": 8,
+      "native_budget_sha256": "e39104554bbca2d10267619c5ecb31c532e1709ac0632b24e731d6f452166586"
+    },
+    {
+      "run": "heritage-pingyan-zero-core-only-coarse-control-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-zero-core-only-coarse-control-20261111.json",
+      "experiment_sha256": "1e9c391ce7b18006782f696dbe6fef1d05b9a7ebf259970834f0757cbd5e98e3",
+      "config_sha256": "1b512b1023464b0a42c53be45e7a5baa545bcb53a9c8c7657220cd9913cd970f",
+      "native_problem_sha256": "9c95846bf0b607b23e9fb991b31b9c62e2ab30170072be65b0f0e83bf6281d01",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 1,
+      "recorded_manifests": 1,
+      "terminal_manifests": 0,
+      "unknown_manifests": 0,
+      "strict_passed": 0,
+      "native_budget_sha256": "10895d8006473555087c5a69f674658c09f3530339f588a053909b38556e41ce"
+    },
+    {
+      "run": "heritage-pingyan-zero-heat-minimum-native-20261111",
+      "registered_config": "examples/research/heritage/area-20261110/pingyan-zero-heat-minimum-native-20261111.json",
+      "experiment_sha256": "d8cd683a73dc25fac04277dd7592aef24d96ac3c3ffb1d7f178676a3a66785c8",
+      "config_sha256": "61a131d77c2eb07590fa50785ccfec171aa220fd93b207d64870d1bff225eadf",
+      "native_problem_sha256": "aecdf8eb6f059959480336001520668df7e51304179af56751d85ccce5975a52",
+      "state": "no_live_budget",
+      "pid": null,
+      "slots_charged": 8,
+      "recorded_manifests": 8,
+      "terminal_manifests": 8,
+      "unknown_manifests": 0,
+      "strict_passed": 8,
+      "native_budget_sha256": "a007b5cb7e2fe7a3dcde9ce37c8872259f3642e4c1cea7ba3951d98d5d9f3550"
+    },
+    {
+      "run": "heritage-pingyan-eight-design-matched-two-1m-native-20261111",
+      "experiment_sha256": "ac06436b36baf036b204836d409f369da067dbcdf38e8a4104c91eb5c654cc40",
+      "registered_slots": 2,
+      "slots_charged": 2,
+      "recorded_manifests": 2,
+      "strict_passed": 2,
+      "active_budget": null,
+      "native_budget_sha256": "c51fed2f68e38bfe150cbc4bed1139f5ef52cbdc5cdc2ab1c52e42e3d486f95d"
+    }
+  ],
+  "validated_results": {
+    "heritage-all-ordinary-roofs-tight-cap-batuan-20261111.json": "84054a1d19e6c6b2199f7d0f35219f12c1cc30728461f24fe723623566450a31",
+    "heritage-all-ordinary-roofs-tight-cap-batuan-cost-proof-20261111.json": "2316d69c04a20d809b6730d836458b5e96a5603c91a4d5cbb0935969baba75c2",
+    "heritage-all-ordinary-roofs-tight-cap-batuan-independent-20261111.json": "a79c29dce1732875fc889b43b1a7e1f56afd97a39c3ca184148d3aeb085e0097",
+    "heritage-all-ordinary-roofs-tight-cap-pingyan-20261111.json": "a6d4dd220fc31b655dfafffa8dca88bebf2670353c3c6c104d1babe5eef5fd35",
+    "heritage-all-ordinary-roofs-tight-cap-pingyan-cost-proof-20261111.json": "23d59bbd94f0ca6e6b023e2e2c2a4947bba877634dd2adaf0610a04e2583795c",
+    "heritage-all-ordinary-roofs-tight-cap-pingyan-independent-20261111.json": "a8d66b7e53dae22679115098cd6fb8db703d763ddacb6f6694ce9460ff9c0342",
+    "heritage-cleared-and-burned-union-area-20261111.json": "73d53acdf1c9f2c4e6d8a199fa96f464f2f64156184e7c161339f4c3bd3b24b1",
+    "heritage-entire-roof-loss-with-construction-20261111.json": "9cb87eae89340976c3255bc3cc809128c9a9969d0945925d9296d9d7e8c92604",
+    "heritage-joint-loss-batuan-complete-native-audit-20261111.json": "f49721bfe6c5ff7df48ee309b5d2acf10fe2acb892d1f3c8f1cd5bd51b8f9c71",
+    "heritage-joint-loss-batuan-design8-native-audit-20261111.json": "07ad453f09b645eb5fc391ba664976bf501a25d87e22e5728dab182e58f93fd1",
+    "heritage-joint-loss-batuan-matched-footprint-native-pairs-20261111.json": "c83d5d2e273a521a47e65f7b50cd410629043599a66ca3bed25d9ed41209e5e2",
+    "heritage-joint-loss-pingyan-complete-native-audit-20261111.json": "823c0802bd20c8914ea7a8bd257fcc7c65448e75f00cf85db45099f9a2fbf3ae",
+    "heritage-ordinary-roof-retention-two-villages-20261111.json": "bfb417544fc659d49dc8cd935a8a23ac925946002f6919c3582e6733c3f0875f",
+    "heritage-pingyan-compact-new-source-extrapolation-20261111.json": "a107918c4f47c5223b22cdec86470d7f9133a28cd78e8a6745d154596532a200",
+    "heritage-pingyan-eight-design-matched-two-1m-preflight-20261111.json": "bbb018c8de31b152e2a93a5cc3d418aaf719620856ba9daba2f64110bee9a88e",
+    "heritage-pingyan-eight-known-zero-heat-and-design-loss-20261111.json": "ede4ce000bd8aa947c63ebed59244b6e4111a23235c3f3a4ecf4e0e744a6989b",
+    "heritage-pingyan-eight-known-zero-heat-registration-20261111.json": "65a0040174eaacc14e5f4fe7c81eebd3debe7ed1a2cc2026d9b34e92fcc945fa",
+    "heritage-pingyan-four-fixed-placements-eight-coverage-20261111.json": "19c88decb13a43f0dbf422c809bc78527c7f148ae236ae2180b473c9d142d909",
+    "heritage-pingyan-independent-confirmatory-pareto-20261111.json": "0cb8eb96069a264fe9eae5115a7dd5aab5c93724fc5b1b9f4c4fae19b2602203",
+    "heritage-pingyan-independent-three-arm-protection-and-loss-20261111.json": "ead628d0bc98fc8f58259ecbe4c07e163f8117486308a72f43687a21d54e09ad",
+    "heritage-pingyan-narrow-independent-strict-counterexample-20261111.json": "a30431c8b3e3792654c76ebd72a5ae9a4fe772a816c6eed35c961d701a0fa82a",
+    "heritage-pingyan-registered-all-exterior-heritage-energy-audit-20261111.json": "593d8f8a6d3b789c3e4cd2d278aa568436e1511e44f29dc09d920236be4ca9d9",
+    "heritage-pingyan-six-options-loss-capped-minimum-20261111.json": "45e0b422dda12f6ffad40e0f796cb50f30ae7dcedba93737ddf3f4845fd50adc",
+    "heritage-pingyan-six-options-native-pareto-witness-audit-20261111.json": "0569afd52a3454a752f3f6e574582a7584a4219d40bb088911e06edb1b3b6f78",
+    "heritage-pingyan-three-policies-complete8-table-20261111.json": "a64abcc4f7386ff7fed7221417f047b46136f00654e2eae54519d513b59a7e8b",
+    "heritage-pingyan-three-policies-seven-plus-one-strict-20261111.json": "58e9eb5fc9db03aec8f80c36a335d139c09d8f39335d7b45de0cc793ba52645d",
+    "heritage-pingyan-three-tied-minimum-firebreaks-20261111.geojson": "8fadc6d330fe18f1a6dd680796f5e9bfb9a7ab6d82d5255a7ad377f2d00fc330",
+    "heritage-pingyan-two-matched-1m-full-native-pair-audit-20261111.json": "828ada3d9b08fc9d857b9c9e049814aaa0689924e50ab2e96451738d51c80706",
+    "heritage-pingyan-two-matched-1m-original-vs-eight-design-cap-20261111.json": "113cf3ba13bba069e480392ba4ef10da0bd414267e105fc00ce44664b18eadcc",
+    "heritage-pingyan-two-zero-heat-casewise-and-worst-loss-tradeoffs-20261111.json": "d71f2a87f0f25c7609e47edb705dc0ebe684d34b09e001394ea4e16248fd0098",
+    "heritage-pingyan-two-zero-heat-native-strict-paired-20261111.json": "a3aea562f3bf4b44180d019beb9f39c114052c971bf1172d23678886857bf54f",
+    "heritage-pingyan-w0.01-first-ignition-prefix-20261111.json": "c4c6e42269ec1844ef8404e042890ee731b8a7f8f66c094ddd74c1a4b9710c64",
+    "heritage-pingyan-w2.5-vs-w15.01-complete8-paired-20261111.json": "86e7ca66d6073593e95f5588e38bcaab250b5b03108fa7024b36bb1e8cf885be",
+    "heritage-pingyan-zero-core-only-coarse-control-witness-20261111.json": "4f0e7156433d4c175f3bf8acca9f8a9bbbf95254cb237b3b9297265be82cf36d",
+    "heritage-pingyan-zero-heat-and-design-loss-20261111.json": "391bea7f08de1e9e6cc461c896d7490e38bf431df97d8ed2df50f90bf3568bfd",
+    "heritage-pingyan-zero-heat-and-design-loss-independent-20261111.json": "95708d3eab8d8c83b0e8e5ffe2c926cd824cfda22d91fb5dfb3123a0981b8ca8",
+    "heritage-pingyan-zero-heat-and-design-loss-native-eight-endpoints-20261111.json": "b317d7fbc2cf11144309f9fe255a94234e30fbd96882d88084ff05b7a5289a4b",
+    "heritage-pingyan-zero-heat-first-extensions-independent-20261111.json": "854dbb23596abd8a935c0d514320b53ec3dbc476961ad9521b0395ac1bcb2c12",
+    "heritage-pingyan-zero-heat-first-extensions-minimum-20261111.json": "fc44fd9a1fac8ffb78707453fa78281448d8b4b5a21271557742e366fa41d9d4",
+    "heritage-pingyan-zero-heat-minimum-native-eight-endpoints-20261111.json": "0ec8fa93d3e7373e6ec720783841effd87c34e44e2a4a185662ab24fd617bbad",
+    "heritage-protected-thermal-exposure-two-villages-20261111.json": "36c1e1a78b720792c36d3219ee9f6df881b1a71d0fa2719c30c15985ef406423",
+    "heritage-total-protection-and-loss-batuan-independent-20261111.json": "f870b4a4d7838f26aa9c7177e9a922446b5e7953bcf31b2400806577eea96bb5",
+    "heritage-total-protection-and-loss-pingyan-independent-20261111.json": "6e8bdd337e5c7063ae201875b24e0331452045570ed9b25f8076cb1fa70c1ac4",
+    "heritage-two-villages-entire-burned-roof-footprints-20261111.json": "4dafe29378dd057d9244d7b3c96f104131f5dded82eead14ac3a381f29e051a6"
+  },
+  "continuation": "A paused process retains its unfinished trajectory. Verify its full command before SIGCONT. If a stored PID is gone, preserve the original budget and manifests. Reconcile spent work with a recovery receipt before native resume."
+}

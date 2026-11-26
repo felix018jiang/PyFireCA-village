@@ -1,0 +1,140 @@
+{
+  "capacity_and_source_passed": true,
+  "frozen_config_sha256": "6ec66d36f42f10604908b5871571bca4d1c5379be6ee494100aaeb582f604489",
+  "new_CA_checks": 0,
+  "original_preflight_error": "actual source is ambiguous, unknown, cleared or physically incomplete",
+  "redraws": 0,
+  "rows": [
+    {
+      "draw_index": 1,
+      "footprint_extra_m2": 6.676865851385546e-11,
+      "footprint_missing_m2": 9.550587583425588e-10,
+      "foreign_base_overlap_m2": 9.607548719537274e-10,
+      "integrated_edges_upper_bound": 3552647,
+      "native_budget": {
+        "available_energy_J": 4390200001.6381645,
+        "covered_area_m2": 25.00000000932853,
+        "initial_dry_fuel_mass_kg": 450.0000001679135
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 112670,
+      "raw_point_edges": 3410288,
+      "scale_m": 1.0
+    },
+    {
+      "draw_index": 1,
+      "footprint_extra_m2": 8.724752121941001e-11,
+      "footprint_missing_m2": 8.849208534185155e-10,
+      "foreign_base_overlap_m2": 9.607548719537274e-10,
+      "integrated_edges_upper_bound": 17332891,
+      "native_budget": {
+        "available_energy_J": 4390200001.643854,
+        "covered_area_m2": 25.000000009360935,
+        "initial_dry_fuel_mass_kg": 450.00000016849674
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 120334,
+      "raw_point_edges": 16516408,
+      "scale_m": 0.5
+    },
+    {
+      "draw_index": 2,
+      "footprint_extra_m2": 4.451326527835737e-10,
+      "footprint_missing_m2": 4.3800290366771515e-11,
+      "foreign_base_overlap_m2": 0.0,
+      "integrated_edges_upper_bound": 3471761,
+      "native_budget": {
+        "available_energy_J": 4390199968.845428,
+        "covered_area_m2": 24.999999822590244,
+        "initial_dry_fuel_mass_kg": 449.9999968066244
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 112549,
+      "raw_point_edges": 3334592,
+      "scale_m": 1.0
+    },
+    {
+      "draw_index": 2,
+      "footprint_extra_m2": 0.0,
+      "footprint_missing_m2": 0.0,
+      "foreign_base_overlap_m2": 0.0,
+      "integrated_edges_upper_bound": 16494667,
+      "native_budget": {
+        "available_energy_J": 4390199968.835132,
+        "covered_area_m2": 24.99999982253161,
+        "initial_dry_fuel_mass_kg": 449.99999680556897
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 119919,
+      "raw_point_edges": 15708528,
+      "scale_m": 0.5
+    },
+    {
+      "draw_index": 3,
+      "footprint_extra_m2": 2.7021278200005036e-11,
+      "footprint_missing_m2": 2.802094277096212e-12,
+      "foreign_base_overlap_m2": 0.0,
+      "integrated_edges_upper_bound": 3516673,
+      "native_budget": {
+        "available_energy_J": 4390199991.916342,
+        "covered_area_m2": 24.9999999539676,
+        "initial_dry_fuel_mass_kg": 449.9999991714168
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 112764,
+      "raw_point_edges": 3375630,
+      "scale_m": 1.0
+    },
+    {
+      "draw_index": 3,
+      "footprint_extra_m2": 4.9326382185071495e-11,
+      "footprint_missing_m2": 1.615527717570113e-11,
+      "foreign_base_overlap_m2": 0.0,
+      "integrated_edges_upper_bound": 17146332,
+      "native_budget": {
+        "available_energy_J": 4390199991.9167385,
+        "covered_area_m2": 24.999999953969862,
+        "initial_dry_fuel_mass_kg": 449.99999917145755
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 120779,
+      "raw_point_edges": 16341222,
+      "scale_m": 0.5
+    },
+    {
+      "draw_index": 4,
+      "footprint_extra_m2": 0.0,
+      "footprint_missing_m2": 0.0,
+      "foreign_base_overlap_m2": 7.076330577819416e-11,
+      "integrated_edges_upper_bound": 3521481,
+      "native_budget": {
+        "available_energy_J": 4390200101.305632,
+        "covered_area_m2": 25.00000057688506,
+        "initial_dry_fuel_mass_kg": 450.00001038393106
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 112769,
+      "raw_point_edges": 3380892,
+      "scale_m": 1.0
+    },
+    {
+      "draw_index": 4,
+      "footprint_extra_m2": 0.0,
+      "footprint_missing_m2": 0.0,
+      "foreign_base_overlap_m2": 7.076330577819416e-11,
+      "integrated_edges_upper_bound": 17182353,
+      "native_budget": {
+        "available_energy_J": 4390200101.301792,
+        "covered_area_m2": 25.00000057686319,
+        "initial_dry_fuel_mass_kg": 450.00001038353753
+      },
+      "native_unique_retained_known_burnable_support": true,
+      "nodes": 120780,
+      "raw_point_edges": 16380548,
+      "scale_m": 0.5
+    }
+  ],
+  "schema_version": "independent-confirmation-realized-source-support-audit-1",
+  "source_or_physics_changes": false,
+  "verifier_sha256": "4d0106fb483e9f4b70bcfa9f23982e4e731ce19b849c5dd8fbc964426f1054b6"
+}

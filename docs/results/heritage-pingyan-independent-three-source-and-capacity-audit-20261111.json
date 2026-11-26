@@ -1,0 +1,90 @@
+{
+  "schema_version": "registered-multiarm-realized-footprint-capacity-1",
+  "all_eight_common_layouts_with_physical_sources_passed": false,
+  "rows": [
+    {
+      "draw_ordinal": 1,
+      "scale_m": 1.0,
+      "nodes": 298122,
+      "raw_point_edges": 11200296,
+      "integrated_edges_upper_bound": 11862326,
+      "preflight_passed": true,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+          "native_budget": {
+            "covered_area_m2": 25.000000564955148,
+            "initial_dry_fuel_mass_kg": 450.00001016919265,
+            "available_energy_J": 4390200099.210644
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255757612,
+            "initial_dry_fuel_mass_kg": 450.0000046036371,
+            "available_energy_J": 4390200044.913083
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255757612,
+            "initial_dry_fuel_mass_kg": 450.0000046036371,
+            "available_energy_J": 4390200044.913083
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      }
+    },
+    {
+      "draw_ordinal": 1,
+      "scale_m": 0.5,
+      "nodes": 326861,
+      "raw_point_edges": 69093770,
+      "integrated_edges_upper_bound": 73159095,
+      "preflight_passed": false,
+      "physical_support_by_plan": {
+        "fixed-core-and-first-escape-compartment": {
+          "footprint_sha256": "b92f09ff020b2022c236fa04d5cc7d07ed593ff9a73e2af9aaf919fbdcce3415",
+          "native_budget": {
+            "covered_area_m2": 25.000000564909563,
+            "initial_dry_fuel_mass_kg": 450.000010168372,
+            "available_energy_J": 4390200099.202639
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w2.5": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255784464,
+            "initial_dry_fuel_mass_kg": 450.00000460412025,
+            "available_energy_J": 4390200044.917796
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        },
+        "roof-seed-protected-union-ring-b0-w15.01": {
+          "footprint_sha256": "2035465af95049f94ea8eb1e2cb7c31fb76526c3c60aa62afff1fb520c4b9970",
+          "native_budget": {
+            "covered_area_m2": 25.000000255784464,
+            "initial_dry_fuel_mass_kg": 450.00000460412025,
+            "available_energy_J": 4390200044.917796
+          },
+          "footprint_missing_m2": 0.0,
+          "footprint_extra_m2": 0.0
+        }
+      }
+    }
+  ],
+  "new_CA_checks": 0,
+  "source_redraws": 0,
+  "registered_capacity_limits_changed": false,
+  "if_capacity_exceeded": "all unobserved confirmatory outcomes remain unknown"
+}

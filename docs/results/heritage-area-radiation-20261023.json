@@ -1,0 +1,33 @@
+{
+  "schema_version": "heritage-area-radiation-summary-1",
+  "scope": "technical_source_geometry_control_not_protection_claim",
+  "complete_run_directory": "runs/research/heritage-area-radiation-20261023-r2",
+  "runs": [
+    {"probe": "gulou", "area_m2": 25.0, "h_m": 1.0, "first_core_ignition_s": null, "maximum_valid_core_temperature_K": 508.22575551671997, "quadrature_relative_error": 0.0006100524055245694},
+    {"probe": "gulou", "area_m2": 25.0, "h_m": 0.5, "first_core_ignition_s": null, "maximum_valid_core_temperature_K": 503.5285748876467, "quadrature_relative_error": null},
+    {"probe": "gulou", "area_m2": "all", "h_m": 1.0, "first_core_ignition_s": 528.0, "maximum_valid_core_temperature_K": 519.9727917857754, "quadrature_relative_error": 0.0005903076957822855},
+    {"probe": "gulou", "area_m2": "all", "h_m": 0.5, "first_core_ignition_s": 498.0, "maximum_valid_core_temperature_K": 519.9964710638486, "quadrature_relative_error": null},
+    {"probe": "bridge", "area_m2": 25.0, "h_m": 1.0, "first_core_ignition_s": 764.0, "maximum_valid_core_temperature_K": 519.9634619399449, "quadrature_relative_error": 0.0009914940570715238},
+    {"probe": "bridge", "area_m2": 25.0, "h_m": 0.5, "first_core_ignition_s": 929.0, "maximum_valid_core_temperature_K": 519.9871408708335, "quadrature_relative_error": null},
+    {"probe": "bridge", "area_m2": "all", "h_m": 1.0, "first_core_ignition_s": 272.0, "maximum_valid_core_temperature_K": 519.9919493287117, "quadrature_relative_error": 0.0016433821366421994},
+    {"probe": "bridge", "area_m2": "all", "h_m": 0.5, "first_core_ignition_s": 264.0, "maximum_valid_core_temperature_K": 519.9989529948814, "quadrature_relative_error": null}
+  ],
+  "checks": {
+    "planned_runs_completed": "8/8",
+    "quadrature_peak_coupling_below_1pct": true,
+    "scale_pairs_passing": "2/4",
+    "maximum_energy_closure_error_J": 0.0005340576171875,
+    "minimum_energy_tolerance_J": 5.791883696213117,
+    "fixed_ignition_polygons": true,
+    "material_and_transport_parameters_unchanged": true
+  },
+  "rejected_contact_closure": {
+    "directory": "runs/research/heritage-source-spatial-closure-20261023",
+    "completed_runs": 2,
+    "planned_runs": 8,
+    "reason": "1m remained unignited while 0.5m ignited at 516s for the same 25m2 gulou probe; remaining runs stopped and implementation reverted"
+  },
+  "real_candidate_ids": [],
+  "real_fixed_source_ids": [],
+  "optimization": false
+}

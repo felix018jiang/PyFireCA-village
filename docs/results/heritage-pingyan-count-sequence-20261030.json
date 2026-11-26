@@ -1,0 +1,25 @@
+{
+  "stage": "complete",
+  "updated_at": "2026-10-30T11:56:40+08:00",
+  "production_pid": 55621,
+  "best_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "bounds": {
+    "minimum_count_lower": 3,
+    "feasible_count_upper": 5,
+    "incumbent_nominal_area_m2": 995.4810719970926,
+    "same_count_area_lower_bound_m2": 405.5657134441465
+  },
+  "new_search_CA_checks": 29,
+  "native_validation_CA_checks": 1,
+  "outputs": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-pingyan-count-extension-20261030",
+  "document_review_completed_at": "2026-10-30T12:17:33+08:00",
+  "automation_id": "17",
+  "automation_status": "deleted",
+  "delivery_receipt": "docs/results/heritage-pingyan-count-extension-20261030/delivery-receipt.json"
+}

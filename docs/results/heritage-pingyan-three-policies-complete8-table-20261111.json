@@ -1,0 +1,351 @@
+{
+  "A_and_N_equal_per_case_for_subset_and_wide": true,
+  "global_optimality_proven": false,
+  "independent_source_draws_in_this_refinement": 0,
+  "merge_file_sha256": "58e9eb5fc9db03aec8f80c36a335d139c09d8f39335d7b45de0cc793ba52645d",
+  "merged_native_physical_equivalence_sha256": "5357d2ef345923a14b55fafd22846355fcf72c11c3447dba248221491448fcdf",
+  "method_sha256": "0101dda0db8a12cbdaeeee8d56883ca162624214e45be7bdf121eb440b8041f2",
+  "new_CA_checks": 0,
+  "non_dominated_plans_among_three_C_Nupper_A": [
+    "roof-seed-protected-union-ring-b0-w2.5",
+    "local-band-with-observed-clearance-subset"
+  ],
+  "origin_native_evaluations_by_original_campaign": {
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-last-scale-shard-20261111": 1,
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-pingyan-observed-clearance-subset-20261111": 7,
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-protected-union-pingyan-20261111": 16
+  },
+  "paired_observations": [
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 1742.466642257279,
+          "N_original_roof_owner_bounds": {
+            "lower": 9,
+            "upper": 11
+          },
+          "burned_mask_sha256": "71c6cebf93b98623403be50f31e72e5b60f1dfc735b90149cf997125a20e952f",
+          "manifest_sha256": "42a89611656e8d8a5f549cfde3fe6f417c10268df98ef1a89c5e518879883ef1",
+          "original_owner_profile_sha256": "8c1d3a06e22ce604487d6a324993145ef3ce062e5e705989fce7757378041b0e"
+        },
+        {
+          "A_burned_m2": 111.17746509794178,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "87858be2ef5fa880f73fa361be768f1b0daa77d2cfd3de1a5911e37fad327d61",
+          "manifest_sha256": "1edf0e08c102c5fbf35f392ad55b01ba3c7cd664378d83e0b0935b36c9a16d23",
+          "original_owner_profile_sha256": "1a7f3d62d78886c261c4a1f49549de964049a7ab288432b8e5d3a0d0412bd2aa"
+        },
+        {
+          "A_burned_m2": 111.17746509794178,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "87858be2ef5fa880f73fa361be768f1b0daa77d2cfd3de1a5911e37fad327d61",
+          "manifest_sha256": "b034e310e531f2608c48ae20157dfe29d82b195e0a850b12c689395ae05bb0e7",
+          "original_owner_profile_sha256": "1a7f3d62d78886c261c4a1f49549de964049a7ab288432b8e5d3a0d0412bd2aa"
+        }
+      ],
+      "registered_case_ordinal": 1
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 1742.466642257279,
+          "N_original_roof_owner_bounds": {
+            "lower": 9,
+            "upper": 11
+          },
+          "burned_mask_sha256": "8f8a5bb2bee007ea29ebfbcb4feeef23e68c61fcd8bbaee0071eff8c8f962c51",
+          "manifest_sha256": "5822fd67a6a3709b8a503c4dc08aac679d96555883813e9a7c644b322a13eb59",
+          "original_owner_profile_sha256": "2c19d1ee594d48702dd86de7e645c14e576d098e99cf4bdc56c810482fe73327"
+        },
+        {
+          "A_burned_m2": 111.17746509794179,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "81304b71452da91ecb910a8c02f27bd30295a0644c8d2817bbda295a08352bcf",
+          "manifest_sha256": "3905a786c3774f1dcf80d7a542e3dd2daeb006a1f784a23f2af3c63d9f454084",
+          "original_owner_profile_sha256": "4e4578b67242450dc60ba42b56d4125da0e194e1d767eac35cf9ecad0059d8e0"
+        },
+        {
+          "A_burned_m2": 111.17746509794179,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "81304b71452da91ecb910a8c02f27bd30295a0644c8d2817bbda295a08352bcf",
+          "manifest_sha256": "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6",
+          "original_owner_profile_sha256": "4e4578b67242450dc60ba42b56d4125da0e194e1d767eac35cf9ecad0059d8e0"
+        }
+      ],
+      "registered_case_ordinal": 2
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 113.12751824668791,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "82ca8b9388692feabd8dae439103fd96245bd902ba42dc46efb7d0acd5b0866f",
+          "manifest_sha256": "9ca4732e21103271b9d145871a36c028a4846072d8590c3a963b4a34f0e4ec54",
+          "original_owner_profile_sha256": "7bc1c9f8a112a02a74d4dd806abf3c9dd1be60c4fe36729b5b78753de3634ac0"
+        },
+        {
+          "A_burned_m2": 113.12751824668791,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "82ca8b9388692feabd8dae439103fd96245bd902ba42dc46efb7d0acd5b0866f",
+          "manifest_sha256": "02277700d3b3c7cbcdfdd30eda735490713ada4c81e33e31c5b4af2d1ffd62ef",
+          "original_owner_profile_sha256": "7bc1c9f8a112a02a74d4dd806abf3c9dd1be60c4fe36729b5b78753de3634ac0"
+        },
+        {
+          "A_burned_m2": 113.12751824668791,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "82ca8b9388692feabd8dae439103fd96245bd902ba42dc46efb7d0acd5b0866f",
+          "manifest_sha256": "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0",
+          "original_owner_profile_sha256": "7bc1c9f8a112a02a74d4dd806abf3c9dd1be60c4fe36729b5b78753de3634ac0"
+        }
+      ],
+      "registered_case_ordinal": 3
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 113.12751824668793,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "79dc849752a147b4178bc9d12d88dcc2f76e4fcac5272457a762a3f547ce94e7",
+          "manifest_sha256": "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d",
+          "original_owner_profile_sha256": "38a18cb8a92631406c7f8cd5255bc0b8c4b175590b55a1b53651f1ae9189b00b"
+        },
+        {
+          "A_burned_m2": 113.12751824668793,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "79dc849752a147b4178bc9d12d88dcc2f76e4fcac5272457a762a3f547ce94e7",
+          "manifest_sha256": "087173f133ac871d7475b3859c469cc6bd7da3f516adf6f6ecc238e70676eed4",
+          "original_owner_profile_sha256": "38a18cb8a92631406c7f8cd5255bc0b8c4b175590b55a1b53651f1ae9189b00b"
+        },
+        {
+          "A_burned_m2": 113.12751824668793,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "79dc849752a147b4178bc9d12d88dcc2f76e4fcac5272457a762a3f547ce94e7",
+          "manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+          "original_owner_profile_sha256": "38a18cb8a92631406c7f8cd5255bc0b8c4b175590b55a1b53651f1ae9189b00b"
+        }
+      ],
+      "registered_case_ordinal": 4
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 266.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "b4dbbf5a1653dc5a937cd539d139697e35dfe5550bbafe285a9f91f58cc2baa3",
+          "manifest_sha256": "5c5e940195c5bca6ffeac9a542cb92fa2a343245cfd73f270a6dc34613407093",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        },
+        {
+          "A_burned_m2": 241.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "034916cd4768b3c9343a66df46ded6fa9c26b16305d06dbdb08f64c872ee8ecd",
+          "manifest_sha256": "91f6ba44c33416d563d17b8b652700355eba982f0246ee64f03fe41a8e194512",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        },
+        {
+          "A_burned_m2": 241.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "034916cd4768b3c9343a66df46ded6fa9c26b16305d06dbdb08f64c872ee8ecd",
+          "manifest_sha256": "5acc12643c5f996444cd006dadb57553a652d5bed7b49a21f7a4ef05d3c90ca8",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        }
+      ],
+      "registered_case_ordinal": 5
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 266.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "6c6d9a24ae548495cf0d45f9da9570838a09885c6a002aceeca69a3a3a3d564a",
+          "manifest_sha256": "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        },
+        {
+          "A_burned_m2": 241.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "e06d0539a2c5f86fcf1bfacdfaef3a8f0cf55c5dd06fbe5806acb0895ef491bc",
+          "manifest_sha256": "312f77fbafbf3e9cbbbe658a6486a1ed61415e2035d6bd5fdd8fc1500cb414b1",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        },
+        {
+          "A_burned_m2": 241.48854379824064,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 1
+          },
+          "burned_mask_sha256": "e06d0539a2c5f86fcf1bfacdfaef3a8f0cf55c5dd06fbe5806acb0895ef491bc",
+          "manifest_sha256": "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc",
+          "original_owner_profile_sha256": "3ceca3a5f56269ede6abf8ed2e0d7dc1cc15029738d2b9240b1c366d06ee8f70"
+        }
+      ],
+      "registered_case_ordinal": 6
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 180.5416716716964,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 5
+          },
+          "burned_mask_sha256": "cecd29af22180e091438432ea73a8ba657a64e80333448aa577d0618af0564e5",
+          "manifest_sha256": "4306201237af015448447c6c4b095a3d21a2a17858ddce847053892cdba22c23",
+          "original_owner_profile_sha256": "835da84ce3d6b1afd68d8dd63d90b778fffea6358f05fb4803dcfa85594caa95"
+        },
+        {
+          "A_burned_m2": 180.21842301902592,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 3
+          },
+          "burned_mask_sha256": "1c3904b4f0b65d9ae47d03e878dd7d42cd387b5dc3ca02b13faddd7ab312f027",
+          "manifest_sha256": "90f1043698099fd2bdf693c4e4900b78c3b42cc93bea51378be15d785dbd2345",
+          "original_owner_profile_sha256": "7f189d5202e90713249355fb4a4b3205f81035c52b83945942acddd27b598c21"
+        },
+        {
+          "A_burned_m2": 180.21842301902592,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 3
+          },
+          "burned_mask_sha256": "1c3904b4f0b65d9ae47d03e878dd7d42cd387b5dc3ca02b13faddd7ab312f027",
+          "manifest_sha256": "e47a8c70aeaa49507db96ea6b7490d9511117c7a73a0f57c51691f13495a9297",
+          "original_owner_profile_sha256": "7f189d5202e90713249355fb4a4b3205f81035c52b83945942acddd27b598c21"
+        }
+      ],
+      "registered_case_ordinal": 7
+    },
+    {
+      "in_plan_order": [
+        {
+          "A_burned_m2": 180.5416716716964,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 5
+          },
+          "burned_mask_sha256": "ef368386d548efddc3c9bd5f55ab9e1d04c03b6e20297e3c859c25be68939648",
+          "manifest_sha256": "c88a1a3e854c6d19594f8d2a58cb921cfdfa0d8c8506c8bd0dba05aa6be9ba1a",
+          "original_owner_profile_sha256": "f53bd85d9555b6fa578031e9ba033e77d572ec4fe56348dde8584528a60734c0"
+        },
+        {
+          "A_burned_m2": 180.21842301902592,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 3
+          },
+          "burned_mask_sha256": "988df4283fe3cb64f0596bb739e1c2f412f7a9dd0fe62281b7b7cad4b0267a2f",
+          "manifest_sha256": "d99e79f76c2c605f940a3c26119ea26d5fd7a47a2cb410f23ff9e254532f177b",
+          "original_owner_profile_sha256": "de12eae2d3df287be7e22d3f47c70f1b157aed7595a31e564be7a3be0e2089ca"
+        },
+        {
+          "A_burned_m2": 180.21842301902592,
+          "N_original_roof_owner_bounds": {
+            "lower": 1,
+            "upper": 3
+          },
+          "burned_mask_sha256": "988df4283fe3cb64f0596bb739e1c2f412f7a9dd0fe62281b7b7cad4b0267a2f",
+          "manifest_sha256": "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2",
+          "original_owner_profile_sha256": "de12eae2d3df287be7e22d3f47c70f1b157aed7595a31e564be7a3be0e2089ca"
+        }
+      ],
+      "registered_case_ordinal": 8
+    }
+  ],
+  "plan_order": [
+    "roof-seed-protected-union-ring-b0-w2.5",
+    "local-band-with-observed-clearance-subset",
+    "roof-seed-protected-union-ring-b0-w15.01"
+  ],
+  "receipt_sha256": "b2fdf87d304ccd34ddd24d67872b1eba7a1c02c0da7938d60c351b68d59b7c51",
+  "schema_version": "three-policy-matched-registered-scenario-optimization-1",
+  "source_budget_and_physical_mesh_verified_fields": [
+    "source_id",
+    "source_budget",
+    "source_footprint_sha256",
+    "common_layout_sha256",
+    "frozen_integrated_node_mask_sha256"
+  ],
+  "subset_and_wide_identical_burned_patches_and_original_owner_losses": true,
+  "subset_dominates_wide_in_C_Nupper_A": true,
+  "tested_plans": [
+    {
+      "C_m2": 2543.456175290825,
+      "in_tested_three_plan_nondominated_set": true,
+      "plan_id": "roof-seed-protected-union-ring-b0-w2.5",
+      "strict_closed": 8,
+      "worst_A_burned_m2": 1742.466642257279,
+      "worst_N_original_owner_bounds": {
+        "lower": 9,
+        "upper": 11
+      }
+    },
+    {
+      "C_m2": 3585.565937285018,
+      "in_tested_three_plan_nondominated_set": true,
+      "plan_id": "local-band-with-observed-clearance-subset",
+      "strict_closed": 8,
+      "worst_A_burned_m2": 241.48854379824064,
+      "worst_N_original_owner_bounds": {
+        "lower": 1,
+        "upper": 3
+      }
+    },
+    {
+      "C_m2": 10669.276972304711,
+      "in_tested_three_plan_nondominated_set": false,
+      "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+      "strict_closed": 8,
+      "worst_A_burned_m2": 241.48854379824064,
+      "worst_N_original_owner_bounds": {
+        "lower": 1,
+        "upper": 3
+      }
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schema_version": "heritage-pingyan-count-extension-delivery-1",
+  "status": "complete",
+  "completed_at": "2026-10-30T12:17:33+08:00",
+  "search_finished_within_frozen_budget": true,
+  "audit_passed": true,
+  "native_restoration_passed": true,
+  "new_search_CA_checks": 29,
+  "new_native_CA_checks": 1,
+  "document_review_complete": true,
+  "map_visually_reviewed": true,
+  "automation_id": "17",
+  "automation_status": "deleted",
+  "problem_sha256": "f932419b15bcb2fb0e7b88f126925d089f941b44254c2b568895cd5b54cc1df8",
+  "frozen_search_result_sha256": "70d128a31f0f34de1b212cde61af4fab48566f90761df38df0158833df838417",
+  "current_best_ids": [
+    "B0119",
+    "B0165",
+    "B0167",
+    "B0177",
+    "B0190"
+  ],
+  "nominal_area_m2": 995.4810719970926,
+  "count_bounds": [
+    3,
+    5
+  ],
+  "minimum_count_proven": false,
+  "same_count_area_optimality_proven": false,
+  "count_certificate": {
+    "candidate_count": 947,
+    "layers": {
+      "0": {
+        "total": 1,
+        "direct_failed": 1,
+        "via_parent_cuts": 0,
+        "undecided": 0
+      },
+      "1": {
+        "total": 947,
+        "direct_failed": 0,
+        "via_parent_cuts": 947,
+        "undecided": 0
+      },
+      "2": {
+        "total": 447931,
+        "direct_failed_parent": 13,
+        "direct_failed_new": 17,
+        "via_parent_cuts": 447901,
+        "undecided": 0
+      }
+    },
+    "all_counts_below_three_excluded": true,
+    "parent_frontier_sha256": "41c74f0a68c469197e9cbd4e120c56c36c0981a6aa247973045abf5f27fda7ae"
+  },
+  "unresolved_scope": {
+    "three_building_layer": {
+      "total": 141098265,
+      "certified_pruned_in_this_traversal": 87766336,
+      "not_covered_by_this_traversal": 53331929
+    },
+    "four_building_layer": {
+      "total": 33299190540,
+      "certified_pruned_in_this_traversal": 12478803002,
+      "not_covered_by_this_traversal": 20820387538
+    },
+    "cheaper_five_building_plans": "not_searched",
+    "uncovered_counts_are_conservative_pending_ranges": true
+  },
+  "new_CA_by_stage": {
+    "2": 29,
+    "3": 0,
+    "4": 0,
+    "native_restoration": 1
+  },
+  "branch_bound_calls": {
+    "3": 100000,
+    "4": 100000
+  },
+  "original_five_heldout_results_not_used_for_reselection": true,
+  "all_original_candidate_ids_retained": true,
+  "economic_cost_status": "missing",
+  "document_sha256": {
+    "docs/HERITAGE_PINGYAN_COUNT_EXTENSION_20261030.md": "290925e773640abd9018dc79c70c0106f2e1c1eb2c9ddc114ce815c6cdbc241b",
+    "docs/STATUS.md": "d19fce5a8fb4dd6cdf47bb6b8b647b0017b628c4ea5e2b05907328405721cf9d",
+    "docs/HERITAGE_FIREBREAK_DEVELOPMENT_PLAN.md": "599c29109896d18e46d9415f798cc90a4a96b02659f43d9dc37fa9a97bfe0fd7",
+    "docs/HERITAGE_REUSABLE_STRATEGY_METHOD.md": "4678dde9f4a9b4c1345624fb4ae99332dd1768e1f45bdc1c703e10159290d689",
+    "docs/HERITAGE_RESEARCH_EVIDENCE_CHAIN_20261024.md": "22a22442674e0cab5f0f6d1dab4ef1d3f77936c856528ce6b1e67e27b4c4a126",
+    "docs/HERITAGE_SECOND_VILLAGE_DATA.md": "835e35c46941d7434088aa12dca142a3acdaff599de39846eeaac58cfbf89208",
+    "docs/HERITAGE_FULL_SEARCH_AND_PINGYAN_20261029.md": "973b17c3d6b8af8fed72edfae6fb9859fd505df21e5ff1b6e98893e86855222e",
+    "docs/HERITAGE_FULL_SEARCH_SUPERVISION_20261029.md": "5be883830efead5c266b5c723f59513508d892eadd9ba7cd00bc709c08380864",
+    "docs/HERITAGE_FIREBREAK_RESEARCH_DESIGN.md": "960f6c54d735e8c923d143f8bf7c8626962084f6b25bb8ca6b4665c9134bf569"
+  },
+  "output_sha256": {
+    "summary.json": "04e836b63e92d1d69fdd0d04f7a4593d8fc1c43f7a1083a27e21c9f5fb3e953a",
+    "core-outcomes.csv": "7b0db1a9cad12b49a4f1e1433871d702e7e47bf99d53f360ba9dd2a843e0a955",
+    "pair-failure-witnesses.csv": "d89ee7412d58640a4449f081b02fc3f5186de9e28f7505e033af7a61bd3cade7",
+    "presentation-receipt.json": "6a607a2a1fb466a3eb564bc8af1c900653862aba174a0a3bf42d1938c66a1851",
+    "best-core-outcomes.csv": "a3db7eba44d5480cf3eef33620148f1839772c89356f764a2d5502a5ec5c4b25",
+    "audit-receipt.json": "614e56e284aeacf4735086acfef50a807d13c2c7834200536427df0e1ceaae3d",
+    "strategy/clearance.geojson": "c7a23af210a3b2c12af386f11b8c428078cea7a0806dfc19cf851116285670cd",
+    "strategy/spatial-reference.json": "c5f7e26e2ca7f4c6b638e8511271624a075cbb6c60b24fc41b9ae519a24b91a0",
+    "strategy/strategy-result.json": "d89fbef4a5187f2efbc816b7bebd593620a314644a3c2c726051d007f9356f4f",
+    "strategy/demolition-list.csv": "0c32070129b94da2f0114b5f08e764111e5d6699e98213f793d048752a30b5c4",
+    "strategy/map-reference.json": "4da66ab4912caeb706d8d4f2c53e20dfe5a81e0f6bfc47defdeaafa99cc9598a",
+    "strategy/cost-summary.json": "a542bf24a176d6e70696f0aec6a2285d70d5157086b357938c1d5ef59439c10d",
+    "strategy/strategy-map.pdf": "66ade92a2e69bf5dfc65bffd463fe9c0edf24f2aebf590a1549bbfeff30c8a4c",
+    "strategy/strategy-map.png": "adefdf44fbe64f75c652f2a0840b55a4876092668ff832ad0205ad4518d52e0c",
+    "strategy/core-outcomes.json": "ec4dd300fa700eaf2d33d9d13e4f62d056afae2b1480d839f52e5ff564bee51e",
+    "strategy/input-receipt.json": "46a0fa347d9abeec4f7ac10c682818fe3ea5ae5aed7c3ca9a0889db5202e0710",
+    "strategy/strategy-buildings.geojson": "11f09af28ee6d5a0ea83d58a5b77761d1575e66cdb5a5c3440e4474b77e029fe"
+  },
+  "sequence_sha256": "e6d7366703bc9d43e2acc336f5ed4208e016b281610490aa6b97219f0e1aca45",
+  "new_experiments_or_optimization_started_after_budget_stop": false
+}

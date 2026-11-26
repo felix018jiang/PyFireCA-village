@@ -1,0 +1,228 @@
+{
+  "additional_frozen_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.allroof-band-helper.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.balanced-band-generator.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.comparison-catalog.json": "2f47df739defd81a2b83aeedefb5df832af72efa1ac70f54217429f42a05e6a9",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.control-catalog.json": "1d7ac8a29f4703f7bf276f48957b1273db5ed4f0049e67eeafb3422389245ab0",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.finite-source-certificate.json": "0ef24c7145c3e3ecfcb25e781b7b80c95404453f02a9d8a898d93e4811d34e15",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.grid-design.json": "055a0d433cae0a8a3e094d00f4d87ed850dd20c3a2d8e497a08618ff45f35c03",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.grid-generator.py": "d25d9423d3dd0934d49e442e2ebd838256e65dd5c3349fe98c1278d22ca27d56",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.grid-results.json": "2b5e486a908a263843440f3c31062191240e68c74b79f205fc2990cebbd3024a",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.longcap-experiment.json": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.longcap-template.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.production-preparer.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.top-catalog.json": "e67a6e3a04bf403040aa5827bc6eaaf50a3222750449915680c813698d0ca346"
+  },
+  "arms": 2,
+  "canonical_finite_source_certificate_sha256": "d733a0955c3b3acc95cf993d507cd79d045b03412bd2a8a38dea8ce47d2bdc1f",
+  "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.json",
+  "config_sha256": "0ce1536620768579526125c691311e3e21f5682e82118e8f2cfc27b03d8708e1",
+  "geometry_C_m2_by_plan": {
+    "roof-seed-core-source-hull-ring-b0-w15.01": 4775.717374856546,
+    "roof-seed-core-source-hull-ring-b10-w20": 9083.108570330925
+  },
+  "geometry_capacity_proxy_m2_by_plan": {
+    "roof-seed-core-source-hull-ring-b0-w15.01": 2140.64009723788,
+    "roof-seed-core-source-hull-ring-b10-w20": 3201.444593203319
+  },
+  "graph_builds": 0,
+  "max_wall_time_s": 172800.0,
+  "new_CA_checks": 0,
+  "old_area_bound_not_extended_and_no_global_claim": true,
+  "old_catalogs_drafts_or_caches_modified": false,
+  "original_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-bands-20261111.json": "1d7ac8a29f4703f7bf276f48957b1273db5ed4f0049e67eeafb3422389245ab0",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-geometry-design-20261111.json": "055a0d433cae0a8a3e094d00f4d87ed850dd20c3a2d8e497a08618ff45f35c03",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-geometry-grid-20261111.json": "2b5e486a908a263843440f3c31062191240e68c74b79f205fc2990cebbd3024a",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-balanced-geometry-top-20261111.json": "e67a6e3a04bf403040aa5827bc6eaaf50a3222750449915680c813698d0ca346",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac",
+    "/Users/tone/Documents/github/PyFireCA/scripts/optimize_heritage_balanced_geometry.py": "d25d9423d3dd0934d49e442e2ebd838256e65dd5c3349fe98c1278d22ca27d56",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "planned_checks": 16,
+  "preparer_sha256": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489",
+  "producer_frozen": false,
+  "roof_supports": 2,
+  "schema_version": "heritage-optimized-balanced-production-preparation-1",
+  "source_families": 4,
+  "source_selection_informed_by_new_CA_results": false,
+  "terminal_horizon_cap_s": 172800.0,
+  "zero_CA_validation": {
+    "actual_reference_input_count": 72,
+    "all_reference_fire_footprints_and_refined_ids_identical": true,
+    "graph_builds": 0,
+    "make_oracle_passed": true,
+    "manager_path": "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py",
+    "manager_sha256": "87175538ca201a06260f5e0e36fcf943be471f96322d110aa1dbf99fb479a72e",
+    "new_CA_checks": 0,
+    "plan_source_grass_checks": [
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 78,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 78,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 78,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 78,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w15.01",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 146,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 146,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 146,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 146,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b10-w20",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      }
+    ],
+    "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+    "scenario_engine_instantiated": false,
+    "validate_config_passed": true,
+    "validation_problem_sha256_not_execution_cache_identity": "1b11fd80adecd278e6aed65526915518dc5f3f6e8fb51168649dfc96bfffb733"
+  }
+}

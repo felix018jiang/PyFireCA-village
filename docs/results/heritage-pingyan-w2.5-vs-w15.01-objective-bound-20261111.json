@@ -1,0 +1,45 @@
+{
+  "native_problem_sha256": "f6bb92267ef8b18050a0ed2cfe046da603256b0b0175aa3814adcc5db8922a65",
+  "schema_version": "heritage-paired-cost-loss-tradeoff-bound-1",
+  "reference_plan": "roof-seed-protected-union-ring-b0-w15.01",
+  "candidate_plan": "roof-seed-protected-union-ring-b0-w2.5",
+  "reference_full_eight_feasible": true,
+  "candidate_full_eight_feasible": "unknown",
+  "strict_candidate_completed_at_audit": 3,
+  "candidate_C_m2": 2543.456175290825,
+  "reference_C_m2": 10669.276972304711,
+  "candidate_worst_A_lower_bound_m2": 266.48854379824064,
+  "reference_complete_worst_A_m2": 241.48854379824064,
+  "unavoidable_worst_A_difference_lower_bound_m2": 25.0,
+  "no_mutual_dominance_if_candidate_later_feasible": true,
+  "reason": "Candidate C is strictly lower; at least one closed candidate A exceeds the reference worst over all eight. The maximum over a superset cannot fall.",
+  "global_frontier_certified": false,
+  "matched_strict_observations": [
+    {
+      "candidate_manifest_sha256": "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d",
+      "reference_manifest_sha256": "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00",
+      "candidate_A_m2": 113.12751824668793,
+      "candidate_nonroof_A_m2": 0.0,
+      "matching_reference_A_m2": 113.12751824668793
+    },
+    {
+      "candidate_manifest_sha256": "9ca4732e21103271b9d145871a36c028a4846072d8590c3a963b4a34f0e4ec54",
+      "reference_manifest_sha256": "e1cac260da371ef987b9eed512c252c17c59ce76f0f8edf32c9cdf4aa96242e0",
+      "candidate_A_m2": 113.12751824668791,
+      "candidate_nonroof_A_m2": 0.0,
+      "matching_reference_A_m2": 113.12751824668791
+    },
+    {
+      "candidate_manifest_sha256": "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357",
+      "reference_manifest_sha256": "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc",
+      "candidate_A_m2": 266.48854379824064,
+      "candidate_nonroof_A_m2": 25.0,
+      "matching_reference_A_m2": 241.48854379824064
+    }
+  ],
+  "reference_complete_audit_sha256": "cce9eafd984f336cfcc648c5e4d40cba53aead163fa6aec605215aaf3fb977c8",
+  "native_validator_sha256": "618d39866b509441c97c943e37e92dfe010ffd8722dd7cd2b4d2b0e3a19aa3a7",
+  "original_artifacts_written": 0,
+  "new_CA_checks_in_audit": 0,
+  "seal": "ffb5d42416ae0a4aee0a5917662336e5ce84066a0c9db1113931ab3ffd63eeb7"
+}

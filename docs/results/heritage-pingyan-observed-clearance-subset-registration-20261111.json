@@ -1,0 +1,86 @@
+{
+  "C_m2": 3585.5659372857185,
+  "action": {
+    "cleared_physical_cell_ids": [
+      159375,
+      159379,
+      159976,
+      183305,
+      183903,
+      184501,
+      186302,
+      186303,
+      186304,
+      186305,
+      187492,
+      188096,
+      188097,
+      188098,
+      188103,
+      197640,
+      198236,
+      198834,
+      199432,
+      200618,
+      200629,
+      200630,
+      201213,
+      201807,
+      202401,
+      202402,
+      202416,
+      204194,
+      204197,
+      204198
+    ],
+    "demolished_ids": [
+      "B0038",
+      "B0039",
+      "B0119",
+      "B0121",
+      "B0165",
+      "B0167",
+      "B0177",
+      "B0189",
+      "B0190",
+      "B0192",
+      "B0193",
+      "B0194",
+      "B0196",
+      "B0199",
+      "B0200"
+    ],
+    "ground_evidence": "registered wide-band actions covering observed narrow-band burnout",
+    "plan_id": "local-band-with-observed-clearance-subset"
+  },
+  "added_ground_cells": 1,
+  "design_scope": "least added actions covering the specified observed material",
+  "distinct_added_original_roof_actions": 5,
+  "ground_C_m2": 750,
+  "method_sha256": "aac308431f3db717ab6f62ea71f9fb7cb2cd17ceed6988f89ab672899ab3f373",
+  "no_holdout_fire_outcomes_used": true,
+  "parent_experiment_sha256": "b827012f1ff4cd3287c1b9a027e0e8c5688a7c499f4f28ba538fb6ac3c6ac2f7",
+  "protected_heritage_outcome_unknown_before_replay": true,
+  "receipt_sha256": "08a33fb4e2900c232b8b33a20924a4dcad172cb2dc4dc0363b010873a1eff50c",
+  "roof_C_m2": 2835.5659372857185,
+  "training_native_manifest_sha256": [
+    [
+      "de0bc207d71ed1b1464a37a99729f8124a237e365bde89299416782c34356a8d",
+      "1f47ecd0001a19a092316d67114925d309c07d10c2d41bfd3111b1852c04cf00"
+    ],
+    [
+      "8def2caab327e23c1ca0bc75feeffd692082e5b25c56d95b70a2be75a3bc9357",
+      "6d17cd076d59ccf548fdefc353e2a9238d4d1f6d73465fdcab188b5d8279b3bc"
+    ],
+    [
+      "c88a1a3e854c6d19594f8d2a58cb921cfdfa0d8c8506c8bd0dba05aa6be9ba1a",
+      "b7f898baa93aeec728cb8f94ac6c3ff4f9c2d8bdf76f28c3d9d2b4e7348f18a2"
+    ],
+    [
+      "5822fd67a6a3709b8a503c4dc08aac679d96555883813e9a7c644b322a13eb59",
+      "c172c33c1c5c4440cdf1c5e9626c3da3a1cad759079081c3e1d35471bfd21af6"
+    ]
+  ],
+  "training_scale_m": 1.0,
+  "training_source_pairs": 4
+}

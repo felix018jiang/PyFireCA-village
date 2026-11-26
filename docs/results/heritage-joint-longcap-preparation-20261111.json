@@ -1,0 +1,29 @@
+{
+  "cap_unclosed_status": "unknown",
+  "changed_configuration_keys": [
+    "max_wall_time_s",
+    "terminal_horizon_cap_s"
+  ],
+  "five_arms_and_complete_source_scale_matrix_preserved": true,
+  "new_CA_checks": 0,
+  "new_config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json",
+  "new_config_sha256": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+  "new_producer_manifest_sha256": "e7be6bbf39e339eee044144e5c0f91319e8e8767de059f28956cd8347f7ea448",
+  "new_producer_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-producer-20261111",
+  "new_protocol_starts_at_zero": true,
+  "new_terminal_cap_s": 172800.0,
+  "old_prefix_or_optimality_transferred": false,
+  "old_spent_budget_preserved": {
+    "active": null,
+    "elapsed_s": 533.3987848749966,
+    "started_checks": 2
+  },
+  "old_terminal_cap_s": 21600.0,
+  "parent_config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.json",
+  "parent_config_sha256": "eac955263b26c887f4b62489fd4a19a06f74e7d1af9ca3fa5c02aa9e15ec5fa0",
+  "parent_execution_budget_sha256": "e48ee358f7a93ae32e3c0d1f8a2503cdc94e90032dfbfe8c28c29ff4c87efcbd",
+  "parent_experiment_sha256": "8336c0220c115cbc774bf9f324d30eee2746a55b2ade49b0ed66807c9d85aa47",
+  "parent_run_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-terminal-batuan-20261110",
+  "schema_version": "heritage-joint-longcap-preparation-1",
+  "source_file_count": 169
+}

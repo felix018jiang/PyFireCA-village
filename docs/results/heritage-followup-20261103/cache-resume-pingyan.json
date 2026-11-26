@@ -1,0 +1,11 @@
+{
+  "village": "pingyan",
+  "returncode": 0,
+  "wall_s": 7.428481584007386,
+  "completed_before": 12,
+  "completed_after": 12,
+  "complete_manifests_unchanged": true,
+  "new_starting_events": 0,
+  "stdout": "{'complete': True, 'planned_CA_checks': 12, 'completed_CA_checks': 12}\n",
+  "stderr": ""
+}

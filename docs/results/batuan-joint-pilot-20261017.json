@@ -1,0 +1,603 @@
+{
+  "schema": "batuan-joint-pilot-summary-1",
+  "rows": [
+    {
+      "label": "baseline",
+      "role": "training",
+      "pass_count": 0,
+      "scenario_count": 8,
+      "area_m2": 0.0,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 0.0
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 31,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 48,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 2,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 15,
+          "bridge_count": 1,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 22,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 34,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 1,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 11,
+          "bridge_count": 1,
+          "actual_horizon_s": 5399.999999999991
+        }
+      ]
+    },
+    {
+      "label": "baseline",
+      "role": "held_out",
+      "pass_count": 0,
+      "scenario_count": 4,
+      "area_m2": 0.0,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 0.0
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 1,
+          "bridge_count": 1,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 1,
+          "bridge_count": 1,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "outer_proxy",
+      "role": "training",
+      "pass_count": 8,
+      "scenario_count": 8,
+      "area_m2": 1269.1293164850417,
+      "zone_areas_m2": {
+        "outer_proxy": 1269.129316485042,
+        "inner_proxy": 0.0
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "outer_proxy",
+      "role": "held_out",
+      "pass_count": 4,
+      "scenario_count": 4,
+      "area_m2": 1269.1293164850417,
+      "zone_areas_m2": {
+        "outer_proxy": 1269.129316485042,
+        "inner_proxy": 0.0
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "inner_proxy",
+      "role": "training",
+      "pass_count": 8,
+      "scenario_count": 8,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "inner_proxy",
+      "role": "held_out",
+      "pass_count": 4,
+      "scenario_count": 4,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        }
+      ]
+    },
+    {
+      "label": "joint",
+      "role": "training",
+      "pass_count": 8,
+      "scenario_count": 8,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "joint",
+      "role": "held_out",
+      "pass_count": 4,
+      "scenario_count": 4,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        }
+      ]
+    },
+    {
+      "label": "independent_sweep",
+      "role": "training",
+      "pass_count": 8,
+      "scenario_count": 8,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "independent_sweep",
+      "role": "held_out",
+      "pass_count": 4,
+      "scenario_count": 4,
+      "area_m2": 445.3362741763701,
+      "zone_areas_m2": {
+        "outer_proxy": 0.0,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        }
+      ]
+    },
+    {
+      "label": "historical_combined",
+      "role": "training",
+      "pass_count": 8,
+      "scenario_count": 8,
+      "area_m2": 1714.4655906614119,
+      "zone_areas_m2": {
+        "outer_proxy": 1269.129316485042,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "design-r163c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "design-r168c143-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-sw4",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999998
+        },
+        {
+          "scenario_id": "design-r163c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r160c151-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5399.999999999999
+        },
+        {
+          "scenario_id": "design-r168c143-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "design-r170c159-se2",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    },
+    {
+      "label": "historical_combined",
+      "role": "held_out",
+      "pass_count": 4,
+      "scenario_count": 4,
+      "area_m2": 1714.4655906614119,
+      "zone_areas_m2": {
+        "outer_proxy": 1269.129316485042,
+        "inner_proxy": 445.3362741763701
+      },
+      "scenarios": [
+        {
+          "scenario_id": "held-r172c147-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-nw3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r172c147-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        },
+        {
+          "scenario_id": "held-r173c153-ne3",
+          "house_count": 0,
+          "bridge_count": 0,
+          "actual_horizon_s": 5400.0
+        }
+      ]
+    }
+  ],
+  "requests": {
+    "outer_proxy": 16,
+    "inner_proxy": 16,
+    "joint": 14
+  },
+  "protocol_sha256": "0fa1cc6b0cc24541dd625c2faf54e6b3b29052bb6b9aa251cbe2819091befb24",
+  "selection_sha256": "a188b3c4209da894bccdce31652c2876b91bc81ba99b8202bc0cdcd3541d49da",
+  "audit_sha256": "1dd08aa16917af45441094d48c13f3e8ecc7568252f43cac48cfc0430fd7e441",
+  "actual_ca_solves": 230,
+  "scope": "bounded fixed-material model study; not field calibration or global optimum"
+}

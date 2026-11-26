@@ -1,0 +1,1468 @@
+{
+  "schema_version": "heritage-followup-readonly-audit-1",
+  "audited_at_utc": "2026-11-03T08:36:31.081249+00:00",
+  "status": "passed",
+  "audit_passed": true,
+  "all_available_checks_passed": true,
+  "complete": true,
+  "planned_CA_checks": 24,
+  "checked_CA_evaluations": 24,
+  "pending_CA_evaluations": 0,
+  "errors": [],
+  "fire_scenarios": 4,
+  "new_independent_fire_draws": 0,
+  "dual_scales_are_independent_samples": false,
+  "new_CA_runs_by_this_audit": 0,
+  "native_restoration": "separate_parent_receipt_required;not_performed_by_this_readonly_audit",
+  "area_interpretation": "cumulative ignited physical covered area is not destroyed building area; physical patches counted once; nominal demolition cost sums building footprints = demolished polygon union + internal duplicate area; demolished polygon union = cleared area + retained-shared area",
+  "geometry_fixture": {
+    "status": "passed",
+    "overlapping_demolition": {
+      "area_m2": {
+        "demolished_footprint_area_m2": 8.0,
+        "demolished_roof_union_area_m2": 6.0,
+        "internal_demolished_overlap_m2": 2.0,
+        "cleared_roof_union_area_m2": 5.0,
+        "retained_shared_roof_area_m2": 1.0
+      },
+      "overlapping_demolished_pairs": [
+        {
+          "building_ids": [
+            "A",
+            "B"
+          ],
+          "overlap_area_m2": 2.0
+        }
+      ]
+    },
+    "single_demolition": {
+      "demolished_footprint_area_m2": 4.0,
+      "demolished_roof_union_area_m2": 4.0,
+      "internal_demolished_overlap_m2": 0.0,
+      "cleared_roof_union_area_m2": 2.0,
+      "retained_shared_roof_area_m2": 2.0
+    }
+  },
+  "villages": [
+    {
+      "village": "batuan",
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-followup-batuan-20261103",
+      "errors": [],
+      "pending": [],
+      "evaluations": [
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 1.0,
+          "plan_id": "baseline",
+          "scenario_id": "drum-B0077-known-hot-h1",
+          "demolished_ids": [],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.99999979201766,
+            "initial_dry_fuel_mass_kg": 449.99999625631784,
+            "available_energy_J": 4390199963.476636
+          },
+          "layout_sha256": "fdd1a219aa7d35b904e54f213fa4db4d6ab47576b017628b5a140da2dc25e1bb",
+          "source_conditions_sha256": "6615a50919d37f10319d1d4f410f7dc33736eb258761bad4dde8c3dedc4dbf8b",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": false
+          },
+          "manifest_files_verified": 57,
+          "physical_nodes": 111654,
+          "final_active_burning_nodes": 538,
+          "geometry_hashes": {
+            "physical_cell_id": "ec066ebbcadad7a603b823626afa9a90f1930da051742cfd6d29e023ed6a5a0d",
+            "xy_m": "ab923bf8b2cc67e23b8937a7a58a5681ef15245ba4761816876c20e60ab93809",
+            "component_id": "ff5356d19d0a118c68c4dd10c6b6f31d059f58d258fc6d12e11333386a65c7de",
+            "area_fraction": "bdd3fc7a1130108f47b9365100510965565cd654ee7bd087e1b9f0a9b2e9289b"
+          },
+          "direct_source_covered_area_m2": 24.99999979201766
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 1.0,
+          "plan_id": "selected",
+          "scenario_id": "drum-B0077-known-hot-h1",
+          "demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.99999979201766,
+            "initial_dry_fuel_mass_kg": 449.99999625631784,
+            "available_energy_J": 4390199963.476636
+          },
+          "layout_sha256": "fdd1a219aa7d35b904e54f213fa4db4d6ab47576b017628b5a140da2dc25e1bb",
+          "source_conditions_sha256": "6615a50919d37f10319d1d4f410f7dc33736eb258761bad4dde8c3dedc4dbf8b",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 451.24045614570235,
+            "cleared_roof_union_area_m2": 443.84196874011786,
+            "retained_shared_roof_area_m2": 7.39848740503654,
+            "demolished_roof_union_area_m2": 451.2404561457023,
+            "internal_demolished_overlap_m2": 5.684341886080802e-14
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 111654,
+          "final_active_burning_nodes": 323,
+          "geometry_hashes": {
+            "physical_cell_id": "ec066ebbcadad7a603b823626afa9a90f1930da051742cfd6d29e023ed6a5a0d",
+            "xy_m": "ab923bf8b2cc67e23b8937a7a58a5681ef15245ba4761816876c20e60ab93809",
+            "component_id": "ff5356d19d0a118c68c4dd10c6b6f31d059f58d258fc6d12e11333386a65c7de",
+            "area_fraction": "bdd3fc7a1130108f47b9365100510965565cd654ee7bd087e1b9f0a9b2e9289b"
+          },
+          "direct_source_covered_area_m2": 24.99999979201766
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 1.0,
+          "plan_id": "area-matched-position",
+          "scenario_id": "drum-B0077-known-hot-h1",
+          "demolished_ids": [
+            "B0063",
+            "B0067",
+            "B0071"
+          ],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.99999979201766,
+            "initial_dry_fuel_mass_kg": 449.99999625631784,
+            "available_energy_J": 4390199963.476636
+          },
+          "layout_sha256": "fdd1a219aa7d35b904e54f213fa4db4d6ab47576b017628b5a140da2dc25e1bb",
+          "source_conditions_sha256": "6615a50919d37f10319d1d4f410f7dc33736eb258761bad4dde8c3dedc4dbf8b",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 452.0260028237742,
+            "cleared_roof_union_area_m2": 443.71897210949504,
+            "retained_shared_roof_area_m2": 8.307030714201472,
+            "demolished_roof_union_area_m2": 452.0260028237742,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 111654,
+          "final_active_burning_nodes": 324,
+          "geometry_hashes": {
+            "physical_cell_id": "ec066ebbcadad7a603b823626afa9a90f1930da051742cfd6d29e023ed6a5a0d",
+            "xy_m": "ab923bf8b2cc67e23b8937a7a58a5681ef15245ba4761816876c20e60ab93809",
+            "component_id": "ff5356d19d0a118c68c4dd10c6b6f31d059f58d258fc6d12e11333386a65c7de",
+            "area_fraction": "bdd3fc7a1130108f47b9365100510965565cd654ee7bd087e1b9f0a9b2e9289b"
+          },
+          "direct_source_covered_area_m2": 24.99999979201766
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 0.5,
+          "plan_id": "baseline",
+          "scenario_id": "drum-B0077-known-hot-h0.5",
+          "demolished_ids": [],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.999999792004434,
+            "initial_dry_fuel_mass_kg": 449.99999625607984,
+            "available_energy_J": 4390199963.474316
+          },
+          "layout_sha256": "7a1e4afb61947859187959304eb62972ea3aa0481d4c085cf772c12bc287f75c",
+          "source_conditions_sha256": "eb5d204e27f13b79e28c19b694e016641beac73c4203f842b43947ad3cf4951f",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116667,
+          "final_active_burning_nodes": 1094,
+          "geometry_hashes": {
+            "physical_cell_id": "6a2dc1bdef90ebfa88077bf15254044507d3f20c152bbf59442b8d7cc1febfb6",
+            "xy_m": "e7ea86d9d05b38322ccf89246b59fa355ddf2a7d8d37ef8c334bef4eae3f7042",
+            "component_id": "6dafa6ed378d92c136fb49f6fffccae248dbaba5e2ddeb8a6c1299fcc45119fb",
+            "area_fraction": "74a9e1e9480d17de0a52b719e10c5b8daf440d3fe265b36be5a6db3fe2303436"
+          },
+          "direct_source_covered_area_m2": 24.999999792004434
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 0.5,
+          "plan_id": "selected",
+          "scenario_id": "drum-B0077-known-hot-h0.5",
+          "demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.999999792004434,
+            "initial_dry_fuel_mass_kg": 449.99999625607984,
+            "available_energy_J": 4390199963.474316
+          },
+          "layout_sha256": "7a1e4afb61947859187959304eb62972ea3aa0481d4c085cf772c12bc287f75c",
+          "source_conditions_sha256": "eb5d204e27f13b79e28c19b694e016641beac73c4203f842b43947ad3cf4951f",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 451.24045614570235,
+            "cleared_roof_union_area_m2": 443.84196874005784,
+            "retained_shared_roof_area_m2": 7.398487404642738,
+            "demolished_roof_union_area_m2": 451.2404561457023,
+            "internal_demolished_overlap_m2": 5.684341886080802e-14
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116667,
+          "final_active_burning_nodes": 312,
+          "geometry_hashes": {
+            "physical_cell_id": "6a2dc1bdef90ebfa88077bf15254044507d3f20c152bbf59442b8d7cc1febfb6",
+            "xy_m": "e7ea86d9d05b38322ccf89246b59fa355ddf2a7d8d37ef8c334bef4eae3f7042",
+            "component_id": "6dafa6ed378d92c136fb49f6fffccae248dbaba5e2ddeb8a6c1299fcc45119fb",
+            "area_fraction": "74a9e1e9480d17de0a52b719e10c5b8daf440d3fe265b36be5a6db3fe2303436"
+          },
+          "direct_source_covered_area_m2": 24.999999792004434
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0077-known-hot",
+          "scale_m": 0.5,
+          "plan_id": "area-matched-position",
+          "scenario_id": "drum-B0077-known-hot-h0.5",
+          "demolished_ids": [
+            "B0063",
+            "B0067",
+            "B0071"
+          ],
+          "source_id": "B0077",
+          "source_budget": {
+            "covered_area_m2": 24.999999792004434,
+            "initial_dry_fuel_mass_kg": 449.99999625607984,
+            "available_energy_J": 4390199963.474316
+          },
+          "layout_sha256": "7a1e4afb61947859187959304eb62972ea3aa0481d4c085cf772c12bc287f75c",
+          "source_conditions_sha256": "eb5d204e27f13b79e28c19b694e016641beac73c4203f842b43947ad3cf4951f",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 452.0260028237742,
+            "cleared_roof_union_area_m2": 443.7189721094598,
+            "retained_shared_roof_area_m2": 8.307030713617321,
+            "demolished_roof_union_area_m2": 452.0260028237742,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116667,
+          "final_active_burning_nodes": 312,
+          "geometry_hashes": {
+            "physical_cell_id": "6a2dc1bdef90ebfa88077bf15254044507d3f20c152bbf59442b8d7cc1febfb6",
+            "xy_m": "e7ea86d9d05b38322ccf89246b59fa355ddf2a7d8d37ef8c334bef4eae3f7042",
+            "component_id": "6dafa6ed378d92c136fb49f6fffccae248dbaba5e2ddeb8a6c1299fcc45119fb",
+            "area_fraction": "74a9e1e9480d17de0a52b719e10c5b8daf440d3fe265b36be5a6db3fe2303436"
+          },
+          "direct_source_covered_area_m2": 24.999999792004434
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 1.0,
+          "plan_id": "baseline",
+          "scenario_id": "bridge-B0062-known-h1",
+          "demolished_ids": [],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081018353,
+            "initial_dry_fuel_mass_kg": 450.0000014583302,
+            "available_energy_J": 4390200014.22747
+          },
+          "layout_sha256": "014cd35125baa3298f6be03c75bf08fb5779854203fb3c1b0902e5450e1c2aa0",
+          "source_conditions_sha256": "34733b5052fb0ab26813024af2b5789cc600e992ea21e6cbc43823ccfcf8c70d",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": true
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 111711,
+          "final_active_burning_nodes": 414,
+          "geometry_hashes": {
+            "physical_cell_id": "4116e913a4b02645a5dbda5b71a1b02e35f5645f79e9a324836e1ee770fcd96c",
+            "xy_m": "d5ece413b22a24ffba09b575ab70b868389efaeadf21eff248c81b855ac5c387",
+            "component_id": "f722659a9e6870135e7015c08131f999ee5af3469ec73f07146e2ef09a6532a8",
+            "area_fraction": "d8e9aa44755c1924e8f4a83b78c9904ae92c865e9372fb2949b1b1d60e320280"
+          },
+          "direct_source_covered_area_m2": 25.000000081018353
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 1.0,
+          "plan_id": "selected",
+          "scenario_id": "bridge-B0062-known-h1",
+          "demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081018353,
+            "initial_dry_fuel_mass_kg": 450.0000014583302,
+            "available_energy_J": 4390200014.22747
+          },
+          "layout_sha256": "014cd35125baa3298f6be03c75bf08fb5779854203fb3c1b0902e5450e1c2aa0",
+          "source_conditions_sha256": "34733b5052fb0ab26813024af2b5789cc600e992ea21e6cbc43823ccfcf8c70d",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 451.24045614570235,
+            "cleared_roof_union_area_m2": 443.84196874011786,
+            "retained_shared_roof_area_m2": 7.39848740503654,
+            "demolished_roof_union_area_m2": 451.2404561457023,
+            "internal_demolished_overlap_m2": 5.684341886080802e-14
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 111711,
+          "final_active_burning_nodes": 251,
+          "geometry_hashes": {
+            "physical_cell_id": "4116e913a4b02645a5dbda5b71a1b02e35f5645f79e9a324836e1ee770fcd96c",
+            "xy_m": "d5ece413b22a24ffba09b575ab70b868389efaeadf21eff248c81b855ac5c387",
+            "component_id": "f722659a9e6870135e7015c08131f999ee5af3469ec73f07146e2ef09a6532a8",
+            "area_fraction": "d8e9aa44755c1924e8f4a83b78c9904ae92c865e9372fb2949b1b1d60e320280"
+          },
+          "direct_source_covered_area_m2": 25.000000081018353
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 1.0,
+          "plan_id": "area-matched-position",
+          "scenario_id": "bridge-B0062-known-h1",
+          "demolished_ids": [
+            "B0063",
+            "B0067",
+            "B0071"
+          ],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081018353,
+            "initial_dry_fuel_mass_kg": 450.0000014583302,
+            "available_energy_J": 4390200014.22747
+          },
+          "layout_sha256": "014cd35125baa3298f6be03c75bf08fb5779854203fb3c1b0902e5450e1c2aa0",
+          "source_conditions_sha256": "34733b5052fb0ab26813024af2b5789cc600e992ea21e6cbc43823ccfcf8c70d",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 452.0260028237742,
+            "cleared_roof_union_area_m2": 443.71897210949504,
+            "retained_shared_roof_area_m2": 8.307030714171875,
+            "demolished_roof_union_area_m2": 452.0260028237742,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": true
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 111711,
+          "final_active_burning_nodes": 519,
+          "geometry_hashes": {
+            "physical_cell_id": "4116e913a4b02645a5dbda5b71a1b02e35f5645f79e9a324836e1ee770fcd96c",
+            "xy_m": "d5ece413b22a24ffba09b575ab70b868389efaeadf21eff248c81b855ac5c387",
+            "component_id": "f722659a9e6870135e7015c08131f999ee5af3469ec73f07146e2ef09a6532a8",
+            "area_fraction": "d8e9aa44755c1924e8f4a83b78c9904ae92c865e9372fb2949b1b1d60e320280"
+          },
+          "direct_source_covered_area_m2": 25.000000081018353
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 0.5,
+          "plan_id": "baseline",
+          "scenario_id": "bridge-B0062-known-h0.5",
+          "demolished_ids": [],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081063636,
+            "initial_dry_fuel_mass_kg": 450.00000145914527,
+            "available_energy_J": 4390200014.235422
+          },
+          "layout_sha256": "3238463897577b662efaa8ca513ceda2c76d1b25c252a03ee217bc9fd3fa2ff4",
+          "source_conditions_sha256": "23c3c554ec842c6a457c25985633a9e1697f9bab8627aaa576036b6c4216f942",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": true,
+            "B0120": true
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116886,
+          "final_active_burning_nodes": 1212,
+          "geometry_hashes": {
+            "physical_cell_id": "838324240b405ae012cb920109bc7bd532178b15ac7bb5e8773681a826425cb6",
+            "xy_m": "c6737f4b80f0335ca50d5ee6358037ce380208168d9725a681edb6e2b8f9b7fb",
+            "component_id": "ed4380c39ff3f448db23dcefef22415a40cf1f772ba60c76a18f261e9495df9d",
+            "area_fraction": "30b398309047aa4e40b4ff66a98e3c24f7a3c19b55d8310fb3b596767e73bb4d"
+          },
+          "direct_source_covered_area_m2": 25.000000081063636
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 0.5,
+          "plan_id": "selected",
+          "scenario_id": "bridge-B0062-known-h0.5",
+          "demolished_ids": [
+            "B0061",
+            "B0071",
+            "B0076"
+          ],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081063636,
+            "initial_dry_fuel_mass_kg": 450.00000145914527,
+            "available_energy_J": 4390200014.235422
+          },
+          "layout_sha256": "3238463897577b662efaa8ca513ceda2c76d1b25c252a03ee217bc9fd3fa2ff4",
+          "source_conditions_sha256": "23c3c554ec842c6a457c25985633a9e1697f9bab8627aaa576036b6c4216f942",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 451.24045614570235,
+            "cleared_roof_union_area_m2": 443.84196874005784,
+            "retained_shared_roof_area_m2": 7.398487404642738,
+            "demolished_roof_union_area_m2": 451.2404561457023,
+            "internal_demolished_overlap_m2": 5.684341886080802e-14
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116886,
+          "final_active_burning_nodes": 227,
+          "geometry_hashes": {
+            "physical_cell_id": "838324240b405ae012cb920109bc7bd532178b15ac7bb5e8773681a826425cb6",
+            "xy_m": "c6737f4b80f0335ca50d5ee6358037ce380208168d9725a681edb6e2b8f9b7fb",
+            "component_id": "ed4380c39ff3f448db23dcefef22415a40cf1f772ba60c76a18f261e9495df9d",
+            "area_fraction": "30b398309047aa4e40b4ff66a98e3c24f7a3c19b55d8310fb3b596767e73bb4d"
+          },
+          "direct_source_covered_area_m2": 25.000000081063636
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0062-known",
+          "scale_m": 0.5,
+          "plan_id": "area-matched-position",
+          "scenario_id": "bridge-B0062-known-h0.5",
+          "demolished_ids": [
+            "B0063",
+            "B0067",
+            "B0071"
+          ],
+          "source_id": "B0062",
+          "source_budget": {
+            "covered_area_m2": 25.000000081063636,
+            "initial_dry_fuel_mass_kg": 450.00000145914527,
+            "available_energy_J": 4390200014.235422
+          },
+          "layout_sha256": "3238463897577b662efaa8ca513ceda2c76d1b25c252a03ee217bc9fd3fa2ff4",
+          "source_conditions_sha256": "23c3c554ec842c6a457c25985633a9e1697f9bab8627aaa576036b6c4216f942",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 452.0260028237742,
+            "cleared_roof_union_area_m2": 443.7189721094598,
+            "retained_shared_roof_area_m2": 8.307030713587743,
+            "demolished_roof_union_area_m2": 452.0260028237742,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0073": false,
+            "B0120": true
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 116886,
+          "final_active_burning_nodes": 1721,
+          "geometry_hashes": {
+            "physical_cell_id": "838324240b405ae012cb920109bc7bd532178b15ac7bb5e8773681a826425cb6",
+            "xy_m": "c6737f4b80f0335ca50d5ee6358037ce380208168d9725a681edb6e2b8f9b7fb",
+            "component_id": "ed4380c39ff3f448db23dcefef22415a40cf1f772ba60c76a18f261e9495df9d",
+            "area_fraction": "30b398309047aa4e40b4ff66a98e3c24f7a3c19b55d8310fb3b596767e73bb4d"
+          },
+          "direct_source_covered_area_m2": 25.000000081063636
+        }
+      ],
+      "cross_arm_checks": [
+        {
+          "scenario_id": "drum-B0077-known-hot-h1",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "drum-B0077-known-hot-h0.5",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "bridge-B0062-known-h1",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "bridge-B0062-known-h0.5",
+          "status": "passed",
+          "arms_checked": 3
+        }
+      ],
+      "area_checks": [
+        {
+          "plan_id": "baseline",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          }
+        },
+        {
+          "plan_id": "selected",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 451.24045614570235,
+            "cleared_roof_union_area_m2": 443.84196874011786,
+            "retained_shared_roof_area_m2": 7.39848740503654,
+            "demolished_roof_union_area_m2": 451.2404561457023,
+            "internal_demolished_overlap_m2": 5.684341886080802e-14
+          }
+        },
+        {
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 452.0260028237742,
+            "cleared_roof_union_area_m2": 443.71897210949504,
+            "retained_shared_roof_area_m2": 8.307030714201472,
+            "demolished_roof_union_area_m2": 452.0260028237742,
+            "internal_demolished_overlap_m2": 0.0
+          }
+        }
+      ],
+      "dual_scale_checks": [
+        {
+          "fire_id": "drum-B0077-known-hot",
+          "plan_id": "baseline",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "drum-B0077-known-hot",
+          "plan_id": "selected",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "drum-B0077-known-hot",
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0062-known",
+          "plan_id": "baseline",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0062-known",
+          "plan_id": "selected",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0062-known",
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        }
+      ],
+      "inputs": {
+        "status": "passed",
+        "problem_sha256": "5fe2c6d4911598ada64649fb0546b2c7b4d40db23d55cf62fb423f8e62eecc5a",
+        "source_snapshot_files_checked": 158,
+        "current_root_files_match_snapshot": 158,
+        "parent_physics_and_inventory_verified": true,
+        "same_historical_polygons_verified": [
+          {
+            "fire_id": "drum-B0077-known-hot",
+            "source_id": "B0077",
+            "footprint_sha256": "8f496c0e0100911578e3e4f97f2ee9b298d465fec747c75823a1c2e078c7e4a6"
+          },
+          {
+            "fire_id": "bridge-B0062-known",
+            "source_id": "B0062",
+            "footprint_sha256": "44dcd0ae3c2ef6d2f8bd3d4589a3a8d84d755b02b07515af01875fe5e676bbd8"
+          }
+        ],
+        "geometry_area_ledgers": {
+          "baseline": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 0.0,
+              "demolished_roof_union_area_m2": 0.0,
+              "internal_demolished_overlap_m2": 0.0,
+              "cleared_roof_union_area_m2": 0.0,
+              "retained_shared_roof_area_m2": 0.0
+            },
+            "overlapping_demolished_pairs": []
+          },
+          "selected": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 451.24045614570235,
+              "demolished_roof_union_area_m2": 451.2404561457023,
+              "internal_demolished_overlap_m2": 5.684341886080802e-14,
+              "cleared_roof_union_area_m2": 443.84196874193674,
+              "retained_shared_roof_area_m2": 7.398487403734617
+            },
+            "overlapping_demolished_pairs": []
+          },
+          "area-matched-position": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 452.0260028237742,
+              "demolished_roof_union_area_m2": 452.0260028237742,
+              "internal_demolished_overlap_m2": 0.0,
+              "cleared_roof_union_area_m2": 443.71897211124804,
+              "retained_shared_roof_area_m2": 8.307030713590539
+            },
+            "overlapping_demolished_pairs": []
+          }
+        }
+      },
+      "execution_budget": {
+        "elapsed_s": 1432.2038980830112,
+        "active": false,
+        "declared_soft_limit_s": 14400.0,
+        "policy": "cumulative measured execution wall time; checked between solves"
+      },
+      "completed_artifacts_seen": 12,
+      "planned_CA_checks": 12,
+      "checked_CA_evaluations": 12,
+      "complete": true,
+      "all_available_checks_passed": true
+    },
+    {
+      "village": "pingyan",
+      "run": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-followup-pingyan-20261103",
+      "errors": [],
+      "pending": [],
+      "evaluations": [
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 1.0,
+          "plan_id": "baseline",
+          "scenario_id": "drum-B0164-late-ignition-h1",
+          "demolished_ids": [],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.999999945327538,
+            "initial_dry_fuel_mass_kg": 449.99999901589575,
+            "available_energy_J": 4390199990.399079
+          },
+          "layout_sha256": "a7f4b57eb47f8c03e953d7a36f12639e7b9b26ffb71a50729ad9fde7d4a3e87f",
+          "source_conditions_sha256": "4c585e6fc7a82d1856baaa6f7084bd5c70efbdf707a9376c2a1593476a6b01c3",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": true
+          },
+          "manifest_files_verified": 57,
+          "physical_nodes": 291899,
+          "final_active_burning_nodes": 786,
+          "geometry_hashes": {
+            "physical_cell_id": "b2ab999f56847d775acd0129fb25ea841a238e81c6f53e05763ef59668d9c692",
+            "xy_m": "cfcc8e0c702f0bad84a1888c8a0c79de9ee8d466752c8d62f5c215e7bc74be50",
+            "component_id": "ffa13717ef5b9af2fc84b7b662b0d2ada53716f82cf5bc4fdda6a07d16cc3fd3",
+            "area_fraction": "94df0c1221aef3a79bae66134f10e17330fe5e462a37fbf5ae42e14d3af198e3"
+          },
+          "direct_source_covered_area_m2": 24.999999945327538
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 1.0,
+          "plan_id": "selected",
+          "scenario_id": "drum-B0164-late-ignition-h1",
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.999999945327538,
+            "initial_dry_fuel_mass_kg": 449.99999901589575,
+            "available_energy_J": 4390199990.399079
+          },
+          "layout_sha256": "a7f4b57eb47f8c03e953d7a36f12639e7b9b26ffb71a50729ad9fde7d4a3e87f",
+          "source_conditions_sha256": "4c585e6fc7a82d1856baaa6f7084bd5c70efbdf707a9376c2a1593476a6b01c3",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.4810719970926,
+            "cleared_roof_union_area_m2": 985.6078364044408,
+            "retained_shared_roof_area_m2": 9.873235594735712,
+            "demolished_roof_union_area_m2": 995.4810719970926,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 291899,
+          "final_active_burning_nodes": 459,
+          "geometry_hashes": {
+            "physical_cell_id": "b2ab999f56847d775acd0129fb25ea841a238e81c6f53e05763ef59668d9c692",
+            "xy_m": "cfcc8e0c702f0bad84a1888c8a0c79de9ee8d466752c8d62f5c215e7bc74be50",
+            "component_id": "ffa13717ef5b9af2fc84b7b662b0d2ada53716f82cf5bc4fdda6a07d16cc3fd3",
+            "area_fraction": "94df0c1221aef3a79bae66134f10e17330fe5e462a37fbf5ae42e14d3af198e3"
+          },
+          "direct_source_covered_area_m2": 24.999999945327538
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 1.0,
+          "plan_id": "area-matched-position",
+          "scenario_id": "drum-B0164-late-ignition-h1",
+          "demolished_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0168",
+            "B0188"
+          ],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.999999945327538,
+            "initial_dry_fuel_mass_kg": 449.99999901589575,
+            "available_energy_J": 4390199990.399079
+          },
+          "layout_sha256": "a7f4b57eb47f8c03e953d7a36f12639e7b9b26ffb71a50729ad9fde7d4a3e87f",
+          "source_conditions_sha256": "4c585e6fc7a82d1856baaa6f7084bd5c70efbdf707a9376c2a1593476a6b01c3",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.1249298191342,
+            "cleared_roof_union_area_m2": 974.4542322633569,
+            "retained_shared_roof_area_m2": 12.774337841197827,
+            "demolished_roof_union_area_m2": 987.2285701070266,
+            "internal_demolished_overlap_m2": 7.896359712107596
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 291899,
+          "final_active_burning_nodes": 364,
+          "geometry_hashes": {
+            "physical_cell_id": "b2ab999f56847d775acd0129fb25ea841a238e81c6f53e05763ef59668d9c692",
+            "xy_m": "cfcc8e0c702f0bad84a1888c8a0c79de9ee8d466752c8d62f5c215e7bc74be50",
+            "component_id": "ffa13717ef5b9af2fc84b7b662b0d2ada53716f82cf5bc4fdda6a07d16cc3fd3",
+            "area_fraction": "94df0c1221aef3a79bae66134f10e17330fe5e462a37fbf5ae42e14d3af198e3"
+          },
+          "direct_source_covered_area_m2": 24.999999945327538
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 0.5,
+          "plan_id": "baseline",
+          "scenario_id": "drum-B0164-late-ignition-h0.5",
+          "demolished_ids": [],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.99999994528773,
+            "initial_dry_fuel_mass_kg": 449.9999990151792,
+            "available_energy_J": 4390199990.392087
+          },
+          "layout_sha256": "d057df9e90327fd977e2bc27001597d4528bba5ef61ab92443f2c97217cb6152",
+          "source_conditions_sha256": "cdfc43ac691e2c6be1db529324e25c13d98df080c1a829a0deca41ea078d8e9a",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": true
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 303115,
+          "final_active_burning_nodes": 2420,
+          "geometry_hashes": {
+            "physical_cell_id": "02f98c1d7cbec2515dba38b1e0d4f5f61c1d83a3357b103760543467e816fb43",
+            "xy_m": "063d7a4f6f44f6e3cc6327910d7db4d0227bba352b599ce0e39fe64b1efb4eee",
+            "component_id": "05493f8212fca8b4e5be87173d589334156d4a07dd58da8d53d6baff284db471",
+            "area_fraction": "52e0e270b5c86548a6ddfd4ba0cf4f0c3a184e5ea4ef268f0badb1ee830d8886"
+          },
+          "direct_source_covered_area_m2": 24.99999994528773
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 0.5,
+          "plan_id": "selected",
+          "scenario_id": "drum-B0164-late-ignition-h0.5",
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.99999994528773,
+            "initial_dry_fuel_mass_kg": 449.9999990151792,
+            "available_energy_J": 4390199990.392087
+          },
+          "layout_sha256": "d057df9e90327fd977e2bc27001597d4528bba5ef61ab92443f2c97217cb6152",
+          "source_conditions_sha256": "cdfc43ac691e2c6be1db529324e25c13d98df080c1a829a0deca41ea078d8e9a",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.4810719970926,
+            "cleared_roof_union_area_m2": 985.6078364046011,
+            "retained_shared_roof_area_m2": 9.873235594520446,
+            "demolished_roof_union_area_m2": 995.4810719970926,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 303115,
+          "final_active_burning_nodes": 472,
+          "geometry_hashes": {
+            "physical_cell_id": "02f98c1d7cbec2515dba38b1e0d4f5f61c1d83a3357b103760543467e816fb43",
+            "xy_m": "063d7a4f6f44f6e3cc6327910d7db4d0227bba352b599ce0e39fe64b1efb4eee",
+            "component_id": "05493f8212fca8b4e5be87173d589334156d4a07dd58da8d53d6baff284db471",
+            "area_fraction": "52e0e270b5c86548a6ddfd4ba0cf4f0c3a184e5ea4ef268f0badb1ee830d8886"
+          },
+          "direct_source_covered_area_m2": 24.99999994528773
+        },
+        {
+          "status": "passed",
+          "fire_id": "drum-B0164-late-ignition",
+          "scale_m": 0.5,
+          "plan_id": "area-matched-position",
+          "scenario_id": "drum-B0164-late-ignition-h0.5",
+          "demolished_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0168",
+            "B0188"
+          ],
+          "source_id": "B0164",
+          "source_budget": {
+            "covered_area_m2": 24.99999994528773,
+            "initial_dry_fuel_mass_kg": 449.9999990151792,
+            "available_energy_J": 4390199990.392087
+          },
+          "layout_sha256": "d057df9e90327fd977e2bc27001597d4528bba5ef61ab92443f2c97217cb6152",
+          "source_conditions_sha256": "cdfc43ac691e2c6be1db529324e25c13d98df080c1a829a0deca41ea078d8e9a",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.1249298191342,
+            "cleared_roof_union_area_m2": 974.4542322629048,
+            "retained_shared_roof_area_m2": 12.774337841252478,
+            "demolished_roof_union_area_m2": 987.2285701070266,
+            "internal_demolished_overlap_m2": 7.896359712107596
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 303115,
+          "final_active_burning_nodes": 362,
+          "geometry_hashes": {
+            "physical_cell_id": "02f98c1d7cbec2515dba38b1e0d4f5f61c1d83a3357b103760543467e816fb43",
+            "xy_m": "063d7a4f6f44f6e3cc6327910d7db4d0227bba352b599ce0e39fe64b1efb4eee",
+            "component_id": "05493f8212fca8b4e5be87173d589334156d4a07dd58da8d53d6baff284db471",
+            "area_fraction": "52e0e270b5c86548a6ddfd4ba0cf4f0c3a184e5ea4ef268f0badb1ee830d8886"
+          },
+          "direct_source_covered_area_m2": 24.99999994528773
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 1.0,
+          "plan_id": "baseline",
+          "scenario_id": "bridge-B0120-coverage-h1",
+          "demolished_ids": [],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.00000003280681,
+            "initial_dry_fuel_mass_kg": 450.0000005905226,
+            "available_energy_J": 4390200005.761138
+          },
+          "layout_sha256": "e248c9a0cc00946db16cd87b9efe1e5f54218aa15d40ddce084c3e9cabcce994",
+          "source_conditions_sha256": "9698e1f1c2975404c622751a3006d04adca23d215cab769d782c6fc2ce2744d4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "failed",
+          "core_ignited": {
+            "B0035": true,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 291670,
+          "final_active_burning_nodes": 222,
+          "geometry_hashes": {
+            "physical_cell_id": "20269d3eea271a67dceb112395d699f293413dd2293110ec90b708cc2d4a4f79",
+            "xy_m": "40a7e4c22603e9ffce65f45ecc785d97cbc82f444c29384337934d048bcaf7ca",
+            "component_id": "698fd7d3f8ca0d3157b0806a02f95414664ce05922c76926de2ea7c0cda704cc",
+            "area_fraction": "1682c717898bb86ee8daeccdb7796524268f41b23de8e63b2febd21fd789f822"
+          },
+          "direct_source_covered_area_m2": 25.00000003280681
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 1.0,
+          "plan_id": "selected",
+          "scenario_id": "bridge-B0120-coverage-h1",
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.00000003280681,
+            "initial_dry_fuel_mass_kg": 450.0000005905226,
+            "available_energy_J": 4390200005.761138
+          },
+          "layout_sha256": "e248c9a0cc00946db16cd87b9efe1e5f54218aa15d40ddce084c3e9cabcce994",
+          "source_conditions_sha256": "9698e1f1c2975404c622751a3006d04adca23d215cab769d782c6fc2ce2744d4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.4810719970926,
+            "cleared_roof_union_area_m2": 985.6078364044408,
+            "retained_shared_roof_area_m2": 9.873235594735712,
+            "demolished_roof_union_area_m2": 995.4810719970926,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 291670,
+          "final_active_burning_nodes": 51,
+          "geometry_hashes": {
+            "physical_cell_id": "20269d3eea271a67dceb112395d699f293413dd2293110ec90b708cc2d4a4f79",
+            "xy_m": "40a7e4c22603e9ffce65f45ecc785d97cbc82f444c29384337934d048bcaf7ca",
+            "component_id": "698fd7d3f8ca0d3157b0806a02f95414664ce05922c76926de2ea7c0cda704cc",
+            "area_fraction": "1682c717898bb86ee8daeccdb7796524268f41b23de8e63b2febd21fd789f822"
+          },
+          "direct_source_covered_area_m2": 25.00000003280681
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 1.0,
+          "plan_id": "area-matched-position",
+          "scenario_id": "bridge-B0120-coverage-h1",
+          "demolished_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0168",
+            "B0188"
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.00000003280681,
+            "initial_dry_fuel_mass_kg": 450.0000005905226,
+            "available_energy_J": 4390200005.761138
+          },
+          "layout_sha256": "e248c9a0cc00946db16cd87b9efe1e5f54218aa15d40ddce084c3e9cabcce994",
+          "source_conditions_sha256": "9698e1f1c2975404c622751a3006d04adca23d215cab769d782c6fc2ce2744d4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.1249298191342,
+            "cleared_roof_union_area_m2": 974.4542322633569,
+            "retained_shared_roof_area_m2": 12.774337841197827,
+            "demolished_roof_union_area_m2": 987.2285701070266,
+            "internal_demolished_overlap_m2": 7.896359712107596
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 291670,
+          "final_active_burning_nodes": 51,
+          "geometry_hashes": {
+            "physical_cell_id": "20269d3eea271a67dceb112395d699f293413dd2293110ec90b708cc2d4a4f79",
+            "xy_m": "40a7e4c22603e9ffce65f45ecc785d97cbc82f444c29384337934d048bcaf7ca",
+            "component_id": "698fd7d3f8ca0d3157b0806a02f95414664ce05922c76926de2ea7c0cda704cc",
+            "area_fraction": "1682c717898bb86ee8daeccdb7796524268f41b23de8e63b2febd21fd789f822"
+          },
+          "direct_source_covered_area_m2": 25.00000003280681
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 0.5,
+          "plan_id": "baseline",
+          "scenario_id": "bridge-B0120-coverage-h0.5",
+          "demolished_ids": [],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000033019035,
+            "initial_dry_fuel_mass_kg": 450.00000059434257,
+            "available_energy_J": 4390200005.798407
+          },
+          "layout_sha256": "41c452291167b442deaffa798e4ac4b14d85b14599686700754960bc2838f2c3",
+          "source_conditions_sha256": "a54c7eae8060a36202c7e615e592bc5e4d16cc2d8684385b95d29dad33cbdea4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 302228,
+          "final_active_burning_nodes": 0,
+          "geometry_hashes": {
+            "physical_cell_id": "04e4d2cc064fe1ea29c055d9ba70aaf88cc1de36487db56a7e812ea0487f338a",
+            "xy_m": "e891648fd68495c915c7c5fdc268c8a973c7acf5f4955b800c79de77365ddb37",
+            "component_id": "f58c6825eb0b212f6bed794a193e3cf82773a901e8888ac7086724e09562c5a4",
+            "area_fraction": "51113a9faf99e3ff4760dd80acaea582f34ef53b87fc4ed29adceb7e6ab2b330"
+          },
+          "direct_source_covered_area_m2": 25.000000033019035
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 0.5,
+          "plan_id": "selected",
+          "scenario_id": "bridge-B0120-coverage-h0.5",
+          "demolished_ids": [
+            "B0119",
+            "B0165",
+            "B0167",
+            "B0177",
+            "B0190"
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000033019035,
+            "initial_dry_fuel_mass_kg": 450.00000059434257,
+            "available_energy_J": 4390200005.798407
+          },
+          "layout_sha256": "41c452291167b442deaffa798e4ac4b14d85b14599686700754960bc2838f2c3",
+          "source_conditions_sha256": "a54c7eae8060a36202c7e615e592bc5e4d16cc2d8684385b95d29dad33cbdea4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.4810719970926,
+            "cleared_roof_union_area_m2": 985.6078364046011,
+            "retained_shared_roof_area_m2": 9.873235594520446,
+            "demolished_roof_union_area_m2": 995.4810719970926,
+            "internal_demolished_overlap_m2": 0.0
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 302228,
+          "final_active_burning_nodes": 0,
+          "geometry_hashes": {
+            "physical_cell_id": "04e4d2cc064fe1ea29c055d9ba70aaf88cc1de36487db56a7e812ea0487f338a",
+            "xy_m": "e891648fd68495c915c7c5fdc268c8a973c7acf5f4955b800c79de77365ddb37",
+            "component_id": "f58c6825eb0b212f6bed794a193e3cf82773a901e8888ac7086724e09562c5a4",
+            "area_fraction": "51113a9faf99e3ff4760dd80acaea582f34ef53b87fc4ed29adceb7e6ab2b330"
+          },
+          "direct_source_covered_area_m2": 25.000000033019035
+        },
+        {
+          "status": "passed",
+          "fire_id": "bridge-B0120-coverage",
+          "scale_m": 0.5,
+          "plan_id": "area-matched-position",
+          "scenario_id": "bridge-B0120-coverage-h0.5",
+          "demolished_ids": [
+            "B0034",
+            "B0119",
+            "B0165",
+            "B0168",
+            "B0188"
+          ],
+          "source_id": "B0120",
+          "source_budget": {
+            "covered_area_m2": 25.000000033019035,
+            "initial_dry_fuel_mass_kg": 450.00000059434257,
+            "available_energy_J": 4390200005.798407
+          },
+          "layout_sha256": "41c452291167b442deaffa798e4ac4b14d85b14599686700754960bc2838f2c3",
+          "source_conditions_sha256": "a54c7eae8060a36202c7e615e592bc5e4d16cc2d8684385b95d29dad33cbdea4",
+          "intervention_area_m2": {
+            "demolished_footprint_area_m2": 995.1249298191342,
+            "cleared_roof_union_area_m2": 974.4542322629048,
+            "retained_shared_roof_area_m2": 12.774337841252478,
+            "demolished_roof_union_area_m2": 987.2285701070266,
+            "internal_demolished_overlap_m2": 7.896359712107596
+          },
+          "result_status": "passed",
+          "core_ignited": {
+            "B0035": false,
+            "B0036": false,
+            "B0166": false
+          },
+          "manifest_files_verified": 5,
+          "physical_nodes": 302228,
+          "final_active_burning_nodes": 0,
+          "geometry_hashes": {
+            "physical_cell_id": "04e4d2cc064fe1ea29c055d9ba70aaf88cc1de36487db56a7e812ea0487f338a",
+            "xy_m": "e891648fd68495c915c7c5fdc268c8a973c7acf5f4955b800c79de77365ddb37",
+            "component_id": "f58c6825eb0b212f6bed794a193e3cf82773a901e8888ac7086724e09562c5a4",
+            "area_fraction": "51113a9faf99e3ff4760dd80acaea582f34ef53b87fc4ed29adceb7e6ab2b330"
+          },
+          "direct_source_covered_area_m2": 25.000000033019035
+        }
+      ],
+      "cross_arm_checks": [
+        {
+          "scenario_id": "drum-B0164-late-ignition-h1",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "drum-B0164-late-ignition-h0.5",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "bridge-B0120-coverage-h1",
+          "status": "passed",
+          "arms_checked": 3
+        },
+        {
+          "scenario_id": "bridge-B0120-coverage-h0.5",
+          "status": "passed",
+          "arms_checked": 3
+        }
+      ],
+      "area_checks": [
+        {
+          "plan_id": "baseline",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 0.0,
+            "cleared_roof_union_area_m2": 0.0,
+            "retained_shared_roof_area_m2": 0.0,
+            "demolished_roof_union_area_m2": 0.0,
+            "internal_demolished_overlap_m2": 0.0
+          }
+        },
+        {
+          "plan_id": "selected",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 995.4810719970926,
+            "cleared_roof_union_area_m2": 985.6078364044408,
+            "retained_shared_roof_area_m2": 9.873235594735712,
+            "demolished_roof_union_area_m2": 995.4810719970926,
+            "internal_demolished_overlap_m2": 0.0
+          }
+        },
+        {
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scenarios_checked": 4,
+          "area_m2": {
+            "demolished_footprint_area_m2": 995.1249298191342,
+            "cleared_roof_union_area_m2": 974.4542322633569,
+            "retained_shared_roof_area_m2": 12.774337841197827,
+            "demolished_roof_union_area_m2": 987.2285701070266,
+            "internal_demolished_overlap_m2": 7.896359712107596
+          }
+        }
+      ],
+      "dual_scale_checks": [
+        {
+          "fire_id": "drum-B0164-late-ignition",
+          "plan_id": "baseline",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "drum-B0164-late-ignition",
+          "plan_id": "selected",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "drum-B0164-late-ignition",
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0120-coverage",
+          "plan_id": "baseline",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": true,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0120-coverage",
+          "plan_id": "selected",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        },
+        {
+          "fire_id": "bridge-B0120-coverage",
+          "plan_id": "area-matched-position",
+          "status": "passed",
+          "scales_checked": [
+            0.5,
+            1.0
+          ],
+          "joint_core_failure_over_scales": false,
+          "independent_fire_draw_count": 1,
+          "new_independent_fire_draw_count": 0
+        }
+      ],
+      "inputs": {
+        "status": "passed",
+        "problem_sha256": "18c96867a05cfc11259de12a4224b15445064612d346afc7123d8394b15a9c31",
+        "source_snapshot_files_checked": 158,
+        "current_root_files_match_snapshot": 158,
+        "parent_physics_and_inventory_verified": true,
+        "same_historical_polygons_verified": [
+          {
+            "fire_id": "drum-B0164-late-ignition",
+            "source_id": "B0164",
+            "footprint_sha256": "5b799696a15ce36c43a5300d1a76470385a18c1e67c3add440e90c5caf947727"
+          },
+          {
+            "fire_id": "bridge-B0120-coverage",
+            "source_id": "B0120",
+            "footprint_sha256": "3c324902d520acb8ee1c30d5e1f620010e0a6362d8621c688363a737b96507a8"
+          }
+        ],
+        "geometry_area_ledgers": {
+          "baseline": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 0.0,
+              "demolished_roof_union_area_m2": 0.0,
+              "internal_demolished_overlap_m2": 0.0,
+              "cleared_roof_union_area_m2": 0.0,
+              "retained_shared_roof_area_m2": 0.0
+            },
+            "overlapping_demolished_pairs": []
+          },
+          "selected": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 995.4810719970926,
+              "demolished_roof_union_area_m2": 995.4810719970926,
+              "internal_demolished_overlap_m2": 0.0,
+              "cleared_roof_union_area_m2": 985.6078364021805,
+              "retained_shared_roof_area_m2": 9.873235595077928
+            },
+            "overlapping_demolished_pairs": []
+          },
+          "area-matched-position": {
+            "area_m2": {
+              "demolished_footprint_area_m2": 995.1249298191342,
+              "demolished_roof_union_area_m2": 987.2285701070266,
+              "internal_demolished_overlap_m2": 7.896359712107596,
+              "cleared_roof_union_area_m2": 974.4542322635486,
+              "retained_shared_roof_area_m2": 12.774337841052617
+            },
+            "overlapping_demolished_pairs": [
+              {
+                "building_ids": [
+                  "B0034",
+                  "B0188"
+                ],
+                "overlap_area_m2": 7.89635971347545
+              }
+            ]
+          }
+        }
+      },
+      "execution_budget": {
+        "elapsed_s": 3004.0307247089804,
+        "active": false,
+        "declared_soft_limit_s": 14400.0,
+        "policy": "cumulative measured execution wall time; checked between solves"
+      },
+      "completed_artifacts_seen": 12,
+      "planned_CA_checks": 12,
+      "checked_CA_evaluations": 12,
+      "complete": true,
+      "all_available_checks_passed": true
+    }
+  ]
+}

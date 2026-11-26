@@ -1,0 +1,50 @@
+{
+  "sources": {
+    "inventory": {
+      "path": "runs/research/heritage-exact-small-20261024/inventory.json",
+      "sha256": "b847b53a9afb86d127d72ca8b99660bb03dc1962d85d2bc0c82a10d3d87c87ac"
+    },
+    "confirmation": {
+      "path": "docs/results/heritage-triple-validation-20261024.json",
+      "sha256": "1a0bb390231b51a7a8f115a30a699737c3296a5ae789511666758b8eac072a83"
+    },
+    "B0063": {
+      "path": "docs/results/heritage-B0063-ablation-20261024.json",
+      "sha256": "18a98778ac7edb9b8d5000f6c4478b4bc53f64d06a4c3bfe4b23ad8b8f10cb8f"
+    },
+    "positions": {
+      "path": "docs/results/heritage-position-controls-20261024.json",
+      "sha256": "dfc4bff7ab1aa99f4152cf269ffe8b4e42512dcabd513bdabb05c93ee6c043e4"
+    },
+    "exact": {
+      "path": "docs/results/heritage-exact-small-20261024.json",
+      "sha256": "811cd20512c11ddfd160d1c9789bb8fdccfe2cce0647ff9d89a522696ed6a29c"
+    }
+  },
+  "independent_confirmation_matrix": [
+    [
+      2,
+      6,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "position_comparison_failures": [
+    4,
+    0,
+    1,
+    2,
+    3
+  ],
+  "projection": "EPSG:32649",
+  "counts_are_failure_scenarios_not_annual_risk": true
+}

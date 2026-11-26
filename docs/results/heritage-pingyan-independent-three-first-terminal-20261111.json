@@ -1,0 +1,32 @@
+{
+  "schema_version": "independent-supplement-first-completed-native-observation-1",
+  "supplemental_native_problem_sha256": "e5f53405f9df6d139677cd2997f8468c21023eb8f5f7cfdd86b4cf9c9c143580",
+  "conditional_boundary_problem_sha256": "0b721e63df5809e17d317769e2b810ed6cc5eb2636821f5d37a9cb5260a74acc",
+  "plan": "fixed-core-and-first-escape-compartment",
+  "case_digest": "3d2c4645dcf2e11282eea1ac824cf39d0e7b06f5a51ff0e811eac0b22695e323",
+  "registered_footprint_and_source_budget_verified": true,
+  "full_denominator_per_arm": 8,
+  "observation_count_reported": 1,
+  "observed_core_ignitions": 0,
+  "max_valid_core_temperature_K": 314.2983979939233,
+  "native_strict_status": "passed",
+  "native_invalid_reasons": [],
+  "finite_domain_conditional_status": "passed",
+  "finite_domain_fire_closed": true,
+  "native_fire_loss_complete": true,
+  "N_burned_out_owner_bounds": {
+    "lower": 113,
+    "upper": 113
+  },
+  "A_burned_out_m2": 1227785.760829013,
+  "nonroof_A_burned_out_m2": 1197500.0,
+  "C_native_m2": 8465.532897388377,
+  "C_canonical_m2": 8465.532897386736,
+  "native_manifest_sha256": "236abb6ff45bdd6252c00cbe97c0054ea60fd62dd7346d5da5449bacf828bdb5",
+  "analysis_summary_sha256": "8bef5c94eaea47acaed71d1d390d35d50d1421bc9f8160d1ecebdcb78b88794e",
+  "allnativeartifacts_hash_verified": true,
+  "time_of_observation_s": 86817.99999999994,
+  "whole_eight_independent_cases_certified": false,
+  "strict_and_conditional_not_merged": true,
+  "seal": "bcc6adbc1055782b141e22383800ec54af05e1459c2c7486f9db7e0dd57d9352"
+}

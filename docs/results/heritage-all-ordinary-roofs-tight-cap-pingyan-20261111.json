@@ -1,0 +1,47 @@
+{
+  "admissibility": "At least one retained label has an originally exclusive physical footprint capable of supporting 25 square metres of direct ignition.",
+  "conflicting_group_pairs": 72,
+  "eligible_groups": 152,
+  "input_experiment_sha256": "9fe4f3e4c393918317d977b44a7f974fdb6cc43d2aaa646f092838e3b3667aae",
+  "input_zero_heat_sha256": "53693dc430a9bc9e23bb00b99cd67653b6a02409537c5c655aec875ae31c7b1e",
+  "loss_caps": {
+    "original_owner_upper": 3,
+    "physical_burned_m2": 241.49
+  },
+  "maximum_retention_solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "maximum_roof_retention": {
+    "C_m2": 301965.40784520685,
+    "group_worst_burned_area_upper_m2": 241.49,
+    "group_worst_burned_owner_count_upper": 2,
+    "protective_action_sha256": "316edcaa5889c980bd59d727e509f9893864a5961bfeb2156d6fe39d440a7ea8",
+    "retained_modeled_ordinary_roof_area_m2": 18290.984958928,
+    "retained_ordinary_roof_labels": 108,
+    "retained_roof_labels_with_proven_25m2_footprint": 98,
+    "roof_clearance_m2": 268040.40784520685,
+    "whole_ground_area_m2": 33925
+  },
+  "method_sha256": "5f1fe41e44bab2fcda89dbaf9525769bcdec7d68b369a6ac19e5c221739c5d49",
+  "minimum_clearance": {
+    "C_m2": 283800.1619745813,
+    "group_worst_burned_area_upper_m2": 240.99,
+    "group_worst_burned_owner_count_upper": 2,
+    "protective_action_sha256": "881d8ea21201e2b749ffba26626ab2ec5587d8049859bb5d5beef8aeb66e0d92",
+    "retained_modeled_ordinary_roof_area_m2": 8006.230829553539,
+    "retained_ordinary_roof_labels": 48,
+    "retained_roof_labels_with_proven_25m2_footprint": 40,
+    "roof_clearance_m2": 278325.1619745813,
+    "whole_ground_area_m2": 5475
+  },
+  "native_fire_runs": 0,
+  "new_fire_draws": 0,
+  "receipt_sha256": "d9e064bce2f6d84e1791b570a0dec2d203045a5994bfd260a46a9ec62f210e20",
+  "scope": "Every single retained ordinary-roof ignition with all directly ignited material on that roof, both supported meshes; any exterior ignition for core zero heat. Fixed action domain of whole shared-roof groups; other ground fires do not have the village loss cap.",
+  "screening": "Each shared-ownership group fits the caps, every pair of retained groups passes the group-to-receiver lifetime dose and contact tests, and every required ground cell is cleared.",
+  "solver_minimum_gap_m2": 3.4924596548080444e-10,
+  "solver_minimum_lower_bound_m2": 283800.16197458096,
+  "solver_status": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "solver_upper_bound_retained_labels": 108,
+  "total_groups": 441,
+  "village": "pingyan",
+  "whole_village_original_ordinary_roof_labels": 947
+}

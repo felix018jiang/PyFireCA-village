@@ -1,0 +1,191 @@
+{
+  "all_four_constructions_zero_external_heritage_heat": true,
+  "archived_eight_policy_original_four_common_compartment_bound": {
+    "capacity_A_upper_m2": 316.61,
+    "capacity_original_N_upper": 3
+  },
+  "fixed_ceiling_A_m2": 316.61,
+  "fixed_ceiling_original_Nupper": 3,
+  "input_files_sha256": {
+    "docs/results/heritage-pingyan-eight-known-zero-heat-and-design-loss-20261111.json": "ede4ce000bd8aa947c63ebed59244b6e4111a23235c3f3a4ecf4e0e744a6989b",
+    "docs/results/heritage-pingyan-eight-known-zero-heat-registration-20261111.json": "65a0040174eaacc14e5f4fe7c81eebd3debe7ed1a2cc2026d9b34e92fcc945fa",
+    "docs/results/heritage-pingyan-zero-heat-first-extensions-independent-20261111.json": "854dbb23596abd8a935c0d514320b53ec3dbc476961ad9521b0395ac1bcb2c12",
+    "docs/results/heritage-pingyan-zero-heat-first-extensions-minimum-20261111.json": "fc44fd9a1fac8ffb78707453fa78281448d8b4b5a21271557742e366fa41d9d4",
+    "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3"
+  },
+  "interpretation": "Each reported A and N is a separate maximum over certified families. Threshold failure is evidence about the sufficient screen only. Actual losses are not estimated here. Only the physical inputs of the registration are consulted. Its separately updated three-arm native-outcomes dashboard is not a physical input.",
+  "method": "Start at every parent atom with positive overlap of the whole actual footprint. Repeatedly include every retained exterior atom with polygon contact or combined whole-lifetime radiation >= (1-1e-10) of the dry ignition energy. Positive coefficients make this the least closed set under this screen. Stop as soon as its conservative area or original label capacity exceeds the target.",
+  "method_sha256": "1ae825d783ab1e0d9169dfa8ed83c0cafa87799a919cddd239715d25072870ae",
+  "new_CA_runs": 0,
+  "new_construction_placements": 0,
+  "new_source_draws": 0,
+  "placements": [
+    {
+      "C_m2": 9765.173036443528,
+      "all_eight": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 4,
+        "families": 8,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 7,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "frozen_action_sha256": "3132166779948d7d6f17dead2424b0045cda7cc53fd43491f713079ef9f35101",
+      "original_four": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 0,
+        "families": 4,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 4,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "other_disclosed_four": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 0,
+        "failed_sufficient_set_capacity": 4,
+        "families": 4,
+        "matched_and_certified": 0,
+        "matched_eight_design_physical_source_and_budget": 3,
+        "maximum_certified_A_m2": null,
+        "maximum_certified_Nupper": null,
+        "substituted_and_certified": 0
+      }
+    },
+    {
+      "C_m2": 9765.173036443528,
+      "all_eight": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 4,
+        "families": 8,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 7,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "frozen_action_sha256": "4716463de36676c5f288d7f5f87910972a9ec4c5c1f2cbddf540cbddad8e1d59",
+      "original_four": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 0,
+        "families": 4,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 4,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "other_disclosed_four": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 0,
+        "failed_sufficient_set_capacity": 4,
+        "families": 4,
+        "matched_and_certified": 0,
+        "matched_eight_design_physical_source_and_budget": 3,
+        "maximum_certified_A_m2": null,
+        "maximum_certified_Nupper": null,
+        "substituted_and_certified": 0
+      }
+    },
+    {
+      "C_m2": 9765.173036443528,
+      "all_eight": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 4,
+        "families": 8,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 7,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "frozen_action_sha256": "a40974f6ef5120e41d7c86e66b17e32e81faed21481918869f7577d22441795d",
+      "original_four": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 0,
+        "families": 4,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 4,
+        "maximum_certified_A_m2": 241.49,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "other_disclosed_four": {
+        "capacity_beyond_A": 4,
+        "capacity_beyond_N": 2,
+        "certified_on_actual_physical_policy_source": 0,
+        "failed_sufficient_set_capacity": 4,
+        "families": 4,
+        "matched_and_certified": 0,
+        "matched_eight_design_physical_source_and_budget": 3,
+        "maximum_certified_A_m2": null,
+        "maximum_certified_Nupper": null,
+        "substituted_and_certified": 0
+      }
+    },
+    {
+      "C_m2": 12853.90118112162,
+      "all_eight": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 8,
+        "failed_sufficient_set_capacity": 0,
+        "families": 8,
+        "matched_and_certified": 8,
+        "matched_eight_design_physical_source_and_budget": 8,
+        "maximum_certified_A_m2": 316.61,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "frozen_action_sha256": "27f3b6f1e6a2dbff8951b41ef0189e5426f66dd458078c5d3cf4a4c3a6fd3549",
+      "original_four": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 0,
+        "families": 4,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 4,
+        "maximum_certified_A_m2": 316.61,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      },
+      "other_disclosed_four": {
+        "capacity_beyond_A": 0,
+        "capacity_beyond_N": 0,
+        "certified_on_actual_physical_policy_source": 4,
+        "failed_sufficient_set_capacity": 0,
+        "families": 4,
+        "matched_and_certified": 4,
+        "matched_eight_design_physical_source_and_budget": 4,
+        "maximum_certified_A_m2": 316.61,
+        "maximum_certified_Nupper": 3,
+        "substituted_and_certified": 0
+      }
+    }
+  ],
+  "prescribed_source_area_m2": 25,
+  "protected_heritage_count": 3,
+  "receipt_sha256": "4b5ee2446459f2e99e2cac7ba624cd0e655b3fdc62a30daead51e2603c77e09a",
+  "schema_version": "pingyan-four-frozen-placements-eight-first-escape-coverage-1",
+  "scope": "Eight disclosed design scenarios under the frozen model.",
+  "source_reference": "Actual ordinary roof, frozen footprint and positive physical fuel/energy in the eight-scenario design.",
+  "village": "pingyan"
+}

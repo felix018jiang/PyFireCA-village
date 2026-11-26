@@ -1,0 +1,119 @@
+{
+  "schema": "batuan-unresolved-gap-channel-ablation-1",
+  "pair": "B0163-B0180",
+  "grid_m": 5,
+  "polygon_gap_m": 3.49848,
+  "gap_resolved": false,
+  "rows": [
+    {
+      "profile": "single_cell",
+      "source_owner": 162,
+      "channel": "both",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 8073704.849835124,
+      "receiver_contact_energy_J": 8572142.004391173,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "single_cell",
+      "source_owner": 162,
+      "channel": "radiation_only",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 8073704.849835124,
+      "receiver_contact_energy_J": 0.0,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "single_cell",
+      "source_owner": 162,
+      "channel": "contact_only",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 0.0,
+      "receiver_contact_energy_J": 8656400.176721385,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "single_cell",
+      "source_owner": 179,
+      "channel": "both",
+      "first_receiver_ignition_s": 341.0,
+      "receiver_absorbed_radiation_J": 89095980.99874069,
+      "receiver_contact_energy_J": 20960656.694151435,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "single_cell",
+      "source_owner": 179,
+      "channel": "radiation_only",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 20002353.779806174,
+      "receiver_contact_energy_J": 0.0,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "single_cell",
+      "source_owner": 179,
+      "channel": "contact_only",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 0.0,
+      "receiver_contact_energy_J": 6114321.798844225,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 162,
+      "channel": "both",
+      "first_receiver_ignition_s": 252.0,
+      "receiver_absorbed_radiation_J": 82686817.16664237,
+      "receiver_contact_energy_J": 24939696.69750444,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 162,
+      "channel": "radiation_only",
+      "first_receiver_ignition_s": 330.0,
+      "receiver_absorbed_radiation_J": 83789095.18498449,
+      "receiver_contact_energy_J": 0.0,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 162,
+      "channel": "contact_only",
+      "first_receiver_ignition_s": null,
+      "receiver_absorbed_radiation_J": 0.0,
+      "receiver_contact_energy_J": 9356662.700677866,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 179,
+      "channel": "both",
+      "first_receiver_ignition_s": 173.0,
+      "receiver_absorbed_radiation_J": 89728510.51343347,
+      "receiver_contact_energy_J": 19089185.53746704,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 179,
+      "channel": "radiation_only",
+      "first_receiver_ignition_s": 313.0,
+      "receiver_absorbed_radiation_J": 91750871.51917791,
+      "receiver_contact_energy_J": 0.0,
+      "actual_horizon_s": 5400.0
+    },
+    {
+      "profile": "source_roof_cells",
+      "source_owner": 179,
+      "channel": "contact_only",
+      "first_receiver_ignition_s": 355.0,
+      "receiver_absorbed_radiation_J": 0.0,
+      "receiver_contact_energy_J": 23537345.421691786,
+      "actual_horizon_s": 5400.0
+    }
+  ],
+  "protocol_sha256": "f6ebe900db960a8f7e1918b029393fd969a0902f31c5ee2bf48dae27a2d7c987",
+  "scope": "controlled grid-mechanism ablation; not physical validation of real 3.5m separation"
+}

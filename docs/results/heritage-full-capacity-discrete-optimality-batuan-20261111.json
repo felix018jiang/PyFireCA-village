@@ -1,0 +1,51 @@
+{
+  "schema_version": "strict-dose-optimality-via-closed-relaxation-1",
+  "village": "batuan",
+  "audited_closed_threshold": 1.0,
+  "strict_threshold_met_by_this_incumbent": true,
+  "original_closed_threshold": 0.99,
+  "original_independent_receipt_sha256": "d332661266e36f8e3198b7585b1b46f450b25ef5bac77e7098734528425142fb",
+  "registered_geometry_receipt_sha256": "bd2a47bded447ca85fd7494be5840c2350a467eea973b6a0cd1895a6399acd8c",
+  "registered_energy_receipt_sha256": "f345e222e86ce07d5a9fd39fbf7568741e4dbffd85a3625d37c547606785b26d",
+  "margin_experiment_sha256": "69592be424554050112445b0f60f07c28bbeb6a79bd53f3c34f8b2289c50f1bf",
+  "independent_integer_auditor_sha256": "d98cda783d2c5c51df4a42f0747d85dc6839463249d403cbfb27f94c2d811e0a",
+  "derived_auditor_input_seal": "8d1d950077386ed77613247feb9ec72e81db524541dec46e3c7d034b24acacc8",
+  "registered_plans_changed": false,
+  "observations_used_for_equality": 0,
+  "closed_relaxation_verification": {
+    "village": "batuan",
+    "source_certificate_file_sha256": "71c44d3e24153e76934f3337eebe43accf9ba4065e35f9fa18c5adfc11a7a352",
+    "C_m2": 2270.090100539021,
+    "raw_owner_union_cost_m2": 2270.090100543325,
+    "ground_count": 32,
+    "roof_action_count": 10,
+    "protected_parent_receptors_recomputed": 57,
+    "greatest_recomputed_dose_fraction": 0.977075238606896,
+    "native_contact_left_unblocked": 0,
+    "total_local_roof_subsets": 1024,
+    "all_local_ground_actions": 70,
+    "lower_discrete_cost_tier_m2": 2270.052014569752,
+    "cost_gap_to_next_lower_tier_m2": 0.03808596926910468,
+    "unresolved_cheaper_roof_subsets": 0,
+    "near_equal_float_cost_tiers": 0,
+    "cheaper_discrete_solutions_excluded": true,
+    "certificate_counts": {
+      "legal_cheaper_roof_subsets": 1024,
+      "branch_nodes": 1024,
+      "integer_single_row_exclusions": 1023,
+      "integer_weighted_exclusions": 1
+    },
+    "native_CA_runs": 0,
+    "dose_bound_arithmetic": "Per-group ratios computed independently in binary64, down-adjusted by 1e-10 and floored in 1e-8 units. Feasibility cuts are integer for that relaxed table. No rational survey polygon claim.",
+    "objective_scope": "Sufficient cumulative-energy inequalities only, under physical owner AND and whole grass cells."
+  },
+  "old_and_new_same_roof_actions": true,
+  "exchanged_ground_cells_each_way": [
+    0,
+    0
+  ],
+  "equal_total_cost_proves_equal_village_fire_loss": false,
+  "strict_threshold_minimum_proved_for_registered_equation_and_geometry_tables": true,
+  "wrapper_source_sha256": "e7170e4474e4aaededfabbb467a5525880ed5f3de59cbeb20b1fe40929d247ad",
+  "receipt_sha256": "00a5ddc617d6ee6dd9d2b9a58c5f8314220a255826e7164681a63290edc0f122"
+}

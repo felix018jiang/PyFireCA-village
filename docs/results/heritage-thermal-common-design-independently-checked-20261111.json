@@ -1,0 +1,92 @@
+{
+  "schema_version": "thermal-design-mesh-and-source-compatibility-1",
+  "villages": [
+    {
+      "village": "batuan",
+      "config_file_sha256": "cd880f2881ec3c32b1998038b3433e09e213d7678ff2f49a94f2b913d36cbd42",
+      "native_header_included_if_present": null,
+      "config_bound_input_files_checked": 9,
+      "plans_per_village": 4,
+      "design_draws_per_village": 4,
+      "supports_m": [
+        1.0,
+        0.5
+      ],
+      "quadrature_m": 0.5,
+      "integration_refinement_ids": 16,
+      "planned_closed_cases": 32,
+      "sealed_priorities_match_for_all_4": true,
+      "first_retained_sources_already_available_in_original_thermal_template": 2,
+      "common_union_prefix_covers_each_candidate_source": true,
+      "native_grid_states_compared_here": false,
+      "identical_draw_realization_families_vs_thermal": [
+        {
+          "plan_id": "minimum-thermal-energy-clearance",
+          "same_identity_count": 4,
+          "out_of": 4
+        },
+        {
+          "plan_id": "direct-thin-D9-with-no-grass",
+          "same_identity_count": 0,
+          "out_of": 4
+        },
+        {
+          "plan_id": "minimum-ground-centre-core-clearance",
+          "same_identity_count": 4,
+          "out_of": 4
+        },
+        {
+          "plan_id": "minimum-core-separation",
+          "same_identity_count": 4,
+          "out_of": 4
+        }
+      ],
+      "interpretation": "The common policy contrast uses the same four frozen full rankings and the same new support/footprint partition. Pairwise physical attribution needs matching actual retained identity, footprint, fuel and energy at that support. Aggregate historic native losses are not transferred across meshes."
+    },
+    {
+      "village": "pingyan",
+      "config_file_sha256": "132a1e9f87c932b6f09b7619105d39553a65dcbcafb2400a987022fa8382530a",
+      "native_header_included_if_present": null,
+      "config_bound_input_files_checked": 9,
+      "plans_per_village": 4,
+      "design_draws_per_village": 4,
+      "supports_m": [
+        1.0,
+        0.5
+      ],
+      "quadrature_m": 0.5,
+      "integration_refinement_ids": 28,
+      "planned_closed_cases": 32,
+      "sealed_priorities_match_for_all_4": true,
+      "first_retained_sources_already_available_in_original_thermal_template": 3,
+      "common_union_prefix_covers_each_candidate_source": true,
+      "native_grid_states_compared_here": false,
+      "identical_draw_realization_families_vs_thermal": [
+        {
+          "plan_id": "minimum-thermal-energy-clearance",
+          "same_identity_count": 4,
+          "out_of": 4
+        },
+        {
+          "plan_id": "roof-seed-protected-union-ring-b0-w15.01",
+          "same_identity_count": 2,
+          "out_of": 4
+        },
+        {
+          "plan_id": "minimum-ground-centre-core-clearance",
+          "same_identity_count": 3,
+          "out_of": 4
+        },
+        {
+          "plan_id": "minimum-core-separation",
+          "same_identity_count": 3,
+          "out_of": 4
+        }
+      ],
+      "interpretation": "The common policy contrast uses the same four frozen full rankings and the same new support/footprint partition. Pairwise physical attribution needs matching actual retained identity, footprint, fuel and energy at that support. Aggregate historic native losses are not transferred across meshes."
+    }
+  ],
+  "new_CA_checks": 0,
+  "purpose": "prospective design compatibility and full-priority identity check; independent endpoint outcomes require fresh native manifests",
+  "audit_sha256": "defe90fb1d00f95175a40f4be5f023f38d72b23b493ee91b6b9012af0ed9d8ea"
+}

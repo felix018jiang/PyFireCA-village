@@ -1,0 +1,86 @@
+{
+  "village": "pingyan",
+  "criterion": "All external fuel may burn; direct core contact must be blocked, total radiation into each core receptor below dry ignition heat.",
+  "scope": "Frozen finite fuel, zero wind, no firebrands. External direct starts only. Refinement conserves parent material and does not increase the bound.",
+  "core_building_count": 3,
+  "core_parent_fragments": 115,
+  "separate_per_receptor_computations_agreed": true,
+  "registered_source_locations_used_in_energy_calculation": false,
+  "fresh_source_draws": 0,
+  "aggregate_only": true,
+  "CA_runs": 0,
+  "loss_endpoints_computed": 0,
+  "closed_and_strict_capacity_least_C_m2": 3929.4875441747736,
+  "registered_99pct_and_closed_100pct_min_cost_same": true,
+  "actions": [
+    {
+      "role": "independently_registered",
+      "plan": "fixed-core-and-first-escape-compartment",
+      "C_m2": 8465.532897386736,
+      "direct_exterior_contacts_all_blocked": true,
+      "worst_absorbed_energy_over_dry_ignition_requirement": 0.9615949849383583,
+      "registered_99pct_all_core_certificate": true,
+      "unreserved_strict_all_core_condition": true,
+      "all_external_only_ignition_heritage_safety": "certified"
+    },
+    {
+      "role": "independently_registered",
+      "plan": "roof-seed-protected-union-ring-b0-w2.5",
+      "C_m2": 2543.456175290825,
+      "direct_exterior_contacts_all_blocked": true,
+      "worst_absorbed_energy_over_dry_ignition_requirement": 13.334533800337278,
+      "registered_99pct_all_core_certificate": false,
+      "unreserved_strict_all_core_condition": false,
+      "all_external_only_ignition_heritage_safety": "unknown"
+    },
+    {
+      "role": "independently_registered",
+      "plan": "roof-seed-protected-union-ring-b0-w15.01",
+      "C_m2": 10669.276972304711,
+      "direct_exterior_contacts_all_blocked": true,
+      "worst_absorbed_energy_over_dry_ignition_requirement": 8.361996865206935,
+      "registered_99pct_all_core_certificate": false,
+      "unreserved_strict_all_core_condition": false,
+      "all_external_only_ignition_heritage_safety": "unknown"
+    },
+    {
+      "role": "design_only",
+      "plan": "local-band-with-observed-clearance-subset",
+      "C_m2": 3585.565937285018,
+      "direct_exterior_contacts_all_blocked": true,
+      "worst_absorbed_energy_over_dry_ignition_requirement": 13.334533800337278,
+      "registered_99pct_all_core_certificate": false,
+      "unreserved_strict_all_core_condition": false,
+      "all_external_only_ignition_heritage_safety": "unknown"
+    },
+    {
+      "role": "core_only_reference",
+      "plan": "core_protection_only_reference",
+      "C_m2": 3929.4875441747736,
+      "direct_exterior_contacts_all_blocked": true,
+      "worst_absorbed_energy_over_dry_ignition_requirement": 0.9615949849383583,
+      "registered_99pct_all_core_certificate": true,
+      "unreserved_strict_all_core_condition": true,
+      "all_external_only_ignition_heritage_safety": "certified"
+    }
+  ],
+  "numerical_scope": "Fuel-conserving analytical inequality. The registered HRR arithmetic fallback clips interval energy to remaining fuel times combustion heat.",
+  "solver_versions": {
+    "runs/research/heritage-thermal-and-geometric-pareto-pingyan-20261111/experiment.json": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4",
+    "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "7518a302645677ee8821a87ec0d4371485733aa1b1a84620903f704e0b3945f3",
+    "runs/research/heritage-pingyan-observed-clearance-subset-20261111/experiment.json": "e12f3a92bf4d04b4c2971cc4e32bcb7bcca3b9071a07ec51a1d24a6f2acc5af4"
+  },
+  "input_file_hashes": {
+    "runs/research/heritage-thermal-and-geometric-pareto-pingyan-20261111/experiment.json": "9fe4f3e4c393918317d977b44a7f974fdb6cc43d2aaa646f092838e3b3667aae",
+    "runs/research/heritage-pingyan-independent-three-stage-supplement-20261111/experiment.json": "106f2e9cff2edf537e64de75134c6641b3c5ec03079b246ba379c3e08300c2b3",
+    "runs/research/heritage-pingyan-observed-clearance-subset-20261111/experiment.json": "24707800f3b9cc00223f12df349f3f1b4351577ab5ce9dc0a84c5c8067d0b735",
+    "examples/research/heritage/confirmation-20261110/pingyan-three-fixed-plans-20261111/final-candidates.json": "55dc7d056ffdc45e536450472117674e7a4857d21cc219059be998bf8812230d",
+    "docs/results/heritage-full-capacity-discrete-optimality-pingyan-20261111.json": "142c9b5c46ceb7cacb29902f99b4fd412dfacba163765441dbc62bc3cc26bbb9",
+    "docs/results/heritage-thermal-clearance-pingyan-20261111.json": "d91e51ac3c1659171b2567c3c0a8c026b9ef6a24f59ba867e80975cf3914952d",
+    "docs/results/heritage-pingyan-hrr-error-recovery-registration-20261111.json": "2091dcc6cd0743686c5847bc4313f83fff0de59323565e324855fc000b229bbb",
+    "scripts/audit_heritage_thermal_optimum.py": "d98cda783d2c5c51df4a42f0747d85dc6839463249d403cbfb27f94c2d811e0a",
+    "scripts/verify_heritage_total_protection_and_loss.py": "b41a799076011cdff195fcd875618f73d3ca7bd44d1d09801d2754ceaf272978"
+  },
+  "method_sha256": "aa35422bf124b58b3c8e23c2003d1f594d3bdfb64b8a850082ad22933522bdbc",
+  "receipt_sha256": "0b6409f74771506b2233fbe49e84a7c93eb0a0622b93e00f9166c0660fb5b024"
+}

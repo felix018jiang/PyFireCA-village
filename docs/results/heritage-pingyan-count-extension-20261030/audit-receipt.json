@@ -1,0 +1,7 @@
+{
+  "auditing_driver_sha256": "523a106c131fd57b0301f86357d3dfa84a9bf4942fe16040135d558b33966516",
+  "frozen_execution_driver_sha256": "af042d2cacd169be592abaa8cbb8153da265326064272d721f233b16a83a6ef6",
+  "summary_sha256": "04e836b63e92d1d69fdd0d04f7a4593d8fc1c43f7a1083a27e21c9f5fb3e953a",
+  "new_search_CA_checks": 0,
+  "native_validation_CA_checks": 1
+}

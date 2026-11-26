@@ -1,0 +1,137 @@
+{
+  "schema_version": "heritage-unified-strategy-validation-1",
+  "village_id": "batuan",
+  "input_validation_passed": true,
+  "output_directory": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-strategy-export-check-20261025",
+  "best_ids": [
+    "B0061",
+    "B0071",
+    "B0076"
+  ],
+  "optimality_proven_in_declared_candidate_set": true,
+  "new_physical_CA_checks": 0,
+  "saved_physical_record_hits": 108,
+  "missing_physical_record_lookups": 0,
+  "whole_village_search_started": false,
+  "case_request_sha256": "78c97d31d7579b8b45dab5baa8ea907cf2f13b83d8ae236b7b514beaf3e4501c",
+  "physical_problem_sha256": "913365a1db3594f541fa390e9896b1b13622fd698d39de48233ccc9dcdc3e642",
+  "inventory_sha256": "cdba9cb576b006d8bd363cebab5a5885b6ab2a8af6fa96acf0117266ddfe51d6",
+  "materials": {
+    "all_physical_parameter_fields_match": true,
+    "physical_parameter_field_count": 33,
+    "library_id": "batuan-demo-synthetic-profiles",
+    "evidence": "synthetic_integration_fixture_not_field_calibration",
+    "production_ready": false,
+    "case_material_evidence_raster_present": true,
+    "roof_profile_id": "synthetic_building",
+    "material_profiles": {
+      "0": "inert_bare_or_road",
+      "1": "synthetic_grass",
+      "4": "synthetic_tree_equivalent",
+      "5": "synthetic_building",
+      "6": "synthetic_tree_equivalent",
+      "7": "synthetic_grass",
+      "8": "inert_bare_or_road"
+    }
+  },
+  "area_and_costs": {
+    "demolished_count": 3,
+    "nominal_footprint_area_m2": 451.24045614570235,
+    "removed_footprint_union_m2": 451.2404561457023,
+    "cleared_roof_union_area_m2": 443.84196874193674,
+    "retained_shared_roof_area_m2": 7.398487403734617,
+    "cleared_allocation_rule": "sorted_building_id_nonoverlapping_partition_not_ownership",
+    "objective_policy": "lexicographic_count_then_nominal_footprint_area",
+    "declared_economic_cost": null,
+    "cost_unit": null,
+    "economic_cost_status": "missing",
+    "cost_evidence": null,
+    "household_count": null,
+    "implementation_feasibility_verified": false,
+    "search_candidate_ids": [
+      "B0061",
+      "B0063",
+      "B0067",
+      "B0071",
+      "B0074",
+      "B0076",
+      "B0077",
+      "B0149"
+    ],
+    "optimality_proven_within_declared_search_problem": true,
+    "whole_village_optimality_claimed": false,
+    "pending_data": [
+      {
+        "id": "economic_costs",
+        "status": "pending",
+        "needed": "逐栋拆除、补偿/搬迁、废料处理与可回收抵扣的同口径费用、币种、价格日期及来源；未提供，不按零处理。"
+      },
+      {
+        "id": "households_and_eligibility",
+        "status": "pending",
+        "needed": "产权/住户、普通建筑文化价值、共享屋面归属、社区意愿及真实可拆资格；当前非核心331对象暂可拆。"
+      },
+      {
+        "id": "field_materials",
+        "status": "pending",
+        "needed": "建筑材料、燃料负荷、构造高度、初始水分与背景地表分类核查；本轮保持原合成参数。"
+      },
+      {
+        "id": "heritage_activity_spaces",
+        "status": "pending",
+        "needed": "遗产身份现场确认及非遗活动空间、通行/集会空间保护边界。"
+      },
+      {
+        "id": "second_village",
+        "status": "pending",
+        "needed": "第二村落统一遗产清单、材料/资格/费用资料和同协议准备与验证；现有高友数据仅作接入盘点。"
+      }
+    ]
+  },
+  "protection": {
+    "scenario_count": 8,
+    "core_outcome_count": 16,
+    "all_best_core_outcomes_unignited": true,
+    "native_evaluation_references_sha256": {
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/555ea5a1b0467180e73a58c6d649f9f10c59e87d77e3e7ff51213298e7ce2bde/check.json": "d5338b2b7a8cca67ff78c848a04084d9e0100330327fed4556ab61d01b05e9f3",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/555ea5a1b0467180e73a58c6d649f9f10c59e87d77e3e7ff51213298e7ce2bde/evaluation.json": "99fd04d053328a24b9d43881406acb85b848695c328a305b93e5edf6c7c6111a",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/28a95d0b1290447fff375e86d245a2ce1636de969afef16bdf3886fc0a21c732/check.json": "62f1f890d808b5417cea6a8f6b92ceb12aa063716f636cacff4c431d219eafaf",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/28a95d0b1290447fff375e86d245a2ce1636de969afef16bdf3886fc0a21c732/evaluation.json": "b5a51c3094a2bd7555ecff8395674e3dde1f312ee933b2c0e0c61c6e1a7ca552",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/63834733c997353272d4284d93d416deaf159f12a9f85729378450b010d91fca/check.json": "601762baefdabbb52a5fb0fad0f9814801566323276797b637458f265a5b139f",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/63834733c997353272d4284d93d416deaf159f12a9f85729378450b010d91fca/evaluation.json": "53f91fb174f03e6c14cfb70fc52cb3399ab9021dfb4fbd9d0c522c9fe84b092a",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/1920b32084f24d71664472d30403c1e5b8e124eb689739f4555ecded78127c94/check.json": "6ebf0cc2e5883b2a0e27fbc98c7679a9778fcbcbecef24bb7caef2493b8bf307",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/1920b32084f24d71664472d30403c1e5b8e124eb689739f4555ecded78127c94/evaluation.json": "c3289c2421023b0957574b936e90d8c03399cef432e32c495d6f464d8bac3be7",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/d2346886c38ebba95dad1b7456da9ae15d4ad03c6c964ab89de6381b77c27d86/check.json": "3d2d479058243b8aa030ff988942a2667d0555bb974ebdb586bda6d4381a8544",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/d2346886c38ebba95dad1b7456da9ae15d4ad03c6c964ab89de6381b77c27d86/evaluation.json": "6b13043ada688547f300c4d3dfddd7f264126ab49e62886adbab7e44497a623a",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/e6b37a3dbf0a521ab87a4e8fb2d16ef5846227d8f461428cc0c12deb5edb1e65/check.json": "433173629e51526058860b64d4fc64e281ba443e93b8f7a06e6ea2e767569edc",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/e6b37a3dbf0a521ab87a4e8fb2d16ef5846227d8f461428cc0c12deb5edb1e65/evaluation.json": "e12533c30de285ffc4ea446852223a387ae33dd437677abdac3729acf02b0444",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/3aee8c053e4ebfdd597b67d48bb718749de03583bec6f5bbaedae1c8af86a13d/check.json": "6abdf5e2aaa19e082c49ab3891946a73a83993e04a1a7b6926c3b38285b3ddb3",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/3aee8c053e4ebfdd597b67d48bb718749de03583bec6f5bbaedae1c8af86a13d/evaluation.json": "9bf1f3be3364001263e4a48f9bb4b800a29f8d8c9369bcec6e674ac6ef103f53",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/7f85a8e58d1c97c594bdb0f8fd93984d882aaa2f1426fe10167f8f06a87e3231/check.json": "dc0727bc8b1600519f30e8896cc7c69e59b69c9423de61a1051d93f2f60a651f",
+      "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-exact-expanded-20261024/evaluations/7f85a8e58d1c97c594bdb0f8fd93984d882aaa2f1426fe10167f8f06a87e3231/evaluation.json": "e971c247b42368860ac17e89717373f863722d5ceda3ddace5d1133af4b803be"
+    },
+    "exported_areas_match_all_best_native_ledgers": true
+  },
+  "exporter_source_sha256": {
+    "scripts/run_heritage_strategy.py": "6b4642052105a457829a41b950072abb091ff0f60d2b43a50aaf4d4ccfa096b8",
+    "scripts/replay_heritage_strategy.py": "ffa9a91129b9d2422271b7060c60cb66bcd57d3bfe4724d43b649e5d7920add3",
+    "src/pyfireca/planning/study_io.py": "74f1547a05134fdb1b748cf4ea16f240de84b164845c82b141b06bd46e9ce7c8",
+    "src/pyfireca/planning/strategy_io.py": "088ff823c6036962e254b3769998e908394004c1db1ae11c4e84c195688bc768",
+    "src/pyfireca/planning/strategy_map.py": "fd5958076105b45b0597d870dc1c9b192c3a6e13aacd5a279f29d3d12cbda439",
+    "src/pyfireca/planning/heritage_strategy.py": "09a5dd85136965f45b159f5e396bc2eb3ae2339d613d90d99fa8d7dba0141ae6",
+    "src/pyfireca/planning/building_search.py": "4e0e45b89357d25bc346a7c98cce951cdb33af6362c6cee7efd6d82dabb7cbe0"
+  },
+  "output_sha256": {
+    "clearance.geojson": "335033c7c1a104fef597ff992ef614e33144cc78659bdd795cdf089d740cf660",
+    "cost-summary.json": "1bb8a344de5d4f6c418c03b51a1ae012e63d832c03eca5e00c0426f6070ece86",
+    "demolition-list.csv": "4b2574326964b935b72ed19aaa735e4355e4f923039485f52e2f6ec49a6c14e6",
+    "heritage-protection.csv": "928a267f1c7bc3d6ab4d3e9da650057a83e97c30dfb03990a1b43c9c8903922f",
+    "input-receipt.json": "2f12be20ffc93dfdf462f683f217df0d6fcdbbdfbba57df1b7224a0e1f2a2b53",
+    "map-reference.json": "6264a5c34db0d68a7f3d803c705071fba5bfb3211e57ba2b75b46ec01b4c9289",
+    "spatial-reference.json": "c5f7e26e2ca7f4c6b638e8511271624a075cbb6c60b24fc41b9ae519a24b91a0",
+    "strategy-buildings.geojson": "864ee01015500a431b4112b61c14430bc6ace0af2924b6a28518250f544b7aba",
+    "strategy-map.pdf": "72251bf123afec418fe676549205e16ad2e6adcda5706a2edf512e4cbbf9b582",
+    "strategy-map.png": "ac1d9290e94f9087e516a6b55e8fc8159e8253dae999716e70ae306807b50be1",
+    "strategy-result.json": "611e5630301e9d3c3d30b01af6754c6e6fd7c546c6faa5e7f1e64c000d6c4845"
+  }
+}

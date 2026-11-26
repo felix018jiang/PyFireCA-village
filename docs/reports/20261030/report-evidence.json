@@ -1,0 +1,64 @@
+{
+  "report_date": "2026-10-30",
+  "timezone": "Asia/Shanghai",
+  "report_source": "docs/HERITAGE_EXPERIMENT_REPORT_20261030.md",
+  "report_source_sha256": "078a398eefa513592fcc7a5d8c99516d02a4c22e582e287deb54b82570c09e04",
+  "new_CA_for_report": 0,
+  "physics_or_search_modified_for_report": false,
+  "batuan_count_bounds": [
+    3,
+    3
+  ],
+  "pingyan_count_bounds": [
+    3,
+    5
+  ],
+  "batuan_area_interval_at_optimal_count_m2": {
+    "optimal_count": 3,
+    "lower_m2": 177.81410165772067,
+    "upper_m2": 451.24045614570235,
+    "basis": "first_unresolved_leaf_in_admissible_best_first_area_order"
+  },
+  "current_plan_area_ledgers": {
+    "岜团": {
+      "ids": [
+        "B0061",
+        "B0071",
+        "B0076"
+      ],
+      "nominal_footprint_area_m2": 451.24045614570235,
+      "cleared_area_allocated_m2": 443.84196874154674,
+      "shared_with_retained_area_m2": 7.398487403734617,
+      "real_cost_pending": true
+    },
+    "平岩": {
+      "ids": [
+        "B0119",
+        "B0165",
+        "B0167",
+        "B0177",
+        "B0190"
+      ],
+      "nominal_footprint_area_m2": 995.4810719970926,
+      "cleared_area_allocated_m2": 985.6078364034328,
+      "shared_with_retained_area_m2": 9.873235595077928,
+      "real_cost_pending": true
+    }
+  },
+  "pingyan_new_CA_by_stage": {
+    "2": 29,
+    "3": 0,
+    "4": 0
+  },
+  "source_files_sha256": {
+    "docs/results/heritage-full-batuan-20261029.json": "af584589b3117213937775e30248db0011852b75034530ccaf068c42153886ac",
+    "docs/results/heritage-pingyan-count-extension-20261030/summary.json": "04e836b63e92d1d69fdd0d04f7a4593d8fc1c43f7a1083a27e21c9f5fb3e953a",
+    "docs/results/heritage-triple-validation-20261024.json": "1a0bb390231b51a7a8f115a30a699737c3296a5ae789511666758b8eac072a83",
+    "docs/results/heritage-B0063-ablation-20261024.json": "18a98778ac7edb9b8d5000f6c4478b4bc53f64d06a4c3bfe4b23ad8b8f10cb8f",
+    "docs/results/heritage-position-controls-20261024.json": "dfc4bff7ab1aa99f4152cf269ffe8b4e42512dcabd513bdabb05c93ee6c043e4",
+    "docs/results/heritage-full-pingyan-20261029/strategy/confirmation-summary.json": "9b22182208ecf0f7bda9da8fb056b9234f837211086c3a34f6c3f7db87e1e815",
+    "docs/results/heritage-full-batuan-20261029/strategy/strategy-map.png": "9ecf3be800ce01c759850f6169c71b007c82198861756f7fcea7b81160b9456b",
+    "docs/results/heritage-pingyan-count-extension-20261030/strategy/strategy-map.png": "adefdf44fbe64f75c652f2a0840b55a4876092668ff832ad0205ad4518d52e0c"
+  },
+  "scope": "Completed experiments only; dual scales are not independent fire samples; monetary costs pending."
+}

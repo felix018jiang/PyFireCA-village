@@ -1,0 +1,31 @@
+{
+  "village": "batuan",
+  "source_certificate_file_sha256": "f345e222e86ce07d5a9fd39fbf7568741e4dbffd85a3625d37c547606785b26d",
+  "C_m2": 2270.090100539021,
+  "raw_owner_union_cost_m2": 2270.090100543325,
+  "ground_count": 32,
+  "roof_action_count": 10,
+  "protected_parent_receptors_recomputed": 57,
+  "all_receptors_below_99_percent_dry_capacity": true,
+  "greatest_recomputed_dose_fraction": 0.977075238606896,
+  "native_contact_left_unblocked": 0,
+  "total_local_roof_subsets": 1024,
+  "all_local_ground_actions": 70,
+  "lower_discrete_cost_tier_m2": 2270.052014569752,
+  "cost_gap_to_next_lower_tier_m2": 0.03808596926910468,
+  "unresolved_cheaper_roof_subsets": 0,
+  "near_equal_float_cost_tiers": 0,
+  "cheaper_discrete_solutions_excluded": true,
+  "certificate_counts": {
+    "legal_cheaper_roof_subsets": 1024,
+    "branch_nodes": 1024,
+    "integer_single_row_exclusions": 1023,
+    "integer_weighted_exclusions": 1
+  },
+  "native_CA_runs": 0,
+  "dose_bound_arithmetic": "Per-group ratios computed independently in binary64, down-adjusted by 1e-10 and floored in 1e-8 units. Feasibility cuts are integer for that relaxed table. No rational survey polygon claim.",
+  "objective_scope": "Sufficient cumulative-energy inequalities only, under physical owner AND and whole grass cells.",
+  "schema_version": "independent-thermal-dose-and-discrete-cost-verification-1",
+  "audit_source_sha256": "d98cda783d2c5c51df4a42f0747d85dc6839463249d403cbfb27f94c2d811e0a",
+  "receipt_sha256": "1579bb39d6392a45a8794508d70e36f19d520826158fca5419d772477f5cc651"
+}

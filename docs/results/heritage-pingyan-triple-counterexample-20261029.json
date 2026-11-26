@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-10-29T16:52:55+08:00",
+  "verified_native_counterexample": [
+    {
+      "path": "runs/research/pingyan-full-bounded-20261029/evaluations/f33899b37678b868bdd10d80a0536aa8739b3871785165f74e29e53a75fd30eb/check.json",
+      "source": "B0167",
+      "scenario": "near-B0166-h1",
+      "core": "B0166",
+      "ignition_s": 719.0,
+      "source_area_m2": 24.99999974930919,
+      "required_intervention_group": [
+        "B0164",
+        "B0167",
+        "B0168",
+        "B0169",
+        "B0175",
+        "B0176",
+        "B0178",
+        "B0179"
+      ],
+      "evaluation_sha256": "4cd0c8a6e8c887e2f389da91742ec1483e2650362e5d44d2bf4ec07dd761a5b7"
+    }
+  ],
+  "no_new_CA_for_this_check": true,
+  "interpretation": "this_specific_triple_fails;other_triples_not_excluded"
+}

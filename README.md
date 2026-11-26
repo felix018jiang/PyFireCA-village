@@ -25,3 +25,17 @@ python3 scripts/verify_heritage_paper.py
 ```
 
 程序逐场检查终态记录和熄灭证书，重建正文三张表的主要数值，并核对冻结的求解器与实验脚本。完整热传播重算所用的原始空间资料与运行方式见复核说明。建筑构造来自田野调查的类型归纳，原版求解器对所有屋面采用同一等效燃料（代码 5）。[方法与输入说明](docs/HERITAGE_STUDY_CODE.md)
+
+## 本地研究分支的既有实验与恢复记录
+
+- [岜团村多火源、风况与材质参数下的90分钟保护约束优化](docs/BATUAN_MULTISCENARIO_SEARCH.md)
+
+- [岜团村折线与多路径防火线迭代优化](docs/BATUAN_ADAPTIVE_FIREBREAK_SEARCH.md)
+
+- [岜团村统一评价接口与防火线效果试验](docs/BATUAN_INTERVENTION_EVALUATION.md)
+
+- [传统村落元胞材质生成与防火线优化研究开发计划](docs/VILLAGE_FIRE_RESEARCH_PLAN.md)
+- [版本管理与恢复](docs/VERSIONING_AND_RECOVERY.md)
+- [运行岜团村交互模拟器](docs/VILLAGE_INTERACTIVE.md)
+
+岜团村90分钟民居/风雨桥联合保护、三类线形比较及独立易引燃敏感性：[运行与恢复说明](docs/BATUAN_PROTECTION90_SEARCH.md)；[论文主线和配置准则路线](docs/BATUAN_PAPER_RESEARCH_MAINLINE.md)。

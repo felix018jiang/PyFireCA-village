@@ -1,0 +1,54 @@
+{
+  "schema_version": "heritage-fixed-parent-contact-presence-witness-1",
+  "witness_type": "fixed_parent_parameter_presence;not_immutable_edge_requirement",
+  "rows": [
+    {
+      "village_id": "batuan",
+      "parent_manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-geometry-20261023-r2/case/manifest.json",
+      "parent_manifest_sha256": "f74b89da1602225b28285fb970c04fc4f35e471b7c1980d63688ccd0dac4f70d",
+      "parent_flame_contact": {
+        "schema_version": "village-flame-contact-1",
+        "gas_temperature_K": 1100,
+        "heat_transfer_coefficient_W_m2_K": 50,
+        "contact_fraction": 0.5,
+        "max_cell_size_m": 5,
+        "evidence": "synthetic",
+        "provenance": "synthetic:batuan_continuous_slope_shared_face_5m_demo_not_field_calibrated",
+        "terrain_reference": "shared_face"
+      },
+      "parent_flame_contact_sha256": "0d8ed63d5f0f54851135f5d0833d88878126269c86074f13255364d6c19ad136",
+      "frozen_builder_file_sha256": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77"
+    },
+    {
+      "village_id": "pingyan",
+      "parent_manifest_path": "/Users/tone/Documents/github/PyFireCA/runs/research/pingyan-physical-core-priority-20261029/case/manifest.json",
+      "parent_manifest_sha256": "7b032002033eaf5e8c0ee2f5d27ce4c3c86405598f176cbf00de2ef4dc499e7d",
+      "parent_flame_contact": {
+        "schema_version": "village-flame-contact-1",
+        "gas_temperature_K": 1100,
+        "heat_transfer_coefficient_W_m2_K": 50,
+        "contact_fraction": 0.5,
+        "max_cell_size_m": 5,
+        "evidence": "synthetic",
+        "provenance": "synthetic:batuan_continuous_slope_shared_face_5m_demo_not_field_calibrated",
+        "terrain_reference": "shared_face"
+      },
+      "parent_flame_contact_sha256": "0d8ed63d5f0f54851135f5d0833d88878126269c86074f13255364d6c19ad136",
+      "frozen_builder_file_sha256": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77"
+    }
+  ],
+  "parent_contact_configurations_equal": true,
+  "builder_function_sha256": "4f48831a0cc5526ccea5e08b2e35c8f490ea0758f3365797af21fa068a73d4a2",
+  "builder_file_sha256": "3aeec17ad671dc511e8be9e6d6c4a082224562e00c993371b0c79c8e67753e77",
+  "empty_candidate_graph_result_is_not_none": true,
+  "empty_graph_neighbors_shape": [
+    132,
+    0
+  ],
+  "fixed_CFL_extra_h_W_m2_K": 50,
+  "reason": "only parent.flame_contact=None returns None;empty edges return width-zero operator",
+  "scope": "required refined_contact_operator;does_not_generalize_to_other_builders",
+  "village_contact_graphs_built": 0,
+  "new_CA_checks": 0,
+  "earlier_contact_presence_risk_retracted_for_this_builder": true
+}

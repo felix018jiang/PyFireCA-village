@@ -1,0 +1,545 @@
+{
+  "additional_frozen_inputs_sha256": {
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111-catalog.json": "cb14c97c7f3ea0a03420c5f5c294f8ba0397bee56de4c36c47f1ab2b4c1057ec",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111-design.json": "48e2ea29ff25c11a22a60c58f76903a1b20dbcb690a5fd383d5833302b22c29d",
+    "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-narrow-hull-20261111.geojson": "b9c516f56f0b17961a9c37aec3ad016c8868779c9dc582afa4e30b4523e9d5e5",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.comparison-catalog.json": "2f47df739defd81a2b83aeedefb5df832af72efa1ac70f54217429f42a05e6a9",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-balanced-optimized-longcap-comparison-20261111.json": "0ce1536620768579526125c691311e3e21f5682e82118e8f2cfc27b03d8708e1",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-longcap-comparison-20261111.json": "1345ceb987374e111e51875810401503752439f458cd1fb53b0d7f0d37cb1125",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-receipt.json": "42fb97d135aed129e05c6d8666170c6a12e20407ff54a31607117177e662371e",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-joint-terminal-comparison.seed-search.json": "7bd8f8e9e1423f9d4bc57756440829a494464c3275c80166320375b5d89690cb",
+    "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.finite-source-certificate.json": "20e5603b36f7ce8b4c3153cd0ca657bae614a91b72a439dd333961d4435495bb",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_all_roof_bands.py": "fe8129f8d25c21b2ff62c4919162b518dc8d14cbac893fb7649fddbd285d6117",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_balanced_roof_bands.py": "2482870eecc4569452154a1105d0f4629b698c16a390ded335165bec1bf30272",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_narrow_hull_catalog.py": "7eaa313008baa1fb0aa5a43a06e21e6b9e78b9dd4e4b03af99bb5a50f11ff0d2",
+    "/Users/tone/Documents/github/PyFireCA/scripts/prepare_heritage_optimized_balanced_catalog.py": "31e6b1da559fe5ba85bc69070d05e7121a6f80213a66845d5fd714c7c6d8e489"
+  },
+  "config_path": "/Users/tone/Documents/github/PyFireCA/examples/research/heritage/area-20261110/batuan-narrow-hull-longcap-comparison-20261111.json",
+  "config_sha256": "e03330d67bcf23caec0b14ba6994bfb7d116c9504f8d9498a058d54276564c01",
+  "cost_and_diagnostics": [
+    {
+      "C_construction_action_area_m2": 1664.0173624408872,
+      "cleared_roof_geometry_union_area_m2": 1089.0173624408872,
+      "cleared_vegetation_covered_fuel_area_m2": 575.0,
+      "cleared_vegetation_parent_cell_count": 23,
+      "conservative_cut_evidence": {
+        "basis": "all_refined_roof_and_quadrature_supports_subset_original_polygons;contact_requires_boundary_intersection",
+        "certified_no_potential_radiation_or_contact_edge": false,
+        "minimum_inner_outer_physical_polygon_distance_m": 2.6856261631115075,
+        "potential_inner_node_count": 161,
+        "potential_node_mask": "original_burnable_or_source_or_target;actual_whole_owner_AND_roof_and_ground_clearance",
+        "potential_outer_node_count": 84490,
+        "potential_unordered_inner_outer_pairs_within_radiation_support": 1039,
+        "proof_scope": "finite_frozen_domain_and_current_operator_supports;not_field_fire_safety",
+        "radiation_support_radius_m": 15.0,
+        "roof_refinement_preserves_certificate": true,
+        "schema_version": "physical-support-conservative-cross-partition-cut-1"
+      },
+      "nominal_ring_width_m": 2.5,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+      "planned_roof_ID_count": 9
+    },
+    {
+      "C_construction_action_area_m2": 2327.1602137112704,
+      "cleared_roof_geometry_union_area_m2": 1477.1602137112702,
+      "cleared_vegetation_covered_fuel_area_m2": 850.0,
+      "cleared_vegetation_parent_cell_count": 34,
+      "conservative_cut_evidence": {
+        "basis": "all_refined_roof_and_quadrature_supports_subset_original_polygons;contact_requires_boundary_intersection",
+        "certified_no_potential_radiation_or_contact_edge": false,
+        "minimum_inner_outer_physical_polygon_distance_m": 5.275395261874464,
+        "potential_inner_node_count": 161,
+        "potential_node_mask": "original_burnable_or_source_or_target;actual_whole_owner_AND_roof_and_ground_clearance",
+        "potential_outer_node_count": 84435,
+        "potential_unordered_inner_outer_pairs_within_radiation_support": 738,
+        "proof_scope": "finite_frozen_domain_and_current_operator_supports;not_field_fire_safety",
+        "radiation_support_radius_m": 15.0,
+        "roof_refinement_preserves_certificate": true,
+        "schema_version": "physical-support-conservative-cross-partition-cut-1"
+      },
+      "nominal_ring_width_m": 5.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+      "planned_roof_ID_count": 10
+    },
+    {
+      "C_construction_action_area_m2": 2596.624984256574,
+      "cleared_roof_geometry_union_area_m2": 1546.6249842565737,
+      "cleared_vegetation_covered_fuel_area_m2": 1050.0,
+      "cleared_vegetation_parent_cell_count": 42,
+      "conservative_cut_evidence": {
+        "basis": "all_refined_roof_and_quadrature_supports_subset_original_polygons;contact_requires_boundary_intersection",
+        "certified_no_potential_radiation_or_contact_edge": false,
+        "minimum_inner_outer_physical_polygon_distance_m": 7.654079576705718,
+        "potential_inner_node_count": 161,
+        "potential_node_mask": "original_burnable_or_source_or_target;actual_whole_owner_AND_roof_and_ground_clearance",
+        "potential_outer_node_count": 84419,
+        "potential_unordered_inner_outer_pairs_within_radiation_support": 525,
+        "proof_scope": "finite_frozen_domain_and_current_operator_supports;not_field_fire_safety",
+        "radiation_support_radius_m": 15.0,
+        "roof_refinement_preserves_certificate": true,
+        "schema_version": "physical-support-conservative-cross-partition-cut-1"
+      },
+      "nominal_ring_width_m": 7.5,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+      "planned_roof_ID_count": 11
+    },
+    {
+      "C_construction_action_area_m2": 3352.251082220934,
+      "cleared_roof_geometry_union_area_m2": 1952.251082220934,
+      "cleared_vegetation_covered_fuel_area_m2": 1400.0,
+      "cleared_vegetation_parent_cell_count": 56,
+      "conservative_cut_evidence": {
+        "basis": "all_refined_roof_and_quadrature_supports_subset_original_polygons;contact_requires_boundary_intersection",
+        "certified_no_potential_radiation_or_contact_edge": false,
+        "minimum_inner_outer_physical_polygon_distance_m": 10.454933459339266,
+        "potential_inner_node_count": 161,
+        "potential_node_mask": "original_burnable_or_source_or_target;actual_whole_owner_AND_roof_and_ground_clearance",
+        "potential_outer_node_count": 84357,
+        "potential_unordered_inner_outer_pairs_within_radiation_support": 203,
+        "proof_scope": "finite_frozen_domain_and_current_operator_supports;not_field_fire_safety",
+        "radiation_support_radius_m": 15.0,
+        "roof_refinement_preserves_certificate": true,
+        "schema_version": "physical-support-conservative-cross-partition-cut-1"
+      },
+      "nominal_ring_width_m": 10.0,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+      "planned_roof_ID_count": 14
+    },
+    {
+      "C_construction_action_area_m2": 4116.571979548055,
+      "cleared_roof_geometry_union_area_m2": 2466.5719795480554,
+      "cleared_vegetation_covered_fuel_area_m2": 1650.0,
+      "cleared_vegetation_parent_cell_count": 66,
+      "conservative_cut_evidence": {
+        "basis": "all_refined_roof_and_quadrature_supports_subset_original_polygons;contact_requires_boundary_intersection",
+        "certified_no_potential_radiation_or_contact_edge": false,
+        "minimum_inner_outer_physical_polygon_distance_m": 12.693249171340252,
+        "potential_inner_node_count": 161,
+        "potential_node_mask": "original_burnable_or_source_or_target;actual_whole_owner_AND_roof_and_ground_clearance",
+        "potential_outer_node_count": 84293,
+        "potential_unordered_inner_outer_pairs_within_radiation_support": 75,
+        "proof_scope": "finite_frozen_domain_and_current_operator_supports;not_field_fire_safety",
+        "radiation_support_radius_m": 15.0,
+        "roof_refinement_preserves_certificate": true,
+        "schema_version": "physical-support-conservative-cross-partition-cut-1"
+      },
+      "nominal_ring_width_m": 12.5,
+      "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+      "planned_roof_ID_count": 16
+    }
+  ],
+  "elapsed_s": 20.394381082965992,
+  "external_w15_01_reference_not_rescheduled": true,
+  "native_CA_outcomes_read_for_selection": [],
+  "new_CA_checks": 0,
+  "new_radiation_or_contact_graphs": 0,
+  "old_B_bound_generators_or_artifacts_modified": false,
+  "planned_checks": 40,
+  "producer_frozen": false,
+  "schema_version": "heritage-narrow-hull-band-preparation-1",
+  "source_and_parent_guard": {
+    "actual_reference_input_count": 71,
+    "all_reference_fire_footprints_and_refined_ids_identical": true,
+    "graph_builds": 0,
+    "make_oracle_passed": true,
+    "manager_path": "/Users/tone/Documents/github/PyFireCA/scripts/run_heritage_joint_comparison.py",
+    "manager_sha256": "87175538ca201a06260f5e0e36fcf943be471f96322d110aa1dbf99fb479a72e",
+    "new_CA_checks": 0,
+    "plan_source_grass_checks": [
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 23,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 23,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 23,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 23,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w2.5",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 34,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 34,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 34,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 34,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w5",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 42,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 42,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 42,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 42,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w7.5",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 56,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 56,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 56,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 56,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w10",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      },
+      {
+        "actual_source_id": "B0075",
+        "eligible_grass_cell_count": 66,
+        "fire_id": "B0075-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+        "prescribed_source_footprint_area_m2": 25.000000000021757,
+        "refined_ids": [
+          "B0031",
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0075",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0067",
+        "eligible_grass_cell_count": 66,
+        "fire_id": "B0071-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+        "prescribed_source_footprint_area_m2": 25.00000000002406,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0074",
+          "B0076",
+          "B0077",
+          "B0120"
+        ]
+      },
+      {
+        "actual_source_id": "B0062",
+        "eligible_grass_cell_count": 66,
+        "fire_id": "B0062-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+        "prescribed_source_footprint_area_m2": 25.000000000023164,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0144"
+        ]
+      },
+      {
+        "actual_source_id": "B0063",
+        "eligible_grass_cell_count": 66,
+        "fire_id": "B0061-known",
+        "plan_id": "roof-seed-core-source-hull-ring-b0-w12.5",
+        "prescribed_source_footprint_area_m2": 25.000000000038835,
+        "refined_ids": [
+          "B0061",
+          "B0062",
+          "B0063",
+          "B0067",
+          "B0071",
+          "B0073",
+          "B0076",
+          "B0077",
+          "B0120",
+          "B0124"
+        ]
+      }
+    ],
+    "reference_master_problem_sha256": "88c382cd38845f7beb5afbc902e39eb3642a6c50399c3afe2223e4130a03d6c8",
+    "scenario_engine_instantiated": false,
+    "validate_config_passed": true,
+    "validation_problem_sha256_not_execution_cache_identity": "638e5185d45314de50f819ce1488bb6b6c16f1ee790b1f1ecf223dfb253df2a3"
+  }
+}

@@ -1,0 +1,2956 @@
+{
+  "report": {
+    "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+    "records": [
+      {
+        "spacing_m": 5,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-none-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "a3aff67701fe73978a02515efb4b8ed0c5e41e7307185a6bb3f3c93204768e69",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 222.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 17,
+              "point_m": [
+                347322.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 6.3519186940055254,
+              "end_cumulative_absorbed_radiation_J": 5326137.491177998,
+              "end_cumulative_received_contact_J": 4213481.970089424
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 0.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.6270047574270378,
+              "end_cumulative_absorbed_radiation_J": 0.0,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": true,
+        "receiver_owned_ignited_area_m2": 660.9799300729337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 1010,
+          "request_sha256": "43aaa4dc4ae3f0937b894f191125ef670b57f14998c8e745737e703a0e649988",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-none-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "6bec12f2e7b06b5da515e66d145278ce92e070df042715c577941fabe1c37c16",
+        "validation": {
+          "ignited_cells": 62,
+          "burned_out_cells": 62,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9316.522632172948,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151486657999.1308,
+            "radiative_emitted_J": 60594663199.65279,
+            "non_radiative_released_J": 90891994799.47847,
+            "radiative_intercepted_J": 14208830621.470512,
+            "radiative_unintercepted_J": 46385832578.18236,
+            "susceptible_incident_J": 688668631.3037449,
+            "susceptible_absorbed_J": 619801768.1733712,
+            "susceptible_unabsorbed_J": 68866863.13037461,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 13520161990.16672,
+            "convective_transferred_J": 370996885.1252278,
+            "nonradiative_untransferred_J": 90520997914.35345,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.0013427734375,
+            "release_split": 0.000457763671875,
+            "radiation_split": 8.392333984375e-05,
+            "contact_split": 0.000213623046875,
+            "susceptible_radiation_split": 8.940696716308594e-07
+          },
+          "energy_tolerance_J": 151.48666799913082
+        }
+      },
+      {
+        "spacing_m": 5,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-mapped-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "6d7a7f171ae5c769fe76f4c53fc1f2e473f98a96d77b862f9cc4bb7b6241e550",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 222.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 17,
+              "point_m": [
+                347322.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 6.3519186940055254,
+              "end_cumulative_absorbed_radiation_J": 5326137.491177998,
+              "end_cumulative_received_contact_J": 4213481.970089424
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 0.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.6270047574270378,
+              "end_cumulative_absorbed_radiation_J": 0.0,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": true,
+        "receiver_owned_ignited_area_m2": 660.9799300729337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3400.0,
+          "edge_count": 3716,
+          "request_sha256": "83ccae60957f66cb1255176a815df37ab5168b11aa22684820dc3b0d12e3c4e8",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-mapped-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "fb3de0f2fc58512aa6317348bbfd644c3933228b541eafbffba99a8c43d83305",
+        "validation": {
+          "ignited_cells": 170,
+          "burned_out_cells": 170,
+          "burning_cells": 0,
+          "heated_cells": 10,
+          "consumed_fuel_kg": 21987.02263217295,
+          "remaining_fuel_kg": 2571.0,
+          "energy_budget": {
+            "released_J": 379555657999.127,
+            "radiative_emitted_J": 146727363199.65128,
+            "non_radiative_released_J": 232828294799.47598,
+            "radiative_intercepted_J": 47020970534.39051,
+            "radiative_unintercepted_J": 99706392665.2618,
+            "susceptible_incident_J": 6648707973.3704605,
+            "susceptible_absorbed_J": 5854629796.432407,
+            "susceptible_unabsorbed_J": 794078176.9380866,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 40372262561.01995,
+            "convective_transferred_J": 5474856862.570881,
+            "nonradiative_untransferred_J": 227353437936.90662,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.005126953125,
+            "release_split": 0.000244140625,
+            "radiation_split": 0.0010223388671875,
+            "contact_split": 0.00152587890625,
+            "susceptible_radiation_split": 3.349781036376953e-05
+          },
+          "energy_tolerance_J": 379.555667999127
+        }
+      },
+      {
+        "spacing_m": 5,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-mapped-from60-clear1-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "a3aff67701fe73978a02515efb4b8ed0c5e41e7307185a6bb3f3c93204768e69",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 222.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 17,
+              "point_m": [
+                347322.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 6.3519186940055254,
+              "end_cumulative_absorbed_radiation_J": 5326137.491177998,
+              "end_cumulative_received_contact_J": 4213481.970089424
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 0.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.6270047574270378,
+              "end_cumulative_absorbed_radiation_J": 0.0,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": true,
+        "receiver_owned_ignited_area_m2": 660.9799300729337,
+        "removed_ground_area_m2": 3400.0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3400.0,
+          "edge_count": 3716,
+          "request_sha256": "83ccae60957f66cb1255176a815df37ab5168b11aa22684820dc3b0d12e3c4e8",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-mapped-from60-clear1-dt1-both.npz",
+        "thermal_state_sha256": "6bec12f2e7b06b5da515e66d145278ce92e070df042715c577941fabe1c37c16",
+        "validation": {
+          "ignited_cells": 62,
+          "burned_out_cells": 62,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9316.522632172948,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151486657999.1308,
+            "radiative_emitted_J": 60594663199.65279,
+            "non_radiative_released_J": 90891994799.47847,
+            "radiative_intercepted_J": 14208830621.470512,
+            "radiative_unintercepted_J": 46385832578.18236,
+            "susceptible_incident_J": 688668631.3037449,
+            "susceptible_absorbed_J": 619801768.1733712,
+            "susceptible_unabsorbed_J": 68866863.13037461,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 13520161990.16672,
+            "convective_transferred_J": 370996885.1252278,
+            "nonradiative_untransferred_J": 90520997914.35345,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.0013427734375,
+            "release_split": 0.000457763671875,
+            "radiation_split": 8.392333984375e-05,
+            "contact_split": 0.000213623046875,
+            "susceptible_radiation_split": 8.940696716308594e-07
+          },
+          "energy_tolerance_J": 151.48666799913082
+        }
+      },
+      {
+        "spacing_m": 5,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-none-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "68396a3f09ecece94c477c6366f7245a26f4a3bab8648d88331025673ff4d23a",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.6610543875245,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 1010,
+          "request_sha256": "43aaa4dc4ae3f0937b894f191125ef670b57f14998c8e745737e703a0e649988",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-none-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "782041bd950fb4b70d915a921daae598b0077d5ebcbe7c2ea6081d80f060b8bc",
+        "validation": {
+          "ignited_cells": 62,
+          "burned_out_cells": 62,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9316.522632172948,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151486657999.13153,
+            "radiative_emitted_J": 60594663199.6526,
+            "non_radiative_released_J": 90891994799.47888,
+            "radiative_intercepted_J": 14208830621.470446,
+            "radiative_unintercepted_J": 46385832578.18223,
+            "susceptible_incident_J": 241338004.75992364,
+            "susceptible_absorbed_J": 217204204.2839312,
+            "susceptible_unabsorbed_J": 24133800.475992363,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 13967492616.710533,
+            "convective_transferred_J": 86201245.09276356,
+            "nonradiative_untransferred_J": 90805793554.3861,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.0006103515625,
+            "release_split": 4.57763671875e-05,
+            "radiation_split": 6.866455078125e-05,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 7.82310962677002e-08
+          },
+          "energy_tolerance_J": 151.48666799913156
+        }
+      },
+      {
+        "spacing_m": 5,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-mapped-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "d2d4814aef2c1b9edbaacd9fdbc4e2db8819e0aabdf023742f6f3da24c53ecc1",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.6610543875245,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3400.0,
+          "edge_count": 3716,
+          "request_sha256": "83ccae60957f66cb1255176a815df37ab5168b11aa22684820dc3b0d12e3c4e8",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-mapped-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "29a3efa783df81b5bf79704f4527a97facba6ff806c3d751f2d38808cde23d0a",
+        "validation": {
+          "ignited_cells": 170,
+          "burned_out_cells": 170,
+          "burning_cells": 0,
+          "heated_cells": 2,
+          "consumed_fuel_kg": 21987.02263217295,
+          "remaining_fuel_kg": 2571.0,
+          "energy_budget": {
+            "released_J": 379555657999.1218,
+            "radiative_emitted_J": 146727363199.6504,
+            "non_radiative_released_J": 232828294799.47647,
+            "radiative_intercepted_J": 47020970534.39035,
+            "radiative_unintercepted_J": 99706392665.26187,
+            "susceptible_incident_J": 6093289748.806818,
+            "susceptible_absorbed_J": 5358189692.756206,
+            "susceptible_unabsorbed_J": 735100056.0506319,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 40927680785.58358,
+            "convective_transferred_J": 5187203927.558812,
+            "nonradiative_untransferred_J": 227641090871.9194,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.01031494140625,
+            "release_split": 0.005035400390625,
+            "radiation_split": 0.0018310546875,
+            "contact_split": 0.001739501953125,
+            "susceptible_radiation_split": 1.9431114196777344e-05
+          },
+          "energy_tolerance_J": 379.55566799912185
+        }
+      },
+      {
+        "spacing_m": 5,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "5m-mapped-from119-clear1-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "68396a3f09ecece94c477c6366f7245a26f4a3bab8648d88331025673ff4d23a",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 123.0,
+          "cells": [
+            {
+              "row": 13,
+              "column": 18,
+              "point_m": [
+                347327.5,
+                2869722.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 1041247.786321227,
+              "end_cumulative_received_contact_J": 973529.4576337293
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.6610543875245,
+        "removed_ground_area_m2": 3400.0,
+        "mesh_audit": {
+          "spacing_m": 5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.6610543875245,
+              "peak_hrr_W": 60498316.31625735
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 660.9799300729337,
+              "peak_hrr_W": 198293979.0218801
+            }
+          ],
+          "mixed_pair_cells": 1,
+          "direct_building_face_pairs": 3,
+          "unobserved_gap_ground_cells": 0,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3400.0,
+          "edge_count": 3716,
+          "request_sha256": "83ccae60957f66cb1255176a815df37ab5168b11aa22684820dc3b0d12e3c4e8",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 1,
+            "observation_sha256": "fd240c1e5876ebbdd758b4434a0b256ea78ff0e035f8e41b3b7737a39dd14b7f",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/5m-mapped-from119-clear1-dt1-both.npz",
+        "thermal_state_sha256": "782041bd950fb4b70d915a921daae598b0077d5ebcbe7c2ea6081d80f060b8bc",
+        "validation": {
+          "ignited_cells": 62,
+          "burned_out_cells": 62,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9316.522632172948,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151486657999.13153,
+            "radiative_emitted_J": 60594663199.6526,
+            "non_radiative_released_J": 90891994799.47888,
+            "radiative_intercepted_J": 14208830621.470446,
+            "radiative_unintercepted_J": 46385832578.18223,
+            "susceptible_incident_J": 241338004.75992364,
+            "susceptible_absorbed_J": 217204204.2839312,
+            "susceptible_unabsorbed_J": 24133800.475992363,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 13967492616.710533,
+            "convective_transferred_J": 86201245.09276356,
+            "nonradiative_untransferred_J": 90805793554.3861,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.0006103515625,
+            "release_split": 4.57763671875e-05,
+            "radiation_split": 6.866455078125e-05,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 7.82310962677002e-08
+          },
+          "energy_tolerance_J": 151.48666799913156
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-none-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "c24621d20aa9001c6b4cf64a0b5d3684d6658a6c384359298f246905d50d8440",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348307926,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 11308,
+          "request_sha256": "a24bc507a8613ea891cfa4a9b6309f7bedd60719ae1fe5ff1c8044405c8ebdae",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-none-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "0a09952aecb73ab4b4d012eacdf5527dc5d439bfea64774490bb04631eed0ddf",
+        "validation": {
+          "ignited_cells": 194,
+          "burned_out_cells": 194,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283566853,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.7967,
+            "radiative_emitted_J": 60638706020.31843,
+            "non_radiative_released_J": 90958059030.47812,
+            "radiative_intercepted_J": 17200886217.4519,
+            "radiative_unintercepted_J": 43437819802.86663,
+            "susceptible_incident_J": 1064474924.7631917,
+            "susceptible_absorbed_J": 958027432.2868687,
+            "susceptible_unabsorbed_J": 106447492.47631875,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16136411292.688713,
+            "convective_transferred_J": 150500687.02652976,
+            "nonradiative_untransferred_J": 90807558343.4515,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000335693359375,
+            "release_split": 0.000152587890625,
+            "radiation_split": 9.918212890625e-05,
+            "contact_split": 7.62939453125e-05,
+            "susceptible_radiation_split": 4.26173210144043e-06
+          },
+          "energy_tolerance_J": 151.5967750507967
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-mapped-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "4e268725ca5524a34992f6cc73df3c8c78443f5b4dd3b83358167ef266c16319",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348307926,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3300.0,
+          "edge_count": 50326,
+          "request_sha256": "17912c878e6e53f92d48c2f9f758b4174bc035a0eba0f8b095fff3f282b72c34",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-mapped-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "536b60fb2c346937b9300bed78dd79511ed26731eab2e86652e3673986ff6e7f",
+        "validation": {
+          "ignited_cells": 584,
+          "burned_out_cells": 503,
+          "burning_cells": 81,
+          "heated_cells": 73,
+          "consumed_fuel_kg": 19198.70645812493,
+          "remaining_fuel_kg": 4766.087825441926,
+          "energy_budget": {
+            "released_J": 329354184192.8418,
+            "radiative_emitted_J": 127653005294.29562,
+            "non_radiative_released_J": 201701178898.54578,
+            "radiative_intercepted_J": 47465010533.986694,
+            "radiative_unintercepted_J": 80187994760.30904,
+            "susceptible_incident_J": 9288174189.218246,
+            "susceptible_absorbed_J": 8181208633.593582,
+            "susceptible_unabsorbed_J": 1106965555.62468,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 38176836344.76832,
+            "convective_transferred_J": 3455967053.1656666,
+            "nonradiative_untransferred_J": 198245211845.3799,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.00054931640625,
+            "release_split": 0.000396728515625,
+            "radiation_split": 0.0001068115234375,
+            "contact_split": 0.00018310546875,
+            "susceptible_radiation_split": 1.5735626220703125e-05
+          },
+          "energy_tolerance_J": 329.3541941928418
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-mapped-from60-clear1-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "c24621d20aa9001c6b4cf64a0b5d3684d6658a6c384359298f246905d50d8440",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 282.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 35,
+              "point_m": [
+                347323.75,
+                2869723.75
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.0009832006452118807,
+              "end_cumulative_absorbed_radiation_J": 1614.751414504793,
+              "end_cumulative_received_contact_J": 28.652627792664607
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348307926,
+        "removed_ground_area_m2": 3300.0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3300.0,
+          "edge_count": 50326,
+          "request_sha256": "17912c878e6e53f92d48c2f9f758b4174bc035a0eba0f8b095fff3f282b72c34",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-mapped-from60-clear1-dt1-both.npz",
+        "thermal_state_sha256": "0a09952aecb73ab4b4d012eacdf5527dc5d439bfea64774490bb04631eed0ddf",
+        "validation": {
+          "ignited_cells": 194,
+          "burned_out_cells": 194,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283566853,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.7967,
+            "radiative_emitted_J": 60638706020.31843,
+            "non_radiative_released_J": 90958059030.47812,
+            "radiative_intercepted_J": 17200886217.4519,
+            "radiative_unintercepted_J": 43437819802.86663,
+            "susceptible_incident_J": 1064474924.7631917,
+            "susceptible_absorbed_J": 958027432.2868687,
+            "susceptible_unabsorbed_J": 106447492.47631875,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16136411292.688713,
+            "convective_transferred_J": 150500687.02652976,
+            "nonradiative_untransferred_J": 90807558343.4515,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000335693359375,
+            "release_split": 0.000152587890625,
+            "radiation_split": 9.918212890625e-05,
+            "contact_split": 7.62939453125e-05,
+            "susceptible_radiation_split": 4.26173210144043e-06
+          },
+          "energy_tolerance_J": 151.5967750507967
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-none-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "d894477b57c666ec7603f41f344bd6a819b3112d743240ee1eb1855d199b947e",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438836027,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 11308,
+          "request_sha256": "a24bc507a8613ea891cfa4a9b6309f7bedd60719ae1fe5ff1c8044405c8ebdae",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-none-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "8596a3687c98daeedef22d399a57dc200f11989b52c77c50d66d5f989a45446d",
+        "validation": {
+          "ignited_cells": 194,
+          "burned_out_cells": 194,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283566853,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.79663,
+            "radiative_emitted_J": 60638706020.31876,
+            "non_radiative_released_J": 90958059030.47781,
+            "radiative_intercepted_J": 17200886217.451904,
+            "radiative_unintercepted_J": 43437819802.8668,
+            "susceptible_incident_J": 323941507.70175576,
+            "susceptible_absorbed_J": 291547356.9315802,
+            "susceptible_unabsorbed_J": 32394150.770175584,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16876944709.7501,
+            "convective_transferred_J": 35850535.40712524,
+            "nonradiative_untransferred_J": 90922208495.0707,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000396728515625,
+            "release_split": 6.103515625e-05,
+            "radiation_split": 6.103515625e-05,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 7.450580596923828e-09
+          },
+          "energy_tolerance_J": 151.59677505079665
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-mapped-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "f9b8d6e4b005c259727c6fc204950e692776a8607305bc0d998716e8f302cac7",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438836027,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3300.0,
+          "edge_count": 50326,
+          "request_sha256": "17912c878e6e53f92d48c2f9f758b4174bc035a0eba0f8b095fff3f282b72c34",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-mapped-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "bbf43d5841b861d4673a25984c715a8a5eb3669712602b7195e6e91807c3ebd7",
+        "validation": {
+          "ignited_cells": 610,
+          "burned_out_cells": 610,
+          "burning_cells": 0,
+          "heated_cells": 23,
+          "consumed_fuel_kg": 21393.79428356685,
+          "remaining_fuel_kg": 2571.0,
+          "energy_budget": {
+            "released_J": 368865765050.7927,
+            "radiative_emitted_J": 142667406020.31644,
+            "non_radiative_released_J": 226198359030.48038,
+            "radiative_intercepted_J": 52071826909.26338,
+            "radiative_unintercepted_J": 90595579111.05534,
+            "susceptible_incident_J": 8820431313.444706,
+            "susceptible_absorbed_J": 7756612706.785875,
+            "susceptible_unabsorbed_J": 1063818606.6588236,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 43251395595.81843,
+            "convective_transferred_J": 3566752118.5656238,
+            "nonradiative_untransferred_J": 222631606911.91245,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.00433349609375,
+            "release_split": 0.00408935546875,
+            "radiation_split": 0.002288818359375,
+            "contact_split": 0.0023193359375,
+            "susceptible_radiation_split": 7.033348083496094e-06
+          },
+          "energy_tolerance_J": 368.8657750507927
+        }
+      },
+      {
+        "spacing_m": 2.5,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "2.5m-mapped-from119-clear1-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "d894477b57c666ec7603f41f344bd6a819b3112d743240ee1eb1855d199b947e",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 208.0,
+          "cells": [
+            {
+              "row": 26,
+              "column": 37,
+              "point_m": [
+                347328.75,
+                2869723.75
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 1.559473088586944,
+              "end_cumulative_absorbed_radiation_J": 2297114.9636165504,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438836027,
+        "removed_ground_area_m2": 3300.0,
+        "mesh_audit": {
+          "spacing_m": 2.5,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438836027,
+              "peak_hrr_W": 60498316.31650809
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348307926,
+              "peak_hrr_W": 198482080.4492378
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 1,
+          "unobserved_gap_ground_cells": 111,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3300.0,
+          "edge_count": 50326,
+          "request_sha256": "17912c878e6e53f92d48c2f9f758b4174bc035a0eba0f8b095fff3f282b72c34",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "a3e012a0a96e81773e3ecd96ed4d3489aa7372adce60206c524855a52bdfaa17",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/2.5m-mapped-from119-clear1-dt1-both.npz",
+        "thermal_state_sha256": "8596a3687c98daeedef22d399a57dc200f11989b52c77c50d66d5f989a45446d",
+        "validation": {
+          "ignited_cells": 194,
+          "burned_out_cells": 194,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283566853,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.79663,
+            "radiative_emitted_J": 60638706020.31876,
+            "non_radiative_released_J": 90958059030.47781,
+            "radiative_intercepted_J": 17200886217.451904,
+            "radiative_unintercepted_J": 43437819802.8668,
+            "susceptible_incident_J": 323941507.70175576,
+            "susceptible_absorbed_J": 291547356.9315802,
+            "susceptible_unabsorbed_J": 32394150.770175584,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16876944709.7501,
+            "convective_transferred_J": 35850535.40712524,
+            "nonradiative_untransferred_J": 90922208495.0707,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000396728515625,
+            "release_split": 6.103515625e-05,
+            "radiation_split": 6.103515625e-05,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 7.450580596923828e-09
+          },
+          "energy_tolerance_J": 151.59677505079665
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-none-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "2d2aa5eb9fe0e5c219626815b37092f4362971b21558c5996526dff6d659809e",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348308989,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "395ea9ff7e5a6b5e95447fd396ed38663b6162eb3c478e7bbf29f3d7eaeaefc0",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92838,
+            "radiative_emitted_J": 60638706020.3713,
+            "non_radiative_released_J": 90958059030.55673,
+            "radiative_intercepted_J": 18149598607.017956,
+            "radiative_unintercepted_J": 42489107413.35326,
+            "susceptible_incident_J": 1387021954.6637025,
+            "susceptible_absorbed_J": 1248319759.1973348,
+            "susceptible_unabsorbed_J": 138702195.46637046,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16762576652.354216,
+            "convective_transferred_J": 34697871.67843408,
+            "nonradiative_untransferred_J": 90923361158.87827,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000213623046875,
+            "release_split": 0.000335693359375,
+            "radiation_split": 9.1552734375e-05,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 2.7418136596679688e-06
+          },
+          "energy_tolerance_J": 151.5967750509284
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-mapped-from60-clear0-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "4629c4ab18096085d65bbf6770354958d789a77b811d0af841631ac349f5197d",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348308989,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3410.0,
+          "edge_count": 1881260,
+          "request_sha256": "bd03dd2fd8ec31957d7544e3ebfaa9e21fe132ec2a822da5f71cef8fca114643",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-mapped-from60-clear0-dt1-both.npz",
+        "thermal_state_sha256": "d3daecef316f9ea87df2e9db0f163ded674ebf333bf099b74aaa7c7e4f8c13e4",
+        "validation": {
+          "ignited_cells": 1951,
+          "burned_out_cells": 1762,
+          "burning_cells": 189,
+          "heated_cells": 1251,
+          "consumed_fuel_kg": 12921.470091397103,
+          "remaining_fuel_kg": 11703.324192177839,
+          "energy_budget": {
+            "released_J": 216363929591.72665,
+            "radiative_emitted_J": 85003988545.87474,
+            "non_radiative_released_J": 131359941045.85173,
+            "radiative_intercepted_J": 31388316449.521687,
+            "radiative_unintercepted_J": 53615672096.35308,
+            "susceptible_incident_J": 7335153592.818462,
+            "susceptible_absorbed_J": 6470004221.500098,
+            "susceptible_unabsorbed_J": 865149371.3183591,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 24053162856.703182,
+            "convective_transferred_J": 840094880.4694363,
+            "nonradiative_untransferred_J": 130519846165.38284,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000762939453125,
+            "release_split": 0.00018310546875,
+            "radiation_split": 2.288818359375e-05,
+            "contact_split": 0.00054931640625,
+            "susceptible_radiation_split": 5.0067901611328125e-06
+          },
+          "energy_tolerance_J": 216.36393959172668
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "mapped",
+        "source_owner": 60,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-mapped-from60-clear1-dt1-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "2d2aa5eb9fe0e5c219626815b37092f4362971b21558c5996526dff6d659809e",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348308989,
+        "removed_ground_area_m2": 3410.0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3410.0,
+          "edge_count": 1881260,
+          "request_sha256": "bd03dd2fd8ec31957d7544e3ebfaa9e21fe132ec2a822da5f71cef8fca114643",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-mapped-from60-clear1-dt1-both.npz",
+        "thermal_state_sha256": "395ea9ff7e5a6b5e95447fd396ed38663b6162eb3c478e7bbf29f3d7eaeaefc0",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92838,
+            "radiative_emitted_J": 60638706020.3713,
+            "non_radiative_released_J": 90958059030.55673,
+            "radiative_intercepted_J": 18149598607.017956,
+            "radiative_unintercepted_J": 42489107413.35326,
+            "susceptible_incident_J": 1387021954.6637025,
+            "susceptible_absorbed_J": 1248319759.1973348,
+            "susceptible_unabsorbed_J": 138702195.46637046,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16762576652.354216,
+            "convective_transferred_J": 34697871.67843408,
+            "nonradiative_untransferred_J": 90923361158.87827,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000213623046875,
+            "release_split": 0.000335693359375,
+            "radiation_split": 9.1552734375e-05,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 2.7418136596679688e-06
+          },
+          "energy_tolerance_J": 151.5967750509284
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-none-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "2d12c5f88a2ff779aa1accebbdea7ab9825fce05e3597b57b8d18f936a527256",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438900337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "14ffc5684ef34f8e8c31811b426f6d34c2a6818610b65059378387f1bc825169",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92807,
+            "radiative_emitted_J": 60638706020.37143,
+            "non_radiative_released_J": 90958059030.55688,
+            "radiative_intercepted_J": 18149598607.017876,
+            "radiative_unintercepted_J": 42489107413.353325,
+            "susceptible_incident_J": 394212007.7160334,
+            "susceptible_absorbed_J": 354790806.94442976,
+            "susceptible_unabsorbed_J": 39421200.77160333,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 17755386599.301872,
+            "convective_transferred_J": 5960252.930519381,
+            "nonradiative_untransferred_J": 90952098777.62654,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000518798828125,
+            "release_split": 0.000244140625,
+            "radiation_split": 0.0002288818359375,
+            "contact_split": 0.00018310546875,
+            "susceptible_radiation_split": 3.129243850708008e-07
+          },
+          "energy_tolerance_J": 151.59677505092807
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-mapped-from119-clear0-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "cccc9f9009f645a907e76f35ff67e3a5821f78c14842cfeece7372f28c60ee7a",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438900337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3410.0,
+          "edge_count": 1881260,
+          "request_sha256": "bd03dd2fd8ec31957d7544e3ebfaa9e21fe132ec2a822da5f71cef8fca114643",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-mapped-from119-clear0-dt1-both.npz",
+        "thermal_state_sha256": "76437d3203dc3ac7badd738ac0954d8a58d4ec414649598397ffc786d04a9149",
+        "validation": {
+          "ignited_cells": 3171,
+          "burned_out_cells": 2941,
+          "burning_cells": 230,
+          "heated_cells": 764,
+          "consumed_fuel_kg": 18279.333075226474,
+          "remaining_fuel_kg": 6345.461208348472,
+          "energy_budget": {
+            "released_J": 312805463300.65594,
+            "radiative_emitted_J": 121364491355.26752,
+            "non_radiative_released_J": 191440971945.38727,
+            "radiative_intercepted_J": 47141822980.71026,
+            "radiative_unintercepted_J": 74222668374.55711,
+            "susceptible_incident_J": 11260901984.463228,
+            "susceptible_absorbed_J": 9896781244.922709,
+            "susceptible_unabsorbed_J": 1364120739.5405064,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 35880920996.24699,
+            "convective_transferred_J": 2234577177.5222287,
+            "nonradiative_untransferred_J": 189206394767.86615,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.00018310546875,
+            "release_split": 0.00115966796875,
+            "radiation_split": 0.0001373291015625,
+            "contact_split": 0.0010986328125,
+            "susceptible_radiation_split": 1.33514404296875e-05
+          },
+          "energy_tolerance_J": 312.80547330065593
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "mapped",
+        "source_owner": 119,
+        "cleared": true,
+        "dt_s": 1.0,
+        "channel": "both",
+        "key": "1m-mapped-from119-clear1-dt1-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "2d12c5f88a2ff779aa1accebbdea7ab9825fce05e3597b57b8d18f936a527256",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438900337,
+        "removed_ground_area_m2": 3410.0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "mapped",
+          "active_ground_area_m2": 3410.0,
+          "edge_count": 1881260,
+          "request_sha256": "bd03dd2fd8ec31957d7544e3ebfaa9e21fe132ec2a822da5f71cef8fca114643",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-mapped-from119-clear1-dt1-both.npz",
+        "thermal_state_sha256": "14ffc5684ef34f8e8c31811b426f6d34c2a6818610b65059378387f1bc825169",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92807,
+            "radiative_emitted_J": 60638706020.37143,
+            "non_radiative_released_J": 90958059030.55688,
+            "radiative_intercepted_J": 18149598607.017876,
+            "radiative_unintercepted_J": 42489107413.353325,
+            "susceptible_incident_J": 394212007.7160334,
+            "susceptible_absorbed_J": 354790806.94442976,
+            "susceptible_unabsorbed_J": 39421200.77160333,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 17755386599.301872,
+            "convective_transferred_J": 5960252.930519381,
+            "nonradiative_untransferred_J": 90952098777.62654,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000518798828125,
+            "release_split": 0.000244140625,
+            "radiation_split": 0.0002288818359375,
+            "contact_split": 0.00018310546875,
+            "susceptible_radiation_split": 3.129243850708008e-07
+          },
+          "energy_tolerance_J": 151.59677505092807
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 0.5,
+        "channel": "both",
+        "key": "1m-none-from60-clear0-dt0.5-both",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "e9c5f556918f3da3201c956a94e1108d7970e90f85ca1521b775e5478b2c3f4b",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 336.5,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261680.49228561053,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 336.5,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261680.49228561053,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 661.6069348308989,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from60-clear0-dt0.5-both.npz",
+        "thermal_state_sha256": "adab024a42eb51106ec2f1fdea1dc65534ce06a883db89e64566ac908faa4408",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92795,
+            "radiative_emitted_J": 60638706020.37148,
+            "non_radiative_released_J": 90958059030.55698,
+            "radiative_intercepted_J": 18149598607.017933,
+            "radiative_unintercepted_J": 42489107413.353424,
+            "susceptible_incident_J": 1385403509.779589,
+            "susceptible_absorbed_J": 1246863158.8016298,
+            "susceptible_unabsorbed_J": 138540350.97795886,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 16764195097.238375,
+            "convective_transferred_J": 34512031.37685032,
+            "nonradiative_untransferred_J": 90923546999.18016,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000640869140625,
+            "release_split": 0.000518798828125,
+            "radiation_split": 0.0001220703125,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 2.980232238769531e-07
+          },
+          "energy_tolerance_J": 151.59677505092796
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "radiation_only",
+        "key": "1m-none-from60-clear0-dt1-radiation_only",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "0716ea8440c395459c473fe00a84b74bab96d7f3ccdf31289391aaaa6e1955de",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 336.0,
+          "cells": [
+            {
+              "row": 67,
+              "column": 89,
+              "point_m": [
+                347324.5,
+                2869722.5
+              ],
+              "fuel_owner": 119,
+              "receiver_intersection_m2": 0.14183155772431733,
+              "end_cumulative_absorbed_radiation_J": 261170.39386010342,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 1.1510909447221835,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from60-clear0-dt1-radiation_only.npz",
+        "thermal_state_sha256": "7d9a3a98b833fa6a45b534c454cd3e2811ce5abe3814392ed5396328d7ef2b24",
+        "validation": {
+          "ignited_cells": 247,
+          "burned_out_cells": 247,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 2190.3711696042365,
+          "remaining_fuel_kg": 7132.92311397071,
+          "energy_budget": {
+            "released_J": 35615435217.76487,
+            "radiative_emitted_J": 14246174087.105873,
+            "non_radiative_released_J": 21369261130.65881,
+            "radiative_intercepted_J": 3432295171.836843,
+            "radiative_unintercepted_J": 10813878915.26904,
+            "susceptible_incident_J": 117910773.84142508,
+            "susceptible_absorbed_J": 106119696.45728207,
+            "susceptible_unabsorbed_J": 11791077.384142445,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 3314384397.9954286,
+            "convective_transferred_J": 0.0,
+            "nonradiative_untransferred_J": 21369261130.65881,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 7.62939453125e-06,
+            "release_split": 0.000186920166015625,
+            "radiation_split": 9.5367431640625e-06,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 5.6438148021698e-07
+          },
+          "energy_tolerance_J": 35.61544521776487
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 60,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "contact_only",
+        "key": "1m-none-from60-clear0-dt1-contact_only",
+        "receiver_owner": 119,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "f5dbd7b1c8268d4838662ff5aac12bbf72c34694cb25014faa335b64dbb12ca5",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": null,
+          "cells": []
+        },
+        "annotated_receiver_trigger": {
+          "time_s": null,
+          "cells": []
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 0.0,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from60-clear0-dt1-contact_only.npz",
+        "thermal_state_sha256": "701ff59681b174082468011576b89b07f0c199ebe6f7e14872a357596ec9f18a",
+        "validation": {
+          "ignited_cells": 243,
+          "burned_out_cells": 243,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 2177.9393874012367,
+          "remaining_fuel_kg": 7145.35489617371,
+          "energy_budget": {
+            "released_J": 35413294439.143936,
+            "radiative_emitted_J": 14165317775.657505,
+            "non_radiative_released_J": 21247976663.486317,
+            "radiative_intercepted_J": 0.0,
+            "radiative_unintercepted_J": 14165317775.657505,
+            "susceptible_incident_J": 0.0,
+            "susceptible_absorbed_J": 0.0,
+            "susceptible_unabsorbed_J": 0.0,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 0.0,
+            "convective_transferred_J": 0.0,
+            "nonradiative_untransferred_J": 21247976663.486317,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.0001678466796875,
+            "release_split": 0.00011444091796875,
+            "radiation_split": 0.0,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 0.0
+          },
+          "energy_tolerance_J": 35.41330443914394
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 0.5,
+        "channel": "both",
+        "key": "1m-none-from119-clear0-dt0.5-both",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "b8addd4f9f1e476ef306b88f65b697b3a7baff7fd8717c107869a6bffb4e1bf1",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296204,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296204,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438900337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from119-clear0-dt0.5-both.npz",
+        "thermal_state_sha256": "0b0e5f6fb5399982c44890849b94814aedab8041cdfe0ebe72fff7f89b071203",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.92813,
+            "radiative_emitted_J": 60638706020.37126,
+            "non_radiative_released_J": 90958059030.5572,
+            "radiative_intercepted_J": 18149598607.017956,
+            "radiative_unintercepted_J": 42489107413.35351,
+            "susceptible_incident_J": 393609828.89355224,
+            "susceptible_absorbed_J": 354248846.0041959,
+            "susceptible_unabsorbed_J": 39360982.8893552,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 17755988778.124435,
+            "convective_transferred_J": 5935015.929819999,
+            "nonradiative_untransferred_J": 90952124014.62735,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000457763671875,
+            "release_split": 0.000335693359375,
+            "radiation_split": 0.00020599365234375,
+            "contact_split": 3.0517578125e-05,
+            "susceptible_radiation_split": 1.1175870895385742e-06
+          },
+          "energy_tolerance_J": 151.59677505092813
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "radiation_only",
+        "key": "1m-none-from119-clear0-dt1-radiation_only",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "55bba271f0f8b027965d0574a3bbc3557f73c31bd178ed47be23e22514b2fa63",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotated_receiver_trigger": {
+          "time_s": 213.0,
+          "cells": [
+            {
+              "row": 65,
+              "column": 92,
+              "point_m": [
+                347327.5,
+                2869724.5
+              ],
+              "fuel_owner": 60,
+              "receiver_intersection_m2": 0.0005781032169551975,
+              "end_cumulative_absorbed_radiation_J": 860.4545346296183,
+              "end_cumulative_received_contact_J": 0.0
+            }
+          ]
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 201.66105438900337,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from119-clear0-dt1-radiation_only.npz",
+        "thermal_state_sha256": "1cb7ef07861fae0fccdec589da44eab29a19aee193cd4da19b3420ec458961c9",
+        "validation": {
+          "ignited_cells": 996,
+          "burned_out_cells": 996,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 9323.294283574945,
+          "remaining_fuel_kg": 0.0,
+          "energy_budget": {
+            "released_J": 151596765050.9284,
+            "radiative_emitted_J": 60638706020.3713,
+            "non_radiative_released_J": 90958059030.55707,
+            "radiative_intercepted_J": 18149598607.017914,
+            "radiative_unintercepted_J": 42489107413.35325,
+            "susceptible_incident_J": 430759550.2517636,
+            "susceptible_absorbed_J": 387683595.2265865,
+            "susceptible_unabsorbed_J": 43075955.02517632,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 17718839056.766193,
+            "convective_transferred_J": 0.0,
+            "nonradiative_untransferred_J": 90958059030.55707,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.00018310546875,
+            "release_split": 3.0517578125e-05,
+            "radiation_split": 0.0001373291015625,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 7.450580596923828e-07
+          },
+          "energy_tolerance_J": 151.59677505092841
+        }
+      },
+      {
+        "spacing_m": 1,
+        "ground_mode": "none",
+        "source_owner": 119,
+        "cleared": false,
+        "dt_s": 1.0,
+        "channel": "contact_only",
+        "key": "1m-none-from119-clear0-dt1-contact_only",
+        "receiver_owner": 60,
+        "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+        "request_sha256": "b62e25ff8d1fd2b7dc406605b508236c675772a033012d856f478d0fb1995cf7",
+        "actual_horizon_s": 5400.0,
+        "owned_receiver_trigger": {
+          "time_s": null,
+          "cells": []
+        },
+        "annotated_receiver_trigger": {
+          "time_s": null,
+          "cells": []
+        },
+        "annotation_trigger_on_source_at_t0": false,
+        "receiver_owned_ignited_area_m2": 0.0,
+        "removed_ground_area_m2": 0,
+        "mesh_audit": {
+          "spacing_m": 1,
+          "building_area": [
+            {
+              "owner": 60,
+              "vector_area_m2": 201.66105438888178,
+              "mesh_area_m2": 201.66105438900337,
+              "peak_hrr_W": 60498316.31670102
+            },
+            {
+              "owner": 119,
+              "vector_area_m2": 661.6069348310967,
+              "mesh_area_m2": 661.6069348308989,
+              "peak_hrr_W": 198482080.44926965
+            }
+          ],
+          "mixed_pair_cells": 0,
+          "direct_building_face_pairs": 0,
+          "unobserved_gap_ground_cells": 1173,
+          "ground_mode": "none",
+          "active_ground_area_m2": 0.0,
+          "edge_count": 322232,
+          "request_sha256": "5c63b7e1fb556a7e4e5f63f2e968665de4ad5f59ae000e26e37870a672995445",
+          "annotation_observation": {
+            "object_count": 2,
+            "unrepresented_labels": [],
+            "partly_unrepresented": [],
+            "shared_observation_cells": 0,
+            "observation_sha256": "20e47b55a70d09c989b5002c33907e4d2d613bc386b07261af0072e77b2beaf0",
+            "fuel_duplicated": false,
+            "subcell_independent_temperatures": false,
+            "object_semantics": "original annotation objects; nested identities unresolved"
+          }
+        },
+        "guard_ignited": false,
+        "thermal_state_file": "thermal-state/1m-none-from119-clear0-dt1-contact_only.npz",
+        "thermal_state_sha256": "3d52c368ea8d35746f1f3ff05cbaa74eca4710c49e0cafd635aba5ce8dc63895",
+        "validation": {
+          "ignited_cells": 753,
+          "burned_out_cells": 753,
+          "burning_cells": 0,
+          "heated_cells": 0,
+          "consumed_fuel_kg": 7145.35489617371,
+          "remaining_fuel_kg": 2177.9393874012367,
+          "energy_budget": {
+            "released_J": 116183470611.78404,
+            "radiative_emitted_J": 46473388244.713486,
+            "non_radiative_released_J": 69710082367.0704,
+            "radiative_intercepted_J": 0.0,
+            "radiative_unintercepted_J": 46473388244.713486,
+            "susceptible_incident_J": 0.0,
+            "susceptible_absorbed_J": 0.0,
+            "susceptible_unabsorbed_J": 0.0,
+            "inert_received_J": 0.0,
+            "inactive_combustible_received_J": 0.0,
+            "convective_transferred_J": 0.0,
+            "nonradiative_untransferred_J": 69710082367.0704,
+            "energy_limited_contact_source_steps": 0
+          },
+          "energy_closure_errors_J": {
+            "fuel_release": 0.000457763671875,
+            "release_split": 0.000152587890625,
+            "radiation_split": 0.0,
+            "contact_split": 0.0,
+            "susceptible_radiation_split": 0.0
+          },
+          "energy_tolerance_J": 116.18348061178405
+        }
+      }
+    ],
+    "cleared_equals_no_ground_checks": [
+      "5m-mapped-from60-clear1-dt1-both",
+      "5m-mapped-from119-clear1-dt1-both",
+      "2.5m-mapped-from60-clear1-dt1-both",
+      "2.5m-mapped-from119-clear1-dt1-both",
+      "1m-mapped-from60-clear1-dt1-both",
+      "1m-mapped-from119-clear1-dt1-both"
+    ],
+    "all_full_90min": true,
+    "scope": "two active objects with local ground; other buildings inert mechanism controls",
+    "field_accuracy_claimed": false
+  },
+  "independent_audit": {
+    "protocol_sha256": "3b57365df9a0f5e06f3ae5f8954600f1960fda2a83d297eb23d716583ca8d67e",
+    "report_sha256": "8407c0db2893db63f573dda51245a13d04beee1aa01a6d7489bc8305a8ef1354",
+    "auditor_sha256": "29fa51439689372f6f5e55b4c146d7ca983710d5c50e242f2b2fdc2e663a3ff4",
+    "count": 24,
+    "ca_solves": 0,
+    "cell_trigger_and_source_evidence_verified": true,
+    "absolute_energy_closure_verified": true,
+    "all_full_90min": true,
+    "boundary_ignition": false,
+    "records": [
+      {
+        "key": "5m-none-from60-clear0-dt1-both",
+        "owned_first_s": 222.0,
+        "observed_first_s": 0.0,
+        "thermal_sha256": "6bec12f2e7b06b5da515e66d145278ce92e070df042715c577941fabe1c37c16"
+      },
+      {
+        "key": "5m-mapped-from60-clear0-dt1-both",
+        "owned_first_s": 222.0,
+        "observed_first_s": 0.0,
+        "thermal_sha256": "fb3de0f2fc58512aa6317348bbfd644c3933228b541eafbffba99a8c43d83305"
+      },
+      {
+        "key": "5m-mapped-from60-clear1-dt1-both",
+        "owned_first_s": 222.0,
+        "observed_first_s": 0.0,
+        "thermal_sha256": "6bec12f2e7b06b5da515e66d145278ce92e070df042715c577941fabe1c37c16"
+      },
+      {
+        "key": "5m-none-from119-clear0-dt1-both",
+        "owned_first_s": 123.0,
+        "observed_first_s": 123.0,
+        "thermal_sha256": "782041bd950fb4b70d915a921daae598b0077d5ebcbe7c2ea6081d80f060b8bc"
+      },
+      {
+        "key": "5m-mapped-from119-clear0-dt1-both",
+        "owned_first_s": 123.0,
+        "observed_first_s": 123.0,
+        "thermal_sha256": "29a3efa783df81b5bf79704f4527a97facba6ff806c3d751f2d38808cde23d0a"
+      },
+      {
+        "key": "5m-mapped-from119-clear1-dt1-both",
+        "owned_first_s": 123.0,
+        "observed_first_s": 123.0,
+        "thermal_sha256": "782041bd950fb4b70d915a921daae598b0077d5ebcbe7c2ea6081d80f060b8bc"
+      },
+      {
+        "key": "2.5m-none-from60-clear0-dt1-both",
+        "owned_first_s": 282.0,
+        "observed_first_s": 282.0,
+        "thermal_sha256": "0a09952aecb73ab4b4d012eacdf5527dc5d439bfea64774490bb04631eed0ddf"
+      },
+      {
+        "key": "2.5m-mapped-from60-clear0-dt1-both",
+        "owned_first_s": 282.0,
+        "observed_first_s": 282.0,
+        "thermal_sha256": "536b60fb2c346937b9300bed78dd79511ed26731eab2e86652e3673986ff6e7f"
+      },
+      {
+        "key": "2.5m-mapped-from60-clear1-dt1-both",
+        "owned_first_s": 282.0,
+        "observed_first_s": 282.0,
+        "thermal_sha256": "0a09952aecb73ab4b4d012eacdf5527dc5d439bfea64774490bb04631eed0ddf"
+      },
+      {
+        "key": "2.5m-none-from119-clear0-dt1-both",
+        "owned_first_s": 208.0,
+        "observed_first_s": 208.0,
+        "thermal_sha256": "8596a3687c98daeedef22d399a57dc200f11989b52c77c50d66d5f989a45446d"
+      },
+      {
+        "key": "2.5m-mapped-from119-clear0-dt1-both",
+        "owned_first_s": 208.0,
+        "observed_first_s": 208.0,
+        "thermal_sha256": "bbf43d5841b861d4673a25984c715a8a5eb3669712602b7195e6e91807c3ebd7"
+      },
+      {
+        "key": "2.5m-mapped-from119-clear1-dt1-both",
+        "owned_first_s": 208.0,
+        "observed_first_s": 208.0,
+        "thermal_sha256": "8596a3687c98daeedef22d399a57dc200f11989b52c77c50d66d5f989a45446d"
+      },
+      {
+        "key": "1m-none-from60-clear0-dt1-both",
+        "owned_first_s": 336.0,
+        "observed_first_s": 336.0,
+        "thermal_sha256": "395ea9ff7e5a6b5e95447fd396ed38663b6162eb3c478e7bbf29f3d7eaeaefc0"
+      },
+      {
+        "key": "1m-mapped-from60-clear0-dt1-both",
+        "owned_first_s": 336.0,
+        "observed_first_s": 336.0,
+        "thermal_sha256": "d3daecef316f9ea87df2e9db0f163ded674ebf333bf099b74aaa7c7e4f8c13e4"
+      },
+      {
+        "key": "1m-mapped-from60-clear1-dt1-both",
+        "owned_first_s": 336.0,
+        "observed_first_s": 336.0,
+        "thermal_sha256": "395ea9ff7e5a6b5e95447fd396ed38663b6162eb3c478e7bbf29f3d7eaeaefc0"
+      },
+      {
+        "key": "1m-none-from119-clear0-dt1-both",
+        "owned_first_s": 213.0,
+        "observed_first_s": 213.0,
+        "thermal_sha256": "14ffc5684ef34f8e8c31811b426f6d34c2a6818610b65059378387f1bc825169"
+      },
+      {
+        "key": "1m-mapped-from119-clear0-dt1-both",
+        "owned_first_s": 213.0,
+        "observed_first_s": 213.0,
+        "thermal_sha256": "76437d3203dc3ac7badd738ac0954d8a58d4ec414649598397ffc786d04a9149"
+      },
+      {
+        "key": "1m-mapped-from119-clear1-dt1-both",
+        "owned_first_s": 213.0,
+        "observed_first_s": 213.0,
+        "thermal_sha256": "14ffc5684ef34f8e8c31811b426f6d34c2a6818610b65059378387f1bc825169"
+      },
+      {
+        "key": "1m-none-from60-clear0-dt0.5-both",
+        "owned_first_s": 336.5,
+        "observed_first_s": 336.5,
+        "thermal_sha256": "adab024a42eb51106ec2f1fdea1dc65534ce06a883db89e64566ac908faa4408"
+      },
+      {
+        "key": "1m-none-from60-clear0-dt1-radiation_only",
+        "owned_first_s": 336.0,
+        "observed_first_s": 336.0,
+        "thermal_sha256": "7d9a3a98b833fa6a45b534c454cd3e2811ce5abe3814392ed5396328d7ef2b24"
+      },
+      {
+        "key": "1m-none-from60-clear0-dt1-contact_only",
+        "owned_first_s": null,
+        "observed_first_s": null,
+        "thermal_sha256": "701ff59681b174082468011576b89b07f0c199ebe6f7e14872a357596ec9f18a"
+      },
+      {
+        "key": "1m-none-from119-clear0-dt0.5-both",
+        "owned_first_s": 213.0,
+        "observed_first_s": 213.0,
+        "thermal_sha256": "0b0e5f6fb5399982c44890849b94814aedab8041cdfe0ebe72fff7f89b071203"
+      },
+      {
+        "key": "1m-none-from119-clear0-dt1-radiation_only",
+        "owned_first_s": 213.0,
+        "observed_first_s": 213.0,
+        "thermal_sha256": "1cb7ef07861fae0fccdec589da44eab29a19aee193cd4da19b3420ec458961c9"
+      },
+      {
+        "key": "1m-none-from119-clear0-dt1-contact_only",
+        "owned_first_s": null,
+        "observed_first_s": null,
+        "thermal_sha256": "3d52c368ea8d35746f1f3ff05cbaa74eca4710c49e0cafd635aba5ce8dc63895"
+      }
+    ],
+    "scope": "numerical evidence audit; not field calibration or full-domain replay"
+  }
+}

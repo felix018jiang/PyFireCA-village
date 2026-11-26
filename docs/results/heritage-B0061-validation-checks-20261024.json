@@ -1,0 +1,12 @@
+{
+  "new_distinct_source_polygons_including_replacements": 20,
+  "no_source_polygon_matches_any_development_arm": true,
+  "scale_classification_matches_in_all_plan_draw_pairs": 36,
+  "demolition_area_shared_roof_and_plan_unchanged": true,
+  "development_selection_result_fingerprint_matches": true,
+  "same_source_pairs": 32,
+  "source_replaced_pairs": 4,
+  "maximum_energy_error_J": 0.0002899169921875,
+  "minimum_energy_tolerance_J": 5.8495094419059965,
+  "result_sha256": "eb278e514e0266a54720e4bbc3668c87521fc8cd8980ee75ff477fc48d5641fa"
+}

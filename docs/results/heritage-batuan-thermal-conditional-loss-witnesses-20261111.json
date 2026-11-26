@@ -1,0 +1,51 @@
+{
+  "native_comparisons": [
+    {
+      "C_m2": 2270.090100539021,
+      "actual_stop_s": 43048.999999999905,
+      "case_original_roof_burnout_bounds": {
+        "lower": 154,
+        "upper": 156
+      },
+      "conditional_audit_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thermal-conditional-audit-inputs-20261111/pyfireca-batuan-thermal-first-edge-finite-20261111.json",
+      "conditional_audit_sha256": "7e6cf59acfc226a6803f633065a8796bbe3f870fd119c23c8757185f6127b460",
+      "conditional_core_protected_and_closed": true,
+      "conditional_problem_sha256": "c3956a30ec17c79e716e4f53a51e1f697b4504468f10de84ede7e3146b2aa433",
+      "manifest_sha256": "eae9a3a266369215cb10b6f8af269c65e3921c6cc53523aeac2a1151264ea7c3",
+      "matched_source_against_D9": false,
+      "native_invalid_reasons": [
+        "fire_reached_physical_domain_edge"
+      ],
+      "native_problem_sha256": "9b0480b9337b595ac4f0f3c0211471b67ba7a8c879b0921de55b9ff64b39eba7",
+      "protocol": "original",
+      "same_case_nonroof_burned_m2": 316650.0,
+      "strict": "unknown",
+      "worst_conditional_A_lower_bound_from_this_closed_case_m2": 344687.3974317721
+    },
+    {
+      "C_m2": 2270.090100539021,
+      "actual_stop_s": 93291.99999999996,
+      "case_original_roof_burnout_bounds": {
+        "lower": 31,
+        "upper": 31
+      },
+      "conditional_audit_path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-batuan-thermal-conditional-audit-inputs-20261111/pyfireca-batuan-thermal-revealed-first-edge-finite-20261111.json",
+      "conditional_audit_sha256": "a748a267a51942d7570d0c9cbe6be4232b927884a61680de9b43d00180f8d05a",
+      "conditional_core_protected_and_closed": true,
+      "conditional_problem_sha256": "4a30ec561eadcb6d81f63d7a947feda8d6cbef4fcf961cd5ce6ce60f15876ce3",
+      "manifest_sha256": "c7f1f7b15a323a6b1fc88a1ebe2e0173ded43cc742d9908dcf989ab94c805f4d",
+      "matched_source_against_D9": false,
+      "native_invalid_reasons": [
+        "fire_reached_physical_domain_edge"
+      ],
+      "native_problem_sha256": "b89bdb0f682785c443524b68fca47a893dbb0b96f79832150b53b27977527c83",
+      "protocol": "replay",
+      "same_case_nonroof_burned_m2": 1081425.0,
+      "strict": "unknown",
+      "worst_conditional_A_lower_bound_from_this_closed_case_m2": 1086233.8757346878
+    }
+  ],
+  "new_CA_checks": 0,
+  "schema_version": "conditional-model-loss-witnesses-1",
+  "scope": "lower bounds for the energy-clearance plan on fixed model domains; finite-domain physical closure independently certified; strict positive not established in these cases"
+}

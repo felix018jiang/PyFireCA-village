@@ -1,0 +1,88 @@
+{
+  "schema_version": "heritage-native-runtime-attestation-1",
+  "native_problem_sha256s": [
+    "0adf5bad01dae3c6bdd665c822fc8c0227e9245b5a9bd9e56d850d36fafd6897",
+    "446c92bbc3a13ccab68a9d78dc64689de13dfd8c27edf9eefd6eec0dd7a6d3fb",
+    "5bad51f286018763620292f6fbc10a63b46c8cca0a830bda9aaebdfc3d03783d",
+    "860d4cc1aeebbc4c9ad5b5f258cca36bf0aeb1144ec34aa8422e7ca7b56b65c5",
+    "a964809758fe5634a462f6b5b3204e9a51e90209e3526889b0c629628161866a",
+    "c0eae3aba1b079bb4e6d86ffac7428ebf4215e8167975eadc0d9afd2130223a4",
+    "f64c07fd7fe8bd29bebe7dae4726a1dd9660692f3c0ea0f819940f74db185d5f",
+    "fba2c54068f3ad0bfb7d6c2f6126e9727515a9bf1234222b0658a197eaf914a1"
+  ],
+  "runtime": {
+    "python_executable": "/opt/anaconda3/bin/python",
+    "python_version": "3.13.5",
+    "numpy_version": "2.1.3",
+    "scipy_version": "1.15.3",
+    "shapely_version": "2.1.2",
+    "geos_version": "3.13.1",
+    "machine": "arm64"
+  },
+  "attestation_basis": "Prior controller attestation and its original launch and Mach-O observations; additional thin and direct native roots bound to the frozen scheduling receipts. Their native-operator scheduler receipts record Python, NumPy, Shapely and GEOS. Their SciPy fields were null. SciPy 1.15.3 is retrospective from the unchanged conda environment, old controller attestation, current reader and conda package metadata; no direct original-process SciPy version claim. No new historical PID observations.",
+  "evidence_references": [
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-batuan-20261111/experiment.json",
+      "sha256": "08be1ccef7aefd0ab6cffd5c32edfb0d075f3d3801b5528bc439d874459ae9ac"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-batuan-20261111/experiment.json",
+      "sha256": "a9b96e698f96532fa836f2c390392152abfc185dd9d7b0bb7e66633ccf061872"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-clockfix-batuan-20261111/experiment.json",
+      "sha256": "34eb562ba2a7864c33c6cf0e0af05272c492f9bd4b4bd1be20d882ff5e7372f9"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-narrow-hull-batuan-20261111/experiment.json",
+      "sha256": "482ed5336ef10a50fcfc70cffeeb31f8d3eca3c60bb8b125ca360c7dbc19a28b"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-joint-longcap-pingyan-20261111/experiment.json",
+      "sha256": "f8c33f032770f18031627f0d045932190223b879a46e86659eb444fa026be7f0"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-balanced-optimized-pingyan-20261111/experiment.json",
+      "sha256": "24b38d639f65242022d9b797cee36b9efe0a4321628e920f7c14809e6739a6cc"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-runtime-controller-observation-20261111.json",
+      "sha256": "70fdb28c0a98c6b22557e0975df9e4f03bbd2cf6009712abdf4be33fdb5f8701"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/docs/results/heritage-native-runtime-attestation-20261111.json",
+      "sha256": "ff439a2024f7e231089a5d2c1bb63fc44025316ccb8281320f7878b8b1c28ce6"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-plan-first-schedule-20261111/receipt.json",
+      "sha256": "d2bfbce09fd672f075bd4baa14fb0f587052d47f2e722f569b79c014af6bdf77"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-hull-batuan-20261111/experiment.json",
+      "sha256": "d4044b60eda3eba6a096a60d8a7264041f2c72129e64692045900ca01163ca7f"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-thin-plan-first-schedule-20261111/resume_heritage_joint_schedule.py",
+      "sha256": "f7711264a964c1cc66045501bd84bd7da07116b69696f941dc29004e1e0d4ec2"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-D9-first-schedule-20261111/receipt.json",
+      "sha256": "2ecabfa7eef3ca920194004a461adaee7e03cbb152f0213f5c145f9fc559b14e"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-action-ablation-batuan-20261111/experiment.json",
+      "sha256": "ef29c1afa17c405de9a52d6fb143c026a4bdafa8ea789c7c5f7453ae431120d4"
+    },
+    {
+      "path": "/Users/tone/Documents/github/PyFireCA/runs/research/heritage-direct-D9-first-schedule-20261111/resume_heritage_joint_schedule.py",
+      "sha256": "f7711264a964c1cc66045501bd84bd7da07116b69696f941dc29004e1e0d4ec2"
+    },
+    {
+      "path": "/opt/anaconda3/conda-meta/scipy-1.15.3-py313hd7edaaf_0.json",
+      "sha256": "d48e0ec7327cd9e0d3008eb75abcf8d387dd2d57a269c0a3c10312ce6358434c"
+    }
+  ],
+  "attested_by": "execution_controller_and_independent_archive_reader",
+  "historical_runtime_not_claimed_as_native_archive_field": true,
+  "receipt_sha256": "f769b98a0fe1caaaa04b732fb3adf12a52de7dbec753154dd219d3ad60417f41"
+}
