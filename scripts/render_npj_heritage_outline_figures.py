@@ -614,7 +614,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path)
     parser.add_argument(
-        "--numbered-english", action="store_true",
+        "--numbered-english",
+        action="store_true",
         help="Render the 15 English figures in the numbered, in-text manuscript edition.",
     )
     args = parser.parse_args()
